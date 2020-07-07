@@ -52,7 +52,7 @@
 
       try {
         var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", 'https://www.googletagmanager.com/gtag/js', false );
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
         xmlHttp.send();
         console.log(xmlHttp.responseText.length);
         if (xmlHttp.responseText.length < 10000) {
