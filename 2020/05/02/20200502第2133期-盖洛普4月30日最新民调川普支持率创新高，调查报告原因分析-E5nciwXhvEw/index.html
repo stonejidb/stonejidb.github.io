@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月2号星期六，盖洛普美国民意调查机构非常著名的盖洛普官网4月30号发布了最新的民调数据显示，在4月14号到28日的调查中，美国民众对川普总统的支持达到了川普任期内的最高水平，再创新高，那么说民众对串口的抗议表现，实际上支持率的下跌了，觉得抗议表现不好。但是在评价川普总体的工作表现上，川普的支持率从4月初的43%升到了49%，这意味着4月14号到28号这段时间是川普上台以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/02/20200502%E7%AC%AC2133%E6%9C%9F-%E7%9B%96%E6%B4%9B%E6%99%AE4%E6%9C%8830%E6%97%A5%E6%9C%80%E6%96%B0%E6%B0%91%E8%B0%83%E5%B7%9D%E6%99%AE%E6%94%AF%E6%8C%81%E7%8E%87%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90-E5nciwXhvEw/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月2号星期六，盖洛普美国民意调查机构非常著名的盖洛普官网4月30号发布了最新的民调数据显示，在4月14号到28日的调查中，美国民众对川普总统的支持达到了川普任期内的最高水平，再创新高，那么说民众对串口的抗议表现，实际上支持率的下跌了，觉得抗议表现不好。但是在评价川普总体的工作表现上，川普的支持率从4月初的43%升到了49%，这意味着4月14号到28号这段时间是川普上台以">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-01T15:03:03.000Z">
+<meta property="article:modified_time" content="2020-07-08T14:55:46.772Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/02/20200502%E7%AC%AC2133%E6%9C%9F-%E7%9B%96%E6%B4%9B%E6%99%AE4%E6%9C%8830%E6%97%A5%E6%9C%80%E6%96%B0%E6%B0%91%E8%B0%83%E5%B7%9D%E6%99%AE%E6%94%AF%E6%8C%81%E7%8E%87%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90-E5nciwXhvEw/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/02/20200502%E7%AC%AC2133%E6%9C%9F-%E7%9B%96%E6%B4%9B%E6%99%AE4%E6%9C%8830%E6%97%A5%E6%9C%80%E6%96%B0%E6%B0%91%E8%B0%83%E5%B7%9D%E6%99%AE%E6%94%AF%E6%8C%81%E7%8E%87%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90-E5nciwXhvEw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-02 00:03:03" itemprop="dateCreated datePublished" datetime="2020-05-02T00:03:03+09:00">2020-05-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/02/20200502%E7%AC%AC2133%E6%9C%9F-%E7%9B%96%E6%B4%9B%E6%99%AE4%E6%9C%8830%E6%97%A5%E6%9C%80%E6%96%B0%E6%B0%91%E8%B0%83%E5%B7%9D%E6%99%AE%E6%94%AF%E6%8C%81%E7%8E%87%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90-E5nciwXhvEw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/02/20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析-E5nciwXhvEw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月2号星期六，盖洛普美国民意调查机构非常著名的盖洛普官网4月30号发布了最新的民调数据显示，在4月14号到28日的调查中，美国民众对川普总统的支持达到了川普任期内的最高水平，再创新高，那么说民众对串口的抗议表现，实际上支持率的下跌了，觉得抗议表现不好。但是在评价川普总体的工作表现上，川普的支持率从4月初的43%升到了49%，这意味着4月14号到28号这段时间是川普上台以来支持率将近4年的统治时期的支持率的最高的时候。 </p>
+<p>那么盖洛普也非常疑惑，左派都非常疑惑，因为川普的支持率为什么不降反升了呢？ </p>
+<a id="more"></a>
+
+<p>那么盖洛普给出来的一些分析，但我觉得分析还是有一些道理，他说这样，他说现在由于经济受挫，美国各地民众要求复工，停止封城的抗议是此起彼伏，在这种情况之下川普是支持复产的，所以这是川普他认为这是川普最新最近的支持率上升的原因之一，我觉得也应该可以，我觉得算原因之一，还有一点串我的确做的不错，对不对？ </p>
+<p>我觉得虽然媒体就是说一段那一顿的唯欧，但是最终事实证明，你最后比如说像川普说瑞德西北和枪毙回，你最后不还是他吗？对吧？那么媒体就非常的不理解，就认为我们这么多媒体这么抹黑，怎么就抹黑不了呢？对吧？因为群众的眼睛是雪亮的，对不对？ </p>
+<p>反正不管怎么着，我觉得咱先不说别给川普吹牛逼了，咱们就说说最起码分工复产，我觉得我希望通过这次民调，能够让民主党的这些州长和民主党的这些政客们能够意识到这一点，就是说你们这么搞对川普有伤害吗？有伤害，但是实际上你们自己这东西最后会反射回来的，现在几乎都是民主党的人是反对的复产，希望继续关，最好就一直关到10月大选之前，他们觉得从现在开始整个的关停居家，然后一直关到11月串口的选举就完蛋了，知道吧？ </p>
+<p>他们就这么一个想法，其实就这么简单你知道吗？其实一行基本上都过去了，大家心里都有数，昨天连左派的哈佛大学教授不也出来了，对不对？ </p>
+<p>我觉得老爷子虽然是左派代表人物，但是说有点事实对吧？根据我们昨天说到你们自己去看，它里面讲的数据来讲，也是完完全全论证了，就是说川普现在要复产，实际上是有科学依据的，从数据上也是完全可以支撑的，对吧？所以在这种情况之下，我们牺牲了大多数人的利益来保护的10%<del>15%的人，而那说句实在的，就是说即使你不牺牲别人的利益，你还是有办法能够保护这10%</del>15%的人，对不对？他也说到那65%岁以上这些人其实上大部分都退休了，你可以对他们实施的居家令，然后可以说社会的去补助，老年人是照顾老年人就得了，派义工去，对不对？ </p>
+<p>这样可以让剩下的百分之八九十的这些人，就是说继续重新的去恢复生活，但是现在左派对此主要的抗议，他们不是说看这种什么哈佛大学研究的这些数据，他们思考的跟哈佛大学的思考的不一样，他们是学者思考的是怎么对社会更好，对民主党思考的是怎么对民主党更好。所以民调在这里，我希望民主党能够看到民意，知道自己的到底应该做什么。因为在这种名义之下，你这么做的话，实际上你没有害了川普，你只是害了经济，你实际上帮了川普，让全美国的民众看到了民主党的在这一次疫情当中的丑陋。 </p>
+<p>好吧，继续讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/02/20200502%E7%AC%AC2132%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E9%87%8D%E6%96%B0%E5%AE%9A%E6%80%A7%E6%9D%8E%E6%96%87%E4%BA%AE%EF%BC%8C%E4%B8%8D%E7%AE%97%E5%90%B9%E5%93%A8%E4%BA%BA-7MJR1UYs6xg/" rel="prev" title="20200502第2132期-中国官方重新定性李文亮，不算吹哨人">
+      <i class="fa fa-chevron-left"></i> 20200502第2132期-中国官方重新定性李文亮，不算吹哨人
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/03/20200503%E7%AC%AC2134%E6%9C%9F-%E7%AA%81%E5%8F%91%EF%BC%9A%E6%9C%9D%E9%B2%9C%E9%9F%A9%E5%9B%BD%E5%93%A8%E5%85%B5%E5%8F%91%E7%94%9F%E6%9E%AA%E6%88%98-vwPKQhy_-W0/" rel="next" title="20200503第2134期-突发：朝鲜韩国哨兵发生枪战">
+      20200503第2134期-突发：朝鲜韩国哨兵发生枪战 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">370</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/02/20200502%E7%AC%AC2133%E6%9C%9F-%E7%9B%96%E6%B4%9B%E6%99%AE4%E6%9C%8830%E6%97%A5%E6%9C%80%E6%96%B0%E6%B0%91%E8%B0%83%E5%B7%9D%E6%99%AE%E6%94%AF%E6%8C%81%E7%8E%87%E5%88%9B%E6%96%B0%E9%AB%98%EF%BC%8C%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A%E5%8E%9F%E5%9B%A0%E5%88%86%E6%9E%90-E5nciwXhvEw/";
+    this.page.identifier = "2020/05/02/20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析-E5nciwXhvEw/";
+    this.page.title = "20200502第2133期-盖洛普4月30日最新民调川普支持率创新高，调查报告原因分析";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
