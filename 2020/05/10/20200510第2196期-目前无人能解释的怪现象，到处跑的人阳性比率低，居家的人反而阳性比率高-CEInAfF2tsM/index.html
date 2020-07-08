@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月10号星期日，最近各种的数据出来展现了一种目前来讲没有人能解释的一个奇怪的现象。现在到处跑的人阳性的反正比较低，居家的反而阳性的比率高，不知道为什么？  纽约州州长库默说，说纽约的疫情在稳定的下降，每天住院人数、ICU人数、插管人数、病死人数都在下降，但是每天还有几百个新增的入院的病人，虽然人数也在逐步下降，那么就是说前天差不多的有601人入院，那么这些人究竟来自哪里">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/10/20200510%E7%AC%AC2196%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%97%A0%E4%BA%BA%E8%83%BD%E8%A7%A3%E9%87%8A%E7%9A%84%E6%80%AA%E7%8E%B0%E8%B1%A1%EF%BC%8C%E5%88%B0%E5%A4%84%E8%B7%91%E7%9A%84%E4%BA%BA%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E4%BD%8E%EF%BC%8C%E5%B1%85%E5%AE%B6%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E9%AB%98-CEInAfF2tsM/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月10号星期日，最近各种的数据出来展现了一种目前来讲没有人能解释的一个奇怪的现象。现在到处跑的人阳性的反正比较低，居家的反而阳性的比率高，不知道为什么？  纽约州州长库默说，说纽约的疫情在稳定的下降，每天住院人数、ICU人数、插管人数、病死人数都在下降，但是每天还有几百个新增的入院的病人，虽然人数也在逐步下降，那么就是说前天差不多的有601人入院，那么这些人究竟来自哪里">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-09T15:09:06.000Z">
+<meta property="article:modified_time" content="2020-07-08T14:36:39.921Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/10/20200510%E7%AC%AC2196%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%97%A0%E4%BA%BA%E8%83%BD%E8%A7%A3%E9%87%8A%E7%9A%84%E6%80%AA%E7%8E%B0%E8%B1%A1%EF%BC%8C%E5%88%B0%E5%A4%84%E8%B7%91%E7%9A%84%E4%BA%BA%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E4%BD%8E%EF%BC%8C%E5%B1%85%E5%AE%B6%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E9%AB%98-CEInAfF2tsM/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/10/20200510%E7%AC%AC2196%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%97%A0%E4%BA%BA%E8%83%BD%E8%A7%A3%E9%87%8A%E7%9A%84%E6%80%AA%E7%8E%B0%E8%B1%A1%EF%BC%8C%E5%88%B0%E5%A4%84%E8%B7%91%E7%9A%84%E4%BA%BA%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E4%BD%8E%EF%BC%8C%E5%B1%85%E5%AE%B6%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E9%AB%98-CEInAfF2tsM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-10 00:09:06" itemprop="dateCreated datePublished" datetime="2020-05-10T00:09:06+09:00">2020-05-10</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/10/20200510%E7%AC%AC2196%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%97%A0%E4%BA%BA%E8%83%BD%E8%A7%A3%E9%87%8A%E7%9A%84%E6%80%AA%E7%8E%B0%E8%B1%A1%EF%BC%8C%E5%88%B0%E5%A4%84%E8%B7%91%E7%9A%84%E4%BA%BA%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E4%BD%8E%EF%BC%8C%E5%B1%85%E5%AE%B6%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E9%AB%98-CEInAfF2tsM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/10/20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高-CEInAfF2tsM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月10号星期日，最近各种的数据出来展现了一种目前来讲没有人能解释的一个奇怪的现象。现在到处跑的人阳性的反正比较低，居家的反而阳性的比率高，不知道为什么？ </p>
+<p>纽约州州长库默说，说纽约的疫情在稳定的下降，每天住院人数、ICU人数、插管人数、病死人数都在下降，但是每天还有几百个新增的入院的病人，虽然人数也在逐步下降，那么就是说前天差不多的有601人入院，那么这些人究竟来自哪里？是怎么被感染的？那么恐怖人就说我们做了一个调查研究，说在纽约的113个医院当中，对1269名新增的住院病人进行了为期三天的调查。调查结果显示是这样，居住的地区多数在纽约州的下周地区，什么是你看这纽约州它上周是这么大块，下周不就一长条，像就是纽约市再加上长岛，基本上就算是下周地区了，上面都是上周地区，主要集中在纽约市的5个区和长岛，成长跟困死实际上是相连的，那困得往那边走，挨挨着49往那边走到一个地。 </p>
+<a id="more"></a>
+
+<p>E话那边就是长岛，但是长岛跟坤子实际上是连在一起的，好吧？然后它主要都集中在下周，就是说纽约市和长岛，纽约市在曼哈顿这有21%是来自于曼哈顿的，长岛来自18%，皇后区和布鲁克林都是13%，其中男性占了52%，女性占了48%，有这种基础病就综合病症者占了96%，所以如果你没有基础病的话，你被感染的可能性只有4%，但绝大多数都是有基础病的，高血压、糖尿病之类的，足以白人占了38%，黑人占了21%，拉丁裔17%，亚裔只有5%，阿亚亿还是真的是非常的认真，非常的小心。 </p>
+<p>这个来讲也不能够说说好像是少数族裔受到了歧视，因为白人是最多的，白人占38%，黑人和拉丁裔一个20%，一个17%，亚裔更少，那说明你就谈不上，有的时候跟低收入有关，跟这玩意不见得白人的话，其实收入水平在美国算是比较靠前的，对吧？ </p>
+<p>好，那么年龄51岁以上的占了3/4，每4个就有3个是51岁以上的，所以那么有基础病的占96%，所以你就能看出来了，对不对？51岁以上有基础病的这才是大头，51岁以下的只有1/4，那么来源来自家庭的就是说居家的占了多少？你猜占了66%，都是居家，当然现在主要也都是居家的了对吧？ </p>
+<p>其次老人院占到18%，监狱比较少，只有1%，无家可归者和这种的集居者只占了各占2%，剩下还有百分之十十几多少，66%、18%、百分之这是87/800，甚至还有13%的就是那种经常上班的上班组，还有13%的是来自于上班族。所以你就发现了咱妈老人院监狱和吴佳和微软这种就是说特殊情况，这些都抛开。 </p>
+<p>单看就是说居家的，居家现在就是说不工作在家呆着的，占到66%，上班的只占到13%，所以你不明白为什么出来上班的人反而感染的到少，居家反而感染到多。他说而且这些确诊当中绝大部分都是退休和失业的，正在上班的反而最少。那么得到的结论就是他们并非在那工作，也没有在旅游，而且大部分来自纽约下周，而且大部分是这个年纪比较大的，而且大部分都是非必要行业又不用上班的，对不对？ </p>
+<p>那么大部分都是居家的，为什么？不知道为什么，但是反正他说明一个情况，就是说如果你防护措施得当的话，你即使去上班，你也不见得在家。我觉得有没有这种可能性，是因为他觉得他去上班了，所以我觉得我有可能我要我要被感染了，所以他变成了我想它就变成了非常的小心。 </p>
+<p>你看开车也是我发现一个问题，你知道开车什么人容易出车祸吗？ </p>
+<p>往往新学的开车的新手反而不太容易的出车祸，很多人都认为新手不会开，肯定出车祸，不是你会发现这种新手，他知道自己不会开，他上了马路之后非常小心，双手握着方向盘，你想看看特别小心，开得又慢，他又不太容易出事儿，什么人最容易出事你知道吗？ </p>
+<p>就是当驾驶的里程数差不多超过了2万2万公里11万多英里之后，这种人最容易出事了，就是说开了个一两万，觉得自己熟了，老油条了，也敢踩油门了，也敢开速度了，也聊着天说这种就容易出事儿，因为她不够小心，我觉得有没有可能就是说因为他在家里他就不小心也不戴口罩，也不知道那的对吧？也不勤洗手，对不对？所以他就是说觉得我在家反正也没事，所以出事的比例就比较大了，如果他上班他会非常小心，戴着手套勤洗手，经常用消毒液，反正等等的对不对？反正他会注意起来，对吧？ </p>
+<p>我觉得会不会说由于就是说他注意了，他精神高度集中了，他反而不出车祸，那些觉得自己没事了，好急的，反正就撞倒了。 </p>
+<p>然后咱们再看，还有一个由多家保守派团体组成的一个联盟，4月27号宣布成立，他们的名字叫做save all country，就是说拯救我们的国家，这个联盟通过游说白宫国会周转和地方官员为反对居家令的抗议活动提供支持，发表的研究报告和资助广告宣传等方式，推动各州尽快的重启经济复业。他们的口号是什么？就是说以安全的方式来重启经济联盟领导人之一，史蒂芬摩尔是美国著名的经济评论员，他是川普总统在2016年的进场顾问，也是白宫应对兴办疫情顾问团队的成员。 </p>
+<p>他5月6号接受采访时表示，他说我们正在努力的让各州尽快尽可能的安全的来重新开放，因为我们认为是关系到我们国家的未来，他说我们不能再等上几个星期或几个月了，他说如果继续经济活动再停1~2个月，美国将进入了大萧条，这会摧毁了众多民众的生计，还会造成成千上万人因吸毒、心脏病、抑郁症等跟经济受挫有关的问题而死亡。他说我们敦促州长们采取最好的医疗方式，把拯救生命放在首位，但也要以明智有效和注重健康的方式推动经济快速运转，他说美国有13个城市受到了冠状病毒严重影响，那么这些地区显然需要加强了保护，但是当然其他地方就完全没有这个必要，对不对？就说你不能够说都这样对吧？ </p>
+<p>他说大约有一半的这种菌，康体的根本几乎就没有冠状病毒的病例，这些地方就应该可以开放，对吧？就是说咱们讲道理，从科学来说，我不是他的意思说我不是说完完全全回到之前，对吧？我是说你要区分开，哪些是应该开放，哪些不应该开放，哪些人应该受到保护，哪些人不应该受到保护。对吧？记者就说说到专家说在没有疫苗和有效疗法的情况之下，检测能力又不足，如果开放各州是在这种生命的获取经济，斯蒂芬博尔说现在并不存在，就是说在生命和经济之间做选择的问题，现在民主党就为了把经济搞混就告诉你，只要我们现在搞进去就是死人，就是拿人命去换，但是实际上并不是这个情况，根本就不是这么个情况，对不对？这就是危言耸听。 </p>
+<p>你懂吗？就是说比如说中国共产党不也说吗？就是说只要中国共产党不治理，全国就要爆发内战，几百万人上千万人上亿人就要死亡，中国人民就要生活在水深火热之中，所以必须抵着共产党来执政，对不对？ </p>
+<p>那是这个情况吗？实际上你稍微想想他就不是这么个情况，对不对？ </p>
+<p>他说是这样，他说分析结果显示那些经济更加开放的州与那些被封锁的州相比，死亡率实际上并没有显著的反差，就刚刚跟酷睿二的说法是一样的，你知道吗？他说的联邦快递在盖茨在美国有大约35面5万名员工，在世界的其他地方大约有10万名员工，他们的员工当中只有千分之1的人缺，最后他说这比呆在家里感染的感染的人的比率还要低，所以一定证明就是说如果你足够小心的话，如果你认真去处理这个问题的话，是可以既保持商业流通，又让我们的社会继续运展，又不让人们染病的，对不对？ </p>
+<p>实际上是你注意不注意这个问题，而不是说你呆在家或者出去，不是说你一旦你一出去就一定会染病，你在家就一定不染病。实际上最后纽约的情况证明，如果你不小心的话，你在家你一样会染病的，你出去你小心的话，你的染病你更加小心的话，你反而还比呆在家还更安全。 </p>
+<p>对吧？所以摩尔说是否决定恢复活活经济活动决定权也应该在每个个人的手中，他就说就说把决定权给大家，就说我们不强制你居家也不强制的你去工作，你自己去选择，他说有的人就不愿意工作，那么接下来一两个月都可以不出门，不上班你可以去领这个就你不也给你了吗？那是你的权利对不对？但是如果你不想如果你想要开门，如果你想要工作，对不对？那么就可以去工作，对吧？大家分开想干什么？就这样就得了，对不对？ </p>
+<p>德州有一位女士开了一家理发店，然后他就必须要开门，然后法院判说你这个不属于必要性的企业，就是说你不能开门，然后又给他罚款，说一天罚500，最后可能罚7000，然后还要让他的认罪，如果认罪了就算了，他不认罪不认罪，最后法院就好像盼他的拘留了7天，然后罚7000，然后现在在德州引起了轩然大波，现在好像已经被放出来了，德州州长也开始了干涉这个事了。然后据说德国组长宣布就自己来为他们付这7000块钱的罚款，就觉得老百姓有就是说挣钱养活自己的权利，对吧？ </p>
+<p>好吧，在这种情况之下，我们就不知道了，反正你看个人对不对？好吧，然后他说现在美国有一半左右的州开始了重启经济活动，这些州几乎都是由共和党周长率领的红周而已，就保持严格限制的周大多都是民主党的蓝州，他说这基本上就是一种政治思维了，现在民主党就是要把经济拖垮，只要能把经济拖垮，能够串口不连任怎么都行。 </p>
+<p>而且说目前民主党的议员还在推动新一轮的经济刺激方案，这项提议受到共产党议员的反对，他们又要接着发钱，而且发的钱又要比你上班还要多，一定说我发给你钱，我花钱我雇你不要去上班，就这么一个情况。 </p>
+<p>你知道吗？现在斯蒂芬摩尔就说，他说我们已经花了超过3万亿美元了，我们现在把我们的钱当糖果了，一样的就往外往外撒，他说这些支出对经济的影响大多数其实都是负面的，你这么搞我们会负债累累，而且对经济一点帮助都没有。他说我们不应该付给人们比复工比工作大量的钱更多，因为你这么搞就没有人愿意工作，大家就养懒了知道吧？他说让美国人重新就业，企业再次运转的经济刺激是这样子就是说不要发钱，你干脆你这样，你就说在今年余下的时间里暂停征收工资税，就所有领工资的人不用交税，暂停工资税，他说这样的话就是说最起码可以使所有的就是说收入从中产阶级以下的每一个这种靠工作去挣钱的每个人，每周的工资增加7.5%的工资是7.5%，占到可以少交7.5%的税，等于你就增加了7.5%，而且企业在雇佣工人的成本也降低了7.5%，对吧？ </p>
+<p>那么就不再增加政府的开支了。可能是工人要交7.5%，企业还要再交7.5%的税，是不是？我也不知道这情况。他说这样不再不再增加政府的开支，而将我们的钱用来暂停了9个月的公司税，他说这样子才能让人去重返工作岗位，这样他才愿意去挣钱对不对？ </p>
+<p>而且他会觉得我原先比如说我挣10块钱的话，我要交百分就交7毛5的税对不对？那么就是说我干的多交的税更多，但是我现在我交的我干的更多，我交的税我不用交税的话，我等于挣的就更多，这样他会调动他的积极性愿意去工作，对不对？ </p>
+<p>以前就有一个联合国他们组织去非洲也是，他们就拿着人们捐献的这些物资去给非洲发一些物资医疗品食物什么的，他们那车哗一开到了之后，你看非洲小孩都跑过来，就挡挡着他们就发面包发巧克力什么的，然后他们就这样的，他们是不发的，不能发给他们，知道吗？就有人要发，那么他们就说不行，不能这么做，你这么做就坏了。你这么多让他们养成了一个习惯就是说不工作天天就等着你来发，知道吗？所以他们这样子让那些小孩帮助他们的运东西，要给他们遇到脑，还帮他们搭帐篷。 </p>
+<p>好，那么你做完了这个工作之后，我把这些东西作为公司，比如粮食巧克力作为公司我发给你，就这个东西不是你乞讨，你当一个乞丐你乞讨来的，而是你工作你靠自己的双手挣来的，他说那区别是什么？区别是你可以活得有尊严，你是一个有尊严的成年人。好，今天这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/10/20200510%E7%AC%AC2195%E6%9C%9F-%E5%A5%A5%E5%B7%B4%E9%A9%AC%E5%87%BA%E6%9D%A5%E7%BB%99%E6%8B%9C%E7%99%BB%E7%AB%99%E5%8F%B0%E4%BA%86%EF%BC%8C%E6%8C%87%E8%B4%A3%E5%B7%9D%E6%99%AE%E6%8A%97%E7%96%AB%E5%A4%B1%E8%B4%A5%EF%BC%9A%E4%B8%80%E5%9C%BA%E5%BD%BB%E5%BA%95%E6%B7%B7%E4%B9%B1%E7%9A%84%E7%81%BE%E9%9A%BE-PTUmFF3ySBk/" rel="prev" title="20200510第2195期-奥巴马出来给拜登站台了，指责川普抗疫失败：一场彻底混乱的灾难">
+      <i class="fa fa-chevron-left"></i> 20200510第2195期-奥巴马出来给拜登站台了，指责川普抗疫失败：一场彻底混乱的灾难
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/10/20200510%E7%AC%AC2197%E6%9C%9F-%E9%83%9D%E6%B5%B7%E4%B8%9C%E8%A2%AB%E5%9B%B4%E6%94%BB-ObPocDhdYuc/" rel="next" title="20200510第2197期-郝海东被围攻">
+      20200510第2197期-郝海东被围攻 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">328</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/10/20200510%E7%AC%AC2196%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%97%A0%E4%BA%BA%E8%83%BD%E8%A7%A3%E9%87%8A%E7%9A%84%E6%80%AA%E7%8E%B0%E8%B1%A1%EF%BC%8C%E5%88%B0%E5%A4%84%E8%B7%91%E7%9A%84%E4%BA%BA%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E4%BD%8E%EF%BC%8C%E5%B1%85%E5%AE%B6%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E9%98%B3%E6%80%A7%E6%AF%94%E7%8E%87%E9%AB%98-CEInAfF2tsM/";
+    this.page.identifier = "2020/05/10/20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高-CEInAfF2tsM/";
+    this.page.title = "20200510第2196期-目前无人能解释的怪现象，到处跑的人阳性比率低，居家的人反而阳性比率高";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
