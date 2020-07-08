@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的6月23号星期二，马罗瞎说大实话，快把串补气哭了。怎么回事？纳瓦罗星期一2020年的6月20号，在福克斯新闻的一个节目当中，福克斯新闻的主持人就问纳瓦罗，说川普总统希望维持与中国的第一阶段的贸易协议，对吧？这是肯定的，要确保中国能够履行它的承诺。  但是考虑到近期发生的一切以及，就是说你刚刚达瓦多刚刚这个就谈说中国怎么不好列举中国的所有的不是说以及你刚刚列出的所有的事项，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200623第2448期-纳瓦罗瞎说大实话，川普气哭了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/06/23/20200623%E7%AC%AC2448%E6%9C%9F-%E7%BA%B3%E7%93%A6%E7%BD%97%E7%9E%8E%E8%AF%B4%E5%A4%A7%E5%AE%9E%E8%AF%9D%EF%BC%8C%E5%B7%9D%E6%99%AE%E6%B0%94%E5%93%AD%E4%BA%86-HrDnC2mGtHk/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的6月23号星期二，马罗瞎说大实话，快把串补气哭了。怎么回事？纳瓦罗星期一2020年的6月20号，在福克斯新闻的一个节目当中，福克斯新闻的主持人就问纳瓦罗，说川普总统希望维持与中国的第一阶段的贸易协议，对吧？这是肯定的，要确保中国能够履行它的承诺。  但是考虑到近期发生的一切以及，就是说你刚刚达瓦多刚刚这个就谈说中国怎么不好列举中国的所有的不是说以及你刚刚列出的所有的事项，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-22T15:04:08.000Z">
+<meta property="article:modified_time" content="2020-07-08T02:48:29.215Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/06/23/20200623%E7%AC%AC2448%E6%9C%9F-%E7%BA%B3%E7%93%A6%E7%BD%97%E7%9E%8E%E8%AF%B4%E5%A4%A7%E5%AE%9E%E8%AF%9D%EF%BC%8C%E5%B7%9D%E6%99%AE%E6%B0%94%E5%93%AD%E4%BA%86-HrDnC2mGtHk/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200623第2448期-纳瓦罗瞎说大实话，川普气哭了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/23/20200623%E7%AC%AC2448%E6%9C%9F-%E7%BA%B3%E7%93%A6%E7%BD%97%E7%9E%8E%E8%AF%B4%E5%A4%A7%E5%AE%9E%E8%AF%9D%EF%BC%8C%E5%B7%9D%E6%99%AE%E6%B0%94%E5%93%AD%E4%BA%86-HrDnC2mGtHk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200623第2448期-纳瓦罗瞎说大实话，川普气哭了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-23 00:04:08" itemprop="dateCreated datePublished" datetime="2020-06-23T00:04:08+09:00">2020-06-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 11:48:29" itemprop="dateModified" datetime="2020-07-08T11:48:29+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/23/20200623%E7%AC%AC2448%E6%9C%9F-%E7%BA%B3%E7%93%A6%E7%BD%97%E7%9E%8E%E8%AF%B4%E5%A4%A7%E5%AE%9E%E8%AF%9D%EF%BC%8C%E5%B7%9D%E6%99%AE%E6%B0%94%E5%93%AD%E4%BA%86-HrDnC2mGtHk/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/23/20200623第2448期-纳瓦罗瞎说大实话，川普气哭了-HrDnC2mGtHk/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的6月23号星期二，马罗瞎说大实话，快把串补气哭了。怎么回事？纳瓦罗星期一2020年的6月20号，在福克斯新闻的一个节目当中，福克斯新闻的主持人就问纳瓦罗，说川普总统希望维持与中国的第一阶段的贸易协议，对吧？这是肯定的，要确保中国能够履行它的承诺。 </p>
+<p>但是考虑到近期发生的一切以及，就是说你刚刚达瓦多刚刚这个就谈说中国怎么不好列举中国的所有的不是说以及你刚刚列出的所有的事项，是不是能够说明这一项协议已经终结了。那么纳瓦罗说对没错，他已经终结了，说跟中国的第一阶段贸易协议已经终结了，这个把大实话说出来。他说转折点是在中国代表团的1月15号在华盛顿签署协议离开后，美国才了解到中国客栈中国扩散的新冠病毒的情况，那么罗说当时他们已经将几十万人送到我们国家来的扩散的病毒，在他们的飞机起飞几分钟之后，我们才开始听到了这场疫情的消息。 </p>
+<p>当然纳瓦罗这篇言论一发表完之后，美国的股票期货市场整个就大跌了，对吧？中美第一阶段贸易协议等于崩溃了，结束了对吧？赶快川普他就气哭了啊，川普赶快在星期一星期一的晚上就发推说，与中国的贸易协议完好无损，我们希望他们可以继续实施协议的条款。瓦罗也知道自己闯祸了，我要赶快出来发表声明，他说他的评论被断章取义了，他只是想说中国在隐瞒病毒起源，并且向全世界强推了这个病毒，那么美国对中国共产党缺乏信心，他的言论说与尚在进行，就是说没有完结，一定要强调正在进行的第一阶段贸易协议毫无关系。 </p>
+<p>他所说的结束是指两国贸易协议在信任层面已经结束了，但是甭管怎么找没有用了，第一次说的是事实，后边我觉得再往回找本，知道自己找过了往回找本。事实是就是这么一个情况，实际上1月份但他没有签之前，我就已经说了，第所谓的第一届贸易协议根本就不存在，就是说大家一个缓兵之计，中国想到往后拖一拖，现在在大选之前不想跟美国完完全全的就是说干起来，对吧？ </p>
+<p>习近平同志现在也明白，就是说指望拜登打败川普可能性不大，这个之前我就说过一次了，后来当时我说回来以后跟你们说到底是为什么再卖个官回来咱们再回来咱们再说好不好？ </p>
+<p>这是下次我想这一定说就是说习近平其实也意识到办证性的可能性不大，现在串名的可能性比较大，但是最后还是要作为赌徒，赌徒心理最后还要试一下，所以他就是说跟美国往后拖一下，但是我也说了对吧？ </p>
+<p>第一阶段贸易协议肯定不会得按部就班地把它去实现，除非拜登就太糟糕了，完全不经打，完全被摁在地上暴揍，对不对？只要拜登有那么一点希望的话，中国中国共产党这方面肯定会配合他第一卷贸易协议，在川普连任之前肯定会出问题。 </p>
+<p>川普明白不明白，川普也明白，但是川普就觉得跟你签了协议，签了一年2000亿，他也没认为你2000亿都能成功，川普就想反正能筐挑着筐点，能骗点就骗点，对不对？你能买没有2000一买1000亿也好，没有1100买个五五百亿也好，对不对？能蒙点就蒙点，而且如果跟中国这么打下去，对股票期货市场肯定不好，对美国市场不好的话，会影响美国经济对大选也不利。所以对于川普来讲他是心知肚明，只不过反正就顺水推舟你过来了，你这样我也跟你就这样，咱们就这么来，基本上是这么个情况。 </p>
+<p>纳瓦罗就是说他很明白这一点是怎么回事，对吧？纳瓦罗纳很清楚这个协议早晚是要完蛋的。而且目前来讲，中方虽然一直说在遵守协议，但是遵守的非常不好，之前我们也说了，第一季度买的东西其实非常少，离着它当年承诺的就一点都不挨着，当年就是说承诺今年好像要买400多亿美元的农产品对吧？ </p>
+<p>2000亿左右的这种全部商品2000亿，比如农产品就400多亿，结果整个第一季度1~3个月最后就买了个几十个亿，按理说一个季度应该是100个亿左右，你一年才能够就是说400亿对吧？按照他第一季度的数来讲，这一年能买个100多亿不到200亿就ok了，这是不可能的。 </p>
+<p>但当然川普也明白，也知道贸易协议基本上就不存在了，但是就觉得反正他不还在买吗？对不对？出去打下不就彻底不买了吗？还有说主要是对金融市场的一种情绪上和心理上的一个安抚，为了选举考量，但是我还是那句话，贸易协议实际上名存实亡，不要说签了之后没签之前其实就不存在，就跟当年的中国去签 WTO的协议一样，签的时候就知道我肯定的是这个不会遵守的。 </p>
+<p>所以中国的企业家也是这样的，跟你谈来谈判的时候，他就很明白，就是说我不会遵守的，我就是摆明了来骗你的。你知道吧？这点来讲你要承认美国的企业家你说有没有片子，但是它本身来讲，其实是想把这事搞好，最后搞不好了那就变成骗子，没办法。但是中国不一样，中国一来就没想搞这事儿，就是来纯骗的。所以这也是从中国报从上到下，我觉得就有点这种情况，当然咱也别一竿子打死，我觉得反正中国反正现在骗子也是多一点，如果就是说按骗子的人数来讲，中国也算名列前茅，对不对？ </p>
+<p>当然有的人不同意的话，我觉得你没在大陆生活过，你只要在大陆生活过对不对？我跟你这么说，一周之内你没有接到过诈骗电话或诈骗短信的话，你就不是一个大陆人，你就不是一中国人，你就太糟糕了，你肯定是生活在最底层，那说明你可能连个智能手机都没有，他实在那骗子就觉得你实在太穷了，不知道我就是骗你一下，对不对？你稍微有点个人资产，你有个智能手机，我估计你就肯定都会接到过这种骗子的电话跟你说什么，我是什么拿拿破仑的多少？ </p>
+<p>100 100袋带酸，我们在法国藏了一个巨大的当中间那么大挫折的我爷爷的爷爷，在我得拿还是拿河南话说河南话。湖南话要换。会学吗？不会。怎么说，我爷爷的爷爷也是拿破仑，是不是？说喂我喝我我河南的姥爷是拿破仑，是吧？甭管怎么着就说说这意思对不对？所以你像这种骗子还是我觉得中国比较多，从人数上来讲对吧？当然每个国家都有，中国反正就多一点是吧？ </p>
+<p>好吧，反正瓦罗把大实话说出来了，我觉得他只是就中美贸易协议的结束，我觉得只是一个时间问题，也许现在还没有结束，大家都想抢救一下。但是说只能说死人放屁渐缓，但是不会改变最终的结果，好吧，这些就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/23/20200623%E7%AC%AC2447%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%BB%88%E4%BA%8E%E5%AF%B9%E8%83%A1%E9%94%A1%E8%BF%9B%E5%92%8C%E4%BB%96%E7%9A%84%E3%80%8A%E7%8E%AF%E7%90%83%E6%97%B6%E6%8A%A5%E3%80%8B%E5%8A%A8%E6%89%8B%E4%BA%86-xY0THR2t2PQ/" rel="prev" title="20200623第2447期-美国政府终于对胡锡进和他的《环球时报》动手了">
+      <i class="fa fa-chevron-left"></i> 20200623第2447期-美国政府终于对胡锡进和他的《环球时报》动手了
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/23/20200623%E7%AC%AC2449%E6%9C%9F-%E4%B8%AD%E5%8D%B0%E9%AB%98%E7%BA%A7%E5%B0%86%E9%A2%8611%E5%B0%8F%E6%97%B6%E4%BC%9A%E8%B0%88%E7%9A%84%E7%BB%93%E6%9E%9C-BC-d5Qx-xg4/" rel="next" title="20200623第2449期-中印高级将领11小时会谈的结果">
+      20200623第2449期-中印高级将领11小时会谈的结果 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">87</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/06/23/20200623%E7%AC%AC2448%E6%9C%9F-%E7%BA%B3%E7%93%A6%E7%BD%97%E7%9E%8E%E8%AF%B4%E5%A4%A7%E5%AE%9E%E8%AF%9D%EF%BC%8C%E5%B7%9D%E6%99%AE%E6%B0%94%E5%93%AD%E4%BA%86-HrDnC2mGtHk/";
+    this.page.identifier = "2020/06/23/20200623第2448期-纳瓦罗瞎说大实话，川普气哭了-HrDnC2mGtHk/";
+    this.page.title = "20200623第2448期-纳瓦罗瞎说大实话，川普气哭了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

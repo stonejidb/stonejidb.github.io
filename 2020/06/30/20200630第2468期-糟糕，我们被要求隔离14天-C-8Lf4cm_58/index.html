@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的6月30号，星期二我们被要求隔离了，大家也看到了我们已经回家了，回到纽约了，在加拉斯维加斯还算顺利，反正到最后一天把我们要做的事情解决了。我们在那边做的事情，因为我也没有在飞行员里说，我就不说了，那个我一会会录预期会员节目，具体说说我们这个事儿，最终反正到最后是29号的最后一天下午才把事情终于算是做完了，好吧，一会到会员里面我也做个报告就得了，等于说我们被要求隔离是这么回">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200630第2468期-糟糕，我们被要求隔离14天">
+<meta property="og:url" content="https://stonejidb.github.io/2020/06/30/20200630%E7%AC%AC2468%E6%9C%9F-%E7%B3%9F%E7%B3%95%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E8%A6%81%E6%B1%82%E9%9A%94%E7%A6%BB14%E5%A4%A9-C-8Lf4cm_58/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的6月30号，星期二我们被要求隔离了，大家也看到了我们已经回家了，回到纽约了，在加拉斯维加斯还算顺利，反正到最后一天把我们要做的事情解决了。我们在那边做的事情，因为我也没有在飞行员里说，我就不说了，那个我一会会录预期会员节目，具体说说我们这个事儿，最终反正到最后是29号的最后一天下午才把事情终于算是做完了，好吧，一会到会员里面我也做个报告就得了，等于说我们被要求隔离是这么回">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-29T15:06:08.000Z">
+<meta property="article:modified_time" content="2020-07-08T02:48:29.359Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/06/30/20200630%E7%AC%AC2468%E6%9C%9F-%E7%B3%9F%E7%B3%95%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E8%A6%81%E6%B1%82%E9%9A%94%E7%A6%BB14%E5%A4%A9-C-8Lf4cm_58/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200630第2468期-糟糕，我们被要求隔离14天 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/30/20200630%E7%AC%AC2468%E6%9C%9F-%E7%B3%9F%E7%B3%95%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E8%A6%81%E6%B1%82%E9%9A%94%E7%A6%BB14%E5%A4%A9-C-8Lf4cm_58/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200630第2468期-糟糕，我们被要求隔离14天
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-30 00:06:08" itemprop="dateCreated datePublished" datetime="2020-06-30T00:06:08+09:00">2020-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 11:48:29" itemprop="dateModified" datetime="2020-07-08T11:48:29+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/30/20200630%E7%AC%AC2468%E6%9C%9F-%E7%B3%9F%E7%B3%95%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E8%A6%81%E6%B1%82%E9%9A%94%E7%A6%BB14%E5%A4%A9-C-8Lf4cm_58/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/30/20200630第2468期-糟糕，我们被要求隔离14天-C-8Lf4cm_58/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的6月30号，星期二我们被要求隔离了，大家也看到了我们已经回家了，回到纽约了，在加拉斯维加斯还算顺利，反正到最后一天把我们要做的事情解决了。我们在那边做的事情，因为我也没有在飞行员里说，我就不说了，那个我一会会录预期会员节目，具体说说我们这个事儿，最终反正到最后是29号的最后一天下午才把事情终于算是做完了，好吧，一会到会员里面我也做个报告就得了，等于说我们被要求隔离是这么回事。 </p>
+<p>纽约州的州长好像是25号的时候签署了一个新的行政命令，要求所有来自高鑫冠感染率地州的游客都必须隔离14天，如果不遵守自我隔离，将会被罚款并被强制隔离。初犯者罚款2000，再犯罚款5000，如果造成伤害，最高可罚款1万美元。那么当时他在26月25号时说的时候是有了8个州，今天早上起来我得到了最新的消息，又在原先的8个州的基础上又加了8个州，现在一共有16个州，就是说你从这16个州回到纽约的话，都是要求你得必须隔离，14天，如果不隔离的话，刚刚已经说了要罚款。 </p>
+<p>好，这16个州都有哪16个州呢？阿拉巴马州、阿肯色州、亚利桑那州加州、佛罗里达州、佐治亚州、爱和华州、爱达河州、路易斯安那州、密西西比州、北卡罗纳纳、内华达、南卡罗拉大、田纳西、德州、犹他州非常高兴，我们今天晚上刚刚从内华达回到了纽约，按照6月25号州长签署的命令，我们应该自主隔离14天，那么入境的隔离令是从6月25号的12:01正式开始执行。也就是说6月25号凌晨开始正式执行，现在6月30号，那么应该直至宣布取消为止。 </p>
+<p>按照他的要求来讲，我们是6月30号返回纽约，从内华达返回纽约，今天早上我回来的，当天他宣布宣布内华达加上去，那么没有问题，我们在这里表态，我们绝对遵守咱们华人，我觉得华人在这方面做的还真是比较好，我这次出去我是不愿意戴口罩，但是只要是要求戴口罩的地方我都戴上，咱们绝对配合咱们华人这点是没有问题的，遵纪守法，遵守秩秩序没有问题，而且不需要别人来强迫我们怎么样，我们自己会自己监督自己。 </p>
+<p>我在这里向大家代表我老婆我们两个的表态，未来的14天现在是6月30号对不对？那么就算是从明天开始算，今天咱都不算了，对不对？咱从明天开始算好不好？ </p>
+<p>从7月1号开始算，明天7月1号一直到7月14号，我跟我老婆表态，一从7月1号到7月14号，我们就老老实实的坐在家里给大家录节目，这14天我们就不出去了，我们就再加上自主隔离。我刚刚看了一下，他自主剥离还这样比较人性化，他不是说你完全不能出去，他的就你要减少出去的非必要不要出去。如果你家里没有东西吃了，你去超市这个还才是允许的。 </p>
+<p>不过当然了中国也允许中国也是中国即使把小区封了，他也是每家每户每天能出一个人，然后去买一些生活必需品对吧？中国比美国管的严，但即使是中国的话，每家每户每一天你还是可以出去一趟的，对吧？纽约这块也是这样子，他也不是说你这14天一次那不就饿死了，对不对？他不能把你饿死对吧？就是说你要去超市，或者你有什么你要看病看医生，或者你有什么就是说你必须要出去的事情，你还是可以去的，他也不是他这不叫强势格局，他自主管理对不对？ </p>
+<p>但是非必要的时候就不要出去。我们两个肯定就是这样子，我们一定要遵守他的要求。我们明天当然肯定得去一次超市，因为这次走之前冰箱的东西基本上都清空了，冰箱里没什么吃的了。我们明天去趟超市买点生活必需品，是吧？然后基本上后面就没什么事了对吧？从明天买完生活必需品之后，从后天开始基本上大门不出二门不迈了，就在家待着。对。待14天。 </p>
+<p>然后由网友们来监督我们，自主隔离14天，争取这14天不能出门，为大家奉献更多精彩的节目。 </p>
+<p>我当时也有可能在家闲的难受就开始胡言论一个压得拉二网友的聊天，这两天由兔步还给我们发 EMAIL，说他们有一个新的一个平台，有一个新平台，说新平台可以干什么，因为现在做这个直播的话，就是说你现在做直播什么，你要对所有人直播，但是只有会员可以要求就只有会员能够评论，能说话，他现在说后面有新的平台之后说可以专门就给会员做直播，我回来我如果研究明白的话，反正在家呆14天也不能出去，我们拉着会员开始聊天，聊闲天不知道，不知道打打开了之后咱们再说打打开直播之前不知道要说什么，打开了之后看看大家问问题，然后我们回答，反正14天在家呆着，没有什么事可干，是不是？好吧？ </p>
+<p>未来的14天我们要坚决遵守库莫州长的要求，自己在家自主隔离14天，好吧？真想到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/30/20200630%E7%AC%AC2467%E6%9C%9F-%E4%B8%89%E5%B3%A1%E5%AE%98%E5%AE%A3%E6%B3%84%E6%B4%AA-yl0yappDZTw/" rel="prev" title="20200630第2467期-三峡官宣泄洪">
+      <i class="fa fa-chevron-left"></i> 20200630第2467期-三峡官宣泄洪
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/01/20200701%E7%AC%AC2470%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%98%AF%E6%96%AF%E5%A4%A7%E6%9E%97%E7%9A%84%E7%BB%A7%E6%89%BF%E8%80%85%EF%BC%8C%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8%E4%BA%8B%E5%8A%A1%E9%A1%BE%E9%97%AE%E5%A5%A5%E5%B8%83%E8%8E%B1%E6%81%A9%E5%85%B3%E4%BA%8E%E4%B8%AD%E5%9B%BD%E7%9A%84%E8%AE%B2%E8%AF%9D-k7siAu3NOfw/" rel="next" title="20200701第2470期-习近平是斯大林的继承者，美国国家安全事务顾问奥布莱恩关于中国的讲话">
+      20200701第2470期-习近平是斯大林的继承者，美国国家安全事务顾问奥布莱恩关于中国的讲话 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">87</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/06/30/20200630%E7%AC%AC2468%E6%9C%9F-%E7%B3%9F%E7%B3%95%EF%BC%8C%E6%88%91%E4%BB%AC%E8%A2%AB%E8%A6%81%E6%B1%82%E9%9A%94%E7%A6%BB14%E5%A4%A9-C-8Lf4cm_58/";
+    this.page.identifier = "2020/06/30/20200630第2468期-糟糕，我们被要求隔离14天-C-8Lf4cm_58/";
+    this.page.title = "20200630第2468期-糟糕，我们被要求隔离14天";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
