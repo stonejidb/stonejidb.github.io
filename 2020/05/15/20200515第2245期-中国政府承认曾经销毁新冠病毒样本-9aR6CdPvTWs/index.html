@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月15号星期五，中国政府今天正式承认了曾经销毁了新官病毒样本，怎么回事是美国国务卿彭培奥他一直指控说中国卫建委1月3日下令销毁病毒样本，病拒绝分享的病毒毒株。关于这个事就婆婆一直说，说中国你看你们把病毒样本都都销毁了。中国被建委5月15号今天进行了回应，中国国家卫健委科教司监察专员刘登峰在国务院新闻办公室举行的新闻发布会上表示，他说在新冠病毒爆发出袭，说的确确下令了未经">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200515第2245期-中国政府承认曾经销毁新冠病毒样本">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月15号星期五，中国政府今天正式承认了曾经销毁了新官病毒样本，怎么回事是美国国务卿彭培奥他一直指控说中国卫建委1月3日下令销毁病毒样本，病拒绝分享的病毒毒株。关于这个事就婆婆一直说，说中国你看你们把病毒样本都都销毁了。中国被建委5月15号今天进行了回应，中国国家卫健委科教司监察专员刘登峰在国务院新闻办公室举行的新闻发布会上表示，他说在新冠病毒爆发出袭，说的确确下令了未经">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-14T15:04:05.000Z">
+<meta property="article:modified_time" content="2020-07-08T08:17:07.678Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200515第2245期-中国政府承认曾经销毁新冠病毒样本 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200515第2245期-中国政府承认曾经销毁新冠病毒样本
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 00:04:05" itemprop="dateCreated datePublished" datetime="2020-05-15T00:04:05+09:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/15/20200515第2245期-中国政府承认曾经销毁新冠病毒样本-9aR6CdPvTWs/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月15号星期五，中国政府今天正式承认了曾经销毁了新官病毒样本，怎么回事是美国国务卿彭培奥他一直指控说中国卫建委1月3日下令销毁病毒样本，病拒绝分享的病毒毒株。关于这个事就婆婆一直说，说中国你看你们把病毒样本都都销毁了。中国被建委5月15号今天进行了回应，中国国家卫健委科教司监察专员刘登峰在国务院新闻办公室举行的新闻发布会上表示，他说在新冠病毒爆发出袭，说的确确下令了未经授权的实验室销毁样本，他给的理由是这样，他说这样做是出于生物安全的原因，是为了防止不明病原体引发的次生灾害。 </p>
+<p>他说我国法律法规对高致病性病原微生物样本的保存，销毁实验活动等都有比较明确的要求，对于实验室条件达不到生物安全样本保存条件的，那么就应该就地销毁或移交专业的保障机构保管，这都有明确规定，同时也是法律法规对实验室生物安全监管部门提出的工作要求。关于现在就众说纷纭，有人说还好了，中国终于承认了，中国就是干了这个事，但是他这个理由我觉得其实完全是说得过去的，你也不能说那理由不对，对不对？ </p>
+<p>他说但是据我们所知，实际上即使连武汉的一些就是p三级别的实验室，他也要求销毁，对于新的名单，现在这件事情实际上是可以的。 </p>
+<p>但他现在他就说出去说他不可以，你没办法，这种东西是这样一个愿打一个愿挨，你知道吗？比如说警察来了说你们打老婆，我老婆让我打的，你们你不跟我老婆老说我要打那就完了，对不对？这里面就没办法你知道吗？这东西就是说比如说美国说的你们消费更多的，他不够资格，他p三实际上是他不够资格，我不够资格，你有辙吗？你拿了没明这东西你知道吗？他们配合好了，他就这么说，你这么着你点都没有，你知道吧？ </p>
+<p>中国特色反正我觉得现在就是这样子，这个事看来是没有办法耍无赖了，因为1月3号下令的，当时的红头文件出来了，当时我们也看到过我们也报道过对不对？我记得参考艾芬是艾芬也报道过这个事对吧？这个东西看来就是说想说我们曾经没有下令去销毁已经不行了，我们中国人就聪明了，我们换一种说法，我们下令销毁是让那些没有资质的实验室销毁，有资质的实验室就不用销毁了，还可以保留对不对？ </p>
+<p>你这个怎么说？反正这个就掐，现在有的人就觉得中国这下完蛋了，一承认就完了，被美国抓住把柄了。但是你要说他这个理由，你也很难说，就是说你就能拿死作为就是说罪证来证明他，对吧？ </p>
+<p>反正现在就是说我说耍无赖这个词不太好，但是的确是不过当然了我经常说这个病来讲发展到现在，我们必须得承认大家在最初的时候对这个病都掉以轻心了，实际上不光是中国在早期的时候，的确在12月份实际上就已经发现了，但是钓鱼厅现在没有把它当回事，把它当SARS了，你知道吗？ </p>
+<p>然后等到了1月份发现不对的时候再下手就玩完了，耽误了这么一个多月，但是你说中国是耽误了一个多月，你美国你英国的你意大利你法国你们不也都耽误了一个多月对不对？日本其实也耽误了一个多月，对不对？俄罗斯对不对？印度大家都耽误了，在早期的是谁，也没意识到这个病怎么会搞得这么厉害，对吧？ </p>
+<p>所以看其实我对这个我一直都觉得中国有它的有他的问题，他第一整个体制是有问题的，你知道吗？但是你说你把这问题全程百%就给他了，也不合适，但是我觉得60%我觉得中国应该占60%，的确是有百百百这样，我说60%很多人不高兴，咱说一半付有一半的责任，我觉得还是没有问题的，对吧？你最起码你12月30号是你要是不乐见李文亮的，你要是不把那8个人训诫他们8个人，你要认认真真去对待它，你要是12月30号就承认这个是一个冠状病毒，它可以穿上，因为你关照病都救，他肯定传染，比如说早早的你不就医护人员也都传染了，对不对？ </p>
+<p>爱芬他们到二二十几号时不仅有护士被传染了，对不对？你那时就承认了，你要早早承认的。昨天说谁钟南山的评估报告不也说你只要提前5天就能减少1/3，对不对？你要是别从12月30号一直拖到1月23号，你稍微早一点的对不对？反正当然了你要这么说的话，美国要稍微早点也不会闹成这样，对不对？所以我也经常说咱们尽量站中间对吧？都有责任，我觉得各打50大板，好吧？ </p>
+<p>但是我要说一点，中国的体制不改革的话，这个绝对不会是最后一次。你相信我03年有SARS，19年有新冠，然后十几年或20年之后，中国还会出其他东西的，绝对不会有问题的。而且这一次很多人说又是他们家吃，真不是。现在来讲各方面的证据表明，咱不说是不是武汉病毒实验室，但是最起码武汉的华南海鲜市场不是发源地，当初骂我的网友说的是对的，你别看他骂我，后来我把他屏蔽了，我们家闹得不太愉快。 </p>
+<p>当时我现在回想起来，我们俩当时闹的不愉快是什么，我们两个都有问题。我12月30号我说武汉爆发了萨斯这种冠状病毒，这种非典型肺炎的这种病毒导致你的出现这个病，然后我们当时得到的消息是武汉的华南海鲜市场在爆发的，这个人他骂我，他说不可能你胡说八道，他认为两件事不可能，第一个武汉没有爆发，如果爆发他作为一个武汉人他肯定知道。 </p>
+<p>第二湖南海鲜华南的海鲜市场，他说我住在那儿也就一公里的距离，他那还要是卖蝙蝠什么乱七八糟东西，我肯定知道，我们经常去买东西去，那会没有你说的那种乱七八糟的东西。 </p>
+<p>现在发现我们两个各错了一半，当他说话不好听我的频率了，我们俩各错了一半，就是说武汉的确发生了非典型性肺炎，我想他现在应该不会再跟我争论了，但是他说的是对的，华南海鲜市场那块没有卖，他们输的那些乱七八糟的东西，还不是发源地。发现地是哪儿？我们暂且先不说，但是那里不是发源地，你如果不是发源地的话，我觉得这一次的疫情跟中国政府在某一些地方，就是说不专业，不敬业是有很大关系的。武汉的批次实验室在建的时候，很多的法国的情报机构都认为不应该把这种级别的实验室见到中国，甚至他们都认为就是说生物等级三的实验室，这种p三实验室在中国都不应该有，因为中国的体制缺乏监督，缺乏管理，还是我那句话，你们家门口一个二傻子国际脸的小十几岁小小孩子，他是不配拿一把AK47在手里端着的，像这种枪或者是什么1215这种突击步枪，如果是一个训练有素的特警或者武警拿着是可以的，他让人放心。 </p>
+<p>一个不成熟的亲爱的一一一青春期的小孩子，小盲孩子天天端着把突击步枪，你知道吗？早晚会伤害到别人的。而中国的政府就是不负责任的一种，我经常说就是说那种幼稚的不成熟的一个青春期式的政府，这样子的政府不适合拥有高等级的生物实验室，也不适合拥有像核武器、化学武器这种大面积杀伤性的武器。这种政府甚至不适于大的跨国企业的生存。 </p>
+<p>中国很难发展成像什么苹果三星，这种企业很难，一旦有了之后就会有各种的问题。 </p>
+<p>华为中兴都遇到这些问题，因为政府幼稚不成熟，它必须要你的企业中国的情报法我就不再重复了，目前备过很多次，中国刑法一第一条，要求海中国的企业和个人随时在海外或者在中国向中国政府提供对于国家有利的这种情报，对吧？你这么不成熟的法律法规出台之后，你自己去想你的企业怎么发展，他没有办法发展。所以说实话，不成熟的政府一定还会出问题。 </p>
+<p>你以为今天你门口二傻子拿着突击步枪不小心打了一只兔子，你觉得这个不太好，或者把隔壁邻居家的狗打死了，对不对？你们说说他爸爸赔点钱就完了，你这突击步枪你不从他手里拿走，你相信我明天还不定打着谁，所以要么你就让他成熟起来，我觉得就是什么周处除三害，最后让他去参军去入伍，让他去对吧？到军校去学习学习，让他成熟起来，然后把中国的的不成熟的政府变成了一个成熟的政府，要不然的话，我跟你说，你最后你看着肯定不定谁倒霉。 </p>
+<p>我经常说从49年以后你会发现在中国没有认识安全的，知道吧？老毛又怎么样？老毛死了，他老婆就他老婆最后是在监狱里自杀了，江青是自杀的。他的女儿娜娜，李娜日子过得也不好，刘少奇的女儿也是自杀的，对不对？连习近平他的我记得她姐姐还是她妹妹也是文革当中也是莫名其妙就死了，这个都说不清道不明怎么死的，都受到什么样的迫害？邓小平的儿子邓普方在伦敦是受到什么样的迫害？对吧？所以中国这样子的一个体制之下就是一个矫正基因，任何人在里面都会受到伤害的，只不过就是说今天轮到你了，或者没有轮到你而已。 </p>
+<p>好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/15/20200515%E7%AC%AC2244%E6%9C%9F-CDC%E5%90%91%E5%85%A8%E7%BE%8E%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A%EF%BC%9A%E5%B0%8F%E5%84%BF%E8%87%B4%E5%91%BD%E7%96%BE%E7%97%85%E6%8D%AE%E4%BF%A1%E4%B8%8E%E6%96%B0%E5%86%A0%E6%9C%89%E5%85%B3--qgm-mpthrU/" rel="prev" title="20200515第2244期-CDC向全美发出警告：小儿致命疾病据信与新冠有关">
+      <i class="fa fa-chevron-left"></i> 20200515第2244期-CDC向全美发出警告：小儿致命疾病据信与新冠有关
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/15/20200515%E7%AC%AC2246%E6%9C%9F-%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E4%E5%8E%BF%E5%9F%8E%E6%80%BB%E8%AD%A6%E9%95%BF%E9%80%A0%E5%8F%8D%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%89%A7%E8%A1%8C%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E%E5%B7%9E%E9%95%BF%E7%9A%84%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4-PMm6qUW3auc/" rel="next" title="20200515第2246期-密歇根州4县城总警长造反，不再执行密歇根州州长的行政命令">
+      20200515第2246期-密歇根州4县城总警长造反，不再执行密歇根州州长的行政命令 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">266</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/";
+    this.page.identifier = "2020/05/15/20200515第2245期-中国政府承认曾经销毁新冠病毒样本-9aR6CdPvTWs/";
+    this.page.title = "20200515第2245期-中国政府承认曾经销毁新冠病毒样本";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

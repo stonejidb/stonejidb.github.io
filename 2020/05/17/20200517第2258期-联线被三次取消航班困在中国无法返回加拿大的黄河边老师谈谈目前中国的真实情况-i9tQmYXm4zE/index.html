@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月17号星期日，特别高兴今天咱又跟黄华兵老师又一块连线，咱们聊聊天。咱上一次连线差不多应该是4月初是吧？您还有印象吗？当时您刚刚会从加拿大赶回中国，然后处理家里的一些情况？当时我们还说由于一回去就被愣给隔离的，影响您的当时的生活对吧？好像好多事都处理不了。但是后来您这个事好像也是处理完了，处理完之后现在想要回到了加拿大，但是据我知道您是已经被三次取消了航班，这说明了现在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/17/20200517%E7%AC%AC2258%E6%9C%9F-%E8%81%94%E7%BA%BF%E8%A2%AB%E4%B8%89%E6%AC%A1%E5%8F%96%E6%B6%88%E8%88%AA%E7%8F%AD%E5%9B%B0%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%B3%95%E8%BF%94%E5%9B%9E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E9%BB%84%E6%B2%B3%E8%BE%B9%E8%80%81%E5%B8%88%E8%B0%88%E8%B0%88%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%9B%BD%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%83%85%E5%86%B5-i9tQmYXm4zE/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月17号星期日，特别高兴今天咱又跟黄华兵老师又一块连线，咱们聊聊天。咱上一次连线差不多应该是4月初是吧？您还有印象吗？当时您刚刚会从加拿大赶回中国，然后处理家里的一些情况？当时我们还说由于一回去就被愣给隔离的，影响您的当时的生活对吧？好像好多事都处理不了。但是后来您这个事好像也是处理完了，处理完之后现在想要回到了加拿大，但是据我知道您是已经被三次取消了航班，这说明了现在">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-16T15:05:08.000Z">
+<meta property="article:modified_time" content="2020-07-08T08:17:07.736Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/17/20200517%E7%AC%AC2258%E6%9C%9F-%E8%81%94%E7%BA%BF%E8%A2%AB%E4%B8%89%E6%AC%A1%E5%8F%96%E6%B6%88%E8%88%AA%E7%8F%AD%E5%9B%B0%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%B3%95%E8%BF%94%E5%9B%9E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E9%BB%84%E6%B2%B3%E8%BE%B9%E8%80%81%E5%B8%88%E8%B0%88%E8%B0%88%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%9B%BD%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%83%85%E5%86%B5-i9tQmYXm4zE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/17/20200517%E7%AC%AC2258%E6%9C%9F-%E8%81%94%E7%BA%BF%E8%A2%AB%E4%B8%89%E6%AC%A1%E5%8F%96%E6%B6%88%E8%88%AA%E7%8F%AD%E5%9B%B0%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%B3%95%E8%BF%94%E5%9B%9E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E9%BB%84%E6%B2%B3%E8%BE%B9%E8%80%81%E5%B8%88%E8%B0%88%E8%B0%88%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%9B%BD%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%83%85%E5%86%B5-i9tQmYXm4zE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-17 00:05:08" itemprop="dateCreated datePublished" datetime="2020-05-17T00:05:08+09:00">2020-05-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/17/20200517%E7%AC%AC2258%E6%9C%9F-%E8%81%94%E7%BA%BF%E8%A2%AB%E4%B8%89%E6%AC%A1%E5%8F%96%E6%B6%88%E8%88%AA%E7%8F%AD%E5%9B%B0%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%B3%95%E8%BF%94%E5%9B%9E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E9%BB%84%E6%B2%B3%E8%BE%B9%E8%80%81%E5%B8%88%E8%B0%88%E8%B0%88%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%9B%BD%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%83%85%E5%86%B5-i9tQmYXm4zE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/17/20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况-i9tQmYXm4zE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月17号星期日，特别高兴今天咱又跟黄华兵老师又一块连线，咱们聊聊天。咱上一次连线差不多应该是4月初是吧？您还有印象吗？当时您刚刚会从加拿大赶回中国，然后处理家里的一些情况？当时我们还说由于一回去就被愣给隔离的，影响您的当时的生活对吧？好像好多事都处理不了。但是后来您这个事好像也是处理完了，处理完之后现在想要回到了加拿大，但是据我知道您是已经被三次取消了航班，这说明了现在北美和中国之间交流是非常的不顺利的。 </p>
+<p>所以今天连线黄老师给我们讲讲真实情况，因为什么？我现在有一些同学也面临这个问题，有的是想回去，我还有一个朋友，他也是在美国读读博，他老婆好像过年前后回去了，回去之后后来反正就出了疫情，然后一直就没回来，到现在也还没回来，我这个朋友美国还在读博，又也他不想回去，不想把这学业中单，因为现在很多人也担心这个情况，就是说在北美留学，如果回去中国的话，有什么事再回来不好说，有可能学业暂时可能就要休学一年或者怎么样，好像学业就中断了。 </p>
+<p>然后有的人是回不来，有的人反正各种情况您给介绍谈谈，从您的情况，咱们看看真实现在情况是什么。好吧？好的，谢谢石头。 </p>
+<p>我是3月31号的返程的机票，那么在这个没有任何通知的情况下面，我们是从报纸上看到说是全日空的航班以及其他外国一些航空公司和中国之间的航线被取消了。后来我们就发现我们订的机票，返程的票非但没有退钱，而且被取消，也没有办法改天，那么我们又重新买了一张票，因为它航班的取消是月一个月取消的，因此我就改到了5月3号，到了4月15号的时候就收到通知，说5月份的航线又取消了，要改到6月，我就改到了6月1号头搬飞机走。 </p>
+<p>那么我还是有一些忐忑，就说我说万一6月1号也走不了，那就黄老师。黄老师我不好意思，我在这问您一个问题，您说他是月整个月的取消，也就是说要一取消的话，就是说比如说4月份取消，整个4月份就没有了。没错，是所有的都没有了，还是说有一些但是机票特别的贵，还是说就是说不论你花多少钱都绝对走不了？基本上和跟外国的航线都取消了。我是定的全日空，有的人定的加行，有的丁的美联航，这也都是取消的。现在中国保留的就是去温哥华的，主要是有两班，一个就是航东方航空，还有一个是厦门航空。 </p>
+<p>那么这个都是每周就是往返一次，所以现在的航线应该说是非常的少，我现在所知只有比如说中国国家的一些航空公司，还有少量的台湾的航空公司，像跟长隆什么等等，有一些飞机转机前往温哥华，那么飞机票确实是一票难求，而且价格也是非常的昂贵。那么我到6月1号的时候被通知，没有办法启程，这一下子就紧张了，因为这意味着也许7月1号也走不了。后来我们了解到确实是这个情况，现在机票订票的一些公司已经是完全已经没有信心了，他们已经取消了几乎所有的除了东航和厦门航空的所有其他国外的航空公司的一种订票的业务了。 </p>
+<p>也就是说是因为已经是几次改，可能也是让航空公司机票订票公司是疲于应付，所以现在订不到票，要订票也可以。那就是要到他们的官网上面，比如说台湾的一些航空公司，官网上去订，但是定也有一个问题，如果是转机的话也有问题，你比如说香港也是有航空公司飞往温哥华的，但从深圳到香港也是要14天隔离的，只有在14天隔离的情况有所改变的情况，下面才有可能通过其他的地方返回温哥华，大致是这样的一个情况，你如果要现在要订票的话，大致是在2万块钱人民币上下，甚至更多一些。 </p>
+<p>好，黄老师您的意思就是说我想知道是什么，说假如就是说真的愿意拿出来两两三万买这张机票的话，能不能回得去？还是说即使拿个两三万就可以？可以的。等于不是说没，就是说它取消的应该是那些就是说票价比较低的。是这样，我们因为是买票买的比较早了，所以这个票价相对就低一些。现在从中国大陆前往北美的飞机，应该说乘客不是特别的多，票价还相对便宜一些。如果要是从北美前往中国大陆机票，应该是在2万的基础上再翻一倍，大致是这么一个情况，据我所知是这样。 </p>
+<p>好，有没有一种可能性就是说您机票由于订的比较早，它航班其实没有取消，只不过它可能觉得就是说让你做他可能不合适了，让他高价把原先本来您订的票给订给别人了，有没有这种可能性？我们在5月份转到6月份的时候没有出现这样的情况，但是从6月份转到7月份的时候，他们说差价要补，那么这样一下子我就发现确实他们不想他不想用原来的机票价钱来承运原来的客户了，他们希望用高价的票来善后。所以我现在想我也不要原来的机票了，我准备重新购买机票回来，否则的话也不知道何年马月才能返回，好吧，您这样等于您估计最后票价要多少？ </p>
+<p>现在从厦门航空飞往温哥华的飞机，8000~12,000之间，在有些时段是可以买到的。好吧？好，您看看就是说中国目前的情况，您觉得能不能给我们介绍一下？而目前中国的整体的情况好像生活在逐渐的恢复正常，我基本上是经历了中国疫情从开始到爆发，然后逐渐的各种管控非常严格的，几乎是它的全过程。而且是因为我是1月6号的时候就回来过一次，然后2月初返回之后3月份再回来，所以我又经历了他的所谓的第一批的被隔离，然后也测过核酸，然后也去招过胸部等等。 </p>
+<p>那么我看整体的情况现在慢慢的在改善中，而且现在虽然在中国的东北地区以及武汉有所状况有所抬头，但是就我们江苏而言，整体的情况还算是可以，我也去过云南，云南我看那些少数民族地区其实好像冠状性肺炎的情况也不是特别的好像严重，我觉得状况似乎正在逐渐的得到缓和，是这样子。好，我看到了您采访了您当地一个卖报的一位也算老奶奶了，她年纪也很大了，我我觉得它其实代表了很大一部分中国人，而且当然我觉得在大陆人当中，他算是这个消息比较比较多的，因为他可能卖爆，他经常看这个报纸，他其实还是很懂，我看您跟他谈起来之后也它连连王立强这个事件他都知道是吧？当然了，但他很明显的他是搞混了，他把郭文贵和王立强混成了一个人了，对吧？他是搞火的非常明显，但是它就是说能够对贵和王立强都能够有所了解的话，在大陆来讲，我觉得都算是这个消息算是比较灵通的人士了，因为你要是绝大多数人都不知道我跟我的大学同学聊天，我大学同学连谁是李泽华，谁是陈秋实方便，这都没听说过这人不知道这人是谁，你知道吗？ </p>
+<p>所以但是说实话老太太他整个的思路就完完全全是大陆的那一套思路，他在大陆那种语境之下，他们有他们的说要我们北方人讲，这是他们劳他们那一套磕，就他们唠嗑的方式跟我们海外好像完全不一样，但是又是非常的真实，所以我想一会我也想把您就是说采访他的视频的链接可能搁在我视频下方，感兴趣的观众也可以看一下的话可以知道一下，就是说大陆现在民众我觉得他代表了可以说85%的大陆民众的这种非常朴素的这种观点。 </p>
+<p>那么当然谈到了很多这一次疫情的问题，实际上我相信在大陆你采访10个人可能有7个或8个都是这种观点的对吧？ </p>
+<p>我们海外我们是不以为然，我们觉得他们是被洗脑了或怎么样，但是一旦他们的人数达到了一定程度了之后，对于他来讲那就跟事实是一样的，对吧？你没办法，而且在他的语境之下，你在他的那种地方你根本没办法给他给他说明白，是吧？ </p>
+<p>但是说实话看他的生活的境况，我心里也挺难受的，觉得他的境况其实不算是很好，年纪很大了，在一个报摊里的卖报，卖一些的书刊报纸什么的，其实销售也不好，现在年轻人其实真的花钱去买报纸，买书刊看的很少了，绝大多数你像我们我都多少年没有碰过书，没有碰过纸了，我们现在看什么东西都是iPad或者电脑上再看对吧？都是用电子产品看，实际上用纸质的产品非常的少对吧？ </p>
+<p>他的生活实际上我们某种程度上我觉得这压力挺大的，而且他好像说也就是3000块钱左右人民币的收入，是在中国目前的物价水平来讲，其实生活是非常的底层了可以说，而且他说他好像他的由于这次疫情，他孩子的工作也受到了影响，是吧？然后还有他还要支他这点钱，他还要支持他的孩子一下。所以怎么说我觉得哀其不幸，怒其不争，您说这话用在这有点重吗？好像也还可以。 </p>
+<p>谢首先要谢谢石头，在那么忙的情况下面，还经常的关心我的这个节目，首先表示感谢。我采访冯阿姨，这是第二次了。 </p>
+<p>他是我在我老家所建构的一个退休的纺织女工，对于国际国内的事情这么了解的，很少的这么一个人，他甚至还知道郭文贵尽管郭文贵有一点混淆，但是这已经是很不容易了。那么让我更加惊叹的是，他其实是在中国生活在长期生活在底层，他的孩子也生活在中国的底层，但是它都是用用他的话讲，千方百计的替政府等于寻找很多目前存在问题的一个原因，并且他其实的叫什么售报亭每月都是亏损的。后来我发现他进货差不多四十几块钱的报刊，它其实有一半的报纸是没有卖出去的，等于每月都是亏损。 </p>
+<p>他利用他的报亭，其实当我们的政府在做思想工作，后来我另外在没有录音的时候，他告诉我有一些人对现在的贫富不均，官僚腐败都有各种各样的意见，有些甚至是机关事业单位退休的人，因为他们自己的孙子或者儿子，现在就学或者是职业有些什么困难，然后就迁怒于政府，他还帮着政府做思想工作。所以这样的人其实是没有拿政府一分钱的。 </p>
+<p>他是70多岁经历了整个的文革，也间接的了解中国60年代初期的大饥荒，但为什么他今天是如此的这么一个应该说就是你刚才说的怒其不争哀其不幸的这么一个状况，而且这种状况我相信是代表了差不多今天中国社会80%的底层的民众，我在云南我访问过，你比如说彝族、纳西族、普米族、壮族，还有遗嘱，这些不同民族的那些老百姓，其实他们也是生活在那种我们说的非常灰蓝领的这么一个状况，有些条件是非常的恶劣的，但对于中国这一次抗击疫情，可以说几乎所有的人他们都告诉我说，今天中国的这种强有力的管控能力，让中国很快走出了这种疫情的这种困扰。 </p>
+<p>而反观今天的美国，反观今天的西方社会，可以说是完全到了混乱不堪的这种程度。因此他们对于这种制度自信，应该说这次疫情是起到了一个催化剂的作用，这让我确实这个也感到非常的有兴趣，进行了观察，无论是卖菜的那些大姐，还是理发店的普通的小业主，他们都对现状表示满意。所以这个是我以往在回来的时候没有碰到的，大家都没有怨言，愿意配合政府对中国的抗议情表示高度的肯定。他们在这种肯定的同时，又对西方世界的目前的状况，他们有一种幸灾乐祸的这么这个心情，所以这些是今天当下中国社会的非常真实的一个写照。 </p>
+<p>好，宏老师我们也差不多，前一两个月也连线了一个加拿大的一位华人，对跟您一样，您也是加拿大，他也是个他住在温哥华，您也是在温哥华，然后他跟我说他的很多的朋友就是说到了什么程度，就是说这一次疫情之后就不想在中国呆了，以至于真的要到就是说把房子卖了，然后而且跟我们年纪差不多，他好像比我小一岁，我38~37。你想我们这个年纪如果要移民的话，真的是就是说携家带口撇家舍业可以这么说，就是说一定要走，我觉得这一次疫情在中国来讲，我觉得应该说发生了一个撕裂，有一部分人对政府对社会完完全全失去了信心，就是说我甚至他讲话有的可能是一些医生是一些律师都要移民走了，那一名医生律师这种移民出来的话，其实是很艰难的，这种职业出来之后，基本上你很难再重新从事职业，因为北美的话移民过来这种东西就要整个从学的，然后家里房子也卖了，然后小孩子也还可能就是说小学或初中是吧？ </p>
+<p>还有一部分人我觉得反而形成了什么之后，我觉得对于尤其像您采访的卖报的老太太一样，对于他们来讲，我觉得某种程度上这一次是有史以来中国人这种优越感，这种自豪性最强的近几十年所没有的，以前总是觉得谁移民了，谁去国外的，好像是有一种这种羡慕嫉妒恨，现在就觉得好像谁移民的去国外了，是一个嘲笑的，对。 </p>
+<p>微笑就觉得你后悔不后悔，要跟你聊天，就说你看你移民了，这个是不是特别后悔，现在特别想回来回，完全是这么一种态度的。所以我跟我老婆那天聊天，就看完您采访他之后，我老婆聊天还说我就是说你说不清楚，就说你看他的生活就从我们来看，他的这种生活条件实际上是很可怜的，某种程度上来说，但是他的这种可怜，他目前的现状你说不清楚，到底社会是政府造成的，还是他自己造成的？现在我发现最大的一个问题，就是一种信息的这种不对称，以及他们所汲取的信息管道的单一。 </p>
+<p>那么我现在来中国两个多月，这是我有史就出国之后，在中国时间呆的最长的时候，我其实已经慢慢的习惯于早晨看参考消息，晚上听或者就看一下中央电视台的新闻联播，然后中间时间我刷刷叫今日头条，这样的生活，如果持续再长一点的话，你就自然不自然的会被这种舆论的风向的带着走。因为我仔细看了参考消息，他这个里面的报道也都是有根有据的，但是他在还原是传播给他的读者的时候，它确实做了比较精细的选择，那么这样一下子，如果你在这种舆论环境里面长期生存的话，是很难没有像冯阿姨那样的一种思想的这种脉络的。 </p>
+<p>那么冯阿姨我没有在直播的时候跟他多谈什么，我在晚上跟他聊天的时候，我也谈到了他一些观点，我的一些看法，因为他老是说我没有什么意见，其实后来我跟他谈了之后，它确实有很多他不了解的地方，他说他万万没有想到西方社会居然给每一个的居民有一定的补贴，他说他是从来没有读到报纸上面，而且它对于这种西方社会的选举制度它是完全陌生的，他甚至认为这是不必要的。后来我就解释了一下，我自己拖家带口，举目无亲，来到了异国他乡之后，自己十六七年的这种生活历程，对他来说我想还是有一定感触的。 </p>
+<p>我觉得很多的事情主要是我们除了社会舆论环境的这种封闭之外，最重要的一点就是他们接收的这些讯息的这种单一，并且认为这种单一的讯息是正确的。那么这样一下子就导致了他们会产生今天像冯阿姨，甚至是相当多的人都有冯阿姨的这种想法的人存在，我接触的亲戚朋友、同学以前的什么发小，几乎在冯阿姨的大致的思想脉络上面，其实他们都是有共同点的。 </p>
+<p>也就是刚才您说的，我真的是没有想到今天的海外华人，当他回到自己的家乡的时候，这一次是最狼狈的一次，几乎是带着一种因为我要说歧视的话，很多很多人又要来喷我了，因为上次接受您采访之后，好多人对我痛批同时也批了你了。那么这其实是一个非常真实的，你不信你回来试试看。今天刚听说你是从美国回来的，从加拿大回来的，本来口罩是放在下巴上面，它会突然往上一抬，就等于把自己风马上要去找护目镜了，他就觉得你是回来投毒的，有这么一个感觉，是这样子的。 </p>
+<p>所以我觉得对我们这些海外华人华侨是不是有一定的，我认为这次是带有一定的偏见。那么有人不不怎么看，但是我自己虽然他们没有说出来，但是民间的这些普通的百姓，其实是可以说是我第一次感受到一个海外华人真是在现在的中国大陆，在现在这样的情况下面还真的是有一点狼狈，确实是这么一个情况。 </p>
+<p>好的好老师，我觉得这个挺好，我觉得咱们聊聊，我知道很多人看了咱们这些节目，估计又得说咱俩是一个大外宣，但是我觉得咱们海外海外就是说所谓的您的以前的这些老战友老民，有可以这么说，你还是认识比较多老年人，我觉得一些老老年人我觉得有点跟这个时代有点脱节，基本上我觉得有点生活在自己的那种就是说你看冯阿姨他可能也是生活在自己的那种语境里边，我觉得一些国外的老民运的也基本上生活在自己的这种的语境当中，完全说是是脱是脱节脱钩的，给人感觉一个天上一个地下，所以我觉得其实我真的鼓励大家都可以去看看您采访的方阿姨，我觉得这样你才能真正的去了解中国目前老百姓的一个大多数老百姓的一个真实的想法，这样有助于我们在海外的时候，当我们谈这些问题的时候，就是说不不至于说以前我记得18年有个当时网上特别火，有一个叫什么一个大舌头，咱也不知道他最后是干什么的，反正他录那个视频也是音频，他没有录脸，他当时就说所谓的这些海外民运，其实还有您有时候还觉得自己很重要，总觉得老公都是花重金拍了什么特务，24小时坚持我要把我抓怎么着，觉得自己很重要，实际上就你听了大舌头地，你会发现在老公眼里这帮人算个屁，你知道吗？ </p>
+<p>就觉得这帮人的上不明天一下不接地气，根本就完完全全的跟中国的普通老百姓已经脱钩脱节了，没有办法沟通，是吧？所以当然了我知道这么说，你想这么说能不能不被骂，你看那肯定得被骂对不对？他不能不被骂对吧？ </p>
+<p>但是我觉得就是说川普竞选的时候就说我们如果不能面对问题的话，我们怎么解决问题？对吧？我们在海外我们这些人不管我们来说什么，实际上我们是希望中国能够更好，是希望能解决中国体制这个问题，但是如果要解决这问题的话，首先要接地气，要了解老百姓到底在想什么，对吧？是让老百姓能听懂的。我觉得还有有一些老民警有的时候可能是真的文化水平特别高，说的说实在的不要说老百姓了，我觉得我听都费劲你知道吗？ </p>
+<p>这个其实不好，是吧？所以咱们这样咱们咱俩说估计也解决不了这个问题，而且他们也不爱听，但是反正我们的意思也尽到了，然后观众朋友们就可以看看冯阿姨了解一下，真正的接地气儿，了解中国老百姓到底是怎么回事。 </p>
+<p>好吧，您还有什么要补充吗？没有，您刚才说的，因为今天的确是中国的事实上的变化是存在的，今天中国老百姓所思所想确实和海外激进的一些民运人士之间的距离实在是太大了，当海外的民运不能团结，像我像石头这样的我们说的泛民运人士的时候，我恐怕他们都会在海外支持中国民主运动的群体当中，他们可能会离得越来越远。 </p>
+<p>好，咱今天就聊到这。好吗？以后有机会咱们再跟黄光彪老师再聊，因为今天也聊了差不多快半个小时了，好吧？谢谢您，也感谢观众的观看好吗？今天到这里好吗？谢谢大家。谢谢石头。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/17/20200517%E7%AC%AC2256%E6%9C%9F-%E5%AD%99%E6%98%A5%E5%85%B0%E8%B5%B6%E8%B5%B4%E5%90%89%E6%9E%97%EF%BC%8C%E4%B8%80%E5%8F%A3%E6%B0%94%E5%85%8D%E5%8E%BB%E4%BA%866%E5%90%8D%E9%AB%98%E7%BA%A7%E5%B9%B2%E9%83%A8-8Y7yo7pLUHE/" rel="prev" title="20200517第2256期-孙春兰赶赴吉林，一口气免去了6名高级干部">
+      <i class="fa fa-chevron-left"></i> 20200517第2256期-孙春兰赶赴吉林，一口气免去了6名高级干部
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/18/20200518%E7%AC%AC2259%E6%9C%9F-%E8%B0%AD%E5%BE%B7%E5%A1%9E%E5%B1%88%E6%9C%8D%EF%BC%8C%E5%90%8C%E6%84%8F%E7%A0%94%E7%A9%B6%E5%8F%B0%E6%B9%BE%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E5%8F%82%E5%8A%A0%E4%B8%96%E5%8D%AB%E5%A4%A7%E4%BC%9A-1ya2l6cGckI/" rel="next" title="20200518第2259期-谭德塞屈服，同意研究台湾是否可以参加世卫大会">
+      20200518第2259期-谭德塞屈服，同意研究台湾是否可以参加世卫大会 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">266</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/17/20200517%E7%AC%AC2258%E6%9C%9F-%E8%81%94%E7%BA%BF%E8%A2%AB%E4%B8%89%E6%AC%A1%E5%8F%96%E6%B6%88%E8%88%AA%E7%8F%AD%E5%9B%B0%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%97%A0%E6%B3%95%E8%BF%94%E5%9B%9E%E5%8A%A0%E6%8B%BF%E5%A4%A7%E7%9A%84%E9%BB%84%E6%B2%B3%E8%BE%B9%E8%80%81%E5%B8%88%E8%B0%88%E8%B0%88%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%9B%BD%E7%9A%84%E7%9C%9F%E5%AE%9E%E6%83%85%E5%86%B5-i9tQmYXm4zE/";
+    this.page.identifier = "2020/05/17/20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况-i9tQmYXm4zE/";
+    this.page.title = "20200517第2258期-联线被三次取消航班困在中国无法返回加拿大的黄河边老师谈谈目前中国的真实情况";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

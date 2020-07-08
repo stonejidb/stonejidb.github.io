@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/51/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/51/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/16/20200516%E7%AC%AC2249%E6%9C%9F-%E5%A5%B3%E7%89%88%E6%9D%8E%E6%B3%BD%E5%8D%8E%EF%BC%8C%E5%BC%A0%E5%B1%95%E8%A2%AB%E6%8A%93-_UpEeCRek7M/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/16/20200516%E7%AC%AC2249%E6%9C%9F-%E5%A5%B3%E7%89%88%E6%9D%8E%E6%B3%BD%E5%8D%8E%EF%BC%8C%E5%BC%A0%E5%B1%95%E8%A2%AB%E6%8A%93-_UpEeCRek7M/" class="post-title-link" itemprop="url">20200516第2249期-女版李泽华，张展被抓</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-16 00:04:09" itemprop="dateCreated datePublished" datetime="2020-05-16T00:04:09+09:00">2020-05-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/16/20200516%E7%AC%AC2249%E6%9C%9F-%E5%A5%B3%E7%89%88%E6%9D%8E%E6%B3%BD%E5%8D%8E%EF%BC%8C%E5%BC%A0%E5%B1%95%E8%A2%AB%E6%8A%93-_UpEeCRek7M/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/16/20200516第2249期-女版李泽华，张展被抓-_UpEeCRek7M/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月16号星期六，有一个公民记者女性40岁叫张展，号称的女版李德华，他是上海的钱律师，公民记者，他是2月1号抵达了武汉，然后一直通过推特优兔等社交平台直播武汉的一些情况，在5月14号的时候被上海公安从武汉抓走了，上海市的公安局的浦东分局出了一个拘留通知书，理由还是放之四海而皆准的寻衅姿势与寻衅滋事之类刑事拘留，其实你不敢用，你甭管你犯了什么，反正想抓你都可以先用寻衅滋事先帮你抓了，反正就把他抓了，抓了之后到底怎么处理现在不知道。 </p>
+<p>然后我一会我把这个章展它的幼兔的频道的账号搁在我这视频下方，我刚才看他几百个订阅，你敢信吗？我都不知道他怎么搞的，他我大概其看了一下他的观点什么反映的情况真的是特别的温和，非常的温和，不像陈秋实李德华他们那么的就是说好像要一针见血的杀到老公的本子上去，对不对？张展他是非常温和的，我不知道为什么这么温和，还是被上海公安从武汉抓走了，不过中国就这样，没有你知道吧，这就是中国好吧？ </p>
+<p>我觉得当然了，我觉得因为他的视频还是相对比较温和的，所以我不认为最后公安会把他怎么着，李德华最后不也就这样了对不对？ </p>
+<p>张展我觉得最后可能也跟你的话差不多，反正到时候隔离一下，因为从武汉招回来的隔离一段时间，然后就让他滚蛋了，你该干嘛干嘛去了，基本上我觉得也就这么个情况，对不对？然后他那频道可以你感兴趣可以去看看，因为他其实里边东西还挺多的，真的已经做了很久，我也是今天他被抓了，我才听说这个人对不对？你就知道他的视频多么的波澜不惊，对不对？但是其实你仔细看看，其实里边还是有一些干货的，的确是有一些东西的。 </p>
+<p>好吧，反正当然有的人就要求什么上海市公安局释放他，我觉得其实就跟李德华一样，我觉得其实最后也都差不多这个情况，你知道吧？你像陈秋实和方斌那个时候对吧？法轮功的同胞们也得算同胞对吧？你法轮功也是同胞对吧？同胞们，他们一起想办法，就是说把陈秋实和方斌一起开了一个什么白宫请愿贴，然后最后是过了18万吨也好，反正最后弄得陈秋实和方斌到现在没放出来。 </p>
+<p>李德华那个时候有很多人都来跟我说说你有责任，李德华是跟你连线的时候被抓的，你看你屏到有几十万的订阅了对不对？你也应该发动一下，让大家去白宫联署给李德华的，然后咱们把李德华的单拿出来，跟谁也不绑定，咱们就只说李德华，我想着想还是不要做了，当时我记得我在会员视频里跟大家解释了，我说你这么搞下去的时候，你不这么搞，没准过几天人就放出来了，你这么搞过几天搞不好就放不出来，你知道吧？ </p>
+<p>那期就对，你看最后陈秋石和方冰到现在还没出来里，德华就出来了，对吧？我觉得为什么我觉得也跟我后面没有哪里的话，玩命去炒作，玩命的去给它往上拱，我觉得有关系对不对？所以你看李登华他就就出来了陈秋时和方斌。 </p>
+<p>对吧？所以张展现在我也觉得我也是朝着像李德华那个方向去处理，我认为其实不需要呼吁，我认为就是说寻衅滋事也好，隔离也好，我觉得就是说其实你别给他做，你能做别帮他拱，他过不了多少日子他就放出来了，你们玩命给他帮他作拱，给他上纲上线对不对？最后可能就跟他们一样，就就出不来，对不对？ </p>
+<p>所以我觉得还是得把人救出来，不管你用什么方法对吧？黑猫白猫你把人放出来了，让他人个人的没有没有安慰了，对不对？我觉得才是好事。对吧？所以反正这是我的一个观点。 </p>
+<p>关于昨天说其实说到洪时，我最近听到什么石一些消息，我具体的我不能说咱这么说，就是说陈老师跟方斌是不一样的，好吧，这两个是区别对待的，好不好？你们先记着我这话，等有一天官方公布了陈勇时的消息，我反过来给你们讲是什么意思，好不好？这些到这里谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/16/20200516%E7%AC%AC2248%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%AA%92%E4%BD%93%E5%BE%97%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B3%84%E7%9A%84%E2%80%9C%E5%86%85%E5%8F%82%E6%95%B0%E6%8D%AE%E5%BA%93%E2%80%9D%E4%B8%AD%E5%9B%BD%E6%9C%8964%E4%B8%87%E4%BA%BA%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%86%A0-WfiLTLxJj9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/16/20200516%E7%AC%AC2248%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%AA%92%E4%BD%93%E5%BE%97%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B3%84%E7%9A%84%E2%80%9C%E5%86%85%E5%8F%82%E6%95%B0%E6%8D%AE%E5%BA%93%E2%80%9D%E4%B8%AD%E5%9B%BD%E6%9C%8964%E4%B8%87%E4%BA%BA%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%86%A0-WfiLTLxJj9E/" class="post-title-link" itemprop="url">20200516第2248期-美国媒体得到中国外泄的“内参数据库”中国有64万人确诊新冠</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-16 00:04:08" itemprop="dateCreated datePublished" datetime="2020-05-16T00:04:08+09:00">2020-05-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/16/20200516%E7%AC%AC2248%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%AA%92%E4%BD%93%E5%BE%97%E5%88%B0%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B3%84%E7%9A%84%E2%80%9C%E5%86%85%E5%8F%82%E6%95%B0%E6%8D%AE%E5%BA%93%E2%80%9D%E4%B8%AD%E5%9B%BD%E6%9C%8964%E4%B8%87%E4%BA%BA%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%86%A0-WfiLTLxJj9E/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/16/20200516第2248期-美国媒体得到中国外泄的“内参数据库”中国有64万人确诊新冠-WfiLTLxJj9E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月16号星期六，美国媒体叫外交政策，他们称说他们从一位知情人士那里获取了一份中国国防科技大学的一型的大数据，包含了64万的病历的数据，他说这一数据涵盖了中国230座城市，从2月初到4月下旬的疫情的信息，这一数据库说是由中国卫建委的资料整理而成，详细记录了确诊人士所在的地方。住院的医院去过的餐厅、酒店、超市以及学校等生活资料，还有他们居住的大楼的分布，涉及到的个案就是64万人，那么就认为应该有64万人确诊。 </p>
+<p>但是外交政策说基于安全原因暂不公开数据库，所以报道一定都得撇给了美国的外交政策，他们我一会会把外交政策的英文的这篇报道的原文搁在我这个视频的下方，你可以点进去去看。 </p>
+<p>因为如果这么说的话，也就是说他说的数据库可能还不完整，这只是其中一部分，但是这一部分就有64万个病例，那么就有了。不过中国要是说有六十几万人确诊，我觉得应该差不多，当初我们算其实武汉按武汉死了3万多人来讲，对吧？最后应该是六十几万人确诊，它不光是武汉，它是我觉得整个中国来讲几十万人确诊应该其实我觉得这个数据来讲，我是可以从我可以接受，但我知道很多的中国人接受不了，很多中国人都觉得我们中国政府绝对没有谎言，我们报道的全都是真实的，我们就是8万多，怎么会从8万多变成六十几万对不对？这是不可能的，对不对？ </p>
+<p>对吧？反正中国还是怎么说傻逼多对吧？没有办法对吧？怎么办？好吧，但是还要赔给他，然后如果他能够拿出证据来能够证明，因为现在他不要公开数据库，对不对？他如果能公开这个数据库的话，那么我们敢给他背书，但他现在他不敢公开这个数据库，所以我们不能给他背书，所以我们要撇得非常的干干净净的都撇给了外交政策，就是外交政策说的跟我们没有关系好吧？那么你如果不相信你自己去看的点视频，下方链接自己去看外交政策的报道，好吧？ </p>
+<p>今天就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2247%E6%9C%9F-%E6%B9%96%E5%8D%97%E5%A4%A7%E5%A4%B4%E5%A8%83%E5%A8%83%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E2%80%9C%E9%80%80%E4%B8%80%E8%B5%94%E4%B8%89%E2%80%9D%20-dFvptaZqWd0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/15/20200515%E7%AC%AC2247%E6%9C%9F-%E6%B9%96%E5%8D%97%E5%A4%A7%E5%A4%B4%E5%A8%83%E5%A8%83%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E2%80%9C%E9%80%80%E4%B8%80%E8%B5%94%E4%B8%89%E2%80%9D%20-dFvptaZqWd0/" class="post-title-link" itemprop="url">20200515第2247期-湖南大头娃娃事件处理结果“退一赔三”</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 00:04:07" itemprop="dateCreated datePublished" datetime="2020-05-15T00:04:07+09:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/15/20200515%E7%AC%AC2247%E6%9C%9F-%E6%B9%96%E5%8D%97%E5%A4%A7%E5%A4%B4%E5%A8%83%E5%A8%83%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86%E7%BB%93%E6%9E%9C%E2%80%9C%E9%80%80%E4%B8%80%E8%B5%94%E4%B8%89%E2%80%9D%20-dFvptaZqWd0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/15/20200515第2247期-湖南大头娃娃事件处理结果“退一赔三” -dFvptaZqWd0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月15号星期五，果然还是有网友，我上次我就说了，湖南大头娃娃就是喝奶粉喝的头特别大，打扫完了有点畸形，这个事件，我当时王老师我说讲哪一期，就我说咱们等一等，我知道肯定有网友要问我为什么不讲对不对？这个事儿闹的这么大对吧？我要说咱们一等等官方的这个定义出来，当时就是说有一种说法，就官方认为奶粉没有问题，只不过不好意思打个比方，刚喝口水有点呛，说官方认为这奶粉没有问题，身份证是给成年人吃的，不应该给小孩吃。所以说就是过度宣传而已，就这样说，不是假奶粉，也不是毒奶粉。 </p>
+<p>我说咱等官方定义出来就是调查一下到底南山有没有问题，如果奶粉没有问题就是说只是吃错了吃错人了，这个是一种，如果是毒奶粉，这是另外一种。 </p>
+<p>是吧？现在官方结果出来了，我那天说完之后，果然第二天就有网友来问我不认真听，肯定是没有都听，你要都听到他都知道我提到一句对不对？肯定没有多听来问，我说为什么不说这个？好吧？ </p>
+<p>湖南叫什么陈郴，郴州市的市长，监督管理局卫健委关于郴州市儿童医院医生开处方推荐的奶粉，定性为叫虚假宣传，对涉事企业下达了处罚决定书，企业将联合医院一起按退一赔三的方式向受害者家属的赔偿。什么叫退一赔三？就是说你买了这奶粉我退给你，然后奶粉多少钱，我再翻三倍再赔偿，就退一赔三。的方式向家属赔偿安排，然后再安排婴幼儿患儿进行了体检。 </p>
+<p>涉事的医生停职一年就已死了来处罚，有的人对处罚结果就不满，还有觉得奶粉到底对不对？有没有用奶粉进行检查？ </p>
+<p>关于这个事我觉得我这样子咱们也不能够就是说只要是中国发生的事儿，我们就一定往坏里想，对不对？ </p>
+<p>咱们先这样，咱们先认为我们今天先立于一点就是说立于官方说的是对的，因为现在我们没有证据来证明公章是不对的，但是咱们能过两天看，肯定有人去查这奶粉，如果查出来的奶粉里面有毒素或什么的，如果就是说检测出来了，咱们再说，如果后面没有证据来推翻的，咱们现在就认为政府的检测报告，还有政府的调查是可信的。在此基础之上我们就要说如果是这样子的话，那么就这种赔偿我说也是不合理的，因为你这个赔你不能够是赔什么，不能够只是赔奶粉钱，人吃坏了，小孩吃坏了，你要赔得按小孩的医药费赔，或者对小孩未来的生活造成的影响去培，小孩吃出畸形来了，对不对？ </p>
+<p>好像脑袋的骨头不知道变得特别大，你知道吗？看着就正好把鼓起来了，然后就显得身体特别小，脑袋特别大，跟畸形一样，这个东西慢慢的能不能涨回去，还是永远都这么大了，老了老是比别人大一块鼓一块的对不对？ </p>
+<p>你将来我说句实在的，就这小孩竟然长大了，不管是男孩是女孩结婚找对象都都成问题，对不对？你经常这样，你愿意找一个脑袋上捂个包子对不对？大家对吧？你对人的终身都造成了影响，然后你陪人家分点奶粉就完事了，因为不能这么搞对不对？你美国就美联行把那哥们拖下去，这就不鼻子打流血了吗？最后赔了一个亿，对不对？你这么严重你也招人中参培哪能够赔33万完了，因为你这种赔的这种力度太轻，导致什么呢？ </p>
+<p>以后奶粉这种制造企业，我们还是赶得胡胡片、湖州、湖勒，反正最后你要查找陪你12奶粉不就完了吗？对不对？像这种应该就赔到破产，巨额赔偿这一次让他肉疼，让他长记性。你像美联航，他以后还敢这么干吗对不对？ </p>
+<p>那么干一次一个亿，他有几个亿就受得了吗对不对？他以后肯定他想一想对吧？他对吧？反正你而且关键是这样子对不对？你被拖下去给你一个亿，你要不你也托我一次，你让我推你的了，我也躺着你们把我拖走，我靠，顺便把他一个亿给我报上，对不对？是不是？你给我投完就得了，我看我也行和我们一起对吧？说咱是说这意思对不对？对吧？就是说你得赔出来，你要是赔一个亿美元对吧？你要照着7亿人民币赔，我觉得可能受害者家属觉得那也还行是吧？ </p>
+<p>别人觉得我怎么没买当中对吧？他这个想法就是不一样了，对吧？我觉得你惩罚的力度太轻。 </p>
+<p>另外一点就是说关于奶粉，我觉得如果光只仅仅是针对奶粉是合格的就是说给成年人吃的奶粉，不小心的给小孩吃了就吃出激情来，我觉得没有那么简单，我觉得没有那么简单。 </p>
+<p>美国你给城建人士的牛奶你给小孩吃了，我觉得也不至于它吃出激情来的，对不对？我觉得不是那么回事，但问题是这个事他跟以前的三度不一样，三度那时候因为三度它全国性的在在搞，是好像好几个省市都发生问题了，是全国性的问题，所以最后不得不调查。但是因为它主要就在这湖南，然后郴州市这儿就伤害了就这点人，没有在全国范围内引起重视来。所以我觉得就没有得到像三鹿那时候的那么大的关注。 </p>
+<p>还有一点就是说中国人现在有点劈他了，什么叫劈他的？我觉得中国它有一个特点就是什么特点？它的价值观跟国外不一样，我们不能说中国的价值观应该说这样，中国有一个比较公正的价值观，而海外的价值观是扭曲的，你知道吗？因为出了这种事，海外就觉得我操奶粉厂破产赔死他，整个厂都赔给人家，对不对？这种你有一种扭曲的价值观。 </p>
+<p>我举个例子像人家什么来了？以前我们在天津，我以前讲过这个故事吗？我想不起来了，我再讲一遍，我们天津有一哥们，不能算一哥们，一人听说也不是我哥们，我听说一人，我听说一人是这样，就是说他父亲是做生意的，生意做的还不错，然后他的父亲帮忙，父亲有一个生意伙伴，生意伙伴这个生意做的就是还也挺成功的，然后这生意伙伴后来就移民到澳大利亚了。 </p>
+<p>那个时候有很多的中国的富豪都移民澳大利亚了，他生意伙伴因为澳大利亚然后他女儿没有走，女儿去过一阵澳大利亚，然后不喜欢去澳大利亚，不好玩，好山好水好无良，还是中国好玩，就喜欢在中国。主要的英文也不太过关，所以不太愿意去澳大利亚，就在中国待着，但他父母已经把生意的重心都移到澳大利亚去了。 </p>
+<p>聪明人你知道吗？早早地把自己的钱都倒到海外去，到澳大利亚在澳大利亚的搞生意的，所以他父母就常年的到澳大利亚，然后他父母就跟我们认识这人，他的父母的关系比较好，比较好之后这俩就算是怎么说，生一伙伴的小孩说喜上加喜，蹭蹭他们俩人的说对象，后来处处还不错，结婚了，结婚了之后就是说想让他们一块去澳大利亚，然后这哥们跟这女的一块去到的澳大利亚回来之后说，还是我老婆说的对澳大利亚什么好的，还是中国好的，在中国玩得开心的我还不去了，那哥们英文也不过关，你知道吗？俩人都不愿意去，俩人还挺好，我们俩结了婚在中国过，然后买房，买房一般来讲不就天津来讲就南方来买房对不对？ </p>
+<p>但是就这个房子当时可能有这么200万左右的房子买的，他们因为两家都有钱买的，是那种特别好的，那房子好像当时还是1万一平米，好像买了一个200平米的大悦城是吧？ </p>
+<p>特别好大房子，然后南方到这房子差不多200万左右，然后这南方当时就拿出了50万出来，为什么？不是没有钱，但是做生意这个钱他滚在里边了，出不来，出不来就这什么，就是说我这样我先拿50万，然后女方一看那算了，别贷款了多丢人，女方拿了150万，这房子就买了，俩人不就住那了，住那之后，然后这哥们就在外边就又有了个人，有一个女的家里有钱有这个女的，然后一来二去被他老婆发现了，这老婆就不干，老婆就打闹知道吧？ </p>
+<p>跟他说他说他每次都保证，保证完了之后过两天又被老婆发现了，老婆一看这个怎么办？就找了。 </p>
+<p>老丈人老。不是他那叫什么岳父，不是他那叫公公婆婆，公公婆婆有点乱，找公公婆婆去说，公公婆婆一听觉得这儿媳妇说的对，儿子怎么这么不像话，就去说那儿子，然后儿子就你比如还刚开始一说还行，行我知道。 </p>
+<p>然后后面又接着该怎么着怎么着，然后他爸他妈又急了，你看他妈说他一顿咱不象话，你儿子一彻底就刚开始还有点耐心知道吧？后来彻底没耐心了，跟他爸说你干嘛，你弄好什么？你养老娘们，你跟他拜拜了，我就跟我拜拜了。你把你的老娘们先撇干净了，1万秒钟我不知道是吧？ </p>
+<p>他爸说他知道他妈在旁边了，他妈一听他妈不知道他妈也知道这事，他妈只是他妈就是假装不知道你知道吗？知道他妈怎么不知道他爸他妈养在外面养了好几年了，你知道吗？等于就是公开的秘密你知道吗？假装不知道就不想管这些事。 </p>
+<p>结果他说当时那样说他吗？巨头不说话了，不说话了，不说话讲着明天他爸一看，不知道说什么了，然后儿子走了，一看这不行了，这以后没法说他。然后他爸一想，要不我把我老娘们撇了，不行，这么多年有感情了，不能说撇就撇。 </p>
+<p>后来他爸一想这样，跟着他妈一块，就找到他外面养着那女的去了，转到女人去了，跟他说你不要缠着我儿子了，你要缠着我儿子，这不好你影响那么夫妻感情。那女的一听我缠着他，你们别扯淡了就就那意思，老婆就觉得我跟你说，我告诉你，你把他婚姻搅黄了，他也不会娶你进门的，你是什么人？那个女的是个洗浴中心的，你知道吧？专门干的职业职。 </p>
+<p>职业的，比如说我们绝对不会让你进门的，你不要想你是什么出身，我们家什么家庭怎么会让你进门，你就不要想你别想这事了，你把搅黄了我让他取别人绝对不会取你的，那女的一听就不干了，你们瞧不起瞧不起谁？我们洗浴中心比你们家有钱的多了，我们见到有钱人比你见到有钱人还多。真是的，你有我跟有钱人亲密吗？说你儿子也我看上他，别逗了，玩酷子弟一点未来都没有。他在你公司不就是卡死你公司的钱吗？以为我不知道。 </p>
+<p>回家告诉你儿子，别给我钱，不给钱老娘能让他进门。亲你儿子一个月给我多少钱知道吗？说好了，我们做生意，我们生意人有生意人的规矩，你做过生意吗？你懂不懂？我拿了他的钱就得让他进门，他只要不给我的钱，他别人不给钱，他少一分，我能让他进门，我就退出去。切管住好你自己儿子，那别给我钱。 </p>
+<p>老头老婆一看被洗衣中心小妹妹给这种羞涩难受，回家你想我跟你说这事怪谁就怪儿媳妇，不懂事。跟儿媳妇说我跟你说我跟那女的说了，那女的跟他没想进门，不是破坏你夫妻感情，知道吧？就是说这话不该这么说，但是你看你婆婆，我外面养人养了这么多年，你看你婆婆说什么了，向你婆婆学习，对不对？做一个贤妻良母，完了一个听了个逼的，妈的接了简直我靠然后最后咱先不说这个，我想说我说展故事什么意思？就是中国这个价值观就扭曲了。 </p>
+<p>按理来讲如果不把中国这个价值观，这是个正确的价值观，你知道吗？这个儿媳妇他不对，他不孝敬公婆，不是个相妻良母，不能在家呢相夫教子，知道吗？这是不对的。但是海外它扭曲的价值观就认为儿媳妇是对的。我们维护我的婚姻，你凭什么外面两个人对不对？你公公也不在外面找人，你儿子你们俩一堆 bobo混蛋，你们两个一对，一个老不着调，一个小不着调，对不对？就是海外的他的这种思维方式，但在中国普遍来讲，你会发现到了最后亲戚朋友都越来越觉得说什么，就是说觉得这女的有问题，这儿媳妇有问题，你知道吗？ </p>
+<p>这儿媳妇你看最后怎么着？他妈离婚了，不跟你过了，我去澳大利亚了，这人一脚下一个脚走到现在不回来了，伤心了知道吗？彻底走了，走了之后还不错，那房子你知道吗？他们当时拿了50万，你女方拿了150万，然后女方说这房子怎么办？你得分我100万，对不对？人数拿不出来。拿不出来。最后给了人家70万，那就拿起院子走了，马上不给你过了走了，花了150万买了房子，最后拿回来70万，然后这还不是最扯淡的。 </p>
+<p>过了没几年，天津房价就从1万变4万了，然后后来后来据我们听说跟不熟真不熟听对我们听说后来找了一个小学的女老师，小学女老师家境就不是特别好，就去进门了，后来就进来之后，小学女老师假如不知道，什么也不管，在家相夫教子，老老实实待着，知道吧？后边他在外面再胡搞，那个根不知道，要学跟她婆婆向婆婆学习，你知道吗？这个事就是中国的这么一种怎么说，它就是一个他有这么一个价值观，他就这样子的社会你懂吧？ </p>
+<p>我跟你说这就说牛奶这奶粉也是，就是说之前我们说三鹿我们都谴责企业，但是你发现了这么多年过来之后，当我们看到这个事情之后，首先我们考虑什么？ </p>
+<p>父母怎么这么不懂事呢？为什么给小孩买国产奶粉喝呢？父母能力不强，责任心不够，你一个中国父母你就应该买进口奶粉，给小孩喝买什么澳大利亚奶粉，买什么美国奶粉的，或者你有亲戚在香港对不对？他们不都是到香港去买香港奶粉吗？香港不是就最抱怨就是大陆人来了，把我们奶粉都抢光了，对不对？为什么？他香港人一唱大老远就是蝗虫，蝗虫之歌说他们来了跟蝗虫一样把我们东西都抢光了，我们都买不着，对不对？而且他们不光是买香港的奶粉，还有什么买香港的什么苹果产品也是在香港买，好像是税便宜是怎么着的抢。 </p>
+<p>反正还有买炒香港的房子，香港现在很多可能半山的豪宅什么都是被中国人买的，房价炒得那么高，奶粉买不到，产品也买什么也买不到，对不对？为什么就觉得你是蝗虫的对不对？就因为你的确像对不对？对吧？不是。 </p>
+<p>他为什么不说美国人是黄铜，为什么不说台湾人是黄虫？为什么不说泰国人？为什么说你是黄虫对不对？他有个原因，但是你是觉得你凭什么说我是黄虫，对不对？对，为什么不说美国人是防空呢？对吧？问题就在这了对吧？所以就要你要自己去思考这个问题，对吧？ </p>
+<p>当然了又跑题了，还是回来还是说关键就在这儿了，就是说到底是谁不对，在神州大地就出了这个事之后，现在很多人认为是父母不对，父母都错了，你怎么能这么胡买呢？ </p>
+<p>中国奶粉有问题你不知道吗？你买之前你不做功课吗？你不加个家长群问问别人买了什么奶粉吗？对不对？你这么不负责任，头不抬眼不睁，你小孩吃了畸形了你有责任，这是在中国你要保我经常说在中国你生了一个孩子，你有很大的责任，因为政府不能保护你的孩子，社会不能保护你的孩子，能保护你小孩的，只有你必须要打起12分的精神来，不能被拐了，不能被卖了，不能被骗了，奶粉应该吃进口的，教育怎么教育？对不对？你都要想好了，将来竞争压力这么大，你怎么给他买个房子？你得留个房子让他结婚，不然的话现在小孩我说句实在的出来对不对？ </p>
+<p>好一点的，一年挣个20万，差不多也就这样子了，对不对？ </p>
+<p>一年挣20万人民币当然更好了，咱不是因为更好的他少，但是普遍来讲我觉得平均工资也就差不多20万，对不对？你一年20万的话，你买房子我说句实在的，你怎么买你父母不给他一套房，那不是小孩不对，是你不对，对不对？你给他吃了这种什么国产奶粉是谁不对，你们中国社会现在就是这种价值观，懂吗？就是这样子，你说海外扭曲也好，你说中国扭曲也好，反正有一个人价值观是扭曲的，但是你怎么办？你就生活在神州大地，你只能接受这个，要不你就改变他，你能改变吗？无力改变，无力抵抗就享受它。 </p>
+<p>你在这里面要自得其乐，你看我们现在我很多的我们大学生都自得其乐，大家在这分析，就是说哪个奶粉是能吃的，哪个幼教班比较好，对不对？我们应该找，因为现在中国你在美国你可能关上学就可以，中国你不上学行吗？你肯定不行，我们经常说对不对？ </p>
+<p>我们认识一个人，小孩在美国出生，在美国长大，在美国上幼儿园，在美国上了上到了快快到什么小学一年级了，然后后来就回国带他回去了。觉得我们家小孩在美国出生，美国长大，在美国上小学一年级了，你们那帮孩子起一帮土鳖怎么能跟我们海归比呢？跟他们说说英语，给他们教教，一来了就结果一说，妈妈他们说的什么意思？他说那单词我怎么不认识？他妈去了跟你说，操你这闺女能不能你这闺女多大了？小学三年级了。 </p>
+<p>我操这词汇量能考研了吗？你知道吗？中国那小孩对不对？经常都说我这小孩两两千词汇量行不行？在美国上小学够了，在中国肯定不行，绝对不够。你就是中国现在目前就这样子，你怎么办？你父母能力不强，你的小孩就要吃亏的，对不对？它就是这么一种社会体制，要么你改变它，要么你就被他改变。所以就这奶粉你让我说什么对不对？我只能说就是说官方说的都是对的，你们只能接受，这就是中国社会你怎么办？你就不能推翻他，对不对？ </p>
+<p>人家什么郴州市人卫建委已经宣布了，人家一退一赔三，你不接受那你自己看病去不完了吗？对不对？你还想怎么着，你要哪儿不服，你也跟美国似的拿个突击步枪出来，你要怎么去州议会门口也抗议你是吧？你还要雇个民兵在门口站岗，你有吗？你不是美国，对不对？你去法院告，你一个老百姓对不对？ </p>
+<p>你去法院告政府，高郴州市市委告郴州市是被建委。你能告赢吗？你能告诉我我俩派的吃了，对不对？这不可能的，民告官的中国是不可能告赢的，不管你是什么案件，懂我意思吗？因为不能给你留下祸根，有一个民告官告赢了，你知道吗？ </p>
+<p>以后天天你们都得民告官，所以我从头就给你们堵住了，绝对不能民告官，明告官邸不行，打大的不行，不允许。要不然今天你告成了，明天都要起诉政府，我受得了吗？对不对？弄死你们，对吧？真的。中国就这样。没有办法你只能接受，所以我们在此只能表示我们接受政府的调查结果，接受政府的处罚，只能是如此。我没有什么办法，我现在我不能在这劝你要什么抵抗要什么的，我觉得那个得害你，对不对？而且别人还得骂我，对不对？所以我觉得我也做就是说聪明人安慰你一下。没事。相信我。一切都会好的，会好起来的。 </p>
+<p>好吧？直接讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2246%E6%9C%9F-%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E4%E5%8E%BF%E5%9F%8E%E6%80%BB%E8%AD%A6%E9%95%BF%E9%80%A0%E5%8F%8D%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%89%A7%E8%A1%8C%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E%E5%B7%9E%E9%95%BF%E7%9A%84%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4-PMm6qUW3auc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/15/20200515%E7%AC%AC2246%E6%9C%9F-%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E4%E5%8E%BF%E5%9F%8E%E6%80%BB%E8%AD%A6%E9%95%BF%E9%80%A0%E5%8F%8D%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%89%A7%E8%A1%8C%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E%E5%B7%9E%E9%95%BF%E7%9A%84%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4-PMm6qUW3auc/" class="post-title-link" itemprop="url">20200515第2246期-密歇根州4县城总警长造反，不再执行密歇根州州长的行政命令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 00:04:06" itemprop="dateCreated datePublished" datetime="2020-05-15T00:04:06+09:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/15/20200515%E7%AC%AC2246%E6%9C%9F-%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E4%E5%8E%BF%E5%9F%8E%E6%80%BB%E8%AD%A6%E9%95%BF%E9%80%A0%E5%8F%8D%EF%BC%8C%E4%B8%8D%E5%86%8D%E6%89%A7%E8%A1%8C%E5%AF%86%E6%AD%87%E6%A0%B9%E5%B7%9E%E5%B7%9E%E9%95%BF%E7%9A%84%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4-PMm6qUW3auc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/15/20200515第2246期-密歇根州4县城总警长造反，不再执行密歇根州州长的行政命令-PMm6qUW3auc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月15号星期五，密执根州，阿密执根州当时我们说了，当时有数千人拿着突击步枪聚集在州议会附近的示威，而且瘫痪了交通数个小时，而且在密执根州的议会大楼，有部分示威者曾持枪进入议会，抗议，他们当时参议员不还说我的同事都是穿着防弹衣上班的，受得了吗？太吓人了。 </p>
+<p>那么这些激烈的民众抗争引起的也是警方的一些就是说反感的情绪。现在密之根州北部4个县的警长的办公室，4个县的总警长办公室发布的联合新闻稿，说密之根州的州长惠特莫已经超越了他所拥有的职权，那么四四北部4个县的总局长发表的联合联合新闻稿说将不再执行州长的行政命令，4个县包括利勒诺、本溪、马尼斯蒂和梅森县几个县，那么他们在联合新闻稿里面说他们是这么说，他们说我们将根据具体情况处理每一起的案件，并运用常识来评估明显的侵权行为。 </p>
+<p>我们每个人都宣誓要捍卫密执根州的宪法和美国宪法，并确保上帝赋予的权利不受到侵犯。我们认为我们是保护公民自由的最后一道防线，我觉得非常的美国他小孩从小的教育就这样，从小就是要宣誓，要孝中就是宣誓效忠，要不就是国旗，要么就是宪法。从来没有像哪个总统你知道吗？都是我宣誓我要捍卫美国的这种自由民主的权利，或者我要捍卫宪法或者我要汗，他为什么这种一般都是向宪法去效忠，所以他们是忠于法律。 </p>
+<p>他们认为州长的职权已经超越了法律赋予他的权利范围，那么这是警察，然后再看看个人，利文斯顿县一间，首先是奥沃索市一个77岁的理发师卡尔曼克，他抗议禁令，他执意要重新开张就开门开开张，开张之后他花钱聘请了武装民兵站在店外的，站在店门口守卫武装民兵端着突击步枪在店外守卫。当地他们似的的警长警长说是这样，依照我的职权我已经决定了我们不能也不会将主要资源和精力来执行周长的行政命令，要不然去了就跟明明打起来了，对不对？ </p>
+<p>所以就就算了，他开门就开门我也不管了，不想管没法管你。然后利文斯顿县一间健身房也忽视了禁令要重新营业，然后当地的警长说这样他是选择了开门，我们的与县的卫生部门以及县的检察官办公室已经联系了，我们要求合作。他说目前情况是这样，我们决定我们还是不执行任何命令了，我们要求人们的自愿遵守。然后密执根州这是各个县的警长，然后密执根州的总警察局局长的协会执行主任，警察局长协会的执行主任，包括斯蒂文斯向底特律自由报表示，他说这样，他说现在目前密执根州的各个警察局的局长，大多数的警察部门都是这样子的，都是选择了请民众自愿遵守，我们具体就不管也不逮捕，一定你要开门营业就营业，我们不去跟民众直接对抗，没有办法。 </p>
+<p>这个人我想在中国了，中国当时这上面一排命令，下步一帮洪秀沟里去了，我记得有一家他们在家打麻将，然后去了直接给人拿上桌就砸了，然后小子就扔了麻将给他，然后过去噼里啪啦一顿一顿嘴巴子，还有一个东北一个老大爷是怎么着被人一一顿爆鸡打的满脸大爷是怎么回事，拿个手机没有，条形码是怎么着的，不是一顿暴击，我靠打得满脸是血。这就是中国和美国的区别，美国最终警察认为州长的权力已经超越宪法赋予他的职权，所以警察拒不执行，这就是美国和中国巨大的差别，那么我为什么我经常我还是我支持美国，就是说不要进枪在这儿了，就是说到了一定的时候，老百姓手里有枪的话，要抵抗这种就是说一味胡来的政府，当一个州的州政府已经超越了宪法赋予它的职权之后，老百姓有权利拿起武器保护自己的这个就是说美国宪法以及上帝赋予的权力不受到任何侵犯，没有什么好说的。 </p>
+<p>至于密之根州的州长，其实之前我已经劝过他很多次了，从他们拿着突击步枪到他周易会门口去抗议，到后来冲击议会大厦，我有听过他很多次了，他就是执意不听，走到这一步，我只能说现在州长在密执根州就是一个笑话了，因为没有用了，你的权威没有了，你的权利没有了，你懂吗？你签署了命令，你的行政命令下来之后，警察不执行，老百姓也不执行，你成什么了你不就成一个笑话了对不对？你说话跟放屁一样对吧？ </p>
+<p>政令不出办公室，你的正定职能传到你办公室门口，出了办公室就完了，后出了办公室就没人搭，没人搭理你了，你还是州长吗？你没有权威了，你完了你失去民心了。美国这种地方就这样，你的执政权力来自于老百姓，一定老百姓不相信你了，你即使在那个位置上你也没有权利了。 </p>
+<p>我不知道密执根州长的话他怎么想？反正我不认为他下一次的选举会连任，当你的命令在你整个州不敢从警察到老百姓都不听，没有人理你的，你说话跟放屁一样的时候，你去想他干什么呢？你不就成了一个摆设，成一个傀儡了吗？对不对？所以我要是没资格跟州长，我觉得现在其实可以辞职了。我觉得现在辞职得了，你那也传达不下去了，你在那摆着也是大家就是说就跟我记得那是零几年世界杯，08年世界杯，不是08年18几年112年好像12年世界杯，我想不起来了，今年谁就是谁，当时法国队去提，当时其他内的最后一届好像是12年，好像是12年。 </p>
+<p>对12年12年对我没记错，12年12年那届世界杯，当时法国队的主要练叫什么多米尼克好像叫什么的，就是他的治军就有问题，有问题之后导致一上来这个球踢得非常的不顺就快不行了，不行了之后其他内的作为大哥，还有另外几个人就一起跟其他内的商量。当时7家店是队长，而且也是队内的队大明星，就跟其他店一起商量，然后删掉之后他们几个有威望的老队员一起就去找到教练的多米尼克就谈，就说你这样下去就不行了，知道吧？ </p>
+<p>那么你选一个你还在位置上坐着，你那少说话，由其他内来组织，就是说等于就是说你挂教练的名头，但是实际上对内怎么训练怎么比赛，由其他内来说，我们几个老队员我们商量一下，我们搞就完了，你保持你的名头，如果你觉得不行，我们几个把赛送你走，教练说这样我不说话了行不行？你们看着办就这样子反复对，我记得当时还踢进了决赛，当然最后到决赛的时候像拿头顶了谁，然后最后没有拿到，我记得好像是就意大利拿了拿到冠军。 </p>
+<p>就是说实际上等到病变之后，就是说总教练基本上就只能站到站着了，就别说话了，就位置你还在，但是具体事故你不要管了，下面自己去管，那你就成了一个相当于一一一摆设了，现在密执根州的州长就像少点主要电一样，你目前这情况你先别说话了，我们下面的警察们我们自己想办法，我们自己去看，我们依据我们的常识，我们怎么去处理，我们跟老百姓去协商，你别说话别管了，一边呆着去，基本上就这么个情况。 </p>
+<p>是吧？反正法国主教练还是觉得怎么说我不能辞职对不对？因为我干一天我拿一天钱，我辞职了那钱就没有了，惠特曼我不知道怎么想，反正烂下去还有工资对不对？辞职的连工资都没有了，所以要不就死皮赖脸的就烂下去。 </p>
+<p>反正我不知道一个州长走到这一步自己是怎么想的，我觉得也要给其他的民主党的各州的州长引以为戒，就是说不要走到这一步，走到这一步之后，其实对你自己是有很大的伤害。所以我们知道民主党现在就是想把经济拖垮，但是用这种方式，最终卡的先通卡的是你自己民怨太大了，我不知道民主党意识到没有，这样下去，老你做过之后，对民主党的这种白族已经没有办法再接受，没有办法忍耐了。我觉得差不多得了。 </p>
+<p>好吧？今天到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/" class="post-title-link" itemprop="url">20200515第2245期-中国政府承认曾经销毁新冠病毒样本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 00:04:05" itemprop="dateCreated datePublished" datetime="2020-05-15T00:04:05+09:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/15/20200515%E7%AC%AC2245%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E8%AE%A4%E6%9B%BE%E7%BB%8F%E9%94%80%E6%AF%81%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%A0%B7%E6%9C%AC-9aR6CdPvTWs/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/15/20200515第2245期-中国政府承认曾经销毁新冠病毒样本-9aR6CdPvTWs/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月15号星期五，中国政府今天正式承认了曾经销毁了新官病毒样本，怎么回事是美国国务卿彭培奥他一直指控说中国卫建委1月3日下令销毁病毒样本，病拒绝分享的病毒毒株。关于这个事就婆婆一直说，说中国你看你们把病毒样本都都销毁了。中国被建委5月15号今天进行了回应，中国国家卫健委科教司监察专员刘登峰在国务院新闻办公室举行的新闻发布会上表示，他说在新冠病毒爆发出袭，说的确确下令了未经授权的实验室销毁样本，他给的理由是这样，他说这样做是出于生物安全的原因，是为了防止不明病原体引发的次生灾害。 </p>
+<p>他说我国法律法规对高致病性病原微生物样本的保存，销毁实验活动等都有比较明确的要求，对于实验室条件达不到生物安全样本保存条件的，那么就应该就地销毁或移交专业的保障机构保管，这都有明确规定，同时也是法律法规对实验室生物安全监管部门提出的工作要求。关于现在就众说纷纭，有人说还好了，中国终于承认了，中国就是干了这个事，但是他这个理由我觉得其实完全是说得过去的，你也不能说那理由不对，对不对？ </p>
+<p>他说但是据我们所知，实际上即使连武汉的一些就是p三级别的实验室，他也要求销毁，对于新的名单，现在这件事情实际上是可以的。 </p>
+<p>但他现在他就说出去说他不可以，你没办法，这种东西是这样一个愿打一个愿挨，你知道吗？比如说警察来了说你们打老婆，我老婆让我打的，你们你不跟我老婆老说我要打那就完了，对不对？这里面就没办法你知道吗？这东西就是说比如说美国说的你们消费更多的，他不够资格，他p三实际上是他不够资格，我不够资格，你有辙吗？你拿了没明这东西你知道吗？他们配合好了，他就这么说，你这么着你点都没有，你知道吧？ </p>
+<p>中国特色反正我觉得现在就是这样子，这个事看来是没有办法耍无赖了，因为1月3号下令的，当时的红头文件出来了，当时我们也看到过我们也报道过对不对？我记得参考艾芬是艾芬也报道过这个事对吧？这个东西看来就是说想说我们曾经没有下令去销毁已经不行了，我们中国人就聪明了，我们换一种说法，我们下令销毁是让那些没有资质的实验室销毁，有资质的实验室就不用销毁了，还可以保留对不对？ </p>
+<p>你这个怎么说？反正这个就掐，现在有的人就觉得中国这下完蛋了，一承认就完了，被美国抓住把柄了。但是你要说他这个理由，你也很难说，就是说你就能拿死作为就是说罪证来证明他，对吧？ </p>
+<p>反正现在就是说我说耍无赖这个词不太好，但是的确是不过当然了我经常说这个病来讲发展到现在，我们必须得承认大家在最初的时候对这个病都掉以轻心了，实际上不光是中国在早期的时候，的确在12月份实际上就已经发现了，但是钓鱼厅现在没有把它当回事，把它当SARS了，你知道吗？ </p>
+<p>然后等到了1月份发现不对的时候再下手就玩完了，耽误了这么一个多月，但是你说中国是耽误了一个多月，你美国你英国的你意大利你法国你们不也都耽误了一个多月对不对？日本其实也耽误了一个多月，对不对？俄罗斯对不对？印度大家都耽误了，在早期的是谁，也没意识到这个病怎么会搞得这么厉害，对吧？ </p>
+<p>所以看其实我对这个我一直都觉得中国有它的有他的问题，他第一整个体制是有问题的，你知道吗？但是你说你把这问题全程百%就给他了，也不合适，但是我觉得60%我觉得中国应该占60%，的确是有百百百这样，我说60%很多人不高兴，咱说一半付有一半的责任，我觉得还是没有问题的，对吧？你最起码你12月30号是你要是不乐见李文亮的，你要是不把那8个人训诫他们8个人，你要认认真真去对待它，你要是12月30号就承认这个是一个冠状病毒，它可以穿上，因为你关照病都救，他肯定传染，比如说早早的你不就医护人员也都传染了，对不对？ </p>
+<p>爱芬他们到二二十几号时不仅有护士被传染了，对不对？你那时就承认了，你要早早承认的。昨天说谁钟南山的评估报告不也说你只要提前5天就能减少1/3，对不对？你要是别从12月30号一直拖到1月23号，你稍微早一点的对不对？反正当然了你要这么说的话，美国要稍微早点也不会闹成这样，对不对？所以我也经常说咱们尽量站中间对吧？都有责任，我觉得各打50大板，好吧？ </p>
+<p>但是我要说一点，中国的体制不改革的话，这个绝对不会是最后一次。你相信我03年有SARS，19年有新冠，然后十几年或20年之后，中国还会出其他东西的，绝对不会有问题的。而且这一次很多人说又是他们家吃，真不是。现在来讲各方面的证据表明，咱不说是不是武汉病毒实验室，但是最起码武汉的华南海鲜市场不是发源地，当初骂我的网友说的是对的，你别看他骂我，后来我把他屏蔽了，我们家闹得不太愉快。 </p>
+<p>当时我现在回想起来，我们俩当时闹的不愉快是什么，我们两个都有问题。我12月30号我说武汉爆发了萨斯这种冠状病毒，这种非典型肺炎的这种病毒导致你的出现这个病，然后我们当时得到的消息是武汉的华南海鲜市场在爆发的，这个人他骂我，他说不可能你胡说八道，他认为两件事不可能，第一个武汉没有爆发，如果爆发他作为一个武汉人他肯定知道。 </p>
+<p>第二湖南海鲜华南的海鲜市场，他说我住在那儿也就一公里的距离，他那还要是卖蝙蝠什么乱七八糟东西，我肯定知道，我们经常去买东西去，那会没有你说的那种乱七八糟的东西。 </p>
+<p>现在发现我们两个各错了一半，当他说话不好听我的频率了，我们俩各错了一半，就是说武汉的确发生了非典型性肺炎，我想他现在应该不会再跟我争论了，但是他说的是对的，华南海鲜市场那块没有卖，他们输的那些乱七八糟的东西，还不是发源地。发现地是哪儿？我们暂且先不说，但是那里不是发源地，你如果不是发源地的话，我觉得这一次的疫情跟中国政府在某一些地方，就是说不专业，不敬业是有很大关系的。武汉的批次实验室在建的时候，很多的法国的情报机构都认为不应该把这种级别的实验室见到中国，甚至他们都认为就是说生物等级三的实验室，这种p三实验室在中国都不应该有，因为中国的体制缺乏监督，缺乏管理，还是我那句话，你们家门口一个二傻子国际脸的小十几岁小小孩子，他是不配拿一把AK47在手里端着的，像这种枪或者是什么1215这种突击步枪，如果是一个训练有素的特警或者武警拿着是可以的，他让人放心。 </p>
+<p>一个不成熟的亲爱的一一一青春期的小孩子，小盲孩子天天端着把突击步枪，你知道吗？早晚会伤害到别人的。而中国的政府就是不负责任的一种，我经常说就是说那种幼稚的不成熟的一个青春期式的政府，这样子的政府不适合拥有高等级的生物实验室，也不适合拥有像核武器、化学武器这种大面积杀伤性的武器。这种政府甚至不适于大的跨国企业的生存。 </p>
+<p>中国很难发展成像什么苹果三星，这种企业很难，一旦有了之后就会有各种的问题。 </p>
+<p>华为中兴都遇到这些问题，因为政府幼稚不成熟，它必须要你的企业中国的情报法我就不再重复了，目前备过很多次，中国刑法一第一条，要求海中国的企业和个人随时在海外或者在中国向中国政府提供对于国家有利的这种情报，对吧？你这么不成熟的法律法规出台之后，你自己去想你的企业怎么发展，他没有办法发展。所以说实话，不成熟的政府一定还会出问题。 </p>
+<p>你以为今天你门口二傻子拿着突击步枪不小心打了一只兔子，你觉得这个不太好，或者把隔壁邻居家的狗打死了，对不对？你们说说他爸爸赔点钱就完了，你这突击步枪你不从他手里拿走，你相信我明天还不定打着谁，所以要么你就让他成熟起来，我觉得就是什么周处除三害，最后让他去参军去入伍，让他去对吧？到军校去学习学习，让他成熟起来，然后把中国的的不成熟的政府变成了一个成熟的政府，要不然的话，我跟你说，你最后你看着肯定不定谁倒霉。 </p>
+<p>我经常说从49年以后你会发现在中国没有认识安全的，知道吧？老毛又怎么样？老毛死了，他老婆就他老婆最后是在监狱里自杀了，江青是自杀的。他的女儿娜娜，李娜日子过得也不好，刘少奇的女儿也是自杀的，对不对？连习近平他的我记得她姐姐还是她妹妹也是文革当中也是莫名其妙就死了，这个都说不清道不明怎么死的，都受到什么样的迫害？邓小平的儿子邓普方在伦敦是受到什么样的迫害？对吧？所以中国这样子的一个体制之下就是一个矫正基因，任何人在里面都会受到伤害的，只不过就是说今天轮到你了，或者没有轮到你而已。 </p>
+<p>好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/50/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/50/">50</a><span class="page-number current">51</span><a class="page-number" href="/page/52/">52</a><span class="space">&hellip;</span><a class="page-number" href="/page/54/">54</a><a class="extend next" rel="next" href="/page/52/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">266</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

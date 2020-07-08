@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月15号星期五，FBI已经扣押了共和党联邦参议院的情报委员会主席博尔的手机，博尔从昨天也辞去了参议院情报委员会的主席一职，博尔表示情报委员会及成员们的工作太重要了，不容任何闪失，我相信辞去主席一直是让委员会不受外部干扰，继续重要工作的必要之举，其实也是被逼无奈对吧？他这样的情况下他不辞职的话，别人也不干对吧？  参议院还有民主党的对吧？然后FBI调查博尔就是说是否利用自">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2238%E6%9C%9F-FBI%E6%AD%A3%E5%BC%8F%E7%AB%8B%E6%A1%88%E8%B0%83%E6%9F%A5%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E7%94%A8%E7%96%AB%E6%83%85%E6%83%85%E6%8A%A5%E5%86%85%E7%BA%BF%E4%BA%A4%E6%98%93-6g5oYfdBvEE/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月15号星期五，FBI已经扣押了共和党联邦参议院的情报委员会主席博尔的手机，博尔从昨天也辞去了参议院情报委员会的主席一职，博尔表示情报委员会及成员们的工作太重要了，不容任何闪失，我相信辞去主席一直是让委员会不受外部干扰，继续重要工作的必要之举，其实也是被逼无奈对吧？他这样的情况下他不辞职的话，别人也不干对吧？  参议院还有民主党的对吧？然后FBI调查博尔就是说是否利用自">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-14T15:03:08.000Z">
+<meta property="article:modified_time" content="2020-07-08T08:17:07.641Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2238%E6%9C%9F-FBI%E6%AD%A3%E5%BC%8F%E7%AB%8B%E6%A1%88%E8%B0%83%E6%9F%A5%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E7%94%A8%E7%96%AB%E6%83%85%E6%83%85%E6%8A%A5%E5%86%85%E7%BA%BF%E4%BA%A4%E6%98%93-6g5oYfdBvEE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2238%E6%9C%9F-FBI%E6%AD%A3%E5%BC%8F%E7%AB%8B%E6%A1%88%E8%B0%83%E6%9F%A5%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E7%94%A8%E7%96%AB%E6%83%85%E6%83%85%E6%8A%A5%E5%86%85%E7%BA%BF%E4%BA%A4%E6%98%93-6g5oYfdBvEE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-15 00:03:08" itemprop="dateCreated datePublished" datetime="2020-05-15T00:03:08+09:00">2020-05-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 17:17:07" itemprop="dateModified" datetime="2020-07-08T17:17:07+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/15/20200515%E7%AC%AC2238%E6%9C%9F-FBI%E6%AD%A3%E5%BC%8F%E7%AB%8B%E6%A1%88%E8%B0%83%E6%9F%A5%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E7%94%A8%E7%96%AB%E6%83%85%E6%83%85%E6%8A%A5%E5%86%85%E7%BA%BF%E4%BA%A4%E6%98%93-6g5oYfdBvEE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/15/20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易-6g5oYfdBvEE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月15号星期五，FBI已经扣押了共和党联邦参议院的情报委员会主席博尔的手机，博尔从昨天也辞去了参议院情报委员会的主席一职，博尔表示情报委员会及成员们的工作太重要了，不容任何闪失，我相信辞去主席一直是让委员会不受外部干扰，继续重要工作的必要之举，其实也是被逼无奈对吧？他这样的情况下他不辞职的话，别人也不干对吧？ </p>
+<p>参议院还有民主党的对吧？然后FBI调查博尔就是说是否利用自己取得的高度机密情报，于2月卖出股票，当时病毒尚未席卷美国，一般的美国人得到的信息是病毒的威胁不大。 </p>
+<p>博尔每天都会收到美国情报圈有关国家所受威胁的简报，他在2月7号的对福克斯纽子，他说美国政府面对病毒比以往都更妥善的准备，民众向美国民众保证会得到很好的保护。结果这是2月7号就到了2月13号，博尔就出售了价值628,000美元和一个170万美元的一个股票。 </p>
+<p>然后同一天博尔的连襟年金就相当于妹夫姐夫那种感觉是不是？他老婆的姐妹的老公，他老婆的姐妹的老公，那不也是他妹夫，他妹夫是他自己妹妹的老公，对他自己妹妹的是他的妹夫。他老婆妹妹的话33三边那是你连接。行，然后他连金也出售了价值28万美元的股份之后，股市就开始暴跌了。 </p>
+<p>这个新闻其实以前我们播报过对吧？当时我们就说该查查对吧？该罚款罚款该坐牢坐牢。博尔的出售的股票两周之后，博尔在与一个富翁的慈善人士私下聚会的时候也跟他说，他说这次疫情的威胁与夺走数千万人命的1918年的西班牙流感是相当的，这种都证明了他之前应该得到的消息，认为他的这种在股票上的这种炒作就属于有内部消息的炒作。我觉得他这种情况在美国想要定罪，真正的说违法定罪，我觉得其实比较难，因为定位有一定的要求，但是有美国证券，这就是证监委，美国的所谓的证监委的话，如果要是给他就是说进行罚款，我觉得是没有问题，这个很有可能最后会有一个巨额的罚款，但是我不认为他最后会坐牢，但是只要我觉得证监会只要对他进行巨额罚款的话，我觉得对他的参议员影响是非常大的。 </p>
+<p>因为这个毕竟是民选的官员，后面还能不能再选，就不好说了。不过美国还是这点好，这种情况很快就给我导入出来，很快就会有fbI去调查中国的股市，你相比起来中国股市的这种内线交易真的就是太多了，对吧？ </p>
+<p>我们真的我觉得这样中国你在股市上，你作为庄家，你做一些内线交易，收割一些韭菜，这个是你不会因为而把你抓进去，而因为什么？就是说你政治上你站错队了，比如说你政治上政策对了，上面大大脑壳不高兴了，一拍脑壳一拍脑门可能拿这个事儿来办，你办理的时候是这个理由，不能说是因为你政治上课对了对不对？就说你是因为内线交易或什么的，但是实际上你只要政治上把对站队了，对不对？真的没有问题的话，你可以随便搞对吧？ </p>
+<p>你看比较典型的就是说赵薇那时候炒股票挣了多少钱，好像很轻松，几个月就是几十亿人民币的正对吧？但是后来出问题是因为肖建华出问题了，所以连累到他了对吧？如果肖建华不出问题，他就没事对吧？ </p>
+<p>肖建华出问题了，实际上还是在政治层面出问题了对吧？因为像肖建华吴晓辉这些怎么说，如果是他们的这种政治靠山，就是说得势的时候吃香的时候，那就要去办别人了，对吧？现在办他们实际上是由于他们的政治靠山不行了，对吧？所以中国还是把比如说士农工商一切都根植于政治，美国来讲，现在虽然共和党是执政党，然后这个也是共和党，可以说在参议院来讲算高官了，参议院情报委员会的主席，三院情报委员会是一个非常重要的部门，这种真的是职能部门这种情况之下，我觉得最起码还体现出来美国司法还是不错的是吧？ </p>
+<p>但我相信博尔他肯定有的说他会请律师去狡辩，相信司法最后我们看看司法最后怎么来判。不过我说实话我很悲观，我不认为最后就是说从法律上会有什么，最多就只是罚款而已。所以其实我觉得不管是在独裁国家还是民主国家，高官和富商都有了一定的特权。 </p>
+<p>我经常说美国不是一个天堂，中国也不是第一，你不能说就是说只有中国就是说高官和富商有特权，美国的高官和富商就没有特权，都是有的。只不过就是说由于美国体制导致高官和服务商他的特权少一些，老百姓有得到利益更多一些，是吧？上层建筑不会就是说侵占太多的这种利益和权力，而这种一党独裁制的国家就上升尽量的太多，老百姓得到的太少。所以我总觉得我经常说就是说我们需要民主，不是说要送你去天堂对吧？ </p>
+<p>不是说要给你实现一个乌托邦，一个什么理想或一个梦想，我们只是希望让中国生活变得更好一些，然后上层建筑的改变更有利于中国的企业的发展，因为现在上层建筑确实来的其实不利于企业发展，领导喜欢中医中药，你看就玩命搞中医中药对吧？ </p>
+<p>前两天咱们这是一个朋友，他在中国他是跳舞的对吧？他等于算是跳这种算是夕阳舞，古典的对吧？都不说具体的了，反正算是这种夕阳舞，但是即使这样子，由于习近平同志对文艺工作者讲话，希望的文艺工作者更多的去发扬中国的这种民族的这种元素在，对不对？所以就把他们的这种西洋舞就楞地往这个民族上去靠，对吧？加入了很多的中国的民族元素进去。 </p>
+<p>这一次疫情也是因为习近平同志对中医中药有这种感情，对吧？所以我们更多的用中医中药去治，而不是就说领导人这个叫什么楚楚王爱细腰宫人多饿死，是不是？所以怎么说，我觉得中国就是说由于一切的根源都在这个权利，所以所有的东西都是唯上唯权的，都是看都是网上看看这个权利，所以导致下面的生活就是说讲相对比美国来讲还是糟糕一些。 </p>
+<p>我觉得这点来讲，不管是亲美的还是小粉红，实际上都能肯定一点，就说美国人民比中国人民过得就是说舒坦一些，然后你包括疫情，疫情都来了，对不对？ </p>
+<p>你看看中国的武汉，湖北你再看看美国的纽约和纽约是我们就在纽约，纽约是你看看我们过的这种生活，你再看看湖北的过的生活同样是一区同样是一情，就是说哪一个让人感觉就是说过得更像个人样子，就是说更人性化，对吧？ </p>
+<p>为什么？是因为我们这些人都有选票，对吧？所以这就是问题之所在，我不是说我还是那句话，不是说我们要改革体制就是说要给你送去天堂，去给你一个乌托邦，我们只是让你的生活现在变得更好一点，是吧？从这也能看出来，对吧？就是说本质上的都是坏人，都在那利用自己的一些情报全力去争取一些东西，但是有的它司法独立来讲，可以迅速地对它进行调查等等的，而且它的曝光我相信主要是来自于民主党，一看我还得绕一个对不对？所以就是说你就明白在一个政府里边有一个在野党，有一个坚对党有一个监督的政党，反对党是多么的一个重要。 </p>
+<p>好吧，直接讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/14/20200514%E7%AC%AC2237%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%9B%91%E7%8B%B1%E5%9B%9A%E7%8A%AF%E4%B8%BA%E4%BA%86%E8%83%BD%E6%8F%90%E6%97%A9%E5%87%BA%E7%8B%B121%E4%BA%BA%E5%85%B1%E7%94%A8%E4%B8%80%E4%B8%AA%E6%9D%AF%E5%AD%90%E5%96%9D%E6%B0%B4-A1QaCFitmlI/" rel="prev" title="20200514第2237期-美国监狱囚犯为了能提早出狱21人共用一个杯子喝水">
+      <i class="fa fa-chevron-left"></i> 20200514第2237期-美国监狱囚犯为了能提早出狱21人共用一个杯子喝水
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/15/20200515%E7%AC%AC2239%E6%9C%9F-%E9%A6%99%E6%B8%AF%E9%AB%98%E4%B8%AD%E4%BC%9A%E8%80%83%EF%BC%9A%E6%98%AF%E5%90%A6%E5%90%8C%E6%84%8F%E6%97%A5%E5%86%9B%E4%BE%B5%E5%8D%8E%E4%B8%BA%E4%B8%AD%E5%9B%BD%E5%B8%A6%E6%9D%A5%E7%9A%84%E5%88%A9%E5%A4%9A%E4%BA%8E%E5%BC%8A-OqCwk47naTw/" rel="next" title="20200515第2239期-香港高中会考：是否同意日军侵华为中国带来的利多于弊">
+      20200515第2239期-香港高中会考：是否同意日军侵华为中国带来的利多于弊 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">266</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/15/20200515%E7%AC%AC2238%E6%9C%9F-FBI%E6%AD%A3%E5%BC%8F%E7%AB%8B%E6%A1%88%E8%B0%83%E6%9F%A5%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E7%94%A8%E7%96%AB%E6%83%85%E6%83%85%E6%8A%A5%E5%86%85%E7%BA%BF%E4%BA%A4%E6%98%93-6g5oYfdBvEE/";
+    this.page.identifier = "2020/05/15/20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易-6g5oYfdBvEE/";
+    this.page.title = "20200515第2238期-FBI正式立案调查美国参议员用疫情情报内线交易";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
