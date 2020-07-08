@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/3/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/04/20200704%E7%AC%AC2490%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%9A%82%E5%81%9C%E4%B8%8E%E9%A6%99%E6%B8%AF%E7%9A%84%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-PF2xAnjDKkM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/04/20200704%E7%AC%AC2490%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%9A%82%E5%81%9C%E4%B8%8E%E9%A6%99%E6%B8%AF%E7%9A%84%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-PF2xAnjDKkM/" class="post-title-link" itemprop="url">20200704第2490期-加拿大暂停与香港的引渡条约</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-04 12:09:00" itemprop="dateCreated datePublished" datetime="2020-07-04T12:09:00+09:00">2020-07-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/04/20200704%E7%AC%AC2490%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E6%9A%82%E5%81%9C%E4%B8%8E%E9%A6%99%E6%B8%AF%E7%9A%84%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6-PF2xAnjDKkM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/04/20200704第2490期-加拿大暂停与香港的引渡条约-PF2xAnjDKkM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月4号星期六，今天是美国的国庆日，加拿大总理特鲁多7月3号昨天宣布，由于香港的国安法，加拿大将给予香港同中国大陆一样的待遇，那么也就是说从即日起，从昨天开始，禁止向香港出口警队防爆等敏感的军事物资，而且要暂停引渡条约，并更新了对香港的旅游警告。这个引渡是什么？就是说互相承认你对方的司法，才可以引渡，就说我认为你的司法是公正的，我的司法是公正的，我们的司法差不多，那么我这有罪犯的我可以给你引入，你有你最发达你给我引渡，但是等于现在暂停了引渡条约，就等于已经拒绝再承认香港是一个法治之地了。 </p>
+<p>这一次也是就是说老公的法律一来了之后，就是说他香港国安法你读完之后，他感觉他就不像一部法律，而是说是赋予了香港政府一些权利，而这个权利就是说完完全全由他去定义你到底是什么，你知道吗？就胡搞在加拿大的外交部部长叫佛尚辔蹑，他说加拿大在考虑额外的措施以后，会对进行更多的制裁，对香港我们要看一看，之前我也说我对于我现在采取的行动，我觉得力度完全不够，但是根本某种程度上说还没有采取行动，但是当然也我觉得有情可原，因为原先原先说是7月份通过8月1号开始实施，然后也不知道这杨洁篪跟朋友到底谈的什么，怎么又谈到了彻底崩，彻底谈崩了，谈崩了之后几乎就谈完了没几天，就直接7月1号就实施了。 </p>
+<p>我想给美国加拿大也是有一个措手不及，原先认为是8月份开始实施的，结果提前了一个月，他们也在做准备对吧？咱们也得给他们点时间，你没有民主国家在这方面真的是没有那么快，民主国家不可能是上面一拍脑袋一说什么下面就办了。民主国家做事情比较你可以说的慢也可以说稳，但是反正要等待我上次我就说了，我觉得两个星期到7月14号，我觉得最多算是比算比较快，我相信可能在7月14号之前就是措施也许未必有，但是方案应该就出来了，咱们到时候咱们看一看，美国和加拿大肯定还会有额外的举措，特鲁多称将给予香港和中国内地相同的待遇，在未来几周内家政府将考虑采取包括移民问题等的附加措施，等于他跟外长他们说的还不一样，但是反正各个方面然后中国驻加拿大的使馆称说，加拿大等个别西方国家出台任何错误的举措，都决不会影响香港国安法的实施，其介涉港问题对华施压完全是逆潮流而动，无异于叫什么？蚍蜉撼树螳臂挡车，决不会得逞。 </p>
+<p>实际上中国这次真的是够强硬，反正我相信美国、加拿大、英国、澳大利亚等国，现在我觉得应该正在内部的在商量，就是说如果要采取行动的话，我相信会是大家一起因为之前面对俄罗斯的时候，也是英美法也是一一起采取行动，这一次也是属于就是说极其公分了，我相信大家还在协调英国、美国、法国、加拿大、澳大利亚，这一次我相信会因为涉及到英国的很大的问题，那么就是说涉及到很多英联邦国家的参与，澳大利亚、加拿大都属于英联邦国家，美国再加上法国，然后咱们看咱们看看最后到底是一个什么力度，但是美国这方面也有他的担心，力度大了好像对香港和香港人造成的伤害，力度轻了又不足以对老公形成威慑，所以这个度到底怎么拿捏到一个什么程度，还是非常的微妙，我现在也是拭目以待，我想看看他们这些专家，这些学者，这些政客最后怎么拿捏的度，因为治大国如烹小鲜做饭也是其实火候是非常重要的，火大一点也不行，小一点也不行，好吧，咱们拭目以待，好吧？这先到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/03/20200703%E7%AC%AC2488%E6%9C%9F-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%8F%91%E6%96%87%E5%BA%86%E7%A5%9D%E4%BF%84%E7%BD%97%E6%96%AF%E5%8D%A0%E9%A2%86%E6%B5%B7%E5%8F%82%E5%B4%B4%EF%BC%88%E7%BB%9F%E6%B2%BB%E4%B8%9C%E6%96%B9%EF%BC%89160%E5%91%A8%E5%B9%B4-gQXmjGLccDc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/03/20200703%E7%AC%AC2488%E6%9C%9F-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%8F%91%E6%96%87%E5%BA%86%E7%A5%9D%E4%BF%84%E7%BD%97%E6%96%AF%E5%8D%A0%E9%A2%86%E6%B5%B7%E5%8F%82%E5%B4%B4%EF%BC%88%E7%BB%9F%E6%B2%BB%E4%B8%9C%E6%96%B9%EF%BC%89160%E5%91%A8%E5%B9%B4-gQXmjGLccDc/" class="post-title-link" itemprop="url">20200703第2488期-胡锡进发文庆祝俄罗斯占领海参崴（统治东方）160周年</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-03 12:08:08" itemprop="dateCreated datePublished" datetime="2020-07-03T12:08:08+09:00">2020-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/03/20200703%E7%AC%AC2488%E6%9C%9F-%E8%83%A1%E9%94%A1%E8%BF%9B%E5%8F%91%E6%96%87%E5%BA%86%E7%A5%9D%E4%BF%84%E7%BD%97%E6%96%AF%E5%8D%A0%E9%A2%86%E6%B5%B7%E5%8F%82%E5%B4%B4%EF%BC%88%E7%BB%9F%E6%B2%BB%E4%B8%9C%E6%96%B9%EF%BC%89160%E5%91%A8%E5%B9%B4-gQXmjGLccDc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/03/20200703第2488期-胡锡进发文庆祝俄罗斯占领海参崴（统治东方）160周年-gQXmjGLccDc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月3号星期五，俄罗斯驻华大使馆发了一条中文的微博庆祝，叫什么富拉迪沃斯托克就是海参丸说建成160周年微博还注明了弗拉迪沃斯托克的中文含义就是统治东方，还有拿中文告诉你我这个城我建这个城的目的，我这城的名字就是要统治东方，该微博引起很多中国网友的这个反感，觉得你庆祝你就自己在家庆祝，跑到中国微博上来，中文发还要告诉我们要统治东方，你是什么意思对不对？ </p>
+<p>那么传统上来讲，胡习近就发了一一篇文章，忽悠解释这个事情就庆祝了一下，为俄罗斯非常高兴，开玩笑，咱看他说胡昕说说传统上弗拉迪莫斯多克叫做海参丸，在中国出版的地图上名字标注为符拉迪沃斯托克，然后括号后面写上海豚玩。俄方层联系中方，希望中方把海三板这几个字拿掉，中方没有同意，说明中国官方也还是有点骨气的，也有点底线，还知道还有点羞耻之心。 </p>
+<p>那么这个胡锡进说胡俊说说海森板是11860年签署的，北京条约中割让给沙皇俄国的，说沙皇俄国是近代史上侵占中国土地最多的国家，那是一段不堪回首的历史。他说我跟你说这点来讲，呼吸镜是放屁，放狗臭屁，他只说了一半，他剩下的一半没有说真正把海三板割让给俄罗斯的，不是1800年不是满清政权，真正把海参版割让给俄罗斯的，是中国共产党政权，是江泽民同志时去做的事儿，这是江泽民同志把海参碗割让给他了，怎么回事是这样，1980年的确签署了北京条约，割让给了沙皇俄国。 </p>
+<p>但是二战结束之后，中华民国的政府，当时蒋介石政府就和当时的苏联政府就是说签订协议，明确海三晚50年之后归还中国，那么怎么回事？这个孩子们非常的重要，他是一个天然的不动岗，而且盛产海参，而且面积700平方公里，但现在一定是俄罗斯在远东地区的第二大城市，是一个兵家必争之地，尤其对俄罗斯来讲是非常重要，其实对中国来讲也非常重要。但是所以为什么就是说要抢这个地方就在这儿了。 </p>
+<p>那么1945年8月，蒋介石跟前苏联签订了中苏友好条约的中苏友好同盟条约，蒋介石当时派的宋子文，蒋经国向斯大林提出要收回大连海森绾裤业岛等地，斯大林的威胁说你们就不要了，这归我了，你们如果要如果你们要坚决要收回领土，那么我们就将协助中国共产党推翻了中华民国。 </p>
+<p>蒋介石非常强硬，蒋介石是一个民族主义者，他对领土的非常的敏感，绝对不可以。蒋介石强硬回复说，如果苏联协助中共的话，那么中华民国就将加入了西方同盟，并允许美国军队进入中苏边境。我们就帮美国咱们就来。 </p>
+<p>蒋介石当时在处理中美之间关系时还是比较聪明的，他在这两大之间做小，就是说拉着苏联抗美国，拉着美国抗苏联，在中间游刃有余。最后在这种情况之下就没有办法，最终双方达成了中苏友好同盟条约。苏联同意中国收回大连旅顺和满洲铁路，然后同意50年之后把海参版交还给中国。这是当时是46年，最后就是说他谈妥这个事情，那么加上50年代到了96年对吧？到96年的时候就发生这个问题，然后江泽民就几次跟当时的俄罗斯去会谈，跟叶利钦也谈过，后来跟普京谈。 </p>
+<p>那么最终在2001年的7月16号，江泽民与当时的俄罗斯总统普京在莫斯科的克里姆林宫签署了中俄睦邻友好合作条约，代表中国官方正式确认放弃与俄争议领土的主权，其中就包括海三板在内的乌苏里江以东的40万平方公里的国土，相当于10个台湾那么大的国土的就全部送给了俄罗斯，送给了普京。 </p>
+<p>那么所以胡一定在这是没有说实话的，真正的把海参岛丢了是中国是在中国共产党之下是在江泽民时期，然后老胡后面还说胡军说说老胡要说一些大实话，就没说大实话，还有胡锡进说的话，基本上都可以反过来听说老胡要出一些大事，就老什么意思，就是说老胡要开始忽悠你们了，就这个意思。 </p>
+<p>他说首先海参丸，海兰泡伯利等城市所在的那些领土都是中国的故土，但是今天他们已经是俄罗斯的领土了，他代表中国承认中国人承认了，他说对这个事实我们中国人需要接受这放屁呼吸机你不要带，不要代表中国人，中国人不接受是你接受，你跟中国共产党接受了，我们不接受。他说无论我们对那些故土有多少感情，中国作为国际法的维护者，都不能表达我们有意在未来收回那片故土的任何的官方的意愿，就那意思，给人就给人家了，不用再要了。 </p>
+<p>这哥们真行，说不改变领土，宪章是国际社会维护和平的基石性的原则，每个国家的人民都热爱自己的国土，无论它在历史上什么机缘，通过什么方式得来的领土的，你这么说你把钓鱼岛给日本，那么孙子就王八蛋，我靠这真的是臭不要脸到一定程度了。然后他说领土的旧账可以通过文学和历史的去记述，但不能轻易拿到外交中的摊开，否则他一定会演变成国家之间的对立乃至仇恨，而人为改变领土现状，大多情况下都意味着战争。 </p>
+<p>中国在失去海森版的时代太积贫积弱了，他说有江泽民时期，不是江泽民时期，不是有盛世强国，厉害了我的国了。他说那是一段国耻，那是一段中国共产党党耻。然而毕竟过去一百几十年了，无论是没有过去什么九几年谈的，然后2001年签的约一共过去了十几年，怎么叫100多年？他说无论是今天的中国人还是今天的俄罗斯人，都无法对那一段历史负责放屁，普京签的合同否定不负责谁负责，对不对？ </p>
+<p>江泽民还活着，对不对？怎么讲不是今天的中国人，那么江泽民不是今天的中国人，胡静就说什么叫道老胡要说几句大事，就老胡要开始忽悠你们了，放了全一一一圈的罗圈屁你知道吗？行，接着说。他说今天的世界地图一百几十年前的世界地图相比，很多地方已经变得让人认不出来了，如果把旧账一页一页的翻过来，那是整个人类社会的不可承受之中。老胡作为活在当下的一名中国人，说实话，我最大的意愿就是中国的领土维持现状，我不希望我活在中国失去的一一寸，我不希望我活在的中国失去了一寸领土，我也不希望他们开疆拓土，因为我知道无论是中国缩小还是扩大，还是扩大的过程都将是动荡的，甚至是血雨风，你们将习近平要武统台湾的时候，你逼怎么一顿小罗圈屁拍的小马屁拍，拍着砰砰的对不对？什么宁可台湾寸草不通，也要把他们收回，是不是？ </p>
+<p>你现在说这个呼吸真的就是崔永强讲话了，这个叫什么？ </p>
+<p>胡叼盘你知道吗？他就跟叼盘狗一样，这盘你怎么扔他都给你叼回来，他都能说得通你知道吗？这哥们真的也是个牛逼爆了，28万真也说不过他，我跟你说这也是事实。 </p>
+<p>接着看胡俊说说中国960万平方公里土地既足够大也一寸的不多余，我最希望的就是我和我的亲人，我的朋友们以及全体中国人民的一生都在和平安静中度过，你他妈无从谈完事，你也这么说。说他们的个人幸福以至于国家的领土和主权完整同样重要，我怀念故土就像很多这个中印边境为了那一点土地死了几十个了，对不对？而且也不承认他们。此外还不许说密布发桑，我的天真不要脸。接着看胡俊说说我怀念故土就像很多中国人一样，但我不认为这样的怀念可以变成了推动国家奉行只待回故土政策的激进的意识形态。 </p>
+<p>一旦出现这样失控的民族主义，它绝不会被世界接纳，而且它所指向的绝不是中国人民的福祉。接下来老胡还要说中国穿过历史烟云，今天已经彼此成为最为重要的战略伙伴放屁。 </p>
+<p>前两天俄罗斯才说了，印度比中国重要，印度如果说中国是俄罗斯的战略伙伴的话，印度就是中国的特权战略伙伴，这是俄罗斯最大的报纸采访了俄罗斯著名的政治分析家，就好像新华社采访了金灿荣一样，代表了普京的意思，跟你说的很清楚了，你不是俄罗斯最重要的战略伙伴，印度都比你靠前，你别腆着脸不要脸，拿热脸贴人家冷屁股好不好？回见。 </p>
+<p>要点逼脸，真的要点逼脸，真的心里有点逼数要点逼脸好吗？红军不想说你难听的，但是你真的是崔永元说的都是对的。崔永元说你说的很对，你一真的是一条狗，好吧？真的我对老胡我一向的不愿意说重话，但是今天真的太让人生气了，这种时候我就说胡锡进你就假装没看见就过去得了，别出来说话，这种时候出来说话，我的天你真的你把中国人的脸都丢尽了，真的是丢尽了。他说两国的新时代全面战略协作伙伴关系是两国在复杂的国际局势中实现了背靠背的医托，它是两国来自全球外交的基石，对各自的国家利益有着不可取代的意义，放屁。 </p>
+<p>去年采访普京说中美打贸易战问普京有什么观点，普京义正言辞的告诉你，这森林里两只老虎打架，聪明的猴子就坐在那里看，就是坐山观虎斗谁跟你是重要的伙伴关系，谁跟你是背靠背的依托，要点一点逼脸都不要。然后接着看他说美国现在最希望做的一件事情之一就是离间的中俄关系，他们做梦都希望中俄两国突然的反目成仇，那些对华盛顿来说无异于从天上掉下来的世纪礼物放屁，是俄罗斯人在中国的微博上用中文告诉你我要统治中方，是华盛顿干的是吧？ </p>
+<p>这是川普给普京下的命令让普京这么干的是吗？这种事也怪美国，我在这怪川普真真的川普都觉得日了狗了，真的，他妈躺在家里面躺在地上都他妈躺枪，我靠莫名其妙把普京发来的东西怪串婆，弄的好像普京是撞不到小老弟一样，真是不要脸。 </p>
+<p>接着看胡俊说说，我相信无论俄罗斯社会还是中国社会，都具有我上面所说的战略情形，我注意到中国互联网上不时有翻中国之间领土纠正的言论，他们除了与国人的故土情结有关，也有一部分是故意的，两种情况混杂在一起，形成非常敏感的网上的舆论，这个不是是谁故意的，这是俄罗斯人发的，这是中国人发的吗？微博怎么被被黑客黑了是吗？神经病这不是不敢骂老毛，我就经常说中国中国人就这样就怂逼怂到这个份上，只要一看到俄罗斯人就怂到这根狗一样，就呼进去，真的怂成一条狗了已经，你知道吗？ </p>
+<p>真的是这种事怪中国人你知道吗？怪怪川普怪中国人就是不敢怪普京，不管在俄罗斯，他说关于故土情节，我前面已经说了很多，但我必须提醒大家注意，我们的崇美公之力量每一次都会在各种煽动仇恶的舆情当中扮演活跃角色，他们会拿着放大镜寻找俄罗斯对中国的不友好，及第把中俄之间正常的利益摩擦和不到位的协调解读为战略互疑的表现，已向公众证明俄罗斯是中国最阴险的对手，那说句实在的，在中国的历史上，下5000年的历史上占领中国领土最多的是谁？ </p>
+<p>是他们俄罗斯。这只是事实，但是胡新你当然看不到这一点了，胡新历史对于胡新来讲就狗屁不是，你知道吗？好吧？他说在俄罗斯也有反过来宣扬朝中的势力，因此维系中国的战略关系是两国社会共同的使命。中国和俄罗斯的爱国者都应该给两国友好添砖加瓦，而不给那些破坏两国关系的人创造机会，老胡在此向两国社会拜托了，放你妈的罗圈屁，无锡进真的是放开了arp。 </p>
+<p>我要说从蒋介石刚才我们说到蒋介石，我就说从蒋介石时期开始都是这样，中国就是说在俄罗斯和美国之间两大之间难为小，这是事实，蒋介石时期就是两不靠这边不靠俄罗斯，那边不靠美国，最后中共是一门儿的，就一直接一头就栽进俄罗斯的怀抱了。那么当时中共和蒋介石打仗的时候就出现这个问题，就俄罗斯在背后是全力以赴的支持中国，但是美国实际上并没有完完全全支持蒋介石，因为美国认为蒋介石没有对美国好，蒋介石就是说他是真是真真正正的他想维护中国的国家利益，中国人民的利益。 </p>
+<p>所以他在两两两强之间他哪边都不靠，他拉着这头打那头拉那头再打这头，就为了给争给中国争取到最多的这些好处和领土，但是中共就别提了。后来张自忠的刘校长也跟老毛也是说，说尽量的两边都不考，维护我们自己的利益，他老毛呢最后选择还是投奔了苏联，把美国大使苏联等等别了司徒雷登把祖宗送走了，后面我们吃的斯大林多少的苦，我们自己心里有数对吧？老毛四以后自己也承认说这节渡囗也是有苏联欺负我们的成分在里面，对吧？具体的历史我们就不说了，好不好？吃了大亏吃了大苦，到了现在依然还是这样子。 </p>
+<p>为什么？很多人就说为什么我们到了现在，我们还是看不清局面，我们还是要一定要跟俄罗斯无论如何跟俄罗斯绑定在一起，无论我们是怎么侮辱我们，就尿在我们脸上拉拉屎拉到我们裤裆里，我们要跟俄罗斯在一起，我们绝对要跟美国的敌对，为什么就这样子？因为美国是跟中国人民站在一起的，你包括川普跟中国打一场中美贸易战也好，让中国民主也好，它带来的好处是给中国老百姓带来好处。 </p>
+<p>但俄罗斯不是俄罗斯要侵占的，是中国人民的好处，占中国人民的便宜，但是俄罗斯可以允许习近平胡须进这些人继续独裁统治中国。就是说普京的意思就这样子，我帮着你统治中国，你得了好处要分我一杯羹。美国是这样子，我帮助人民，但是你的政权就不保了，我们要换要换政权要民主，4年一4年一换，那么如果4年一4年一换的话，就没有人能够长久执政，那么这些人怎么吃香的喝辣的？ </p>
+<p>红二代红三代们怎么能够在海外买几千万的豪宅？一个号才十几个车库，天天法拉利兰博基尼患者，对不对？他们都做不到了。呼吸进这种狗狗腿的奴才怎么捞钱？对不对？所以就是说对于中国的独裁者来讲，还是跟俄罗斯在一起比较好，因为俄罗斯帮助他们一起来长治久安的统治国家，来给自己兜里捞好处，美国来了就坏了，他们的统治就结束了，就变成老百姓，就是说人民民主了，人民在治理这个国家了，人民就开始了，去占那些便宜了，对不对？所以就这么简单。 </p>
+<p>所以对于老百姓来讲，我就说你如果是个老百姓，你是个草根的话，你肯定是跟美国应该跟美国比较好，你如果也是既得利益者，那么你跟俄罗斯好我能理解，因为的的确确的对不对？你爸可能拿大笔一回1000条，几百万上千万就进来了，对不对？ </p>
+<p>你当然挣的容易在一个民主国家怎么可能允许你这么胡搞呢？对不对？所以就是说还是要看你的位置，屁股决定脑袋，看你到底在哪里，你能够认同哪种价值。 </p>
+<p>好吧，对于胡启进我还是那句话，崔永元说胡启进说的还是比较准确的，胡逸心真的是牛的逼的，我都没想到这个事，他都能敢接茬，他都敢发一篇文章说两句，他是真牛逼，我是扶了他，这是这哥们真的就是胡叼盘，这是刁攀能手。就这个盘真的是不好叼，他就楞敢把这盘掉下来就接住了。厉害。好狗。好，搞，good，boy。真想到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/03/20200703%E7%AC%AC2487%E6%9C%9F-%E9%A6%99%E6%B8%AF%E8%AD%A6%E6%96%B9%E9%80%AE%E6%8D%95%E6%B6%89%E5%AB%8C%E7%94%A8%E5%88%A9%E5%99%A8%E5%88%BA%E4%BC%A4%E8%AD%A6%E5%91%98%E7%9A%84%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90-5FMV_ZyWY-o/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/03/20200703%E7%AC%AC2487%E6%9C%9F-%E9%A6%99%E6%B8%AF%E8%AD%A6%E6%96%B9%E9%80%AE%E6%8D%95%E6%B6%89%E5%AB%8C%E7%94%A8%E5%88%A9%E5%99%A8%E5%88%BA%E4%BC%A4%E8%AD%A6%E5%91%98%E7%9A%84%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90-5FMV_ZyWY-o/" class="post-title-link" itemprop="url">20200703第2487期-香港警方逮捕涉嫌用利器刺伤警员的香港男子</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-03 12:08:07" itemprop="dateCreated datePublished" datetime="2020-07-03T12:08:07+09:00">2020-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/03/20200703%E7%AC%AC2487%E6%9C%9F-%E9%A6%99%E6%B8%AF%E8%AD%A6%E6%96%B9%E9%80%AE%E6%8D%95%E6%B6%89%E5%AB%8C%E7%94%A8%E5%88%A9%E5%99%A8%E5%88%BA%E4%BC%A4%E8%AD%A6%E5%91%98%E7%9A%84%E9%A6%99%E6%B8%AF%E7%94%B7%E5%AD%90-5FMV_ZyWY-o/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/03/20200703第2487期-香港警方逮捕涉嫌用利器刺伤警员的香港男子-5FMV_ZyWY-o/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月3号星期五，香港警方在机场就是说飞机都已经上了轨道了，准备要起飞了，就愣给拉回来了。抓了一个24岁的男子是星期二昨天的凌晨，那么怎么回事？在7月1号的抗议活动当中，这个人刺伤了一名警察，说是怎么回事？下午4点在铜锣湾一名防暴警察追赶抗议者的时候落单变成一个人了。使徒在试图制服一名示威者的时候，周围的人就试图把这示威者就出来，这时就有人用雨伞等物品的攻击这名警察，其中有一个身穿蓝色衣服的男子，好像是拿一部什么东西，反正扎向警察的左肩，导致警察大量出血，然后示威者得以逃脱，把那人救出来之后，这个人也赶快跑。 </p>
+<p>嫌疑人逃跑之后于当晚乘坐国泰航空的一架航班前往英国，警方在得到举报之后，在飞机起飞前赶到机场，航班编号是CS251，原定是晚上11:55起飞，但因警方的抓捕行动突然到凌晨1点才起飞，有10名防暴警察在飞机几分钱大约得10分钟才赶到，把这飞机就弄从跑道上给叫回来了。嫌疑人是在离开抗议现场，两个小时之后买了前往伦敦的单程机票，然后没有带行李就去了机场，等于他刺伤了之后，他自己也知道惹祸了马上就跑，跑了之后就是说商量怎么办，两个小时之后就决定了马上跑往伦敦跑，结果买了伦敦的单程机票，没有带行李，什么都没有，直接奔就奔机场了，都没有赶回家去拿点东西。 </p>
+<p>这次航班是在周三卖出的唯一一张机票，等于到周三的，就是说当天的机票是唯一一张，然后这男子持有一本过期的英国国民的海外护照，就是现在英国不要对护照就给他们，让他们过去前香港说这个事怎么回事是这样说，前香港特首梁振英他发文悬赏到50万港币给提供线索抓捕这名在逃嫌疑人。梁振英还承诺绝对保密，就是说不管是谁把它出卖的话，50万我偷偷给你，不让任何人知道。 </p>
+<p>那么就说有他的亲属就是贪图这50万港币把他给出卖了，是他的亲属知道的，因为他这两个小时要跑，说这亲属看到人看宣传50万，然后就报警的把他抓了，为了拿50万不知道能不能拿拿到。 </p>
+<p>这名男子的父亲周四接受访问时说，儿子毕业于香港大学的土木工程系，这还是高材生了，在一家私人公司做工程师，每月的收入约2万港币，还是算是高级人才，我觉得被亲友举报之后抓获，抓捕的现场有了一些有人给我们提供了一些内部消息，现在但是现在没有被香港的官方去证实，而内部消息对被抓捕的男子我觉得是不利的。所以出于我觉得对嫌疑人的保护，我就不在非会员里说了，一会我们在会员里面我说一下我得到的一些线索，就是这个男子被抓的时候，还有不该出现的人在旁边出现了，而且在他的身上搜出来了，不该有的东西，那么涉及到很多问题，当然还是未经证实小道消息，所以一会会在会员专享里边说好，现在目前我们掌握的官方能够准确的来说就这些。 </p>
+<p>好吧，小道消息咱们小道消息咱们就私下说到了好吧？这一讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/03/20200703%E7%AC%AC2486%E6%9C%9F-%E8%8E%AB%E8%BF%AA%E4%BA%B2%E8%B5%B4%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%8D%E4%BC%9A%E5%8E%BB%E7%9A%84%EF%BC%8C%E7%8B%AC%E8%A3%81%E8%80%85%E4%B8%8D%E9%9C%80%E8%A6%81%E4%BD%9C%E7%A7%80-U1DW9C4IuQM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/03/20200703%E7%AC%AC2486%E6%9C%9F-%E8%8E%AB%E8%BF%AA%E4%BA%B2%E8%B5%B4%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%8D%E4%BC%9A%E5%8E%BB%E7%9A%84%EF%BC%8C%E7%8B%AC%E8%A3%81%E8%80%85%E4%B8%8D%E9%9C%80%E8%A6%81%E4%BD%9C%E7%A7%80-U1DW9C4IuQM/" class="post-title-link" itemprop="url">20200703第2486期-莫迪亲赴中印前线，习近平不会去的，独裁者不需要作秀</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-03 12:08:06" itemprop="dateCreated datePublished" datetime="2020-07-03T12:08:06+09:00">2020-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/03/20200703%E7%AC%AC2486%E6%9C%9F-%E8%8E%AB%E8%BF%AA%E4%BA%B2%E8%B5%B4%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%8D%E4%BC%9A%E5%8E%BB%E7%9A%84%EF%BC%8C%E7%8B%AC%E8%A3%81%E8%80%85%E4%B8%8D%E9%9C%80%E8%A6%81%E4%BD%9C%E7%A7%80-U1DW9C4IuQM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/03/20200703第2486期-莫迪亲赴中印前线，习近平不会去的，独裁者不需要作秀-U1DW9C4IuQM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月3号星期五，印度总理莫迪亲赴前线了，他在7月3号抵达了就是说前线拉达克列城，佩克莫迪的还有印度的国防参谋长拉瓦特和印度的陆军参谋长纳拉湾就一起去了。 </p>
+<p>那么是在7月3号早晨起来抵达的，拉达克和当地的军队进行了互动，还在军队医院会见了受伤的士兵，鼓舞军队的士气。印度的这些舆论认为说莫迪此举弥补了之前的错误，莫迪6月19号发表了不利于印度的讲话，他说本次冲突都是在中国境内发生的，都是就是说我们跑到人家那边去了，对不对？实际上就是敲打的军队就不要再这么搞了，其实莫迪是不想打的。 </p>
+<p>但是当时弄完之后在国内就是说被抨击了，他现在担心影响自己的选举就跑去了，又要来表达一下这个意思。说站在人民的一边，我们要坚决抵制中国等等的。还有一点就是说还是认为莫迪在6月15号的知名的冲突爆发前，对边境仪式轻描淡写，没有当回事儿，其实他一直都在泼冷水箱稳定的局势，其实莫迪我一直都说莫迪是不想打的不想干的，但这个来讲对于它在国内的这种支持度影响非常大，莫迪现在赶快就是说因为他是个民主国家，毕竟是要靠选举的，总要搞这些。 </p>
+<p>有的人就说习近平会不会去，我说习近平不会去的，为什么？因为独裁者他不需要作秀，你懂吗？ </p>
+<p>莫迪这种其实是一种作秀的行为，我来了挥挥手，大家你知道吗？鼓舞一下秩序，发扬一下民粹，为了以后选举做打算，习近平就最简单的武汉闹的那么厉害，习近平是不会去的，什么时候武汉没事了，习近平才去，厉害时让李克强去送死，你知道吗？现在前线搞不好要打，习近平是不会冒风险过去的。如果要过去的话，让李四阳让李克强去当替死鬼，你知道吧？什么时候都没事了，安全了，习近平的才会去。而且习近平不需要向部队去表态，部队完完全全现在枪杆子刀把子完完全全的控制在习近平的手里，所以莫迪跟习近平不一样。 </p>
+<p>习近莫迪他算是搞政治的，军队来讲其实多多少少不完完全全的掌握，所以他要跟军方去表个态，跟老百姓的表个态，因为军方手握着军权，老百姓手握着选票，他总要做一个秀，意思一下表达一下我这个意思，挽回一下自己之前失言的这些引起的一些不满，但是习近平是完全不需要的，进行完全不需要这么做，你没有不满你不敢不管对不对？你不满它颠覆国家，对不对？抓紧坐牢弄死你对不对？ </p>
+<p>所以习近平现在是完完全全的是一个一党独裁统治，完全不需要做秀，但是莫迪去了之后的的确确会引起就是说印度前方士兵我觉得更加的兴奋和亢奋，可能对于就是说将来打起来，我觉得有一点就是说火上浇油的成分这么搞下去，我看想要和谈，说前两天又何谈了，有第三次你们军长级的核谈，最后谈了谈去也是就是说还是没有什么实质性的收获，就目前来看这个意思的话，莫迪实际上也被军方和民族主义的情绪所绑架，所以现在就看中方中方不怂的话，印度看来就是说是骑虎难下，不打不行了。 </p>
+<p>这样来看我对中印就是说能够和平解决这个问题，我越来越悲观，我觉得。目前看起来我觉得战争的苗头是火是越烧越高，从一个小小的小火苗已经造成了很已经很高了，而且双方最近这一天还是持续的在增兵，我看这意思恐怕打是早晚的事了。好吧，这一讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/03/20200703%E7%AC%AC2485%E6%9C%9F-%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%AE%9A%E4%B9%89%E2%80%9C%E5%85%89%E5%A4%8D%E9%A6%99%E6%B8%AF%EF%BC%8C%E6%97%B6%E4%BB%A3%E9%9D%A9%E5%91%BD%E2%80%9D%E5%B0%B1%E6%98%AF%E6%B8%AF%E7%8B%AC-1MUr-7q_QtI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/03/20200703%E7%AC%AC2485%E6%9C%9F-%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%AE%9A%E4%B9%89%E2%80%9C%E5%85%89%E5%A4%8D%E9%A6%99%E6%B8%AF%EF%BC%8C%E6%97%B6%E4%BB%A3%E9%9D%A9%E5%91%BD%E2%80%9D%E5%B0%B1%E6%98%AF%E6%B8%AF%E7%8B%AC-1MUr-7q_QtI/" class="post-title-link" itemprop="url">20200703第2485期-香港政府定义“光复香港，时代革命”就是港独</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-03 12:08:05" itemprop="dateCreated datePublished" datetime="2020-07-03T12:08:05+09:00">2020-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/03/20200703%E7%AC%AC2485%E6%9C%9F-%E9%A6%99%E6%B8%AF%E6%94%BF%E5%BA%9C%E5%AE%9A%E4%B9%89%E2%80%9C%E5%85%89%E5%A4%8D%E9%A6%99%E6%B8%AF%EF%BC%8C%E6%97%B6%E4%BB%A3%E9%9D%A9%E5%91%BD%E2%80%9D%E5%B0%B1%E6%98%AF%E6%B8%AF%E7%8B%AC-1MUr-7q_QtI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/03/20200703第2485期-香港政府定义“光复香港，时代革命”就是港独-1MUr-7q_QtI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月3号星期五，昨天我们说了钢板管法有多么的荒谬，现在看来就是说在荒谬之上可以说是更荒谬。香港特区政府7月2号发表声明说，说严正声明，光复商港，时代革命，这是去年返乡中时喊的口号。说这个口号在今时今日是有港独或将香港特区从中华人民共和国分离出去，改变特区的法律地位或颠覆国家政权的含义，所以这是港独的口号。 </p>
+<p>所以特区政府呼吁社会大众不要以身试法，什么意思？你只要喊这个口号就可以抓你，你就违反了香港公安法，这个已经到了就是说因言获罪的地步了，而且因言获罪已经不是说你要喊香港独立，是因言获罪，就是说任何的口号或任何的东西，只要他认为你你是不是不重要了，说你不是也是这个已经就是说走到了一个极端，这已经说是他的法律所没有办法囊括的地方了，已经到了任意的翻手为云覆手为雨的地步，这样以后不该你喊什么，你只要上街你只要喊了口号，任何口号我都可以说它是港独是有港独含义。 </p>
+<p>你是违反了国家安全法，你你上来如果你说习近平治理不当，或者习近平有贪污腐败行为，这个来讲的话，本来就是说我认为你有对不对？那你说你这个就是港独颠覆国家，这个完全不挨着你知道吗？但是已经或者你说习近平长得像威尼熊，对不对？颠覆国家判无期，这已经到了就是说不管你说什么都可以算，你颠覆国家都可以判你无期徒刑的地步了。好吧，最近讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/03/20200703%E7%AC%AC2484%E6%9C%9F-%E5%9B%BD%E5%AE%89%E4%B8%A2%E4%BA%BA%E4%B8%A2%E5%A4%A7%E4%BA%86%EF%BC%8C%E7%AB%9F%E7%84%B6%E8%AE%A9%E7%BD%97%E5%86%A0%E8%81%AA%E8%B7%91%E4%BA%86-gyVBmb6gYHI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/03/20200703%E7%AC%AC2484%E6%9C%9F-%E5%9B%BD%E5%AE%89%E4%B8%A2%E4%BA%BA%E4%B8%A2%E5%A4%A7%E4%BA%86%EF%BC%8C%E7%AB%9F%E7%84%B6%E8%AE%A9%E7%BD%97%E5%86%A0%E8%81%AA%E8%B7%91%E4%BA%86-gyVBmb6gYHI/" class="post-title-link" itemprop="url">20200703第2484期-国安丢人丢大了，竟然让罗冠聪跑了</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-03 12:08:04" itemprop="dateCreated datePublished" datetime="2020-07-03T12:08:04+09:00">2020-07-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/03/20200703%E7%AC%AC2484%E6%9C%9F-%E5%9B%BD%E5%AE%89%E4%B8%A2%E4%BA%BA%E4%B8%A2%E5%A4%A7%E4%BA%86%EF%BC%8C%E7%AB%9F%E7%84%B6%E8%AE%A9%E7%BD%97%E5%86%A0%E8%81%AA%E8%B7%91%E4%BA%86-gyVBmb6gYHI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/03/20200703第2484期-国安丢人丢大了，竟然让罗冠聪跑了-gyVBmb6gYHI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月3号星期五，罗冠聪还记得罗冠聪吗？黄之锋他们觉得非常有名的，这个是去年反送中当时的几个年轻的带领人物，罗冠聪在周四昨天的时候证实已经离开了香港，罗冠聪是香港众志的创党的主席，当时是他创造上港中党，周四晚他通过脸书证实他已离开香港，将在国际层面为香港争取更多的民主的支持，那么基于风险，它暂时不透露自己藏身何处以及目前的个人的处境。 </p>
+<p>反正国安镇的丢人丢大了，我们之前说过李志英几次向法院申请要离开香港都被拒绝了，而且是7×24小时，全天候的有人就是跟踪他，而且就怕他跑了，现在国安法出港版国安法就是为了要办这几个人，对不对？那就是说国安实际上在钢板国安法出台之前，就怕他们的逃离香港，一直都是在跟踪在堵截，结果还是让罗万通给跑了。 </p>
+<p>而且罗汉松在7月1号在美国国会听证会中，他透过视频影像作证批评港版国安法无法无天。说香港因言入队的情况已经发生，因为其个人刚在美国的国会听证会上的发言，就使他陷入了不可预知的危险当中，因为跟本国玩法认为，你只要跟外国势力勾结，都算是颠覆国家都可以进行的。去美国国会，美国国会听证会去作证的话，这就算是与外国势力勾结，这已经可以判这个无期了。 </p>
+<p>所以姐姐罗贯通曾经当选过立法会的议员，去年还去了美国，向美国政界人士历程，香港当局提出修订逃犯条例的弊端，他这是今年这算是第二次去美国国会听证会听证了。 </p>
+<p>他在美国国会听证会上说，他说仅是参与这场听证会，就已经违反了港版国安法，而且面临着要终身监禁的威胁，就是说这已经无法无天到什么程度了。 </p>
+<p>不管怎么着，我觉得他走了还是我为他感到欣慰，我觉得真的没有什么意思，就跟谭嗣同一样，你说宰了杀了又怎么样，谭嗣同觉得他留下来了，他的血流了，中国变革就开始了，改革就好了，结果怎么样？你会发现老毛来了共产党治理国产治理初期还不如慈禧了，慈禧老佛爷治理的时候都没有闹出什么三粘结度荒，什么就是说三反五反没有死了那么多人对不对？初期搞的还不如老佛爷了工作，还不如慈禧，慈禧搞得都比他们搞的好，对不对？ </p>
+<p>经常有人说要感谢共产党，没有共产党拿着好日子，他们的比都是跟共产党治理17比，你知道吗？没有比这个板，她就说她老是拿后30年的跟前30年，比如说你看前段时间我们大量的饿死人，全国饿死几千万，你看现在中国老百姓终于吃上饭了，民国的事也能吃上饭，私企蛋是吧？也能吃上饭你知道吧？朱元璋在的时候也能吃上饭，所以这怎么说反正就骗自己高兴就好，好不好？ </p>
+<p>罗冠聪我觉得真的就是我自横刀向天笑去留肝胆两昆仑，不管是走的还是留下来的，我们都表示这个怎么说呢？各干各的好吧，罗冠聪他最后自己的脸书上留了一段话，看着挺令人感慨的，他说今此一别尚未知归途，何其从飞机往下，香港的繁荣璀璨，是我心目中的难以忘怀的剪影，愿他招有幸半生归来，仍是那位无望初中的少年，愿香港安好，愿荣光早日到来。 </p>
+<p>我觉得当然说的是很感慨，但是我觉得真的这个半生之后能不能未来都不知道，真的30年也是他，40年是他，50年可能也是他了，令人的非常感慨，30年前8964也是很多，他像都跟罗冠聪差不多，跟罗冠聪他们年龄差不多的很多的年轻人，当时就是说我记得当时也算是投奔怒海，当时我就是往香港跑，当时好像香港有什么六哥，他们当时驾着小船来这边接他们，把他们一个运回去偷偷回去，当时还是非常的惊险，有的人就堵在船的甲板下面，你知道吗？到了之后拉着男人感觉都快闷死了，都还闷个半死，都有点失去意识了，都有点，后来又在现在没想到几十年之后，这个事情最后发生在了香港，跟当年8964的逃跑的时候是一样的。 </p>
+<p>他说半生归来真的30年了，64那帮人还能回得去吗？也回不去，有很多我知道有一些64当年逃出来的，当然他们不光是学生，还有一些当时的一一些算是中老年知识分子，有一些可能就都死在海外了，真的就回不去了，不是说半生归来，有可能终生就回不去了。罗冠聪我不知道他这辈子还能不能回头去香港，其实我现在是也有很多我们的时候，我们经常说可能过30年中国会改变或者是真的不好说的，就是中以中国人目前整体的水平和素质来讲，罗汉峰可能这辈子都不用回去了，可能都没有了，能不能半生之后归来，还要看还要看。 </p>
+<p>不管怎么样，我们还是表示欣慰，阿罗冠聪终于算是跑了，对于内心还没跑了的李志英也好，黄志峰也好，我们表示一个担心，我们建议他们还是能不能像罗冠聪这样子，该走还是就走吧，留下来又怎么样，对不对？ </p>
+<p>谭思彤死了，留了那么多写，江姐也死了，留那么多写，最后老毛他们上来了，不该贪污贪污，该腐败腐败，对不对？该干嘛干嘛，该货对不对？你看到了现在你跟满清的八旗子弟有什么区别？对不对？没有解决任何问题，所以我觉得血就是白留了，谈红的血就白流了。我觉得黄之峰也好，黎智英也好，如果留下来，最后真的如果是付出了生命的代价的话，我觉得我不认为就一定会怎么样，所以我觉得没有必要做这种无谓的牺牲是吧？当然了反正这是我自己个人的观点，好吧？ </p>
+<p>今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/02/20200702%E7%AC%AC2483%E6%9C%9F-%E5%A3%B0%E6%8F%B4%E9%AB%98%E6%99%93%E6%9D%BE-b8LNh23U0BM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/20200702%E7%AC%AC2483%E6%9C%9F-%E5%A3%B0%E6%8F%B4%E9%AB%98%E6%99%93%E6%9D%BE-b8LNh23U0BM/" class="post-title-link" itemprop="url">20200702第2483期-声援高晓松</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 12:08:03" itemprop="dateCreated datePublished" datetime="2020-07-02T12:08:03+09:00">2020-07-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/02/20200702%E7%AC%AC2483%E6%9C%9F-%E5%A3%B0%E6%8F%B4%E9%AB%98%E6%99%93%E6%9D%BE-b8LNh23U0BM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/02/20200702第2483期-声援高晓松-b8LNh23U0BM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月2号星期四，咱们今天声援一下高晓松同志，高晓松同志这次被人骂的挺厉害的，当然了这个出来你做媒体总是要被骂的，也正常我们也被骂是不是？ </p>
+<p>6月28号高晓松在人民日报直播节目当中翻车，最终就导致了就紧急关闭了直播，说是直播由人民日报新媒体中心人民文学出版社共同发起，叫名人读名著的节目，主题是为毕业生推荐一本的名著让大家去读书。直播的时候，当高晓松手持纸扇上线的时候，网友的骂声接踵而至，说什么高速工区滚不是公知吗？然后工区把只字改成区特有区供区滚，什么狗屎垃圾。说一个美国人死皮赖脸赖在中国，还一直阴阳怪气的抵制公知等等，最后导致了紧急中断了的节目。 </p>
+<p>怎么回事？他们说高晓松就总结高晓松都说了什么，说高晓松说中美最大的区别是中国是靠潜规则生存的，这话有什么问题我不明白，说郑成功是倭寇，除了四大发明是假的，阿拉伯的文明的优于汉文明。但是这说过其实我也不太清楚了，我也想不起来了，当然他们说过咱不知道，反正网上说他说过。还有质疑高晓松是美国籍，理由是在2011年因酒驾面对警察时候，他说自己是外国人，说他拿出了美国护照这是不对的，当时高晓松没拿出美国护照，拿到美国护照就好了，当时拿出来是美国绿卡，美国绿卡还是中国人试图逃避了法律制裁，也没逃避，好像蹲了半年在里边。 </p>
+<p>然后2019年加入了中国民主党派93学社之后，高晓松解释说93学社是不接受外籍会员的，所以暗示自己认为中国籍其实已经算是做出了解释了，就自己还是中国人，还是中国国籍，但是不管怎么着，反正引起极大的不满。我们觉得我们还是声援一下高晓松，我说实话高晓松猪八戒照镜子里外不是人，高速公路的视频我看了看完之后，说实话，我觉得不过也很多的地方为了能够他当初录这些视频都是为了能在中国播的，最后有一些还是播不了，播不了，他也是其实已经进行了自我的审查，自我的严格已经都是自我审查和检查，过了的他认为已经能播了，但是最后还是不行。 </p>
+<p>作为我们海外观众来讲，我们看了高晓松的视频之后，我觉得不过里面有很多东西没有讲透，当然我们能理解他们在在中国对于我们海外来讲，就觉得你讲这种东西，你反正就是为了挣中国人的钱，在中国骗钱对不对？骗吃骗喝，当然这么说不太好，但大意是这么个意思，对不对？ </p>
+<p>海外人觉得这不过瘾，你都既然说了你就多说对不对？但是就到这种程度国内就已经不行了。我明白了就这样，因为他也掌握一个度，你在中间就这样，因为我们其实也是经常在中间这，你就被两头骂，你知道吗？这边觉得你不够狠，那边觉得你崇崇洋媚外，汉奸走狗卖国贼对吧？ </p>
+<p>其实我是比较理解的，高晓松现在处境的，我个人来讲生源高晓松，其次如果高晓松同志能看到这个视频的话，其实我鼓励高扬同志干脆就离开就得了，都已经到了现在这个地步了，你知道吗？再呆下去很难看了。那么丢人现眼了，你叫你知道吧？当年我记得他是不是奇葩说，我记得他跟马东还有蔡康永他们一块，当时来了一个清华的博士生，好像然后高晓松是义正言辞的把博士生说了一遍，当然是指桑骂槐，主要不是为了说这学生。是的。 </p>
+<p>抨击了一下中国的教育体制，清华大学令人不满的这种怂包的样子。 </p>
+<p>当年的李敖在北大演讲的时候，也是觉得北大现在有点孬，有点怂，就是这么一个情况，这个没有问题的确是事实，但是就是说怎么说呢，当你笑话别人的时候，没想到隔了这么多年传回来之后，别人现在要笑话你了，你知道吧？就是说你高晓松来讲，你看中国的教育体制，你看清华大学，你觉得他们有点闹有点怂，我们站在海外，我们看你觉得你有点孬有点怂，是不是？所以高晓松你要想一想，就是说从本质上来讲，你跟你瞧不起的，当然当时清华博士生特别的体制内培养出来的那种，你知道吗？ </p>
+<p>非常的就是说阿谀奉承，然后见人说人话，见鬼说鬼话，你知道吗？完全没有那种就是说清华大学一个学者的那种风范，你知道吧？完完全全的就是党国培养出来的那种就是说走狗好像有点重，但是也差不多你知道吧，高晓松就极为瞧不起。 </p>
+<p>但是说实话就是说你从我们海外看，就是说本质上来讲你俩没有区别就是说反正打仗了，他跑了你也跑了，他跑了100步，你王晓松跑了50步，当然了你可能你就笑话他，你说你看你你害怕跑了那么远，你看我还跑了，我才跑了这么远，你跑这么远，对不对？你从我们来看，你们都他妈跑了对不对？你一个跑了50步的笑话，人家跑了100步的，对不对？我都不知道你底气何来，当然这声援高从别人变声讨，一会儿让我们改一下，把声源变声讨了得了，改一个字，就说说这意思对吧？所以我鼓励高晓松同志都已经到这种地方了，对不对？ </p>
+<p>干脆就不要再想那些钱不钱的问题了，当然我也明白，以高晓松来讲，高晓松在中国我相信高晓松11年在中国能捞几个亿，中国现在这个钱真好了。 </p>
+<p>奇葩说的时候当时为什么这么说，当时奇葩说的时候我记得蔡康永到曾经他们曝光过说蔡康永当时就是说把康熙来了停了，然后到中国来拨七八桌好像是。好像当时就是他高晓松和马东他们仨是吧？ </p>
+<p>当时怎么回事就是这样子说蔡康永在康熙来了干了好像是12年，挣的钱加在一起跟他在七八说一年挣的钱是一样的，一年搞了几个亿，他们三个人我觉得马东、蔡康永、高晓松他们的收入应该是不相上下，应该是差不多的。所以我觉得就这么来说的话，当然高晓松还有其他的收入，不仅仅是光是他还有其他乱七八糟的东西，对不对？那么所有的这些加在一起的话，我觉得要从每一年从中国捞几个亿人民币，还是没有什么太大问题的，不过现在演艺人员基本上一年捞几个亿都是都很正常，尤其像高晓松这种名气的对不对？这都是反正捞对不对？ </p>
+<p>但是我也明白就高晓松如果现在彻彻底底的离开中国了，干脆我就出来放飞自我，想说什么说什么，每一年可能就少挣了几个亿人民币，但是我又觉得挣钱这种东西什么时候是个头，对不对？差不多就得了，按理说你这么多年也捞了几个亿了也对不对？我就说你对吧，你这些钱到了美国也够吃够喝够花了，年纪也大，没有必要在那里丢人现眼了，出来了说两句痛快话，对不对？ </p>
+<p>我还是想起来谁，窦文涛才考王晶，香港一个演导演王晶，就说王晶现在就是说光只是指导了，基本上自己也不演了，那时候为什么也不演了？王晶就说我年纪大了，以前年轻的时候演喜剧，演喜剧有时候叫扮丑，扮丑，然后被人敲头被人扒头你知道吗？然后装傻充愣是吧？他说我那时候年轻，我为了出名，我为了要挣钱我也就算了。现在我这么大岁数了，我功成名就了，我再出来演这种角，我在那什么的话，我自己我想我何必对不对？我不想再挣这种钱了，我钱也挣的差不多够吃够喝了我就完了，对不对？ </p>
+<p>所以你看看对不对？就是说你高晓松你现在在中国说句不好听的，你这个事情和被人家敲头和8头有什么区别？对不对？都这么大岁数了，何必再挣这种丢人现眼的钱，是不是？我觉得够吃够喝的就得了。 </p>
+<p>而且对于高晓松，当然咱们这对生源变成桃了，咱们要承认高晓松同志的实力，我对高晓松同志我还是比较有也比较欣赏，因为据我听说据听说高晓松同志录视频跟我一样，都是属于基本不准备，开机直接录成茶就啥样，知道吗？你看我们这种也是完全这种原生态，知道吗？我老婆她一说开机开始录就开始搁这给你的，得完了之后谢谢大家，就摁完了之后没有任何剪辑直接上传。就这样了，据说高晓松好像跟我差不多，我对这种的我是比较欣赏的，我不喜欢那种的，就提前准备半天写稿，写个7000字1万字的稿，然后开始了调整，然后再想好了我读到哪了之后怎么我就潸然泪下了，怎么我就煽情，我的语气怎么样，然后什么时候音乐要进来，要跟我怎么配合，后期我要怎么剪接，我要怎么制作我的东西，我就觉得你做节目可以变成语言类的节目，你那样子我不愿意看，因为那什么我就觉得你是就是说精心编制的一个谎言，你知道吗？ </p>
+<p>所有东西都是你刻意做出来的，你像我这种坐在这儿瞎说大实话，有的时候经常说点那种，今天怎么把这句话说就你知道吗？他有那种你可以说是夹带私货，或者有那种真实的感情情绪的这种表达，我更喜欢看这种东西，高晓松反正据说高晓松也是这样子，我觉得要真的是这样的话，高晓松太厉害了。如果他做这个视频之前，几乎没有做过任何的这种收集资料或什么的都没有张嘴就来的话，他真的是博闻强记，他的这种力量性太强了。 </p>
+<p>有人经常跟我说说，你觉得高晓松没讲全，你能不能你讲讲他没讲全的一部分，给他补一补，我觉得我做不到，因为什么？我不愿意做功课，你知道吧？他那东西我要想讲全的话，我要做大量的功课，现在我不愿意做做功课你知道吧？ </p>
+<p>所以真的没他那水平，你现在让我就高晓松讲，那些东西你让我完全不做准备，现在坐在这开始给你讲，他没讲那一半给你补全，就他没讲那一半，我大概心我知道一些，我脑子里有一些，但是你让我整个像他那样的花给你缕出来，我完完全全不做准备，就坐着开始比我真离不了。咱真的咱跟高晓松比是有差距的，但是我不知道，因为很多哥哥唱的歌手也都说说我唱歌我录磁带都是one take，什么叫做take？我这一首歌我从头开始唱唱到尾，不做任何的剪辑，录成什么样就播什么样，但是反正很多歌手都是这么吹，但是据我所知，很多的歌手都是做大量的后期，你知道吧？ </p>
+<p>所以我就不知道高晓松是不是真的像他们宣传的那样子，真的就坐在这就开始说，说成啥样是啥样，我觉得那就牛了逼了，不过我一直还比较非常的羡慕高晓松的。虽然高晓松同志说他是没有后期，但是每一次他一说牛的逼了或者说傻逼的话，他后期都会有人帮他拿消音，把逼字消掉，逼一声消掉，咚一声来点提笔，你知道吧？这点我还是很羡慕的。 </p>
+<p>我们暂时还没有这项服务，没有人给我们做这种事情，不管怎么着，甭管是声援还是声讨，反正我觉得说到这个现象，然后对高晓松同志进行一个鼓励，向上的下定决心有勇气的出来，其实真的我很希望他这种像邓文涛像柴静这种人，最终能够下定决心到海外来。 </p>
+<p>真的说几句大实话，包括像崔永元能够出来的说点东西，不要在国内这样子怎么说，就是说戴着镣铐跳舞，也说不痛快，对不对？国内也骂你，海外的还不理解，对不对？当然了我承认你们这些人在国内你们毕竟还是能挣到钱的，对吧？每年都是你像高晓松可能要几上亿的老，对吧？ </p>
+<p>崔永元柴静他们多多少少的话弄个几百万几千万没有问题，当然有人说崔永元现在不是，我跟你说催收员还是能挣着钱的，村里面还有面馆，还有各种生意在，你明白吗？崔永元一旦要完全离开了的话，他在国内的所有生意全都得停，你懂吧？ </p>
+<p>我给你举个例子，最简单的郝海东，何海东现在郝海东在国内所有的买卖，所有的企业，所有的股份是全停，全部被查，知道吗？就一分钱都没有了。明白吧？就崔永元高晓松裁定他们在国内只要跟着混混，一年搞个几百万，又有搞过几千万都是毛毛雨，知道吧？这个真的就是说我也能明白，真的你让他们放弃每一年几百万几千万的上亿的收入都不要了，出来就为了买没嘴，说句大实话，有的时候可能也是真的割舍不下，但是我觉得人总要有一个选择，就是说孰轻孰重，还是王京的那句话，都这么大岁数了，钱挣到什么时候是个头？ </p>
+<p>好吧，今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/02/20200702%E7%AC%AC2481%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%87%A0%E4%B9%8E%E4%B9%B0%E5%85%89%E4%BA%86%E7%91%9E%E5%BE%B7%E8%A5%BF%E9%9F%A6-bgkoUeRIJZg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/20200702%E7%AC%AC2481%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%87%A0%E4%B9%8E%E4%B9%B0%E5%85%89%E4%BA%86%E7%91%9E%E5%BE%B7%E8%A5%BF%E9%9F%A6-bgkoUeRIJZg/" class="post-title-link" itemprop="url">20200702第2481期-美国政府几乎买光了瑞德西韦</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 12:08:01" itemprop="dateCreated datePublished" datetime="2020-07-02T12:08:01+09:00">2020-07-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/02/20200702%E7%AC%AC2481%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%87%A0%E4%B9%8E%E4%B9%B0%E5%85%89%E4%BA%86%E7%91%9E%E5%BE%B7%E8%A5%BF%E9%9F%A6-bgkoUeRIJZg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/02/20200702第2481期-美国政府几乎买光了瑞德西韦-bgkoUeRIJZg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月2号星期四，媒体又开始了指责川普什么说美国政府订购了大量的瑞德，西北数量占未来三个月的差不多90%的产量，说已经订购了50万委的西北等于是吉利德7月的全部产量都是美国政府买光了，再加上8月和9月的90%以上的产量，而吉利德向全球提供的14万计的试验用的瑞德西北早都已经用了，用光了。所以专家现在对美国政府的做法感到震惊，担心其他国家无药可用，那么美国政府早已表示会支付高于其他国家的价钱及配合策略，令美国的医疗需要得到保证。 </p>
+<p>瑞德西北是手肿得到美国药物管理部门认可的治疗心可以治疗冠状病毒的药物。那么美国的卫生部部长阿扎尔说说，川普总统承诺会通过极好的交易来确保美国人能够接受手冢获得认可的治疗方式，希望可能美国国内每名有需要的病人都能够服务到瑞德西北。现在专家媒体谴责美国政府买光了，瑞德西北我就说专家和媒体是不是有点忒不要脸了，对不对？ </p>
+<p>不之前川普略略略多少号，我不是6月3月份，我记得3月二十号3月20号3月22号，当时川普推荐两个药，一个瑞德西北一个枪立奎对吧？然后一堆人卷川普， n BC的记者跟串模就卷起来了，说你多个屁你就是个傻逼，要管个屁我根本就不管用，你胡推荐，对不对？现在了然后美国政府人家现在把药买了，然后你们又来了又谴责人家，川普当年把中国封了，说说你种族歧视封中国把中国列为一区，过两天一行闹厉害，就说川普疯了太慢了对不对？ </p>
+<p>川普推荐这药的时候一一一一起抢到川普，现在川普把药买了，然后又开始请了劝我把药都买，不是，你们说这药不管用的，我当初你专家能不能我好要点脸，当初说的要不管用的也是，你们现在指责人家把药都买光了，也是你们对不对？你们不是中国不是说这都西北都放弃临床试验了吗？不是说根本就不管用，放弃临床试验。往临床实验中都放弃了，对不对？你不是说黄连正装，华为民生不是黄蓝上香叫什么？莲花清温，是不是？ </p>
+<p>连花清瘟什么还有什么双黄莲口服液，是不是？你不说那药管用吗？你不说那99%管用，对不对？你去买莲花清温去，你把不管用要给美国让美国政府买，美国人傻让美国人买不管用的瑞德西北，对不对？你们聪明的去买那莲花清温去买双黄连口服液去不就完了，对不对？ </p>
+<p>美国政府也没买着还挺温板，也没买方莲口服液，只有把有效的最有用的药物，你们专家都认为自我要用药物都留给你们了吗？对不对？你们还直人家傻逼乎乎的把没有效的，你们连这个实验都放弃了，药我都买光了，你应该高兴，对不对？这药又没有用，你怕他抢什么对不对？是一般我跟你说现在美国媒体还是美国专家已经到了臭不要脸的地步了，真的。之前指责他们也是他，现在买了再指责又是他，反正面都是他们有理。 </p>
+<p>那么我就觉得已经一个月白佐也好，共产党这边的媒体宣传员已经有点过了，你知道吗？这里外里都是他们的理。你今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/02/20200702%E7%AC%AC2480%E6%9C%9F-%E4%BC%81%E9%B9%85%E5%96%9D%E4%BA%86%E4%B8%80%E5%A3%B6%E8%80%81%E5%B9%B2%E5%A6%88-LOJLfkb6wAg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/20200702%E7%AC%AC2480%E6%9C%9F-%E4%BC%81%E9%B9%85%E5%96%9D%E4%BA%86%E4%B8%80%E5%A3%B6%E8%80%81%E5%B9%B2%E5%A6%88-LOJLfkb6wAg/" class="post-title-link" itemprop="url">20200702第2480期-企鹅喝了一壶老干妈</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 12:08:00" itemprop="dateCreated datePublished" datetime="2020-07-02T12:08:00+09:00">2020-07-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/02/20200702%E7%AC%AC2480%E6%9C%9F-%E4%BC%81%E9%B9%85%E5%96%9D%E4%BA%86%E4%B8%80%E5%A3%B6%E8%80%81%E5%B9%B2%E5%A6%88-LOJLfkb6wAg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/02/20200702第2480期-企鹅喝了一壶老干妈-LOJLfkb6wAg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月2号星期四，企鹅喝了一口老干妈，这下呛的够呛，喝了一壶，本来是想喝一口提神高兴一下的，结果发现壶灌的不轻，说是先是深圳的一家法院表示硬的腾讯的要求腾讯就企鹅要求要冻结老干妈1624万元人民币的资产，说是老干妈欠他们的广告费不还。老干妈声明从未与腾讯公司进行过任何商业合作，已向公安机关的报案。 </p>
+<p>那么周三贵阳警方抓捕了三名伪造老干妈公司印章的嫌疑人，冒充老干妈市场经营部的经理与腾讯公司签订的合作协议，目的是为了获取腾讯公司在推广活动中配套赠送的网络游戏礼包，然后通过互联网来倒卖礼包来获取利益。怎么回事就是说腾讯在搞说这种促销，你在我这做多少广告，然后我送你什么礼物知道吧？然后这礼物值多少钱，然后这几个人合伙刻的老干妈的章来了，说我要给你的做广告，然后你把礼物送给我，然后腾讯的你把礼物送给人家了，腾讯这次就是说亏吃的挺大的，合着给人做了好多广告，连什么游戏人物游戏的皮肤都做老干妈的，然后他搞游戏的直播的时候，嘉宾的面前都摆着一瓶的老干妈，知道吧？ </p>
+<p>你要摆瓶饮料了，这就什么意思？就是把说说说着说着话渴了喝一口，那人就搞笑还给人说出了动漫什么的都出了老干妈的动漫什么的，反正是做了一大堆说价值1600万的广告，你就想反正做了好多各种的周边的这种小的零碎的商品什么的都做了一大堆，最后发现不是老干妈，对于腾讯来讲，我们也要说腾讯的广告部也是真的有点我觉得孤陋寡闻，可以这么说，因为老干妈是从来不做广告的，对吧？这是非常有名的，他们是不做广告的一家企业，对不对？ </p>
+<p>他们就是说因为当年他们发展起来很朴素的发展起来，它是完全靠口碑口口相传出来的，他多年也不做广告，大家都知道没有人找到他，他不找任何人做广告，也没人找他做广告，大家都省心，我不知道腾讯为什么觉得老妈妈突然转向了，对不对？在这种情况之下，我就觉得怎么说，腾讯自己也应该想一想，但是当然我也明白中国的骗诈骗也的确到了一定程度了，就是说让人就没法意识到，就是说这帮人就敢这么骗，真的就名片就纯胡说八道，能够舔着脸张着嘴就能活泼到这种程度。腾讯也是真的是完完全全的就没想到这就闹了这么个事儿。 </p>
+<p>其实现在要去为什么这个事有人就问我就说这个人到底怎么回事，为什么闹得这么厉害，为什么上了热搜了几亿人在看？我说是这样子，其实这个事就这么几句话就讲明白了，很多人说你要不你讲讲怎么回事，我们听听就完了，就这么点事，你知道吗？ </p>
+<p>为什么这个事情上了热搜急人说急人去看呢？钢板管法你能说吗？对不对？不，你现在中国要允许说钢板公安法的话，会有人看这个吗？这事就完完全全淹没在根本国文法里了。7月1号高管官法正式实施，英美法那边都快疯了，英国加拿大直接给香港发了旅游警告，都不让公民去旅游了，怕被抓。那边7大游行抓了300多，美国这边两今天两党两院一起共推新的法案，要给香港发政治庇护了，要给香港人发政治庇护了。 </p>
+<p>英国那边说要收300万香港人，我不明白这个新闻和老干妈大战起过哪个厉害，对吧？你想想如果中国有言论自由的话，这新闻能说的话，今天谁还看腾讯被老干被三个人骗了，一个老妈妈做了1000万的广告，对不对？问题是你能看吗？你只能看你不看这你看什么？对吧？中国就是这样子，他不许你看那些东西对不对？ </p>
+<p>或者咱就算香港你不关心咱南方洪水弄成什么样了，多少省市被淹了，多少人死了，多少人被冲走了，能说吗？能播吗？新闻不能摸不能看，你怎么办？你就只能看老干妈，大战企鹅，对不对？企鹅喝了一瓶老干妈，对吧？这就是中国没办法，对不对？武汉这样子再发展下去，过几天连这都不能看了，只能看吃多了。好吧，这期讲完其实就这么简单，好吧？谢谢大家观看。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/02/20200702%E7%AC%AC2479%E6%9C%9F-%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%A4%A7%E9%BB%84%E9%87%91%E9%A6%96%E9%A5%B0%E5%88%B6%E9%80%A0%E5%95%86%E7%9A%8480%E5%90%A8%E9%BB%84%E9%87%91%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84-9Fx3dGulNiw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/02/20200702%E7%AC%AC2479%E6%9C%9F-%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%A4%A7%E9%BB%84%E9%87%91%E9%A6%96%E9%A5%B0%E5%88%B6%E9%80%A0%E5%95%86%E7%9A%8480%E5%90%A8%E9%BB%84%E9%87%91%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84-9Fx3dGulNiw/" class="post-title-link" itemprop="url">20200702第2479期-在美国上市的中国最大黄金首饰制造商的80吨黄金都是假的</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-02 12:07:09" itemprop="dateCreated datePublished" datetime="2020-07-02T12:07:09+09:00">2020-07-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 10:54:16" itemprop="dateModified" datetime="2020-07-08T10:54:16+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/02/20200702%E7%AC%AC2479%E6%9C%9F-%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%A4%A7%E9%BB%84%E9%87%91%E9%A6%96%E9%A5%B0%E5%88%B6%E9%80%A0%E5%95%86%E7%9A%8480%E5%90%A8%E9%BB%84%E9%87%91%E9%83%BD%E6%98%AF%E5%81%87%E7%9A%84-9Fx3dGulNiw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/02/20200702第2479期-在美国上市的中国最大黄金首饰制造商的80吨黄金都是假的-9Fx3dGulNiw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的7月2号星期四，中国最大的黄金首饰制造商之一叫金凰珠宝，大到什么程度？它是在美国的上市公司，他向了多家金融机构质押了超过80吨的黄金，那么融资约160亿元的人民币，最后证实80吨黄金都是表面的镀金，内部的成分都是铜合金，80吨黄金是假的。因为金凰珠宝经营情况恶化，独疹融资计划宣布提前到期。 </p>
+<p>在信托计划到期的前一个月，民生信信托5月16号要求融资方武汉金行珠宝所质押的黄金开箱检测，在这个时候才发现是铜合金，涉及保单共计74:300亿元人民币，到2020年的10月将全部到期，来自金融机构的融资是200亿，未到期的融资存量160亿，对应质押的黄金的83点03吨。那么涉及到的这些信信托都有民生信托、东莞信托、长安信托等15家金融机构，其中民生信托的融资规模最高达到40亿元人民币，基本上打水漂了。 </p>
+<p>这个金黄珠宝如果这个是这样子的情况，如果这80多的黄金都是假的，我看他基本上要宣告破产了，在美国正好估计他上市，这种只出现了这么大的这种对公司来讲极为不利的这种东西的话，我想它美国公司美国上市这边的股票肯定就是就没法不崩溃，谁拿了80吨黄金出来之后，去质押了300亿人民币，最后都是假的，谁都谁都得崩溃。中国2019年全年的黄金产量为30080吨，也就是一年我们只产的400不到400吨黄金，就是全中国中国的三大黄金巨头之一，紫金矿业的黄金年产量也只有40吨，也就是说金凰珠宝质押的黄金是紫金金矿一年生产量的两倍。 </p>
+<p>在这种情况之下，为什么说这个其实我想有一点，我想我不知道大家想到没有，所谓的这些民生信托、东莞信托、长安信托这些金融机构把钱贷给他，这里面存在巨大的问题，他这80吨黄金是假的，不应该是到了最后才发现，早就应该发现这里边知道的人很多，涉及的人很多，大家都知道不知道它是假的都知道，因为它根本就不对了，年产量只有380吨，全中国只有380吨，它质押了80吨的黄金，这根本就没有道理了，就是天方夜谭式的，明白吗？所有人都明白，所有人陪他演了这出戏，大家都觉得他能挺过去，结果没有挺过去，最后出了这种情况。 </p>
+<p>这里面这个案件我相信牵连的非常的广，各个信托里边都有人涉及到了这个案件，但是反正怎么说，你明白了我明白，大家都明白，但是对大家都有好处，质押给他，对不对？这个贷款他只要还上了的话，如果说能够经营改善能够还上的话，大家都能挣钱，结果没有想到的最后是这么一个结果，这么一个下场的。最后赔了反正也都不是赔自己的，我觉得也就这么个情况，这个不可能提前不知道，提前都知道，不是说到了最后犯案了，大家才意识到这80吨黄金是假的。 </p>
+<p>这80吨黄金拿出来的时候，我心里就有数了，很多人都是配合演了这么一出戏，当然最后吃亏的肯定就是股民，割韭菜，不管是中国股民还是美国股民，这种事情，我相信对于美国的证监委肯定又是巨大的刺激，之前瑞星咖啡就已经狠狠的刺激了一下了，现在再来一个又是在美国上市的，搞出来这么80吨黄金是假的，质押了几百个亿，最后是假的。你想美国证监委都快疯了，就觉得你们中国公司在美国上市都啥？ </p>
+<p>那玩意儿你们这边有真的吗？知道吧？而且你们说点谎话，哪个上市公司可能都有点水分，但你们这水分有点忒多了，你知道吗？这简直你们就不是来经商的，你们就是来诈骗的这一帮诈骗犯，你知道吗？ </p>
+<p>猫儿良心说，其实之前讲瑞星咖啡的时候就说我们听到了很多的小道消息，就是说几乎可以说中国在美国上市的公司没有一个是能够经住就是说认认真真的调查的，如果认认真真调查，每一个多多少少都有点问题，都有水分，就连最大的阿里巴巴又怎么样？阿里巴巴他们旗下就搞双11，双11现在就不许说，你知道吗？他双11所谓的营业额里边，就里边有很多的可以值得商榷的地方，你们可以去查查查查他们双11的销销售额。据说都是这样子，就是说你如果数学好的话，实际上你今年就知道明年它的销售额是多少，都是按照数学模型走的，你知道吧？ </p>
+<p>明年不管它的销售模型是多少，他都会跟你说的是这个模型，一种就跟中国的 GDP的增长速度一样，领导说了我们要保底，最后算出来的就是几，所以就这种东西你就想阿里巴巴这可能是在中国在美国上市的，可能是最牛了最牛的企业了，剩下的还有哪个比它体量大的对吧？你就想就连都有都有问题。 </p>
+<p>中国公司，但是就是说整个的中国公司，它的这种企业文化都是这样子，整个社会的文化也是这样子。大家都是反正心照不宣，明白吧？所以好吧今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>
