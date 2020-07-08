@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/42/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/42/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/27/20200527%E7%AC%AC2300%E6%9C%9F-%E7%95%99%E5%AD%A6%E7%94%9F%E5%BD%92%E5%9B%BD%E5%8F%AF%E5%85%A5%E5%AD%A6%E9%AB%98%E8%81%8C%E9%AB%98%E4%B8%93-m3i4EY4oLbk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/27/20200527%E7%AC%AC2300%E6%9C%9F-%E7%95%99%E5%AD%A6%E7%94%9F%E5%BD%92%E5%9B%BD%E5%8F%AF%E5%85%A5%E5%AD%A6%E9%AB%98%E8%81%8C%E9%AB%98%E4%B8%93-m3i4EY4oLbk/" class="post-title-link" itemprop="url">20200527第2300期-留学生归国可入学高职高专</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-27 01:00:00" itemprop="dateCreated datePublished" datetime="2020-05-27T01:00:00+09:00">2020-05-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/27/20200527%E7%AC%AC2300%E6%9C%9F-%E7%95%99%E5%AD%A6%E7%94%9F%E5%BD%92%E5%9B%BD%E5%8F%AF%E5%85%A5%E5%AD%A6%E9%AB%98%E8%81%8C%E9%AB%98%E4%B8%93-m3i4EY4oLbk/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/27/20200527第2300期-留学生归国可入学高职高专-m3i4EY4oLbk/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月27号星期三，留学生归国可入职职高专被大家嘲笑了一顿，但是说实话这个人其实说的没有什么太错的地方，我觉得是报道有误，报道刻意把这句话搁在这个标题，我觉得起到了一个误导的作用。实际上是这样，是两会现在我在开两会期间，全国政协委员上海市教委副主任提出建议，因疫情回国终止学业的留学生解决继续学习的问题。 </p>
+<p>他的建议这个方案其实是有4点的报道，就光把第一点搁进去了。第一点是要全面开放的职高专学校，让留学生可以进来，说如果高年级的话可以I一年直接入学，21点可以转入本科高校，要启用插班生考试政策，开学之前考个考试合格了，就可以直接进入了本科，直接进入本科高校。三是建立国外高校学习成绩的转换机制，转学分其实在海外来讲是非常正常的一件事情。 </p>
+<p>四是选定了部分公办高校的试点，对转入学生进行学习情况评估，适时调整政策，我觉得他说的其实没有什么太大问题，尤其是转学分我是相当支持的。在美国的高校，就是说你转校转学分是非常正常非常常见的事情，很多人在某一个学校学了那么一两年，然后对这个学校可能不喜欢，更向往其他的学校，然后学习成绩还不错，然后就转走了。 </p>
+<p>在中国来讲这个情况好像就很少见是吧？转校会变得非常的困难，尤其你转校了之后，你之前比如你读了两年，你转过来之后，你前面读了两年怎么算，这边承认不承认怎么着，这都没有一个特别好的一个说法，它没有形成一个的机制体制，我想就这次机会以此作为契机的话，在中国也建立这种就是说转学分这么一个相应的体制来讲，不管是对于中国留学生，我觉得对于自己国内的学生也有好处就是说你国内的学生也可以，本来我在上海大学，我现在后来我觉得上海我可能我更喜欢北京对不对？ </p>
+<p>我想离北京近点，我转学去北京这都完全可以，比如说上海交大的，我转去北大或者什么的，对吧？这在美国这些很稀松平常对吧？只要对方学校愿意接受你，你都可以转过去，中国来讲其实所以我觉得实际上他的提出这个人，我觉得还是对国外的大学和中国大学深有研究的这个人是真的懂，对他提出来的这一些我觉得没有什么不对的，对吧？而且他也提了你也可以进入本科高校，也不是说一定都要进职高专，很多人拿人开玩笑说我哈佛的让我转学回去什么去蓝翔学什么拖拉机。 </p>
+<p>首先我要说中国留学生，就是说我觉得其实这样没什么意思，就一说留学生就觉得留学生好像都是什么哈佛、耶鲁、普林斯顿，他其实不挨着每年中国来美国留学生，当然今年受疫情影响，以前的话，前几年基本上每年都在30万以上，有的时候还能到40万以上，说实在每年来个三四十万，中国留学生能进哈佛、进耶鲁、进普林斯顿的有几个对不对？ </p>
+<p>据我所知不要说进哈佛尔耶鲁普伦斯顿，每年来的中国留学生最后能够进美国，就是说排名前100的大学，你知道吧？我告诉你不足10%，就是说真正能够就上了他上个大学在美国排名能够排到前100，连三四万人都没有。所以你的大学如果你在美国，你的大学在美国排名前100，你基本上在留学生里你已经排进前1/10了，你知道吗？所以对，所以不要别把自己吹的太牛了好吧？ </p>
+<p>因为哈佛普耶鲁普林顿加一块一年收多少学生，你一年来三四十万，你怎么可能对不对？你他闯到下面的学校对吧？所以绝大多数都没有上了长江城，然后留学生队伍里也是鱼龙混杂，你知道吧？各种的稀奇古怪的我都见过，这个来了，我不想说，我不太想说，一个是华人华侨在美国就是说爱钻漏洞走的一些东西，我也不愿意说就是丢人现眼，中国留学生这里边的脏肾，但是我知道的更多，其实也不太愿意说，所以咱你懂吧，就是说别我觉得中国也不要嫉妒海外留学生，但是海外留学生也别把自己吹的就是太他那什么了，是不是？ </p>
+<p>我说实话本科教育不管是中国美国的都那么回事儿，大家就说你懂我意思吧？后来你说我要想到想谈所谓的内卷化，你知道吗？所以其实当然了我这个人我对学历教育一直不是特别的认可，尤其中国的这种死读书的这种教育体制就更糟糕，美国我觉得有一些私立校的还比较好，他还比较注意就是说去培养学生的个人能力，有一些公立校其实也是比较死板，啊那，我们上的学校我跟我老婆我们上的学校也是美国也算是排名前100的，虽然是在前100里边排名后段班，但是我们也是属于就是说公立校对吧？所以我们对公立校的这种死板也是有很深的这种感触。 </p>
+<p>所以我咱们就是说我觉得留学生还有国内的那些没有机会留学的，我觉得应该互相理解，更多的去了解相互之间的真实情况。至于这一次我觉得他的提议，上海市教委副主任提的建议是可是可以的，而且是有一定的含金量的人提的一些建议。我也希望他是政协委员们在政协的会议上提出来这之后能够引起国家的重视，不要只是因为个别的不良的媒体，别有用心的用这种耸人听闻的标题，就把议提议议案当成了就是说一个笑话，这个是非常不好的提案，如果最终能够落实的话，我觉得对于海外留学生，对于中国国内自己本地的学生进行转学分都开创了一个先河，给大家以后就是说有法可循，有法可依，对不对？温泉是个好事，所以我是支持的就是说希望如果有相关部门的人能看到这个节目的话，还是把它就是说认真严肃的去对待这个事情，因为中国就这样，她一弄大家一开玩笑把当个笑话就过去的，实际上是真的是不好的，我觉得提议对很多人都有好处，好吧，直接讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/" class="post-title-link" itemprop="url">20200526第2299期-中国印度同时向边界增兵，有可能开战</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-26 00:09:09" itemprop="dateCreated datePublished" datetime="2020-05-26T00:09:09+09:00">2020-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/26/20200526第2299期-中国印度同时向边界增兵，有可能开战-spU-omYTfYI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月27号星期三，之前我们说中国和印度在边境地区发生了群殴，几百人的大群殴，现在得到的消息中印双方都在边境上在增兵，双方都在挖防御工事，挖战壕开始了，要要干仗是吧？ </p>
+<p>说中国的卡车一直在往边境的运输各种设备，说冲突的导火索是什么？说是印度在中印边境地区修建公路，说印度为什么要这么搞？印度说这个不是我们挑起的，说这是中国挑起的，说你中国也在这玩命的修各种的这种基建、修铁路、修公路、铺路架桥，而且说中国现在要通过什么中亚南亚将中国与欧洲连接在一起，就是所谓的习近平就这一带一路一直要连进去，搞中巴走廊，而且还在那不断的推进。印度就是说非常的担心，因为你现在交通那么便利的话，你往边境这运兵运物资运后勤补给就会非常方便。 </p>
+<p>上一次中印战争，实际上中国是打赢了，印度也承认印度印度失败了，被打败了，中国打赢了，但是打赢了之后，中印这个问题并没有解决。我们的实际控制区并没有往前推进，我们民生打赢了打赢了，我们还是回来了，还回到了就是说战前的位置。 </p>
+<p>为什么？因为在当时那种情况之下，我们的基础建设有问题，我们的后勤补给达不到，我们虽然打赢了，但是我们想维持那个地方的维持不住，后方的补给上不来，兵也运不上来，设备也上不来，你维持在那之后，你短期打赢了可以长期你消耗不过对方，所以没有办法就往后退。所以我们现在大量的搞这种基建了之后，就让印度很担心，因为你这种大量的铁路公路铺路架桥修的这么好，那么你迅速的就可以运兵运补给运后勤物资上来，这样子的话它有压力。 </p>
+<p>印度的前驻华大使拉奥奇就说，他说随着印度的基础设施，现在也在慢慢延伸到实际控制线的沿岸地区，那么中国的威胁感也就提高了。所以印度说的你修我也得修。 </p>
+<p>印度总理莫迪一直在推动改善在边境的交通状况，现在预计到2020年，印度将沿着中国边境附近，就在中国和印度边界政府要建成的66条的公路，也是把建设就是四通八达，你像66条对吧公路，其中一条关键的公路现在靠近叫加勒万股，与去年10月启用的机场相连，而且与实际控制线是平行的，并在不同的地点与内地的主要的供应基地都相连，这样的之后就有利于印度从内陆的运兵运补给，对中国来讲就是有威胁。 </p>
+<p>所以现在中国不想让印度接着修这条公路，但印度说这公路它在我国家，我修公路你管得着吗？你就一带一路我也没法管，对吧？ </p>
+<p>现在反正主要就是说出现了这个问题。 </p>
+<p>现在印度说中国在拉达克地区说是增兵的5000士兵往边界增加，印度也在增派援兵，印度增派多少？ </p>
+<p>印度说要确保两国军队数量的均等，实际上就是说你中国运5000的，我也用5000上来，现在就是说会不会马上开战，可能还不会，为什么这么说？因为中国军队并没有集中在的对峙的爆发点附近的任何地方，并没有集中，而是分散的在实际控制线的中方的一侧是分散开的，这5000人并没有集中，如果要打的话会把兵力集中在一点，对吧？因为你分散开就知道打两两到两天意义不大，对吧？所以这么看应该可能还不是要打。 </p>
+<p>但是中国像达拉克派遣的增援部队，不光包括军队，还包括各种的车辆，重型的装备等等都运上来了。 </p>
+<p>印度就觉得你这是什么意思，对不对？你都上来，对吧？所以他也很担心，因为觉得中国人狡猾，你上一次中印战争就吃了中国狡猾的亏，当时就是说实际上从实力上来讲并不比中国弱，完完全全是被中国人骗了，吃了大亏。所以这一次他也担心说你现在好像是分散，但是离得都这么近对吧？你迅速的就可以集中重型装备也到位了，对吧？所以印度现在也比较担心双方开始了防御攻势，战壕都已经挖好了，所以你也不能说就是说一定打不起来，只能说有可能开战，但是我们认为开战的可能性还是不大，但是希望双方还是要克制。 </p>
+<p>但是你又要说如果不开战的话，你这么因为兵一上去粮草就要上去，对不对？你运5000人上去，这5000人吃饭，这一天光吃饭你吃多少？对不对？你粮草得运多少上去，对吧？你不打的话你就5000人顶上去是干什么？还有这么多的重型装备，对不对？那说明你还是你有这个想法，对吧？要不然这人吃马喂的是5000人顶上去，人吃马喂的，在那别多了，你待个半年的话，这消耗多少？对吧？所以我觉得还是有可能的。所以印度这方面也是比较担心，这是印度为什么？ </p>
+<p>实际上中国方面没有说，而是印度方面说的，印度开了记者招待会，向国际社会曝光这个情况，这说明什么？说明印度实际上是不想打的。 </p>
+<p>有人之前就有人说，说印度想通过在边境跟中国干一仗，来转移国内的民愤，因为疫情现在印度控制的不好，他想就是说干预让他去转移国内的视线，但是其实我不这么认为，因为这次疫情导致了印度内部出现了很多问题，外部如果再开战的话，说实话不见得打得过中国，你如果真把中国揍了，出了一口气扬我国威，国内民众怎么着，万一你要打输了怎么办？ </p>
+<p>大声的怎么交代，我那名片已经很大了，外边你在打输了。所以在这种情况之下，我认为印度实际上在避免跟中国开战，所以为什么这个事儿中国现在方面不怎么说，印度玩命的开各种技术大会，然后来发他的消息，就证明中国增兵了，还增长增强装备，实际上说就是说你们快看他来了，他要打我，对不对？ </p>
+<p>实际上你就看这个意思，就说什么，就是说印度现在有点怕了，有点害怕了，所以我认为如果要打起来，不能够说，当然我们肯定就要说是印度挑起的，说印度率先挑起印度怎么着，我们一向都是这种观点，但是从我来看这个事，我们有责任，恐怕不是当年南北朝鲜打，也是这个北朝鲜就说南朝鲜率先攻击，我们不得不奋起反击，防守反击，但是最终所有的史实资料都能够证明北朝鲜金日成同志率先打起来的，而且对方那边在刚开始开战的时候1点准备没有还是奇袭，突然发动战争，知道吧？所以男孩子一上来的时候简直就是溃不成军，被人打了个措手不及。 </p>
+<p>但是就这种情况，我们这么多年就能够舔着脸跟你说谎话，给我们灌输的一直都是就是说他是自卫反击战不得不这么干，对吧？现在打印度我看看又是这样子，反正大家都中国人心里都有数，好吧，咱们看一看好吧，反正5000多人，这么多重型装备，这么多物资都点上去了，不知道是不是要有小范围的结果。好吧，但是我希望就是说最好还是不要打。好吧，继续讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2298%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E8%BF%9E%E7%BB%AD%E5%8F%91%E7%94%9F%E4%B8%80%E5%AE%B6%E4%B8%89%E5%8F%A3%E8%87%AA%E6%9D%80%E4%BA%8B%E4%BB%B6-3uxxgTDiN8w/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/26/20200526%E7%AC%AC2298%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E8%BF%9E%E7%BB%AD%E5%8F%91%E7%94%9F%E4%B8%80%E5%AE%B6%E4%B8%89%E5%8F%A3%E8%87%AA%E6%9D%80%E4%BA%8B%E4%BB%B6-3uxxgTDiN8w/" class="post-title-link" itemprop="url">20200526第2298期-中国连续发生一家三口自杀事件</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-26 00:09:08" itemprop="dateCreated datePublished" datetime="2020-05-26T00:09:08+09:00">2020-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/26/20200526%E7%AC%AC2298%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E8%BF%9E%E7%BB%AD%E5%8F%91%E7%94%9F%E4%B8%80%E5%AE%B6%E4%B8%89%E5%8F%A3%E8%87%AA%E6%9D%80%E4%BA%8B%E4%BB%B6-3uxxgTDiN8w/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/26/20200526第2298期-中国连续发生一家三口自杀事件-3uxxgTDiN8w/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月26号星期二，中国连续两天发生了一家三口这种可以说它是一种集体自杀事件，先是在四川省、四川省，为什么？你看之前我们报道一个有一位女士，30多岁女士带着他9岁的小女孩一起就把他女儿绑在身上，一起一起去跳河自杀，当时那个事我觉得我们个贷的好像会员专享里边没有发到外边来，为什么这么做呢？因为他门口的闭路电视只是显示说他带着这个女孩的出去了，对吧？ </p>
+<p>到底跳河怎么回事，当然后来他们说是跳河了，然后还捞上来了，但是我们想还是发在会员里了，但是这一次我认为这个都是可以证明是真的，所以我们都是有直接证据可以证明的，所以咱们发在了非会员里。 </p>
+<p>先说四川省的是四川省雅安市汉源县公安局他们官方微博官方发布的消息，说是在5月25号昨天说流沙河大桥跳桥死亡，死者李某，女性28岁汉源县，但是他4岁的儿子徐某说到长子，还有他的小女儿，小女儿只有一岁，1岁，然后是他这个女的28岁，女的等于是拎着带着小小4岁的男孩，抱着一岁的幼女，一起就是说跳到了流沙河大桥跳桥，然后三个都死掉了。然后今天5月26号，今天黑龙江安达市财政局家属楼叫立鑫名苑，说一家三代父子还有爷爷一起跳楼，人家父亲带着他爸爸带着儿子一块的跳楼自杀，这个是有视频的，我一会把这个视频搁在我这个视频，我把它这个视频的链接搁在我这个视频下方，这个视频就比较的血腥，康可能让人心里不舒服，所以我就建议有的观众你心里比较强大，你再点你在看心理比较什么的，就是说不太敢看的就别点上看了好吧？ </p>
+<p>到底为什么自杀？其实我们不知道有可能是社会问题，也有可能是自己的问题，但是这种全家的这种跳桥或者跳楼自杀的看起来是非常悲壮的。 </p>
+<p>四川咱先不说黑龙江这边，我们都知道黑龙江这边由于疫情反正闹的是比较严重，我们希望就是说反正呼吁政府要知道说韩国语讲话说没忘事上苦人多，老百姓日子过的其实挺不容易的，像政府我觉得其实我之前就呼吁过一次，像政府对黑龙江还有什么吉林舒兰这些地方，看看能不能相应的给一些补助，给老百姓发点钱，哪怕一人发个几百块钱发展吃的喝的什么的，我觉得老百姓可能会更有希望，对吧？ </p>
+<p>你在传播一种善良，你像这种时候你如果像一家对吧？你一人给发个几百块钱发点吃的什么，他可能他跳楼也是就是说一时的那么一种想想不开对吧？这个时候你如果真的能送点温暖，送点一些善意传递给他的话，可能也就挺过来了。 </p>
+<p>是吧？当然了我们也别批评政府，我们也不是说就一定政府做的不好，因为这种东西我觉得社会有责任，个人也有责任，内因也很重要，但是我觉得是政府还是可以相应的去做一些东西。美国这一次疫情其实自杀率也提高了，我觉得由于这疫情的说，说实话我觉得我都抑郁了，对。所以这种情况之下，大家我觉得互相帮助，互相开导是吧？ </p>
+<p>社会政府都有一些责任，但是美国这一次它体现出来什么？它民间这种自主力量特别强是吧？它民间敢于组织而敢于承担责任。 </p>
+<p>这一次民间美国的民间包括咱们华人也组织了很多这种可以说捐赠物资捐赠口罩，美国的各种这种什么是华商协会各种协会，美国这边我之前他们还组织有组织人给美像纽约纽约地区组织给这些年老的老人，就是说你如果不敢出来买东西，你想买什么我们帮你去买送货上门什么的这些对吧？给老人的一些帮助他拿药帮助他去超市买东西什么的，我觉得为什么美国他这种东西就是说民间这种自助力量，这种自助团体能够大面积的发展能够存在的？是，因为我觉得首先来讲，我觉得政府不担心这些民间组织去跟政府中国民心是吧？ </p>
+<p>中国以前我们听说就有一个慈善组织搞的其实很好，没有用政府的钱，也没有骗钱，真的都是，而且他慈善组织也不接受，一般老百姓的捐款，接受的都是那种大额捐款，都是一般的一些企业家的那种捐款，搞得也不错，要政府让他们就是说要取缔他们，他们就很迷惑不解，他也跟政府说我们什么也没干，我也没谈政治对不对？ </p>
+<p>政府跟他们一句话，就说你在跟中国共产党在争夺民心，你懂吗？你不能这么搞，但是美国政府我觉得这是一种执政的是一种自信，你有自信的话，你不怕任何的政党或者什么民间的这种组织去跟你争抢民心，对不对？但是如果你不自信的话，你就比较担心了，对吧？你看这个男的娶老婆，如果你自己比较自信的话，你老婆在外面跟人聊过天搭个一下，你也无所谓这人谁怎么回事，因为你比较自信，你不知道怎么样，越是这个老公如果自己本身比较无能，对吧？ </p>
+<p>个人条件不理想，如果在这个工作不顺利，老婆在外边跟异性有点什么接受，他就会有各种的想法，因为你怎么样你看不上我了，你要跟别人跑了，对不对？你是不是这男的干什么？跟我争抢老婆的民心，跟我争抢民心是不是？他。你懂我意思吧？所以这导致了中国很多的民间的力量发展不起来，一个增强民心，另外一个就担心你各种组织起来之后，你这个人多了，影响力大了，有各种的不好的事儿的，发生。 </p>
+<p>我觉得如果这样子，你如果这么搞，你如果拒绝民间的力量的话，那么你自己相应的就要做更多的事情，对吧？如果你不让你老婆跟别的男人搭个对吧？你管的严家教严对吧？你就得有这大门不出二门不迈是可以的，对吧？但您得有个大门，然后有个二门，您自己是个豪宅，对不对？你再提要求，对吧？你要是自己不行的话，对吧？我说对吧？还是要加强自身努力好不好？希望中国政府能够为老百姓做更多的事情，好吧？今天就讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2297%E6%9C%9F-%E9%A6%99%E6%B8%AF%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86%E8%A1%A8%E6%80%81%E6%94%AF%E6%8C%81%E2%80%9C%E6%B8%AF%E7%89%88%E5%9B%BD%E5%AE%89%E6%B3%95%E2%80%9D-VEIDhvA4NCE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/26/20200526%E7%AC%AC2297%E6%9C%9F-%E9%A6%99%E6%B8%AF%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86%E8%A1%A8%E6%80%81%E6%94%AF%E6%8C%81%E2%80%9C%E6%B8%AF%E7%89%88%E5%9B%BD%E5%AE%89%E6%B3%95%E2%80%9D-VEIDhvA4NCE/" class="post-title-link" itemprop="url">20200526第2297期-香港四大地产商表态支持“港版国安法”</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-26 00:09:07" itemprop="dateCreated datePublished" datetime="2020-05-26T00:09:07+09:00">2020-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/26/20200526%E7%AC%AC2297%E6%9C%9F-%E9%A6%99%E6%B8%AF%E5%9B%9B%E5%A4%A7%E5%9C%B0%E4%BA%A7%E5%95%86%E8%A1%A8%E6%80%81%E6%94%AF%E6%8C%81%E2%80%9C%E6%B8%AF%E7%89%88%E5%9B%BD%E5%AE%89%E6%B3%95%E2%80%9D-VEIDhvA4NCE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/26/20200526第2297期-香港四大地产商表态支持“港版国安法”-VEIDhvA4NCE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月26号星期二，香港的四大地产商一天都在今天5月26号同一天表态，要支持港版的国安法，我认为这应该是有背后有人在协调，四大地产商在同一天表态，这个对吧？那么什么人能够协调了香港的4大地产商在同一天表态呢？对吧？这不是一个人，这应该是一个党。 </p>
+<p>好吧，我们看看都是谁长和集团的主席李泽炬，李泽驹是李嘉诚的长子，李嘉诚现在退休了，所以李泽钜现在算是长河的掌门。他说香港目前正处于政治动荡和商业不稳定的气氛中，希望草案能够稳定香港局势，帮助香港社会和经济恢复正常，说的比较含蓄，但是还是对草案寄予了很大的这种期许和期望是吧？ </p>
+<p>那么新地集团的主题郭炳联是国家安，他说国家安全是一国两制行稳致远的重要基石。他说订立香港港版的国安法，可有效缔造香港安定有序的投资经商和社会环境，保障市民大众的利益，巩固香港国际金融中心地位。然后恒力集团主席像郭美兰这说的就非常的明白了，对吧？恒力集团的主席李家杰说定，利港版管法是为了维护香港的长治久安，若失去和平和稳定繁荣和发展就无从谈起，香港的经济地位也难以保存。然后新世纪集团主席邓家成说，对一切可以保障国家安全，维持香港繁荣稳定和促进特区长远发展的法律及政策表示支持，相信有关法规会被香港建构更和平的营商环境和社会气氛，说的都还是比较的明白了，对吧？ </p>
+<p>香港地产业在香港占据非常重要的地位，在香港2018年香港政府的统计说地产业占全港GDP的10%以上，房地产相关行业的投资与消费占到全港的GDP超过了40%，说港府的财政收入约1/4都直接来自于地产业，但实际上这个是不好的。任何一个地方如果你的房地产业占了这么大的比例的话，说明整个经济发展实际上是失衡的。尤其是香港这种地方地这么少，如果完全靠房地产的话，老百姓实际上是苦不堪言。在这种情况下，当地老百姓实际上已经根本就买不起房，供不起房。 </p>
+<p>以前如果买房还有一点希望，我努力还有点希望，现在买房已经变得一点的，这种希望都没有了。 </p>
+<p>香港从97年回归以后，就是说房地产发展成现在这个样子，有一点说实话有点畸形，跟内地去香港炒房有不可分割的关系，所以内地对于香港的这种经济发展机型是有很大的责任的，不可推卸的责任。这是香港人现在对内地如此的不满意，我觉得也是重要原因之一。 </p>
+<p>对。 </p>
+<p>现在李泽钜和李家杰恒力集团主席李家杰两个都是全国政协常委，那么上周两会开幕了，开幕之后李泽俊因发烧没有赴京出席，而李嘉杰则因为负伤是坐轮椅去开的会，李泽俊我不知道，因为开幕的时候没有去，后边会不会去，如果李泽钜不去的话，这就是我觉得最近这几年李嘉诚也好，李德俊也好，他们以各种理由就推脱，各种原因各种理由推脱就是说去北京开会，就是说人是不进去，到底为什么就是说有什么安全隐患或者什么的我们不知道，反正咱们看一看，李嘉诚不进去，我觉得还有情可原李德俊不进去的话有点说不过去了。 </p>
+<p>所以我们看到李德俊这个发烧好了之后，你发烧我不知道上周开幕，你说你发烧这发烧你发两发两周你就要灌灌了对吧？就成形成新了对不对？你发烧发一个星期也就差不多了，对吧？如果要是以此作为理由不去，我觉得更多的是借口，是吧？如果再不去，其实是有问题了。 </p>
+<p>好吧，在这种情况之下，我就说怎么说四大房地产商对于中国来讲应该感情上是很矛盾的，咱们必须得承认，如果没有97年香港的回归内地的帮助，他们不能挣到这么多钱。刚刚回归的时候，李嘉诚好像是几百个亿，还不到1000亿，回归之后迅速就翻了好几倍，最多的时候到了多少？到了将近2000亿好像是吧？所以你说从感情上来讲，就是说对于中国现在搞成这样肯定是不满意是吧？要是满意的话，李嘉诚不会这么大面积的从大陆撤资，而且他把他的港资实际上现在已经变成了外资，是吧？ </p>
+<p>但是你说完完全全跟中国跟大陆脱钩，感情上又割舍不下，而且你说这么多年在香港，所以说你从大陆能撤，从香港能撤吗？有多少的资金身家，而且这种感情这种东西都在这里对吧？你说真的是很难说，但是如此发展下去的话，我觉得还好，对于房地产商来讲，我觉得即使一国两制最终结束了的话，对他们来讲可能影响也不大，因为我觉得如果一个两个字结束了的话，香港的房子搞不好能炒得更高，对吧？ </p>
+<p>跟大陆完全接轨之后，我觉得可能对于他房地产商冲击不是很大，而且我相信就是说真的一国两制结束了，如果英美欧洲不再承认香港的竞争地位的话，我也不认为香港的经济就会迅速就是说崩溃，我觉得对于外资来讲可能会崩溃，但是对于中国来讲，我觉得大陆一定会把它撑住了。他绝对不允许就是说好像我结束有两个志，因为你对香港的金融地位不承认了之后，然后我香港经济崩溃了的话，多没面子的对不对？所以我相信中国政府就算从面子出发，就算从内陆怎么往香港输血，也会把香港的房地产业，把香港的经济就是说大面上把它支撑住，所以对于他们来讲，我觉得说即使真的香港的官法出来了，西方世界不再承认金融地位，对于他们来讲经济损失不大，但是有一点非常重要，就是说西方如果承认现在香港的金融地位的话，那么他们在香港的钱实际上是自由的，如果他们现在想把东西卖了，想要撤还能撤到走，但是一旦西方不再承认香港的竞争地位，一旦香港被中国变成了一个就是说跟广州跟深圳没有什么太大区别的，也是中央与地方的话，那么你的钱再想走，还有没有那么好走？ </p>
+<p>实际上就不好说了，你包括现在在大陆，你像其实王健林、许家印、刘强东都尝试过想把部分的家产的资产就是说外移对吧？但是实际上都受到了严厉的敲打，不允许他这么搞，你不能够在这把钱挣了之后全然后你这么大的身家整个都跑了都弄走，这个是不允许的。 </p>
+<p>王健林当初实际上在海外投资的比较多，后来知道了敲打之后，他把好多海外的资产都变卖了，把钱又都弄回来对吧？你包括肖建华，吴晓辉都是为什么动？他们觉得他们把大陆经济掏空了，动不动都是上万亿，然后这么多钱往外跑，是吧？我觉得也是那么一旦香港正式的算是，如果进入了中国的这种就是说算是地方之一的话，那么你们在这里的钱从市值上来讲，我认为不会受到太大的冲击，但是这些钱你还走不了，就有问题了对吧？你想可能是挣利息，人家想的是你的本金，所以我觉得四大房地产，但是我想我相信你他们这么聪明应该不用我说了，李嘉诚已经可以说把大半个身家都搬到英国去了，可以说在英国购买了多少这种就是说这种基建的这些公司，电电力公司，什么水公司，还有什么电信业对吧？ </p>
+<p>大量的去投资，我相信其他的几个看着李嘉诚这么搞，再看香港目前我相信他们也会大量的撤资走，所以我觉得未来可能会有更多的就是说大陆的这种企业，大陆的民营企业你也说不清楚他到底是比如说你说像王健林、许家印、马云这种，你说不清楚他到底算是民营企业，还是说有国家在背后调控和支持的，说不好，但是我觉得未来的一段时间，未来一两年两三年的时间里，我相信会有更多的大陆企业到香港去，慢慢的可能就是把香港的这些老牌企业家的这些这些钱，刚刚我说什么李家郑家这些国家会把他们的钱能不能倒出来？ </p>
+<p>有可能就是说他们想跑，然后大陆的就是说接管过来，刚才你就卖给我，我到生活中你们滚蛋你知道了。我觉得这种可能性在未来可能越来越大，这些人可能纷纷的最终就会被要么就自己主动走，要么就被那逼走被挤了走。好吧，这期先讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2296%E6%9C%9F-%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E8%A1%A8%E6%80%81%EF%BC%8C%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%B8%AD%E5%9B%BD%EF%BC%8C%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%97%A5%E6%9C%AC%E5%94%AF%E4%B8%80%E7%9A%84%E5%90%8C%E7%9B%9F%E5%9B%BD-bfaMcFUFROU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/26/20200526%E7%AC%AC2296%E6%9C%9F-%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E8%A1%A8%E6%80%81%EF%BC%8C%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%B8%AD%E5%9B%BD%EF%BC%8C%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%97%A5%E6%9C%AC%E5%94%AF%E4%B8%80%E7%9A%84%E5%90%8C%E7%9B%9F%E5%9B%BD-bfaMcFUFROU/" class="post-title-link" itemprop="url">20200526第2296期-安倍晋三表态，病毒来自中国，美国是日本唯一的同盟国</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-26 00:09:06" itemprop="dateCreated datePublished" datetime="2020-05-26T00:09:06+09:00">2020-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/26/20200526%E7%AC%AC2296%E6%9C%9F-%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E8%A1%A8%E6%80%81%EF%BC%8C%E7%97%85%E6%AF%92%E6%9D%A5%E8%87%AA%E4%B8%AD%E5%9B%BD%EF%BC%8C%E7%BE%8E%E5%9B%BD%E6%98%AF%E6%97%A5%E6%9C%AC%E5%94%AF%E4%B8%80%E7%9A%84%E5%90%8C%E7%9B%9F%E5%9B%BD-bfaMcFUFROU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/26/20200526第2296期-安倍晋三表态，病毒来自中国，美国是日本唯一的同盟国-bfaMcFUFROU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月26号星期二，在昨天5月25号，日本首相安倍晋三宣布解除东京等五地的紧急事态宣言，基本上就是认为东京的疫情基本上算是控制住了，还算是处理的相当不错。我记得我们刚开始的时候，我说日本还是要就是说检测检测检测当时是1000多，1800多不到1900，有一个日本的网友还觉得我说的不对，现在日本应该是1万多不到2万人，那跟我当时的预估差不多，我当时说好歹你也乘个2×一个3对吧？ </p>
+<p>最后事实来讲，我想我说的是没有问题的，对吧？然后在记者会上就有记者问安倍说疫情使得中美的对立加剧，对此你有什么观点？通常来讲在中美之间一般日本还是就是说比较聪明，就是说两大之间它就是说就好像以前咱们刚刚建国的时候给老毛出主意，就是说好像是张志忠跟老毛出主意，张志忠是蒋介石他的代表给老毛出主意，说说在中苏对决世界的两极化，中国的之间既不亲苏也不亲美，然后两头讨好都能得好处，都得拉拢你老毛子就说反正告别了思维的就是说这个事没有什么可谈的，就是意识形态问题。 </p>
+<p>日本实际上就有点像当年就是说张振中给老毛提建议那种，在中国和美国之间，其实以前来讲，他是就是说想寻求一个平衡点，从里面能占点便宜，但是没有想到这一次安倍晋三说的如此之明确，令人就是说没有想到安倍你看非常明确的表示，病毒确实就是从中国扩散到全世界的，这是事实。然后安倍晋三说对日本而言，美国是日本唯一的同盟国，美国和日本共享基本的价值观，日本和美国应各种国际间的课题合作。 </p>
+<p>这个话说的我的天，那什么意思就是说日本只承认美国是同盟国，其他的都不算，而且我们共享价值观，共享基本价值观，而且国际间的各种课题什么意思？就是说如果美国跟谁发生问题的话，日本与美国进行合作，这话说的非常的重了。那么关于中国安倍晋三说，他说中国在世界上也是极为重要的国家，这是肯定要承认的。那么国际社会都希望日本和中国都能对区域的和平安定和繁荣做出负责任的那么中国有没有做到他现在不好说，但是他期待中国能做到，希望你能做到这个意思，就认为你现在反正是没有做到，我真的没有想到安倍晋三昨天出来之后是这样子，但病毒电视市场等于算是完完全全彻底的表态了，在中美之间也是百%的可以说毫无悬念，完完全全没有保留的选择了美国这一边。 </p>
+<p>据此我认为就是说安倍能够如此表态，首先作为民选的，我觉得他首先考虑的就是说是民意，也就是说现在日本的民意对中国是非常的不友好，他认为这样子对他的可能民意民调可能有一些好处。 </p>
+<p>另外一个我想他也是一个嗅觉非常灵敏的人，他现在已经嗅出来，就是说整个局势的发展方向是什么，所以就是说没有保留的可以说算是凹印就是全部下注在美国身上。实际上从这次疫情发展以来，安倍晋三的种种表态就已经发现了全世界的重要的这种大国领袖，安倍来讲是第一个率先站出来支持台湾加入社会组织，中国是非常的不满意，然后甚至加拿大总理还是支持台湾与观察员的身份加入，安倍连都不提，直接就支持台湾加入，而且不是一次两次到三次公开的这种表态，就是代表了整个日本。 </p>
+<p>我想从下层的老百姓的民意到上层政治家的这种选择非常的清楚，我觉得日本人还是比较聪明的，实际上这反映出来就是说整个日本从上到下都认为这一次中国必输无疑，站在中国这方面是一点好处都没有。而且日本还拿出来了很多钱，我们上次说几十亿美元要帮助日本企业撤离中国，这个真的是可以从它的整个的行动代表态，我们可以看出来，日本可以说从上到下就是一个去中国化。 </p>
+<p>日本可以说从中国改革开放以来，是中国改革开放的重要的投资者、参与者、推动者，现在日本如此的就是说180度的大转弯，我觉得咱不说日本的选择对不对，最起码对于中国的经济上来讲冲击是非常巨大的，日资企业在中国非常的多，而中国也一直是日本认为就是说全球可以说可能第二大市场，美国可能是第一大第二大就是中国市场，日本能够现在这么做，几乎说已经认为你这个市场对我没有吸引力了。是的。 </p>
+<p>好吧？我觉得这个非常值得我们去参考和借鉴，你就可以知道别人对于我们未来中国的经济发展是一个什么态度，如果他认为你的经济发展非常的好，有前景，市场将来非常的大，我想他现在不会是这种态度，对吧？也就是说实际上安倍对于中国的未来非常的悲观和消极，好吧，今天就讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/41/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/41/">41</a><span class="page-number current">42</span><a class="page-number" href="/page/43/">43</a><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/43/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

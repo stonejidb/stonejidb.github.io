@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/35/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/35/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/01/20200601%E7%AC%AC2336%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E9%95%BF%E7%99%BD%E6%80%9D%E8%B1%AA%E7%9A%84%E5%A5%B3%E5%84%BF%E5%8F%82%E4%B8%8E%E6%9A%B4%E5%8A%9B%E6%B4%BB%E5%8A%A8%E8%A2%AB%E6%8D%95%20-9KiHGo63Vl4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/01/20200601%E7%AC%AC2336%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E9%95%BF%E7%99%BD%E6%80%9D%E8%B1%AA%E7%9A%84%E5%A5%B3%E5%84%BF%E5%8F%82%E4%B8%8E%E6%9A%B4%E5%8A%9B%E6%B4%BB%E5%8A%A8%E8%A2%AB%E6%8D%95%20-9KiHGo63Vl4/" class="post-title-link" itemprop="url">20200601第2336期-纽约市长白思豪的女儿参与暴力活动被捕</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-01 01:03:06" itemprop="dateCreated datePublished" datetime="2020-06-01T01:03:06+09:00">2020-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/01/20200601%E7%AC%AC2336%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E9%95%BF%E7%99%BD%E6%80%9D%E8%B1%AA%E7%9A%84%E5%A5%B3%E5%84%BF%E5%8F%82%E4%B8%8E%E6%9A%B4%E5%8A%9B%E6%B4%BB%E5%8A%A8%E8%A2%AB%E6%8D%95%20-9KiHGo63Vl4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/01/20200601第2336期-纽约市长白思豪的女儿参与暴力活动被捕 -9KiHGo63Vl4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月1号星期一，纽约市市长白思豪他女儿是5月31号是纽约牛报报道的，纽约邮报说白思豪25岁的女儿叫吉拉，基亚拉阿因的非法集结参与堵塞华盛顿的不迈顿的街道而被警方抓捕了。 </p>
+<p>然后到了6月1号，纽约市的前市长朱利安尼就纽约市连续多晚发生的骚乱的发表看法，他说这些骚乱的本来是可以防止的，我在当市长的时候也曾经经历过因警察的暴力执法而引发的大规模的抗议，但是我都通过合法的方式处理好了，在我担任市长时不可能允许这样的骚乱发生。咱说实话不是朱利安尼吹牛逼，朱利安尼当市长的时候真的是大力的整顿。 </p>
+<p>现在我们必须得承认，现在很多的纽约人现在回想起来都要感谢朱利安尼，朱利安尼上任之前总要是非常乱，42阶段乱成一锅粥。当时42街很多的脱衣舞俱乐部一到了晚上就乱成一锅粥，各出现各种的治安问题。朱利安尼上台之后是大刀阔斧进行改革，把很多的这些推舞俱乐部基本上都赶走了，都给赶可以说是赶尽杀绝。现在42间变成了一条非常的繁荣的并且安全的一条重要的一条商业街，说实话还是要感谢的，祝原理事长朱岩局当时真的是，当然老头也是心狠手辣，得罪了很多人，但是对于普通市民来讲的确带来一些好处。 </p>
+<p>然后朱利安尼说民主党的领袖在处理此次事件中表现的太无能，他没有点名，但是大家都知道就是说白思豪对吧？他说朱利安尼还谴责了，不光白思豪，还谴责了其他多个民主党的市长，他说凡是民众不能这么说，不能说凡是他应该说民主党管理的绝大多数这些大城市多多个大城市都因为骚乱而受到了重创。他说在多数由民主党籍市长管理层当中的城市当中，暴徒们已经猖狂了7天了，很显然这些市场没有能力保护自己的市民，他谴责民主党籍的市长们不应该放弃保护警察区，不该纵容暴徒焚烧，警署不该命令警察坐以待毙，让暴徒们逍遥法外。 </p>
+<p>我怎么说我还是这句话，我们一直以来从香港事件也是到现在也是我们都是支持和平理性非暴力的抗议示威游行，但是这种打小招绝不支持，不但不支持，而且是不允许的。 </p>
+<p>只有打砸抢烧，我再说一遍，我不认为任何人去抢 LV，抢了个哭泣店，去什么抢耐克的鞋，抢了白的电器，就能够促进种什么种种农平平等，这是胡说八道，你去抢银行住，促进组成平等，你是在逗我，你是在你那叫利益熏心，我还是那句话知道吗？这就是利益熏心，你就是为了钱去的，为了东西去的，不要跟我讲一堆，没有那么大大道理，讲的都没有用对不对？你去抢劫你，我不知道你去人家店里把人店砸了，把人家东西都抢了，你这叫什么东西？ </p>
+<p>是吧？这种东西绝对是要谴责的，而这一次很明显看出来跟异形一样，之前我就报道了，异形也是美国这一次新冠疫情，民主党控制的区域，它就是每10万死亡的比例，是共和党控制区的三倍。 </p>
+<p>什么原因？当时我就说了，我说我们不愿意进行这种政党攻击，这种党派攻击没有意思，但是大家都明白，民主党在这次应对疫情方面也是要把这疫情那么让川普难堪，为了让川普难堪，不管自己的死亡率多么高，自己的老百姓受到多么大的冲击和伤害，都在所不惜。之后管理的时候非常糟糕，萧劲搞得很严，不让重启，经济搞得一团糟，最后一情还比别人死的人数多。然后现在这一次骚乱也是为了让川普难堪，为了纵容骚乱，袖手旁观，什么都不管，不能说纵容，但最早是默许。 </p>
+<p>这些事情是可能也给川普带来一些伤害，但是给你民主党治理的那些城市的市民带来多大的伤害？我还是那句话，谁也不是傻子，人心都是肉长的，大家能看得出来，这次疫情也好，这一次的骚乱也好，大大小小也好，大家能看出来，共和党治理的地方是什么样子的？ </p>
+<p>疫情至于怎么样恢复经济，重启经济的时候做的多么的积极主动。面对骚乱的时候，是如何保护市民安全的？所有人明眼人都看在眼睛里了，你民主党是怎么做的？疫情初期川普要丰劲旅游的时候吗串普适种族主义，宣扬要去什么，要不要歧视，要去中餐馆吃饭，带头去中餐馆拿手抓着食物吃。那么一行闹到一团糟的时候，说我这东西不足，那个东西不足，面对疫情不力，死了那么多人，然后等一行过后要重启经济了，又不要出去经济。现在骚乱爆发了，不去治理骚乱，上梁不正下梁歪，市长无能，女儿被抓了。 </p>
+<p>我刚刚看到了一一段这个视频，然后这个是刚刚有朋友发来的，我现在不知道是不是发生在纽约，但我看这个背景很像是在纽约，我看看我给你们放一下一小段这个视频。刚刚今天刚刚在纽约发生的，我看看我把声音关小一点。你看这就是他们在马路上我看看这样，有一个人就是一个市民，他开车过来能看到吗？他开车过来，开车过来之后，这个是雷霆不让他走，不让走了，一堆人拿着砖头砸他的车，结果这个人急了急着往前跑，一路就压过去了。 </p>
+<p>我现在就是在打听这到底是不是在纽约，因为不好说美国还有一些其他城市看着也很像，芝加哥有些当趟看着也很像这个情况。现在我不确定，等我确定了之后咱们再说，而且我现在不知道他这车压过去到底要有多少死伤，反正这种事情发生了之后，这里边没有警察，都是市民，当然所有人都是受害者。好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/01/20200601%E7%AC%AC2335%E6%9C%9F-%E5%A4%8D%E8%88%AA%E5%90%8E%EF%BC%8C%E6%AC%A7%E6%B4%B2%E7%AC%AC%E4%B8%80%E6%9E%B6%E9%A3%9E%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%8C%85%E6%9C%BA%E5%B0%B1%E6%9C%89%E4%B8%80%E4%BA%BA%E7%A1%AE%E8%AF%8A-8MBI9lWIGNk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/01/20200601%E7%AC%AC2335%E6%9C%9F-%E5%A4%8D%E8%88%AA%E5%90%8E%EF%BC%8C%E6%AC%A7%E6%B4%B2%E7%AC%AC%E4%B8%80%E6%9E%B6%E9%A3%9E%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%8C%85%E6%9C%BA%E5%B0%B1%E6%9C%89%E4%B8%80%E4%BA%BA%E7%A1%AE%E8%AF%8A-8MBI9lWIGNk/" class="post-title-link" itemprop="url">20200601第2335期-复航后，欧洲第一架飞往中国的包机就有一人确诊</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-01 01:03:05" itemprop="dateCreated datePublished" datetime="2020-06-01T01:03:05+09:00">2020-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/01/20200601%E7%AC%AC2335%E6%9C%9F-%E5%A4%8D%E8%88%AA%E5%90%8E%EF%BC%8C%E6%AC%A7%E6%B4%B2%E7%AC%AC%E4%B8%80%E6%9E%B6%E9%A3%9E%E5%BE%80%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%8C%85%E6%9C%BA%E5%B0%B1%E6%9C%89%E4%B8%80%E4%BA%BA%E7%A1%AE%E8%AF%8A-8MBI9lWIGNk/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/01/20200601第2335期-复航后，欧洲第一架飞往中国的包机就有一人确诊-8MBI9lWIGNk/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月1号星期日，中国疫情也算是平稳了，欧洲的疫情终于平稳了，那么欧洲现在在整个疫情之后，这是第一家。 </p>
+<p>从疫情爆发以来第一架飞往中国的包机，那么一共运载了2000名的欧洲的员工和家属，是一个欧洲包机，是5月30号从德国的法兰克福飞到了中国的天津，这是疫情爆发之后第一批飞往中国的欧洲人德国图片报报道，说所有的乘客上飞机前都经过了检查，但是到达天津之后还是有一人的检测结果呈阳性，此人没有症状，是无症状的携带者阳性。 </p>
+<p>34岁的工程师他现在已经被剥离，现在全飞机全部过滤，都要隔离两周，因为有一个人阳性了，现在就不知道怎么回事，不知道是到底哪边测的不准。你那边上飞机之前进行了测试，到了我这边之后那么又有阳性，有一些小粉红就这个不高兴了，觉得他们千里投毒，咱们看看后面的相关报道，看看到底是德国那边上飞机之前检查的时候检查错了呢？还是这边因为都有可能是假阳性，对吧？ </p>
+<p>但是如果要是说的确你这个事你说不清楚，你们不是说你们检查完了吗？怎么一下飞机就有人有有阳性的，难道在飞机上传染谁传染谁呢？对吧？所以你乘飞机应该都检测过了，但是不管怎么着，说明疫情看来还不能算是完完全全过去了，对吧？因为这是第一架飞机，200人就有一个最后是阳性，那说明其实欧洲那边看来还是比较恐怖，有一些年轻人这个是很年轻，34岁，对吧？说明一些年轻人就是说这次病毒尤其看出来很多年轻人都没什么症状，或者症状非常轻，过去莫名其妙就好了，但是这些人变成了一个传染的主力，因为还是我有症状了，病倒了也就不传染别人了，他这种没有症状的满头乱跑到传染给别人。 </p>
+<p>我想中国政府也以此作为一个就是说理由，就是说为什么中国现在航班很多的时候不愿意恢复，也说因为你们那边病人太多，是不是？反正由来看后面中国的航班控制的数量还会控制到非常低，可能会影响很多的留学生，不管是要来的还是要去的，都会受到影响。现在看来恐怕疫情一时半会还是接受不了。 </p>
+<p>我们看我觉得其实当然中国政府是这么说，其实我一直都比较乐观，其实我觉得7月底应该也就差不多了。我一直都认为就是说789算夏天，我总觉得夏天来了，差不多，但是当然中国政府不这么认为，但是我是过度乐观，中国政府可能也是过度谨慎。咱们最后看好吧，不过反正到现在为止呢看来还是没过去，好吧，直接讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/01/20200601%E7%AC%AC2334%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%80%A5%E4%BA%86%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%87%86%E5%A4%87%E6%AF%81%E7%BA%A6-JpNOezbJk60/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/01/20200601%E7%AC%AC2334%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%80%A5%E4%BA%86%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%87%86%E5%A4%87%E6%AF%81%E7%BA%A6-JpNOezbJk60/" class="post-title-link" itemprop="url">20200601第2334期-川普急了，习近平准备毁约</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-01 01:03:04" itemprop="dateCreated datePublished" datetime="2020-06-01T01:03:04+09:00">2020-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/01/20200601%E7%AC%AC2334%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%80%A5%E4%BA%86%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%87%86%E5%A4%87%E6%AF%81%E7%BA%A6-JpNOezbJk60/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/01/20200601第2334期-川普急了，习近平准备毁约-JpNOezbJk60/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月1号星期一，路透社的消息说，中国已要求国企不要在购买了美国的大豆和猪肉了。彭博社说，中粮集团和中储粮集团已经被下令停购美国产品，一些中国买家也取消了美国猪肉的订单，那么中国政府现在对美国玉米和棉花的采购也已经暂停，为了报复华盛顿准备取消香港的特殊贸易地位，消息人士给路透社报道就是传来消息说，如果美国采取进一步行动的话，中国将扩大停止采购农产品的范围。如果川普继续针对中国，习近平将不得不放弃第一阶段的贸易协议，在不断受到攻击的情况下，不可能从美国购买商品。 </p>
+<p>这个其实反正当然了，你说跟香港问题有没有关系，有一定的关系，但是这个实际上都是习近平提前就想好了的，对吧？心情很清楚他在香港强推高管关美国会做什么反应。那么实际上在今年1月份的时候，老头当时挺高兴，川普挺高兴要跟习近平签的第一届贸易协议，当时我就说没有任何必要高兴，这就是个圈套，这就是个骗子。 </p>
+<p>当时我就说了，我作为一个生在新中国长在红旗下的，我很了解中国政府，我说川普看来跟中国打交道，跟中国共产党打交道时间还短，他不了解中国官场就是一派谎言。第一阶段其实就是骗你的就是糊你的，就是个大饼画饼充饥，不可能让你吃到口的。那就跟以前我们进WTO答的答应的那些条件那些协议一样，在答应的时候就没有想过我们会兑现。第一阶段贸易协议也是这样子的，这只不过说当时就是说花点钱给你买一个时间，反正农产品我们也需要一部分买一部分，然后往后拖一下，不愿意在1月份的时候就跟川普的正面硬刚，因为太早了，因为11月份才选举对吧？ </p>
+<p>我说选举之前四五个月就可以，今天是6月1号，正好6789 105个月，11月大选，那就正式开始了，这个当时我就说其实头两个月我还说，我说你等着再过一两个月，中国肯定会撕毁第一集团贸易协议的，肯定会跟川普正面开战的，这个就7天，1月份的时候我就已经知道了，对吧？ </p>
+<p>我想凡是对中国共产党有那么一丁点理解的人都知道，第一阶段贸易协议肯定不会兑现的，那么现在就来了，对于创业板来讲，能够跟中国维持第一阶段贸易协议，是川普最后能够接受的东西了。有人打电话是楼下不是你手机响。不是she emergency alert。 </p>
+<p>我也在想。行，因为咱们接着说，所以对于创投来讲，说能够到现在跟老公包括这一次疫情还算没有完全撕破脸，就是说第一阶段贸易协议还在维持着。现在中国如果习近平就彻底毁约了的话，习近平串口彻底就急了，那就彻底翻了。但是川普到底能做什么，翻到什么程度，我们要拭目以待。我相信就目前来讲，双方私下里还有沟通，还在联系，到底联系到什么程度？我们不知道。 </p>
+<p>咱们再看，但是中方毁约是肯定的，川普最后肯定也得撕破脸。在这次大选之前，中美一定会有一个我觉得一个小范围的群体性的薄活达到什么程度呢？咱们后面再看。好吧，但是现在开始6月1号战斗要打响了，冲锋号已然吹响，好吧，进行到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/01/20200601%E7%AC%AC2333%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%A2%AB%E5%9D%91%E4%BA%86%EF%BC%8C%E8%A2%AB%E9%AA%97%E5%8E%BB%E4%BA%86%E7%99%BD%E5%AE%AB%E5%9C%B0%E4%B8%8B%E5%AE%A4-SDP_Q5Mf23k/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/01/20200601%E7%AC%AC2333%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%A2%AB%E5%9D%91%E4%BA%86%EF%BC%8C%E8%A2%AB%E9%AA%97%E5%8E%BB%E4%BA%86%E7%99%BD%E5%AE%AB%E5%9C%B0%E4%B8%8B%E5%AE%A4-SDP_Q5Mf23k/" class="post-title-link" itemprop="url">20200601第2333期-川普被坑了，被骗去了白宫地下室</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-01 01:03:03" itemprop="dateCreated datePublished" datetime="2020-06-01T01:03:03+09:00">2020-06-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/01/20200601%E7%AC%AC2333%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%A2%AB%E5%9D%91%E4%BA%86%EF%BC%8C%E8%A2%AB%E9%AA%97%E5%8E%BB%E4%BA%86%E7%99%BD%E5%AE%AB%E5%9C%B0%E4%B8%8B%E5%AE%A4-SDP_Q5Mf23k/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/01/20200601第2333期-川普被坑了，被骗去了白宫地下室-SDP_Q5Mf23k/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月1号星期一，祝大家节日快乐。 </p>
+<p>好吧？川普应该是被坑了，现在铺天盖地的报道就来了，各种的说什么白宫被占领了，说川普躲到了地下室，这个是假的。当然了事实情况是川普的的确确进入了白宫的地下室，这是的报道。 </p>
+<p>纽约时报也这么报了，弗克斯牛斯也报了，大家都报了，我把的英文的原文报道搁在我这个视频下方，它链接搁在下方了，大家感兴趣可以自己去看一下 CNN的报道， CNN说说有消息人士告诉CNN说据白宫官员和一名的执法人员透露，在这个星期五的晚上抗议者聚集在白宫门外时，川普总统被短暂的带到了白宫的地下的掩体一段时间，说在那里呆了不到一个小时，然后才上楼说第一夫人梅拉尼亚和他的儿子拜伦也被带到了地下掩体。那么说熟悉保护总统协议的执法人员告诉芬恩，说如果这个特工局就是说移动把川普移动到了地下掩体的话，那么就必须要把所有的受保护者，包括川普的老婆和儿子都要移动到地下掩体去。 </p>
+<p>然后消息人士告诉CNN，如果白宫的危险升级到红色的话，那么总统就将进入紧急行动中心，就是地下。我告诉你我觉得川普是被坑了，看来特勤局有很多都是上届人，他都没有换，川普在换的时候非常慢，受到了民主党的各种的这种打压和阻挠，包括情报总监也是好像上个月6月6月1号了，今天也是5月份才刚刚正式任命，之前想任命，一直被民主党阻挠，终于到上个月才认定成功。 </p>
+<p>这个来讲他们诚心要做出这么一种感觉就是说白宫占被占领了，总统躲到地下室去了，就是选举为了选举考量整个这一次说实话这个事是很令人气愤。和平的示威游行是没有没没没有问题，但是这么迅速的在全国各地变成了打砸抢烧，这个里边就是背后有人在搞串口，这一次应该是着了道了被人坑了。川普我相信进了地下掩体很快他也意识到这个问题了，所以待了不到一个小时，所以下去可能就是待了个半个小时，差不多一直到坏了被坑了，赶快就上楼，也来不及了那事实就是说他曾经躲到了地下掩体里边。 </p>
+<p>呵呵。这个东西就说出来了，就不好听，知道吗？为什么把它躲到地下掩体，说特勤局怀疑就担心可能会有汽车炸弹，以此为理由把川普就弄到了地下掩体去了，这个新闻就都出来了，大标题白宫被占领了川普到地下室去了。 </p>
+<p>老头我相信现在也是非常生气，我相信现在不需要像我们这种人告诉他了，其实当时的话，我觉得如果我是他的幕僚的话，我就告诉他绝对不去去你妈了，你他妈就炸了，吹牛逼拿原子弹把他白宫给我怼了他，知道吧？哪也不去，为什么就在这坐着，您坐进来把我逮来给我吊树上去，跟他重申要吊一棵树上，我看看我孙子被骗了被坑了，要我告诉他就绝对不去娶你妈的。 </p>
+<p>还怎么说没办法被坑了怎么办？虽然其实你你如果真的有危险的话，你进去躲个半个小时有用吗？对不对？那进去就别出来了，对不对？你躲半个小时能躲得过去吗？对吧？那不就是被坑了，对不对？你躲的话不是你就这半个小时有期待，但过了半个小时就没有了吗？这不是胡说八道。不，当时就是把他骗骗进去了对吧？老头年纪大了反应有点慢，有点慢，进去等了半个小时才意识到被骗了。但我相信现在他应该已经意识到了，现在已经不需要我来告诉他了，老头也是很聪明的一个人，我相信他现在已经知道自己被骗了，我想也是很懊恼，跟心里可能跟吃了个苍蝇一样那么恶心，但是下次多小心，然后我觉得幕僚里边还是要多搁几个聪明的反应快的人，这些情况到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/31/20200531%E7%AC%AC2332%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%84%E5%9C%B0%E8%AD%A6%E5%AF%9F%E5%8D%95%E8%86%9D%E4%B8%8B%E8%B7%AA%EF%BC%8C%E7%A5%88%E7%A5%B7%E5%92%8C%E5%B9%B3%E5%81%9C%E6%AD%A2%E9%AA%9A%E4%B9%B1-8NvMuZ86-C4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/31/20200531%E7%AC%AC2332%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%84%E5%9C%B0%E8%AD%A6%E5%AF%9F%E5%8D%95%E8%86%9D%E4%B8%8B%E8%B7%AA%EF%BC%8C%E7%A5%88%E7%A5%B7%E5%92%8C%E5%B9%B3%E5%81%9C%E6%AD%A2%E9%AA%9A%E4%B9%B1-8NvMuZ86-C4/" class="post-title-link" itemprop="url">20200531第2332期-美国各地警察单膝下跪，祈祷和平停止骚乱</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-31 01:03:02" itemprop="dateCreated datePublished" datetime="2020-05-31T01:03:02+09:00">2020-05-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/31/20200531%E7%AC%AC2332%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%84%E5%9C%B0%E8%AD%A6%E5%AF%9F%E5%8D%95%E8%86%9D%E4%B8%8B%E8%B7%AA%EF%BC%8C%E7%A5%88%E7%A5%B7%E5%92%8C%E5%B9%B3%E5%81%9C%E6%AD%A2%E9%AA%9A%E4%B9%B1-8NvMuZ86-C4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/31/20200531第2332期-美国各地警察单膝下跪，祈祷和平停止骚乱-8NvMuZ86-C4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的5月31号星期日，现在在全美各地有很多警察纷纷开始也开始支持了示威游行活动，有一些警察也加入了示威游行的队伍，还拿出来他们写的牌子就是说停止警察的暴力，反对警察暴力，警察也都加入了，我觉得这个是完完全全正确的就是说现在很多人把暴乱打砸抢烧和示威游行混为一谈，而这本来就不应该混为一谈。就是说白天的这种和平理性非暴力的示威活动，我觉得警察参与也是正也也是正确的表达一种态度。 </p>
+<p>那么到了晚上打砸抢烧，抢人家名牌店，抢人家的电器，抢银行的钱，任何人都应该阻止，都应该唾弃，都应该跟这种暴力行为进行切割。 </p>
+<p>那么警察现在是这样，他们白天的时候加入了抗议的阵营，一起举牌子喊口号，还有一些警察在全美各地都出现了有警察的单漆下跪是吧？有这一排警察，比如说像示威群众担心下跪，各种说法，有的人说是为了祈祷，有的人说是在悼念遇害的若弗罗伊德，有的人说是在祈祷和平，要停止骚乱。 </p>
+<p>不管怎么样，我觉得美国警察的这种行为都是令人非常的我觉得尊重真的是为什么美国警察虽然有很多的不好的行为，但是大家对景观还是比较我觉得还是好人多，警察里边我觉得还是好人多。 </p>
+<p>有人就是说香港的警察什么时候也向示威群众单膝下跪一下，表达一下歉意，祈祷一下和平或者什么时候，香港警察能不能给举个牌加入示威游行，对吧？对吧？你在香港反正我没看见有警察穿着制服去举着牌一起参加世界游行的，对不对？而且这次的示威游行还主要是反对警察对不对？但是警察还是加入了网上的照片很多，我就不给你们呈现了，你们自己上网去搜，对吧？ </p>
+<p>很多警察加入示威游行，警察，很多的警察单膝下跪祈祷和平，网上照片非常的多，大家自己去找全国各地现在在全美各地都出现了，说明我觉得很多的警察也是在思考，也在就是说表态，大家都是这样。其实我想包括川普也是，川普也是说我们支持和平理性的示威游行，但是如果你打砸抢烧，你被某一些不良的这些团体，不良的这种党派煽动进行什么纵火、焚烧、抢劫，搞这些的话都是必须要阻止的。 </p>
+<p>是吧？所以其实去年包括香港的问题，我也是同样的态度对吧？ </p>
+<p>但是我现在就想看看香港警察，因为我们现在知道这一次中国要强推港版的国安法，我们想看看什么时候有没有香港警察，看到了美国警察的这种态度，能够向美国警察学习，一起加入去游行示威队伍里，也是反对港版国安法的通过，然后为去年反送中运动当中，对香港的部分市民做出来的过激的行为，单膝下跪，之前祈祷和平，我希望香港警察当中也能有这样的人出现，让我们也看到了香港的希望。 </p>
+<p>说实话，有的人觉得看美国警察下跪了，美国警察真没有用，美国警察真懦弱，我觉得不是，这是一个国家的希望，这是一个国家的体面，我觉得美国警察的这种行为反而赢得了尊重。就是说香港警察在去年的时候跟香港市民之间这个争议很大，很多人说什么景黑井，香港警察虽然用武力镇压了一些东西，但是并没有赢得香港市民的尊重和喜爱。我觉得但是美国的警察用这种方式，实际上他赢得了很多普通市民的尊重和谅解。 </p>
+<p>那么我们看看香港警察有没有这种想法。还有在中国疫情期间，所有那些仗着什么防疫，对老年人没有智能手机的老年人大打出手，打的满脸是血的，去人家家里砸人家麻麻将桌的，拿着木头板子去封别人门的这些人，什么时候能够反省一下自己的这些行为，进行一些道歉。 </p>
+<p>这个时候我们想起来以前是陈小鲁了，陈小鲁还是不错的，长走还要到晚年的时候，他邀请了很多当年的同学一起向当年被他们斗了，被他们打掉的老师进行了道歉，他就说我们年纪大了，如果再不道歉可能来不及了。陈小鲁现在也已经去世了，但是就是说到最后他老了之后也在反思，自己在文革时期坐下的那些过错。我们不知道中国的这些警察们、城管们、香港的警察们，会不会也像美国警察这样偶尔的反省一下自己的行为，想想是不是自己也有不对的地方。 </p>
+<p>好吧，这期讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/34/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/34/">34</a><span class="page-number current">35</span><a class="page-number" href="/page/36/">36</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/36/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

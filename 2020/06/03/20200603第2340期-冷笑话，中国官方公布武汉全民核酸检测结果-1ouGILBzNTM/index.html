@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的6月3号星期三，给大家讲个冷笑话，中国官方公布了武汉全民核酸检测的结果，6月2号中国官方公布了武汉全民核酸检测结果，说武汉一共检测了9,899,828人，没有发现一例确诊病例，笑话无症状感染者300名，追踪密切接触者是1174名，那么对这1174名密切接触者的检测结果均为阴性。  那么什么时候开始是从5月14日部署开展了集中检测排查工作，到6月2日，就是半个月一多，一两天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果">
+<meta property="og:url" content="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的6月3号星期三，给大家讲个冷笑话，中国官方公布了武汉全民核酸检测的结果，6月2号中国官方公布了武汉全民核酸检测结果，说武汉一共检测了9,899,828人，没有发现一例确诊病例，笑话无症状感染者300名，追踪密切接触者是1174名，那么对这1174名密切接触者的检测结果均为阴性。  那么什么时候开始是从5月14日部署开展了集中检测排查工作，到6月2日，就是半个月一多，一两天">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-02T16:04:00.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:43:01.296Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:00" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:00+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果-1ouGILBzNTM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的6月3号星期三，给大家讲个冷笑话，中国官方公布了武汉全民核酸检测的结果，6月2号中国官方公布了武汉全民核酸检测结果，说武汉一共检测了9,899,828人，没有发现一例确诊病例，笑话无症状感染者300名，追踪密切接触者是1174名，那么对这1174名密切接触者的检测结果均为阴性。 </p>
+<p>那么什么时候开始是从5月14日部署开展了集中检测排查工作，到6月2日，就是半个月一多，一两天的时间半个月多，那么两天的时间就做好了，等于十六七六七天，这真太厉害了。 </p>
+<p>美国从3月16号开始认认真真的要开始做全美国排查，据我所知到现在为止排查了不到2000万人次，从3月中旬到两月两个半月了，排查不到20002000万人次，中国在十六七天就进行了989万900多万字的排查，这种能力真是独步全球，目空一切，果然是厉害过厉害。然后说本次集中的核酸检测费用全部由政府承担，通过集中采购降低了成本，单次检测价格是106元人民币，混卷的混混混合在一起检测的价格是52元人民币。美人这都是美人。 </p>
+<p>那么总支出一共是9亿元人民币左右，900多万人就花了9亿元，花的钱好少。那么通过这次筛查，换来了全国人民的放心，武汉人民的放心，充分体现了人民至上的执政理念，必将推动城市经济社会发展尽快步入正轨，这笔投入是完全值得的，不是高兴。 </p>
+<p>我之前已经说了完完全全是怎么回事，他们生产了大量的检测的试纸试剂，然后卖到国外，人家不要说你妈的不合格，准确率极低，准确率不足20%，我们用不了，都给他退回来了。 </p>
+<p>凑过来之后你要明白，这些钱在中国你知道吗？你设立一个工厂，你能做这个核酸检测是什么？你都是上面有人，那都是白手套能干的，不是一般能干的，你明白吗？在中国不是说你是个人，你想开个制药厂，你想建个医院都能见到那么简单，上面有人罩着你才行了，对不对？10个街道的不如1个卖药的。现在你以为你是个人，你来了，你想建瑞，你想建个厂造瑞德西北就能造吗？你想建个厂造检测是事迹就能造吗？根本就不是那么回事的，知道吧？ </p>
+<p>上面没有人照着那行，那么人家有人照着，虽然人家做的合格吗？不合格，质量过关不过关。准确度高吗？不高。但是没关系，人家是上面有人的妖怪，对不对？孙悟空是不能打死的，对不对？按理说这一次做得如此糟糕，准确度这么高，产品质量完全不过关，根本卖不出去，对不对？难道我不卖都被退回来了？ </p>
+<p>这事怎么办？领导的子弟们本来是要赔的，破产的节奏，这个时候政府出手了，帮领导的子弟们解套，花了9亿元人民币，把所有的这些不合格的质量不过关的，准确度不够高的是指的全部由政府买过来了，然后就搞了这么一次活动，是吧？有的人说说你这9亿元这样就白花了，你还不如花给武汉老百姓，每9900多万人，差不多一人100块钱，一人发100块钱不好吗？不好。因为你要明白这9亿元如果发给老百姓，拿到钱的是老百姓，如果发给了这些就是说生产不合格不过关，准确度极低的这些是指的这些富二代的话，那么这些钱是能够帮助他们，你老百姓一人拿100块钱能干什么？ </p>
+<p>两买个两斤猪肉吃就仅此而已，三斤4斤我也不知道现在住了多少钱一斤，对不对？买个买反正你买不了5斤，你肯定买不了5斤，对不对？你连5斤猪肉吃都吃不了，炖不了一顿，你这9亿给了官二代富二代，人家可能到海外能买个豪宅，对不对？所以我觉得也不错对吧？毕竟吧你要明白中国是一个唯上唯权的老百姓还是不重要，重要的还是富二代们不能够赔钱。所以我觉得它的效果也还是达到。 </p>
+<p>好吧，直接就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/03/20200603%E7%AC%AC2339%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%8C%87%E7%A4%BA%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E5%8C%BA%E5%BB%BA%E8%AE%BE%E6%8F%90%E9%80%9F%E4%BB%A5%E6%9B%BF%E4%BB%A3%E9%A6%99%E6%B8%AF-rNlN5R5IIsY/" rel="prev" title="20200603第2339期-习近平指示海南自贸区建设提速以替代香港">
+      <i class="fa fa-chevron-left"></i> 20200603第2339期-习近平指示海南自贸区建设提速以替代香港
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/03/20200603%E7%AC%AC2341%E6%9C%9F-%E7%BE%8E%E8%81%94%E7%A4%BE%E6%9B%9D%E5%85%89%E4%B8%96%E5%8D%AB%E5%AE%98%E5%91%98%E5%86%85%E9%83%A8%E4%BC%9A%E8%AE%AE%E5%BD%95%E9%9F%B3-uth71fw9KOs/" rel="next" title="20200603第2341期-美联社曝光世卫官员内部会议录音">
+      20200603第2341期-美联社曝光世卫官员内部会议录音 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/";
+    this.page.identifier = "2020/06/03/20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果-1ouGILBzNTM/";
+    this.page.title = "20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

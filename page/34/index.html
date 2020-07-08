@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/34/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/34/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2341%E6%9C%9F-%E7%BE%8E%E8%81%94%E7%A4%BE%E6%9B%9D%E5%85%89%E4%B8%96%E5%8D%AB%E5%AE%98%E5%91%98%E5%86%85%E9%83%A8%E4%BC%9A%E8%AE%AE%E5%BD%95%E9%9F%B3-uth71fw9KOs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2341%E6%9C%9F-%E7%BE%8E%E8%81%94%E7%A4%BE%E6%9B%9D%E5%85%89%E4%B8%96%E5%8D%AB%E5%AE%98%E5%91%98%E5%86%85%E9%83%A8%E4%BC%9A%E8%AE%AE%E5%BD%95%E9%9F%B3-uth71fw9KOs/" class="post-title-link" itemprop="url">20200603第2341期-美联社曝光世卫官员内部会议录音</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:01" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:01+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2341%E6%9C%9F-%E7%BE%8E%E8%81%94%E7%A4%BE%E6%9B%9D%E5%85%89%E4%B8%96%E5%8D%AB%E5%AE%98%E5%91%98%E5%86%85%E9%83%A8%E4%BC%9A%E8%AE%AE%E5%BD%95%E9%9F%B3-uth71fw9KOs/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2341期-美联社曝光世卫官员内部会议录音-uth71fw9KOs/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，美国媒体报道说他们拿到了世卫官员的内部会议的录音，世界卫生组织我一会会把美国媒体的英文的原文报道搁在我视频，他们的链接搁在我这个视频下方，你可以点进去看。反正大意就是美联社说他们得到录音，录音是什么？说是1月6号市委官员搞了内部会议，在里面就抱怨说中国分享的资料不足，而且明显延误通报疫情，导致是为了难以评估病毒有效的传人的程度到底是上升到一个什么程度不知道，但是他们当时就估计在1月6号就认为这肯定有传人，但是中国给的资料的不足，他们不知道人山人海的强度是什么。 </p>
+<p>你就想到了1月十几号的时候，侍卫还跟着中国说没有人传人，没有证据，所以使得他们无法再取得防疫，防止疫情扩散所吸资讯上浪费了许多宝贵的时间。然后侍卫驻中国代表盖利在内部会议上表示说中国政府太糟糕了，说他们每一次都到了他们央视，中央电视台公布前的15分钟才把资讯交给提供给示威，他们每次都到最后把到辟眼了，这才要给我们跟我们说指上卫生纸你知道吗？把室内当卫生纸你知道吗？然后担任世卫组织新官肺炎技术负责人的美国流行病学家，范科霍夫在内部会议上说说，我们获得的讯息很少，显然不足以做适当的计划，这都是内部会议的录音的记录被美联社曝光了，也就是他们的内部会议上都在骂街在抱怨，然后公开谭德赛多次感谢中国政府说中国政府立即及时的分享了病毒信息，并强调说中方对于防御的努力及透明形式令人印象非常深刻，言语无法表达，好吧，你们可以看一下英文的原文好吧？这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/" class="post-title-link" itemprop="url">20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:00" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:00+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2340%E6%9C%9F-%E5%86%B7%E7%AC%91%E8%AF%9D%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%AE%98%E6%96%B9%E5%85%AC%E5%B8%83%E6%AD%A6%E6%B1%89%E5%85%A8%E6%B0%91%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C-1ouGILBzNTM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2340期-冷笑话，中国官方公布武汉全民核酸检测结果-1ouGILBzNTM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，给大家讲个冷笑话，中国官方公布了武汉全民核酸检测的结果，6月2号中国官方公布了武汉全民核酸检测结果，说武汉一共检测了9,899,828人，没有发现一例确诊病例，笑话无症状感染者300名，追踪密切接触者是1174名，那么对这1174名密切接触者的检测结果均为阴性。 </p>
+<p>那么什么时候开始是从5月14日部署开展了集中检测排查工作，到6月2日，就是半个月一多，一两天的时间半个月多，那么两天的时间就做好了，等于十六七六七天，这真太厉害了。 </p>
+<p>美国从3月16号开始认认真真的要开始做全美国排查，据我所知到现在为止排查了不到2000万人次，从3月中旬到两月两个半月了，排查不到20002000万人次，中国在十六七天就进行了989万900多万字的排查，这种能力真是独步全球，目空一切，果然是厉害过厉害。然后说本次集中的核酸检测费用全部由政府承担，通过集中采购降低了成本，单次检测价格是106元人民币，混卷的混混混合在一起检测的价格是52元人民币。美人这都是美人。 </p>
+<p>那么总支出一共是9亿元人民币左右，900多万人就花了9亿元，花的钱好少。那么通过这次筛查，换来了全国人民的放心，武汉人民的放心，充分体现了人民至上的执政理念，必将推动城市经济社会发展尽快步入正轨，这笔投入是完全值得的，不是高兴。 </p>
+<p>我之前已经说了完完全全是怎么回事，他们生产了大量的检测的试纸试剂，然后卖到国外，人家不要说你妈的不合格，准确率极低，准确率不足20%，我们用不了，都给他退回来了。 </p>
+<p>凑过来之后你要明白，这些钱在中国你知道吗？你设立一个工厂，你能做这个核酸检测是什么？你都是上面有人，那都是白手套能干的，不是一般能干的，你明白吗？在中国不是说你是个人，你想开个制药厂，你想建个医院都能见到那么简单，上面有人罩着你才行了，对不对？10个街道的不如1个卖药的。现在你以为你是个人，你来了，你想建瑞，你想建个厂造瑞德西北就能造吗？你想建个厂造检测是事迹就能造吗？根本就不是那么回事的，知道吧？ </p>
+<p>上面没有人照着那行，那么人家有人照着，虽然人家做的合格吗？不合格，质量过关不过关。准确度高吗？不高。但是没关系，人家是上面有人的妖怪，对不对？孙悟空是不能打死的，对不对？按理说这一次做得如此糟糕，准确度这么高，产品质量完全不过关，根本卖不出去，对不对？难道我不卖都被退回来了？ </p>
+<p>这事怎么办？领导的子弟们本来是要赔的，破产的节奏，这个时候政府出手了，帮领导的子弟们解套，花了9亿元人民币，把所有的这些不合格的质量不过关的，准确度不够高的是指的全部由政府买过来了，然后就搞了这么一次活动，是吧？有的人说说你这9亿元这样就白花了，你还不如花给武汉老百姓，每9900多万人，差不多一人100块钱，一人发100块钱不好吗？不好。因为你要明白这9亿元如果发给老百姓，拿到钱的是老百姓，如果发给了这些就是说生产不合格不过关，准确度极低的这些是指的这些富二代的话，那么这些钱是能够帮助他们，你老百姓一人拿100块钱能干什么？ </p>
+<p>两买个两斤猪肉吃就仅此而已，三斤4斤我也不知道现在住了多少钱一斤，对不对？买个买反正你买不了5斤，你肯定买不了5斤，对不对？你连5斤猪肉吃都吃不了，炖不了一顿，你这9亿给了官二代富二代，人家可能到海外能买个豪宅，对不对？所以我觉得也不错对吧？毕竟吧你要明白中国是一个唯上唯权的老百姓还是不重要，重要的还是富二代们不能够赔钱。所以我觉得它的效果也还是达到。 </p>
+<p>好吧，直接就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2339%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%8C%87%E7%A4%BA%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E5%8C%BA%E5%BB%BA%E8%AE%BE%E6%8F%90%E9%80%9F%E4%BB%A5%E6%9B%BF%E4%BB%A3%E9%A6%99%E6%B8%AF-rNlN5R5IIsY/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2339%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%8C%87%E7%A4%BA%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E5%8C%BA%E5%BB%BA%E8%AE%BE%E6%8F%90%E9%80%9F%E4%BB%A5%E6%9B%BF%E4%BB%A3%E9%A6%99%E6%B8%AF-rNlN5R5IIsY/" class="post-title-link" itemprop="url">20200603第2339期-习近平指示海南自贸区建设提速以替代香港</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:03:09" itemprop="dateCreated datePublished" datetime="2020-06-03T01:03:09+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2339%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%8C%87%E7%A4%BA%E6%B5%B7%E5%8D%97%E8%87%AA%E8%B4%B8%E5%8C%BA%E5%BB%BA%E8%AE%BE%E6%8F%90%E9%80%9F%E4%BB%A5%E6%9B%BF%E4%BB%A3%E9%A6%99%E6%B8%AF-rNlN5R5IIsY/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2339期-习近平指示海南自贸区建设提速以替代香港-rNlN5R5IIsY/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，习近平现在被海南自贸区又开始着急了，海南自由贸易港成立已经一年半了，之前也是习近平指示特地要在这搞的。 </p>
+<p>6月1号习近平对海南自由贸易港又作出了指示，要求要加快建设海南自由贸易港，要突出制动，集成创新，强调海南自由贸易港是中国新时代改革开放进程中的一件大事，目标是在2025年建立以贸易自由便利和投资自由便利为重点的自由贸易港的政策制度体系，到了2035年成为中国开放型经济的新高地。到21世纪中叶，差不多到2050年，要全面建成具有较强国际影响力的高水准的自由贸易港。 </p>
+<p>实际上说来出去希望用海南的来替代香港，因为他已经知道就是说习近平其实这对于香港的想要结束一国两制已经很长时间了，其实去年狐狸尾巴就露出来了，我都已经看出来了，对不对？你想我都能看出来，别人还是看不出来，没办法，实在是水平的问题，但不管怎么着，习近平长期以来就是希望用海南来取代香港，但是这个可能性其实真的不大。香港之所以能够成为香港两个原因，一个是因为它的法制，另外一个是由于它的税制，他的税收合理，他的税法比较简单来讲，中国根本跟他比不了。 </p>
+<p>如果要想让海南彻彻底底的取代香港的话，必须要在海南重新立法，让它独立于中国的宪法体制之外，而且它的税收也要独立于中国的税收体制之外，这几乎是不可能的。 </p>
+<p>你如果能接受，你如果能够接受，就是说海南他的司法系统独立于中国大陆司法体系的话，你为什么还要又给香港接受一国两制？对不对？就说明你接受不了对吧？那么一旦你法治不了的话，你司法不独立的话，他谁能相信他？对吧？不是说你光你给政策，你给政策，你能建设一个新的普通一个普通开发区或者天津的免税区或保税区什么的，有可能想建一个香港那是不可能的，香港不是建立在一个政策的基础上，香港是建立在法制的支持基础之上，而法治恰恰是中国共产党是中国政府给不了的，法治只有西方能给，只有英国能给，只有美国能给，只有这种国家才能给法治，就是说香港我承认之前没有民主，但是它有法治，为什么？因为它基于了英国的民主之上，是因为英国有民主，所以香港现在有法制，如果他根植在中国的话，你中国本身就没走，香港就更没有，海南就更别提，所以海南体制在香港，吃人说吗？ </p>
+<p>好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2338%E6%9C%9F-%E7%BE%8E%E5%86%9B%E7%AC%AC18%E7%A9%BA%E9%99%8D%E5%86%9B%E6%8A%B5%E8%BE%BE%E5%8D%8E%E7%9B%9B%E9%A1%BF%E7%89%B9%E5%8C%BA-JV2Wgq9rtJU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2338%E6%9C%9F-%E7%BE%8E%E5%86%9B%E7%AC%AC18%E7%A9%BA%E9%99%8D%E5%86%9B%E6%8A%B5%E8%BE%BE%E5%8D%8E%E7%9B%9B%E9%A1%BF%E7%89%B9%E5%8C%BA-JV2Wgq9rtJU/" class="post-title-link" itemprop="url">20200603第2338期-美军第18空降军抵达华盛顿特区</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:03:08" itemprop="dateCreated datePublished" datetime="2020-06-03T01:03:08+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2338%E6%9C%9F-%E7%BE%8E%E5%86%9B%E7%AC%AC18%E7%A9%BA%E9%99%8D%E5%86%9B%E6%8A%B5%E8%BE%BE%E5%8D%8E%E7%9B%9B%E9%A1%BF%E7%89%B9%E5%8C%BA-JV2Wgq9rtJU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2338期-美军第18空降军抵达华盛顿特区-JV2Wgq9rtJU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，五角大楼下达命令将驻扎在北卡罗来纳州布莱格堡的宪兵营，部署到了华盛顿特区，这些县兵来自第十八空降军。第18空降军是美军最精锐的快速反应部队，下辖10101，空途50 82空降是第十，山地10和第一步兵师，是美国的全球反应最快速的陆军主力。这些部队已经被派往了华盛顿特区，在需要的时候以待命状态进入特区。 </p>
+<p>川普今天也发表了讲话，被好几个州的州长们都拒绝了，就拒绝要部队帮忙。其中叫得最凶的就是纽约州，纽约州库默巴川普奚落了一顿，但是这一次面对这次骚乱受到伤害受到冲击最糟糕的也是的纽约州。纽约市这一次为此付出了惨痛的代价，在纽约发生了很多的悲剧。 </p>
+<p>据我们所知，有很多华人的这些小商贩都受到了打砸和破坏，付出了惨痛的代价。我只能说我们不得不承认这一次的骚乱也好，这一次的疫情也好，共和党的治理的地方，共和党的州长，共和党的师长，治理的地方，不管是从疫情还是面对这次骚乱，都比民主党做的更好。领导这一次只知道去笑话川普，但是它的人民为他能够去笑话川普付出了惨痛的代价。 </p>
+<p>说实话以民主党治理如此的糟糕，纽约都应该翻红，纽约人民真是民主党在纽约治理的时间太久了，我现在就要离开纽约，主要原因就是因为我觉得纽约已经不再像是一个国际大都市了，纽约现在越来越像是一个第三世界国家，民主党在这治理的真的是太糟糕了，基本上比较体面的都搬走了，现在越来越多的都是那些你懂我意思好吧，反正我觉得对于纽约这个城市来讲，我真的越来越认为我觉得所有人都应该考虑一下，是不是应该换一个共和党来执政一段时间，整顿整顿治理，我觉得每个纽约市的市民都应该思考这个问题。 </p>
+<p>好吧？这就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2337%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%BA%E4%B8%AD%E8%8D%AF%E6%92%91%E8%85%B0%EF%BC%8C%E8%B4%A8%E7%96%91%E4%B8%AD%E8%8D%AF%E5%B0%86%E5%85%A5%E7%8B%B1-r0RVJSukcp8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2337%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%BA%E4%B8%AD%E8%8D%AF%E6%92%91%E8%85%B0%EF%BC%8C%E8%B4%A8%E7%96%91%E4%B8%AD%E8%8D%AF%E5%B0%86%E5%85%A5%E7%8B%B1-r0RVJSukcp8/" class="post-title-link" itemprop="url">20200603第2337期-习近平为中药撑腰，质疑中药将入狱</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:03:07" itemprop="dateCreated datePublished" datetime="2020-06-03T01:03:07+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2337%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%BA%E4%B8%AD%E8%8D%AF%E6%92%91%E8%85%B0%EF%BC%8C%E8%B4%A8%E7%96%91%E4%B8%AD%E8%8D%AF%E5%B0%86%E5%85%A5%E7%8B%B1-r0RVJSukcp8/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2337期-习近平为中药撑腰，质疑中药将入狱-r0RVJSukcp8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，习近平为中药撑腰，习近平喜欢中药，大家都知道了，这一次新的疫情发生以来，习近平一直就是说希望中医中药能够在这一次在治疗新观当中能够发挥重要作用。 </p>
+<p>在武汉的前线，我们也一直坚持用中医中药呢来治疗，心管肺炎的患者，什么莲花清瘟，什么双黄连口服液等等的，用了很多之前在丁香园他们武汉前线医生的发文也说，说上有所好下必效焉，它上面喜欢用中医中药，所以来了之后不管怎么着，先给你一顿的中医中药吃下去，吃的有一些病人的肝指数都异常了，前些年医生反正这次有点不是很开心对吧？ </p>
+<p>但是这个东西没办法对吧？习近平喜欢对吧？叫什么楚王爱细腰宫人多饿死是吧？所以这就是这么个情况。以至于到现在变本加厉到了这种地步了，就是说你现在只要质疑中药，你有可能要坐牢。 </p>
+<p>北京市卫健委发布了北京市中医药条例草案的公开征求意见，说任何组织或者个人不得对中医药做虚假夸大的宣传，不得冒用中医药名义谋取了不正当利益，损害了社会公共利益，不得以任何的方式或行为诋毁污蔑中医药。如果违反了规定诋毁污蔑中医药，那么就算是寻衅滋事，扰乱了公共秩序，构成了违反治安管理的行为，由公安机关依法给予治安处管理处罚。如果构成犯罪的，那么依法要追究刑事责任。而且要逐步加大对符合条件的中医诊疗项目，中药饮片和中药制剂的支持力度，动态调整纳入基本医疗保险基金支付范围中的中药制剂支付标准，那么以后医保会对中医药加大支持力度。 </p>
+<p>我觉得这个事怎么说，对于我觉得一半，因为在中国我经常说中药也是属于这个时代，隔好段一话题有人支持有人不支持对吧？对于那些支持的中心重要人来讲，就是天大的好事了，对不对？因为他们也支持也喜欢吃，那么这个纳入大量的纳入医保，而且提高日医保的这种支持力度的话，对于那些相信中医药喜欢吃中药的来讲，这是个好事，对吧？ </p>
+<p>对于那些就是说对吧？另外那些人可能这就是一个要小心了，以后说话要小心，如果你在网上再胡说八道，搞不好的你要坐牢，好吧？我对中医中药一直以来也还都是比较这个也是肯定的。我经常说我认为中医中药我经常说基本上西医治不好的都能归这个中中医治了，然后就西医跟你说你这差不多了，那么还有三个月回去等死。这时候就是拯救你生命的时刻就到了。 </p>
+<p>好吧，你看我们一直对中药还是比较认可的，对不对？不用多劳哈哈。好吧，这一讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/33/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/33/">33</a><span class="page-number current">34</span><a class="page-number" href="/page/35/">35</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/35/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

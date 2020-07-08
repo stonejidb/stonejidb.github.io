@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月28号星期四，终于咱们说说什么是内卷化，为什么这个词最近经常出现很多人提及，其实说主要来讲我觉得还是有一点悲观，为什么这么说？咱就说内的内卷化它源于美国的一个人类学家叫吉尔斯，他写的叫农业内卷化，他给他的定义是什么？他是这样，他说内卷化是指一种社会或者文化模型，在某一个发展阶段达到一一种确定的形式之后，变得停滞不前，或者无法转化为另一种更高级模式的现象。这个就太文雅了">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200528第2309期-什么是内卷化？为什么最近总是出现这个词？">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/28/20200528%E7%AC%AC2309%E6%9C%9F-%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8D%B7%E5%8C%96%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E8%BF%91%E6%80%BB%E6%98%AF%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%9F-nURtMLCanp0/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月28号星期四，终于咱们说说什么是内卷化，为什么这个词最近经常出现很多人提及，其实说主要来讲我觉得还是有一点悲观，为什么这么说？咱就说内的内卷化它源于美国的一个人类学家叫吉尔斯，他写的叫农业内卷化，他给他的定义是什么？他是这样，他说内卷化是指一种社会或者文化模型，在某一个发展阶段达到一一种确定的形式之后，变得停滞不前，或者无法转化为另一种更高级模式的现象。这个就太文雅了">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-27T16:00:09.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:43:01.116Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/28/20200528%E7%AC%AC2309%E6%9C%9F-%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8D%B7%E5%8C%96%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E8%BF%91%E6%80%BB%E6%98%AF%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%9F-nURtMLCanp0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200528第2309期-什么是内卷化？为什么最近总是出现这个词？ | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/28/20200528%E7%AC%AC2309%E6%9C%9F-%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8D%B7%E5%8C%96%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E8%BF%91%E6%80%BB%E6%98%AF%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%9F-nURtMLCanp0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200528第2309期-什么是内卷化？为什么最近总是出现这个词？
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-28 01:00:09" itemprop="dateCreated datePublished" datetime="2020-05-28T01:00:09+09:00">2020-05-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/28/20200528%E7%AC%AC2309%E6%9C%9F-%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8D%B7%E5%8C%96%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E8%BF%91%E6%80%BB%E6%98%AF%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%9F-nURtMLCanp0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/28/20200528第2309期-什么是内卷化？为什么最近总是出现这个词？-nURtMLCanp0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月28号星期四，终于咱们说说什么是内卷化，为什么这个词最近经常出现很多人提及，其实说主要来讲我觉得还是有一点悲观，为什么这么说？咱就说内的内卷化它源于美国的一个人类学家叫吉尔斯，他写的叫农业内卷化，他给他的定义是什么？他是这样，他说内卷化是指一种社会或者文化模型，在某一个发展阶段达到一一种确定的形式之后，变得停滞不前，或者无法转化为另一种更高级模式的现象。这个就太文雅了，能明白他的意思吗？ </p>
+<p>好，举个例子，就是说吉尔斯在考察印尼的水稻生产的时候，他就发现这种小农经济不断发展，却长长期不能过渡到资本主义商品经济这一现象。什么意思？就是说在印尼种植水稻的时候，你为了要能够丰收，能够吃的多怎么办？就要投入更多的人力，那一亩地假如你一个人种产量就有限，如果你娶个老婆多生几个儿子，一搭一起种就会分享产量，对不对？那么发展到一定程度之后，这一亩地到底需要多少人是有限的，一旦到了限度之后，你再往上增加人，实际上产量的增加就很有限了，边际效益开始就低下了，对不对？说不是靠人口密集去种地，能够增加它的产量的了，这个时候需要什么？ </p>
+<p>你就需要一些产业变革，比如说我可能需要一些农耕的机器什么的，但是有吗？在他们当中没有发现，或者有一些多余的人就要把那些多余的产品拿来进行交换，开始搞商业化资本主义的模型，开始让客人建工厂什么的等等的，加工什么的。但是他们没有，因为他就发现印尼他们水稻生产了之后，到了最后就是说只能够不断的通过增加人，人力如果没有的话怎么办？大家节衣缩食，就是说地就这些了，粮食越来越少，大家通过节节衣缩食少吃，然后维持生活，如果最后实在不行的就饿死，没有办法去寻找出路，再举一个更接近于我们的例子，就是说这个鸦片战争，鸦片战争的时候，我们那时候总有一个观点就是说有两派观点，一派观点说鸦片战争打开了满清的国门，使得西方的这种文明先进的技术和理念进入到中国，是一种高级文明，给低级文明带来了希望，带来了一种就是说冲击。 </p>
+<p>这个时候我们才学会了用了洋火，他知道有电，说八国联军没有进来之前，说我们说说北京随大大小便，连个公共厕所都没有，知道吗？所以外国人来了就是最受不了，中国人就这点随地大小便你知道吧？就是说完完全全就是说处在一个就是说落后的蛮荒的一这么一种状态，有人就认为这个是没有道理的。说即使没有西方列强的入侵的话，中国的自然经济也是发展到了一个阶段，就已经出现了资本主义的萌芽。 </p>
+<p>说你们不来，我们自己也能够从这种农业的封建社会转变为这种资本主义社会，根本就不需要你们知道吗？你们找你们是完全入侵，你们占了我们便宜，并不是你们给我们带来的新的更高级的理念或者更高级的科学技术。 </p>
+<p>那问题就在这儿就是说大家就开始找，就是说中国什么时候出现了资本主义萌芽，让他们认为在春秋战国时期就出现了资本主义萌芽。 </p>
+<p>那就是说你征求战国时期出现的资本主义萌芽，怎么经过2000年仍然没有进入资本主义呢？对不对？这里面就存在一个问题，那么中国的一个学者叫黄宗治，黄宗治他写的叫长江三角洲小农家庭与乡村发展中，它就用了吉尔茨内卷化的理论，他就说这样，他说内卷化这一概念是中国经济发展与社会变迁的的一种体现。什么？就是说通过在有限的土地上投入大量的劳动力来获得总产量增长的方式，即边际效益递减的方式，称为没有发展的增长。 </p>
+<p>内卷化举个例子，像现在中国比如说你刚开始对吧？中国文革之后开始恢复高考，你要是个大学生很厉害了，对不对？后来你会发现大学上大学的人越来越多，这大学生毫无竞争力，对吧？开始就研究生，研究生之后就开始博士生，后来你发现他工厂的招一个看大门的，他来了应征的10个人里面有3个博士，55个研究生，你懂我意思吧？就是说这就是一种内转化，就是说很多的企业也好，工厂也好，他在招人的时候，他根本就不需要一个博士生或者是一个研究生，他来一高中生足可以了，但是由于这种互相的这种碾压和这种挤压，就这叫内转化。 </p>
+<p>出现的就是说这种竞争之后非常残酷的竞争，但是最后带来的效益非常的低下。 </p>
+<p>就说最后你读了你在中国你可能读了比如说两两年读了研究生，然后再花几年读了个博士，你出来之后，其实你就是在跟本科生去争夺一个同样的工作岗位，他并没有使就是说你这么多年的投入，最后带来什么好的产出吗？并没有，很多时候实际上只是你本科出来之后找不着工作，没办法回去读研究生了，研究生还找不到工作，那就很难读博士。 </p>
+<p>你懂我意思吧？美国这块有很多中国留学生也是，就说我读了本科，我找到没找着工作，没找着你接着读研究生就被税逼到了博士了，你知道吗？最后博士留在学校教书，找个公立校，他不用去抽签，也不用什么的比较容易，所以都给逼成了大学教授，你懂我意思吧？其实这就是一种内转化。 </p>
+<p>主要就说什么？比如说在中国这种小农经济总量的不断的发展，以家庭为单位的小农经济，个体中单个人的劳动效益一直得不到增长，这种以虎口为目的的小农经济的逻辑与习惯就造成了内转化。 </p>
+<p>首先来讲大家要注意一点，就是内转化它是什么？它是一个理论，它不是一个理论，它解决不了理论是要解决问题的，知道吗？他不是1个理论，它解决不了问题，他只是描述了1个是11个现象，就是说在中国在印尼，尤其在亚洲的国家特别容易出现这种问题，就那点化其实不光是中国，印尼、日本都是这样。就是说在小农经济，在农业的封建的王朝里边，就是经历了1000年、2000年、3000年、8000年、1万年，他自己是没有办法变成资本主义的。西方列强不来，船坚炮利不来的话，他自己进入不了，资本主义就是说没有办法像新的一个更高级的这种上层建筑去发展。 </p>
+<p>现在就是说为什么现在谈到内卷化，现在特别流行说就是说中国目前又到了这么100年之后了，100 100多年了，鸦片战争洋务运动100年了，回来之后又到了这么一个情况，什么情况？就是说以美国为首的一些西方国家，他们认为只要我们帮助中国发展经济，就是说其实在中国当时加入加入WTO加入世界贸易组织的时候，美国人知道不知道中国人是来占便宜，他们知道。 </p>
+<p>那么这么多年中国跟美国做生意在占便宜，前任的总统知道吗？他们是知道的，他们为什么就是说容忍中国这么做，帮着中国发展经济，让中国挣钱，帮着中国发展，为什么？他们总认为中国的问题是因为落后导致的，是因为没有钱导致的，是为经济发展不好导致的，他们认为只要中国发展起来了，经济发展好了，人均收入提高了的话，那么中国人民自然的就会想要追求民主、法治、自由、自然的从社会从内在他就会自发的要追求那种东西，他就会变化，整个社会就会进步。 </p>
+<p>改革开放三30 30多年了，对不对？就好像洋务运动搞了30多年了之后，不管是西方还是中国人，自己本身都发现了这么一个问题，就是中国再一次进入了内角的话，在西方帮助之下的我们这种劳动力密集型的这种产业产能，我们发展了几十年，我们认为我们应该朝技术革新，朝着民主去发展了，我们发现由于我们并我们的体制导致我们不太尊重的这种私人产权，也不尊重的老百姓的这种的发明创造，很多人就跟我们说，他们的翻唱创造就是被侵袭了，比如说华为内部有一些人，他们有一些发明发明创造就被国家占了，就被华为公司占了，就不是他自己的。 </p>
+<p>就是说我有了发明，我有了创造之后，它不属于我，它没有给我带来什么好处，所以很多人没有，因为你知道发明也好，创造也好，他要投入很多的心力、物力、人力、财力，他就不愿意这么去做，导致我们就只能在这劳动力系劳动力密集型里面，就是说比如说你给别人做代工，我也给别人做代工，我最后我比你成本还低，你给苹果做一个手机，你就挣2块钱，我来了我给苹果做一个手机，我就挣1块5，挣1块2，最后这样苹果你给我做一手机，我送你两毛，知道吧？ </p>
+<p>就是这叫内卷化，陷入了这种竞争，没有人就是说没有人愿意做苹果，没有人想做drugs，所有人都想做不开明，都是我想办法我怎么花钱托人跟苹果找关系，你给我这个活，然后我给你做，我尽量把成本压低，都是在这么搞。而且没有整个从中国头上下，没有人想追求觉得我们上层建筑不行了，这样发展不好，我们应该推翻它。不能说没有有个别有那么一两个，你就像我对不对？就是说我们就意识到中国现在有内转化的现象，对吧？我们想办法去解决它。 </p>
+<p>但问题是这样子，就是说一个民族你单个靠一两个人的觉醒是解决不了问题的，实际上这个民族怎么也有个百1010/1%的人觉醒才可以，但这个民族他没有，中国再一次地又陷入了那句话，玩命的大家都在玩命的提高学历，玩命的去竞争，但是那种竞争有没有向外扩展？没有。有没有产业革命？没有。 </p>
+<p>现在的给别人代工代产，怎么拉关系走走后门，然后所有人都在考公务员，就陷入了这么一种就是说我为共产党服务，我怎么相信老戴，我跟领导搞好关系，我怎么阿谀奉承，我怎么这个送礼都就进入了这么一个怪圈，没有人认为就是说我们这么做不对，我们应该打破，打破这个之后，我们才会有更好的发展，我们要向外扩张，没有都在这儿重复的，就是说以至于现在发展到什么程度了，说逢年过节，你给领导送礼不见得对你有什么好处，但是你不送礼你就有坏处了，就要给你小鞋穿了，为什么？ </p>
+<p>因为别人都送礼，你凭什么不送礼？对吧？ </p>
+<p>因为以前是有一两个人送礼或者两个人都有好处，还有大家都送礼，现在是谁不送礼谁倒霉，对吧？就是说你必须得意思。对吧？这就是内转化。为什么现在不断的提倡，就是说又开始了悲观了，绝望了，觉得我们又来了又到这了，知道吗？好像现在看起来有些人就觉得可能中国这个国家就这样，社会就这样，这个民族就这样，我们又进入了内转化，我们自己自身没办法解决这个问题。有人就在呼唤有外来势力，能不能再一次给我们彻底的帮我们就解决这个问题。 </p>
+<p>现在习近平同志特别的像慈禧老佛爷那样在呼唤外国人。 </p>
+<p>来吧。然后当然这个是开玩笑，但是我们不得不承认，就是说为什么现在越来越多人认同这个观点就在这儿，就是说的的确确又好像有了这么一个情况，跟100年前一样，上面还是老佛爷，下面还是义和团，洋务运动搞了几十年，然后我们再一次进入了怪圈，好像一条狗在追着自己的尾巴在那转一样在原地打转，怎么都过不来了。这种时候有一些学者觉得是不是又应该是西方列强船坚炮利敲开国门，帮助我们往前走。 </p>
+<p>这一步关于这个点我只能这么说，还是那句话，他不是一个理论，他解决不了问题，但他描述了这么一个现象，但这个现象描述的还算比较贴切，有点像中国目前的这么一种现象。 </p>
+<p>不断的重复的竞争，就是说现在的老百姓你知道参加高考考公务员，有点像当年考这个八股文去考科举是一样的，完完全全的所有的人没有人能够抬起头来，大家都闷着头朝那个没有人想抬头来看看到底我们在什么位置，我们应不应该做这件事。 </p>
+<p>没有人有这种就是说思考的能力，所有人都是盲目的朝着一个就是说某一些人给了你们一个就是说在你的头前面给你挂了一个胡萝卜，然后你就一直追着这个胡萝卜，一直追着这个胡萝卜，你就帮他把这个磨就没了。然后你就从来没有抬头了，你会发现这个胡萝卜是挂在你的鼻子前面的，所以你永远都不会够让这个胡萝卜的。你懂我意思吧？所以这就是那句话。 </p>
+<p>好吧？ </p>
+<p>反正是有点小悲观。说实话，我觉得一他是有一定道理的，因为现在真的从我们自己国民内部，尤其是以前我们没有做又突破之前，我还没有意识到，我总觉得所有人都跟我一样，我觉得我这登高一呼，应者云集，大家都跟我想法一样，然后我们一起我们就把问题就解决了。 </p>
+<p>后来不是发现原来将来就不是原来我们当然我觉得很多咱们的观众算是算算跟我的观点比较接近，对不对？因为能坚持看下来还是跟我的观点比较接近的，但是我们真的还是就是说因为十几亿人民币我们都算是很小的，那一部分人我们可能连1%都不到和2%，我不知道我们才多点人，对不对？ </p>
+<p>绝大多数人觉醒不了的时候，怎么办？当难道又要等待西方列强的这种入侵了？是吧？好吧，这期讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/27/20200527%E7%AC%AC2308%E6%9C%9F-%E7%A6%8F%E5%85%8B%E6%96%AF%EF%BC%9A%E7%BE%8E%E5%9B%BD%E5%B7%B2%E6%8E%8C%E6%8F%A1%E7%97%85%E6%AF%92%E6%9D%A5%E6%BA%90%E8%AF%81%E6%8D%AE%EF%BC%8C6%E4%B8%AA%E6%9C%88%E5%86%85%E5%85%AC%E5%B8%83-To8e7Y6L4Wk/" rel="prev" title="20200527第2308期-福克斯：美国已掌握病毒来源证据，6个月内公布">
+      <i class="fa fa-chevron-left"></i> 20200527第2308期-福克斯：美国已掌握病毒来源证据，6个月内公布
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/28/20200528%E7%AC%AC2310%E6%9C%9F-%E4%BC%8A%E6%9C%9714%E5%B2%81%E5%B0%91%E5%A5%B3%E8%A2%AB%E7%88%B6%E4%BA%B2%E8%8D%A3%E8%AA%89%E5%A4%84%E5%86%B3-K0n9MQ2hf9o/" rel="next" title="20200528第2310期-伊朗14岁少女被父亲荣誉处决">
+      20200528第2310期-伊朗14岁少女被父亲荣誉处决 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/28/20200528%E7%AC%AC2309%E6%9C%9F-%E4%BB%80%E4%B9%88%E6%98%AF%E5%86%85%E5%8D%B7%E5%8C%96%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%80%E8%BF%91%E6%80%BB%E6%98%AF%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E8%AF%8D%EF%BC%9F-nURtMLCanp0/";
+    this.page.identifier = "2020/05/28/20200528第2309期-什么是内卷化？为什么最近总是出现这个词？-nURtMLCanp0/";
+    this.page.title = "20200528第2309期-什么是内卷化？为什么最近总是出现这个词？";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

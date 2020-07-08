@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的5月27号星期三，之前我们说中国和印度在边境地区发生了群殴，几百人的大群殴，现在得到的消息中印双方都在边境上在增兵，双方都在挖防御工事，挖战壕开始了，要要干仗是吧？  说中国的卡车一直在往边境的运输各种设备，说冲突的导火索是什么？说是印度在中印边境地区修建公路，说印度为什么要这么搞？印度说这个不是我们挑起的，说这是中国挑起的，说你中国也在这玩命的修各种的这种基建、修铁路、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200526第2299期-中国印度同时向边界增兵，有可能开战">
+<meta property="og:url" content="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的5月27号星期三，之前我们说中国和印度在边境地区发生了群殴，几百人的大群殴，现在得到的消息中印双方都在边境上在增兵，双方都在挖防御工事，挖战壕开始了，要要干仗是吧？  说中国的卡车一直在往边境的运输各种设备，说冲突的导火索是什么？说是印度在中印边境地区修建公路，说印度为什么要这么搞？印度说这个不是我们挑起的，说这是中国挑起的，说你中国也在这玩命的修各种的这种基建、修铁路、">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-25T15:09:09.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:43:01.071Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200526第2299期-中国印度同时向边界增兵，有可能开战 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200526第2299期-中国印度同时向边界增兵，有可能开战
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-26 00:09:09" itemprop="dateCreated datePublished" datetime="2020-05-26T00:09:09+09:00">2020-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/05/26/20200526第2299期-中国印度同时向边界增兵，有可能开战-spU-omYTfYI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的5月27号星期三，之前我们说中国和印度在边境地区发生了群殴，几百人的大群殴，现在得到的消息中印双方都在边境上在增兵，双方都在挖防御工事，挖战壕开始了，要要干仗是吧？ </p>
+<p>说中国的卡车一直在往边境的运输各种设备，说冲突的导火索是什么？说是印度在中印边境地区修建公路，说印度为什么要这么搞？印度说这个不是我们挑起的，说这是中国挑起的，说你中国也在这玩命的修各种的这种基建、修铁路、修公路、铺路架桥，而且说中国现在要通过什么中亚南亚将中国与欧洲连接在一起，就是所谓的习近平就这一带一路一直要连进去，搞中巴走廊，而且还在那不断的推进。印度就是说非常的担心，因为你现在交通那么便利的话，你往边境这运兵运物资运后勤补给就会非常方便。 </p>
+<p>上一次中印战争，实际上中国是打赢了，印度也承认印度印度失败了，被打败了，中国打赢了，但是打赢了之后，中印这个问题并没有解决。我们的实际控制区并没有往前推进，我们民生打赢了打赢了，我们还是回来了，还回到了就是说战前的位置。 </p>
+<p>为什么？因为在当时那种情况之下，我们的基础建设有问题，我们的后勤补给达不到，我们虽然打赢了，但是我们想维持那个地方的维持不住，后方的补给上不来，兵也运不上来，设备也上不来，你维持在那之后，你短期打赢了可以长期你消耗不过对方，所以没有办法就往后退。所以我们现在大量的搞这种基建了之后，就让印度很担心，因为你这种大量的铁路公路铺路架桥修的这么好，那么你迅速的就可以运兵运补给运后勤物资上来，这样子的话它有压力。 </p>
+<p>印度的前驻华大使拉奥奇就说，他说随着印度的基础设施，现在也在慢慢延伸到实际控制线的沿岸地区，那么中国的威胁感也就提高了。所以印度说的你修我也得修。 </p>
+<p>印度总理莫迪一直在推动改善在边境的交通状况，现在预计到2020年，印度将沿着中国边境附近，就在中国和印度边界政府要建成的66条的公路，也是把建设就是四通八达，你像66条对吧公路，其中一条关键的公路现在靠近叫加勒万股，与去年10月启用的机场相连，而且与实际控制线是平行的，并在不同的地点与内地的主要的供应基地都相连，这样的之后就有利于印度从内陆的运兵运补给，对中国来讲就是有威胁。 </p>
+<p>所以现在中国不想让印度接着修这条公路，但印度说这公路它在我国家，我修公路你管得着吗？你就一带一路我也没法管，对吧？ </p>
+<p>现在反正主要就是说出现了这个问题。 </p>
+<p>现在印度说中国在拉达克地区说是增兵的5000士兵往边界增加，印度也在增派援兵，印度增派多少？ </p>
+<p>印度说要确保两国军队数量的均等，实际上就是说你中国运5000的，我也用5000上来，现在就是说会不会马上开战，可能还不会，为什么这么说？因为中国军队并没有集中在的对峙的爆发点附近的任何地方，并没有集中，而是分散的在实际控制线的中方的一侧是分散开的，这5000人并没有集中，如果要打的话会把兵力集中在一点，对吧？因为你分散开就知道打两两到两天意义不大，对吧？所以这么看应该可能还不是要打。 </p>
+<p>但是中国像达拉克派遣的增援部队，不光包括军队，还包括各种的车辆，重型的装备等等都运上来了。 </p>
+<p>印度就觉得你这是什么意思，对不对？你都上来，对吧？所以他也很担心，因为觉得中国人狡猾，你上一次中印战争就吃了中国狡猾的亏，当时就是说实际上从实力上来讲并不比中国弱，完完全全是被中国人骗了，吃了大亏。所以这一次他也担心说你现在好像是分散，但是离得都这么近对吧？你迅速的就可以集中重型装备也到位了，对吧？所以印度现在也比较担心双方开始了防御攻势，战壕都已经挖好了，所以你也不能说就是说一定打不起来，只能说有可能开战，但是我们认为开战的可能性还是不大，但是希望双方还是要克制。 </p>
+<p>但是你又要说如果不开战的话，你这么因为兵一上去粮草就要上去，对不对？你运5000人上去，这5000人吃饭，这一天光吃饭你吃多少？对不对？你粮草得运多少上去，对吧？你不打的话你就5000人顶上去是干什么？还有这么多的重型装备，对不对？那说明你还是你有这个想法，对吧？要不然这人吃马喂的是5000人顶上去，人吃马喂的，在那别多了，你待个半年的话，这消耗多少？对吧？所以我觉得还是有可能的。所以印度这方面也是比较担心，这是印度为什么？ </p>
+<p>实际上中国方面没有说，而是印度方面说的，印度开了记者招待会，向国际社会曝光这个情况，这说明什么？说明印度实际上是不想打的。 </p>
+<p>有人之前就有人说，说印度想通过在边境跟中国干一仗，来转移国内的民愤，因为疫情现在印度控制的不好，他想就是说干预让他去转移国内的视线，但是其实我不这么认为，因为这次疫情导致了印度内部出现了很多问题，外部如果再开战的话，说实话不见得打得过中国，你如果真把中国揍了，出了一口气扬我国威，国内民众怎么着，万一你要打输了怎么办？ </p>
+<p>大声的怎么交代，我那名片已经很大了，外边你在打输了。所以在这种情况之下，我认为印度实际上在避免跟中国开战，所以为什么这个事儿中国现在方面不怎么说，印度玩命的开各种技术大会，然后来发他的消息，就证明中国增兵了，还增长增强装备，实际上说就是说你们快看他来了，他要打我，对不对？ </p>
+<p>实际上你就看这个意思，就说什么，就是说印度现在有点怕了，有点害怕了，所以我认为如果要打起来，不能够说，当然我们肯定就要说是印度挑起的，说印度率先挑起印度怎么着，我们一向都是这种观点，但是从我来看这个事，我们有责任，恐怕不是当年南北朝鲜打，也是这个北朝鲜就说南朝鲜率先攻击，我们不得不奋起反击，防守反击，但是最终所有的史实资料都能够证明北朝鲜金日成同志率先打起来的，而且对方那边在刚开始开战的时候1点准备没有还是奇袭，突然发动战争，知道吧？所以男孩子一上来的时候简直就是溃不成军，被人打了个措手不及。 </p>
+<p>但是就这种情况，我们这么多年就能够舔着脸跟你说谎话，给我们灌输的一直都是就是说他是自卫反击战不得不这么干，对吧？现在打印度我看看又是这样子，反正大家都中国人心里都有数，好吧，咱们看一看好吧，反正5000多人，这么多重型装备，这么多物资都点上去了，不知道是不是要有小范围的结果。好吧，但是我希望就是说最好还是不要打。好吧，继续讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/26/20200526%E7%AC%AC2298%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E8%BF%9E%E7%BB%AD%E5%8F%91%E7%94%9F%E4%B8%80%E5%AE%B6%E4%B8%89%E5%8F%A3%E8%87%AA%E6%9D%80%E4%BA%8B%E4%BB%B6-3uxxgTDiN8w/" rel="prev" title="20200526第2298期-中国连续发生一家三口自杀事件">
+      <i class="fa fa-chevron-left"></i> 20200526第2298期-中国连续发生一家三口自杀事件
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/27/20200527%E7%AC%AC2300%E6%9C%9F-%E7%95%99%E5%AD%A6%E7%94%9F%E5%BD%92%E5%9B%BD%E5%8F%AF%E5%85%A5%E5%AD%A6%E9%AB%98%E8%81%8C%E9%AB%98%E4%B8%93-m3i4EY4oLbk/" rel="next" title="20200527第2300期-留学生归国可入学高职高专">
+      20200527第2300期-留学生归国可入学高职高专 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/05/26/20200526%E7%AC%AC2299%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%B0%E5%BA%A6%E5%90%8C%E6%97%B6%E5%90%91%E8%BE%B9%E7%95%8C%E5%A2%9E%E5%85%B5%EF%BC%8C%E6%9C%89%E5%8F%AF%E8%83%BD%E5%BC%80%E6%88%98-spU-omYTfYI/";
+    this.page.identifier = "2020/05/26/20200526第2299期-中国印度同时向边界增兵，有可能开战-spU-omYTfYI/";
+    this.page.title = "20200526第2299期-中国印度同时向边界增兵，有可能开战";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月7号星期二啊，印度在边境上不断的增兵，而且搞各种边防任务导致印度士兵崩溃。印度一名武装边防部队的士兵，7月6日晚在印控的克什米尔地区与上级官员发生口角之后，将其当场击毙，然后开枪自杀，因为他整个就是崩溃了。二人所在的武装边防部队第49营正在当地执行任务，印度方面也承认印度军方在边境地区长期部署，而且以及在科斯米尔地区长时间的军事行动，对士兵的心理健康和身体耐力造成了损">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/07/20200707%E7%AC%AC2512%E6%9C%9F-%E6%88%98%E4%BA%89%E5%8E%8B%E5%8A%9B%E5%A4%A7%EF%BC%8C%E5%8D%B0%E5%BA%A6%E5%A3%AB%E5%85%B5%E5%B4%A9%E6%BA%83%E6%9E%AA%E6%9D%80%E4%B8%8A%E7%BA%A7%E5%86%9B%E5%AE%98-suLVfePMJIo/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月7号星期二啊，印度在边境上不断的增兵，而且搞各种边防任务导致印度士兵崩溃。印度一名武装边防部队的士兵，7月6日晚在印控的克什米尔地区与上级官员发生口角之后，将其当场击毙，然后开枪自杀，因为他整个就是崩溃了。二人所在的武装边防部队第49营正在当地执行任务，印度方面也承认印度军方在边境地区长期部署，而且以及在科斯米尔地区长时间的军事行动，对士兵的心理健康和身体耐力造成了损">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-06T18:01:02.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:43:01.474Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/07/20200707%E7%AC%AC2512%E6%9C%9F-%E6%88%98%E4%BA%89%E5%8E%8B%E5%8A%9B%E5%A4%A7%EF%BC%8C%E5%8D%B0%E5%BA%A6%E5%A3%AB%E5%85%B5%E5%B4%A9%E6%BA%83%E6%9E%AA%E6%9D%80%E4%B8%8A%E7%BA%A7%E5%86%9B%E5%AE%98-suLVfePMJIo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/07/20200707%E7%AC%AC2512%E6%9C%9F-%E6%88%98%E4%BA%89%E5%8E%8B%E5%8A%9B%E5%A4%A7%EF%BC%8C%E5%8D%B0%E5%BA%A6%E5%A3%AB%E5%85%B5%E5%B4%A9%E6%BA%83%E6%9E%AA%E6%9D%80%E4%B8%8A%E7%BA%A7%E5%86%9B%E5%AE%98-suLVfePMJIo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-07 03:01:02" itemprop="dateCreated datePublished" datetime="2020-07-07T03:01:02+09:00">2020-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/07/20200707%E7%AC%AC2512%E6%9C%9F-%E6%88%98%E4%BA%89%E5%8E%8B%E5%8A%9B%E5%A4%A7%EF%BC%8C%E5%8D%B0%E5%BA%A6%E5%A3%AB%E5%85%B5%E5%B4%A9%E6%BA%83%E6%9E%AA%E6%9D%80%E4%B8%8A%E7%BA%A7%E5%86%9B%E5%AE%98-suLVfePMJIo/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/07/20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官-suLVfePMJIo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月7号星期二啊，印度在边境上不断的增兵，而且搞各种边防任务导致印度士兵崩溃。印度一名武装边防部队的士兵，7月6日晚在印控的克什米尔地区与上级官员发生口角之后，将其当场击毙，然后开枪自杀，因为他整个就是崩溃了。二人所在的武装边防部队第49营正在当地执行任务，印度方面也承认印度军方在边境地区长期部署，而且以及在科斯米尔地区长时间的军事行动，对士兵的心理健康和身体耐力造成了损害。 </p>
+<p>是这个就是我真的这样子，就是说你把这么多的部队调上去，然后你长时间的就是说如果不打的话，实际上对自己可能也是一个伤害。我记得以前韩国有一个电影，当然根据真实事件改编了一个电影，他说什么？说韩国想组织一拨人去北朝鲜刺杀当时的北朝鲜的最高领导人，然后他找了这拨人，因为知道去了之后几乎可以说就是一个敢死队了，几乎有去无回对不对？因为他们可能就派个几十人过去，人家那边几万人的部队对不对？你杀完人之后可能就走不了了，厮杀最高领导人那么就是一个敢死队怎么办？他就到监狱里面去挑那些死刑犯，就是说你已经判死刑了，那么这时候你自己选对不对？ </p>
+<p>一个枪毙你，另外一个你去接受军事训练，军事训练你之后你去厮杀。北朝鲜的最高领导人，如果你自杀完了之后，你能活着回来的话，那么不断的释放你还有奖金，然后你之前放过了一切最多就全免了，然后还给你这个巨额奖金，让你以后能过一个比较富足的生活，对于死刑犯来讲就觉得那怎么办对不对？横竖也是一死了，要不这死我在那边我还可以赌一下，没准我跑回来了对不对？ </p>
+<p>就组织了一波死刑犯，然后到一个地方去开始了密集的训练，然后他们在训练的时候，整个的政治形势发生了改变，北朝鲜和南南南韩之间进行了某一天的和谈，双方的局势趋缓了，战争的威胁不大了，不大了之后，如果这个时候再派暗杀队到北朝鲜去暗杀的话，我岂不要挑起战争了？ </p>
+<p>就想要不就算了，再等一等，然后后面再看一看，但是也不知道后面怎么样怎么办，叫他们一直训练，就关在一个地方一直训练，据说训练了好像最后快两年的时间就给他们忘在那了，然后因为他们派他们去是要进行敢死队的特别任务，对不对？所以对他们训练是非常的艰苦，以至于到后来他们都一个个都训练搏击技巧特别强，然后枪的特大特别好，各种的刺刀匕首玩都倍油了，知道吗？然后都闭着眼打都能打湿滑的，到了这种地步了还不去，然后还是超级高强度艰苦的训练，到了最后他们终于就忍受不了了。 </p>
+<p>然后这几十人最后就爆发了，爆发之后半夜他们抢了把他们的军官给打死了，打死之后抢了枪，然后就开始就不我们不去美朝鲜了，我们要说去首尔，我要去首尔，我要见总统，我要问总统怎么回事，为什么这么对待我们？然后就一路往首尔沙，然后由于他们是受过非常系统性训练的，武器装备又非常强，这一路杀回来的是一一条血路，根本警察部队都拦不住，最后只能调了特种部队来，最后才勉强的把他们拦住了，最终是把他们这个拳拳尖了全都给打死了，那就是这么一个事，最后也就是他们精神崩溃了，等于就是说彻底鱼死网破了。 </p>
+<p>所以就是一个什么问题，就是说士兵不能够长时间的在这种高强度的训练之下，所以当时就我说中印两国都在往边境派了这么大的部队，我说如果不打的话，这种部队长期在那里，你不打他自己就要生事了。 </p>
+<p>是当然了这个是我们看到印度部队出事了，中国部队有没有事，其实我们不知道，中国出这种事你可能媒体报导不出来，印度它毕竟是个民主国家，它报道出来的。 </p>
+<p>所以中印到底要不要开战，就从这里来讲也有一个问题，其实这个东西作为部队来讲，它有时诚心这么使用，据我们所知美军有时候也这样，美军也是比如说要执行任务了，他把这部队先圈在船上，知道吗？过去之后他不马上执行任务，就把部队憋在船里面憋着，为什么这么做？ </p>
+<p>因为它这个船的船头特别小，然后还都是上下层的，几个人就都团在里面，美国大兵知道吗？ </p>
+<p>憋了你这么一个月一个个憋的都开始就快要疯了，你知道吗？然后这个时候走执行任务，那帮人出去之后，他已经闹到骂我了，我现在就想找谁干一架，宰了个谁那个他就诚心的把你憋出那种心态来，然后放手去打，所以有的时候前线部队他们有时候也是诚心的给一些高压，有时候军官来了之后诚心就骂你，然后就熟了，然后就没皮没脸的样子，为什么就要给你造成这么一种狼性的这么一个心态，把你的心理的火器勾起来，但是如果长时间这么搞，就有可能对吧？ </p>
+<p>所以这种时候怎么办？有的时候宁可就放手让他们去打一仗，沿着不让他们往回懂我意思吧？所以就在这种情况之下，我认为印度这样子搞很有可能搞不好，印度现在有点想打了，为什么？因为火气传的太高了，用实体扛着尸体游街，煽动这民粹，搞到中国大使馆门口去砸中国电视机，烧中国的国有企业，烧习近平的照片，然后这么多兵搁在边界上的，然后压的一硬就像一个高压锅一样，所以我觉得要小心。 </p>
+<p>我看了这个之后，我觉得要小心就说明什么？说明前线的印度士兵已经像个高压锅了，不要现在谁都不要轻易招惹，他已经到了能把上级机关打死，要自己自杀的地步了，她已经你爱谁谁，那么谁来了我就打死谁，已经到这种地步了。 </p>
+<p>所以我建议中方如果不想打的话就要小心，现在已经到了火药桶的地步了，就是说一点就着，但是我越来越觉得习近平同志实在退避三舍，不是怂了，有的人认为习近平怂了，我觉得不是，我总觉得这里面有不好的苗头，反正我说出来希望北京的小心，如果心情真的是不想打的话，我觉得就像这种情况下迅速的往下撤，不要再碰了。 </p>
+<p>现在印度的边防士兵就跟火药桶一样，属于是沾点火是一点就着的地步。在这种情况之下，如果不想打赶快脱离，如果不然的话很容易发生擦枪走火。这一讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/07/20200707%E7%AC%AC2511%E6%9C%9F-%E4%BC%A0%E4%B8%AD%E5%85%B1%E5%BD%93%E5%B1%80%E6%89%BF%E8%AF%BA%E8%AE%B8%E7%AB%A0%E6%B6%A6%E5%AB%96%E5%A8%BC%E8%A1%8C%E6%94%BF%E6%8B%98%E7%95%997%E5%A4%A9%E5%B0%86%E4%BA%8E7%E6%9C%8812%E6%97%A5%E9%87%8A%E6%94%BE-JAVHJhB8pqc/" rel="prev" title="20200707第2511期-传中共当局承诺许章润嫖娼行政拘留7天将于7月12日释放">
+      <i class="fa fa-chevron-left"></i> 20200707第2511期-传中共当局承诺许章润嫖娼行政拘留7天将于7月12日释放
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/07/20200707%E7%AC%AC2513%E6%9C%9F-%E8%B4%B5%E5%B7%9E%E5%85%AC%E4%BA%A4%E5%8F%B8%E6%9C%BA%E9%A9%BE%E8%BD%A6%E5%9D%A0%E6%B9%96%EF%BC%8C%E4%BA%A4%E9%80%9A%E9%83%A8%E7%B4%A7%E6%80%A5%E9%80%9A%E7%9F%A5%EF%BC%9A%E4%B8%A5%E7%A6%81%E5%BF%83%E7%90%86%E4%B8%8D%E5%81%A5%E5%BA%B7%E5%8F%B8%E6%9C%BA%E5%BC%80%E5%85%AC%E4%BA%A4-69QC9GRu_Tc/" rel="next" title="20200707第2513期-贵州公交司机驾车坠湖，交通部紧急通知：严禁心理不健康司机开公交">
+      20200707第2513期-贵州公交司机驾车坠湖，交通部紧急通知：严禁心理不健康司机开公交 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/07/20200707%E7%AC%AC2512%E6%9C%9F-%E6%88%98%E4%BA%89%E5%8E%8B%E5%8A%9B%E5%A4%A7%EF%BC%8C%E5%8D%B0%E5%BA%A6%E5%A3%AB%E5%85%B5%E5%B4%A9%E6%BA%83%E6%9E%AA%E6%9D%80%E4%B8%8A%E7%BA%A7%E5%86%9B%E5%AE%98-suLVfePMJIo/";
+    this.page.identifier = "2020/07/07/20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官-suLVfePMJIo/";
+    this.page.title = "20200707第2512期-战争压力大，印度士兵崩溃枪杀上级军官";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

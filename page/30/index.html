@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/30/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/30/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/05/20200605%E7%AC%AC2361%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8B%E4%BB%A4%E5%AE%A1%E6%9F%A5%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8-C-a8AaNxv9o/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/20200605%E7%AC%AC2361%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8B%E4%BB%A4%E5%AE%A1%E6%9F%A5%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8-C-a8AaNxv9o/" class="post-title-link" itemprop="url">20200605第2361期-川普下令审查在美国上市中国公司</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 01:06:01" itemprop="dateCreated datePublished" datetime="2020-06-05T01:06:01+09:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/05/20200605%E7%AC%AC2361%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8B%E4%BB%A4%E5%AE%A1%E6%9F%A5%E5%9C%A8%E7%BE%8E%E5%9B%BD%E4%B8%8A%E5%B8%82%E4%B8%AD%E5%9B%BD%E5%85%AC%E5%8F%B8-C-a8AaNxv9o/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/05/20200605第2361期-川普下令审查在美国上市中国公司-C-a8AaNxv9o/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月5号星期五，川普终于要下令了，要对所有在美国上市的中国公司进行彻查，说中国公司常常以什么国家秘密为由，拒绝接受美国监管机构的审计标准，川普表示这样给美国的投资者带来了巨大的风险，因为你在美国上市，美国投资者就买你的股票，对不对？如果你出现问题，你像瑞星咖啡这种还有什么爱奇艺什么这些等等的这些问题的话，你就会给美国的投资者的可能莫名其妙，我股票就有巨大的损失，对吧？ </p>
+<p>川普周四昨天签署了备忘录，要求审查在美国上市，中国公司违反美国监管标准情况，以保护美国的投资者要求负责金融市场的工作小组在60天之内提交一份报告。针对中国上市公司未能遵守美国证券法的情况，为行政部门和美国证券交易委员会等相关机构提出建议，实际上就是说要考虑怎么去制裁他们，有没有可能大面积的退市，我觉得应该也不至于，我相信中国公司会想出应对之策来，他们会想办法的对吧？因为也有很多的美国的这种审计公司是在中国，他们再去跟他们去沟通，他想办法我觉得应该是能够应对的，但是对一些美国中国在美国上市的一些企业的，我觉得股票可能会有一些冲击，这种情况之下，实际上我建议大家要避免所有的中国概念的在美国的中国概念的股票，目前来讲应该百%的回避他们，将来有可能会对你进行受到一个巨大的冲击。 </p>
+<p>彭配药周四昨天也警告了美国投资者，让他们警惕中国公司的会计欺诈行为，敦促全球证券交易所收紧对中国上市公司的规定，这一次我觉得力度是非常强的，我们看看60天之后，这份报告出来之后，看看美国到底想要把中国公司打到一个什么程度，好吧，但是还是这句话，所有的人一定要规避所有他们的股票，而且你要明白很多的这些公司，他们在美国上市，在中国也有就是说也会受到冲击，所以大家一定要规避一切的风险，就多这些公司远一点好吧？ </p>
+<p>今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/05/20200605%E7%AC%AC2360%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C%E5%A2%9E%E5%8A%A0250%E4%B8%87%E5%B7%A5%E4%BD%9C%E5%B2%97%E4%BD%8D%EF%BC%8C%E9%81%93%E6%8C%872%E4%B8%877%20-c3n0_Pug8to/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/20200605%E7%AC%AC2360%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C%E5%A2%9E%E5%8A%A0250%E4%B8%87%E5%B7%A5%E4%BD%9C%E5%B2%97%E4%BD%8D%EF%BC%8C%E9%81%93%E6%8C%872%E4%B8%877%20-c3n0_Pug8to/" class="post-title-link" itemprop="url">20200605第2360期-美国经济复苏，增加250万工作岗位，道指2万7</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 01:06:00" itemprop="dateCreated datePublished" datetime="2020-06-05T01:06:00+09:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/05/20200605%E7%AC%AC2360%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C%E5%A2%9E%E5%8A%A0250%E4%B8%87%E5%B7%A5%E4%BD%9C%E5%B2%97%E4%BD%8D%EF%BC%8C%E9%81%93%E6%8C%872%E4%B8%877%20-c3n0_Pug8to/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/05/20200605第2360期-美国经济复苏，增加250万工作岗位，道指2万7 -c3n0_Pug8to/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月5号星期五，美国经济已经开始复苏了，3月份的时候当时我说美国经济的基本面非常的好，经济一点问题都没有，那么当时股市下跌，经济出现问题，我说完完全全百%的原因全部都是疫情，只要疫情一过去，那么经济就会迅速复苏。我当时说美国的这次所谓的经济危机会是一个v字形的，就是说唰下来到那个点蹭就回去了，而且当时我说美国美联储下的药太猛，这肾上腺素康康康打了十几管，这个人他虽然是不动，是因为有疫情，大山死死地摁着根本动不了，我只有大山只要一挪开之后震荡拉锯就开始抖，你知道吗？ </p>
+<p>这个美联储药下了太猛了，现在看起来我说的是百%正确的。6月5号今天美国劳工部公布数公布的数据，5月份美国的失业率为13.3%，5月的非农业职位增加了250万个就业岗位，这是有史以来美国有历史以来单月创造的最高纪录，原本估计会5月份应该会减少800万个工作岗位，结果不但没有减少800万个工作岗位，反而增加了250万个工作岗位，那么预计失业率是19.8%，那么最后实际失业率是13.3%。今年2月份的时候那个时候还没有运行了，美国的失业率是3.5%，几十年来的最低，4月份的时候失业率就飙升到了14.7%，是为1948年以来的最高的失业失业率是吧？ </p>
+<p>3月4月闹得最凶，从5月份开始经济复苏，本来经济专家都认为5月份会继续下跌的，结果5月份不但没跌还往上上涨了，5月份经济开始复苏，然后在4月份的时候，由于经济活动被关停，道指当时下跌到的18,500点，当时我说这是一个非常好的买入的机会，对吧？那个时候我是竭尽全力奉劝所有人要买股票，一定要买股票，我说这是我千载难逢的好机会，一个微字型迅速的涨回来。 </p>
+<p>那么到了今天，那么由于劳工部的失业调查率是吧，5月份增加了250万个就业，受此刺激道指今天是大涨，最后涨到了27,000点，从18,000点涨到27,000点。今天又有网友给我发来了感谢，说听我的买了股票，那次涨的还是比较好非常满意，所以我表达一个谢意，然后又有人跟我说，说你什么你把打赏打开，我给你打赏，他说上次说给4年的会员费太少了，你一个月就1块钱，这4年也不过就是几十块钱太少了，说我给你打个我给你包个红包，我还是这个不用了，感谢网友王晓宇有心了，聘的今天跟我发说他也挣钱了，上次聊完之后他也买股票也挣钱了，也是特别高兴，这就好，大家高兴就好，我还是当时我跟你拼聊天，我也说就是说反正我讲了大家愿意看，对大家有帮助，我就特别高兴，其他的真的也不需要了。 </p>
+<p>好吧？川普今天也特别高兴，6月5号今天川普在推特说，他说这些数字不可思议，他说唯一能够扼杀经济复苏的是谁呢？子弟邳州，呵呵。昏昏欲睡的拜登。串补当然是开玩笑，但是这是事实。今年只要传统连任，明年经济就涨疯了，但是如果拜登上来，那就真的要完蛋。 </p>
+<p>我想到此，我觉得到了6月5号基本上印证了3月份我对股市和美国经济的预测是可以说是百%正确了，对吧？那么我想相信相信我的听了我的现在都有实实在在的实际的经济回报，对吧？你看看3月份1万多点的道指到现在27,000点的道指对吧？你那个时候基本上闭着眼买了什么，你现在也都能挣点了对吧？所以最少也挣了10%，对吧？我想怎么说，坚持收听收看子兄弟对你的我觉得人生投资理财是吧？ </p>
+<p>还有好多朋友那时候感谢我12月30号，我说武汉出了问题之后，带着父母迅速跑欧洲了，有的跑加拿大了，对吧？这种就更别提了，更重要更实打实的叫挣点小钱。这点小钱。好吧，那就先到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/05/20200605%E7%AC%AC2359%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%8A%A0%E5%85%A5%E5%8F%8D%E5%85%B1%E5%86%9B%E4%BA%8B%E8%81%94%E7%9B%9F-ES88CxTAFgY/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/20200605%E7%AC%AC2359%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%8A%A0%E5%85%A5%E5%8F%8D%E5%85%B1%E5%86%9B%E4%BA%8B%E8%81%94%E7%9B%9F-ES88CxTAFgY/" class="post-title-link" itemprop="url">20200605第2359期-印度加入反共军事联盟</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 01:05:09" itemprop="dateCreated datePublished" datetime="2020-06-05T01:05:09+09:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/05/20200605%E7%AC%AC2359%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%8A%A0%E5%85%A5%E5%8F%8D%E5%85%B1%E5%86%9B%E4%BA%8B%E8%81%94%E7%9B%9F-ES88CxTAFgY/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/05/20200605第2359期-印度加入反共军事联盟-ES88CxTAFgY/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月5号星期五，印度现在被中国逼的彻彻底底加入了反共联盟，现在中印在边境是三军对峙，现在到底要不要打？据说还好，我们得到小道消息，中印现在双方进行了这种会谈，会谈之后中印双方的军队都往后撤了几公里，这样看起来可能暂时就先不打了，不当然咱也不知道，反正现在小道消息这么说，然后这个是怎么回事，也是因为这样。 </p>
+<p>昨天印度和澳大利亚两国6月4号，他们签署了叫什么？双向的两项的一个军事协议，说是澳大利亚总理莫里森和印度总理莫迪两个人举行了双边峰会，后共同宣布说印澳两国签署了两项双边军事协定，说印泰要深化国防关系，协议的名称叫印澳全面战略伙伴关系协议。说两国将通过演习深化军事融合，允许双方进入对方金基地进行后勤保障，等于就相当于把你的军队认为是我的军队了，可以进入我的基地。 </p>
+<p>这是非常信任了，对不对？进入我的基地进行了后勤补给保障治疗，都可以等于两军的就变成有军了。你知道吧？在这个演习当中就要演练双方怎么能够无缝衔接，比如说你子弹不够了，我给你一些你我炮弹不够了，你给我一些，我这受伤的往你那送，你那受伤的往我这送就这样的。 </p>
+<p>那么印度现在就是说在加强与美国的防务工作，每年举行马拉巴尔的海军演习，那么以前海军演习是由美国、印度和日本三国联合举行，印度在中国的西边，日本算是在东南，对不对？ </p>
+<p>那么再加上美国在南海地区，等于就对中国在印太地区对中国形成一个包围圈。 </p>
+<p>印度、美国和日本，那么在2019年的时候，当时澳大利亚发出了这种的这种请求，希望能够加入马拉巴尔军演，当时美国和日本都同意了，但是印度拒绝了，为什么？ </p>
+<p>当时印度还想跟中国做生意，觉得离中国比较近，他担心如果同意澳大利亚也加入进来，为什么4国的话会担心中国有一些负面反应，当时韩国搁萨德基地的时候，咱们不就是反响特别大，把韩国那叫什么超市来着，乐天把韩国超市最后给挤到彻底就走了黄了，对不对？不在中国干了，对吧？那么当时印度还是就是说很担心不愿意跟中国闹闹太僵，所以去年的时候拒绝了。那么到了今年你就看得出来，现在被中国人逼的已经被逼无奈，现在印度表示愿意加强跟澳大利亚的军事关系，实际上就是在给中国发出一个强烈的信号。 </p>
+<p>俄罗斯科学院东方学，说是东南亚、澳大利亚大洋洲研究中心的主任德米特里莫夏科夫认为，说印度现在正在更加积极的在印泰四国联盟的框架之下，那么四国联盟是哪4国？就是澳大利亚、美国、日本和印度要在这个框架之下要展开军事合作。美、日、印、澳四国联盟的目标就是要建立遏制中国在印太地区的这么一种的军事扩张，他们形成一个军事同盟，等于印度算是彻彻底底的加入了反共联盟，而且就是反共的军事联盟。面对这个情况，中国现在也跟印度反正谈完之后也在撤军，中国现在意识到了一点，就是说我觉得印度这么做，实际上在中国说一点，就是说如果咱们两个开战了，不光是你跟我打，我把澳大利亚、日本、美国都拉进来，我们4个人抽你，中国现在也还没有封到了，要向4国同时宣战，所以暂时就是说向后撤。 </p>
+<p>我想说的是什么？就是说在去年的时候，印度的态度还是很明显的，还是愿意跟中国把关系搞得好一点，能跟中国做一些生意，发展一些经济。印度当时还是愿意加入什么亚投行等等的，对不对？现在看起来印度已经彻底死心了，已经彻底的看清了习近平军事扩张的野心和抱负。他现在意识到对于印度来讲，最威胁的已经在纳粹化的中共，其实2018年的时候，就我说要防止中共纳粹化，我们搞的像当年德国一样搞这种国家资本主义发展到一定程度了之后，产能过剩，然后就开始变成了向外扩张，刚开始经济扩张迅速的就会变成了这种军事扩张，我们花了这么多钱，我们要建什么？ </p>
+<p>七七个航母，我们要建了大量的这种中远程的中程弹道导弹，还在发展的核武器。胡锡进前两天说要到1000枚，实际上我们当时已经说了，胡玉军喊的不是说要干，而是已经在干了，只是给你挑明了这一次窗户纸给你挑明了，就中国其实这几年一直在搞这种低当量的核武器的实验在发展的新式的核武器，美国现在也已经发现了苗头，实际上全世界都已经发现苗头了，中国现在是印太地区要发生战争的一个导火索。习近平现在越来越像希特勒，越来越有这种战争狂人的影子出现，导致就是说现在日本印度这些离中国近的国家是非常的小心，日本现在可以说是完完全全在转向了完完全全转向了台湾。 </p>
+<p>安倍晋三几次三番的强烈表态，而且公公开出来讲话支持台湾加入世卫组织，这简直当着面给撤中国嘴巴子了，对不对？而且日本还在要国会通过议案，要由国家拨款帮助日本企业撤离中国。你就可以看得出来，现在日本、印度、澳大利亚、澳大利亚跟中国闹的就更僵，你别提了，澳大利亚就为了独立调查这病毒跟中国闹闹成一锅粥了，最近现在是互相干，已经跟澳大利亚也基本上接近一个冷战的状态。 </p>
+<p>现在澳大利亚再加入进来，印度、日本、美国、澳大利亚，这是一个就不一样了，这个不是属于一个经济联盟，这是一个军事联盟，这实际上是在中国周边的。从印度是从陆地接壤到这边南海到日本海这边整个围了一圈，这个已经是摆明了要跟中共干的节奏了。 </p>
+<p>当然了习近平同志是1个什么样子的狂人，还怕对不对？1个人打4个跟玩一样，当年老佛爷在的时候1个人打8个对不对？同时向八国向八国联军宣战，对不对？习近平现在才上4个旋转的部门都不算什么，是不是？小开始？ </p>
+<p>反正咱们看一看，但是现在看起来当时咱们开玩笑归开玩笑，让他弄拿他走，但是说实话，看来印度澳大利亚的军事合作的协议对中共还是有这种敲山震虎的作用，迅速大家和谈就有一个成效了，而且双方都往后撤军了，对吧？所以我经常说和平的是争取来的，对吧？如果澳大利亚美国不是这么强硬着的在背后支撑印度的话，这次其实习近平是想要教训印度的，对不对？但是一看到后面背后老大哥们都出来了，所以也就软弱了，这说明他们展示了自己军事力量的这种肌肉之后，反而换来了和平，对吧？ </p>
+<p>也像中国周边的那些小国就是释放一个强烈的信号，就是说你们在面对中国的军事扩张的时候应该怎么办？好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/05/20200605%E7%AC%AC2358%E6%9C%9F-%E5%B0%8F%E7%B2%89%E7%BA%A2%E5%A4%AA%E7%B2%89%E4%BA%86%E4%B8%8D%E5%A4%9F%E7%BA%A2%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%86%8D%E6%94%B6%E7%B4%A7%E9%AB%98%E6%A0%A1%E6%84%8F%E8%AF%86%E5%BD%A2%E6%80%81%E7%AE%A1%E6%8E%A7-jSuKWz_90GE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/20200605%E7%AC%AC2358%E6%9C%9F-%E5%B0%8F%E7%B2%89%E7%BA%A2%E5%A4%AA%E7%B2%89%E4%BA%86%E4%B8%8D%E5%A4%9F%E7%BA%A2%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%86%8D%E6%94%B6%E7%B4%A7%E9%AB%98%E6%A0%A1%E6%84%8F%E8%AF%86%E5%BD%A2%E6%80%81%E7%AE%A1%E6%8E%A7-jSuKWz_90GE/" class="post-title-link" itemprop="url">20200605第2358期-小粉红太粉了不够红，中共再收紧高校意识形态管控</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 01:05:08" itemprop="dateCreated datePublished" datetime="2020-06-05T01:05:08+09:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/05/20200605%E7%AC%AC2358%E6%9C%9F-%E5%B0%8F%E7%B2%89%E7%BA%A2%E5%A4%AA%E7%B2%89%E4%BA%86%E4%B8%8D%E5%A4%9F%E7%BA%A2%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%86%8D%E6%94%B6%E7%B4%A7%E9%AB%98%E6%A0%A1%E6%84%8F%E8%AF%86%E5%BD%A2%E6%80%81%E7%AE%A1%E6%8E%A7-jSuKWz_90GE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/05/20200605第2358期-小粉红太粉了不够红，中共再收紧高校意识形态管控-jSuKWz_90GE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月5号星期五，现在中共高层对小粉红是极为不满。举个例子，比如说这一次中国留学生困在海外出回不去民航总局的5个一政策，结果中国留学生竟然反水惯报了民航总局的网站的评论区，引起中国高层的极为不满，觉得小混混的这种意识形态不够红，小粉红小粉红觉得太粉了，还不够红，现在不要小粉红，要小赤红，要红铮铮的红粉红是不行的，粉红不够红。党的不满意觉得你们没有跟着党的颜色走，党是红，说了是红的就红，一辈子都是红，粉，一天都不行，不能粉一定要红。 </p>
+<p>6月5号，中国教育部发布了高等学校课程思政建设指导纲要，要全面推进高校的高校的课程的思政建设，要推进中国高校就是大学大专课程的思政建设，包括所有学校和所有学科的专业，要围绕政治认同、家国情怀、文化素养、宪法法制意识、道德修养等重点优化课程，思政内容要供给，要让小粉红要更红。而且高校的意识形态领域的发展，就认为他现在已经偏离了最初的预期，所以认为长此以往，中共认为会逐渐丧失在意识形态领域的领导权。因此中国认为对高校阵地的拨乱反正势在必行。 </p>
+<p>举个例子，以前在文革的时期，比如一对夫妇是高干，那么那个时候就是说高干的话会比如说政府给发点心，就是小八戒，你知道吗？政府发了点心，发了一盒小麦这点心，然后夫妇俩人就叫那孩子去隔壁屋，咱们轰走，然后俩人在这吃点心，然后小孩就过来了，偷偷地就拉头就看见了闻着香味了，那个年代你知道吗？小8件好，那小孩就想吃，夫妇两人告诉小说不行，因为我们是祖国的高干，小8件是供给给我们这些高级干部的，你们的不是你们没有为国家作出贡献，所以你们不能吃，你知道吗？这就是那个时代的这种意识形态。 </p>
+<p>那个时代还有比如他的母亲在家里说了几句，就是说反对毛泽东觉得毛泽东不对的，这个孩子出去就把母亲就揭发选举了，后来把他母亲就枪毙了，知道吗这个才是正确的，这叫真正的小赤红。你们这些小粉红回不了国，怎么了？ </p>
+<p>瞎闹，什么抱怨什么？ </p>
+<p>这两天还有一个视频，有几个中国留学生在美国回不了国了，然后抱怨中国大使馆跟中国大使馆通话的过程进行了录音，抱怨中国大使馆中国驻美国大使馆协调不力等等的，非常的不满，非常中共高层还非常不满的，你们怎么回事？你们懂不懂什么叫爱国？ </p>
+<p>家丑不可外扬，今天把这种东西录下来，发到网上去，这不是给中国大使馆能看吗？对不对？给中国民航总局难堪吗？对不对？而且主要就是什么知道吧？意识形态上有问题。还有就是说我们这些年拍了很多非常不好的影响非常恶劣的电影，你像战狼，对不对？ </p>
+<p>战狼二吴京演的战狼二，这是一种灌输的什么思想？他那里面竟然跟着小粉红跟中国留学生说什么，说这本护照不能带，可能不能带你去全世界的任何国家，因为有的国家就给咱们不是免签，但是可以帮你带回国。这种电影的图读青年的心灵，毒害了中国的留学生，祸害小粉红，给小粉红灌输了一种非常不好的思想，就认为一旦有了问题，祖国接我回去应该的，凭什么？祖国凭什么接你回去？ </p>
+<p>吴京就该出来谢罪，给社会鞠躬道歉，不要问国家能为你做什么，要问你能为国家做什么，这种时候就要牺牲自己，成全国家，国家不接你怎么了？瞎抱怨什么？一帮粉嫩粉嫩的你能够红吗？有没有那种赤胆忠心？以后不要看战狼这种电影都把你们教坏了，知道吗？我又说从现在开始像战狼这种带有这种资本主义情怀的，动不动我们国家你不要跟美国比，对不对？ </p>
+<p>美国是撤侨了，对不对？不有美国邮轮到了日本，美国是整个撤侨了，加大也撤侨了，你不能跟美国比，美国是发达国家，我们是发展中国家，他们有钱他们资源丰富，我们还穷，我们有6亿人收入不足1000元你知不知道？在这种时候你不能体谅国家，不能体谅社会，不能体谅人民，你们舔着脸让国家派派专机给你们接回去，凭什么？当初是国家求着你们来留学的，对不对？ </p>
+<p>意识形态有问题，好好从自己身上去寻找错误的根源，好好反省自己，尤其是吴京这种电影以后，战狼电影全国封杀，从现在开始重新回到文革8个样板戏，知道吗？以后规定一下，几个电影是能播的，意识形态正确的，欧美的那点就更别看了，欧美的那电影更给你讲的胡说八道的，动不动还什么国家拯救你，这别扯淡，应该是你拯救国家还是那句话，不要问中国共产党，要问你能为中国共产党做什么，把你的钱捐了，然后在美国就留下来，把护照撕，不要再想回去了，好不好？ </p>
+<p>其实多体谅国家，一帮中国留学生我真的非常不像话，你知道吗？你看看把党旗成什么样了，现在要对你们进行再教育，拨乱反正，懂不懂，不要在美国留学了这些人，等他现在回不去，现在暂时回不去，我说回去给你们一个个都妈扔到大专院校里边去，知道吗？弄到高职，大专院校给你们好好接受一下这种无产阶级专政，红色教育给你们好好洗洗脑，在美国呆久了，一个个的粉嫩的不要的，气死我了。讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/05/20200605%E7%AC%AC2357%E6%9C%9F-%E8%80%BF%E7%88%BD%E5%8D%B8%E4%BB%BB%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E5%8F%91%E8%A8%80%E4%BA%BA-OkzfdX0cjNQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/05/20200605%E7%AC%AC2357%E6%9C%9F-%E8%80%BF%E7%88%BD%E5%8D%B8%E4%BB%BB%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E5%8F%91%E8%A8%80%E4%BA%BA-OkzfdX0cjNQ/" class="post-title-link" itemprop="url">20200605第2357期-耿爽卸任中国外交部发言人</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-05 01:05:07" itemprop="dateCreated datePublished" datetime="2020-06-05T01:05:07+09:00">2020-06-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/05/20200605%E7%AC%AC2357%E6%9C%9F-%E8%80%BF%E7%88%BD%E5%8D%B8%E4%BB%BB%E4%B8%AD%E5%9B%BD%E5%A4%96%E4%BA%A4%E9%83%A8%E5%8F%91%E8%A8%80%E4%BA%BA-OkzfdX0cjNQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/05/20200605第2357期-耿爽卸任中国外交部发言人-OkzfdX0cjNQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月5号星期五，耿爽卸任了中国外交部的发言人，在6月5号耿闯主持了他的最后一场的例行记者会，然后就正式卸任。中国外交部发言人的职务广场一共做了4年，耿爽在中国外交委员当中，中国外交部发言人当中还是非常有名的，大名鼎鼎的以前有好多的模仿的，耿爽发言的这些各种的这种应用，就是说你把国家或什么的你输入进去，然后就会模仿耿爽的语音语气，然后给你对他发表了强烈的谴责和不满，知道吧？ </p>
+<p>非常有名。现在传言耿爽将要派任的联合国耿首1973年出生，比我大9岁，从事外交工作20多年，曾在中国外交部国际经济司以及中国常驻联合国代表团工作，还曾担任中国驻美国使馆新闻参赞兼发言人，刚才我们看起来还是很年轻的，哥上看起来好像比我大个四五岁的样子，但是实际上比我大9岁还是比较年轻，为什么？ </p>
+<p>就是说耿爽卸任了，中国外交部发言人，其实耿爽在中国外交部发言人来讲，其实算是一个还是我觉得比较成功的一个为什么卸任了？现在就小道消息说上面对高考不是很满意。现在中国外交部的发言人主要就是三个人，一个就是说耿爽，一个华春莹，一个赵丽娟，他们三个人来讲，现在对于赵丽娟是比较满意，当时我们录过一期会员专享，我们说有这个消息的，赵丽娟是拿着商保院来的，对吧？就是来了要掀起的骂战，而且赵丽佳现在是冲在最前面，华春莹也是紧紧的跟随赵莉间冲的，也是非常靠前在推特上，天天跟美国国务院发言人俩人就互怼各种对看起来梗手相对来讲比较的软弱，比较的柔弱，阳刚气不强，他还是那种说按照传统那种苍白无力的谴责，知道吧？ </p>
+<p>抗议那种现在上面对这个不满，上面现在要求是完完全全的战狼的思维方式和战狼的语气，一定要把狼性发挥出来，而耿爽现在看起来狼性的不足，不足以挑起外国对中国的不满和仇视来，所以我们要求一个更加的有利的就泼妇骂街似的，照例监视的化解式的画娘似的这种，就是说一定要跟别的国家彻彻底底的就是说吵起来，因为据说中国外交部要改名字，要叫做中国断交不？好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/29/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><span class="page-number current">30</span><a class="page-number" href="/page/31/">31</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/31/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

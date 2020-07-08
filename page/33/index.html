@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/33/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/33/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2346%E6%9C%9F-%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E6%94%B9%E6%8E%A7%E6%B6%89%E4%BA%8B%E8%AD%A6%E5%91%98%E4%BA%8C%E7%BA%A7%E8%B0%8B%E6%9D%80-rZrwCXN3apQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2346%E6%9C%9F-%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E6%94%B9%E6%8E%A7%E6%B6%89%E4%BA%8B%E8%AD%A6%E5%91%98%E4%BA%8C%E7%BA%A7%E8%B0%8B%E6%9D%80-rZrwCXN3apQ/" class="post-title-link" itemprop="url">20200603第2346期-明尼苏达改控涉事警员二级谋杀</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:06" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:06+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2346%E6%9C%9F-%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E6%94%B9%E6%8E%A7%E6%B6%89%E4%BA%8B%E8%AD%A6%E5%91%98%E4%BA%8C%E7%BA%A7%E8%B0%8B%E6%9D%80-rZrwCXN3apQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2346期-明尼苏达改控涉事警员二级谋杀-rZrwCXN3apQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，明尼苏达有一个警察按着朱老师弗洛伊德脖子把他弄死了，然后警方就做了尸检，初步的尸检报告，就警方做到初步的尸检报告，认为他的死因是因为好像他之前吸毒了，由于毒品导致他心脏衰竭，然后弗洛伊德的家属就不不满意，然后弗洛伊德的家属就请了外面请来的全美著名的法医专家来做了独立实验。做完结果之后，全美著名的法医专家认为，他的死因由于警察压迫他的静脉，还有应该有三个警察有两个压着他下半身，一个鸭的脖子，就是导致的压迫性的窒息死亡的。 </p>
+<p>如果是这种死因报告的话，如果之前说是毒品导致了，那么警察就不是杀它的主要的凶手了。如果按照他们家属做独立的法医报告的话，如果以作为证据的话，那么他是被警察压死，那么警察就是凶手了。在这种情况之下，明尼苏达现在他原先控告涉事的警员，他们叫沙文，说沙文说早先控告他是三级谋杀及过失杀人罪，由于新的尸检报告出来之后就认为他是直接凶手，那么6月3号今天现在的检察官的决定要改变，要控诉他是二级谋杀，比人家三级谋杀要更进一步说他控告他二级谋杀。 </p>
+<p>另外还有三名在场的警员，有两个在下面帮着摁着屁股腿，还有一个不在那站着维持秩序吗？站着好像是个压抑。 </p>
+<p>对这三个人也要进行控告他们的协助和教唆。二级谋杀，那么都变成了二级谋杀，以前都是三级谋杀的，二级谋杀就比三级谋杀，如果对冲了之后，坐牢的时间就更长，惩罚也更重。说叫杜涛，当时音译过来说就是说站着的亚裔警察在那不让你别过来，还得维持秩序，杜涛说他当时只是看着沙文用膝盖压着弗洛伊德的颈部，所以他算是没有直接参与，但是他算协助了。 </p>
+<p>另外两个，一个叫亚历山大金，他是协助固定弗洛伊德，还有莱恩在拘捕弗洛伊德之前，用枪就是说去指着他，但是莱恩说在这个过程当中，他曾经跟莎文说，说应该让弗洛伊德转身说可能快不行了，这个是因为他现在要说就说不怪我，刚开始压着是因为他拒捕，后来快死了之后，我已经说不要压他了，他还要因为现在大家就要撇清责任，那人死了对不对？现在控告你谋杀让罪成要坐牢的，这时候赶快就要说的，我当时可没让跟我没关系，对吧？ </p>
+<p>现在不就是想对吧少做几年，对吧？ </p>
+<p>弗洛伊德家人他们请了代表律师叫克伦普，克伦普现在发表声明说，他呼吁明尼苏达的检察官以最高刑罚为终身监禁的一级谋杀。要起诉这4个人，他认为二级谋杀是不够的人，他们这是说是一级谋杀，同时要求警方公平和透明的处理警员的不当行为，什么意思？就认为因为这是警察，说实话，我觉得咱们的不因人废言，虽然明尼斯达什么波利斯市长有点软弱，但是这市长说的话有一部分是对的，市长说的一句话，他说像这种情况被人录下来了，他说如果是你就在当街用膝盖把这人就这么压死了，如果是我压死了的话，我们现在都要被控谋杀了，都要被抓起来，都要等着坐牢了，知道吗？ </p>
+<p>但是现在是因为他是一个警察，他说的这是事实，对吧？因为他是一个警察，还是那句话，如果是我在大马路上拿膝盖把这哥们死了了个什么，他们最后说了8分多钟，我们刚开始看的视频的了5分多钟，那事情好像是被剪辑过的，他们说如果没有剪辑的话是8分了8分多钟在在地上就摁死了，对不对？如果是我拿膝盖在大马路上把一个人按到8分钟死了，我肯定是一级谋杀没跑了，但他对吧？ </p>
+<p>所以我觉得检察官也应该思考一下，对不对？像他这种情况的话，我觉得审查官可以考虑是不是应该按一级谋杀起诉，我当然了我也明白检察官他是非常小心的，因为这个案件一定就是说要稳拿把掐，知道吗？一定要十拿九稳。检察官很担心这种案件一旦打不赢的话，检察官背负的压力是巨大的。好像当年辛普森杀妻案也是检察官压力非常大，检察官在整个的案件过程当中实际上也出了一些失误，后边有很多对辛普森杀妻案的一些的反思反省，这么多年不断的有人把它拍了电视剧，有人去写他的调查报告，都认为当时检察官里边是有一些地方的有值得商榷的地方，对吧？ </p>
+<p>但是我们也明白当时的检察官压力也很大，全国关注的案件对吧全国人民都盯着，对不对？ </p>
+<p>如果处理不好会有很大问题，但是在压力之下有的时候处理起来就有问题，他畏手畏脚，他说有的时候说想赢怕输导致他就有问题，为什么这么说？像这种案件你知道吗？基本上通常都是就起诉一次，你不能没完没了的起诉人家，那么如果这一次失败了之后，你以后就不能再以去起诉他了，所以他们会非常的小心，如果没有把握我就先不起诉你。如果有把握我起诉你的一定要起诉就是成功，如果我起诉一级谋杀没成功的话，那么我就失败了。对不对？ </p>
+<p>但是他认为我现在起诉你的一级摩擦可以吗？可以，但是我有可能会失败，但是我如果起诉你二级谋杀，我百%赢，你知道吗？所以就出现一个想赢怕输这么一种局面，所以它能够起诉的二级谋杀，他认为启动二级魔那俩现在我们问时拿板稳拿把掐，我肯定把你搞下来，我肯定赢了，对不对？他是这么一个想法，我们也能我们也能理解他，虽然大家互相理解对不对？其实就是这么一个情况，他很担心起诉一级到时候因为对方那边肯定也会有著名的律师出来打的，那边请得起请不起都不重要了现在。 </p>
+<p>因为这个现在是一个全国甚至一个全世界关注的案件，很多律师是愿意打这种案件的，因为对自己因为你看当年辛普斯安那几个律师后来又成了重要的律师，大律师非常全国著名的律师，后来他们的收入水平都有所提高，知名度也提高了，收入水平也提高了，对不对？而且尤其是把辛普森杀妻案打赢了就对不对？这牛逼爆了对不对？大家觉得这律师太厉害了，对不对？所以在很多律师就是说喜欢这种机会要成为的明星律师，因为在美国你一个没有名的小律师，可能一一个小时多少钱，那么知名的大律师那一个小时都是有知名大律师，有时候动不动就一个小时要几千块的，对不对？ </p>
+<p>有2000块钱一个小时大律师，对吧？所以这就是对吧？那么很多律师就觉得这是一次成名的扬名立万的机会，我来了这个案件我打赢了，全国范围内我怎么着对不对？所以咱们最后看好，我相信会有很多成名的大律师过来要就是说试一试，如果他起诉二级谋杀的话，那边的律师可能就有点不太敢接了，一看必输，因为必输的话他不敢接这个案子，因为不是要钱的问题，而是说我名气不好，但如果你一旦起诉一级谋杀的话，很多律师你起诉不下来了，你我有打的余地，那么他们就来了，那都跟鲨鱼文件写一样就过来了，对不对？所以检察官这边也是就是说非常的小心，好吧？ </p>
+<p>咱们最后看反正这个案件我相信这个案件要打几年了，可是要好好说道这个事，这个事儿后面没完没了，而且如果法院判决的有问题，就是说如果有不公的或什么的话，后面还有可能再一次引起骚乱。 </p>
+<p>辛普森杀妻案就是辛普森杀亲案，当时就是说在宣判之前你知道吗？当地的警方完完全全就动员了上千的警力部署街头了，就担心一旦要是说辛普森杀妻案成立的话，当时非洲裔美国人有可能上街要游行，要是非要要骚乱的，你知道吗？这种案件的都是这样，这个案件一旦这个判决有问题，比如说最后假设说判决杀人无罪释放，我的天就要又要着火了，那边又打起来又干起来了。所以咱们看反正这个案件我估计今年是肯定不会打，没有结果了。 </p>
+<p>这个案件要可有的打就要打很久，我觉得打个一两年跟玩一样，反正最后看后面这个是一场连续剧好吧？有了新的每一次有新情况，我们再积极向大家汇报。这期先讲到这里好吗？谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/" class="post-title-link" itemprop="url">20200603第2345期-川普从6月16日开始禁止中国客机飞往美国</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:05" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:05+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2345期-川普从6月16日开始禁止中国客机飞往美国-MeTNWY2tBMw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，今天美国媒体报道川普计划从6月16号开始就禁止了中国的客机飞往美国，这个消息其实之前我们报道过为什么这么做，就是惩罚北京未能遵守中美两国关于民航合作签署的中美航空协定，针对的对象包括中国国际航空公司、中国东方航空公司、中国南方航空公司和海南航空公司。原因我们5月22号做过报道，5月22号的时候，美国的达美航空公司和美联航向中方管理部门要求恢复航线，中方不让美国的航空公司护航中国，但是同时它让4家中国的航空公司像美国有航班，而且航班都是满的。 </p>
+<p>之前我们也说了，对于留学生对此也是非常地不满，我们当时5月22号我们播那新闻是我们还说了对留学生也是个好消息，美国如果强硬一点的话，逼迫中国增加航班的话，因为我知道现在很多留学生有的是想回去，有的是家属想回来的都有这个问题，我们当时还采访了黄黄标老师，王老师他航班又被昨天我听说好像又被取消了，是吧？ </p>
+<p>如果美国的航空公司也能够复航的话，可以增加航班，增加航班对大家是一个好消息，对留学生也是一个好消息。 </p>
+<p>但是中国现在就是这样，只许州官放火，不许百姓点灯，就人只允许中国的航空公司在中美之间恢恢复航线，不允许美国航空公司恢复航线，美国航空公司说你怎么意思？大家都是做生意对不对？ </p>
+<p>能飞我不能飞，你给我一个理由对不对？就说为什么要是说你说有疫情大家不能飞，那都别飞。现在你又说能飞的话，你只让你的航空公司飞，不让我的航空公司飞，你这不等于就是说就只许你挣钱，我不许挣钱的对不对？因为你卖飞机票你挣钱吗？现在我不能复函，我一张也不能卖，我就挣不了钱，对不对？你这是什么意思呢？对吧？ </p>
+<p>美国我当时就说美国政府就跟中国去交涉了，就说你是不是也让我们也复航，不能你光你一个人挣钱对不对？大大家都明白，以前就跟中国黑社会一样你知道吗？ </p>
+<p>以前我们天津也是有那种比如说天津到比如说塘沽到什么的开发区这种的，他跑长途你知道吗？那个长途也是理论上来讲，其实我买辆车你买辆车我们都能跑，对不对？我们天津就有那种就是一个男的买辆车让那女的卖票，两人两口子夫妻店对不对？过来之后比如说一个人多少钱，我你花咱就去了塘沽，回来的时候，我在韩国再拉一拨人回来，不就完了，不行。不是你想干就能干的，那么你去了他们揍你，横向是被人家包了的，你懂不懂？就是说你得是人家的人你才能干，不是说你随便你买辆车，你去了就可以的。 </p>
+<p>中国现在就这样妈黑社会似的，你知道吗？其实中国不光是天津，香港小八也是，知道吗？小霸人家有自己的一个联合会，你知道吗？你必须得是人家那个里边人你才行，不然的话不让你干的，不吃晚饭，不是你想吃就能吃的。中国现在就这样你知道吗？就是说中美之间的航道我们霸占了，你们来了就揍你，知道吗？就这么搞。 </p>
+<p>美国能干吗？美国说你这是什么意思？跟中国交涉之后，从22 22号跟中国交涉，十几天交涉未果没办法了，美国钢材说你要这样的话，咱一拍两散，都别都别干了，你不让我们飞你也别飞咱都滚，你也别干我也不干，这饭都别吃了，把饭碗砸了，大家一块别吃了。 </p>
+<p>这张我想起来什么，有点像是中美的贸易谈判，很多人就不明白你现在出了这个情况，很多人觉得你看川普不好，不让中国的飞机来了，完了彻底都没有飞机了，你懂我意思吗？那就跟中美的贸易一样，中美贸易也是，比如说中国就是这样子，我中国产品往你美国卖，你美国政府不能够来，你不能来也不能加关税，你要来你家关税，你就是阻止全球贸易，但是你美国产品来我中国，你不管你是卖大豆，你是卖美猪是卖美牛，都要看我中国政府的脸色。 </p>
+<p>很多人以为中国老百姓不喜欢吃美国猪肉，不喜欢吃美国的牛肉，不喜欢喝美国的牛奶，不是的。中国老百姓喜欢，中国老百姓最想买进口奶粉，尤其给小孩的时候，谁先把小孩吃了大头娃娃，对不对？你愿意吗？对不对？哪怕你进口奶粉比中国的奶粉稍微贵一点，你贵个10%，我相信如果只贵10%的话，很多家庭都愿意，我多拿10%，我为了家小孩健康，我就买进口奶粉，对不对？美国的牛奶还是不错的，咱们说实话美国牛奶美国牛奶其实还还是不错的，我们也喝，虽然我乳糖不耐受，但是有时候也稍微喝一点，然后有助于消化，喝完之后特别的通畅。 </p>
+<p>说说就说这意思对不对？你看反正你没看见美国的给婴幼儿的配方奶粉，把小孩喝出这什么大头娃娃来吧，对不对？ </p>
+<p>美国的奶粉小孩我看喝了都还挺壮实的，咱们说实话这个小孩你看初衷都是中国人的孩子，别说你别说老外，因为你要拿非洲裔美国人的小孩或者白人的孩子来比，跟中国人比人种不一样，咱就说同样的人种你会发现一个问题，即使是中国人的小孩，如果在美国出生的话，按照美国这种饮食习惯之后，小孩抱起来之后，他他压手，你懂我的意思吗？他推陈他推辞是你知道吗？而且中国小孩如果从小在美国长大，你会发现他身体素质，他就是比在中国长大小孩鼓励你知道吗？他有个股骨龄进，你这说说我也说不上来那种感觉，她就好像更更重视一点那种感觉的。 </p>
+<p>所以我其实鼓励中国的小孩从小能够喝点美国牛奶，吃点美国牛排，我觉得其实不错，而且我告诉你你我说你们不信知道吗？ </p>
+<p>美国的牛肉比中国的便宜，我有时候跟中国我们天津的我们一些以前的老同学什么聊聊天，问问他们那边的价格，我发现一个问题，当然美国也有很贵的牛肉，但一般老百姓买那种普通便宜牛肉，才就是说三五块钱一斤，你知道吗？跟中国的比起来之后，其实有的时候比中国的牛肉还便宜一些。 </p>
+<p>美珠美牛进到中国之后，以前进过一部分，中国人说美容好贵，不是的，美洲美牛进来之后，中国政府是不允许他们直接面向老百姓的，美洲美洲进入中国之后，必须得由中国政府指定的企业购买，买了之后由他们指定去卖，他们是低价从美国进来，然后高价卖给美国中国老百姓，要不那价格翻了好几倍，如果他按从美国进的价格到中国卖，你就不吃中国牛肉了，你相信我你就应该比你中国牛肉还便宜，比中国牛肉质量好，也没有注水，对不对？你懂我意思吧？ </p>
+<p>所以问题就在这，就是说中美为什么这么多年有贸易逆差的？主要的原因是中国不让你买，你包括汽油也是，你看看美国的汽油，你再看看中石油中石化的，对不对？我们这的汽油我们基本上不用搁添加剂的，而且同样标号的汽油，美国的比中国的要纯，要干净。你会发现连奔驰宝马那种车也是他在美国用的发动机跟中国的发动机都不一样，他有时候国产的话，他会特意为了你的中国因为油品不太好，他特意的把发动机稍微改，改一改就是适应了你品质不太好的汽油。 </p>
+<p>所以这些东西我觉得如果中国政府不管如果开放的话，我觉得让美国人进来竞争一下不见得是坏事。美国的汽油也比我说实话美国汽油比中国便宜，你说你都不相信，知道吧？我跟你说真的你不信汽油比中国便宜，猪肉牛肉比中国便宜，牛奶比中国便宜，我的所谓的便宜不是说我三块钱美元，你三块钱人民币我给你便宜，是我三块钱美元换成人民币我还是比你便宜，我我知道你是不信，但是事实就是如此，就是比你便宜。 </p>
+<p>所以这种情况之下，你会发现中美的贸易也是为什么出现了逆差，不是说说美国人傻不会做生意，不是的，是中国政府在帮着搞，就跟着中美航空一样，不是说美国没有航空公司飞不了中，美国能力不行，它没有飞机，它的飞机飞不了，飞不过太平洋险，从美国飞不到中，不是人家有，他现在不让人家飞，他只让自己在飞，他不让别人飞，卖东西也是，做生意也是，我你买我东西也行，我买你东西也不行，你的东西来了之后我不让你卖，我不知道你进海关，他就是射上臂来，你知道吗？ </p>
+<p>而且我出国给你，我卖给你的话我还给他们补贴，有出口有退税，你知道吗？所以所谓的中美贸易逆差都是中国政府挣出来的，就摆明了挣你钱，把你当傻子，知道吗？帮你当卡卡子你知道吗？吊起来打，你知道吗？你想人家能满意吗？现在也是这样子的，大家一起搞又来了又消尽他就是我跟你说有又消极了，今天晚上接着萧就通知晚上8点肖劲天天暴乱，白思豪的同志我就觉得市长不是太好。最近连纽约州州长库摩尔也在抨击白思豪，觉得白思豪太糟糕了，白子豪的的确确在这一次暴乱完全没有准备好，疫情也是疫情闹得那么糟，提前不准备。 </p>
+<p>这次暴乱也是贝塔洲已经大家抢了纽约肯定会出现的，傻子都想到了很多人给他提建议，是不是要提前做准备？白思豪。跟傻子一样，啥也不做，结果把女人弄成这样，弄成遮挡的空白，都觉得他防暴不力。 </p>
+<p>然后现在这两天终于行了，被总统也骂了，被州长也骂了，这两天开始了，天天就是说就给我们发，然后紧急消息就告诉你马上敲禁知道吧？就搞疫情也是闹闹成那样了之后，川普已经进了从中国来的航班，然后人家别的州的话，有的中国回来的是美国公民的话，人家会做一个核酸检测，做个报告什么的，纽约是什么？来了之后测个体温，只要不发烧都进去，你知道吗？那不是胡搞吗？ </p>
+<p>1月20号的时候我都播完了，对不对？好多是无症状的，你及时收听收看使用地都不会犯这么严重的错误。纽约为什么这一次这么多的疫情，对不对？跟你这个机场没有任何的安检有关系，随便进。算了不想提白思豪，白思豪真的就是现在纽约的华人对白色号意见很大，这算了，咱就站在那边。跑题了，回来接着说。这个意思就是说中美贸易也是这样子，你不能这么搞，不能说只许你做生意，不许别人只许州官放火，不许百姓点灯。 </p>
+<p>现在航空公司也这样，现在很多中国人又开始说了，说你看彻底完了，本来还能有几班的，现在有美国这么一搞彻底没有了，对不对？你要明白美国现在是为了谁在做做装，不光是为了美国公司，不光是为了美国的航空公司，也在为了中国的这些留学生们，你懂吧？就你美国这样跟他斗争了之后，中国最后屈服了，才会增加航班，你才有机会买到便宜的机票回国或者你回来，对不对？ </p>
+<p>你现在如果美国不管，中国就跟黑社会一样霸占了中美之间的航路，机票完全由他说了算，现在机票都多少钱一张，都动不动就几万块钱一张，对不对？为什么？因为没有竞争，它垄断了，现在中国的4个航空公司垄断了，对不对？把你吊起来，现在你当不是把美国当凯子，把你吊起来打，当你要多少你就得给多少，对不对？你能买张票你都得感谢政府感谢党了，对不对？ </p>
+<p>现在美国人来了怎么办？就是跟中国说你要增加航班，不能够让你的航空公司跑，我的航空公司也得跑，咱们一起跑，一跑之后多了航班多了之后可以让自然就降下来，有竞争才会是得到好处的是谁？ </p>
+<p>是老百姓，对不对？每周美牛进来了，或者美国奶粉进来的话，就会倒逼中国的奶粉要改革，你就不会再吃成大头娃娃了，对不对？如果美国的汽油能进来的话，中石化中石油还有那么胡搞，对不对？你看看现在外边气石油掉了多少钱？多少多少钱一斤对不对？你看原油宝亏的亏的都鬼酷狼的对不对？你再看中国油价还差不多，所以我觉得就是说中国发展到目前这个阶段了，有一些外资企业进来竞争一下，对于老百姓来讲不见得是坏事。所以有的人埋怨川普，我觉得真的不应该埋怨川普，川普实际上现在在为你们做斗争，为了你们能买到便宜的机票，为了你们能够自由的在中美之间横行做斗争，好不好？ </p>
+<p>所以对这点来讲，我知道很多中国老百姓不太明白，但是美国公司很明白对吧？对于川普的这一决定，达美航空在今天就发表了声明，他表示我们支持和感谢美国政府对执行我们的权利和确保公平所采取的行动。你看人达美航空公司就明白政府为什么这么做，知道吗？就是为了要确保是公平的竞争，就是大家都有机会，你不能说你黑社会你垄断了，就要只许你跑，别人都不许跑，对不对？好吧，那一讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2344%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E2%80%9C%E5%88%A0%E9%99%A4%E4%B8%AD%E5%9B%BD%E2%80%9DAPP%E8%A2%AB%E4%B8%8B%E8%BD%BD500%E5%A4%9A%E4%B8%87%E6%AC%A1%EF%BC%8C%E8%A2%ABGoogle%E5%88%A0%E9%99%A4-S7adpkPBYWo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2344%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E2%80%9C%E5%88%A0%E9%99%A4%E4%B8%AD%E5%9B%BD%E2%80%9DAPP%E8%A2%AB%E4%B8%8B%E8%BD%BD500%E5%A4%9A%E4%B8%87%E6%AC%A1%EF%BC%8C%E8%A2%ABGoogle%E5%88%A0%E9%99%A4-S7adpkPBYWo/" class="post-title-link" itemprop="url">20200603第2344期-印度“删除中国”APP被下载500多万次，被Google删除</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:04" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:04+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2344%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E2%80%9C%E5%88%A0%E9%99%A4%E4%B8%AD%E5%9B%BD%E2%80%9DAPP%E8%A2%AB%E4%B8%8B%E8%BD%BD500%E5%A4%9A%E4%B8%87%E6%AC%A1%EF%BC%8C%E8%A2%ABGoogle%E5%88%A0%E9%99%A4-S7adpkPBYWo/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2344期-印度“删除中国”APP被下载500多万次，被Google删除-S7adpkPBYWo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，印度在苹果的不是apple store对吧？然后Google的那叫什么Google play是吧？印度他们开发了一个叫删除中国应用说是可以识别的中国应用并一键的卸并一键卸载手机中所有的中国的应用，大树印度人的欢迎。印度的网民通过推特Instagram广泛的推荐，然后登顶了印度谷歌play的下载的总榜，上线两周在Google play就获得了数10万计的好评。 </p>
+<p>说这款应用的功能只有一个什么你点一下，然后它就识别你手机里所有来自中国公司的这些应用程序全部一键删除掉。那么两周时间在印度的谷歌play获得了500多万次的下载，那么在今天星期三谷歌删除了这一应用，没有说太多的评论，他的官网只是发出信息就是说Google从谷歌谱内商店删除了删除中国应用，原因是违反了Google的政策，什么政策我们不知道，但是反正Google好像跟中国关系一直还不错，一直好像要重返中国，当时去年还不是说给中国开发一个什么轻型计划什么的，反正而且今年你会发现疫情期间也是如果对中国有一些不太有利的对不对？他就警告你，如果要是这个说过过分一点，稍微有一点就不用过分，你只要一说他就给你加黄标，基本上一加了黄标你就没什么收入了。 </p>
+<p>10个视频有9个都加红苗对不对？你觉得那意思就告诉你别干干别的去干点别的，有点这意思。反正是挺狠的。 </p>
+<p>这个来讲我觉得人家这应用的话，我觉得是客户自己的选择，对不对？我想装不想装我就装，我不知道这个谷歌为什么要不让人用这应用，但是不管怎么着，他最起码说明了印度民间现在对中国的反中情绪非常的高涨。从这也能看出来，中印在边境那了，发生摩擦的可能性是越来越高，没有想到，因为我们也想到了习近平现在大国崛起，搞军事化，纳粹化，也是跟以前的希特勒一样对吧？ </p>
+<p>搞这种国家资本主义，然后开始向外扩张，刚开始是经济扩张，然后迅速的经济扩张就没有办法去填补自己的野心了，满足不了，满足不了就开始变成了军事扩张，从所谓的一带一路就是从一个经济扩张，当时我就说一带一路要想成功的话，必须要有军事做保障，要不然的话谁也不是傻子，对不对？你这么去了之后你骗人家港口，骗人家铁路，骗人家码头，人家慢慢的会清醒过来了，清醒过来之后人家不让你弄的话你怎么办？你这么多钱这么多人力物力东西资源扔在那了，结果人家不让你用了之后，你就必须要付诸于武力来保证你的利益了，对吧？ </p>
+<p>但是我没有想到我原先以为就是说我们周边有可能会开战的，我真没想到是印度，但是想想反正也有道理，其实你真的我也说周围的这些国家，如果习近平要开战的话，也真是选来选去，只能找选印度下手，其他的都不太好，要不太小了，欺负起来没意思，要么太大了不见得打得过。选一个不大不小，然后基本上还能打的过的就是印度了，也是千挑百选的，中军选到了印度。 </p>
+<p>看来看看我们干一下62上次是62年对吧？ </p>
+<p>这有多少了，快将近40年了，不是60年了，60年了对吧？662年六六十年了，60年没有打了对吧？到了到20年的话，我就60年了，再有两年当年60年了，看看今年会不会跟印度干起来，因为我现在越来越觉得可能性，为什么？这两天得到消息，中国战斗机什么的都在往上顶，我就说这些东西这些都是重装备顶上去的人吃马喂的，顶了这么多，如果最后不打的话，钱不都白费了。好吧，咱们拭目以待，我觉得我如果中印开战的话，我赌中国赢。 </p>
+<p>好吧？真心到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2343%E6%9C%9F-%E5%9B%BD%E9%98%B2%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E8%BE%9E%E8%81%8C%E4%BF%A1%E8%B0%B4%E8%B4%A3%E5%B7%9D%E6%99%AE%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E5%8F%82%E8%AE%AE%E5%91%98%E6%8D%8D%E5%8D%AB%E5%B7%9D%E6%99%AE%E6%80%BB%E7%BB%9F%E5%90%91%E6%95%99%E5%A0%82%E8%87%B4%E6%95%AC-sKYD2GTe5iQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2343%E6%9C%9F-%E5%9B%BD%E9%98%B2%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E8%BE%9E%E8%81%8C%E4%BF%A1%E8%B0%B4%E8%B4%A3%E5%B7%9D%E6%99%AE%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E5%8F%82%E8%AE%AE%E5%91%98%E6%8D%8D%E5%8D%AB%E5%B7%9D%E6%99%AE%E6%80%BB%E7%BB%9F%E5%90%91%E6%95%99%E5%A0%82%E8%87%B4%E6%95%AC-sKYD2GTe5iQ/" class="post-title-link" itemprop="url">20200603第2343期-国防部副部长辞职信谴责川普，共和党参议员捍卫川普总统向教堂致敬</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:03" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:03+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2343%E6%9C%9F-%E5%9B%BD%E9%98%B2%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E8%BE%9E%E8%81%8C%E4%BF%A1%E8%B0%B4%E8%B4%A3%E5%B7%9D%E6%99%AE%EF%BC%8C%E5%85%B1%E5%92%8C%E5%85%9A%E5%8F%82%E8%AE%AE%E5%91%98%E6%8D%8D%E5%8D%AB%E5%B7%9D%E6%99%AE%E6%80%BB%E7%BB%9F%E5%90%91%E6%95%99%E5%A0%82%E8%87%B4%E6%95%AC-sKYD2GTe5iQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2343期-国防部副部长辞职信谴责川普，共和党参议员捍卫川普总统向教堂致敬-sKYD2GTe5iQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，国防部的副部长辞职还写了一封的辞职信，而且是公开发表的。 </p>
+<p>47前国防部副部长詹姆斯米勒6月2日在华盛顿邮报上发表了他至国防部部长马克艾斯帕的辞职信，复部长给部长写了一份辞职信，我辞职了不干了。他要辞去美国国防科学委员会职务，他在心里他说我于2014年初加入国防科学委员会董事会，然后再次宣誓就职。宣誓中由你和我指的就是国防部部长，他是副部长说你和我都熟悉的誓言，时间里包括支持和捍卫美国宪法的承诺，他说您在2019年的7月23日宣誓就职国防部部长的时候，也曾如此宣誓，我们秉承同样的信念和忠诚，但是在2020年6月1日也就是前天，他说您违背了誓言，白宫外面守法的示威者被催泪瓦斯和橡皮子弹驱散，不是为了安全起见，而是为总统去拍照的出行扫清道路。 </p>
+<p>然后您陪同总统从白宫步行到的圣约翰主教教堂拍摄了这张照片，川普拿着举着圣经的照片，他说川普总统周一晚上的行为违背了他尊重法律必须忠实执行的誓言，您可能无法阻止川普总统的行为，但你可以选择反对他，相反你明显的支持了他。川普照完照片之后，国防部部长司法部长他们几个人都过来跟串口一起合影了，任何宣誓就职的人都必须决定自己的底线在哪里，他们会拒绝做什么事情。那么爱斯帕部长，你光荣服役多年，在现役和预备役军队服役，先后担任陆军部长和现任的国防部长，你一定花了很长时间认真思考过这条界限应该换在哪里，我现在必须问，如果昨晚的公然违规，没有越过你的底线，那么还有什么会越过你的底线？ </p>
+<p>说实话说漂亮话的话，没有人比民主党说的好，对吧？昨天有一个人跟我说，特别喜欢明尼苏达州州长和他们市长说的那些漂亮话，他觉得说的话非常好听，非常动听。其实我要说真的，如果说漂亮话的话，奥巴马是说的最好的。还是那个故事，就是说聪明人傻子和奴才，我前两天把视频的链接搁在我视频下方了，对吧？还是那句话，聪明人永远都说那些让你高兴的安慰你的话，傻子真的给你干事儿。 </p>
+<p>那问题就在这，就是说你到底想要一个聪明人还是一个傻子，对吧？漂亮话，副部长说的是很棒，没有问题。然后 CNN也承认，森说说顶级的最著名的几个共和党的参议员联合起来捍卫川普总统向教堂致敬。我一会把cn的这篇文章的英文原文的链接搁在我这视频下方，你们感谢你可以自己去看。 </p>
+<p>Cnn报道说，说 j的领导小组的成员参议员约翰科尼批评媒体和其他人说他们永远不会在选举中找到任何好处和积极的发展。就是说反正现在选举期间串不管做什么选举放了个屁，吃了个菠萝，他们也能从里面找到，就是说有问题。川普吃这个波格是种族歧视或者他的歧视，素食主义者放了个屁，他是搞环境污染，反正甭管怎么着，甭管上面干什么都一定不好。他说那么约翰克林就跟记者说说，你们可以按照你们想要的方式去刻画他，去理解他。 </p>
+<p>我认为川普去教堂向教堂致敬，因为教堂昨天晚上被抗议示威人群烧毁了，是要团结美国，而且他拿了一本这个圣经在这里。参议院最高的共和党参议员查克格里斯利告诉CNN说，抗议者在前一天晚上向教堂所在地放火，昨天如果你们真的爱教堂，你们放我烧它干什么对不对？你们往那烧了，你们还在那抗议，你们干嘛一定要把它一定要把它烧倒了，你又要把它拆了，你们想干嘛对不对？ </p>
+<p>参议院情报委员会的代理主席马克鲁比亚参议员被问到对抗议者使用催泪瓦斯是否有任何问题？他说不，他说我不认为这有问题，考虑到我们在白宫前的最后几个晚上所见到的情况都是极其危险和暴力的局势，他们冲击着白宫，有一度串口不还躲到了白宫地下室去了，他们把白宫里面冲送放火，把什么林肯纪念堂、国会大厦全都放火在那烧，你知道吗？然后把教堂给烧了，他说都是极其危险和暴力的局面。所以卢比奥说这些抗议者都是一些专业人员，都是被专业煽动者煽动的，他们知道警察必须向前推进，这会使用了催泪瓦斯的使用，而且就是说一定会进入到他们想要的图象当中，他说这不是抗议，这是故意制造的挑衅，用于 cn。 </p>
+<p>就是说cn在那摆着就等着就他们顶在前面，就让警察去轻松他们，然后把这些画面拍出来，而这些画面就是他们想要的，而这些人也都是专业的抗议者。来这要演这出戏的电视台也都知道，大家都心知肚明，就是一起配合把这出戏演完。 </p>
+<p>我觉得马克鲁比奥作为一个参议员还是比较了解 cn和这些抗议人士的西弗尼亚州的共和党人参议员雪莱默尔卡皮托称，他说川普去教堂，并在公共场合走走出去是一项重大的举措。他认为这就是川普作为一个总统，向全国人民表达，我们无所畏惧，你们不是说我躲到地下室了吗？我从白宫走出来，我就走到教堂去，一步一步的从白宫我就从公园穿过去走到教堂去，你们不行就打死我。 </p>
+<p>好吧？我也觉得是这样子，如果你们真的热爱教堂的话，就别放火烧它，你烧它干什么对不对？你为什么不卖？你把尿糖烧了有什么用？对不对？教堂招你惹你了，对不对？它是一个宗教建筑对吧？它是一个我不知道教堂一直还都是宣传，就是说和平、理性、平等，对不对？你去烧教堂是怎么个意思，对不对？你说你所以对吧，你把教堂对于历任的总统都是都经常去教堂对吧？所以怎么说我觉得大家都有问题，是不是？ </p>
+<p>你们要是不烧他的话，我想串图也就没有必要走到那下塘去，对吧？还有就是说总统要想走，你们又在这拦着又不让去，你就对吗？是吧？不过我觉得不管怎么着，我觉得约翰科宁参议员说的是比较对的，其实已经无须解释了，没有什么好解释的就是说走到了这一步，大家不管做什么，都是互相指责，对吧？那么民主党也好，斯诺登也好，他们就认为是川普思维的国家，但是我没有看到森恩恩和民主党，他们在做的是在团结这个国家，他们只不过说漂亮话，然后煽动民意，煽动老百姓上街，煽动老百姓的打砸抢。 </p>
+<p>我认为实际上真正在撕裂国家的我觉得也许串口算一份，但是民主党也的确确是难辞其咎。而且自川普2016年上任以来，民主党一直要塑造一个形象，就觉得川普是种族歧视主义者，他在撕裂这个国家，他其实黑人但是我没有看出来川普其实任何人我觉得川普只是一个就是说他是一个有勇气说大实话的人，他说那些正确的话，他不管是不是政治正确，只要这个话正确，他就敢说，有的时候可能的的确确是政治不正确，但问题就在这儿了，就是说我们在这个国家里，我们到底需要的是正确，还是政治正确？ </p>
+<p>当政治正确走到一个极端之后，这个国家失去了对错，失去了黑白，就是政治正确凌驾于正确之上了，这个国家已经不再追求正确了，我不认为让民主党执政有什么好处，民主党已经走得非常的偏激了，你看看那些白佐德州要建什么毒品是要让他们在毒品室里边抽毒品，要用什么大麻合法化，你会发现任何一个大麻合法化的州，38合法化了之后，它的交通事故的率都比在大麻合法化之前提高了。 </p>
+<p>有一些人抽两根大麻，开车上马路，它就是容易会发生一些交通事故，对吧？这种交通事故发生之后总会有人受伤，搞不好有的人就死于交通事故，对吧？那么你这种大麻合法化有没有责任？对吧？还有民主党搞什么就是这种学校，要搞什么种族平等，你怎么不在NBA广告主能平等呢？对不对？你要是 NBA你给我说1个上场5个人必须得是1个黑，你以后你给我划分好了种族细分，对不对？ </p>
+<p>1个NBA球队，比如说20个人里边多少个黑的多少个白的多少个印度人或者多多多少个亚洲人，对不对？你要是NBA你能够做到我就服，那么你学校也可以这么搞，对不对？你们有你们的强项，我们亚洲人有我们亚洲人的强，我们亚洲人强的就读书好，这就是亚洲人的强项，你要承认它对不对？你不能说因为你们读书好，现在很多的大学对吧？ </p>
+<p>美国很多的优秀大学里边很多都是华人，对不对？读书成绩非常好，进来了，那么他要搞细分，觉得亚裔不光说是华人，包括印度人，对不对？以前我们经常说就是说一个印度的小孩在美国想要上传中层是多难，对不对？反过来说一个非洲裔的小孩，他上有多么的容易。之前就有一个印度的一个印度裔的美国人，就是他拿他的印度名字，拿他的印度照片去申请上游城，全部都拒绝了。同样的成绩单，他把自己的名字换成了一个非洲裔美国人的那种名字，然后他把皮肤弄的在，他本来印度人本来就黑，但是更黑一点，然后把头发剪的，就是说把印度人那种头发剪成那种黑人的短发，然后马上4个城中村大学都录取他了，对吧？ </p>
+<p>也就是说到了什么程度，就是说这个学校你能不能来上这个学校，他看的不是你的成绩，他看的是你的肤色，他们竟然认为这样子是公平的，对没错，对非洲裔美国人是公平的，但对别人公平吗？对不对？我知道我这么说政治不正确，但我这么说他正确，你要的是读书，你看的不是肤色，你不能够因为他肤色好看，你喜欢看黑色的，对吧？他肤色好看他成绩低也让他进来，这边是个亚洲人，成绩高也不能进来。你他妈是学校吗？对不对？你学校看的是什么？是大家谁读书读得好就跟NBA一样，NBA看的什么是谁打篮球打的好对不对？ </p>
+<p>你不能够说因为这是一个亚洲人对不对？我们要 NBA，咱们现在就是非洲裔的美国人有点多，对不对？咱们搞一半亚洲人，所以你黑黑人你就继续打得好，你也不能进来。因为我们现在人人数够了，你还不胡搞吗？对，有拳击比赛。你怎么办？ </p>
+<p>上来一个亚洲人弄了一个非洲裔的打不过怎么办？他给非洲裔的绑一只手吗？对不对？亚洲都能用两只手，非洲一直用一只手，你不能那么搞对不对？你打拳击比赛那就是谁打的赢，谁就在台上读书，那就是谁的成绩好，谁又在台上，对不对？你现在忍着在胡搞，对吧？你不能说学校因为我们有优势，你就卡我们，然后其他地方我们没有优势了，就笑话我们，对不对？ </p>
+<p>亚洲人普遍体育不是很好，对吧？咱们说实话，不管是在美国打篮球的，搞拳击的，搞这种美美式橄榄球的，亚裔都非常的少，那时候就笑话亚裔了，亚裔都是书呆子，身体不行，对不对？问题是对我们都是书呆子，我们读书好你到底要怎么读你也不让我们读对不对？这不就是歧视我们了，对不对？ </p>
+<p>我们不是说其实我们只是说你们别歧视我们，对吧？然后拿着纳税人的钱搞什么？厕所，搞厕所要干什么，要给每个大学里面都修那种厕所，修厕所什么这个厕所就是说是任何人，我认为我是什么性别的我就可以进哪个厕所，是靠心理，不是靠肉体，你懂我意思吗？你明明是个男的，我认为我是个女的，我就可以去女厕所，那么怎么办？就专门给这些人写修厕所，花很多钱，对不对？ </p>
+<p>对没问题，咱们就算我认同你咱们政治正确，对吧？咱们他是多性人，有的是多性人，有的可能他美国的确有这种，他是跟男的也行，跟女的也行，他是双性的。你知道吗？他自己他跟男的在一块，他能像个女的跟个女的在一块，他能像个男的，那么他特别的灵活，你知道吗？特别的就是率性，是不是？他上厕所也特别率性，没错。是可以我们尊重他。 </p>
+<p>但问题是这样子就是说这种人有多少，在这社会里的比例有多少？你花了这么多钱，对不对？你拿99%人的钱来给那1%的人修厕所，你这就本末倒置了，对不对？我们是不歧视这1%，但是你也不能说你的歧视我们99%，对不对？我就说川普就是这样子，他把这些大实话说出来了，他说的那些正确的话，但是那些正确的话，这么多年被政治正确压抑着，没有人敢说，我觉得是这样子。 </p>
+<p>以前这些人受到歧视是不对的，我们应该让他不歧视他们。但是现在变成什么了呢？变成了以前那些被歧视的人，现在开始歧视，这些原先其实他们的人就这些人开始被歧视了，但是有的人说说你们才刚被歧视了几年，我们被歧视了这么久，对不对？你们也应该受气了，对不对？我们就是说他说你看你们这几这三四天你们这些人生活在恐惧当中没错，但是他说我们非洲裔的美国人几十年了，上百年都生活在恐惧当中，你们才能体会这几天没有错，我觉得你说的是对的，你们可能一直被歧视，你们被歧视了几十年，你们生活在恐惧当中，你们生活了几十年这也没有错，这没有，但是不是说因为你们被歧视了几十年，然后你们比如说我被歧视了30年，我现在就应该歧视你三年，我得找回来，或者你歧视了我三年，我就得歧视你。 </p>
+<p>三年，你不能这么搞，你明白吗？不能说之前你们奴役我们生活在恐惧当中，你现在怎么办？难道你是要黑人就一定得把白人当奴隶了，现在我黑人要当奴隶主了，你们要当你先奴隶了，这样对吗？你这是在结束奴隶制吗？你不是你就等于解放了一部分奴隶，然后把这帮奴隶变成了奴隶主，然后把原先那些奴隶主变成了奴隶，本质上实际上是没有区别的，你懂我意思吗？ </p>
+<p>你还是得继续努力治吗？你还是在继续歧视别人，你还是在继续用孔在散播在整个社会散播恐惧，让别人生活在恐惧当中，对不对？你这样你没有区别你懂吗？一个人来了，比如说把你家的一个人打死了，他土匪抢劫把你家人打死了，然后你去了就把他也宰了。他是杀人犯，你不是吗？它其实你不对你其实它就对了，他努力你不对，你努力他就对了。你这种跟共产党的思路有什么区别呢？真的有的时候你定下来想，你会发现白左的思路跟毛左很像，我要不为什么民主党就跟共产党穿一条裤子，你发现没有？ </p>
+<p>你看民主党的这帮人，很多人跟中国共产党都有说不清的关系，他们的理念也非常的像，我不认为这个国家由这种共产主义或者社会主义的人去统治，对这个国家有任何的好处。自共产主义在这个世界上诞生以来，有哪个国家在共产主义领导之下取得了好的成绩，他的人民能过上幸福美满的生活。 </p>
+<p>北朝鲜、前苏联、中国，古巴、伊朗有哪个好？这里边来讲中国还算不错的，还在里面发展的最好的，对不对？中国为什么发展的好？因为中国没有在走共产主义路线，中国走的是妈资本主义，懂了。 </p>
+<p>很多人不明白，很多人觉得你不说共产主义不行吗？那么中国走的共产主义怎么就行了呢？傻缺你缺心眼吧，你是什么猪？ </p>
+<p>从邓小平搞了改革开放以来，中国走的就是资本主义，只不过表面上骗你，傻子哄你，说走的是什么社会主义，早就看出来他走的是资本主义了，很多人质疑，小平同志说了，你不要管我是姓社还是姓资，什么意思？给你翻译一下就告诉你不要管我是社会主义还是资本主义，知道吗？逮着黑猫白猫逮着耗子是好猫，什么意思？就是说我他妈就走资本主义了，你怎么着？中国能够发展的好，改革开放几十年，是因为小平同志带领中国走了资本主义路线，懂了，共产主义是没有前途的。 </p>
+<p>所以我必须要说民主党必须要冷静下来想一想，从2016年失去了总统大选之后，他们一直认为自己走的路线是对的，他们从来不反省自己，他们把责任都推给别人，我不认为这样子的民主党执政了之后对美国是有利的，而且民主党现在跟台湾的国民党一样，跟共产党走得太近了，这是绝对不行的。这一次台湾选举我就说虽然我很不喜欢蔡英文，但是我还是鼓励大家去选蔡英文，为什么？因为国民党跟共产党走的太近，而任何一个国家和地区一旦跟共产党走的近都会有问题。 </p>
+<p>中国现在虽然在小平同志以来，走资本主义路线，但习近平现在又开始回到了共产主义，大家都能看得出来，自习近平上台以来，中国再开倒车再走回头路，如果习近平能够向江泽民和胡锦涛那样萧规曹随，坚持邓小平路线，坚持走资本主义路线的话，中国还是未来有前途的。但是很可惜，习近平现在在走回头路，习近平在找毛泽东的，习近平是毛泽东的好学生好战士，他又重新回到了共产主义，这对中国是没有任何好处的。而如果美国选择了一个民主党的总统，尤其选择了一个像拜登这种像拜登的儿子在乌克兰在中国胡搞，跟中国共产党走的这么近，这样的人如果当了总统的话，对于美国来讲是非常的有问题的。 </p>
+<p>我知道民主党的人很会说漂亮话，但是没有用的，习近平更会说漂亮话，新华社更会说漂亮话，胡新俊说的更好听。华春莹。赵立坚。金灿荣，哪个不会讲漂亮话？但是讲漂亮话有用吗？今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2342%E6%9C%9F-%E5%B7%9D%E6%99%AE%E9%9D%A2%E5%AF%B9%E6%9A%B4%E4%B9%B1%E5%85%A8%E5%9B%BD%E8%AE%B2%E8%AF%9D%E5%85%A8%E6%96%87-2gnO4-Ruxr8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/03/20200603%E7%AC%AC2342%E6%9C%9F-%E5%B7%9D%E6%99%AE%E9%9D%A2%E5%AF%B9%E6%9A%B4%E4%B9%B1%E5%85%A8%E5%9B%BD%E8%AE%B2%E8%AF%9D%E5%85%A8%E6%96%87-2gnO4-Ruxr8/" class="post-title-link" itemprop="url">20200603第2342期-川普面对暴乱全国讲话全文</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:02" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:02+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2342%E6%9C%9F-%E5%B7%9D%E6%99%AE%E9%9D%A2%E5%AF%B9%E6%9A%B4%E4%B9%B1%E5%85%A8%E5%9B%BD%E8%AE%B2%E8%AF%9D%E5%85%A8%E6%96%87-2gnO4-Ruxr8/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2342期-川普面对暴乱全国讲话全文-2gnO4-Ruxr8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月3号星期三，川普就本次暴动和暴乱，对全美国发表了一个全国讲话，我把它的全文给大家说一下，好吧？他说非常感谢我的美国同胞们，作为总统，我的首要和最重要的职责就是保卫我们伟大的国家和美国人民。我曾宣誓要捍卫我们国家的法律，这正是我要做的。 </p>
+<p>乔治弗洛伊德的残死理所当然的是所有美国人感到悲哀和难过。我的政府将致力于为乔治和他的家人声张正义，他不会白白牺牲，但我们不能让正义的呼声和和平的抗议者被愤怒的暴徒淹没。暴乱的最大受害者是我们最贫穷社区及热爱和平的人民，作为他们的总统，我将为他们的安全，而他说的这是事实，对吧？我所处的社区没有任何的保障，没有任何的不安全，我们住的就是富人区，就是这样，没有办法，这是事实，所以我在美经常有人问我说现在美国反华什么的，你担心不担心？我说我不担心，我之前就说过，你住在穷区你才会担心，你住在中国人聚居心，你还会担心，你住在富人区你反而不用担心，这就是美国没有办法，所以发生了暴乱和骚乱之后，往往都是那些最贫穷的社区，受到的伤害反而是最大的。 </p>
+<p>好，他说我将为你们的安全而战斗，作为你们的总统，我将为你们的安全而战斗，我为宝为你们而战。我是你们维护法律和秩序的总统，也是所有和平抗议者的盟友。但最近几天我们的国家被专业的无政府主义者，暴力黑帮、送火犯、抢劫犯，暴徒安提法和其他一些人的控制，这是事实，我们都支持从主要是弗洛伊德这个事出来之后，就是我支持和平理性非暴力的示威游行，但是打砸抢烧我们不可能去支持打砸抢烧，我们肯定要跟打砸抢烧划清界限，绝对是不光是不支持，我们是反对，我们是绝对强力谴责的。 </p>
+<p>每个人都应该如此，都必须如此，在香港事件时也是这样，我们只支持和平、理性非暴力的示威游行。不过我们得承认在香港的时候准确的说应该叫打砸烧，并没有抢，香港没有去把人家苹果店抢了，把空集店抢了，去抢银行，没有出现这种情况。 </p>
+<p>一些州和地方政府没有采取必要的行动来保护他们的居民，这是事实，纽约做得非常的糟糕，尤其是在几个中国人聚居区都受到了不同程度的冲击。 </p>
+<p>我昨天看到了很多法拉盛那边的视频，纽约唐人街的饰品都受到了不同程度的冲击，华人聚集区无辜的被野蛮人的无辜人，无辜的人被野蛮的殴打。他说例如德克萨斯达拉斯的一位年轻人在街上惨遭了杀害，一位女士在纽约州北部被危险的暴徒恶意攻击，小业主们看到产业被彻底的摧毁。我今天还看到有视频，纽约唐人街华人餐馆被人给打砸了，那么纽约的精英们被砖头砸中了脸，曾与病毒战斗的勇敢的护士们不敢离开他们的家。 </p>
+<p>在我们国家的首都国会大厦、林肯纪念堂和二战纪念堂的被破坏，我们最古老的教堂之一被纵火焚烧，一位加州的联邦官员，一位非洲裔的美国执法英雄被枪杀，他说这些不属于和平抗议的行为，这些是恐怖行为毁灭无辜的生命，和使无辜的人们的流血是对人类的冒犯，也是对上帝的犯罪。美国需要创造而非毁灭，需要合作而非蔑视，需要安全而非无政府的状态，需要疗愈而非仇恨，需要正义，而非混乱，这是我们的目标，我们将成功，我们的国家永远会赢。 </p>
+<p>这就是为何我会立即采取行动制止暴力，恢复美国的安全与保障。我正在动员一切可用的联邦资源，包括民用和军事资源，以制止暴乱和抢劫结束破坏和纵火，并保护守法的美国人的权利，包括宪法第二修正案的权利。因此以下措施将立即生效。 </p>
+<p>首先我们正在结束蔓延全国的暴乱和无法无天的现象。我们现在就结束他今天我强烈建议每一位州长部署足够数量的国民警卫队，使我们能够控制街道市长和州长必须在暴力被平息之前建立强大的执法力量。如果一个城市或者州拒绝采取必要的行动来保护其居民的生命和财产，那么我将部署美国军队并为他们迅速解决问题，我也会迅速采取国家的行动，保护我们伟大的首都华盛顿特区。 </p>
+<p>昨晚在这个城市发生的事情就是耻辱。就在我发言的时候，我正派遣成千上万全副武装的士兵，军事人员和执法官员，制止暴乱、抢劫、破坏和肆意毁坏财产的行为。我们要提醒大家，7:00的萧进将严格执行那些威胁到无辜生命和财产的人将被逮捕拘留和起诉。我希望这次恐怖袭击的组织者注意到，你们将面临严厉的刑事处罚和长期监禁，包括安提法和其他煽动这种暴力的人，法律和秩序就是法律和秩序，我们将帮助你的生意，将帮助你的家庭，美国是建立在法制的基础之上的，这是我们的繁荣自由和生活的方式，没有法律就没有正义，没有安全的地方就没有自由，没有未来。 </p>
+<p>我们绝不能向愤怒或仇恨屈服，如果恶意或暴力如磅礴大雨，那么我们就将失去自由。我今天以坚定的决心，带着对我们国家的真诚和热爱，采取这些行动，非常感谢现在我要去一个非常特别的地方致敬，说完之后川普离开了白宫，经过了拉菲特公园走了几分钟的时间，美国当时记者们都疯了，不知道从哪去哪一堆人追着记者，追着总统从白宫走出来，走到经过拉菲特公园，一直走到由总统教堂职称的圣约翰公会教堂。 </p>
+<p>这座教堂这周在暴力示威过程当中遭到了纵火破坏，总统的领头走到了教堂跟前，像教堂的致敬，后面跟着国防部部长艾斯帕，司法部部长巴尔，新闻秘书麦肯纳尼，白宫幕僚长马克梅多斯，川普的女儿和女婿等人，大家一起跟着川普走过来。到达教堂之后，双创普双手持盛京之后，用右手举起圣经，站在墙头外面照相，然后致敬。然后他在交通方面，他说我们是全世界最棒的国家，我们将会保障美国的安全，不用多久我们的国家就会恢复，并会比以前更加伟大。 </p>
+<p>然后跟国防部长，还有司法部部长，还有白宫幕僚长，还有他的女儿女婿等人一起合影。我一会我会把就是说他后来从白宫往这边走，记者们非常慌乱的跟着他，记者们之前没有想到在跟着他整个过程，以至于他走到了这个圣约翰公会教堂的这个过程的视频，把它链接搁在我这视频下方，大家感兴趣可以去看一下。我跟你们说你们不明白，这里是美国基督徒还是超过了半数，川普的这种行为对于飞机图来讲它是不能够理解的，但是基对于机图来讲，这是一种非常强而有力的行为。 </p>
+<p>基本上美国总统一旦开始了祷告，开始了这种的时候，知道吧？那么后面他所做的事情就会非常的坚决。就是说像你在传递一个信息，这个东西其实很难给你讲明白，这是一种宗教的一种宗教的力量，所以我觉得反正你看一下你能理解就理解不了，这个东西也很难说，这个东西其实是比较悬，但是这里毕竟是美国 one nation under god。好吧，这期就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/32/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/32/">32</a><span class="page-number current">33</span><a class="page-number" href="/page/34/">34</a><span class="space">&hellip;</span><a class="page-number" href="/page/44/">44</a><a class="extend next" rel="next" href="/page/34/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

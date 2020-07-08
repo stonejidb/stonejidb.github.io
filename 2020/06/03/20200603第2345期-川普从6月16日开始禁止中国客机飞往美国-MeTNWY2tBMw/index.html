@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的6月3号星期三，今天美国媒体报道川普计划从6月16号开始就禁止了中国的客机飞往美国，这个消息其实之前我们报道过为什么这么做，就是惩罚北京未能遵守中美两国关于民航合作签署的中美航空协定，针对的对象包括中国国际航空公司、中国东方航空公司、中国南方航空公司和海南航空公司。原因我们5月22号做过报道，5月22号的时候，美国的达美航空公司和美联航向中方管理部门要求恢复航线，中方不让">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200603第2345期-川普从6月16日开始禁止中国客机飞往美国">
+<meta property="og:url" content="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的6月3号星期三，今天美国媒体报道川普计划从6月16号开始就禁止了中国的客机飞往美国，这个消息其实之前我们报道过为什么这么做，就是惩罚北京未能遵守中美两国关于民航合作签署的中美航空协定，针对的对象包括中国国际航空公司、中国东方航空公司、中国南方航空公司和海南航空公司。原因我们5月22号做过报道，5月22号的时候，美国的达美航空公司和美联航向中方管理部门要求恢复航线，中方不让">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-02T16:04:05.000Z">
+<meta property="article:modified_time" content="2020-07-08T06:43:01.329Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200603第2345期-川普从6月16日开始禁止中国客机飞往美国 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200603第2345期-川普从6月16日开始禁止中国客机飞往美国
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-03 01:04:05" itemprop="dateCreated datePublished" datetime="2020-06-03T01:04:05+09:00">2020-06-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 15:43:01" itemprop="dateModified" datetime="2020-07-08T15:43:01+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/03/20200603第2345期-川普从6月16日开始禁止中国客机飞往美国-MeTNWY2tBMw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的6月3号星期三，今天美国媒体报道川普计划从6月16号开始就禁止了中国的客机飞往美国，这个消息其实之前我们报道过为什么这么做，就是惩罚北京未能遵守中美两国关于民航合作签署的中美航空协定，针对的对象包括中国国际航空公司、中国东方航空公司、中国南方航空公司和海南航空公司。原因我们5月22号做过报道，5月22号的时候，美国的达美航空公司和美联航向中方管理部门要求恢复航线，中方不让美国的航空公司护航中国，但是同时它让4家中国的航空公司像美国有航班，而且航班都是满的。 </p>
+<p>之前我们也说了，对于留学生对此也是非常地不满，我们当时5月22号我们播那新闻是我们还说了对留学生也是个好消息，美国如果强硬一点的话，逼迫中国增加航班的话，因为我知道现在很多留学生有的是想回去，有的是家属想回来的都有这个问题，我们当时还采访了黄黄标老师，王老师他航班又被昨天我听说好像又被取消了，是吧？ </p>
+<p>如果美国的航空公司也能够复航的话，可以增加航班，增加航班对大家是一个好消息，对留学生也是一个好消息。 </p>
+<p>但是中国现在就是这样，只许州官放火，不许百姓点灯，就人只允许中国的航空公司在中美之间恢恢复航线，不允许美国航空公司恢复航线，美国航空公司说你怎么意思？大家都是做生意对不对？ </p>
+<p>能飞我不能飞，你给我一个理由对不对？就说为什么要是说你说有疫情大家不能飞，那都别飞。现在你又说能飞的话，你只让你的航空公司飞，不让我的航空公司飞，你这不等于就是说就只许你挣钱，我不许挣钱的对不对？因为你卖飞机票你挣钱吗？现在我不能复函，我一张也不能卖，我就挣不了钱，对不对？你这是什么意思呢？对吧？ </p>
+<p>美国我当时就说美国政府就跟中国去交涉了，就说你是不是也让我们也复航，不能你光你一个人挣钱对不对？大大家都明白，以前就跟中国黑社会一样你知道吗？ </p>
+<p>以前我们天津也是有那种比如说天津到比如说塘沽到什么的开发区这种的，他跑长途你知道吗？那个长途也是理论上来讲，其实我买辆车你买辆车我们都能跑，对不对？我们天津就有那种就是一个男的买辆车让那女的卖票，两人两口子夫妻店对不对？过来之后比如说一个人多少钱，我你花咱就去了塘沽，回来的时候，我在韩国再拉一拨人回来，不就完了，不行。不是你想干就能干的，那么你去了他们揍你，横向是被人家包了的，你懂不懂？就是说你得是人家的人你才能干，不是说你随便你买辆车，你去了就可以的。 </p>
+<p>中国现在就这样妈黑社会似的，你知道吗？其实中国不光是天津，香港小八也是，知道吗？小霸人家有自己的一个联合会，你知道吗？你必须得是人家那个里边人你才行，不然的话不让你干的，不吃晚饭，不是你想吃就能吃的。中国现在就这样你知道吗？就是说中美之间的航道我们霸占了，你们来了就揍你，知道吗？就这么搞。 </p>
+<p>美国能干吗？美国说你这是什么意思？跟中国交涉之后，从22 22号跟中国交涉，十几天交涉未果没办法了，美国钢材说你要这样的话，咱一拍两散，都别都别干了，你不让我们飞你也别飞咱都滚，你也别干我也不干，这饭都别吃了，把饭碗砸了，大家一块别吃了。 </p>
+<p>这张我想起来什么，有点像是中美的贸易谈判，很多人就不明白你现在出了这个情况，很多人觉得你看川普不好，不让中国的飞机来了，完了彻底都没有飞机了，你懂我意思吗？那就跟中美的贸易一样，中美贸易也是，比如说中国就是这样子，我中国产品往你美国卖，你美国政府不能够来，你不能来也不能加关税，你要来你家关税，你就是阻止全球贸易，但是你美国产品来我中国，你不管你是卖大豆，你是卖美猪是卖美牛，都要看我中国政府的脸色。 </p>
+<p>很多人以为中国老百姓不喜欢吃美国猪肉，不喜欢吃美国的牛肉，不喜欢喝美国的牛奶，不是的。中国老百姓喜欢，中国老百姓最想买进口奶粉，尤其给小孩的时候，谁先把小孩吃了大头娃娃，对不对？你愿意吗？对不对？哪怕你进口奶粉比中国的奶粉稍微贵一点，你贵个10%，我相信如果只贵10%的话，很多家庭都愿意，我多拿10%，我为了家小孩健康，我就买进口奶粉，对不对？美国的牛奶还是不错的，咱们说实话美国牛奶美国牛奶其实还还是不错的，我们也喝，虽然我乳糖不耐受，但是有时候也稍微喝一点，然后有助于消化，喝完之后特别的通畅。 </p>
+<p>说说就说这意思对不对？你看反正你没看见美国的给婴幼儿的配方奶粉，把小孩喝出这什么大头娃娃来吧，对不对？ </p>
+<p>美国的奶粉小孩我看喝了都还挺壮实的，咱们说实话这个小孩你看初衷都是中国人的孩子，别说你别说老外，因为你要拿非洲裔美国人的小孩或者白人的孩子来比，跟中国人比人种不一样，咱就说同样的人种你会发现一个问题，即使是中国人的小孩，如果在美国出生的话，按照美国这种饮食习惯之后，小孩抱起来之后，他他压手，你懂我的意思吗？他推陈他推辞是你知道吗？而且中国小孩如果从小在美国长大，你会发现他身体素质，他就是比在中国长大小孩鼓励你知道吗？他有个股骨龄进，你这说说我也说不上来那种感觉，她就好像更更重视一点那种感觉的。 </p>
+<p>所以我其实鼓励中国的小孩从小能够喝点美国牛奶，吃点美国牛排，我觉得其实不错，而且我告诉你你我说你们不信知道吗？ </p>
+<p>美国的牛肉比中国的便宜，我有时候跟中国我们天津的我们一些以前的老同学什么聊聊天，问问他们那边的价格，我发现一个问题，当然美国也有很贵的牛肉，但一般老百姓买那种普通便宜牛肉，才就是说三五块钱一斤，你知道吗？跟中国的比起来之后，其实有的时候比中国的牛肉还便宜一些。 </p>
+<p>美珠美牛进到中国之后，以前进过一部分，中国人说美容好贵，不是的，美洲美牛进来之后，中国政府是不允许他们直接面向老百姓的，美洲美洲进入中国之后，必须得由中国政府指定的企业购买，买了之后由他们指定去卖，他们是低价从美国进来，然后高价卖给美国中国老百姓，要不那价格翻了好几倍，如果他按从美国进的价格到中国卖，你就不吃中国牛肉了，你相信我你就应该比你中国牛肉还便宜，比中国牛肉质量好，也没有注水，对不对？你懂我意思吧？ </p>
+<p>所以问题就在这，就是说中美为什么这么多年有贸易逆差的？主要的原因是中国不让你买，你包括汽油也是，你看看美国的汽油，你再看看中石油中石化的，对不对？我们这的汽油我们基本上不用搁添加剂的，而且同样标号的汽油，美国的比中国的要纯，要干净。你会发现连奔驰宝马那种车也是他在美国用的发动机跟中国的发动机都不一样，他有时候国产的话，他会特意为了你的中国因为油品不太好，他特意的把发动机稍微改，改一改就是适应了你品质不太好的汽油。 </p>
+<p>所以这些东西我觉得如果中国政府不管如果开放的话，我觉得让美国人进来竞争一下不见得是坏事。美国的汽油也比我说实话美国汽油比中国便宜，你说你都不相信，知道吧？我跟你说真的你不信汽油比中国便宜，猪肉牛肉比中国便宜，牛奶比中国便宜，我的所谓的便宜不是说我三块钱美元，你三块钱人民币我给你便宜，是我三块钱美元换成人民币我还是比你便宜，我我知道你是不信，但是事实就是如此，就是比你便宜。 </p>
+<p>所以这种情况之下，你会发现中美的贸易也是为什么出现了逆差，不是说说美国人傻不会做生意，不是的，是中国政府在帮着搞，就跟着中美航空一样，不是说美国没有航空公司飞不了中，美国能力不行，它没有飞机，它的飞机飞不了，飞不过太平洋险，从美国飞不到中，不是人家有，他现在不让人家飞，他只让自己在飞，他不让别人飞，卖东西也是，做生意也是，我你买我东西也行，我买你东西也不行，你的东西来了之后我不让你卖，我不知道你进海关，他就是射上臂来，你知道吗？ </p>
+<p>而且我出国给你，我卖给你的话我还给他们补贴，有出口有退税，你知道吗？所以所谓的中美贸易逆差都是中国政府挣出来的，就摆明了挣你钱，把你当傻子，知道吗？帮你当卡卡子你知道吗？吊起来打，你知道吗？你想人家能满意吗？现在也是这样子的，大家一起搞又来了又消尽他就是我跟你说有又消极了，今天晚上接着萧就通知晚上8点肖劲天天暴乱，白思豪的同志我就觉得市长不是太好。最近连纽约州州长库摩尔也在抨击白思豪，觉得白思豪太糟糕了，白子豪的的确确在这一次暴乱完全没有准备好，疫情也是疫情闹得那么糟，提前不准备。 </p>
+<p>这次暴乱也是贝塔洲已经大家抢了纽约肯定会出现的，傻子都想到了很多人给他提建议，是不是要提前做准备？白思豪。跟傻子一样，啥也不做，结果把女人弄成这样，弄成遮挡的空白，都觉得他防暴不力。 </p>
+<p>然后现在这两天终于行了，被总统也骂了，被州长也骂了，这两天开始了，天天就是说就给我们发，然后紧急消息就告诉你马上敲禁知道吧？就搞疫情也是闹闹成那样了之后，川普已经进了从中国来的航班，然后人家别的州的话，有的中国回来的是美国公民的话，人家会做一个核酸检测，做个报告什么的，纽约是什么？来了之后测个体温，只要不发烧都进去，你知道吗？那不是胡搞吗？ </p>
+<p>1月20号的时候我都播完了，对不对？好多是无症状的，你及时收听收看使用地都不会犯这么严重的错误。纽约为什么这一次这么多的疫情，对不对？跟你这个机场没有任何的安检有关系，随便进。算了不想提白思豪，白思豪真的就是现在纽约的华人对白色号意见很大，这算了，咱就站在那边。跑题了，回来接着说。这个意思就是说中美贸易也是这样子，你不能这么搞，不能说只许你做生意，不许别人只许州官放火，不许百姓点灯。 </p>
+<p>现在航空公司也这样，现在很多中国人又开始说了，说你看彻底完了，本来还能有几班的，现在有美国这么一搞彻底没有了，对不对？你要明白美国现在是为了谁在做做装，不光是为了美国公司，不光是为了美国的航空公司，也在为了中国的这些留学生们，你懂吧？就你美国这样跟他斗争了之后，中国最后屈服了，才会增加航班，你才有机会买到便宜的机票回国或者你回来，对不对？ </p>
+<p>你现在如果美国不管，中国就跟黑社会一样霸占了中美之间的航路，机票完全由他说了算，现在机票都多少钱一张，都动不动就几万块钱一张，对不对？为什么？因为没有竞争，它垄断了，现在中国的4个航空公司垄断了，对不对？把你吊起来，现在你当不是把美国当凯子，把你吊起来打，当你要多少你就得给多少，对不对？你能买张票你都得感谢政府感谢党了，对不对？ </p>
+<p>现在美国人来了怎么办？就是跟中国说你要增加航班，不能够让你的航空公司跑，我的航空公司也得跑，咱们一起跑，一跑之后多了航班多了之后可以让自然就降下来，有竞争才会是得到好处的是谁？ </p>
+<p>是老百姓，对不对？每周美牛进来了，或者美国奶粉进来的话，就会倒逼中国的奶粉要改革，你就不会再吃成大头娃娃了，对不对？如果美国的汽油能进来的话，中石化中石油还有那么胡搞，对不对？你看看现在外边气石油掉了多少钱？多少多少钱一斤对不对？你看原油宝亏的亏的都鬼酷狼的对不对？你再看中国油价还差不多，所以我觉得就是说中国发展到目前这个阶段了，有一些外资企业进来竞争一下，对于老百姓来讲不见得是坏事。所以有的人埋怨川普，我觉得真的不应该埋怨川普，川普实际上现在在为你们做斗争，为了你们能买到便宜的机票，为了你们能够自由的在中美之间横行做斗争，好不好？ </p>
+<p>所以对这点来讲，我知道很多中国老百姓不太明白，但是美国公司很明白对吧？对于川普的这一决定，达美航空在今天就发表了声明，他表示我们支持和感谢美国政府对执行我们的权利和确保公平所采取的行动。你看人达美航空公司就明白政府为什么这么做，知道吗？就是为了要确保是公平的竞争，就是大家都有机会，你不能说你黑社会你垄断了，就要只许你跑，别人都不许跑，对不对？好吧，那一讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/03/20200603%E7%AC%AC2344%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E2%80%9C%E5%88%A0%E9%99%A4%E4%B8%AD%E5%9B%BD%E2%80%9DAPP%E8%A2%AB%E4%B8%8B%E8%BD%BD500%E5%A4%9A%E4%B8%87%E6%AC%A1%EF%BC%8C%E8%A2%ABGoogle%E5%88%A0%E9%99%A4-S7adpkPBYWo/" rel="prev" title="20200603第2344期-印度“删除中国”APP被下载500多万次，被Google删除">
+      <i class="fa fa-chevron-left"></i> 20200603第2344期-印度“删除中国”APP被下载500多万次，被Google删除
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/03/20200603%E7%AC%AC2346%E6%9C%9F-%E6%98%8E%E5%B0%BC%E8%8B%8F%E8%BE%BE%E6%94%B9%E6%8E%A7%E6%B6%89%E4%BA%8B%E8%AD%A6%E5%91%98%E4%BA%8C%E7%BA%A7%E8%B0%8B%E6%9D%80-rZrwCXN3apQ/" rel="next" title="20200603第2346期-明尼苏达改控涉事警员二级谋杀">
+      20200603第2346期-明尼苏达改控涉事警员二级谋杀 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">218</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/06/03/20200603%E7%AC%AC2345%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8E6%E6%9C%8816%E6%97%A5%E5%BC%80%E5%A7%8B%E7%A6%81%E6%AD%A2%E4%B8%AD%E5%9B%BD%E5%AE%A2%E6%9C%BA%E9%A3%9E%E5%BE%80%E7%BE%8E%E5%9B%BD-MeTNWY2tBMw/";
+    this.page.identifier = "2020/06/03/20200603第2345期-川普从6月16日开始禁止中国客机飞往美国-MeTNWY2tBMw/";
+    this.page.title = "20200603第2345期-川普从6月16日开始禁止中国客机飞往美国";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
