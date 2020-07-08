@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/24/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/24/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2389%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%91%E6%B5%B7%E7%89%99%E5%9B%BD%E9%99%85%E5%88%91%E4%BA%8B%E6%B3%95%E5%BA%AD%E4%BA%BA%E5%91%98%E5%AE%9E%E6%96%BD%E5%88%B6%E8%A3%81-fECuITth6j0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2389%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%91%E6%B5%B7%E7%89%99%E5%9B%BD%E9%99%85%E5%88%91%E4%BA%8B%E6%B3%95%E5%BA%AD%E4%BA%BA%E5%91%98%E5%AE%9E%E6%96%BD%E5%88%B6%E8%A3%81-fECuITth6j0/" class="post-title-link" itemprop="url">20200611第2389期-美国向海牙国际刑事法庭人员实施制裁</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:09" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:09+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2389%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%91%E6%B5%B7%E7%89%99%E5%9B%BD%E9%99%85%E5%88%91%E4%BA%8B%E6%B3%95%E5%BA%AD%E4%BA%BA%E5%91%98%E5%AE%9E%E6%96%BD%E5%88%B6%E8%A3%81-fECuITth6j0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2389期-美国向海牙国际刑事法庭人员实施制裁-fECuITth6j0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，美国像海牙国际刑事法庭的人员实施了制裁，怎么回事？国际刑事法庭3月授权的调查阿富汗战争的罪行，说调查美军和情报官员在阿富汗犯下的一些战争罪行。 </p>
+<p>白宫周四今天声明说，川普总统颁布了行政命令，对国际刑事法院的官员进行了经济制裁，他们直接参与了胃经美国同意对美国军人的调查或者起诉，所以将冻结相关人士在美国的资产，并禁止他们入境。美国的国务卿彭培耀表示，美国不会允许本国本国的国民受到不公平的威胁。国际刑事法庭调查主要是2003年5月在阿富汗犯下的战争罪的指控，2003年的时候奥巴马也还没有当总统了，那个时候还是小布什执政的时期，我们这么说，就是说美军当时在阿富汗有没有犯下的一些事，我觉得是有的。 </p>
+<p>这个的确是事实，当时也曝光了美军在那儿就是说为了得到一些情报，用了一些这种就是说用了一些私行，但是在这种情况之下，我只能说其实各国在这种时候用的手段都差不多。有的人就认为举个例子，欧盟外交与安全责任高级代表博雷利，美国的制裁表示严重关切，他重申欧盟对国际刑事法庭的支持，包括组织人权观察组织成员安德里亚普拉所说说对国际刑事法院的攻击，是在否认对阿富汗罪行的牺牲者身上正义，他呼吁支持国际正义的国家，反对这种的阻挠司法的企图，他们说的对吗？ </p>
+<p>我觉得是有一定道理的，美军当时的确确犯了一些问题，但是我们要说一点就是说是美国政府是当时的小布什把这些人送到了阿富汗去，但当然你也不能怪小布什，你说911之后，你说他能不送部队过去吗？对吧？可能也得送过去。 </p>
+<p>部队在那里，其实很多时候是面临的这种死亡威胁，有的时候它需要一些情报，用了一些手段，真正曝光这些东西也是来自美军，你就说美军里边还是这种有情怀的，你像美国棱镜门也是美国人斯诺登曝光的，你会发现美国这里边的这种有情怀的人非常多，这些人把这些脏事他认为美国不应该这么做，他们认为我们对人类有一种责任感，只要是中国人就觉得就这么干，肯定是汉奸走狗卖国贼的，对不对？我国在跟别人打仗，然后你竟然把我国的行为这个曝光出来的对吧？ </p>
+<p>这就不得了，但是在于美国来讲认为他们还是做的是对的。我记得斯诺登当时的给他拍了一个纪录片，还在这奥斯卡拿了最佳纪录片奖，你就可以看到这个奥斯卡美国的这些媒体界对斯诺登还是认可的，他们有没有犯下一些行为？有，但是你让他们去承担，我觉得他们很无辜，他们被国家扔在了那里，他们面临着非常艰险的困境，而在这种时候国家如果抛弃了，他们放弃了，让他们去承受的话，我觉得对于个人来讲也是有问题的。 </p>
+<p>当然川普上任三年多，把很多就是说在战争当中受到了这种指责指控的这些前面我们也说过有海军陆战队的指责，他在阿富汗有一些问题，美国法院都判了，然后最后川普签署了总统特赦令的特赦了，让他回家了，而且还不止一个痛苦，前前后后释放了好几个，对于美国军人来讲，我觉得大家心里都是人心都是肉长的，对吧？这样子的总统你让军人说什么对不对？我觉得到了那个时候，我不认为他们军人站在那之后，他是愿意做这些东西，他也是被逼到那里了，就是说反正我就把你弄死，对吧？ </p>
+<p>你说怎么办？你小布什也好，你奥巴马也好，你把人放到那里了，对吧？小布什还好，最好放开手脚让他们干，奥巴马把人送到了中东去，然后还不让他们干。 </p>
+<p>你现在回想起来，你会发现在奥巴马的时期是IsIs最鼎盛的时期，对吧？串口上来的时候is到什么牛逼程度，整个中东它占了4个，有4个阿富汗国土那么大的地方，中东最大的势力就是is没有人给他们势力大，而且是在全世界搞各种恐怖组织暴行，对吧？就光法国闹了多少次，欧洲比利时闹了多少，对不对？串口现在上下之后你还自打串口上下之后，你还听见过ISO的新闻吗？你知道为什么吗？因为他们没有了。 </p>
+<p>串口怎么做的呢？你自己去想对不对？这种东西对吧？我川普上来的时候我就对不对？我就说川普一上来IsIs就结束了，他们的末日就到了。 </p>
+<p>我说美军打他们就跟打着玩一样，只不过奥巴马的时期，各种的指甲锁不让美军上，而且还泄露美军的军事情报给他们，要打之前的提前一个月告诉他我要打了我要轰炸了，对不对？我说川普来了之后就什么也没说，你们赶快干完咱赶快撤，对不对？所以你看现在迅速那儿就打完了，s现在还有吗？谁？你现在想找个Iss都不好找了，找不着了都被宰光了，对不对？所以现在美军要从阿富汗也要撤军也要走了，对不对？ </p>
+<p>川普的观念就是这样的，我也别轻易地把事情扔出去，但是如果扔出去了，我们就要为他们负责，你不能让士兵们自己去那儿扛扛这种雷去，对吧？ </p>
+<p>尽量地尽快地把它干完，干让咱们尽快走，你们自生自灭跟我没关系，川普跟你关着有点像，知道吗？你们中东你们爱怎么着怎么着，你们自己在自己别找我，我也不找你们，你们胡搞我假装看不见，我也不过去咱们就拜拜。就这种态度的你知道吗？但是这种态度你说句实在的，在美国其实是挺受支持的，像你这种观点人挺多，对不对？所以你说这个事对不对？国际法庭也不能说它不对，你说川普应不应该保护这些人？ </p>
+<p>对吧？你懂我意思对不对？其实是不应该的，其实是不应该这么做的，我觉得还是不应该这么做，没有办法。 </p>
+<p>到了那个时候，每个人虽然说每个人的选择，但是你还是说我举个最简单的例子，当时有美国的4个特种兵在阿富汗就是说跟大部队走散了，他们伞兵下来之后，结果没有到一个地方出了问题，出了问题之后，他们就要去另外一个集结地去集合，到了1个集结地之后，他们就4个人赶快就赶路。 </p>
+<p>半道上碰上了一个放羊的阿富汗人，然后这4个美军就怎么办？就说我们把他杀了，因为我们不杀了，他回去一说看见了4个美国人，我们就倒霉了，对不对？然后他们4个人最后决定怎么办？咱们这样。咱们民主咱们投票表决，就是说同意杀他的，就说同意不同意说不同意，结果4个人最后有3个人是不同意的，有1个人说我们应该把他杀了灭口。 </p>
+<p>另外三个人不同意，那么民主表决之后3:1，那么这4个美国人告诉他不要跟任何人说，那个方向说我绝对不说，你们放心，你不要说了你们杀我头你知道吗？你们千万别杀我，然后美军说好你滚走吧，那个人放了羊就走了，4个美军接着赶走，结果半个小时不到了，后面几千人追上来了，朝着4个北京追上来了，然后就发生了混战，4个人打打上千，最后有3个美军最后都牺牲掉了。 </p>
+<p>只有一个最终就是说在你就想这美军的战斗力上千人的追4个，竟然还有一个人跑掉了，有一个人最后就回来了，你就明白就是说反正在那种时候就是这么一个选择，你们4个人有1个选择，按理说这个放羊它是一个平民，他不是一个阿富汗士兵，你应不应该杀他？你不应该杀他，但是你不杀他，你们4个人当中有3个人，今天就得死，每个人都有他的选择。当然我们都认为我们是正直的善良的人，我们宁愿别人把我们打死，我们也不能把手无寸铁的无辜的放羊的打死。 </p>
+<p>但是如果他们真的选择了把方形的打死的话，我觉得所以对于那些把这些无辜的士兵送到阿富汗战场的美军的这些指挥官，这些总统们，你们也有责任，你们不应该让士兵在那种在别人死还是我死的这种艰难的抉择里去选择他们很年轻的20多岁的士兵，在那种位置上，对吧？你没有责任吗？你一旦他们选择了他们选择了，最后我要活下来，我得把放羊的宰了，对不对？ </p>
+<p>在那之后回来你要给他们4个人绳之以法，送军事法庭，要审理，要抓他们要终身监禁，你总统是干什么吃的？对不对？你怎么不去送死呢？你让士兵上去送死，对不对？你这不等于就让士兵去送死吗？你这么搞不让市民送死是干什么？所以反正这是我的观点和态度。 </p>
+<p>应该怎么做，应该就是说我们每一个人在那种时刻都应该我们选择我们死，我们也绝对不能杀了放羊的，没有问题。但是如果别人选择了另外的道路，我也表示理解。好吧，这就是我的观点和看法。我知道我这么说有点不太好，但是也没办法。事实是如此，好吧，今天听讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2388%E6%9C%9F-%E7%BE%8E%E5%9B%BD7%E5%8F%82%E8%AE%AE%E5%91%98%E8%87%B4%E4%BF%A1%E5%9B%BD%E5%8A%A1%E5%8D%BF%E8%A6%81%E6%B1%82%E7%BE%8E%E5%9B%BD%E6%8E%A5%E6%94%B6%E9%A6%99%E6%B8%AF%E4%BA%BA-TSHU49hCK4E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2388%E6%9C%9F-%E7%BE%8E%E5%9B%BD7%E5%8F%82%E8%AE%AE%E5%91%98%E8%87%B4%E4%BF%A1%E5%9B%BD%E5%8A%A1%E5%8D%BF%E8%A6%81%E6%B1%82%E7%BE%8E%E5%9B%BD%E6%8E%A5%E6%94%B6%E9%A6%99%E6%B8%AF%E4%BA%BA-TSHU49hCK4E/" class="post-title-link" itemprop="url">20200611第2388期-美国7参议员致信国务卿要求美国接收香港人</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:08" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:08+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2388%E6%9C%9F-%E7%BE%8E%E5%9B%BD7%E5%8F%82%E8%AE%AE%E5%91%98%E8%87%B4%E4%BF%A1%E5%9B%BD%E5%8A%A1%E5%8D%BF%E8%A6%81%E6%B1%82%E7%BE%8E%E5%9B%BD%E6%8E%A5%E6%94%B6%E9%A6%99%E6%B8%AF%E4%BA%BA-TSHU49hCK4E/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2388期-美国7参议员致信国务卿要求美国接收香港人-TSHU49hCK4E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，美国有7个的参议员是以印第安纳州的共和党议员托德扬为首的7个参议员致信国务卿蓬佩奥，要求什么？说考虑到中国共产党持续与恐吓和压迫统治香港，我们带着非常担忧的心情写下这封信，一些香港人的生活不再安全，他们正在香港以外的地区寻求庇护，就是要求美国国务国务卿考虑给香港人一个绿色通道，让更多的香港人可以申请政治庇护移民美国。之前也说过，就是说英国在探讨这个方式和方法，当时说如果英国的方式方法可行的话，那么有300万香港人能够满足条件允许移民英国，但是我们都知道是不可能的。 </p>
+<p>300万香港人移民，英国的他不可能接受这么多的新移民。 </p>
+<p>台湾我们现在得到消息，台湾的蔡英文总统也在考虑，就是说台湾也会接收一部分香港人，加拿大也在考虑这个问题，现在据我们知道就是说加拿大、美国、台湾、英国这几个国家都在这个国家都反正能够接受一部分，但是香港一共就700多万人，到底有多少人愿意离开，要移民走，你说真的是反抗吗？是反抗，真的背景离乡到走的话，有多少人能够下定决心，能不能有300万我看也够呛，因为一共就700万人走，300万都走了一半了，对不对？ </p>
+<p>我估计能有个30万到50万移民走就不错了，但是对于任何一个国家来讲，一下子来几十万移民都是很恐怖的一件事情，对吧？美国能够承受多少？我不知道当年的2016年希拉里选举的时候，希拉里当时他承诺如果他当上总统的话，他承诺会吸收10万穆斯林的难民，后来川普上来了，大家也知道这事在没人提了。 </p>
+<p>那么美国方面说，美国说美国应该提供选择给那些希望生活在具有民主价值，保护人权及维护法治之地的港人就是说这个事是应该做的。总统川普也转贴了阿肯色州共和党参议员的汤姆克顿的推文，他们可能推的内容就是要呼吁华盛顿优先考虑接受遭受迫害的香港人的赴美国川普总统也转帖了，说明川普也还是支持这个事情的。 </p>
+<p>贾兴鹏鹏药在美国企业研究所的节目当中表示说也正在考虑这项行动，他说我不确定华府最后会如何付诸行动。英国与香港的关系不同，许多港人持有英国国民的海外护照，香港与英国之间存在悠久的历史，但我们正仔细考虑这项行动，就是说当然英国会接受一部分，但是都指着英国也不现实。 </p>
+<p>我觉得这次是一个事情来考验一下川普，让我们看看川普到底是怎么样。其实我觉得以前别人对川普有一个误解，但是当然别人也认为我对川普有误解，咱们不知道很多人认为川普是反移民的，但是我觉得大家这么说是误解了川普，我觉得川普不是反移民，川普是反的非法移民，而且反的这种低素质的就不太好的这种移民对美国有害的移民。川普我觉得他是欢迎移民的，他欢迎他想把美国的移民搞成像加拿大澳大利亚那种就是说积分制，加大一移民也是你去了之后你要凑他分数，你要移民，比如说你是什么高学历，你有什么比较高收入，净资产比较多这些，那么你分数够了之后，他觉得你是一个优秀人才，他让你移民，川普也希望美国也这样，而不是哪个国家一偷渡的那种最低劣的多就叫哪个对吧？ </p>
+<p>川普希望能招一些这种高技术的高知识的这种移民，我说句实在的，我觉得以全世界我觉得都可以说香港人的整体素质真的还是很高的，你包括去年反动中选举的时候，反动中运动的时候，当时他们撕谭永林的黑胶唱片，留了很多谭永林唱片都给掰了，都扔地上了，然后他都给撕了之后，他老婆和孩子马上过来把他扔到那颗腰上边收好，然后装好了之后扔到垃圾桶，说不能够影响市容市貌，你就能看出香港人的整体的这种个人素质来。 </p>
+<p>在亚洲来讲，我觉得日本人的个人素质算是相当的可以，南韩也不错，然后其次我觉得香港台湾我觉得对于像那种叙利亚的难民，说实话在2016年当时希拉里说要招收10万叙利亚难民的时候，我的心里也是提心吊胆，我也替怎么说，你想这些难民来的时候给我哪，我觉得最起码如果真的美国接受了10万，纽约这地儿还不得给你搁个几千，对不对？我也是倒吸了一口凉气对吧？ </p>
+<p>但是如果是香港人的话，我相对我就会 ok，我觉得可以接受，因为他们我觉得个人素质比较高，受教育程度良好，公民意识，然后社会的责任感都非常好，我觉得美国如果能接受一些香港的这种移民来讲，对美国其实是我觉得是不错的，是一个好事，美国也他是需要移民的，对不对？所以我就想看看是不是我也误会川普了，因为别人都误会唱谱，说川普的不要移民，我觉得倡普不是我觉得唱谱他是想要的这种好的移民的，就类似于像香港人这种移民，我觉得川普是想要的。 </p>
+<p>那么这次就是一次考验了，看看川普是不是就是说雷声大雨点小，光说不干，喊了半天口号，最后没有接受多少。我们看到川普能不能给这些香港人开一条绿色通道，允许他们来美国申请正式庇护，到美国移民。如果老头这次能够接受住考验，能够给一些香港人，当然我觉得不用多，我认为也不过也就是最多300万是不可能的，我觉得有三三十万差不多1/10。 </p>
+<p>307,000，因为毕竟也就700万人，其移民的主要都是青壮年，你很少看到一两岁的来移民对不对？你老头7~80他懒得再跑了，对不对？就死那就得了对吧？ </p>
+<p>所以我觉得就是说青少年本来就是我就弄多少，香港青少年500万，对吧？ </p>
+<p>我觉得里边能有个30万到50万移民就不错了，然后台湾加拿大、美国、澳大利亚分的话，我觉得美国只要能够分个2万到3万，我觉得就可以大家一分，美国分个两三万，我觉得如果能够做到这一点的话，我们就必须得我觉得所有那些攻击川普说川普反移民的都得闭嘴。川普并不是反移民，川普真的就像他自己说的，他反非法移民，反素质低下的移民，反那些就说来了美国贩毒，你知道吧？偷到了反那些对吧？ </p>
+<p>反正我们这次看一看，我觉得这是一个真正你看清楚这个人，路遥知马力，日久见人心，真的到这种事上的时候，你才能看明白川普到底是个什么人。好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2387%E6%9C%9F-%E6%81%AD%E5%96%9C%E6%AF%94%E4%BA%9A%E8%BF%AA%E7%9A%84N95%E5%8F%A3%E7%BD%A9%E7%BB%88%E4%BA%8E%E9%80%9A%E8%BF%87%E4%BA%86%E7%BE%8E%E5%9B%BDCDC%E8%AE%A4%E8%AF%81-Rr4zsyklADQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2387%E6%9C%9F-%E6%81%AD%E5%96%9C%E6%AF%94%E4%BA%9A%E8%BF%AA%E7%9A%84N95%E5%8F%A3%E7%BD%A9%E7%BB%88%E4%BA%8E%E9%80%9A%E8%BF%87%E4%BA%86%E7%BE%8E%E5%9B%BDCDC%E8%AE%A4%E8%AF%81-Rr4zsyklADQ/" class="post-title-link" itemprop="url">20200611第2387期-恭喜比亚迪的N95口罩终于通过了美国CDC认证</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:07" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:07+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2387%E6%9C%9F-%E6%81%AD%E5%96%9C%E6%AF%94%E4%BA%9A%E8%BF%AA%E7%9A%84N95%E5%8F%A3%E7%BD%A9%E7%BB%88%E4%BA%8E%E9%80%9A%E8%BF%87%E4%BA%86%E7%BE%8E%E5%9B%BDCDC%E8%AE%A4%E8%AF%81-Rr4zsyklADQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2387期-恭喜比亚迪的N95口罩终于通过了美国CDC认证-Rr4zsyklADQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，之前我们说过比亚迪和加州政府签了一个协议，对不对？说是让10亿美元的口罩采购合同对不对？然后加州政府向比亚迪支付了4.95亿美元的首付的定金，但是比亚迪他当时生产的n95口罩未能在4月30号之前获得CBC的认证，为此比亚迪要向加州退还一半的定金，计2.475亿美元，当时我就说有的人就认为这是一种政治需要，我到时候说绝对不可能的，美国不存在这种，美国是要里子不要面子的，你的口罩只要合格他一定会要的，如果不要就一定是你不合格。 </p>
+<p>那么加州州长的纽森同意将加州与比亚迪的合同延期至5月31号，当时就给他延期到4月30号他没通过，给延期了一个月，然后美国的CBC也表示说比亚迪可以修正他口罩的缺陷之后再次递交申请，一旦比亚迪完成了修改，将加速第二次的审核流程，那么比亚迪就去修改了，然后交付了，交付之后最后仍未在5月31日前获得认证。那么加州州长的第二次再次延期，又把它就往后延了，又延了一下，那么经历两次延期之后，到了6月8号，恭喜比亚迪他的n95口罩终于通过了美国ctc的认证，而且何以哥跟加州来旅行他们当初签的合同，在这个过程当中我们必须承认加州的州长，还有美国cDC的这些官员们为比亚迪做了很多事情，给了他们的很多的帮助，加州州长两次延期，cDC为他们搞了特殊通道，在第二次审核过程当中对他进行了加速。 </p>
+<p>我想再一次证明美国这里就是说你的口罩只要合格，我一定要我的合同我肯定认，我不会说你的口罩合格了，然后我这个人为的让你不合格，不存在这种情况，这里是美国。好吧，然后我觉得比亚迪非常好，在跟美国做生意的过程当中，他也学到了很多东西，他的口罩工艺得到了改进，对吧？我觉得对于他来讲不是一个坏事，如果中国的政府也像美国政府这么的严格和认真的话，我觉得中国企业他们在这方面也会得到改进和提高。 </p>
+<p>如果中国政府这一次对于中国那些在海外被退回的那些不符合质量要求的这些试剂盒进行就是说中国政府不买的，我帮你对不对？你就破产。的话，中国的试剂盒的质量也会提高，但是中国政府没有中国政府拿出来的9亿多人民币帮他们买了单，然后把这些根本就不可用的不准确的试剂盒用在了中国武汉，给了900多万的武汉市民就用了。 </p>
+<p>实际上中国政府为这个不合格的无效的试剂买了单，但是中国政府买单，中国政府是没有钱的，中国政府的钱都是中国人民的血汗钱，都是中国老百姓的，都是纳税人的血汗钱。 </p>
+<p>在这种情况之下，我认为企业没有学到他们应学的那一刻，没有受到教训，他们的试剂盒没有质量没有得到提高，反而他们还挣了钱，挣了钵满盆满，挣了一大笔。在这种情况之下，你怎么能够认为中国企业能够提高？你再看看美国，对不对？我是说你不行，但是我帮助你提高产品质量，最终你提高了之后，我肯定你不让你挣这个钱，这就是一个良性循环，而中国的企业在中国政府的掩护之下进行了一个恶性循环。 </p>
+<p>就说为什么这么多年了，我们的石油保护，我们的气候保护这么多年了，中石油到现在弄个汽油标准还赶不上来，我说你不好听的，你现在只要把国门打开，你让美国企业进来跟中石化中石油一竞争，用不了两年，中石化中石油这个价格也下去了，工艺也提高了，你知道吧？就是说你该对他狠一点就得狠一点，就跟你养了孩子一样，你天天宝肉疼着，知道吗？不敢管教。你的孩子最后就是个败家子，严师出高徒，你到时候不行就得你如果自己教育不了，就得找个老师来教导他。 </p>
+<p>美国的这次加州州长也好，美国的cc也好，对比亚迪就是一个培训一个教训。 </p>
+<p>比亚迪应该感谢美国政府，感谢加州政府，感谢美国的cDC得到了很多的提高，真的有的时候我们想起来这些事当年我们的一些老师，我以前有个初中的老师，人家很好，我到现在都很感谢他，我这个人也是自以为是，好为人师，你知道吗？ </p>
+<p>能有一个老师让我记得这位老师人不错，知道吧？就是说我看老师看的是人品，知道吧？很多老师我看的是人品，人品好的老师是得到我的尊重的。但是中国的老师队伍里通常人品都很差，你知道吧？中国的老师队伍，中国的老师总是觉得这样子，就是说你应该给我你懂我的意思吗？就是说最起码逢年过节的，你应该给我送两个西瓜意思吧？你懂吧，中国老师通常人品是比较差，知道吧？ </p>
+<p>难得有一个好一个好老师对人的影响是非常的重大的，他让你觉得人生还有希望你知道吗？社会还有希望，如果你看到老师一个比一个人品糟糕的话，你对尤其你小的时候，你上学的时候你知道吧，你对这个社会在都很失望，你看到一个人品很好的刚正不阿的老师的话，你就觉得社会的人都是这种比较刚正不阿的，你懂我意思吧？就是说人品是非常重要的。 </p>
+<p>好吧，当然了这个跑题了，还是说回来，我希望就是说通过我觉得比亚迪上了一课，我觉得中国政府也应该上一课，中国政府应该向美国政府学一学，在这个方面不要溺爱你的这些企业，不要溺爱你的孩子，对他们反而不好。好吧，这些聊到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2386%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%96%87%E9%9D%A9%E5%BC%80%E5%A7%8B%EF%BC%8C%E6%95%99%E6%8E%88%E6%8B%92%E7%BB%9D%E7%BB%99%E9%9D%9E%E8%A3%94%E4%BC%98%E6%83%A0%E8%A2%AB%E5%81%9C%E8%AF%BE%EF%BC%8CHBO%E4%B8%8B%E6%9E%B6%E3%80%8A%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA%E3%80%8B-FA7Sqsn_WPU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2386%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%96%87%E9%9D%A9%E5%BC%80%E5%A7%8B%EF%BC%8C%E6%95%99%E6%8E%88%E6%8B%92%E7%BB%9D%E7%BB%99%E9%9D%9E%E8%A3%94%E4%BC%98%E6%83%A0%E8%A2%AB%E5%81%9C%E8%AF%BE%EF%BC%8CHBO%E4%B8%8B%E6%9E%B6%E3%80%8A%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA%E3%80%8B-FA7Sqsn_WPU/" class="post-title-link" itemprop="url">20200611第2386期-美国文革开始，教授拒绝给非裔优惠被停课，HBO下架《乱世佳人》</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:06" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:06+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2386%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%96%87%E9%9D%A9%E5%BC%80%E5%A7%8B%EF%BC%8C%E6%95%99%E6%8E%88%E6%8B%92%E7%BB%9D%E7%BB%99%E9%9D%9E%E8%A3%94%E4%BC%98%E6%83%A0%E8%A2%AB%E5%81%9C%E8%AF%BE%EF%BC%8CHBO%E4%B8%8B%E6%9E%B6%E3%80%8A%E4%B9%B1%E4%B8%96%E4%BD%B3%E4%BA%BA%E3%80%8B-FA7Sqsn_WPU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2386期-美国文革开始，教授拒绝给非裔优惠被停课，HBO下架《乱世佳人》-FA7Sqsn_WPU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，崔永元曾经说中国的文革2.0开始了，我们觉得没有问题，现在我来说美国的文革开始了，美国这也算文革2.0，因为以前这个也搞过一次麦卡西他们当年也算搞过一次文革的，这是文革2.0开始。现在是什么是这样？咱先说hbo h b o下架的乐视家人，而比如说说什么说乱世佳人是时代的产物，说这个故事描绘了当时的美国社会司空见惯的种族偏见，这些带有种族偏见的描绘过去是错的，现在也是错的，所以公司感到若在没有任何注释的情况之下，继续保留影片在平台上是不负责任的，所以公司暂时的把影片下架，他在影片里面要注视，所以将来等影片重新上架的时候，会在里边的一些情节里面会告诉你这个是有种东西是吧？ </p>
+<p>会有这个，然后奥斯卡还有一个最佳影片，我记得是前年还是大前年为奴12年，就一个黑人的小提琴家，然后被骗到南方当奴隶去了，然后后来还是布莱德皮特把他给救了，还记得吧？他的编剧现在出来呼吁要让影片下架，原因他认为电影歌颂了南方联邦，忽视了奴隶制的恐怖，我觉得真的这是文化大革命这两天还有各种雕像都在扒，都在拆各种雕像。 </p>
+<p>据说英国那边要把丘吉尔的雕雕像也要拆了，不管怎么着，然后这还不算完，我再给你讲一个加州大学有个教授叫克莱因，然后不是快要期末考试了吗？ </p>
+<p>5月底55月中旬不是期末考试，期末考试的时候他有一个学生给他写了一封信，说什么？考虑到明尼苏达发生了悲剧，不就有一个黑人叫浊者弗洛伊德被警察鸭脖鸭死了吗？他说考虑到明尼苏达的悲剧，希望教授能够给班里的这些非洲裔的学生以特殊的优待，因为非洲裔的学生现在都非常的悲愤和难过，情绪的很不好。 </p>
+<p>然后教授就回了一封信，教授说感谢你提出的这个建议是对的，他说考虑到明尼苏达的悲剧，给非洲学生以特殊的待遇对不对？他说你知道你的非洲裔同学的名字，你得告诉他的名字是谁，我也不知道对不对？这个成绩我看名字我也不知道他是谁，他说你能跟我说他的名字是什么，你告诉我他名字我好知道是谁。 </p>
+<p>还有他说因为我们现在都是在线的课程，对不对？那么我如何识别他们？因为我都是在线的，你们成绩都交上来的，我也不知道谁是对不对？那么还有一点你能不能确认他们有没有可能是混血儿，就是说他们是一半的非议，一半的压抑，对不对？有没有可能是印度，因为印度一看这跟非洲人差不多，对不对？还有你建议我对他做什么？就是说全优惠还是减半，就是说直接给他们全优，也不用考试了全优。 </p>
+<p>还是说只要他们能达到一半的分，比如100分是满分吧，考个50分我就给个我也得优，还是这样更好，你的建议是什么？另外你知道我们有没有来自明尼阿波利斯的同学？他说我认为他们也可能特别沮丧，因为那是他们的家乡，家乡现在打砸抢烧，对不对？他说尤其是那里的白人的学生可能更加沮丧，因为有些人就认为他们是种族主义者，因为你是米尼斯阿斯，阿波利斯你是白人，你就是种族主义者，但是他们可能明明他们就不是种族主义者，但是就因为他们是白人，他们就被认为是种族主义者了，他对不对？那么他说还有他说我的助教来自明尼阿波利斯，如果你不知道的话，我可以问问他就有没有他家乡的学生。 </p>
+<p>由于我们现在唯一的课程成绩仅来自于期末考试，他说你能不能指导我如何实现呢无害的结果？ </p>
+<p>就是说如果我给了这些非洲裔学生，比如说我让他们得50分就能得优的话，那么班里其他同学那些其他好到50分的人，如果我给他一个c或者我给他一个地的话，人家不干，那说凭什么你这不其实我们他是黑人，他好了50铃择优，我不是一个黑人，我考了50我就得了费或者得了地，你这不等于种族歧视我了，对不对？你不是其实它已经提示我了，对不对？说你有没有什么其他的方法就是说我们又能在不伤害其他足以的情况之下，又给了非洲学生的一些优惠。 </p>
+<p>然后他说最后还有一件令我印象特别深刻的是当年的马丁路德金他说过一句名言，他说不要因为肤色而评价人，他说我他就问这个学生，他说你认为你的请求就是说给非洲裔形成以特殊待遇的话，你认为这个是不是违反了马德路德金的劝诫？就是说因为肤色的评价人，这就是教授的回信。 </p>
+<p>以前我们就说过这个事情知道吗？什么叫歧视？就是说如果认为你不行也是一种歧视。 </p>
+<p>现在美国的女权主义者我这么一个观点，就是比如说俩人一块进来吃饭，这个男士非常礼貌，帮女士抻了一下椅子，对不对？ </p>
+<p>美国的女权主义者就认为你这是瞧不起我，你什么意思？对不对？你觉得我是一个女生，所以我软弱，我弄不好这椅子你要帮我弄一下，是吗？ </p>
+<p>为什么以前男士帮女士弄椅子，因为在以前的时候，美国尤其女士他们盛装出席的时候，他要塑胸，你知道吗？他拿这个东西他勒的非常的紧，然后下面的裙子是喷起来的，而他裙子里捧起来的时候，它里面是有一个东西垫着这个东西你知道吧？所以导致他非常难的往后去弄这个东西，你知道吧？所以他们就坐在那的时候动不了，就这男士帮他扶一下这椅子，他就会觉得特别的好，对不对？ </p>
+<p>但是很多美国的女权主义者的认为，那个时候女士就强迫塑胸，仿这个东西是对女性把女性的物化叫物化女性的一种的这种行为，所以女性我们现在不要这么做了，为什么伤害我们自己的身体来缺你们，对不对？所以说我们不不要这么做了之后，我完全可以弄我的椅子，你这么做你的目的就是瞧不起我，你就觉得我女性的软弱，我可期你瞧不起我，你这是种族歧视，但实际上不是帮帮，但是就是说现在已经不能这么搞了知道吧？ </p>
+<p>就是说如果我认为你是某一个种族或者某一个性别，那么你就有弱势，比如说同样是考试对不对？他们都是压抑，就是数学好聪明，他们得分就高，你是那非洲裔你就是笨，你就是考不好，我给你的一个优惠，这个是不对的，这是种族歧视的。你不能这么做，你要认为每一个种族都一样聪明，大家考的成绩是一样的，没有必要给你优惠，大家都是一样聪明的人都能考一样的成绩，对不对？一旦我认为某一个种族有问题的话，实际上那就是一种种族歧视，这就是一种种族歧视。 </p>
+<p>你懂吗？然后教授克莱因他又给全班同学写了一封邮件，他说外面发生的事情，外界发生的外部世界发生的事情，对都是每一个人的这种苦难，每个人都有自己的苦难，他说这些并不能减轻学生的责任，你不能说我有什么苦难，比如说我亲戚死了，我家的狗死了，你不能以这个为理由，你就说我这学期上不好，你给我一个打，你给我打折，对不对？你直接给我个优，我不让我考试了，你不能这么搞的，对不对？ </p>
+<p>中国高考的时候出各种问题，而且中国高考的时候高考的什么深深学子是不是不都是吗？什么父亲突然去世了，或者母亲得癌症了，怎么办？专二要去参加高考的，你高考会不会说这个孩子他母亲得癌症了，他父亲出车祸死了，你就给他打个5折，你能那么干吗？对不对？你那么干的话对别的学生就不公平了，对吧？都有考试，我们中国考试也不会这么搞，对不对？你也不能说反正就说这意思对不对？ </p>
+<p>我们家狗死了，这狗我养了好多年了，我情绪受影响，你高考去你跟中国高考办，你说我们家狗死了，我情绪低落，能不能给我加20分？你觉得高招办的能搭理你吗？对吧？然后教授说他的女儿在上学期间染了重病，而且他最从小最亲密的朋友还自杀了，他说但是所有的这些困难并没有妨碍他的女儿完成课程，他依然考到了一个优异的成绩，自强不息完全靠自己努力，他说生活给我们所有人都带来挑战和磨难。 </p>
+<p>毫无疑问你们中许多人现在正面临着挑战和磨难，但是在一个完全公平的世界当中，我将考虑这些个体因素，对吧？就是说假如大家都是这样的话，我要考虑这个因素，但问题是也许我可以修改我们的课程大纲，但是他现在以我对大学规则的理解，就是说在这种情况之下，我不应该这么做，因为他的观点就是说这样的，就是说都是来自的明尼斯达波利斯，不管你是非洲裔的，你还是白人，你还是亚洲人，你的家庭都受到了冲击，每一个人都在煎熬。 </p>
+<p>我们纽约也这样，纽约我今天刚看到一个新闻，纽约一个金店的女老板被抢了，洗劫一空还把腿打折了，网上有他腿被打折了的惨照，你们感兴趣可以自己的去搜一下，去查一下，对吧？这种情况之下，我们亚裔是不是也很多一都受到了很多压抑的，小这种小小业主，不管是开中餐馆的，开首饰店的都受到了打砸抢。我还看到有一个亚裔的哥们，他是卖鞋的，专门的做那种这种限量版的，现在美国不有很多那种什么椅子就是说咱们中国叫椰子鞋什么的，他们就是说在卖的时候不是要是什么要抽号，对不对？有的还要加价吗？ </p>
+<p>我知道有一个纽约的一位中国的协商，他是专门搞这种鞋的，他那些都是限量版的，那么也是被人洗劫一空，华人也受到了很多冲击，那么你是不是应该这样就要考虑一位华人这个成绩也要加分对不对？所以我觉得教授说的没有问题，对不对？大家都受到了伤害，但这个谁不是受害者，为什么就偏要对某一个种族给他们一个优惠呢？但是你知道在这种情况下，你知道发生什么事情吗？就这样子，我觉得教科书的没有问题。教授被停课了，被停职了，他的课程被别人取代了，然后2万多学生联署要求学校解雇教授，要fire他要炒掉教授，是因为教授拒绝给非洲裔的学生在期末考试的时候给予优惠，而我认为教授给出的理由来讲是完全充分的。 </p>
+<p>我觉得每一个人都受到伤害，就像他所说明尼苏达的白人学生也受到了冲击，也受到了伤害，亚裔也在心灵上也受到了很大的伤害。我不认为就是说单独的是某一个种族就怎么样，我觉得像现在讲的就是说all life的matter，所有的人的命都重要，不是说现在叫什么叫黑命龟，就是说黑人的命也是金龟的，我们说人每个人的生命都是宝贵的，每一个种族都是平等的，大家是一样的，谁也不优于谁，谁也不比谁，要享受更多的优惠和待遇。 </p>
+<p>每一个种族平等对待，这才是真正的种族平等。好吧？反正这是我的观点。 </p>
+<p>然后在这我想起来了，前几年有一个黑人歌手，他出了一首饶舌歌曲，教黑人怎么去打劫中国人怎么打劫呢华人。他的歌曲里说华人都不相信银行都把现金都在家里，所以就应该去抢中国人，找抢中国人你才能讲出现金来。像这种歌曲，如果是一个华人教你抢劫黑人，塞那就行了，全美国大暴乱大骚乱，you兔马上就得把这首歌就下架，但是这首歌已经几年的时间了，到现在还没有下架，还在YouTube，优兔说因为黑人有他的言论自由，所以他可以这么教我一会把黑黑人歌手，非洲裔的歌手的这首歌的链接搁在我视频下方，所有的华人朋友们可以去听一下。 </p>
+<p>我知道现在很多的华人都在支持这些黑人，那么你可以去听听这黑人歌手的这首歌，我觉得以后你们再出去游行的时候，就是说支持这叫什么？ </p>
+<p>黑人的命也很宝贵的，游行的时候，我在游行过程中就可以放到这首黑人的教，黑人怎么去打劫华人的这种饶饶舌歌曲，非常节奏感非常强，放着这首歌去马路上识别游行，然后顺道对你们自己看着办好，你们顺道我想说你们顺道对你们这首歌教你们干什么，是不是？你们就可以顺道的学习这首歌曲的制造精神。你们自己去想。 </p>
+<p>好吧，我觉得在这种情况之下，我觉得因为需要冷静冷静了。真的，我今天还看到了一个视频，是纽约州他们的警局搞的集会，纽约警察现在也是非常的不满意，认为媒体把所有的矛头都指向了警察。我说句实在的，我认为今年的选举，我不认为纽约有任何一个警察会选民主党，我把这话放在这，咱们最后看，好吧，今天就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2385%E6%9C%9F-%E5%93%88%E4%BD%9B%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8C%96%E7%B3%BB%E5%89%8D%E4%B8%BB%E4%BB%BB%E5%9B%A0%E9%9A%90%E7%9E%92%E5%8F%82%E4%B8%8E%E5%8D%83%E4%BA%BA%E8%AE%A1%E5%88%92%E8%A2%AB%E7%BE%8E%E5%9B%BD%E5%8F%B8%E6%B3%95%E9%83%A8%E8%B5%B7%E8%AF%89-HqZsLxlePuc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2385%E6%9C%9F-%E5%93%88%E4%BD%9B%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8C%96%E7%B3%BB%E5%89%8D%E4%B8%BB%E4%BB%BB%E5%9B%A0%E9%9A%90%E7%9E%92%E5%8F%82%E4%B8%8E%E5%8D%83%E4%BA%BA%E8%AE%A1%E5%88%92%E8%A2%AB%E7%BE%8E%E5%9B%BD%E5%8F%B8%E6%B3%95%E9%83%A8%E8%B5%B7%E8%AF%89-HqZsLxlePuc/" class="post-title-link" itemprop="url">20200611第2385期-哈佛大学生化系前主任因隐瞒参与千人计划被美国司法部起诉</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:05" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:05+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2385%E6%9C%9F-%E5%93%88%E4%BD%9B%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%8C%96%E7%B3%BB%E5%89%8D%E4%B8%BB%E4%BB%BB%E5%9B%A0%E9%9A%90%E7%9E%92%E5%8F%82%E4%B8%8E%E5%8D%83%E4%BA%BA%E8%AE%A1%E5%88%92%E8%A2%AB%E7%BE%8E%E5%9B%BD%E5%8F%B8%E6%B3%95%E9%83%A8%E8%B5%B7%E8%AF%89-HqZsLxlePuc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2385期-哈佛大学生化系前主任因隐瞒参与千人计划被美国司法部起诉-HqZsLxlePuc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，哈佛大学前主任因为隐瞒参与千人计划被美国司法部起诉了，之前在2018年的时候就说2018年我们得到消息了，美国的 FBI盯上了中国的千人计划，凡是跟千人计划有关系的人，实际上全部都上了fbI的命运名单，当时我说所谓的千人计划就是一个入狱计划，现在看来越来越证实了这两年来讲，很多参与千人计划的都受到了冲击和波及。 </p>
+<p>我们俩在2018年时，我当时认识一个纽约的还比较年轻的一位，反正也算是算你他自己认为自己算科学家，这哥们特别想当想进千人计划想了很多办法，我们当时也听说他找了很多人想了很多办法，最后也没有进去，当时就说说千人计划，我跟你们说，这个里边都是猫腻，这帮人太黑了，他们不是按什么，他们都是按关系，反正就黑人家千人计划，觉得自己没进去，完完全全是天度英才你知道吧？现在没进去也挺高兴的，当时还是挺郁闷的，怎么着都没挤进千人计划里面去，千人计划还是挺难进的，真的有点本事才能进的，不是什么人都能进。 </p>
+<p>这个是真的有本事是哈佛大学化学和生化系的主任，当时不是现在已经被哈佛大学给停职了，现在肯定停职，现在被起诉了，他现在算是前主任了，他周二被美国司法部起诉，说在与中国的关系上，像联邦调查局说谎，他隐瞒自己参与了中国的千人计划，那么如果最成的话，那么可能会被判处5年监禁，根据起诉书显示有证据证明利薄签署了千人计划的一个合同，这个合同说什么？说他每月从武汉理工大学获得5万美元的酬劳，并且获得150万美元在武汉理工大学建设一个研究实验室，给他建一个实验室，然后每个月他给他5万美元的酬劳，但是他自己跟联邦当局说，他从来没有被要求参与过千人计划和千人计划的一点关系没有，而且他还欺骗了哈佛大学，导致哈佛大学曾经的公开声明说，哈佛大学的化学和生物系主任立博没有参与中国的千人计划，但是 FBI现在有证据，他签了合同，这个酬劳到底获得枚或多少现在不知道，反正这个合同他应该是在自己签署的。 </p>
+<p>现在联邦调查局美国司法部现在正式起诉他，对。没想到一个真的大好的前虔诚，在哈佛大学能够干到化学和生化系主任的话，我觉得年薪差不多也有20万了，差不多一个月也有一两万美元了，结果为了5万美元可能是更多一点。 </p>
+<p>当然了我也知道中国一般大学如果给他钱不更多的话，人家为要去我为我戴好带好好的跑去武汉理工大学干什么去对不对？ </p>
+<p>反正也是怎么说人为财死鸟为食亡哥们走到了这一步，没有想到我知道还有很多千人计划的人，现在还没有被调查，还在被研究当中，我不知道这些人现在是不是担心，我觉得担心也是有必要的，不过我觉得是这样子，凡是那些参与的，如果你没有真的做错什么事情的话，我觉得你没有必要隐瞒，你就说事实。事实是他们就觉得我也不知道他们要干什么，他们就让我去教学，给5万美元年薪，我觉得我是想当教授，我不犯法对不对？所以他也是他如果就跟FBI承认了，我签了合同，他们一年给我5万美元，让我在那搞一个实验室去教学生，我不违法对不对？ </p>
+<p>我一个教授我在哪个大学教书不教我，又没有出卖什么科学技术什么的对不对？但是他现在就是说被起诉他是因为他欺骗，所以我觉得如果现在有看到我们节目的这千人计划的这些科学家们，我们就说如果有人问你的话，我觉得你实话实说，没做亏心事不怕鬼敲门，这个哥们在这就是说他为什么要欺骗？为什么？你想为什么？对吧？直接到这里谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/23/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/23/">23</a><span class="page-number current">24</span><a class="page-number" href="/page/25/">25</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/25/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

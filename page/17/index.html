@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/17/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/17/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/16/20200616%E7%AC%AC2428%E6%9C%9F-%E4%B8%AD%E5%8D%B0%E5%BC%80%E6%89%93%EF%BC%8C8%E6%AD%BB11%E4%BC%A4%EF%BC%8C45%E5%B9%B4%E6%9D%A5%E9%A6%96%E5%BA%A6%E4%BC%A4%E4%BA%A1-jQpHkHmQo_Y/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/20200616%E7%AC%AC2428%E6%9C%9F-%E4%B8%AD%E5%8D%B0%E5%BC%80%E6%89%93%EF%BC%8C8%E6%AD%BB11%E4%BC%A4%EF%BC%8C45%E5%B9%B4%E6%9D%A5%E9%A6%96%E5%BA%A6%E4%BC%A4%E4%BA%A1-jQpHkHmQo_Y/" class="post-title-link" itemprop="url">20200616第2428期-中印开打，8死11伤，45年来首度伤亡</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 02:02:08" itemprop="dateCreated datePublished" datetime="2020-06-16T02:02:08+09:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/16/20200616%E7%AC%AC2428%E6%9C%9F-%E4%B8%AD%E5%8D%B0%E5%BC%80%E6%89%93%EF%BC%8C8%E6%AD%BB11%E4%BC%A4%EF%BC%8C45%E5%B9%B4%E6%9D%A5%E9%A6%96%E5%BA%A6%E4%BC%A4%E4%BA%A1-jQpHkHmQo_Y/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/16/20200616第2428期-中印开打，8死11伤，45年来首度伤亡-jQpHkHmQo_Y/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月16号，星期二中印终于开打了，上一次中印在边境发生冲突，死人还是1975年，45年前45年过来了，这是45年来第一次在中印边境的死人双方开打之后，我们现在目前得到的消息是吧？ </p>
+<p>死11伤，前两天中印边境的事情我就在报道，有些人就说说嗨说子贡哥中印边境的事不用太当真，打不起来，当时就我说我已经闻到战争的味道了，对吧？我说我一定得播报，因为我担心过两天达起来了，然后我们说好像我们没播报过誓的对不对？有的人就是对中印边境不是很care，不是很在意，觉得这终极半径吵来吵去吵了这么多年了对吧？我说这一次不一样。 </p>
+<p>当时我就说了，中国这一次在三条战线全部增兵，而且这个是盛集团制的，从湖北这边往这边增兵，整个铝的往这边增，而且不光是冰过来，整个设备装备对吧？我之前报道过了就是说是三军对峙，中国这边把空军的主力很多的精锐部队，而且最高级的几个战机，咱们现在吹的最牛的那几个全都调过去了对吧？而且从连舰艇都调过去了对吧？ </p>
+<p>陆地上我们之前说了什么火箭炮、坦克15轻型坦克对吧？全都到了。我就说你要明白，这么多的人力物力装备调过去了，不打调过去干什么？这么多装备过去了，如果不打的话，你有没有想过人吃马喂的？一天得多少？对不对？就那一个铝几几千人过去一天你光吃饭你看几天人不多，你你给几千人做一次饭，你就知道是多少人了，对吧？就天天张开嘴，而且都是大小伙子们都能吃的，对不对？这一天光人吃马喂的是多少？ </p>
+<p>对吧？不打的话不会调过去的，调过去就是已经做好准备了，对吧？就是说能谈妥咱谈，不妥咱就打。而且还有一点很重要是什么？就是说习近平现在要让大家知道，就是说中国的决心，很多人现在意识不到中国的决心，我经常说中国纳粹化了，就是说纳粹也是上来了之后帮德国发展经济，发展到一定程度之后就开始发展武力，然后就开始要向外扩张。中国现在改革开放几十年积攒了点钱，买了很多的装备，从部队来讲，我们1个航母舰，2个航母舰，然后我们现在准备要7个航母，然后跟下饺子一样的下战机，因为1个航母要最起码要有个5个到6个围着他想组1个航母舰队的对不对？ </p>
+<p>兵浜槟榔往底下下了这么多不打下这些干什么？对吧？中程弹道导弹发展了多少，这些年又准备了最近我们得到消息，他们带一个会员播报了我们现在最少有1000枚核弹头，对吧？我们准备了这么多东西，不打习习总花了这么多钱搞这个东西干什么呢？对吧？所以我说已经很明显能看得出来老习是要打了，而且要打的话，当时我就说你看周围这一圈能打的你宅着，除了印度还有谁？ </p>
+<p>对吧？我就说你像蒙古旁边下边什么柬埔寨、菲律宾、越南打的都没劲，对吧？当时我说你打了就跟徐晓东打，郭敬明一样，打赢了你也没什么可吹牛逼的，对不对？他没什么意思。 </p>
+<p>那边台湾一干可能跟美国干起来了，不愿意打。南韩、日本、台湾都是不好碰一碰，因为南韩和日本是由美国驻军，那一干就跟美国人干起来了。台湾由于美国的是在美国的保护范围之内，跟美国是有法律的，对吧？台湾保保障法等等一堆，现在保护他们一堆一堆法你知道吧？我都说不出说不出来那么多了。所以我说这意思就是说你看看周围打了打赢了能够吹个牛逼的，对不对？跟你感觉半斤八两的，还能打的是谁？就只有印度。 </p>
+<p>除了印度之外其实是没有人了，对吧？就是最合适的对于习近平来讲，最合适的就是打印度，而且把它打赢了，那就可以扬名立万，而且也要让美国让日本让等等其他的国家看看中国的决心。就是说我们不是光虎的，我不是不敢打，对吧？习近平不说竞无一人是男儿，什么意思？你不服不服咱试试对吧？ </p>
+<p>习老总就这个意思，所以前两天我就已经说了，我说我一定要播报，因为我很担心过不了几天就打起来了，等后来打起来之后，我没有拨你们突然小孩怎么打起来，一点提前准备都没有，对不对？ </p>
+<p>但是由于我们前几天一直持续的在坚持播报中印边境在增兵在等等的，我想今天开打了的话，对于别人的观众来讲，可能是个新闻，对于我们的观众来讲是有了心理准备的，对吧？我们不说是旧闻吧，但是最起码也是有心理准备的，对吧好吧？现在双方到底死伤多少，是不是8死11伤不见得准确。 </p>
+<p>中国方面现在他不说死伤数字是多少，印度现在因为它是个民主制的国家，它的信息就是说比较透明，然后他的媒体报道出来了，所以现在这个事我们只能看印度媒体报道，印度这方面的报道是这样，印方印度军方16日今天6月16号今天证实，他说他们这边死了三个，他说中国那边死了5个，伤了11个，加在一起一共是8死11伤，但是我不认为印度这边就死了三个没有受伤的，这个是不对的。 </p>
+<p>他说自己的时候都往少了说，说别人时往多了说都是这么一个情况，但是印度自己也承认自己虽然只死了三个，但是里边有一个高级将领是上校军衔，这级别很高了，被打死了，中国方面死了5个，伤了11个什么级别的咱们就不知道了。但是双方虽然打起来了，但是还是比较克制，双方没有开火，没有开枪，完完全全是冷兵器，贴身肉搏。但是你要想这种贴身肉搏打到最后8死11伤，那说明双方都下了狠手了。因为双方这已经不是第一次贴身肉搏了，对吧？ </p>
+<p>上个月我们报道过双方在边境150人大打了一场全架了，对不对？但是当时还是说赤手空拳，这一次是蟹斗，据我们所知双方用了各种的病人都上去了，所以说冷兵器上一次是赤手空拳打拳击，虽然150人的群殴最后还没死人，但这一次一抄家伙就不一样了。有人说是用了砖头用了棒子，但是有人说这里边有人用了不该用的设备说说有人在偷掏刀子了，说这掏刀子这是不对的，但咱不知道有没有，但是反正如果拿棍棒和砖头的话，打到最后8死11伤也是很惨烈了，但是这次反正双方都下了狠手了，你能看得到对不对？ </p>
+<p>一般来讲这打群架到打到了最后8死11伤，这说明双方已经是往死里干了，这是没有问题了，已经没有再收没有再收手了这个意思了，双方看来都忍不住了，现在反正印度方面的媒体报道说，两军的高层正在紧急斡旋，就是说希望不要现在说从打群架就是说到了蟹豆，在蟹豆再往上打热炸了，双方现在还不希望打热战，但是据我们得到的消息，习近平方面是非常强硬的，没有任何想要妥协的余地。现在就要看印度，现在中印边境中方是不会妥协的，态度非常强硬，就像钢板国安法一样，习近平是非常的强硬，根本国家法一定会通过，必然会通过，如果美方就是说抱有任何的侥幸心理，觉得自己吓唬吓唬说我要对香港制裁，我不承认香港的优惠地位，你就想把习近平吓唬回去，让习近平把港版官法推回去咽回去，这是不可能的。 </p>
+<p>习近平的这种坚决已经我觉得大家都应该看得非常清楚了，这个人是一个非常狠的一个人，没有任何的商量余地。在港版国安法上，包括在中印边境的问题上，就是说习近平画了一条线就在这里，印度接受不接受，如果不接受那就打，死人就死，不判。这就是现在我知道的中方的态度，习近平态度，没有妥协的空间，就是说你必须要接受这个某种程度上来讲，向习近平同志已经做好了就是说中印开战的准备了。 </p>
+<p>我再说一次，我们的空军精锐进出三条战线，兵力全都补足了。 </p>
+<p>据我们所知三条战线，4个都是这种什么那种整编制的这种装甲部队都已经订好了，已经准备好了，也就是说我不知道印度有没有做好准备，中方已经做好打热战的准备，我不知道印度总理莫迪有没有幕僚能够及时收听收看，1/4，如果能够及时收看吃饭死亡地的话，或者有谁有认识印度的幕僚的话，把我的话传过去。以我目前得到的消息，中方不会妥协，印度不接受的话后面还得打还得死人。而且你相信也好不相信也好，习近平同志在中印边境已经做好了打热战的准备，他不是没有心理准备，就是说打成这样之后他已经不怕了，然后你认为他不敢，他会告诉你他敢我现在就告诉你，就跟2018年我认为他不敢跟美国打仗贸易战一样，我现在告诉你他敢，而且某种程度上他心里可能更愿意，也更希望印度不妥协。 </p>
+<p>接着打。习近平有一个一个梦，一个老毛的梦，有一个就是说要超越邓小平，直追太祖老毛的这么一个梦，一个情怀，这种情怀这种梦必然要用军事来解决，不打一仗，没有点这种军功，没有点战功，是不可能超越小平，直逼太足的。所以习近平已经做好了心理准备了。 </p>
+<p>好吧，所以后面假如发展到最后打热战，我希望大家不要有任何的经验和震惊，要做好一定的心理准备。但是但是这么说有点悲观，最后说回来，我认为印度还是有可能吞下去的，因为目前的印度真的不适合跟中国打这一战，印度国内他自己的疫情控制的其实是非常的不好的。所以印度现在其实从自己来讲它是不想打，那么就要看印度莫迪能不能咽得下去，如果他能咽下去，就如果咽不下去，就开打。 </p>
+<p>对于莫迪呢我不好分析，也不好预言对印度咱们的消息，印度不知道他们为什么可能是不喜欢修脚，对印度的我还真的没有把握，但是对习近平我现在有百%的把握，我可以向你打百%的保证习近平绝不退缩，你不行就打，一定要做好准备。好吧？我希望所有人要做好心理准备。好吧，那么后面再有任何的情况，我们再跟大家及时汇报，这些先到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/16/20200616%E7%AC%AC2427%E6%9C%9F-%E9%87%91%E6%AD%A3%E6%81%A9%E7%96%AF%E4%BA%86%EF%BC%8C%E6%8A%8A%E6%9C%9D%E9%9F%A9%E8%81%94%E7%BB%9C%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%A4%A7%E6%A5%BC%E7%BB%99%E7%82%B8%E4%BA%86-pTDLVEpCS4E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/20200616%E7%AC%AC2427%E6%9C%9F-%E9%87%91%E6%AD%A3%E6%81%A9%E7%96%AF%E4%BA%86%EF%BC%8C%E6%8A%8A%E6%9C%9D%E9%9F%A9%E8%81%94%E7%BB%9C%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%A4%A7%E6%A5%BC%E7%BB%99%E7%82%B8%E4%BA%86-pTDLVEpCS4E/" class="post-title-link" itemprop="url">20200616第2427期-金正恩疯了，把朝韩联络办公室大楼给炸了</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 02:02:07" itemprop="dateCreated datePublished" datetime="2020-06-16T02:02:07+09:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/16/20200616%E7%AC%AC2427%E6%9C%9F-%E9%87%91%E6%AD%A3%E6%81%A9%E7%96%AF%E4%BA%86%EF%BC%8C%E6%8A%8A%E6%9C%9D%E9%9F%A9%E8%81%94%E7%BB%9C%E5%8A%9E%E5%85%AC%E5%AE%A4%E5%A4%A7%E6%A5%BC%E7%BB%99%E7%82%B8%E4%BA%86-pTDLVEpCS4E/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/16/20200616第2427期-金正恩疯了，把朝韩联络办公室大楼给炸了-pTDLVEpCS4E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月16号，星期二金正恩疯了，金正恩还今天这家伙他真的是有意思，他非常的疯狂，就是疯狂。 </p>
+<p>6月13号的时候，其实这个新闻出来了，我当时看到这个新闻了，我没太当回事，我觉得他就是说说他不敢真的怎么着。当时不是今人，今人他妹妹金与正，金正现在是朝鲜劳动党的第一副部长，职位也是很高了，算是一人之下万人之上了，说话是很有分量的。金隅政策还说什么对韩国就是说有一些脱北者使用北朝鲜跑到韩国去的，这些脱北者在韩国往北朝鲜这边往朝鲜发这种反朝的传单，就是说说我们这边过得特别的自由民主富裕，你们那边天天吃不上饭，肚子都长回虫，还不赶快就是说推翻了金氏王朝，我们一起来选总统，反正就类似的这种传单，这均与正就极为的不满，表达了不满，说你们必须要解决，如果你们不解决的话，我们要跟你们翻脸，韩国就解决不了，韩国是个民主国家，这种方正传单的韩国政府能怎么样？管不了，对不对？ </p>
+<p>军中就说要这样的话，我们就要以韩方一刀两断，跟韩国一刀两断的彻底，就是说三点，说我们接下来即将采取的下一阶段的行动，然后威胁说，说下一阶段的行动什么行动？就是对敌的行动，而且我们要把行使权交给朝鲜军的军队的总参谋部来实行，等于就是军事行动了，搞军事行动的这种威胁，就是6月13号的时候，发了这种特别的具有的战争意外的威胁性的这种言论。 </p>
+<p>他说了我没太当回事，我觉得一小女孩在这也不是小女孩，我觉得一个女的说两句狠话就得了，就没敢把它当回事儿。但是这里边实际上就已经暗示要采取军事行动了，对不对？因为他已经说要交韩军参谋总，而且朝军参谋总部了，总总操作部了对不对？你看怎么着？6月6号今天下午北朝鲜时间，朝鲜开他把朝鲜开城工业园内的韩朝联络办公室大楼给炸了，他真的是疯了，而且是疯起来是不管不顾。韩朝联络办公室大楼是当年在北朝鲜这边建了，建了之后就是要专门就是说当然算是跟韩国就是说友好，我们协商我们一起联络，有什么事我们要共同有无，然后算是有一个交流的渠道，避免一些误会。 </p>
+<p>这一次彻底把不是，我关键是什么，就是说你断交可以，你为了表示你很彻底跟他决裂了，是可以的，但是当初建这个楼也花了不少钱，楼建得很漂亮，网上有当年这个楼刚建好之后，什么剪彩仪式什么弄得可热闹了，对不对？ </p>
+<p>而且象征着朝鲜和韩国友好修过这个楼，对不对？你北朝鲜又没有钱，好不容易修了这么一个楼，你就算是跟他决裂了之后，你拿楼干点别的，你是实在不行你摆在楼你养你，你一楼养猪，二楼养鸭，对不对？你养点小动物也好，封起来真的是真的就是告诉别人封起来，我连自己都炸，直接给自己的韩朝留了办公室，整个把大楼给炸了。你知道就是他的这种思维方式，还有做事情的方式让你就是理解起来的，但是他可能觉得我用这种方式告诉你，我现在是有多么的强硬，我有多么的愤怒，而且我要不管不顾的要说实话，我觉得我不认为就是说这种行为会把韩国就是说吓怕了，你就把韩国人民就颤抖了，真的他就想通过这种方式告诉你，你在搞我这要真的要炸了，我要弄炸弹了，对不对？你那就不要让他们再发传单了。 </p>
+<p>我觉得从政治上他们可能南韩会跟这些脱北者，他们土匪者在南韩有一个各种组织，因为他们就是商量，咱们尽量也别打起来，但是能不能用这种方式将脱北者彻底放弃发传单呢？我看悬。不过咱们看一看，咱们看看这个文在寅这边，不文在寅同志还是就是说也不能算怂，他说是他一直都特别希望跟北朝鲜把关系搞得好一点，以至于有的时候看起来他有点就是说热脸贴别人冷屁股那种感觉了，都有一点对不对？ </p>
+<p>咱们看看温代言这一次能不能在克制自己。然后我相信以文在寅政府来讲，如果政府出面去跟着这些脱北者的组织去谈，让他们不要再发传单说再发，有可能咱们就打起来了，咱也避免战争，对不对？我觉得如果政府去施压的话，还是政府有很多的方法，因为这些脱北者的组织其实有的时候也是从韩国政府那边拿到一些资助支持等等的对吧？如果政府出面的话，我相信他们会给政府面粉。但是如果文在寅这么做的话，如果被韩国的媒体知道，如果被曝光的话，会显得他非常的难堪和软弱，所以我觉得文代银很可能不会这么做，不过咱们最后看我也不知道，因为文在寅也是个不好寓言的这么一个人，对吧？ </p>
+<p>咱们看到最后这个事情会怎么发展，但是当然咱这样咱也别说，不要说这种摸到良好的活化，我最讨厌说摸到良好的活化了，一定要有一个自己的断言。我断言文代人虽然很怂，但是他绝对不会去跟脱北者施压，为什么？不是他不想不是他不愿意，我觉得从信仰他是愿意的，但是他不敢这么做，为什么？因为南韩是一个民主的、言论自由的、媒体自由的、新闻自由的国家，虽然他想，但是我觉得他不敢，因为他如果这么做的话，一旦被媒体曝光，那么他就没法选举了，会对他的选举不利，所以就是民主国家它会有一个底线在，因为有新闻自由，所以上面不能一拍脑门想干什么干什么，不跟咱们似的。 </p>
+<p>咱们上边是今天高兴了，美国人民和中国人民的友谊地久天长，明天不高兴了，人类公敌鹏鹏奥，对不对？你们媒体什么都不要管，我们想怎么谈怎么谈对不对？老毛那时候也是前天还是什么打到美帝主义，第二天突然跟尼克松会谈了，大家都愣了，就什么都愣了，怎么就跟美国又有好了，对不对？所以我觉得像北朝鲜还有中国这种国家是可以的，想怎么着你知道吗？现在我需要干什么就干什么，不需要的时候我说但是向美国还有向南韩这种国家，它必须要遵守一个的基本的普世价值，政治伦理和一个政治底线。 </p>
+<p>所以我认为文代人不会屈服，也不是不会屈服，不能屈服是没办法屈服。好吧，这是我的分析，咱们后面看好吧，先讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/16/20200616%E7%AC%AC2426%E6%9C%9F-%E6%9B%9D%E5%85%89%E7%BE%8E%E7%9A%84%E4%BD%95%E4%BA%AB%E5%81%A5%E6%89%80%E8%B0%93%E2%80%9C%E8%A2%AB%E7%BB%91%E6%9E%B6%E2%80%9D%E7%9A%84%E7%9C%9F%E7%9B%B8%EF%BC%8C%E6%A0%B9%E6%9C%AC%E5%B0%B1%E4%B8%8D%E6%98%AF%E7%BB%91%E6%9E%B6-36IFYBvoXks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/20200616%E7%AC%AC2426%E6%9C%9F-%E6%9B%9D%E5%85%89%E7%BE%8E%E7%9A%84%E4%BD%95%E4%BA%AB%E5%81%A5%E6%89%80%E8%B0%93%E2%80%9C%E8%A2%AB%E7%BB%91%E6%9E%B6%E2%80%9D%E7%9A%84%E7%9C%9F%E7%9B%B8%EF%BC%8C%E6%A0%B9%E6%9C%AC%E5%B0%B1%E4%B8%8D%E6%98%AF%E7%BB%91%E6%9E%B6-36IFYBvoXks/" class="post-title-link" itemprop="url">20200616第2426期-曝光美的何享健所谓“被绑架”的真相，根本就不是绑架</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 02:02:06" itemprop="dateCreated datePublished" datetime="2020-06-16T02:02:06+09:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/16/20200616%E7%AC%AC2426%E6%9C%9F-%E6%9B%9D%E5%85%89%E7%BE%8E%E7%9A%84%E4%BD%95%E4%BA%AB%E5%81%A5%E6%89%80%E8%B0%93%E2%80%9C%E8%A2%AB%E7%BB%91%E6%9E%B6%E2%80%9D%E7%9A%84%E7%9C%9F%E7%9B%B8%EF%BC%8C%E6%A0%B9%E6%9C%AC%E5%B0%B1%E4%B8%8D%E6%98%AF%E7%BB%91%E6%9E%B6-36IFYBvoXks/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/16/20200616第2426期-曝光美的何享健所谓“被绑架”的真相，根本就不是绑架-36IFYBvoXks/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月16号星期二，昨天我们先是在会员专享里发了一期视频，说美的何享健被绑架的事情，对吧？当时在会员里那些视频，我就说我们得到的消息跟外面传的其实不太一样，对吧？我们说没有发生谈判，也没有发生拒补，而是警察来了之后直接大家主要问题就解决了，对吧？不是像他们说那样的什么绑了炸弹来绑票，然后和上百特警这个对峙，我说昨天在会员专享礼我们说了，以至于后来警方通报了说是5个绑匪抓住了之后，我们又录了一期对吧？会员都知道我们内部放的那期和我们后面放的这期不一样，以前来讲像这个事一旦承认了之后，我就会把我会员那些放出来，对吧？ </p>
+<p>但是昨天我没有我又录了一个，为什么就是说昨天我们就听到了一些消息就是说这个事里边有猫腻，有内幕，这个不是绑架，今天基本上就算梳理清楚了，我们给大家曝光一下所谓的所谓的被绑架的真相是什么？这根本就不是绑架，这是来要债的，是来讨债的，这不是绑不是绑匪，来的5个人是什么？是美的的供货商，美的他们不是造电器，造电器的话，它不可能所有东西都自己造，对不对？ </p>
+<p>最起码有一些螺丝可能是从别人那进的对不对？或者这儿进个铁板，那儿进点什么纸箱子，这都难免的对吧？让我自己的组组装一下对吧？苹果它那产品也不都是自己造的对吧？ </p>
+<p>有可能就是屏幕是三星的，芯片是比如说高高通的或映客的对吧？它也都是进货，进的货之后自己自己在在组装对不对？所以谁都是这样，美的也是这样，他有很多的供货商是给美的来供货的，供了货之后，比如说给了你1000万的货对不对？ </p>
+<p>这个货进来之后因为美的他大，你知道吗？大它就这个店大就7颗，就说一般来讲大家都很重视美丽的大客户，有的工厂我专门去给美的供货，我的工厂就够吃够喝了，所以他们怎么办？就这样我都得仰仗美的对不对？这样子美的就欺负他们，你供了货之后我先不给你钱，我先组装，等我卖出去了，我挣了钱我再给你，我没有钱我先就先欠着，就是说你先把货进来，然后拖多久，你说你这个拖多久就够狠了。 </p>
+<p>拖一个周期，一个周期是怎么叫一个周期？一个是它卖出去货之后，它回收板打板回收之后，你觉得多少多长时间一个周期你认为是合理的？半年，美的基本上每一次都拖人家几年的时间，长则五六年，少则两三年，一拖拖几年，对。但有人就说了一拖几年那公司就黄了，我给你供货货，我给你你不给我钱，我后面那批货我怎么生产？我没有钱了，因为我给你供的货也有可能是我从别人那里要买东西，对不对？ </p>
+<p>我在比如说我给你做螺丝对不对？我的机器是做螺丝，但是我得需要钢需要铁，我得跟别人买原材料，对不对？而且我还得买机器，我也需要别的供货商对不对？你资金周转我就不周转，对我给了你，然后你过几年你再给我，我这几年我拿什么钱去进货，我也需要生活，还有防备水电对不对？哪怕对你拖着我托着别人，但是最后分给水电还得交，我工资里发，我这个月不发工资，下个月他们不干活了，对不对？ </p>
+<p>在这种情况下怎么办？来这样，美的他就说我们给你想办法，你现在不没有钱了对不对？ </p>
+<p>他这样美的他的儿子何剑锋就跳河游到对面去报警，就他爹，何享健的爱他的儿子，他儿子搞了一个财务公司，财务公司干什么呢？专门借钱的。你把货给我了对不对？好。然后我们美的不给你钱对不对？你没钱去进货了对吧？ </p>
+<p>这种时候怎么办？你需要钱对不对？我借钱给你，我借给你，他儿子借钱给你，借点，钱给你之后怎么办？你拿着钱就可以去再进货再生产了吗？但这个钱我记得你是有利息的，我得挣这利息钱。明白了吧？而且是这样子，就是说你必须得跟我借钱，我这家财务公司的账，别人账我不认，你懂了吧？所以就是说本来这个钱是你美丽应该给我的，但是你不给我，然后你让你儿子你就是说比如说我给了你货，你也给我钱对不对？你不给我钱，你把钱给你儿子，让你儿子把钱借给我，借给我之后，我到时候还得还给你儿子利息。 </p>
+<p>所以它是这样子就是说美的指认这个公司的账单，所以你拿着这个账单你不借了，借了之后你不用管，到了日子之后，美的货款出来之后，会把这钱直接就给他儿子的财务公司，给了他儿子，财务公司他儿子把你不是跟他借的，他把本金利息抛完之后，剩下的再给你，懂了吧？ </p>
+<p>他这么玩你知道吗？然后就是说拿了你的货，反过来还要挣你的利息钱，然后就是说你要用你的应收账款去他那抵押，知道吗？他也指认了美的的应收账款，美的也只认他，而且出来钱之后美的不给你，美的直接给他，你懂了吧？爸爸直接把钱给了儿子，懂了吧？然后你拿着美的的应收账款去到那里，他也只认他来收，所以两家开父子店一起挣这些供货商的钱，然后一丫就丫好几年，你知道吗？ </p>
+<p>以前就这么搞了，大家也就算了，就觉得反正因为我跟着你美的干嘛对不对？我这厂子都靠你生活的，你儿子要多挣一笔算了，我也认了，我给他点利息不就他不要想挣点小钱，我给他一些我就算了，被你再为你盘剥一下对吧？雁过拔毛对吧？就算了。 </p>
+<p>但是因为这一次由疫情影响，下边的供货商彻底资金链就断了，周转不灵，周转不上来，拿不着钱，就是说就求求您了，您这压了我好几年的钱了，您能不能就给我？我实在的你再周转不过来，我这边我要出事了。何享健不理，你去死。没有过5年之后再说货，我拿了5年之后再来找我要钱，然后最后就是被逼无奈，供货商的就是全家老小，拖家带口，绑着炸药包什么爆爆炸物就来了。就跟老爷子就跟何享健就说了，您今天把钱算了，不还给我我就死在这，我也活不了了。 </p>
+<p>所以不是绑匪，是他妈来要账的，是供货商来要欠款，不是人家要挣你何享健的钱，而是你何享健的缺德，你欠别人钱不还。一个很想见，昨天我们说了260人260亿美元的资产，对不对？中国富豪榜都能排进去，反正就排了上位的人，最后就出这种事。一个供货商所有商家能够欠他多少钱，最后逼到供货商绑上炸药包到家里来要债，对吧？不当然了，咱们把话也要说回来。美的也不容易。美的现在也不是说他不想还钱知道吧？ </p>
+<p>其实通过这个事就暴露了一个问题，什么问题？你觉得美的是个很大的公司对不对？ </p>
+<p>告诉你实话，美的自己资金周转起来也有问题，当然很多人觉得胡说八道，美的那么有钱都富豪排行榜多少名的，人家会资金困难，你骗谁？ </p>
+<p>王思聪成老赖了，你想想王思聪成老赖了，王思聪都还不上，王思聪外面欠了20亿，他妈给他想尽一切办法还了1亿多，到现在还欠人钱还不上来。熊猫平台现在正在破产保护，申请破产。你想想对吧？美的再有钱，和尚将在有钱，有王健林钱多吗？对吧？你说王健林现在稍微如果周转还有点活钱的话，能让他儿子为了20亿，最后就被人要让法院给定成老赖了吗？对，你就想王健林家都没有余粮了，何况何享健呢。中国现在你不要以为像什么王健林、何享健这些知名的大企业家日子都特别好过，手里家里就是金山银山，好像你绑上炸药包以来，它后面一打开里面哗都是钱，没有那个事儿，知道吧？ </p>
+<p>目前现在的情况就是大家的日子都不好过，何享健也知道这么搞下去要出人命的，这么搞下去真要出人命的，但是现在暂时地主家也没有余粮，没有办法。中国现在怎么说大家勒紧裤腰带，可能苦日子要来了，真的。刚刚我们讲一些华为可能也要裁员，所以不要以为就是说好像万科多牛逼，华为多牛逼，日子过得多好过。不是的。The winter is coming，灵东将至。大家的日子都不好过。好吧，通过这件事你就能看出来。好吧，这就讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/16/20200616%E7%AC%AC2425%E6%9C%9F-%E5%8D%8E%E4%B8%BA%E5%B0%86%E5%A4%A7%E8%A3%81%E5%91%98-c5R7Cig9kVw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/20200616%E7%AC%AC2425%E6%9C%9F-%E5%8D%8E%E4%B8%BA%E5%B0%86%E5%A4%A7%E8%A3%81%E5%91%98-c5R7Cig9kVw/" class="post-title-link" itemprop="url">20200616第2425期-华为将大裁员</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 02:02:05" itemprop="dateCreated datePublished" datetime="2020-06-16T02:02:05+09:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/16/20200616%E7%AC%AC2425%E6%9C%9F-%E5%8D%8E%E4%B8%BA%E5%B0%86%E5%A4%A7%E8%A3%81%E5%91%98-c5R7Cig9kVw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/16/20200616第2425期-华为将大裁员-c5R7Cig9kVw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月16号星期二，华为将有大裁员，说是这谁说的，就是华为的全员工李彦宏，他在微博贴出是他们群组里边讨论的截图，说华为公司7月中旬会宣布大的变革，然后涉及到股权和财源，据说要从19万人降至10万人，我不知道有没有这么夸张。19万降10万等于裁员9万人。他说很多的退休的现在都选择了一半股票兑现，另一半保留，为什么？对现在大家对华为的都越来越没有信心了，就赶快把股票兑现就得了，把钱拿到手里。 </p>
+<p>李宏源是谁？去年就是说有拿了离职补偿，然后反被公司告敲诈勒索，然后被拘留了8个多月，华为员工还记得吗？他他曝光的。 </p>
+<p>本来按理说像这种东西应该搁在会员专享里，但我想了一下是这样，华为到底要不要裁员我不知道，但是李鸿源的的确确发了微博，他说他得到的消息，因为他现在跟华为里边很多的老员工什么都有联系，你知道吧？而且他们还有一个群，都是华为的很多的前员工涉及到维权。 </p>
+<p>据我们所知，就是说华为的前员工跟华为闹翻了，闹的不愉快之后，有很多人最终都进了监狱，而且据说华为有的时候还把新入职的员工组织去监狱里看那些在监狱里关着，老员工让他们知道，就是说要听这个公司的话，所以李鸿源他们有那么一片人都是老员工被华为害过的，他们的组织了一个全校李宏源不也是在拘留所里呆了8个多月，最后幸亏他就有当时谈话的这个录音为证对吧？ </p>
+<p>要是没有的话他也完蛋了，对吧？他也出不来了。 </p>
+<p>那么他们这帮人就在一起组成了这么一个群，然后有很多在华为里的员工觉得自己的可能位置要不倒，不保了就会联系他们加入他们的群，教他们群的目的是什么，跟他们学习一下跟华为的斗争的经验，就说我应该买什么录音笔，在哪儿录音，然后录完音之后我应该保留在哪儿，有什么法律法规是我应该注意的，大家都要小心，因为你也明白跟华为华为背后是有背景的，对吧？搞不好你就进去了，对吧？ </p>
+<p>所以我想李鸿源跟很多华为的前员工或现任员工之间有在私下里有各种的这种交流和联系，我相信还是是有的，而且李鸿源也是全国闻名的，跟华为有丰富斗争经验的老同志对吧？所以我相信他的爆料也应该我想不会是空穴来风，有一定的道理。 </p>
+<p>而且美国现在对华为是要赶尽杀绝，所以华为即使有大裁员，我觉得也是应该的，而且当时我就说我说其实不引渡孟晚舟其实不重要。 </p>
+<p>引渡孟晚舟这个事实际上是对木州的调查起诉抓捕，实际上这是奥巴马他们时期在搞的，都是周日之前的事，只不过就是延续下来，这一看奥巴马他们这种书呆子搞的没有用，当时我说你搞孟晚舟弄华为脱裤子放屁多费一道手，你直接就让台积电别给他造芯片了，他基本上就歇菜了，对不对？ </p>
+<p>现在美国最后川普看来他的幕僚还是及时收听收看了4栋鸡，最后还是让台店就不给华为共用芯片了，基本上那就歇了，后面还搞什么就没法搞了，对不对？你任何电器没有芯片之后还搞个屁，对不对？所以华为即使有大裁员，我认为也有可能，所以种种思考之下，我认为最起码我们虽然不知道华为是不是一定要大裁员，最起码有一点我们可以保证李宏源他的的确确发了微博说华为要大财险，这是事实对不对？我可以陈述这个事实吧，对不对？ </p>
+<p>最后李鸿祥如果说的不准，那是他的问题，跟我没关系，对不对？对吧？好吧，这先讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/16/20200616%E7%AC%AC2424%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%94%9F%E6%97%A5%E8%BF%99%E5%A4%A9%E5%88%9B%E9%80%A0%E6%80%BB%E7%BB%9F%E7%AB%9E%E9%80%89%E5%9C%A8%E7%BA%BF%E5%8B%9F%E6%AC%BE%E7%BA%AA%E5%BD%95%EF%BC%8C%E6%98%BE%E7%A4%BA%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%BC%97%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E7%83%AD%E6%83%85%E6%94%AF%E6%8C%81-m6O0jaBvu_o/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/16/20200616%E7%AC%AC2424%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%94%9F%E6%97%A5%E8%BF%99%E5%A4%A9%E5%88%9B%E9%80%A0%E6%80%BB%E7%BB%9F%E7%AB%9E%E9%80%89%E5%9C%A8%E7%BA%BF%E5%8B%9F%E6%AC%BE%E7%BA%AA%E5%BD%95%EF%BC%8C%E6%98%BE%E7%A4%BA%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%BC%97%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E7%83%AD%E6%83%85%E6%94%AF%E6%8C%81-m6O0jaBvu_o/" class="post-title-link" itemprop="url">20200616第2424期-川普生日这天创造总统竞选在线募款纪录，显示美国民众对川普的热情支持</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-16 02:02:04" itemprop="dateCreated datePublished" datetime="2020-06-16T02:02:04+09:00">2020-06-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/16/20200616%E7%AC%AC2424%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%94%9F%E6%97%A5%E8%BF%99%E5%A4%A9%E5%88%9B%E9%80%A0%E6%80%BB%E7%BB%9F%E7%AB%9E%E9%80%89%E5%9C%A8%E7%BA%BF%E5%8B%9F%E6%AC%BE%E7%BA%AA%E5%BD%95%EF%BC%8C%E6%98%BE%E7%A4%BA%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%BC%97%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E7%83%AD%E6%83%85%E6%94%AF%E6%8C%81-m6O0jaBvu_o/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/16/20200616第2424期-川普生日这天创造总统竞选在线募款纪录，显示美国民众对川普的热情支持-m6O0jaBvu_o/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月16号星期二，我们当然这刚过12点，从6月16号实际上是6月15号，昨天6月14号川普总统74岁的生日，昨天特别高兴很多人住川普总统生日快乐，然后在弗罗里达州还有就说是上天桥游船，都是老百姓的自发组织的，然后一起在海上出游，然后举着川普的旗子就是梅肯麦 make America great again，旗子支持川普的，然后去游行，在海上游行，开船游行，然后今天得到消息，我这样福克斯新闻说在6月14号总统生日这一天，抱歉，共和党以总统的竞选团队在线募集了1400万美元的捐款，刷新了他们在2016年10月19号创下的债券募捐的1000万美元的记录。 </p>
+<p>这是有史以来在线募捐的最高纪录。川普和共和党全国委员会目前已经拥有大约2亿多美元的捐款，民主党的侨周二班子只有大概就是说1亿和民主党的全国委员会加在一起有1亿美元。 </p>
+<p>我说为什么就是说从这里面你能看出来美国民众对川普的这种热情，当然有人说这是不是就是大额捐款，不是的，串普得到的就是说这一次在6月14号她生日这一天得到了捐款的在线捐款，平均每笔捐款是46美元，全部都是小额捐款，就能看出来这些美国民众对川普的支持，相反的拜登那边其实要经常有那些什么大的，就民主党那边经常有什么大财团，什么巴菲特，比尔盖茨，他都是支持民主党那边的，还有索罗斯这些比较著名的这些大财阀都是支持民主党那边的对吧？ </p>
+<p>但是即使是这样子，但是大财阀每人就是给你捐个100万200万到头了，不能再多捐了10多间，谁有那么多钱对不对？但是你这边可能都是捐的都是几十美元，可能三十几美元四十几美元，但是这边人多，你那边人少就说明什么就是说在选票的时候看到也是，所以这种大量的小额捐款是非常体现老百姓的这种热情的。 </p>
+<p>所以从这其实就是你从这里就能看出来今年大选的一个预演，你明白吗？就是说谁的小额捐款多，谁最后其实就比较有可能会赢得总统大选，对吧？2016年的时候，川普得到的小额捐款就比希拉里多，对吧？ </p>
+<p>好，再看川普竞选团队24小时募款的最高金额是川普在2019年发起连任总统竞选募款的当天。2019年就去年的时候，他说我要准备连任了，宣布的时候当天24小时之内获得的将近2500万美元的捐款，但是不光是在线的了，都有线上线下都有。那么在当时的时候，他的得到了99%的捐款，都小于200美元，平均每人捐款的34块2毛6，这都是小额捐款就能看出老百姓的热情，我想从所有那些还抱有幻想，就是说对拜登抱有幻想在哪，我觉得你看到这个之后你就明白了，这种东西其实是实打实的，真正的发自内心的支持。 </p>
+<p>好吧？然后你在网上自己去搜索，昨天总统生日的时候，那些驾着船去和尚游行的，对吧？我希望大家心里就有个数了。好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/16/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/18/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

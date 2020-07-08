@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/25/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/25/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2383%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E6%B1%87%E4%B8%B0%E9%93%B6%E8%A1%8C%E6%9C%80%E5%90%8E%E8%BF%98%E6%98%AF%E7%BB%99%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E8%B7%AA%E4%B8%8B%E4%BA%86-ZY83wgrAFVU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2383%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E6%B1%87%E4%B8%B0%E9%93%B6%E8%A1%8C%E6%9C%80%E5%90%8E%E8%BF%98%E6%98%AF%E7%BB%99%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E8%B7%AA%E4%B8%8B%E4%BA%86-ZY83wgrAFVU/" class="post-title-link" itemprop="url">20200611第2383期-英国汇丰银行最后还是给中国共产党跪下了</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:03" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:03+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2383%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E6%B1%87%E4%B8%B0%E9%93%B6%E8%A1%8C%E6%9C%80%E5%90%8E%E8%BF%98%E6%98%AF%E7%BB%99%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E8%B7%AA%E4%B8%8B%E4%BA%86-ZY83wgrAFVU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2383期-英国汇丰银行最后还是给中国共产党跪下了-ZY83wgrAFVU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号星期四，之前我们说了前香港特首梁振英当时恐吓英国的汇丰银行，说你们为什么不对港版的国安法表态，如果不表态支持的话，你们的业务你们在香港的业务很容易就会被其他银行去提去取代这种我真没想到作为一个前特首出来说这种就是说有点像黑社会流氓收保护卫士的语言，但是不管怎么着，把汇丰银行给中国共产党跪下了，汇丰银行在其微信账号上，以汇丰银行亚太地区执行总裁签署支持新法请愿为标题，发出声明说作为香港银行工会的一个重要成员，汇丰银行重申在一国两制的原则下，尊重和支持稳定香港社会秩序，提振经济，促进繁荣的各项法律。 </p>
+<p>汇丰银行的微信还贴了一张照片，是汇丰银行亚太区行政总裁王冬胜，6月3日在香港湾仔地铁站附近的就是支撑的称，香港国安法的签名处签名支持港版国安法在香港实施。王冬胜是全国政协委员，中国的全国政协委员，香港总商会主席，他接受了新华社的采访，他说香港商界普遍认为香港公安法是一个正确的方向，希望香港公安法可以为香港带来长远的繁荣稳定。 </p>
+<p>美国国务卿蓬为傲，6月9号斥责汇丰银行说支持中国终结香港自治权的行动。他说像这种企业像北京磕磕磕头的行为，不会从北京方面得到尊重，北京方面不需要你要尊重，需要你害怕就可以了。英国议会下院保守党领袖保守党的领袖李思明说说，总部位于伦敦的汇丰银行与中国政府的关系比与英国政府更为紧密，这话说的你品这味道，英国保守党的议员头跟达特批评惠峰说，汇丰银行作出和作出相同表现的渣打银行的选择，支持专制政府压制自由和损害法治，不符合企业社会责任。 </p>
+<p>但不管怎么样，汇丰银行还是给中央政府跪下了，但是这个来讲我觉得真的不能怪汇丰银行对吧？我经常说你作为美国政府也好，英国政府也好，如果你不能保护他们的话，你的孩子在那里，对不对？他有大量的资产在那里，他可能被人家就霸0了，就被人欺负了，你能保护他，你保护他你保护不了他，你怪他是没有用的，对不对？你现在能不能拿出强有力的手段来保护中国银行，保护大家，银行你保护不了，然后你怪他，对不对？ </p>
+<p>比如说你班里的女同学被人强奸了，对不对？然后你惯着女同学你怎么不知道自杀，你怎么不跳井呢？对吧？你不能这么搞对不对？你没有去保护他，他现在这样你怎么办？他就是在人家眼皮底下对不对？人为刀俎，她为鱼肉，对吧？所以我觉得我希望美国国务卿彭佩耀的也好，英国议会的下院的什么领袖也好，能够想想一些真正有强有力的办法来帮助和保护英国的汇丰银行。好吧，这一讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/11/20200611%E7%AC%AC2382%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%99%AE%E4%BA%AC%E6%81%B3%E6%B1%82%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%A0%B8%E8%B0%88%E5%88%A4%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C%E5%B8%A6%E9%A2%86%E5%85%A8%E7%90%83%E8%BF%9B%E5%85%A5%E6%A0%B8%E7%AB%9E%E8%B5%9B-roQc3W8c-Is/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/11/20200611%E7%AC%AC2382%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%99%AE%E4%BA%AC%E6%81%B3%E6%B1%82%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%A0%B8%E8%B0%88%E5%88%A4%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C%E5%B8%A6%E9%A2%86%E5%85%A8%E7%90%83%E8%BF%9B%E5%85%A5%E6%A0%B8%E7%AB%9E%E8%B5%9B-roQc3W8c-Is/" class="post-title-link" itemprop="url">20200611第2382期-川普普京恳求习近平核谈判，习近平一意孤行带领全球进入核竞赛</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-11 01:08:02" itemprop="dateCreated datePublished" datetime="2020-06-11T01:08:02+09:00">2020-06-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/11/20200611%E7%AC%AC2382%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%99%AE%E4%BA%AC%E6%81%B3%E6%B1%82%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%A0%B8%E8%B0%88%E5%88%A4%EF%BC%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C%E5%B8%A6%E9%A2%86%E5%85%A8%E7%90%83%E8%BF%9B%E5%85%A5%E6%A0%B8%E7%AB%9E%E8%B5%9B-roQc3W8c-Is/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/11/20200611第2382期-川普普京恳求习近平核谈判，习近平一意孤行带领全球进入核竞赛-roQc3W8c-Is/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月11号，星期四之前我们说过美国一直在恳求习近平能够考虑一起加入核裁军的谈判，那么川普找了普京，希望普京能够跟习近平谈谈，能够劝习近平加入削减核武器的谈判当中来。 </p>
+<p>那么6月9号星期二的时候，俄罗斯的外交部的副部长就美国要希望普京恳求习近平加入和谈判发表了声明，他说是这样，他说俄罗斯不期待中国的立场有变化，俄罗斯说中国目前的立场就是不要加入核裁军，他说俄罗斯现在劝不动中国来加入讨论没有办法，现在俄罗斯也不知道美国是否觉得和俄罗斯讨论协议依旧有必要，就是说如果不中国不加入的话，我们还有必要谈吗？或者说美国觉得中国的参与是和俄罗斯谈判的必须的前提条件，这个俄罗斯由美国来决定，但俄罗斯是愿意谈的，你能看得出来对吧？ </p>
+<p>俄罗斯就是我们愿意谈了，我们也劝了习近平，实在是劝不了，怎么劝他都不听，就没办法。所以拉布科夫外交部的副部长说，说一旦新版的协议如果能够达成的话，他说当然也需要扩大谈判，包括法国和英国。那么法国和英国也表态，就是说如果美国中国俄罗斯能够达成和小姐的协议的话，他们也愿意经常一起来讨论一起来谈，大家其实现在都希望核武器不要扩军对吧？对全世界呢都是一个好处。 </p>
+<p>但是胡希进同志已经替习近平同志已经喊出来了，中国现在实际上已经和扩军了，目前中国的核武器数量差不多，就已经超过了1000枚，这是事实。胡郁进喊的是中国药，实际上中国已经做到了，中国都是这样，中国每一次都是底下先偷偷的干，干的差不多的，让胡静经常让他们喊一喊，试一试口风，但是实际上就告诉你我已经超过1000枚了。 </p>
+<p>目前中国就是这么一个情况，现在本来我想说就是说目前现在全球来讲，从美国的川普，俄罗斯的普京到法国，英国其实都愿意消减核武器，现在唯一全球唯一一意孤行要把全球带入和竞赛，就是习近平，后来我想这个说法是不对的，不能这么说，应该说是为二，因为还有一个人现在全部全球有两个就一定要进行核试验，研发核武器的，还有一个就是习近平的好兄弟，金正恩现在世界上围绕了两个，一个就金正恩，一个是习近平，就一个北朝鲜领导人，一个西朝鲜的领导人，手挽手带领全球进入核竞赛，习近平的野心我觉得很有可能。 </p>
+<p>说实话金正恩玩命搞这个还不可怕，因为北朝鲜毕竟是一个还比较小的国家，但是中国不是现在越来越越看出来，就是说一旦就是说将来我们如果真的进入了第三次世界大战的话，那么导火索就是战争狂人的习近平同志。好吧，这些讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2381%E6%9C%9F-%E7%9C%8B%E6%87%82%E5%85%B1%E5%92%8C%E5%85%9A%E5%A5%B3%E8%AE%AE%E5%91%98%E7%9A%84%E7%AB%9E%E9%80%89%E8%A7%86%E9%A2%91%E4%BD%A0%E6%89%8D%E7%9C%9F%E7%9A%84%E6%87%82%E7%BE%8E%E5%9B%BD-5qUuwiY_-JM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/09/20200609%E7%AC%AC2381%E6%9C%9F-%E7%9C%8B%E6%87%82%E5%85%B1%E5%92%8C%E5%85%9A%E5%A5%B3%E8%AE%AE%E5%91%98%E7%9A%84%E7%AB%9E%E9%80%89%E8%A7%86%E9%A2%91%E4%BD%A0%E6%89%8D%E7%9C%9F%E7%9A%84%E6%87%82%E7%BE%8E%E5%9B%BD-5qUuwiY_-JM/" class="post-title-link" itemprop="url">20200609第2381期-看懂共和党女议员的竞选视频你才真的懂美国</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-09 01:08:01" itemprop="dateCreated datePublished" datetime="2020-06-09T01:08:01+09:00">2020-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/09/20200609%E7%AC%AC2381%E6%9C%9F-%E7%9C%8B%E6%87%82%E5%85%B1%E5%92%8C%E5%85%9A%E5%A5%B3%E8%AE%AE%E5%91%98%E7%9A%84%E7%AB%9E%E9%80%89%E8%A7%86%E9%A2%91%E4%BD%A0%E6%89%8D%E7%9C%9F%E7%9A%84%E6%87%82%E7%BE%8E%E5%9B%BD-5qUuwiY_-JM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/09/20200609第2381期-看懂共和党女议员的竞选视频你才真的懂美国-5qUuwiY_-JM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月9号，星期二以前就有一种说法，说你如果不理解川普的话，其实你不真的懂美国人，川普身上有很多那种典型的美国人的特点和特征就是说比较粗俗，骂骂咧咧的，但是人其实不坏。你看美国电影里老是那样子就骂骂咧咧的，我操你妈那个来了对不对？但是然后特别粗俗，但是真的发生问题的时候，他选择的正确的，他心里是有善良的东西，在川普就特别典型的那种美国那种就是红脖子那种典型的南方红脖子那种特别粗俗的那种美国人，知道吧？ </p>
+<p>然后现在就开始出现了以奥巴马为首的这种典型的白左，我要说就是说如果你光看这种白做什么来配的司机阿巴玛这种的话，其实你不明白真正的美国人是什么样子，很多人总觉得美国人好欺负，都是那样的，你知道吗？ </p>
+<p>美国现在怎么样了？知道吧？觉得就好像有的人咚咚的跟我说说，现在没有敢干吗对不对？中国现在这么强，美国这么怕死，我说你真的你不了解美国人，你真的了解美国人了之后，就我劝你你不要这么搞，美国人很虎的那种彪悍的西部牛仔的那种东西，你知道吧？你吓唬他，你看他是受你吓唬的主吗？你知道吧？你真狠起来不见得谁比谁狠，好不好？ </p>
+<p>我现在我告诉你，我给你看一个美国共和党一个女众议员的竞选视频，你能看懂了这个视频你才真的懂美国。 </p>
+<p>你看美国是什么，我把他这竞选视频他竞选时不长就18秒，我把它链接一会搁在我视频下方，你自己去看一下，它是英文的，有的人可能读不懂，我告诉你他讲的是什么，其实就18秒就很简单，他端着他的枪，端着他那杆枪，他就说美国总统川普宣布了安迪卡是国内恐怖组织，他说我有一个信息，我有一个message给这些恐怖组织，我要给你们给你们捎个信，信是什么？ </p>
+<p>他一拉枪栓就是告诉你这就是我的消息知道吗？他说我告诉你们，我希望你们不要到佐治亚州来，如果你们来了之后，你们要敢来烧我们的教堂，洗劫我们的店铺的话，对不对？什么叫不用说一拉枪栓，你自己看着办对不对？他说也不要摧毁到我们的家园，就是这样。非常的典型的美国的那种tough girl，你知道吗？就那种彪悍的美国老娘们的那种感觉，你能看懂了你才能真的明白了，美国这就是美国就是一种美国精神，你知道吧？所以凡是那种觉得美国人怂了，美国人怕了，美国人不敢干，你试试。 </p>
+<p>最近这几天我前两天我还发了一个照片，我看看我还有没有就是这个知道吧？这个照片就是非常典型的美国式的，就是他说哥们他说的你永远看不到美国是有有难民，知道吧？你看别的国家不一打仗了吗难民就出来了，就往外国跑对不对？ </p>
+<p>叙利亚打仗了，然后难民就往中东跑，往往欧洲跑往德国跑往上跑，他说你在美国你看不到难民，加拿大你不用担心，有了难民的我们往你家大跑，没有往墨西哥搞不会的，美国不会的。他说当美国在美国如果事情变得糟糕了，事变的不太好的时候，他说我们不会逃到别的国家去，我们会把枪拿出来的好好的擦擦枪，然后把糟糕的事情解决好，这就是美国精神。这就是所以它就宪法第二修正案赋予了美国人民持枪的权利。 </p>
+<p>所以为什么我在美国，其实我也是反对金枪，我也认为老百姓应该有强，老百姓有枪才能够有话语权。其实美国人民的话语权不光来自于美国的法制，也来自美国人民手里的步枪。所以这就是美国你们自己去看一下，看一下这个视频，然后你体会一下到底什么是美国，什么是美国精神？在这种情况之下，我希望我不知道北京习近平能不能看到，我希望习近平也看一下美国的女的众议员的竞选的视频，然后去思考一下。好吧，继续讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2380%E6%9C%9F-%E6%B0%91%E4%B8%BB%E5%85%9A%E5%9C%A8%E5%9B%BD%E4%BC%9A%E6%8F%90%E5%87%BA%E6%94%B9%E9%9D%A9%E8%AD%A6%E9%98%9F%E8%AE%AE%E6%A1%88-5nYErb8n7Z4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/09/20200609%E7%AC%AC2380%E6%9C%9F-%E6%B0%91%E4%B8%BB%E5%85%9A%E5%9C%A8%E5%9B%BD%E4%BC%9A%E6%8F%90%E5%87%BA%E6%94%B9%E9%9D%A9%E8%AD%A6%E9%98%9F%E8%AE%AE%E6%A1%88-5nYErb8n7Z4/" class="post-title-link" itemprop="url">20200609第2380期-民主党在国会提出改革警队议案</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-09 01:08:00" itemprop="dateCreated datePublished" datetime="2020-06-09T01:08:00+09:00">2020-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/09/20200609%E7%AC%AC2380%E6%9C%9F-%E6%B0%91%E4%B8%BB%E5%85%9A%E5%9C%A8%E5%9B%BD%E4%BC%9A%E6%8F%90%E5%87%BA%E6%94%B9%E9%9D%A9%E8%AD%A6%E9%98%9F%E8%AE%AE%E6%A1%88-5nYErb8n7Z4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/09/20200609第2380期-民主党在国会提出改革警队议案-5nYErb8n7Z4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月9号，星期二6月8号，民主党的众议院的议长南C佩洛西和参议院的少数党领袖，这都是他们民主党的查核书末两个人共同提出的要参政两院的民主党共同提出了要改革警队的议案，说实话对议案的某些部分我是赞同的。 </p>
+<p>我不是说百%不赞同，我有一些部分我是赞同的，这里边不是说没有好的，但是民主党在搞什么，他们经常都这样，他们在一些好的里边夹杂一些不好的，他们是明修建道暗渡陈仓。说到栈道，明明修栈道，小栈道，你看他好，我说怪我，阿明修栈道暗度陈仓，好吧？说议案这内容什么有一些内容我支持，但是我支持的内容他说要强制所有警员要携带摄录装备，就是说要带着摄像头，执法了之后要有执法记录，然后禁止在拘捕的时候向疑犯锁喉或者勒着他脖子，而且禁止警察在没有知会对方的情况之下直接破门入屋，还要求降低警察有限制的豁免权的门槛，避免有关法案成为警察的免死金牌。 </p>
+<p>那么怎么回事？就是说之前通过了一个法案，就认为假如我认为住宅是贩毒的话，那么就要允许我有了法院批的送达令之后，直接就可以破门入屋，为什么？因为以前是要敲门，要不要等他来开门才能进去，这样就导致了警察一敲门，他们就把毒品都倒到马桶里冲走了，进去之后没有任何的证据了，你懂吧？ </p>
+<p>所以就是说但是有了这个之后，它出现了一些问题，比如什么问题？在3月份的时候就有过这么一个新闻，说警察突然的半夜破门而入，啪一进来，然后里面有住着一男一女两个都是非洲裔的美国人，然后这女的一看有人破门而入，好像去掏自己的武器要跟警察，他不知道是警察吧，他以为是坏人冲进来了，对不对？他就要跟他们就打，结果被警察直接就击毙了，这女的被打死了，打死了之后，然后警察一搜查发现地址搞错了，他们要去的是一个多是个贩毒场所，然后地址搞错了之后，不是这间屋，这屋里的人是无辜的把这女的给打死了，而且搜查令和逮捕令也不是这间屋的地址搞错了，出现这种问题，现在我就认为你如果这么搞的话，起步警察有了免死金牌了，对不对？你们这么随便冲着人，我说对不起，我看错了地址看错了，把人打死了，对不对？ </p>
+<p>这个是绝对没有问题的，这些是我支持的，但是削减警队的预算，消减警察的人手，这个是我不支持的就是说对警队进行改革，的确是应该对美国警界进行改革，尤其美国警察，他现在这种执法的自由度太高了。 </p>
+<p>我经常都说美国警察的执法自由度太高了，导致有一些警察简直就是为所欲为，甚至有一些警察胡乱开罚单，我们在纽约很多华人都遇到过这种警察，莫名其妙的把你拦下来，然后噼里啪啦噼里啪啦给你开的一个几百块钱，甚至有的时候是几千块钱的罚单，然后你就必须你要去跟他打官司去，要告很多的时候能够打掉一部分，这不可能都打掉的。你知道吗？然后你就莫名其妙的就吃了这种罚单，就是为它的业绩再去冲业绩，因为他们最终就是说有一个要求，这些东西都是一些弊端，我以前也吃过这种类似的莫名其妙的罚单，你知道吗？就是他在那守株待兔，然后你过来的明明stop site，其实我觉得我是停了的，但他偏要说你没停，最后我找到律师去打，最后也没打掉。 </p>
+<p>不过就是说这种事就没法说，所以但是你不能够说你通过这些的时候把一些莫名其妙的东西加进去，我觉得民主党反正咱们看我相信议案提出来之后，在众议院应该能通过，到了参议院肯定有问题，参议院我相信也应该我认为最终也会过，但是过的版本跟众议院的版本肯定不一样，那么最后两党就要去商量，把这个版本搁到一个两党最终都能接受的一个情况之下，就说也不能太多，也不能太优，我觉得这种民主制的一个好处，就是说如果这在一个独裁专制的国家发生了这个问题，大脑一拍脑门，对不对？就马上跑到另外一个极端去了。 </p>
+<p>但是美国它就有一个纠偏，它不会让民主党一下就把大家带到极左的狂欢当中去，对吧？但是就是说我刚刚说的这几条我都是支持的，我也都接受，我认为这几条我觉得参议院的共和党也能够接受，但是这个法案如果最后通过不了，那就什么？就是他要捆绑。就是说你要接受这几条的话，就要把我其他的也要接受。工党可能就会不接受，那不接受的时候民进党就会说到，你看我要什么禁止，我要让警察携带这个是摄录装备，禁止局部的时间锁喉，他们都不同意，你懂吗？这就是一个陷阱。 </p>
+<p>他知道有一些东西，比如说我把巧克力做成巧克力巧，巧克力泥，然后里面裹了一块石，然后我说给你吃巧克力，然后你不吃，我就跟别人说，你看我就说这么好的瑞士巧克力，瑞士黑巧克力我自己都舍不得吃，我拿给他吃，他不吃他还骂我，对不对？问题你巧格里面裹了一块使大家都知道你懂吗？你就逼着我要吃这巧克力，别的把一块吃一块吃了对不对？那谁愿意吃给你，你吃吗？你也不吃，我拿盒巧克力里面裹着屎你吃吗？你也不吃你懂吗？ </p>
+<p>就好像这一次通过弗洛伊德这个事件也是搞这个事情，他就是一个一个陷阱，这是一个trap，什么trap？就是说我来全国我来发起的示威游行，然后我来煽动搞一些暴力，你串播怎么办？如果你不管你一看你投你投鼠忌器，现在群众热情这么高高涨对不对？如果我像券没现在那么强制去，就说你暴君你读财，你不让我们诗人游行对不对？好。 </p>
+<p>如果你不强力的调国民警卫队来压制的话，我们就胡搞、抢劫、偷盗、放火、打抢招，然后就会说川普无能控制不住，整个美国失控了，对不对？ </p>
+<p>你现在调到国民警卫队来强力的去镇压恢复法律和秩序，他们就会说你暴君独裁，把枪口对着人民，你明白吗？就这个事出来之后，不管你怎么做，你都是不对的。这就是一个check，这个也是你懂吗？这个议案提出来就是为了骂你的，明白吗？最后你肯定是不对的，明白吧？所以你必须要明白，这就是他们非常聪明，这是一帮的标准的职业的政客，他非常的会演戏，说那些漂亮的就是说哄骗你知道吗？所以你看着就觉得这么好的，他自己都舍不吃的，瑞士的黑巧克力他拿来给我吃，你吃吃完之后你尝尝后边是什么，好吧，这些就到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2379%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%8F%8D%E5%AF%B9%E5%89%8A%E5%87%8F%E8%AD%A6%E9%98%9F%E6%8B%A8%E6%AC%BE%EF%BC%8C%E5%B7%9D%E6%99%AE%E8%AE%A4%E4%B8%BA%E7%99%BD%E5%B7%A6%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%96%AF%E4%BA%86-K4_7gS5vTDc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/09/20200609%E7%AC%AC2379%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%8F%8D%E5%AF%B9%E5%89%8A%E5%87%8F%E8%AD%A6%E9%98%9F%E6%8B%A8%E6%AC%BE%EF%BC%8C%E5%B7%9D%E6%99%AE%E8%AE%A4%E4%B8%BA%E7%99%BD%E5%B7%A6%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%96%AF%E4%BA%86-K4_7gS5vTDc/" class="post-title-link" itemprop="url">20200609第2379期-川普反对削减警队拨款，川普认为白左们已经疯了</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-09 01:07:09" itemprop="dateCreated datePublished" datetime="2020-06-09T01:07:09+09:00">2020-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/09/20200609%E7%AC%AC2379%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%8F%8D%E5%AF%B9%E5%89%8A%E5%87%8F%E8%AD%A6%E9%98%9F%E6%8B%A8%E6%AC%BE%EF%BC%8C%E5%B7%9D%E6%99%AE%E8%AE%A4%E4%B8%BA%E7%99%BD%E5%B7%A6%E4%BB%AC%E5%B7%B2%E7%BB%8F%E7%96%AF%E4%BA%86-K4_7gS5vTDc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/09/20200609第2379期-川普反对削减警队拨款，川普认为白左们已经疯了-K4_7gS5vTDc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月9号星期二，川普今天在白宫接见了执法人员和警队的代表，然后川普向他们承诺说不会削减警队的拨款，也不会解散警队。他表示警察让民众能够在和平中的生活，说政府只要确保警队没有害群之马就可以了。他说他相信99%的警察都是好人。川普还在推特上发文说美国要有法律和秩序，不会削减警队的拨款和解散警队。他说民进党的白左门已经疯了。 </p>
+<p>白宫发言人麦克纳尼说，总统对于要求解散警队感到震惊，洛杉矶和纽约市的市长分别决定削减警队预算，意味着要削减的警队的人手和减少到警察局的数目，他说川普总统和其他美国人都是不同意的。我不知道洛杉矶的市民和纽约市市民怎么样，反正代表的我现在也算是纽约市市民对吧？因为我驾照也是纽约市的，对不对？ </p>
+<p>我现在地址也在纽约市，我作为纽约市的市民，我也是不同意削减警队的预算，我不认为纽约这种城市削减警察和监察检察局的数目对纽约市的市容市貌是有好处的，我觉得川普是对的，我觉得民主党的白佐们已经疯了，真的是疯了。这样子是在胡搞，真的是在胡搞。在这点上来讲，我是支持总统川普的，至于其他的华人怎么想的，我就不知道了，你们自己去决定好吧？这期讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/24/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><span class="page-number current">25</span><a class="page-number" href="/page/26/">26</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/26/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

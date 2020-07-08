@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/11/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/11/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/27/20200627%E7%AC%AC2457%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%A2%9E%E5%85%B54.5%E4%B8%87%E5%87%86%E5%A4%87%E4%BB%8E%E4%B8%AD%E5%9B%BD%E6%89%8B%E4%B8%AD%E5%A4%BA%E5%9B%9E%E9%98%BF%E5%85%8B%E8%B5%9B%E9%92%A6-tO8f5LOQ7kw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/27/20200627%E7%AC%AC2457%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%A2%9E%E5%85%B54.5%E4%B8%87%E5%87%86%E5%A4%87%E4%BB%8E%E4%B8%AD%E5%9B%BD%E6%89%8B%E4%B8%AD%E5%A4%BA%E5%9B%9E%E9%98%BF%E5%85%8B%E8%B5%9B%E9%92%A6-tO8f5LOQ7kw/" class="post-title-link" itemprop="url">20200627第2457期-印度增兵4.5万准备从中国手中夺回阿克赛钦</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-27 02:05:07" itemprop="dateCreated datePublished" datetime="2020-06-27T02:05:07+09:00">2020-06-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:40" itemprop="dateModified" datetime="2020-07-08T12:26:40+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/27/20200627%E7%AC%AC2457%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%A2%9E%E5%85%B54.5%E4%B8%87%E5%87%86%E5%A4%87%E4%BB%8E%E4%B8%AD%E5%9B%BD%E6%89%8B%E4%B8%AD%E5%A4%BA%E5%9B%9E%E9%98%BF%E5%85%8B%E8%B5%9B%E9%92%A6-tO8f5LOQ7kw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/27/20200627第2457期-印度增兵4.5万准备从中国手中夺回阿克赛钦-tO8f5LOQ7kw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月27号星期六，印度媒体叫吉尼斯，他6月26号报道，昨天报道说随着中国增加在中印边境的部署，印度也在达拉克部署了三个师的兵力来增强实力。说此外印度还将最强大的90坦克部署到了达拉克的东部地区，说现在已经做好准备，要从中国手中夺回阿克塞新。说1962年中印冲突之后，爱克赛金约3.8万平方公里的领土处于中国的控制之下，他对此极为不满，其实我觉得之前我也说过了，印度的对1962年的中印冲突是非常的难以释怀，一直就是说要把它找回来。 </p>
+<p>他说当时在1962年中印战争的时候，印度在达拉克边境只有一个旅，2000多是一个士兵组成的部队，所以他把扎拉克他把就是说阿克泰新政丢了这么一部分，他说但现在不一样了，他说现在印军在达拉克边境部署了有三个师，有45,000名的士兵增兵了，但是这个有点吹牛逼，美国的卫星拍摄的显示，它差不多其实是3万多人，应该没有到45,000，他现在都是在吓唬你，他们不光吓唬你，他还说在这种地带印军的战斗力一个顶12个，说是的胡说八道，说他说最少就是说就是说反正最少顶10个，就是说我们45,000，中国方面需要45万人才能拦得住我们，因为我们的一敌十，我们一个个都跟小老虎一样，印度人吹牛逼也得有人拦着点，没人拦着点也是能吹到月球上去，你知道吗？ </p>
+<p>然后对于缪斯还说这个倒是事实，他说什么？他说埃克塞心是中国连接新疆与西藏的重要通道，如果该通道受阻的话，中国将只能穿越格拉昆昆仑山脉，所以阿克塞新的战略地位非常重要，是中亚地区的一个最高点。所以印度从这里可以监视中国如如果，中国占领了中国就可以监视印度。所以印度现在就是想把阿克泰新的完完全全的夺回来，而且现在印度从头到下，从媒体到政府到党派，完完全全的不掩饰，想要借这个机会夺回阿克塞新的愿望。 </p>
+<p>说印度现在的执政党的啊，他的执政党的印度人民党的总书记马拉夫6月24号表示，阿克塞新属于印度的达拉克中央直辖区，知道吧？ </p>
+<p>说是我们的领土我们要把它夺回来，45,000是吹牛逼，但是3万多人没有问题，3万多人实际上也是增兵了，增加了这么多人，说句实在的3万多人兵过1万就没边没样兵，过10万是彻地连天，3万多人已经很多了，尤其是现在战争都是用的，不像以前以前是拿着长枪大长枪呢呃大刀长长毛对不对？去拼，那时候人还不显，你现在再在加上什么坦克机关枪大炮的那3万多人的战斗力，可能跟以前来讲可能你30万都打不过这3万元，对不对？战斗力是非常强，的啊。 </p>
+<p>在这种情况之下，我认为恐怕是要开战，为什么3万多人顶上来了，人吃马喂是多少？这么多的设备坦克都上来了，如果双方不想打的话，不会花这么多钱人力物力的顶上来。所以我认为双方看来我还是一直都很悲观，和谈的结果我是完全不看好，双方到现在为止全部都在增兵。之前我也报道了，中国也在增兵，现在印度也在增兵，而且印度现在就是说要把阿克塞新夺回来，从上到下都有这个想法。 </p>
+<p>我们看看看什么时候开打，我要给大家及时汇报好吧？执行到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/27/20200627%E7%AC%AC2456%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%8F%8D%E6%89%91%EF%BC%9F-5WduqWt_8l0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/27/20200627%E7%AC%AC2456%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%8F%8D%E6%89%91%EF%BC%9F-5WduqWt_8l0/" class="post-title-link" itemprop="url">20200627第2456期-美国疫情反扑？</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-27 02:05:06" itemprop="dateCreated datePublished" datetime="2020-06-27T02:05:06+09:00">2020-06-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:40" itemprop="dateModified" datetime="2020-07-08T12:26:40+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/27/20200627%E7%AC%AC2456%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%8F%8D%E6%89%91%EF%BC%9F-5WduqWt_8l0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/27/20200627第2456期-美国疫情反扑？-5WduqWt_8l0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月27号星期六，现在可以说在全球范围之内疫情都有一些反扑，美国这边闹的是尤其的厉害，主要就是呢等媒体在闹，给了很多地方的这些州长市长非常大的压力。我们来看看美国疫情反扑到底是怎么回事，我们在顺便呢再看看其他国家好吧？美国现在德克萨斯州被迫要叫停解封，欧洲十一国呢也面临着疫情的反弹，美国的数据显示，24小时之内新增确诊超过了4万人，已经回到了4月份的水平。 </p>
+<p>德克萨斯州的州长阿博特6月26号周四宣布暂停德克萨斯州的解封，说美国现在有29个州都在面临反攻，法新社说，说美国联邦政府的估测，认为就基于现在对抗体的调查，认为美国大约有2400万人已经感染了病毒。之前我们说过纽约也查过抗体，按照比例来说就认为纽约可能有200万人的曾经被感染，我就感染了之后才有抗体。他是拿这个比例来算这个准确不准确，实际上也也不知道。 </p>
+<p>现在就是说官方现在说已经确诊了的好像是200多万，2400万之间还差了10倍。 </p>
+<p>苹果公司宣布休斯顿地区的7家商店关门关闭福德里加州的14家商店，但是副总统彭斯在白宫的印象简报会上说说，弗罗里达和德克萨斯州新增病例的一半都是35岁以下的，那么这些人实际上并不会造成太大的给医疗条件造成太大的困扰，这些人很多根本就不需要住院去治疗，很多的在甚至都不用吃药，自己在家就可以自愈了。 </p>
+<p>然后 CNN说说佛罗里达州、德克萨斯州和加利福尼亚州就加州，说三周的疫情已经严重到了大灾难的程度，就是反正你也了解对吧？因为现在川普执政，如果现在奥巴马执政的分就说现在一切大好形势一片大好，那么我们现在基本上我们认为最起码就是说私人的报道是不全面的，因为它只强调了感染人数的增加，并没有对比检测人数，也没有报道新增的住院人数和病死人数。所以其实他某种程度上来讲产生了一些误导，好吧？ </p>
+<p>我们呢来看一下这个数据。 </p>
+<p>先看佛格里达州，我们对比的就是佛州，德州加州都是这个星期就是6月18号到24号，这个星期和6月11号到6月17号这个星期就上个星期两个星期，一些数据比较看看是不是像说的就是说整个就大灾难了。福德里达州就是说本星期的检测量是182,000多，上个星期是206,000多，就是说检测量减少了2万多，检测结果阳性人数从15,000增加到了26,000，增加了1万多。从感染率来说，从7%增加到了14%，感染率的确确增加了一倍。 </p>
+<p>这说明如果检测量不减的话，实际的阳性人数应该在3万多人，平均每天增加大约4300人，的确是很严重，对吧？ </p>
+<p>但是我们来看，住院人数从1052人增加到了1100多人，一个星期内就增加了100多人，相当于每天平均增加了20人。 </p>
+<p>从病死人数看，从221增加到267，一个星期增加到127人，相当相当于平均每天增加了18个人，这个是不对，他这说说错了，是从200多增加到了300多，一周增加了100多人，相当于每天增加18人，也就是说从住院和病死人数看，情况实际上是轻微和感染的情况不合比例。这就说明什么？说明副总统彭斯说的没有问题，检测阳性多数是不需要住院的。年轻人，所以感染人数虽然多，但是对医院实际上并没有造成什么压力，病死人数这里边其实多数还是那些老年人，所以病死人数增加也不多。 </p>
+<p>然后再看德州，德州检测量和感染人数同时增加，感染人数增加更多一点，所以感染率从8%增加到了11%，情况比弗罗里达好一点。 </p>
+<p>但是从病死人数看，一个星期从177增加到了187，只增加了10个，每天平均呢增加不到2个，情况实际上是比较温和的。那么加州它的检测量和感染人数是同时增加，但是感染率只增加了呢1%，病死人数呢并没有增加，而且还略有减少，说明加州现在就基本上是实际上是没事了，对不对？那么所谓的增加了那些实际上都是一些年轻人，也不用住院，也不出现死亡，也那不需要治疗，对吧？加州不但病死和住院没有增加，反而还在减少。 </p>
+<p>那么好，那么住院人数和病死人数的增加幅度远低于感染人数的增加幅度，说明什么？说明老老年人已经知道如何去保护自己了，对吧？那么感染的多数都是开始出来浪漫年轻人，川普发推在这种情况之下压力很大，你看一些民主党道州都开始纷纷的就开始想办法了，对不对？那么川普发推说死亡人数现在实际上在下降，而且死亡率现在美国来讲是全世界最低的之一，经济正在回复，而且不会再次关闭经济。 </p>
+<p>他说如果有必要的话，我们就是说西面一些灰烬就觉得它是疫情已经燃烧过去了，只剩下一些灰烬的和一些药斑了，对吧？绝对不会再次关闭经济。我非常的欣慰，昨天我看了川普的推之后，我是非常欣慰我跟，我老婆还说幸亏美国现在是串口在执政，如果是奥巴马的话，现在可能就又要又要开始关闭了，又又来终于我们有一个就着调一点的总统有一定的承受能力的，有一定魄力的总统，我觉得我还是比较欣慰。所以美国目前的这么一个情况，当然一就是可可林藤田山东对吧？ </p>
+<p>希拉里克林顿国家电视台对不对？他们肯定是支持民主党的，他现在就唯恐天下不乱，对吧？上街游行示威，就是说这次疫情有反弹有增加，到底是由于川普把经济搞活了，增加的，还是搞黑命贵，你几十万人上街游行，搞来的。其实说得清楚吗？说不清楚的，但是没有人反对上街游行，即使有疫情也没有人反对，你上街游行是可以的，为什么？因为能够把经济搞得更糟糕一点，所以这就是一个完新闻，现在完完全全就是一个商标，已经没有任何的公信力可言。 </p>
+<p>在他们欧洲更扯淡，欧洲的世卫组织他的区域主任汉斯克劳格表示，说欧洲现在有11个国家出现了显著的的增势，说就是欧洲和中亚地区有11个国家面临就是说传染速度加快的现象，然后说瑞典也是其中之一，说如果置之不理，卫生系统将再度就是说受到冲击。就是说面临的医疗系统崩溃，那么除瑞典之外，其他10个国家都是较贫困的东欧以及中亚国家。 </p>
+<p>那么瑞典国家流行病学者蒂格内尔说说，世界卫生组织完完全全误解了瑞典的数据资料，迪戈内尔说说我们的病例数增加是因为过去一周在瑞典执行了更多的检测，还说其他的所有参数都显示重症病例在减少，加护病房的数量现在很少，死亡人数也在减少，他说我们现在死亡人数减少到了一个什么程度呢？你难以相信的一个程度就是说我们因为现在太重视这个了，我们全瑞典的死亡人数，这几周的死亡人数比过去几年的同期差不多到了这种地步，就说我没有运行的时候也死这么些人，我想有疫情了还是死这么多，对不对？ </p>
+<p>你为什么觉得我增加了？为什么觉得我的医疗要崩溃了？ </p>
+<p>我没有一情事也死这么多人，对不对？为什么？是因为瑞典走的是一条群体免疫的道路，而世界卫生组织对此是极为的不满，因为如果你这么搞成功的话，我们不成摆设了吗？我们做了这么多的努力，我们号召了这么多东西，然后最后你什么都没搞，你搞的还不错，还不归我们差，我们这帮人不成废物了，不成废物点心了吗？对不对？所以呢我们一定要说你不好，其实从之前整个欧洲的媒体世界卫生组织报道，就是瑞典怎么不好，我看到瑞典的数据之后，我觉得靠我都愣了，人家完完全全没有封闭，完完全全该干嘛干嘛，也不需要你戴口罩，也不需要封停，该上学上学，该剪头剪头，该吃饭吃饭，该他妈洗澡洗澡，对不对？ </p>
+<p>洗浴中心电影院全开着该看电影、看电影、看电影什么都没有受影响的情况之下，人家跟你的数据差不多，我不知道世界卫生组织是怎么想的，我不知道他们是否汗颜。 </p>
+<p>我看完之后我震惊了，对我为瑞典能够搞成这样，我我觉得真的说明人家的国民素质之高和他的，医疗条件医疗的底子之雄厚，说明人家医疗系统不人家在这种就是说放开了，不管完全没有防御措施的情况之下，人家的医疗系统完全停不住了，我觉得其他的国家应该向人家去学习，而且这一波疫情，我看其他国家的翻上来的更厉害。中国现在北京也在闹，北京就又是假数据，我已经说过了，很多人说说北京闹得不厉害，狗屁北京闹得厉害极了，只不过都是假数据，他不跟你说实话而已。 </p>
+<p>那么就是说永远是拿谎言的跟别人的事实去比较。所以你看看瑞典，你再看看其他，基本上我们现在就意识到了一点，就是说这一次的疫情可能真的群体免疫不说好吧，最起码是一个可以选择的之一，尤其对那些国民素质比较高的医疗资源比较雄厚的国家，如果这么做的话，可能对国民的整个的这种感受的冲击比较低，对经济的冲击也比较低，对于未来的恢复也会更好。 </p>
+<p>我觉得真的我们现在这么长时间过去了，前几个月如果我们这么说，还有人就是说泄斯底里丧心病狂，觉得你们因为要钱不要命，这么多月过来了之后，最后我们看看这个结果的话，冷静下来，你想一想，实际上到底哪个对哪个错，哪个有优点多，哪个缺点多，其实我觉得已经一目了然了。现在像世界卫生组织这些，已经可以说是沟壑一气，为了呢就是说打击这些事实已经到了不择手段的地步。我觉得他们应该反思一下，好吧，今天就讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/27/20200627%E7%AC%AC2455%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%B0%86%E5%8D%8E%E4%B8%BA%E5%88%97%E4%B8%BA%E4%B8%8E%E4%B8%AD%E5%85%B1%E5%86%9B%E6%96%B9%E5%8B%BE%E7%BB%93%E4%BC%81%E4%B8%9A-RbL6_6dNFlg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/27/20200627%E7%AC%AC2455%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%B0%86%E5%8D%8E%E4%B8%BA%E5%88%97%E4%B8%BA%E4%B8%8E%E4%B8%AD%E5%85%B1%E5%86%9B%E6%96%B9%E5%8B%BE%E7%BB%93%E4%BC%81%E4%B8%9A-RbL6_6dNFlg/" class="post-title-link" itemprop="url">20200627第2455期-美国将华为列为与中共军方勾结企业</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-27 02:05:05" itemprop="dateCreated datePublished" datetime="2020-06-27T02:05:05+09:00">2020-06-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:40" itemprop="dateModified" datetime="2020-07-08T12:26:40+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/27/20200627%E7%AC%AC2455%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%B0%86%E5%8D%8E%E4%B8%BA%E5%88%97%E4%B8%BA%E4%B8%8E%E4%B8%AD%E5%85%B1%E5%86%9B%E6%96%B9%E5%8B%BE%E7%BB%93%E4%BC%81%E4%B8%9A-RbL6_6dNFlg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/27/20200627第2455期-美国将华为列为与中共军方勾结企业-RbL6_6dNFlg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月27号星期六，路透社独家的报道，他们拿到了一份的内部的文件，文件显示美国政府准备将华为、海康威视在内的20家中国的顶尖企业列为中国军方拥有或控制的企业，为美国实施金融制裁奠定基础，就是说以后要金融制裁的话，你要有理由，那就说你这个企业不是一家的没有公司，而是由中国军方是勾结了中国军方的企业，是由军方控制或者控股的企业，不过这个来讲，咱们冒着良心说，中国的很多的高科技公司都跟中国军方有一定的联系，很多的时候军方为他们提供了很多人才、物资、技术，在此基础之上去进行研究。 </p>
+<p>研究之后，如果有了新的技术中，军方能够采用的，军方也就采用了。所以其实是很难说清楚这些企业到底就是说有没有军队的那么这些企业里边有很多的员工也都是复员的军人，对吧？所以从人事上从各方面来讲，都跟中国军方有很多联系。所以如果被人家列为是军方拥有或控制的企业，你也怎么说，真的就是说无话可说。可以这么说，咱们先看看这20家企业涵盖了通讯、移动、航天、传播、重工、电子、科技和工业等多个领域，名单是由美国国防部起草的，所以路透社呢采访到了一位不能透露这个名字的美国国防部的官员，但是证实这份文件的真实性，并表示文件已经递交给了呢，国会国会批准之后就会正式的就会出来。 </p>
+<p>那么我们相信路透社在这方面的消息还是比较真实可信的。清单上的20家企业都包括什么？我们看一下啊，中国航空工业集团公司，因为它是搞航空的里边运用到了很多东西，实际上这里边有很多都是就是说它里边甚至有很多都是现役的中国的空军，所以这个没有什么好说的对吧？ </p>
+<p>然后中国航天科技集团，中国航天科工集团、中国电子科技集团、中国南方工业集团、中国传播重工股份有限公司、中国传播集团有限公司、中国兵器工业集团有限公司，这些公司咱别说别的，就前面能带中国俩字的，你没有点本事你也带不了，对不对？他敢说是中国航天4个字开头的，你自己想对吧？什么中国传播中国传播开头的中国南南方工业什么中国兵器，你看这名字对吧？没有什么好说的，这个是可以说直接是由中国军方来控制的。 </p>
+<p>然后后面还有什么海康威视、华为、浪潮，还有中国航空发发动机集团、中国铁建股份有限公司、中国中车股份有限公司、熊猫电子股份有限公司、中科曙光、中国移动、中国广核中国核工业，你想这名字中国核工业是吧？你你说我一民工，你一民营公司搞核工业，政府能让你搞吗？政府能放心吗？对吧？还有什么中国电信，反正这20家都是中国，这都是非常重要的，在技术领域来讲，掌握了中国各个方面的传播航天各个方面的核心技术，所有的，这些技术实际上都能为部队所用，这是事实没有问题。 </p>
+<p>但是美国总统会不会就是说依靠名单就真的去制裁，我觉得我是存疑的。新疆的法案通过了，但是川普也没有马上了对新疆那边的官员实行制裁，他也不希望跟中国把关系闹得太僵，对吧？毕竟要大选，那么对大选之后，川普到底怎么样？现在就是说众说纷纭。 </p>
+<p>有一种说法认为大选之后川普肯定会出卖，比如说出卖台湾，现在蓝营的这些名嘴们都是说说绿营说蔡英文跟川普走太近了，没有用川普，就是利用你说只要川普连任船工作之后就会出卖台湾的利益。 </p>
+<p>我说实话我不这么认为，我认为就是说川普跟习近平谈不妥，谈不拢的，最终肯定跟中国的关系会越来越我觉得会越来越朝就是说冷战那个方向走吧。但是当然川普就4年4年之后到底谁上来我们不知道，但是我相信未来的4年中美的关系只能越来越糟糕，并不会越来越好。这种名单我觉得对于串口来讲是增加了一个武器，就是使用不使用歌剧片，这份名单它是一个这台武器，我搁在这儿是我的给我就是说填补我的兵器后，对不对？因为兵器库里你不好说，对不对？ </p>
+<p>普通的短短程的炮你要有，长的洲际弹道导弹你要有对吧？航空母舰、战斗机轰炸机你都要有。这些在冷战当中，我觉得这些都是一些武器，我觉得给川普提供了不一定会使用这些武器，但是他有选择，就是说我们当时打中美贸易战的时候，就说中国说要以牙还牙，我们就说人家有多少颗牙，你有多少颗牙对吧？你自己心里要有数。 </p>
+<p>从美国来讲，当然我们都知道美国也不愿意跟中国闹得太僵，闹得太厉害，但是这也要看习近平，我还是那句话，如果现在是江泽民时期，如果是胡锦涛时期的话，我认为那就那就没事了，什么都好说，但问题现在不是，甚至我觉得如果邓小平现在执政的话，中美的关系也不会走到今天这一个地步，能够走到今天这一地步的，我觉得也就是习近平和剩下就老毛了，也就他哥俩行，别人真的是走不到这个地步，你知道吧？ </p>
+<p>所以未来4年我觉得如果中美关系想要就是说不进一步恶化，我觉得那要么就是美国不是川普了，要么中国就不是习近平了，就像中国中央党校的蔡霞教授讲的，就是说把习近平换掉，中国换人，要么中国换人，要不美国换人。如果最后今年大选川普连任了，习近平那边也没有换下去。中美关系好不了，这这种武器我觉得使用它就只是早晚的问题。好吧，今天讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/26/20200626%E7%AC%AC2454%E6%9C%9F-%E5%87%BA%E4%BA%8B%E4%BA%86%EF%BC%8C%E6%88%91%E4%BD%8F%E7%9A%84%E9%85%92%E5%BA%97%E6%9C%894%E4%B8%AA%E5%91%98%E5%B7%A5%E6%98%A8%E5%A4%A9%E7%A1%AE%E8%AF%8A%E4%BA%86%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-0zUtkVJZ1ec/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/26/20200626%E7%AC%AC2454%E6%9C%9F-%E5%87%BA%E4%BA%8B%E4%BA%86%EF%BC%8C%E6%88%91%E4%BD%8F%E7%9A%84%E9%85%92%E5%BA%97%E6%9C%894%E4%B8%AA%E5%91%98%E5%B7%A5%E6%98%A8%E5%A4%A9%E7%A1%AE%E8%AF%8A%E4%BA%86%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-0zUtkVJZ1ec/" class="post-title-link" itemprop="url">20200626第2454期-出事了，我住的酒店有4个员工昨天确诊了新冠肺炎</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-26 02:05:04" itemprop="dateCreated datePublished" datetime="2020-06-26T02:05:04+09:00">2020-06-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:40" itemprop="dateModified" datetime="2020-07-08T12:26:40+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/26/20200626%E7%AC%AC2454%E6%9C%9F-%E5%87%BA%E4%BA%8B%E4%BA%86%EF%BC%8C%E6%88%91%E4%BD%8F%E7%9A%84%E9%85%92%E5%BA%97%E6%9C%894%E4%B8%AA%E5%91%98%E5%B7%A5%E6%98%A8%E5%A4%A9%E7%A1%AE%E8%AF%8A%E4%BA%86%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E-0zUtkVJZ1ec/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/26/20200626第2454期-出事了，我住的酒店有4个员工昨天确诊了新冠肺炎-0zUtkVJZ1ec/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月26号星期五，这两天一直有小小伙伴问我说拉斯维加斯怎么样，他们也想来来玩，说要是不错的话就想来。最近咱先说优点，优点的确是有一些人跟最多的时候比不是很多，因为有人跟我说他们一般到过年，比如说像什么感恩节或者像是圣诞节元旦那个时候人特别多，下面堵成一锅粥了，你开车出去根本就出不去，有时候堵半个小时堵一个小时还开不出去。 </p>
+<p>这两天是完完全全没有遇到堵车的情况，也不能说一个没有有过一次一次前面发生车祸了，那堵了那没办法就把他撞上了。除了这种情况之下完全都不赌，下面即使我们住的这就是差不多它是赌场大道最核心最中心的地方，也不是完全不堵的问题，是下面基本上其实就没什么车。 </p>
+<p>人，但是酒店里边我觉得人还挺多的，是吧？这个停车场如果你停车场你想离的就是楼上近的话，如果你在他是朝下的，从一楼往下一直到好像b1、B2B3b4，你要过在 b二离得比较最近的话，还不太容易找到停车位的时候，要下去就比较容易赌场，然后我们拆个印的时候也等了半个多小时40分钟对吧？说明人还是还是挺多，因为它排队唱个音。人还是非常多，而且他是好几条烂，我记得好像是66条烂一起在柴可金。 </p>
+<p>但就那样的，我们还等了半个多小时，里边人还是很多的。当然了就是说上座率我觉得能达到了3成到4成百分之三四十的样子，我看下边这个赌场有人在玩那些桌子在玩也差不多就百分之三四十，说实话回复的比想象的要好。之前我做过报道，澳门的时候，澳门好像是2月底3月初的时候恢复了，然后3月4月5月3月4月反正都不行，后来5月好像才开始恢复，3月减少了80%多，4月份的时候减少了92%。 </p>
+<p>我当然了澳门也是离中国大陆咱们的各种的限制特别严格，所以就非常的厉害，我们这边现在也是出事了，说出事了，昨天我才发现我这两天没有看拉斯维加斯这边的新闻，昨天我们从外面回来一进酒店酒店马上就拦住了，让我们戴口罩，说已经有强制规定了，必须戴口罩，我们俩都是属于不戴口罩，满足了乱跑的主你知道吧？我不喜欢戴口罩，然后一到门口就没有口罩，他就给我们拦那了，不过他们还不错，他们就给你发口罩，但是我们其实有口罩在包里，我没带，然后自己翻出来就带上了。 </p>
+<p>我们前天去的那叫什么维尼斯人，前天去威尼斯人酒店也是门口的，有一个非洲裔的黑哥们挺好，黑哥们来了之后，我们当时没戴口罩吗？哥们说来一人给你们一口罩，说你们不用带送给你们的，你们带也行不带也行，不是强制的。只要是前天去威尼斯人还这样，昨天我们住的是卡司猫，叫什么？喀斯磨坡看坡里特刊登，抛之前是大都会酒店，然后我们住的也是不管的，我们22号柴可拆开进来之后，当时还是是完全不管的，昨天就不行了，昨天就是强制了就必须得戴口罩，当然你没有回报的它发给你，但是甭管是他杀你还怎么着，你必须在好好不要说他不让你进来了，昨天已经到这个地步了。 </p>
+<p>然后我一看这是怎么出事了，对不对？因为前天还没有这事，昨天就突然有这个要求了。然后我就发现了我们酒店已经有4个工作人员确诊，应该是前天有叫什么beauty access，我看他那名字我感觉他应该是一个要不就是做指甲的就做美甲的，要么就是做头发的，反正他的名字我看是这意思，是酒店里面一个做头发会做美甲的一家店，也有可能投我们美甲多做的店，反正就这种店。有两名员工确诊，然后昨天因为这个还好，因为你要是没有做过指甲，没有做过头发什么的，你也不用担心对吧？ </p>
+<p>你这个时间段谁跑做那东西去对不对？当然了还是有人去，但不管怎么着，但是今天传来的就有点担心了，昨天有这个就是说卡斯莫好这才是大都会酒店，还有两个是礼宾部的工作人员确诊的，那礼宾部是干什么的？就是专门接待的。礼宾部就是欢迎来宾的这种就是说门口其实拆个印的，这都算礼宾部的对不对？有两个礼宾部的员工也确诊了，目前对整个就是说他的确诊员工的活动区域，还有调查所有他们接触过的这些客人全部在进行追踪，到现在还没有人来敲门，也没人给我们打电话，那说明看来我们可能是没接触到就还好，但是现在这个酒店整个已经开始变得疯狂起来了，不戴口罩的不让进来了，已经到已经到这个地步了，我们酒店等于已经是加在一起，就是说反正已经有4个人，已经有4个员工确诊了，客人现在怎么个情况？ </p>
+<p>我还不知道这两天他们正在对所有接触过这些严重的客人进行追踪调查检测，那么可能过两天就会有结果，有了结果的咱们再说。然后莎柏林这儿还有另外两家餐厅，它叫380，380的时候至少一个区还是一个比较不错的一个区域，它有一个叫沃夫特冈帕克，还有一个叫做京的餐厅，应该就是中国餐厅华人餐厅。那么这个也都有人确诊，这个华人餐厅有三个员工确诊。 </p>
+<p>然后撒哈拉酒店也就是他们现在都管叫度假村，这个大都会它要独家村。他们不喜欢叫赌场了，以前的我们叫赌场吗？他们现在就在赌场的不好听。不叫赌场，他们现在管自己叫度假村，所以他叫撒哈拉度假村。萨拉多乡村它里面叫North side coffee和Chinese kitchen，看来是一个中国人开的应该。他说有三名员工确诊，然后已经关闭了，关闭之后现在正在追踪的所有的接触者，并对餐厅的所有员工的进行检测。 </p>
+<p>那么周二现在今天已经星期星期五周二内华达州发布的最新数据显示，内华达州和克拉克康迪克拉康体是克拉克，克拉克县是哪儿？拉斯维加斯。整个大拉斯加斯地区比大拉斯加再稍微大一点，这就是克拉克线。 </p>
+<p>那么整个州克拉克线在22日周一创下了新增病例的有史以来最高纪录。根据内华达州卫生与公共服务部的数据，内华达州24小时之内增加了462例，而克拉克线则新增了412例，有什么意思？就是整个内华达州增加了460个，有410多个都在克拉克都在拉斯维加斯，它州主要的交流对外交流的，因为它是个沙漠对吧？主要对外交流都在拉斯维加斯这儿了，主要410个都在这。这简直有点出汗了。 </p>
+<p>然后他说这事内华达州和克拉克康体字3月份以来最大的单日的增幅，那么当然有人就说说你确诊增加是因为检测增加导致的对吧？你测的人多了确诊就增加了是吧？实际上没厉害，你们危言耸听。 </p>
+<p>现在真实情况是这样，根据内华达州的数据显示，确诊率什么就是说不管我测多少人是1个按1个比例，比如说我今天测10个，有两个就20%对吧？ </p>
+<p>明天如果我错了20个，有两个10%，确诊率反而就下降了，对不对？但是不是根据内华达州的数据显示，确诊率已经连续6天上升，每一天确认率都在提高，那就是说患病的比例越来越高，检测但是检测数量也在增高，检测数量又在增高，然后确诊率也在增高，同时也就是说分子就是说分母和比例都在增加的时候，分子肯定就是说开始的巨幅上涨，整个现在内华达州就是这么个情况。 </p>
+<p>所以我把优点缺点都给你说一下，对吧？因为有小伙伴也想来拉斯维加斯玩，优点真的是这样，现在你去哪儿基本上都不用排队，完全不用排队，也没有堵车，开车直接去可痛快了。 </p>
+<p>你知道吗？去餐厅吃饭也是，那餐厅吃饭你进去都有座，他那餐厅的座已经只有原先的差不多1/3了，他那桌子全都分开了，知道吧？原先比如说一个桌，现在就是说这个桌，然后它和桌之间的两个桌都撤了，你知道吗？就已经到了每个桌和每个桌之间隔两个桌子的距离了。但是所以你像顾客就剩原先的1/3，在原先的1/3的基础之上，你进去吃饭你还是有空座，你只要进去之后完全不用等，完全没有不存在排队或等什么的都都可以给你，但是很多都没开，我们慕名前来就知道旁我们对面不白拉着。 </p>
+<p>白鸭肉正好有一个叫什么这茉莉花是吧？ </p>
+<p>说茉莉花的特别有名，久负盛名，我们特别想去那就不开门，不开门。 </p>
+<p>然后还有艾瑞尔整个艾瑞尔是整个没开，艾瑞尔有个百盛我们想去尝尝去，结果也没开，艾瑞雅整个没开，然后白拉肘这块它的叫什么茉莉花没有开，然后它的一个特别有名的海鲜的一个谱费，就是自助餐也没开，所以就目前这个情况，我觉得就甭来了，我对你要问我我但是你要跟我要你有事对不对？你有事来你办事那没办法对不对？但你如果是玩的话，我建议就明白了。 </p>
+<p>很多著名的景点酒店、餐厅都没有开，你像艾瑞尔整个酒店就完全不开门，所以就什么都没有，他下面的购物也没开。全关，知道吧？ </p>
+<p>这就是目前一个情况，然后由于它现在说酒店部分开放，然后他现在第一阶段他不他们重启是分阶段的，纽约也是第一阶段，第二阶段在重启之后，现在导致它的整个疫情都在往上升，都在上扬，而且都在是创历史的往上升。然后内华达州州长西索拉克周三的傍晚，就是前天我这现在是周五，周三的晚上他在卡森市议会大厅召开了紧急记者会，下达了内华达州的紧急命令，那么要求内华达州所有人公共场所内都必须戴口罩，如果不遵守命令的话，也没有任何的处罚。 </p>
+<p>美国就这样这种东西，你看美国这样如果不遵守命令，也不会受到民事或者刑事，民事就是罚钱，没有形式也没有任何处罚。但是他说这样子，他要求所有的商家拒绝向不戴口罩的顾客提供服务，说商家有权要求不合作的顾客离开，州长宣布内华达的新的文宣口号，就是说no shirt、no shoes、no mask、no service什么意思呢？Note就是不穿衣服，就是没有上衣，比如说光膀子，弄数字就是不穿鞋，光着脚讲都是如果你光着膀子或者光着脚或者都骂死，没戴口罩， no service就没有服务，就拒绝给你服务，你就得出去。 </p>
+<p>你吃饭不卖东西，只不过不过你餐厅我戴着口罩吃，你戴着口罩吃一个，我看看对不对？那餐厅是没办法了，对不对？肯定是不可能，餐厅只能接待，餐厅没办法，但是酒店可以那什么，不过我跟你说我认为就象征性的咱一会再说，咱把这说完。那么紧急命令他是在周三傍晚宣布的，给你24小时准备时间，到了周日晚上25号，就昨天晚上的11:59生效。我现在是周五的早晨起来7:30，也就是说在昨天晚上的00:00，今天早上凌晨就正式生效了，我一会出去就都得戴着口罩了。 </p>
+<p>然后还有他紧急宣布内华达州将暂停进入第三阶段的图形开放，它就本来说第一阶段第二阶段要进，第三阶段了没有了结束了这开不了，第三阶段现在暂时不行，因为整个疫情等于算是算但是回复了重复了，等于算第二波疫情，反正差不多。就这么个意思。 </p>
+<p>现在赌场大道上主要的赌场集团也就立即表示赞成了州州长的行动，坚决支持，并声明要配合。米高梅的总裁发布声明说，米高梅永远将健康和安全放在一切工作的中心地位，并且要求全美国所有的米高梅的度假村的酒店都必须要佩戴口罩。这个就是说不光是在内华达，也不光是阿拉斯加斯，全美国都这样。那么永利凯撒什么等等的都是全力支持。然后凯撒的发言人说这项要求将扩展到凯萨在美国和加拿大的所有物业，你看你米高梅说全美国我更狠，我跟你说全加拿大加大，美国所有的物业我全部都要求戴口罩，他这要求不是不不仅仅对员工了，他员工是都戴口罩的，这个是事实，我们从我们进来他的员工所有员工都戴口罩，员工是一直都要求戴口罩，顾客前两天都没有管。 </p>
+<p>那么现在按照州长的命令，从昨天晚上的00:00今天早上的凌晨开始，那么就是我们这些顾客也都比戴口罩了，然后我们酒店还有4个地，确实有点热，不管怎么着，这就是这么一个情况，鉴于此，因为这两天不断有一小伙伴，小伙伴问我能不能来，我鉴于此我跟你说小钱没来了，现在没来了，目前这情况我建议你就钱币来了，但是当然你如果想玩的话也是ok的，还是说优点和缺点是并存的？ </p>
+<p>优点就是的的确确哪儿的人都特别少，然后这个酒店我们选这个位置也特别好，我们也没有花钱，有人说有人说你在酒店拆个禁的时候给他20块钱的小费，他就给你这个升级，我们来的根本就没有也没给钱，而且我们说本来我们商量就跟他说说你关于跟你说一下，我们上网查了，有人他不是有20块钱吗？有人说其实不是的是这样，如果酒店忙的时候，你给他20块钱，他也给你升级不了，但是他会跟你说给你这upgrade了，给你升级了，但是实际上也没升级，他就骗你。 </p>
+<p>如果酒店有的时候，你只要说阿斯克纳斯利就是说什么意思，你特别的亲亲和蔼的亲切的，你就礼貌的你问一下，他通常也就给你升级了。所以我跟我老婆本来说，我们说到来了之后就跟他问一下，能生就生，不能生，就算了给他钱也没有用。结果我们来了之后，我们根本就没问，他直接就给我们offer，就给我们升级，还给我们选的，选的还真不错，他跟我们说他问我们想要高一点矮一点，我们说想想要高一点，他那说就是说太高了，就看下面这个喷泉效果也不好，太低的也不好。 </p>
+<p>所以他给我们选的楼层不高不矮，看着还真好。当然了为什么能这么做？就因为酒店顾客少，这边反正空着也是空着，这都给你了对吧？当然这就是优点缺点，反正你就是要做好一定的心理准备对不对？你说没有压力是不可能的，你说在这住着好好的对不对？突然告诉你我们前天有两个圈人，虽然有两个确诊就在你这酒店里，在你的楼里对不对？你自己你在哪你的心情多少会有点受影响对不对？愉快的心情赶快瞬瞬间就没有了，是不是？反正目前就是这么个情况。 </p>
+<p>好吧，那么这样我只能说我仅代表我个人的观点，我建议你没有特殊情况，暂时先不要来拉斯维加斯，好吧，你自己当然去决定他最晚他也没疯，对不对？他还是可以住的，反正你就带口罩进来对吧？那么你自己去选择，你要选择你觉得这是现在好，还有一个好处是什么？所有的酒店的所有停车费都没有了，以前他有停车费的停，我好像停不了，三好像三个小时停就要9块钱我记得。 </p>
+<p>然后当时我还看了一下，他停车费现在全都没有了，全部没有任何酒店直接开始进，没有不收任何停车费，直接停直接开车你就走。而且停车场也是停车场非常的就是说清静，当然你如果一定要电梯口的，一定要楼层好电梯口的还是有点挤，但是你只要愿意往下再开一层，那就全都是空的，我们前天去威尼斯人酒店电梯口都是空的，比我们这还清净。可行性。 </p>
+<p>所以目前就这么个情况，那好处人少你可以享受各种这种丰富的资源，缺点就是说你要做好心理准备，好吧，那就先讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/25/20200625%E7%AC%AC2453%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%B9%8B%E8%80%BB%EF%BC%8C%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%E4%B8%BA%E5%9B%BD%E7%89%BA%E7%89%B2%E7%9A%84%E8%A7%A3%E6%94%BE%E5%86%9B%E6%88%98%E5%A3%AB%E4%B8%8D%E5%85%81%E8%AE%B8%E5%8F%91%E4%B8%A7-_8N3XFRzP4c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/25/20200625%E7%AC%AC2453%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%B9%8B%E8%80%BB%EF%BC%8C%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%E4%B8%BA%E5%9B%BD%E7%89%BA%E7%89%B2%E7%9A%84%E8%A7%A3%E6%94%BE%E5%86%9B%E6%88%98%E5%A3%AB%E4%B8%8D%E5%85%81%E8%AE%B8%E5%8F%91%E4%B8%A7-_8N3XFRzP4c/" class="post-title-link" itemprop="url">20200625第2453期-中国之耻，中印前线为国牺牲的解放军战士不允许发丧</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-25 02:05:03" itemprop="dateCreated datePublished" datetime="2020-06-25T02:05:03+09:00">2020-06-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:40" itemprop="dateModified" datetime="2020-07-08T12:26:40+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/25/20200625%E7%AC%AC2453%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%B9%8B%E8%80%BB%EF%BC%8C%E4%B8%AD%E5%8D%B0%E5%89%8D%E7%BA%BF%E4%B8%BA%E5%9B%BD%E7%89%BA%E7%89%B2%E7%9A%84%E8%A7%A3%E6%94%BE%E5%86%9B%E6%88%98%E5%A3%AB%E4%B8%8D%E5%85%81%E8%AE%B8%E5%8F%91%E4%B8%A7-_8N3XFRzP4c/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/25/20200625第2453期-中国之耻，中印前线为国牺牲的解放军战士不允许发丧-_8N3XFRzP4c/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月25号星期日，中印前线不管中方承认不承认，中方都有死人，只不过就是说中国政府现在不承认，但是我们拿到了中国解放军在中印前线阵亡的烈士的名单，我们现在拿到这个名单有38个人，印度方面说死了43个，还有5个，我们现在没有得到。我们经过反正我们的渠道证实，我们认为这个消息是真实可信的，名单是真实可信的。 </p>
+<p>当然我知道这个名单我只要说了，明天呼吸进的孙子或者哪个孙子肯定得出来，就辟谣说是假的，但是由他们去说，好不好？我已经我不想离他们，按理说应该就是说发在会员专享里边，但是真的38个年轻的生命牺牲了，我一定要发在哪？非会员，他们爱高兴高兴不高兴就死去，知道吧？ </p>
+<p>好吧？然后而且这还不是最重要的，我告诉你，最让人心疼的是什么？是这样。 </p>
+<p>说驻扎在中印前线的湘潭籍的战士王少白，他们县里的民政部部长给亲自给他的父亲打电话，说他儿子在和印军的冲突当中为保卫祖国英勇牺牲了，还说了很多赞扬和温安慰的话，这还是不错的，态度还是很好的，咱们承认。但是王少白的父亲就问，可否去前线看了最后一眼，他这民政部部长电话里告知说路途遥远，而且前面有战争的危险，所以部队会当是会在适当的时候，尽快将骨灰运回乡下来安葬，完了人就见不着了，运回来只能把骨灰运回来了，尸体都运不回来了。 </p>
+<p>这点来讲，你说我们老笑话人家印度是吧？说印度网前线甭管是增兵支援速度比我们卖多了，看看我们各种交通工具这么速度快，我们几个小时就能把从湖南湖北往这边运兵就能把整个旅的部队运上来，而且不但部队上来，各种装备重武器它都能运，都能运上来。 </p>
+<p>一访会运尸体的时候怎么就运不回来了呢？对吧？人家印度怎么最后人家的士兵是什么？搁在棺材里，老百姓扛着棺材游街，对不对？全民哀悼，对吧？由印度总理莫迪在全国现场讲话，而且把这20名士兵的名字。级别、籍贯都说出来，而且带领着全印度的全体的这些官员，印度的市民，为这20名的去世的牺牲的印度士兵默哀两分钟，对不对？人家印度怎么就能做得到，咱们怎么就做不到的，人人人家印度运输不行，你老笑话人家，人家还能把尸体运回来，然后到自己的出生地去安葬，对不对？ </p>
+<p>让父老乡亲送最后一程，然后我们吹了半天牛逼，什么修了一条天路，修了这么多事，东西，这么多基建，然后最后实体运不回来，只能把骨灰运回来。然后这还不是最丑的，这还不是最让人生气的，最让人生气的是什么呢？说要把骨灰运回来之后，然后乡政府就听说了这个消息，就觉得好我们乡出了英雄了。 </p>
+<p>然后乡政府立刻准备组织安排一场浩大的迎英雄回家的活动，准备在部队送骨灰回来是全乡要出动迎接亲人。 </p>
+<p>乡里还成立专门成立了治丧委员会，这个时候消息传出去了，那么湘潭县人民武装部胡一飞政委亲自打电话给乡里，说中央军委说的不是不是湘潭县的命令，命令来自中央军委中共中央军委的直接命令，要要求照顾国际影响王少白同志牺牲的消息，以及所有在印度前线牺牲的事情，不得对外宣传，必须在严格保密的情况下进行安葬，就是说不允许发方，不允许敲锣打鼓搞丧事，要秘密发丧，秘密安葬。要严格保密，不能跟任何人说，最好连亲戚朋友都不要说。 </p>
+<p>您跟平时亲戚朋友说，亲戚朋友再跟别人说一传十十传百太多了，严格保密，不要跟任何人说，不要说儿子牺牲了，偷偷安葬。但是他们这点咱们也承认，他们当地人民武装部已经跟王家说了，跟王家父亲说了，说王少白的烈士遗属的待遇保证会远远地高于了标准，就按照这个标准来讲没有多少钱，我们这次保证要几倍于那标准给钱。问题虽然就是说会感觉到很难受，某种程度上有点感觉好像受到了侮辱而死了，都不能发丧，对不对？ </p>
+<p>我说句实在的，不要说在印度前线的这个是牺牲了的，我说怎么出车祸了对不对？天上电话砖头砸死了，我也可以发丧，我可以把亲戚朋友叫来办个三是吧？对不对？这红白喜事总可以办对不对？马路上见义勇为被流氓捅死了，也可以做个喜事，真的好，为国捐躯了之后连个三个事都不能做，但是会给钱保证就是说你不要说话，不要声张，偷偷下葬，秘密下葬，我们得给你钱。 </p>
+<p>说到抚恤金会由中央军委中央军委直接过问，从优发放，钱会给你的多多的，这个钱不要担心。那么这个家里其实就是非常的不解，说一年多前王少凡是全村敲锣打鼓欢送到王少白参军，结果现在为保家卫国光荣牺牲，亲爱的经常要偷偷摸摸的秘密下葬，不许发丧。说印度阵亡的军人的照片名字都登在了所有印度重要报纸的头版头条，由全国人民的赞扬纪念被响衰弱，为了全国人民是为全国人民敬仰的英雄，说我们的人民子弟兵为国先生为国牺牲的，反而变成了一个见不得人的事情。 </p>
+<p>那么用这种钱用这种抚恤金来购买的军人的荣誉，我们要说你真的就是说如果是雇佣军，我觉得也就完事罢了。对吧？如果你是一个雇佣军，你说你给钱我就拿我就冲钱去的，死了时候你到时候你开发多少钱发多少钱那就完了。但是这个不是在中国当兵说实话发不了财，他跟美国不一样，美国是真的有点孤独兵，美国这当兵都是买来的，这个给非常多的好处，优惠待遇对不对？ </p>
+<p>中国参军当兵的给他那点钱，说句实在的，死了之后给他那点抚恤金，不要说你给一个几倍，给个几十倍又怎么样？能买套房吗？对不对？我说句实在的，住中国抚恤金发个几十倍，北上广深买不了，别说一套房买不了半套房，我给你打包票，知道吗？别想。你知道吗？所以就给这点钱就把军人的荣誉抹杀了，这是不对的。你知道吗？这个军人不应该是雇佣军，军人当兵不应该是为了钱，军人为国牺牲也不是为了钱，军人为国心生必须是为了荣誉，这是军人的荣誉是高于一切的，士可杀不可辱。 </p>
+<p>我不知道中国政府现在为什么要这么做，实在是丢人现眼，令人可以说真的是痛心疾首，我说这简直就是一种耻辱，是中国之耻。按理说我们现在我刚才之前我也说了，我们拿到了38个阵亡的解放军烈士的名单，按理说名单这38人名单，应该由习近平同志作为中央中委中共中央的军委主席，中央军委主席，作为国家主席，作为党的主席，以他来讲应该由他在全国直播，向全国人民1个字一句的把这38个烈士的名单应该要念出来，像莫迪那样，然后带领全国人民默哀两分钟，我觉得这是习近平应该做的。 </p>
+<p>但是现在习近平他不做，我不知道他为什么不做，但是他就不做，他也不听话。那么习近平不做，我来做，咱们节目看的人也还是很多的，我希望所有看到这期节目的中国人，不管你现在还在不在中国，你是在海外你还是在中国，我也不管你的国籍是什么。如果你还认同自己是一个中国人，你还是一个华人的话，那么我在这里我带领大家，我带领我们所有这些还有这种的归属感和认同感的这些华人，我们在这里把38个军人的名单，我们要把它全部我要把它念一遍，然后我带领大家母爱两分钟，好吧？ </p>
+<p>然后之后我会把阵亡烈士的名单我会发在我的我才会发在会员专享到社区里边，因为我知道明天小胡他们肯定又得辟谣，又说这是假的，他们就又有他们去一帮他妈孙子，我现在不想转他了，我现在没工夫转他，咱也不讲他们好吧？那么我心情不做好吧，我来做，好不好？ </p>
+<p>那么如果你现在已经没有这种认同感了，或者当然我知道有一些人认为他们是党卫军，什么是为了共产党牺牲党，我们为什么要为他们谋爱？不对，我还是这句话，如果是跟台湾不能分，因为都是中国人，中国人跟中国人怎么打打杀杀，这里面没有汉奸，也没有卖国贼不存在，但是跟印度那不一样，我认为这就是保家卫国，这是绝对的。不管将来是谁执政，是右派，我们这些右派有有一天夺取政权的还是怎么着，解放军保卫国家在印度中印这种领土争端上，这都是必须要被纪念和尊重的这个不分的。 </p>
+<p>好吧，我觉得任何人你只要还有国家认同感的话，我觉得都应该这么做，这跟到底是哪个党执政或者谁在执政是没有关系的。好吧？那么我在这里我来做这个事情好吧？那么有认同感的跟我一起做那些没有认同感的，觉得他们为共产党死的，你现在就关了，你就别看了，好不好？后面也没有了，我就念一下名单，抹两分钟就结束，好吧？那么为了表示尊重好不好？我站起来念。好不好？我站起来念的，然后如果电视机前的观众如果你也愿意的话，我希望我们都站起来好不好？ </p>
+<p>我来念这38人的名单，然后我们一起抹两分钟好吧？好，是6月15号中印边境呢死亡名单38人，马业城、广西、王少白、湖南、王保国、西藏王浩东、四川闻之亲，广西孙俊辉、西藏巴桑顿珠、西藏邓昌辉、青海、田卓、浙江、刘子霞、青海、徐永恒、山东孙冬月、甘肃杜志斌、何北、李鹏程、重庆杨楠轩、甘肃杨海涛、西藏邱号、青海、张志鹏、重庆张鹏宇。 </p>
+<p>四川陈浩南，青海拉巴斯人、西藏周一一、河北邓文海、四川正放下。 </p>
+<p>郑文凯、四川症结新疆赵雄耀、四川侯宇航、河南洪江龙、西藏格桑旺久、西藏下一民、河南钱兴建青海徐大龙、四川郭昌辉、青海、黄家宝、广西龚超群、广西长江河、四川葛斌元、青海总结湖南魏志兴、甘肃这一个名字念过来，我不知道大家意识到没有，每一个名字背后都是一个跟我们一样有名有姓的人，他们也都有小学、初中、高中，我不知道他们有没有有的有参军可能没上大学，都会有自己的同学，自己的朋友，自己的家人，每一个名字背后都是一个家庭，我觉得他们应该受到尊重。 </p>
+<p>好吧？我在这里再带领大家我们一起默哀两分钟好吧？我在这儿上个null表，好不好？我们最后默哀两分钟，好吧，默哀结束好吧？今天讲到这里。谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>

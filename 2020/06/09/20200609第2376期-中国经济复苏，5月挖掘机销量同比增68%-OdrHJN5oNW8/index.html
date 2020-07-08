@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的6月9号星期二，中国经济也开始复苏，出现了复苏的苗头。人民日报6月9号今天报道，3月以来中国挖掘机的销售保持良好的势头，在3月4月分别创下了当月销量的历史新高。中国工程机械协会6月8日公布的最新数据显示，在5月份挖掘机的销售达到了3.17万台，同比增长了68%，巨幅增长将近70%的增长，说主要品牌厂商的热门机型说一上线就被预定一下，线就是说一下生产线马上就被运走了。他说就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200609第2376期-中国经济复苏，5月挖掘机销量同比增68％">
+<meta property="og:url" content="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2376%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C5%E6%9C%88%E6%8C%96%E6%8E%98%E6%9C%BA%E9%94%80%E9%87%8F%E5%90%8C%E6%AF%94%E5%A2%9E68%-OdrHJN5oNW8/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的6月9号星期二，中国经济也开始复苏，出现了复苏的苗头。人民日报6月9号今天报道，3月以来中国挖掘机的销售保持良好的势头，在3月4月分别创下了当月销量的历史新高。中国工程机械协会6月8日公布的最新数据显示，在5月份挖掘机的销售达到了3.17万台，同比增长了68%，巨幅增长将近70%的增长，说主要品牌厂商的热门机型说一上线就被预定一下，线就是说一下生产线马上就被运走了。他说就">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-08T16:07:06.000Z">
+<meta property="article:modified_time" content="2020-07-08T03:42:03.318Z">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2376%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C5%E6%9C%88%E6%8C%96%E6%8E%98%E6%9C%BA%E9%94%80%E9%87%8F%E5%90%8C%E6%AF%94%E5%A2%9E68%-OdrHJN5oNW8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200609第2376期-中国经济复苏，5月挖掘机销量同比增68％ | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2376%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C5%E6%9C%88%E6%8C%96%E6%8E%98%E6%9C%BA%E9%94%80%E9%87%8F%E5%90%8C%E6%AF%94%E5%A2%9E68%-OdrHJN5oNW8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200609第2376期-中国经济复苏，5月挖掘机销量同比增68％
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-09 01:07:06" itemprop="dateCreated datePublished" datetime="2020-06-09T01:07:06+09:00">2020-06-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:42:03" itemprop="dateModified" datetime="2020-07-08T12:42:03+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/09/20200609%E7%AC%AC2376%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C5%E6%9C%88%E6%8C%96%E6%8E%98%E6%9C%BA%E9%94%80%E9%87%8F%E5%90%8C%E6%AF%94%E5%A2%9E68%25-OdrHJN5oNW8/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/09/20200609第2376期-中国经济复苏，5月挖掘机销量同比增68%-OdrHJN5oNW8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的6月9号星期二，中国经济也开始复苏，出现了复苏的苗头。人民日报6月9号今天报道，3月以来中国挖掘机的销售保持良好的势头，在3月4月分别创下了当月销量的历史新高。中国工程机械协会6月8日公布的最新数据显示，在5月份挖掘机的销售达到了3.17万台，同比增长了68%，巨幅增长将近70%的增长，说主要品牌厂商的热门机型说一上线就被预定一下，线就是说一下生产线马上就被运走了。他说就是说这意味着什么？就意味着心冠肺炎后，中国各地现有的工程项目不断的在提速，意味着积极扩大有效投资，各地的投资的新项目是纷纷落地，说中国各地掀起了新一轮的投资热潮，一批的重大项目加快落实，说中信证券研报认为疫情给中国和全球经济带来了前所未有的冲击，面对风浪突起，中国政府及时调整预期目标，并采取特殊时期的特殊举措，监守经济基本盘，中国最先控制住疫情，最先复工复产，中国经济已呈现快速修复之事，经济增速年内有望恢复至以前水平，预计前年最终实现3.1%的增长。 </p>
+<p>非常高兴我现在告诉你新闻播报完了，评论来了告诉你这是放屁，这是胡说八道，这绝对不是一个好消息。经济增长不是看挖掘机的数量的，这人民日报就是疯了，要歌功颂德，已经到了不择手段的地步。 </p>
+<p>如果在改革开放初期的话，我们挖掘机的销量同比增长68%，这作为一个经济就是说复苏经济向上的好消息，我是认同的，但是改革开放30多年了，同志们在目前的情况之下，挖掘机的销量同比增长是不对的，这说明什么？说明全中国都在加大搞基建，各个省市地区都认为经济要崩溃，经济要粮，那么他们在要维护经济的时候怎么办？还是传统的卖地，售楼开发搞大工程，反正要不就是修桥、建路、搞基建、修高铁，用这些数字来充经济的门面，来告诉你经济又回来了，然后冲GDP，然后地方的领导们面子上好看，但是对于中国经济来讲，改革开放30多年了，我们的基建搞了这么久，改革开放初期，为什么就是说让这些房地产开发商去挣钱？是因为我们那时候的的确确有住房的问题，中国人很多住房不够，很多人都是处在一个蜗居的状态，但是现在还是大量的商品房住房涌现出来，整个市场涌现了这么多，以至于到了而且中国现在进入一个老年老龄化的社会了，到了应该是到2025年的时候，中国据说就有1/4的老年人，好像到了2030年有1/3每三个人里边就有一个是老年老年人就达到了日本，目前可能我们再过10年到15年就会达到日本的目前的这个现状就是老年人占了一个社会的非常大的比例。 </p>
+<p>那么老年人进入老龄化社会之后，首先冲击的是什么？房地产。为什么现实情况你没有那么多人了，你到银行干什么对不对？你现在很多独生子女都是家里父母有一套房，然后老婆家有一套房，然后自己俩人结婚买了一套房，对不对？然后可能有一个孩子或者有两个孩子，对不对？现在大多数其实还是一个孩子，开放二胎之后不是不想生，是生不起，对不对？而且这还不算是那些取不起的，结不起婚的咱都不算，绝大多数都是这么一个情况，那也就是说什么说明你们生了这一个孩子里边，这一个孩子一出生，他就有了三套房，爷爷、奶奶、姥姥、姥爷加上父母，这三套房其实都是他的，对不对？ </p>
+<p>那已经就富欲出来的一套房对不对？然后再结婚，你会发现俩人一结婚，一人有三套房，2人一间婚，两人有6套房，你把这房子给谁住？你是把这房子把这砖头拆下来煮了吃了它是吧？当饭吃。你现在在玩命搞基建，我们的高铁已经足够了，高速公路修的也差不多了，你还要修什么又要修楼，对不对？以前就有过一个经济学就叫摩天大楼经济学，什么意思？就说一个经济体一旦到最后发展到了之后，玩命的去干活，盖摩天大楼都要盖什么是亚洲第一高楼，世界第一高楼的时候说明这个经济体要出问题了，到了经济发展进入尾声了，我认为这个是有道理的，就是到了一定的阶段了之后，你有了这个钱，有了这个财富，但是没有任何的实力让你去投，只能拿这些钱干什么了？盖楼接着盖楼，一旦出现这种情况，经济实际上是向坏了，经济整个的心被掏空了，这才是真实的情况。 </p>
+<p>所以挖掘机提销量提高了68%，这绝对不是一个好好现象，尤其是在改革开放，现在不是30年了，改革开放差不多已经40年了，中国的基础建设已经我觉得是咱不说超额，有的人认为基础建设已经超额完成目标了，我认为基本上是满足目前的需要了，我们目前的经济发展不应该再以挖掘机什么修路修桥修修为主了，而且现在很多的修竟然是什么知道吗？明明盖好了的说违建不合格把它拆了重建，为什么？ </p>
+<p>就为了 GDP地方官员的脸上好看，这就是胡搞，这种就会导致重复的投资重复的浪费，对经济反而是非常的不好的，所以我希望任何人都应该冷静下来想一想，中国目前的经济是不是还要靠挖掘机去支撑？新到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/09/20200609%E7%AC%AC2375%E6%9C%9F-%E7%BE%8E%E8%82%A1%E5%A4%A7%E6%B6%A8%EF%BC%8C%E7%BA%B3%E6%8C%87%E7%AC%AC%E4%B8%80%E6%AC%A1%E7%AA%81%E7%A0%B49900%E7%82%B9%E5%88%9B%E5%8E%86%E5%8F%B2%E6%96%B0%E9%AB%98-IMvdIbtToxQ/" rel="prev" title="20200609第2375期-美股大涨，纳指第一次突破9900点创历史新高">
+      <i class="fa fa-chevron-left"></i> 20200609第2375期-美股大涨，纳指第一次突破9900点创历史新高
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/09/20200609%E7%AC%AC2378%E6%9C%9F-%E6%98%8E%E5%B0%BC%E9%98%BF%E6%B3%A2%E5%88%A9%E6%96%AF%E5%B8%82%E5%B0%86%E8%A7%A3%E6%95%A3%E8%AD%A6%E5%AF%9F%E5%B1%80%EF%BC%8C%E7%BA%BD%E7%BA%A6%E8%A6%81%E5%89%8A%E5%87%8F%E8%AD%A6%E9%98%9F%E6%8B%A8%E6%AC%BE-JOYUQL_WsTg/" rel="next" title="20200609第2378期-明尼阿波利斯市将解散警察局，纽约要削减警队拨款">
+      20200609第2378期-明尼阿波利斯市将解散警察局，纽约要削减警队拨款 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/06/09/20200609%E7%AC%AC2376%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%A4%8D%E8%8B%8F%EF%BC%8C5%E6%9C%88%E6%8C%96%E6%8E%98%E6%9C%BA%E9%94%80%E9%87%8F%E5%90%8C%E6%AF%94%E5%A2%9E68%-OdrHJN5oNW8/";
+    this.page.identifier = "2020/06/09/20200609第2376期-中国经济复苏，5月挖掘机销量同比增68%-OdrHJN5oNW8/";
+    this.page.title = "20200609第2376期-中国经济复苏，5月挖掘机销量同比增68％";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

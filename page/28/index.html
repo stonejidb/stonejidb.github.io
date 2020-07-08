@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="stone记 数据库">
+<meta property="og:type" content="website">
+<meta property="og:title" content="stone记 数据库">
+<meta property="og:url" content="https://stonejidb.github.io/page/28/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="stone记 数据库">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="stonejidb">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/page/28/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/06/07/20200607%E7%AC%AC2366%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E8%B5%B7%E8%AF%89%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E6%95%85%E6%84%8F%E5%87%BA%E5%8F%A3%E4%BC%AA%E5%8A%A3%E5%8F%A3%E7%BD%A9-V_NxxiMgq3Q/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="stone记 数据库">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/07/20200607%E7%AC%AC2366%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E8%B5%B7%E8%AF%89%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E6%95%85%E6%84%8F%E5%87%BA%E5%8F%A3%E4%BC%AA%E5%8A%A3%E5%8F%A3%E7%BD%A9-V_NxxiMgq3Q/" class="post-title-link" itemprop="url">20200607第2366期-美国起诉中国企业故意出口伪劣口罩</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-07 01:06:06" itemprop="dateCreated datePublished" datetime="2020-06-07T01:06:06+09:00">2020-06-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-08 12:26:39" itemprop="dateModified" datetime="2020-07-08T12:26:39+09:00">2020-07-08</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/06/07/20200607%E7%AC%AC2366%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E8%B5%B7%E8%AF%89%E4%B8%AD%E5%9B%BD%E4%BC%81%E4%B8%9A%E6%95%85%E6%84%8F%E5%87%BA%E5%8F%A3%E4%BC%AA%E5%8A%A3%E5%8F%A3%E7%BD%A9-V_NxxiMgq3Q/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/06/07/20200607第2366期-美国起诉中国企业故意出口伪劣口罩-V_NxxiMgq3Q/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>大家好，今天是2020年的6月7号星期日，美国现在要开始正式起诉中国企业，说他们的故意把就是假冒伪劣的 N95口罩卖给美国，就想害死了美国的医护人员，我觉得反正这么说有点过分，我觉得他们主要的目的还不是说要害死你的医护人员，他们的主要目的就是为了挣点钱，其实这么简单就完全的从钱出发。 </p>
+<p>说说联邦检察官办公室6月6号昨天在纽约布鲁克林联邦法院提起了诉讼，美国新泽西地区联邦检察官佩尼托和纽约东区的联邦检察官多诺霍，两个人在一起正式起诉中国今年包装印刷有限公司，简称今年包装。在美国锌冠肺炎一行期间生产并向美国出口了将近50万个伪劣的95口罩，并谎称这些口罩符合95的标准，该行为触犯了美国联邦食品药物和化妆品法案。 </p>
+<p>今年包装在2002020年今年的4月6号到4月21日，一共生产了495,200个，劣质的恩95口罩在向美国联邦食品药药物管理局fdAR申请认证注册的时候，使用了虚假的美国代理商的这个地址，那么联邦调查局牛马克地区负责的特工科涅斯基说，说被告今年包装无视美国公民的安全，为了利润而将紧急救护人员、医院雇员和其他一些工作者的健康直接置于危险之中，被告试图通过错误标注产品质量的手段绕过政府的监管。 </p>
+<p>今年包装面临三项美国药品食品和化妆品法案的指控，每项指控最高可判处了50万美元的罚款，我认为这场官司打下去，中国的经济包装一定说三项全肯定是150万，要赔好赔满，但是到底赔不赔我不知道，因为这个就是说怎么去执行，因为今年包装毕竟在中国，你怎么去执行它？如果在美国它没有企业没有资产的话，你怎么办？对吧？但是反正官司最后今年包装是肯定要输的，这个是没有问题，现在开始打这个官司，我觉得为什么说明美国疫情过去了，美国现在对口罩的需求不那么严重了，如果对口罩需求严重的话，可能就先不告再等一等，现在看来就是说不需要了，也无所谓了，要跟你闹翻了。 </p>
+<p>不过我觉得应该是好事。我觉得这一次在中国很多的伪劣的假冒的n95口罩害了很多人，尤其是前线的医护人员，我觉得包括连武汉的医护人员，现在都应该可以去告一些中国的这些假冒伪劣的产品，必须要拿起法律武器来保护自己，但是在中国很显然是不可以的，其实我们的检测试剂盒也是非常有问题，拿到国外去很多国外的都不愿意用，最后生产了大量的检测试剂，大量的被国外的海外的各个国家的退回，然后最后我们干脆一股脑就给武汉的900多万人就用上了，都给他们用了，然后胡搞。 </p>
+<p>我们当时也在货源视频里我记得报了对不对？他们检测连标签都没有，也没有名字，其实上去之后也不知道是谁，主要的目的就是为了要稀打马虎的把那些检测试剂都用了，然后上去之后根本也不化验，因为化验还要再产生费用。他们反正就是想个法把这些检测试剂盒用了，用了之后就能够少一个工序，少一个工序，实际上根本的就没有的大面积的去检测小面积的测了一下。 </p>
+<p>900多万里边据我们所知就测了可能个几十万都不到100万，剩下那些都根本没测就扔掉了，反正就以此找一个借口找茬，把大量的生产的这些卖不出去的测试器卖给国家，用老百姓的血汗钱，用纳税人的血汗钱把他们的亏空和错误的去弥补过来，就仅此而已，像这些的话，真的如果武汉市民应该就是联合控告这些公司，要求他们的巨额赔偿，知道在美国肯定是可以的，对吧？美国就是这样子，你公司你一旦做了假冒伪劣产品的话，你一旦被告你可能就面临巨额赔偿，你最后得不偿失，你挣得那点钱最后不够你赔的，所以美国公司就不太愿意做假冒伪劣产品。 </p>
+<p>中国公司就是说他挣的钱足够他花，我做假冒伪劣产品，虽然我害了人有点缺德，但是我最后挣了钱我没有损失，我也不承担任何法律责任，所以他就敢做的这些假冒伪劣的产品，这些假冒伪劣的口罩，假冒伪劣的这些检测试剂，他敢做，但是如果中国公民也能够拿起法律武器去告他们，告诉他们倾家荡产，告诉他们的坐牢，那么中国的公司中国的工厂也不敢再卖这种假冒伪劣的口罩和试剂了，对不对？ </p>
+<p>但问题就是因为中国没有法制，所以我经常说在中国实际上我觉得但我说民主其实不见得是好的，尤其我是绝对反对的。就是说这种报名的所谓的民主，我一直都说我支持了这种间接民主，民主一定要有一个一个去束缚他的东西，也不能让他的胡来，对吧？ </p>
+<p>我们经常说以前亚里士多德也是被民主裁决，就是说死刑的对吧？我还是我记错了。苏格拉底是苏格拉底的，苏格拉底，苏格拉底也是被民主判处死刑的，对不对？所以我就说你在这种情况之下，民主也要有一个就是束缚，但是法制是必须的，对吧？你就像香港以前能发展的好，为什么？就是说它其实也没有民主，但是它的法制到位了，对不对？ </p>
+<p>但问题是就是说你要有法制的话，如果没有民主作为根基，你的法制很难健全起来，对吧？英国有民主，所以香港才有法制，对吧？但是有人就会举例说新加坡说新加坡也没有民主，但是法制也不错，但是实际上我们也看到了，就是说现在的新加坡由于没有民主，导致了他的法治，其实某种程度上也受到了一些的这种伤害和清洗。所以必然来讲你要有民主的话，必须要跟你要有法制的话，必然要根植在法民主的基础之上，所以中国目前的问题就在这，是吧？ </p>
+<p>就是说你现在说不清楚到底是先有鸡还是先有蛋，有人就说我们先有法制，然后我们再有民主，有人说我们先有民主，再有了法制，我认为鸡和蛋恐怕就要同时要一起来，知道吧？包括中国人的国民素质也到底是哪个，我觉得恐怕就要是就跟两条腿走路一样，知道吗？两手都要抓，两手都要硬，要一起齐头并进，我觉得相辅相融还可以，因为你如果没有民主，法治其实也很难维持多久。 </p>
+<p>你如果没有法治的民主也维持不了多久，一起一定要一起来，中国现在就完完全全的欠缺这些东西。 </p>
+<p>现在当我觉得说有人就认为美国起诉中国的这种口罩厂商是欺负我们，我觉得实际上不是，就是说中国我们经常犯一些错误，我觉得由美国人来帮我们教训一下，也不错，就好像你生了一个孩子，可能你就只是溺爱，你爱小孩导致这个小孩他就是说完全不懂事，对不对？不孝子对吧？ </p>
+<p>这个时候你如果在外面你请一个老师来，他能够帮你管教一下，我觉得不见得是坏事。对吧？以前经常我们天津以前就有过那小孩就都管不了了，没办法都他爸一看该给你送部队去了，到部队去让你学学规矩对吧？有的还有是被抓了去坐牢，对吧？让你反正会稍微好一点，我当然这东西也很难说，有人跟我说，说这种理念是不对的，因为他发现很多都是人也不孝子的，你送到了部队，对不对？ </p>
+<p>你觉得能去部队学点东西，结果你发现他们部队回来之后更坏了，你知道吗？以前是鸣坏，现在只是蔫坏，那么去了坐牢也是你觉得坐牢能把他教育好，结果坐牢出来之后就更完蛋了。所以也是没法说，这也是一个悖论，就是说美国起诉我们中国企业到底是好事还是坏事儿，对吧？ </p>
+<p>其实这容易引起中国民众的逆反心理，所以我觉得这个道理还是得自己懂。 </p>
+<p>对吧？你以前我有一个朋友经常说好坏，孩子教不好，所以关键还是看你自己。你觉得美国这么做是一个好事的话，我觉得你就配民主和法制。有的人就认为美国这么做是欺负我们是坏事的话，我觉得你可能不配的民主和法制。 </p>
+<p>那么在中国人当中，我以前是认为所有的14亿的中国人每一个人都配民主和法制，现在发现我觉得你也不能一杆子都打死，有些人是配得上民主和法制的，有些人的确配不上，这是事实，我们也必须得的接受，但是就是说这个比例到底有多大？我觉得还是绝大多数，我认为80%~85%的中国人是配得上民主和法制的，有那么5%到15%的一些臭鱼，可以说角的是满锅腥。好吧，这期先讲到这里，谢谢大家。 </p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/27/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><span class="page-number current">28</span>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">stone记 数据库</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">136</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+
+</body>
+</html>
