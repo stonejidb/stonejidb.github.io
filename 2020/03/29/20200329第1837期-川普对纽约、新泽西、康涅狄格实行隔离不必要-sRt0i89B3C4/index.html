@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月29号星期日，昨天播了一期节目说川普说考虑要他昨天星期六的时候在白宫对记者说，他说考虑要是否对新冠病毒疫情严重的纽约、新泽西、康涅狄格州实施隔离，以阻止病毒像传染，像感染病例相对少的地区继续蔓延。当时我说川普绝对不会封纽约的，知道吗？我说哭摸的想不明白，哭摸着一听串不会说当时害怕了，说没有法律依据知道吧？这个不需要疯，我们的那个情况在好转，不需要疯把他吓坏了。  当时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/29/20200329%E7%AC%AC1837%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AF%B9%E7%BA%BD%E7%BA%A6%E3%80%81%E6%96%B0%E6%B3%BD%E8%A5%BF%E3%80%81%E5%BA%B7%E6%B6%85%E7%8B%84%E6%A0%BC%E5%AE%9E%E8%A1%8C%E9%9A%94%E7%A6%BB%E4%B8%8D%E5%BF%85%E8%A6%81-sRt0i89B3C4/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月29号星期日，昨天播了一期节目说川普说考虑要他昨天星期六的时候在白宫对记者说，他说考虑要是否对新冠病毒疫情严重的纽约、新泽西、康涅狄格州实施隔离，以阻止病毒像传染，像感染病例相对少的地区继续蔓延。当时我说川普绝对不会封纽约的，知道吗？我说哭摸的想不明白，哭摸着一听串不会说当时害怕了，说没有法律依据知道吧？这个不需要疯，我们的那个情况在好转，不需要疯把他吓坏了。  当时">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-28T17:03:07.000Z">
+<meta property="article:modified_time" content="2020-07-09T11:47:51.591Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/29/20200329%E7%AC%AC1837%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AF%B9%E7%BA%BD%E7%BA%A6%E3%80%81%E6%96%B0%E6%B3%BD%E8%A5%BF%E3%80%81%E5%BA%B7%E6%B6%85%E7%8B%84%E6%A0%BC%E5%AE%9E%E8%A1%8C%E9%9A%94%E7%A6%BB%E4%B8%8D%E5%BF%85%E8%A6%81-sRt0i89B3C4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/29/20200329%E7%AC%AC1837%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AF%B9%E7%BA%BD%E7%BA%A6%E3%80%81%E6%96%B0%E6%B3%BD%E8%A5%BF%E3%80%81%E5%BA%B7%E6%B6%85%E7%8B%84%E6%A0%BC%E5%AE%9E%E8%A1%8C%E9%9A%94%E7%A6%BB%E4%B8%8D%E5%BF%85%E8%A6%81-sRt0i89B3C4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-29 02:03:07" itemprop="dateCreated datePublished" datetime="2020-03-29T02:03:07+09:00">2020-03-29</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/29/20200329%E7%AC%AC1837%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AF%B9%E7%BA%BD%E7%BA%A6%E3%80%81%E6%96%B0%E6%B3%BD%E8%A5%BF%E3%80%81%E5%BA%B7%E6%B6%85%E7%8B%84%E6%A0%BC%E5%AE%9E%E8%A1%8C%E9%9A%94%E7%A6%BB%E4%B8%8D%E5%BF%85%E8%A6%81-sRt0i89B3C4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/29/20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要-sRt0i89B3C4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月29号星期日，昨天播了一期节目说川普说考虑要他昨天星期六的时候在白宫对记者说，他说考虑要是否对新冠病毒疫情严重的纽约、新泽西、康涅狄格州实施隔离，以阻止病毒像传染，像感染病例相对少的地区继续蔓延。当时我说川普绝对不会封纽约的，知道吗？我说哭摸的想不明白，哭摸着一听串不会说当时害怕了，说没有法律依据知道吧？这个不需要疯，我们的那个情况在好转，不需要疯把他吓坏了。 </p>
+<p>当时我就说科目不应该这么管，川普绝对不会疯的。 </p>
+<a id="more"></a>
+
+<p>纽约是什么地方串口很清楚，封了纽约的话经济损失太大，不是别的。 </p>
+<p>川普很担心钱的问题，你知道吧？他现在担心造成进一步的经济损失，纽约是美国，所以我说什么？纽约是美国的，对，纽约是美国的钱袋子，不能随哪能把钱袋子封了钱袋子，你的经济不用受损失了，所以串吐绝对不会疯的，说出来就是说表个态意思意思，然后吓唬吓唬你，你不天天跟我说你要呼吸机，然后弄1000台呼吸机搁在仓库里吃灰，你又不用对不对？你跟我说你要3万台，然后弄1000多台都在仓库里吃灰，那哭没得你是傻。 </p>
+<p>昨天像串口说那种话知道吗？如果我是哭过你知道说什么吗？我不知道。我知道有1000多台。 </p>
+<p>昨天我讲了那不是，我说要是你的话你怎么回答，你得抵赖不了了，那个是事实对吧？总统既然知道了，肯定不是总统知道了，肯定是下面有人报上去的，人家把仓库的清单弄上来的那个东西，那个东西你要公开说瞎话，你就捣落了，你知道吗？人家可能串口说你可能有证据能证明你这有1000多台搁在仓库里吃亏，对吧？你说你不知道，那拿出来之后你的脸都要挠下去了。不是我倒不是说你知道吧，我说是昨天如果川普说说要考虑要对新闻信息纽约，还有康奈迪克对康州丰收的话，如果我是州长，我不说没有法律依据，我也不说不需要风筝，我也不说一行再见缓，因为你前两天刚跟人说你运行越来越厉害，你说你21天之后需要3万对吧？你的意思说我现在三天增加一倍，我怎么着说哭的可凶了，你要喝奶对不对？ </p>
+<p>然后昨天川普一吓唬你，就说我们现在一型舰好说，我们住 ICU的从300多降到了100多对吧？从300多降一一170多，你又说你多少不多了，对吧？而且他就是担心川普真的要封他对不对？其实根本就不用担心。 </p>
+<p>知道吧？如果我要是他，我昨天我就说我就说我们欢迎总统做指导意见，如果总统认为纽约需要封闭的话，我们绝对尊重总统的决定。你这么说，就是说你要帮我尊重你的决定，你知道吗？我将你一军我看你疯不疯，你懂吗？就是说他99%是不会封的，纽约市事情他不敢封对不对？但是你不说你要疯吗？行你要分我尊重，懂吗？但是什么叫尊重？ </p>
+<p>假如说最后出现了万分之1万/1%，川普说好吧，我决定疯了，你就说好我们尊重总统的决定，但是我们不能疯，我尊重和我同一是两回事，你懂吗？我尊重你的决定，就是说你要是决定丰州的，我尊重你要真丰收的，我说好我尊重你的决定，但是我们决定就是不丰收了，但是我们尊重你就仅此而已，懂了吧？明白这意思吧？ </p>
+<p>就说我看你怎么办，你不说这个吗？我尊重，但是我看看你的决定，你看你做什么决定，对不对？最后如果你到了今天你就说你不疯了，说我说很遗憾，我们疫情这么严重，但是既然总统决定不封周了的话，我们也尊重，但是我们还得需要奶，我们疫情没有建好，你还得给我喂奶，对不对？你懂我意思吧？你这么说不就完了，做一个政治家是不是？所以我就跟你说他肯定不会疯的，他这意思。 </p>
+<p>为什么昨天说这话是这样，川普说他与佛罗里达州还有其他几个州的州长通了电话，他们都说现在很多受感染，但是问题不大的州都问都问总统就是说是否考虑把那几个污染特别严重的州就给封了，这样对我们那些感染的不严重的桌子有好处，因为你不封他们满处乱跑，然后总统就说说好我会考虑的。 </p>
+<p>所以昨天就说考虑一下是不是要对他们峰首先是对思达李达等几个这些州州长有一个交代，既然你们让我考虑了对不对？我也考虑了一下，你不能说你让我考虑一下，我连考虑都不考虑，我就直接跟你说不行，那样不给你面子对不对？我说我考虑一下，让我考虑了一天，我跟你说我考虑完了不行，对吧？就这么个意思。 </p>
+<p>好吧？ </p>
+<p>现在川普说说对纽约、新泽西，还有康州三周进行简易隔离，啥时候现在是不必要的，没有必要。纽约州州长的枯默说说，我不知道从法律角度是否可行，从法律角度上说就没有依据。从医学角度看，我不认为这么做会达到什么目的，不会有什么好好的效果，其实说实话我现在也认为就是说你从中国封城整个全面的这种封，你最后看起来有效果，但是我觉得就是说用力过猛。 </p>
+<p>以前我就讲过这么一种观点就是说看千香三人行，千香三人行当时有一位就是说年纪比较大的一位女士说她跟癌症的斗争就是说十几二十年非常有斗争经验，他就他说很多当年跟我一起一起跟癌症抗争的一些小伙伴们陆陆续续的都去世了，然后他说但是我就活下来了。然后窦文涛就问他在跟癌症抗击的过程当中，您有什么经验？能不能跟我们分享一下？ </p>
+<p>那女的就说她说我最后我学会了一点就是说什么要与癌症共存。这观点我讲过，以前我做过一些视频就是说要学会了严重共存，就是说要有学会了以共产党共存，因为暂时共产党就在中国在这里，你服也得服，不服也得服，对不对？你一定要等着的话，最后大家日子都不好过，所以要学会了以癌症共存，那是之前讲过，但是这个道理都是相通的，知道吗？放在这也是这样子，这个病毒出现了，它会对我们造成损伤，我们要对它进行就是说隔离治疗，增加社交距离等等，这些是必须要做的，不做这些肯定不行，对吧？ </p>
+<p>但是要不要做的特别绝，是不是要赶尽杀绝？就是说你一旦当你的身体里有癌细胞，你一定要跟癌细胞赶尽杀绝的时候，最终搞不好癌细胞被你杀死了，你也死了。这女的就这么一个观点，他说我就是这样的，后来我慢慢的就学会了与癌症的共存，身体我也是他们的，我们一起共享身体，我们一起想办法存活下去，这样能够活的更久。我不是说一定要战胜癌细胞。 </p>
+<p>那么现在来讲美国的这种防疫，还有欧洲的很多的一些防疫，它都是一个问题，就是什么？他用一些高科技手段大量的治理来达到一个什么效果就是说实际上它在减缓，要减缓它使它一点点的释放。 </p>
+<p>然后通过增速的下降，现在我们就增速的已经从增速上，我之前说很多人跟我说，你不说说疫情过拐点了吗？你仔细看我的标题，对吧？我们也跟他说我的标题说的说疫情的增速到达拐点，就是说增速下降了，就最初的时候增速每天每每三天500%的往上涨，对不对？现在已经就完全不是了，对吧？现在下速度整个下去了。 </p>
+<p>说明一个什么问题？就是说如果这么快增速的下降了的话，那说明什么？说明他那很快就要接近最终的全确诊的人群了，你懂吗？如果你还有大量的未释放的话，你每天都是百%500% 百%往上涨，你知道吧？但是实际上现实情况是吧？不是的对不对？你现在官方说有80多万，我查了一下，实际上有很多的商业机构的实验室，商业实验室还有私人实验室数据没有进去，如果都进去的话，实际上应该是测了100多万，已经可以说是因应侧进侧了，说纽约这好每一天基本上现在是2万，这么韩国一个国家才多少？ </p>
+<p>每天开1万，就光纽约每天就2万，说全美国现在每一天差不多是9万个测试，当然纽约现在是重灾区，纽好像一共是12万，纽约有将近6万，快有一半了，40%多。 </p>
+<p>对，纽约终端其实跟纽约的多一点，对吧？但是为什么这就是一个科技水平，能够从当十十几天前的时候还是测基本上测不了，对不对？ </p>
+<p>十几天就能够发展到现在这样100多万的测试出来了，而且保证现在是每天到9万，现在甚至有传言说以后要做到每一天20万到50万，什么概念？ </p>
+<p>就是说如果每天9万的话，就说明现在其实每10天就是100万个，100万个人接受检测，那100万个人接受检测，如果是每天20万到50万，那也就是说每10天能够扔出来200~50万个检测盒，对吧？ </p>
+<p>这种东西来讲，我觉得对不对？你还是李福，然后通过这种的它会迅速的就是说最起码让你就是说你知道了对吧？你确诊了，哪怕你在家自主隔离你也知道了，你就相对来讲你也不会那么乱跑了，对吧？就是说有的是有责任心，还有一些你也担心的在乱跑，你自己身体出状况对吧？你不知道你得病的时候你晚上乱跑，当你知道之后，你一旦知道之后，你自己他心里就会有一个暗示说我这疼我这发紧我那不你懂吗？ </p>
+<p>就说你没确诊你就不信了，你这样你去检测，假如说检测错了，错误了，比如拿了别人的检测报告给你弄混了两个检测盒弄混了，结果那个人跟他说没事回家了高兴，回家特别高兴，然后烧一段咳嗽也没当回事，过两天病都好了，就要说反正还就是小感冒一一姓跟我说的，我这不是新罐，回来看看电视他没事了，跟你说你确诊了，你现在回家，你现在不太厉害，回家自我隔离，你本来事没有见商机的对不对？但是你拿这个确诊报告你心里你嘀咕，过两天你真咳嗽了，你知道吧？就是一个心理作用，所以我觉得目前这样子我真的认为没有必要的做的就那么的赶尽杀绝。你像中国昨天我报道，北京两个人为了戴不戴口罩把一个打死了，对不对？说句实在的，两个人一块感染了病毒，搞不好，没半个月两人一块出现了，啥事都没有，对不对？ </p>
+<p>结果俩人都没感染病毒，把一个打死了，死了这就别提了，那就肯定活不过来了，对不对？打死人我昨天我说我估计这种严打时期搞不好得判20年对不对？你说这种伤害搞不好比病毒的伤害还大，所以这就是而且造成社会极大的撕裂，东北的老头被人打得满脸血，大家也都看到了对吧？ </p>
+<p>多少自杀的，一个武汉那边两个老夫妻手手把手一块跳楼的，还有那女的把他女儿山上自杀的，当然这些我在非会员你都没讲，都是在会员里边讲的对吧？ </p>
+<p>但是咱就说这些事，所以我也觉得就是说丰州我觉得没有什么太大的必要，保持社交距离，勤洗手，我觉得这才是最重要的就是说你是在治癌症没有错，但是就像川普说的，当你解决问题的时候，你的方法不能比那个问题带来的灾难更大，对吧？ </p>
+<p>要不然你为的是什么呢？对不对？比如说你手发炎了，对不对？到了医院大夫说发炎了，吃点消炎药你就吃消炎药，不舒服，他说那要不要截肢？对吧？你不能那么干对不对？你是吧？所以咱就说这意思。 </p>
+<p>好吧？然后美联社也说说联邦政府根据法律，它是有权采取措施来防范传染病的跨洲传播，但是这个在美国历史上从来没有实现过。所以这个恐怕在美国恐我认为是很难，但现在无论如何总统和州长就达成了一个共识，纽约不分周，纽约不分周的话，地铁就不会停，跟我打盹的观众我估计可以洗洗睡了，好吧？也不知道他要跟我赌什么。好吧，就先讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/29/20200329%E7%AC%AC1836%E6%9C%9F-%E6%9D%9C%E5%85%B0%E5%A4%A7%E5%AD%A6%E6%95%99%E6%8E%88%E5%8A%A0%E9%87%8C%EF%BC%9A%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E4%B8%8D%E6%98%AF%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%9E%84%E5%BB%BA%E7%9A%84%EF%BC%8C%E6%AD%A6%E6%B1%89%E5%8D%8E%E5%8D%97%E6%B5%B7%E9%B2%9C%E5%B8%82%E5%9C%BA%E4%B9%9F%E4%B8%8D%E6%98%AF%E7%97%85%E6%AF%92%E7%9A%84%E6%BA%90%E5%A4%B4-iGf1nB1a-rQ/" rel="prev" title="20200329第1836期-杜兰大学教授加里：新冠病毒不是实验室构建的，武汉华南海鲜市场也不是病毒的源头">
+      <i class="fa fa-chevron-left"></i> 20200329第1836期-杜兰大学教授加里：新冠病毒不是实验室构建的，武汉华南海鲜市场也不是病毒的源头
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/29/20200329%E7%AC%AC1838%E6%9C%9F-%E5%B7%9D%E6%99%AE%E9%93%81%E5%85%AC%E9%B8%A1%EF%BC%8C%E9%87%91%E6%AD%A3%E6%81%A9%E6%8E%A5%E7%9D%80%E6%94%BE%E7%82%AE%E4%BB%97-janGwOr1UC4/" rel="next" title="20200329第1838期-川普铁公鸡，金正恩接着放炮仗">
+      20200329第1838期-川普铁公鸡，金正恩接着放炮仗 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">638</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/29/20200329%E7%AC%AC1837%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AF%B9%E7%BA%BD%E7%BA%A6%E3%80%81%E6%96%B0%E6%B3%BD%E8%A5%BF%E3%80%81%E5%BA%B7%E6%B6%85%E7%8B%84%E6%A0%BC%E5%AE%9E%E8%A1%8C%E9%9A%94%E7%A6%BB%E4%B8%8D%E5%BF%85%E8%A6%81-sRt0i89B3C4/";
+    this.page.identifier = "2020/03/29/20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要-sRt0i89B3C4/";
+    this.page.title = "20200329第1837期-川普对纽约、新泽西、康涅狄格实行隔离不必要";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
