@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月24号星期五，关于中航原油宝这个事闹了几天了，本来我不太想说，但是今天还不断的有人跟我说说想讲讲想听听。为什么之前我不想说中航原油宝，本来他的客户全国就只有1.37万个，他是炒石油期货的，本来人就不多，截止到4月20号，一共有3784户持有美国的原油合约，等于这次涉及到的也就是3000多人。当然我说光是中行，中行的原油宝的客户没有算上其他好像中国还有两个，一个工行，一">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200424第2072期-中行“原油宝”悲剧的内幕">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E4%B8%AD%E8%A1%8C%E2%80%9C%E5%8E%9F%E6%B2%B9%E5%AE%9D%E2%80%9D%E6%82%B2%E5%89%A7%E7%9A%84%E5%86%85%E5%B9%95-sQzu65Y68mw/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月24号星期五，关于中航原油宝这个事闹了几天了，本来我不太想说，但是今天还不断的有人跟我说说想讲讲想听听。为什么之前我不想说中航原油宝，本来他的客户全国就只有1.37万个，他是炒石油期货的，本来人就不多，截止到4月20号，一共有3784户持有美国的原油合约，等于这次涉及到的也就是3000多人。当然我说光是中行，中行的原油宝的客户没有算上其他好像中国还有两个，一个工行，一">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-23T16:07:02.000Z">
+<meta property="article:modified_time" content="2020-07-09T02:12:31.215Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E4%B8%AD%E8%A1%8C%E2%80%9C%E5%8E%9F%E6%B2%B9%E5%AE%9D%E2%80%9D%E6%82%B2%E5%89%A7%E7%9A%84%E5%86%85%E5%B9%95-sQzu65Y68mw/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200424第2072期-中行“原油宝”悲剧的内幕 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E4%B8%AD%E8%A1%8C%E2%80%9C%E5%8E%9F%E6%B2%B9%E5%AE%9D%E2%80%9D%E6%82%B2%E5%89%A7%E7%9A%84%E5%86%85%E5%B9%95-sQzu65Y68mw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.001.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200424第2072期-中行“原油宝”悲剧的内幕
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-24 01:07:02" itemprop="dateCreated datePublished" datetime="2020-04-24T01:07:02+09:00">2020-04-24</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E4%B8%AD%E8%A1%8C%E2%80%9C%E5%8E%9F%E6%B2%B9%E5%AE%9D%E2%80%9D%E6%82%B2%E5%89%A7%E7%9A%84%E5%86%85%E5%B9%95-sQzu65Y68mw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/24/20200424第2072期-中行“原油宝”悲剧的内幕-sQzu65Y68mw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月24号星期五，关于中航原油宝这个事闹了几天了，本来我不太想说，但是今天还不断的有人跟我说说想讲讲想听听。为什么之前我不想说中航原油宝，本来他的客户全国就只有1.37万个，他是炒石油期货的，本来人就不多，截止到4月20号，一共有3784户持有美国的原油合约，等于这次涉及到的也就是3000多人。当然我说光是中行，中行的原油宝的客户没有算上其他好像中国还有两个，一个工行，一个建行，再加上中行，好像这三个行是可以搞原油期货的，在中行这儿现在涉及到就这么3000多个人，所以本来我就觉得涉及面比较窄就算了，但是因为真的是比较惨，真的是比较惨，闹了也比较大，咱们简单说一下怎么回事就是说一般你买了期货，比如说你4月份买期货，你买不是5月份的吗？ </p>
+<p>这个55月份快到了之后他怎么办？他就叫什么，他们那叫什么？移仓叫什么叫什么移油换仓或者叫移仓。怎么移仓就是说我把5月份的卖掉买6月份的，你知道了吧？他一般来讲你买期货都买最近的，越近的价格越准确一些，所以他们反正但是快到4月底了就开始就开始把5月份的卖掉，然后换6月份的，或者说就是说不换，反正就倒一下把期货那么在4月8号到4月14号，全球最大的原油的etf基金的uso就把美油的5月份的合约完成了移仓在4月8号到4月14号，那么4月14号工行建行，刚才我们说中国不还有两个银行，工行和建行的，用这种记账式的原油，也是把这个合约也移仓了，也从85月1<del>6月了平仓价格他们4月8号到4月10 14号，基本上都在21</del>20美元一桶，中航是胆比较大，中航到了4月20号中航要移仓，而4月21号是最后的交易日，也就是他等到了最后到了最后一个交易日了，中航才要去移仓。 </p>
+<a id="more"></a>
+
+<p>但问题是什么？现在？石油是不出事儿了吗？这一次打击掉的特别厉害，结果到最后一天想要换仓的时候，没人跟他动，没人换没人换怎么办？他就只能在盘中的玩命往下砸，我砸低价愣往外愣往外卖，因为为什么？就是说其实为什么最后变成负的就在这儿了，就是说最终到0了，对吧？ </p>
+<p>到了00了我跟他我我也不卖了，你把邮给我对不对？不就完了吗？但是中行他根本没有石油的交割和交付能力，他没有这个能力，也就是说到了那个日子，他根本没办法去收人家的石油去，他完完全全收不了，所以在这种情况下怎么办？就愣着往下砸，最后咱要付的也认了，最后我认栽了，我赔钱就得了，对不对？但是认栽赔钱赔的不是自己的钱，赔的是客户的钱，知道吧？ </p>
+<p>最后反正这么说，这些客户基本上就到一个什么程度，就是说比如说当时你跟中行你想买，比如说你拿20块钱，你就算买了一桶，咱们假设说买了一桶，然后最后变成了负担了37块钱，那么你那20块钱没有了，然后比如说你的账号里不有20块钱买了，买了不就赔赔光了，赔光了之后你还欠中国银行的37块3 37 37块多美元，就差不多这么个意思。有人就觉得中航是不是不会这么不要脸，最多就是说我搁了多少钱在账户里买股票一样，我搁了多少钱在账户里，我买了最后了赔了就完了得了。 </p>
+<p>不行，中行没完，就你账号里的钱赔光了之后，你欠了钱你就还给我。所以在23号昨天为什么这本20号的事对吧？ </p>
+<p>我当时就没有说，因为3000多个人我就想算了，在昨天的时候中行开始真的开始划扣的道歉的资金，说这有投资者的原油宝账户当中的保证金被直接的划走，而且开始要正式执行负的37.63美元一桶的结算价，所以他们说比 P2P的豹雷还惨。 </p>
+<p>说p to p当时就是说你不是贪利息， p to p你不就是你把本金，比如说我投多少本金，然后你从我给我利息，我摊的利息，最后利息给你的本金没了，你懂我意思吧？就是他的利息最后丢了本金，说现在倒好，这个抄底原油不觉得原油价格低吗？抄底原油现在是本金丢了不说吧，你还道歉你还走不了。所以在这种情况之下，他们首先你玩着期货保证金吗？保证金就给你扣走了，扣了之后其实还是不够，不够的，你还道歉怎么办？他现在认为就是这样的，他要把他视为欠款，就你欠银行钱，那么银行有权向人民银行申请将欠款记录纳入征信，就说你可能就变老赖了，这钱你要不还到，这就这么个意思，你知道吗？ </p>
+<p>为什么就成悲剧了呢？ </p>
+<p>基本上他们认为实际上应该是中航在进行移仓的时候，也不能说技术问题就是说你为什么要拖到最后一天，但他以前也都这么搞，以前没出事，这一次因为也是石油就跌不休也没有办法，这次反正出了大问题了，以后我估计中行也不敢的，就搁到最后一天了就是说他们讲话你搁到最后一天就属于被人家就是说关着门的着打，你知道吗？ </p>
+<p>我想怎么结了，因为你到最后一天了，你不行你就来提，是由你提了你就提不了，对不对？你提不了你也是问题对吧？你解决这问题对吧？他最后没办法了，就宁可每一个不但我不挣钱，我赔钱，我赔给你钱，我也不能要了，就没有办法了，最后知道吧？就出了就这么一个事儿，被人家是报证了一笔。 </p>
+<p>主要问题很多人认为还是中行，就是说说白了咱们跟美国在金融界有巨大的差距，所以之前我有说过说中国要开放金融领域的话，先是非常危险的，我们在金融领域的几乎可以说就没什么人才，你懂我意思对吧？就是说如果跟美国的华尔街这些金融领域比起来差距很非常的大，从整体上来讲是非常的不成熟的，跟人家根本没法交手。所以如一旦我们开放到金融领域，就很容易就被人家洗劫一空。 </p>
+<p>这一次真的是被人家咬了，这一大口肉下去真是连肉带血，几乎可以说就是中航自己的问题，但是他就这样对中航自己问题，中航自己不承担，让客户去承担。 </p>
+<p>所以为什么很多客户对此极为不满，但是我也要说什么，就是说作为客户来讲，你也有选择对不对？你明明知道中行不着调，你为什么不去工行和建行买呢？对吧？所以我只能说反正中行有问题吗？有问题，但是客户来讲你投资吗？你愿赌服输怎么办？没想到这一次道歉，就很多人也说又算了，我也知道了，看来是拿不回来了，一分钱拿不回来了，但是我道歉你是怎么回事对不对？等于是你亏损了，我们帮你来付亏损，对吧？ </p>
+<p>但是我只能这么说就是说你为什么要投资一个如此不成熟的银行，对吧？当然你认为中行这好，中国中行这么大的银行对不对？但是在金融领域就是如此的不成熟，所以其实我也说过很多次了，就是说你而我相信能够投这能玩这个人都是有点钱的，因为玩这个都是几十万上百万的，这钱少的玩也没意思，能玩这个我觉得都算是有钱人。我觉得你真有钱的话，我说过很多次，你真有钱，真的有富裕钱，要想办法把它换成非人民币的财产，然后离开这些中国的银行，换到一些其他的一些外资的银行，把钱投到国外去，不要把你的鸡蛋都放在同一个篮子里，尤其是目前这个阶段，我不愿意去引起恐慌，但是你资料不傻，你都能看得出来，这是一场的巨大的全世界的一场的金融危机。 </p>
+<p>中国后面问题大了，你知道吧？关于他这个失业，我是不愿意多说，你知道吗？但是你自己去想好不好？我愿意往少了说，我愿意说全国就几百万这个事业，但是实际上对吧？你懂我意思对不对？ </p>
+<p>后面问题大了，中国人民币的超发我们18年都讲过了，人人民币超发根本就不应该是现在对美元的价格，真正的按照超发额来讲，对美元应该是1:19，虽然这次美元也是放水了，但人民币放水放的更厉害，我都没有讲人民币又双降息，你知道吗？人民币是玩命在灌水，而且人民币这灌水就是没有这次疫情还灌水，有了这次疫情惯得更厉害，所以你不要以为美元灌水了，然后你人民币换美元就好了，不会的好不了你放心好了，只能更早。 </p>
+<p>对，所以你懂我意思对吧？对于这些中航原油宝的客户，我只能说我非常的同情你们，但是怎么说这种东西愿赌服输，你没办法，谁让你当初你偏要把你的钱搁在中行对不对？你要早点听我的，你拿着钱到美国来买房子，或者到美国来干点啥，我觉得都最起码不会让你不你在美国买一个房子，最起码它不会让你就说这房子没了，这房子买还是你的对不对？你这好歹对吧，你看你看到一房子对不对？所以你们自己想真的没有办法，所以我也怎么说，可怜之人也是你懂意思对不对？ </p>
+<p>当然我也是非常同情你们，我也认为这个中行应该更多的去承担这个责任，反正我在这也呼吁北京当局不能看到的话，也应该跟中行打个招呼，就是说这个事我觉得应该是中行跟客户一起的来分担这个事情，我觉得最起码就到一个什么，就是说账户的资金全部划走，保证金全部划走之后，剩下的钱就不要再追讨了，中航自己来承担就得了，我觉得这样子就是说双方各打50大板，我觉得是比较好，好吧，但是我知道估计也做不到中行那种就是说你知道吗？大爷的妈妈对吧？ </p>
+<p>你能惹得起他吗？对吧？没有说，但是这就是中国对吧？所以你怎么办？你生活在一个神奇的国度，你就要接受这种各种神奇的事情，对吧？反正这个也是我们中行咱们这种金融领域，在期货领域反正交了一笔学费，通过这个也学习一下，以后我相信他们不敢这么干了，这些就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/24/20200424%E7%AC%AC2070%E6%9C%9F-%E9%AD%81%E5%8C%97%E5%85%8B%E7%9C%81%E9%95%BF%E5%BB%BA%E8%AE%AE%E5%9C%A8%E9%AD%81%E5%8C%97%E5%85%8B%E6%96%BD%E8%A1%8C%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E6%94%BF%E7%AD%96-2rCjTJGtuko/" rel="prev" title="20200424第2070期-魁北克省长建议在魁北克施行群体免疫政策">
+      <i class="fa fa-chevron-left"></i> 20200424第2070期-魁北克省长建议在魁北克施行群体免疫政策
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E6%9C%8913.9%EF%BC%85%E7%9A%84%E5%B1%85%E6%B0%91%E5%85%B7%E6%9C%89%E7%97%85%E6%AF%92%E6%8A%97%E4%BD%93-9tviFgH_zb0/" rel="next" title="20200424第2072期-纽约有13.9％的居民具有病毒抗体">
+      20200424第2072期-纽约有13.9％的居民具有病毒抗体 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.001.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">475</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/24/20200424%E7%AC%AC2072%E6%9C%9F-%E4%B8%AD%E8%A1%8C%E2%80%9C%E5%8E%9F%E6%B2%B9%E5%AE%9D%E2%80%9D%E6%82%B2%E5%89%A7%E7%9A%84%E5%86%85%E5%B9%95-sQzu65Y68mw/";
+    this.page.identifier = "2020/04/24/20200424第2072期-中行“原油宝”悲剧的内幕-sQzu65Y68mw/";
+    this.page.title = "20200424第2072期-中行“原油宝”悲剧的内幕";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月19号星期日，美国多个州都发生了抗议示威，反对居家令的游行，我觉得几乎可以说就是说美国政府现在可能就不得不走上这个群体免疫之路了。咱先看看是这样，美国多个州就是说是周五密执根州，当时兰馨是吗？对我们说好多拿端着突击步枪跑到市政府门口去抗议去了。然后后面明尼苏达州的首府圣保罗有一个叫解放明尼苏达的组织，周五到他们州长沃尔兹的官邸之前抗议，然后后面接下来北卡罗纳纳尔，然后">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/19/20200419%E7%AC%AC2031%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%A4%9A%E4%B8%AA%E5%B7%9E%E6%8A%97%E8%AE%AE%E7%A4%BA%E5%A8%81%E5%8F%8D%E5%AF%B9%E5%B1%85%E5%AE%B6%E4%BB%A4%EF%BC%8C%E6%94%BF%E5%BA%9C%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%B5%B0%E4%B8%8A%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E4%B9%8B%E8%B7%AF-3scHkCzf98w/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月19号星期日，美国多个州都发生了抗议示威，反对居家令的游行，我觉得几乎可以说就是说美国政府现在可能就不得不走上这个群体免疫之路了。咱先看看是这样，美国多个州就是说是周五密执根州，当时兰馨是吗？对我们说好多拿端着突击步枪跑到市政府门口去抗议去了。然后后面明尼苏达州的首府圣保罗有一个叫解放明尼苏达的组织，周五到他们州长沃尔兹的官邸之前抗议，然后后面接下来北卡罗纳纳尔，然后">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-18T16:03:01.000Z">
+<meta property="article:modified_time" content="2020-07-09T02:12:31.024Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/19/20200419%E7%AC%AC2031%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%A4%9A%E4%B8%AA%E5%B7%9E%E6%8A%97%E8%AE%AE%E7%A4%BA%E5%A8%81%E5%8F%8D%E5%AF%B9%E5%B1%85%E5%AE%B6%E4%BB%A4%EF%BC%8C%E6%94%BF%E5%BA%9C%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%B5%B0%E4%B8%8A%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E4%B9%8B%E8%B7%AF-3scHkCzf98w/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/19/20200419%E7%AC%AC2031%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%A4%9A%E4%B8%AA%E5%B7%9E%E6%8A%97%E8%AE%AE%E7%A4%BA%E5%A8%81%E5%8F%8D%E5%AF%B9%E5%B1%85%E5%AE%B6%E4%BB%A4%EF%BC%8C%E6%94%BF%E5%BA%9C%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%B5%B0%E4%B8%8A%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E4%B9%8B%E8%B7%AF-3scHkCzf98w/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.001.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-19 01:03:01" itemprop="dateCreated datePublished" datetime="2020-04-19T01:03:01+09:00">2020-04-19</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/19/20200419%E7%AC%AC2031%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%A4%9A%E4%B8%AA%E5%B7%9E%E6%8A%97%E8%AE%AE%E7%A4%BA%E5%A8%81%E5%8F%8D%E5%AF%B9%E5%B1%85%E5%AE%B6%E4%BB%A4%EF%BC%8C%E6%94%BF%E5%BA%9C%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%B5%B0%E4%B8%8A%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E4%B9%8B%E8%B7%AF-3scHkCzf98w/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/19/20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路-3scHkCzf98w/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月19号星期日，美国多个州都发生了抗议示威，反对居家令的游行，我觉得几乎可以说就是说美国政府现在可能就不得不走上这个群体免疫之路了。咱先看看是这样，美国多个州就是说是周五密执根州，当时兰馨是吗？对我们说好多拿端着突击步枪跑到市政府门口去抗议去了。然后后面明尼苏达州的首府圣保罗有一个叫解放明尼苏达的组织，周五到他们州长沃尔兹的官邸之前抗议，然后后面接下来北卡罗纳纳尔，然后俄亥俄由他往欧美、维吉尼亚、华盛顿等之后都发生了类似的抗议游行。 </p>
+<p>川普周五发推说支持抗议的示威群众，然后还在推上说了说要解放密芝根，解放明尼、苏达、解放弗吉尼亚，德州现在作为全美第一个宣布重启德州，他们宣布是5月1号就开始逐步恢复了，这个算是在全美都走得比较靠前的。现在的情况就这样，我们认为基本上如果在这种情况之下，美国开始恢复的话，实际上应该说是算是走一个群体免疫了，为什么这么说呢？中国恢复的话还是管理的就是说相对比较严格的这种恢复对吧？你可以看到现在北京已经到了，就是说任何的人你进京都要先隔离14天，甚至你飞机的话干脆就不能直接飞北京了，直接就给你飞别处去了。我们之前我们说天津认识一朋友，不也是他们从欧洲回来直接飞西安，到西安先隔离14天，再再回家对吧？就这么一个情况。 </p>
+<a id="more"></a>
+
+<p>美国现在如果要这样子的话就是说怎么说，看来等疫苗是等不着疫苗，估计还得要一年，就最快可能也到今年年底对吧？药也在等待，药反正川普推荐了两个要，一个绿得西北一个枪立奎，但是民主党那边是强烈反对，动不许中，刚刚要什么时候能出来，不知道两党还在为了不发药还在炒是吧？但是经济也不能崩溃对吧？经济如果崩溃的话，后果可能更严重，所以在这种情况之下，就是说我觉得从联邦到地方其实都有一个共识，就是说经济估计都要重启，只不过就是说程度咱这什么诚信是邻居家水管好跟咱没关系，好接着说。 </p>
+<p>所以在这种情况下怎么办？ </p>
+<p>我觉得各个州肯定是不一样，对吧？美国我经常说中国其实也应该这样子，因为中国各个省市不一样，有的省市闹得厉害，有的省市闹得不厉害，你如果全国都一样的话，实际上是不公平的。美国也这样，他各个州就有的州这样，有的州因为你疯的时候也不一样，有的个封得严一点，有个多蜂到松一点对吧？在解封的时候也应该是不一样，各个州就应该我觉得按照他们自己的情况去做。 </p>
+<p>咱们说纽约纽约来讲，因为咱们在纽约，咱们说纽约纽约库莫他也承认一个问题就是说如果重启的话，纽约如果重启，很有可能还会再造成的一定程度的感染和死亡。因为你说现在完全控制住了，实际上没有对吧？特效药也没出来，还没出来的情况之下，其实没有人能够完全控制的住对吧？其实中国也是就是吹牛逼说自己控制住了对吧？但我们会员专享里我们也做了视频，我们得到消息实际上不是清零，中国现在每一天不是清零，实际上还是有一些对吧？ </p>
+<p>不过咱们再说纽约州州长库莫的意思说就是说如果重启的话，它的目标是把感染率控制在0.9%，不是%就0.9级以下，什么叫0.9就是说就一个人传染几个，知道吗？比如说一个人传染两个的话，那就会越来越越多，如果一个人传染一个的话，那就保持在这个数量上，因为一个好了又来一个对吧？如果一个人传0.9个人，这个就开始往下就就递减了，所以库门的意思就把传染率控制在0.9以下，这样子的话它就会达到一个基本，最起码就是说是一个持平或者是负增长，这样就可以保证什么ICU的在中层监控室的还有插管呼吸机的人数，就是说维持跟现在差不多或者越来越少，这样的医疗系统就不会崩溃，这种情况之下就可以逐渐的开始重启经济了，就是说我一聊反正控制住了你们慢慢的再得病再来，反正也就这样子了，我医疗我能够应对就得了，那但是这种情况之下就是说要做成一个就是说长期奋战的一个准备，对吧？ </p>
+<p>其实我之前也说我说不管我们承认不承认，欧美西方国家实际上就是说他表面上可能不承认，但他实际上其实走的就是一条的群体免疫制度，最起码在疫苗和它要出来之前是这样子。 </p>
+<p>中国就是说想要撤销经济把病毒干掉，但是我就说你如果要这么做的话，必须得全世界来配合你。如果其他地方不配合你，其他地方现在就这样子，就是说我反正我维持一个传播速度，就是说感染我不可能完全切断它，我能让它就是说速度渐缓，或者保持在一个稳定的速度，没有加速度的时候，我能够应对我就可以了，至于你们怎么着我们就不管了，你想如果这样子的话，如果欧美这么搞，中国就得一直把不是欧美整个把全世界都得封在国门之外，对中国的经济造成的伤害会更大。 </p>
+<p>但是如果你向他们学也要这么搞的话，你之前付出的那种惨痛代价就没有用了，对不对？所以我就我以前做过一集这视频，你还记得不记得？我就说如果欧美西方国家最后达到一个默契，都走群体免疫的话，你中国实际上没办法，你只能follow大家，要不然的话在疫苗和特效要出来之前，你什么都干不了，对吧？你的经济就崩溃了。 </p>
+<p>现在看来果然就像我之前语言那样子，现在美国也好，欧洲也好，因为现在不仅是美国，欧洲现在也这样，欧洲很多国家也是疫情，其实还在，但是已经开始逐步的放松管控，恢复经济。也就是说就像我之前我之前我说一种嗅觉，我就感觉出来了，说欧美、欧洲、美国、日本，实际上他们都在就是说表面上都是说我们要控制我们要什么，但是私底下干的群体免疫，现在我觉得基本上就已经证实了，我当时这个预言是没有问题的，但中国怎么办？这个问题就在这儿，然后关于群体免疫也是就是说争论非常大，这也算是十大割袍断义的话题之一了。 </p>
+<p>关于群体免疫我们也不说什么了，我只能这么说，我不是说我支持或不支持，而是像欧美的这种情况来讲，恐怕你也是别无选择，你想像中国那样子，就是说真的百%的整个丰田，我说在美国当时我就说在美国做不到，当时空膜还不错，没有给纽约疯了，当时我就说川普不会封纽约的，川普就没那么就豆豆豆豆哭没哭没地，其实不用太当真对不对？枯墨当然也是不敢风对吧？当时我就说像纽约这种地方你不疯还好，你要疯马上就变成骚乱，要成暴乱对吧？你现在没有完完全全的风，只不过算是一个就是居家令对吧？ </p>
+<p>但是你看怎么样，还是各地的这种反抗示威都出来了，就朝这样，现在是4月19号，我就说到5月19号一个月之后到5月19号，如果还不开始解封的话，上帝的人会越来越多，各种暴乱、骚乱抗议行为都会出来。所以这没有办法，就是说你必须得面对现实情况，这里不是中国，这里老百姓就这么标，就这么糊，那么糊糊现在就是糊头糊脑的老百姓你知道吗？ </p>
+<p>你没办法，你按照中国那种方式它管不了，而且人家抗议示威，中国抗议示威都是坐地上哭，美国抗议示威，端着突击步枪出来的对吧？你说是吧？你思考这个问题对不对？所以也是没有办法，所以不是说我们支持不支持，而是现实总是要面对的。是吧？好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/19/20200419%E7%AC%AC2030%E6%9C%9F-%E5%85%AC%E5%AE%89%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E5%AD%99%E5%8A%9B%E5%86%9B%E8%A2%AB%E6%8A%93%E6%8D%95%EF%BC%8C%E4%B8%BA%E7%8E%8B%E5%B0%8F%E6%B4%AA%E6%89%AB%E6%B8%85%E9%81%93%E8%B7%AF-cf4CEbHrLnY/" rel="prev" title="20200419第2030期-公安部副部长孙力军被抓捕，为王小洪扫清道路">
+      <i class="fa fa-chevron-left"></i> 20200419第2030期-公安部副部长孙力军被抓捕，为王小洪扫清道路
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/19/20200419%E7%AC%AC2032%E6%9C%9F-%E8%8B%B1%E5%9B%BD1600%E4%B8%87%E8%8B%B1%E9%95%91%E8%BF%9B%E5%8F%A3%E4%B8%AD%E5%9B%BD%E8%AF%95%E5%89%82%E7%9B%92%E5%85%A8%E9%83%A8%E4%B8%8D%E8%83%BD%E7%94%A8-6UQ0HiJWibA/" rel="next" title="20200419第2032期-英国1600万英镑进口中国试剂盒全部不能用">
+      20200419第2032期-英国1600万英镑进口中国试剂盒全部不能用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.001.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">475</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/19/20200419%E7%AC%AC2031%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%A4%9A%E4%B8%AA%E5%B7%9E%E6%8A%97%E8%AE%AE%E7%A4%BA%E5%A8%81%E5%8F%8D%E5%AF%B9%E5%B1%85%E5%AE%B6%E4%BB%A4%EF%BC%8C%E6%94%BF%E5%BA%9C%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%B5%B0%E4%B8%8A%E7%BE%A4%E4%BD%93%E5%85%8D%E7%96%AB%E4%B9%8B%E8%B7%AF-3scHkCzf98w/";
+    this.page.identifier = "2020/04/19/20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路-3scHkCzf98w/";
+    this.page.title = "20200419第2031期-美国多个州抗议示威反对居家令，政府不得不走上群体免疫之路";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

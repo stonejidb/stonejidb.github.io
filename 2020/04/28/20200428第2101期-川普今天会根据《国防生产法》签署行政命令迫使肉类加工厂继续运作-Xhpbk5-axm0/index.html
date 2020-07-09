@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月28号星期二，今天早上起来有一个新闻震惊全美，说可能下周我们就没有猪肉吃了，我老婆早上起来说要不要你去超市强调猪肉怎么回事，美国泰森食品公司是美国特别大的一家食品公司，4月6号4月26号发布警告，说易行导致全美各地肉品加工场暂时关闭，将影响食物供应的短缺。  我不知道大家有没有看这个新闻，最近这段时间以来，全世界其他地方在闹粮荒，美国在玩命的浪费粮食。说说到鸡蛋卖不出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/28/20200428%E7%AC%AC2101%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%A4%A9%E4%BC%9A%E6%A0%B9%E6%8D%AE%E3%80%8A%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95%E3%80%8B%E7%AD%BE%E7%BD%B2%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%E8%BF%AB%E4%BD%BF%E8%82%89%E7%B1%BB%E5%8A%A0%E5%B7%A5%E5%8E%82%E7%BB%A7%E7%BB%AD%E8%BF%90%E4%BD%9C-Xhpbk5-axm0/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月28号星期二，今天早上起来有一个新闻震惊全美，说可能下周我们就没有猪肉吃了，我老婆早上起来说要不要你去超市强调猪肉怎么回事，美国泰森食品公司是美国特别大的一家食品公司，4月6号4月26号发布警告，说易行导致全美各地肉品加工场暂时关闭，将影响食物供应的短缺。  我不知道大家有没有看这个新闻，最近这段时间以来，全世界其他地方在闹粮荒，美国在玩命的浪费粮食。说说到鸡蛋卖不出">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-27T17:00:01.000Z">
+<meta property="article:modified_time" content="2020-07-09T02:12:31.379Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/28/20200428%E7%AC%AC2101%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%A4%A9%E4%BC%9A%E6%A0%B9%E6%8D%AE%E3%80%8A%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95%E3%80%8B%E7%AD%BE%E7%BD%B2%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%E8%BF%AB%E4%BD%BF%E8%82%89%E7%B1%BB%E5%8A%A0%E5%B7%A5%E5%8E%82%E7%BB%A7%E7%BB%AD%E8%BF%90%E4%BD%9C-Xhpbk5-axm0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/28/20200428%E7%AC%AC2101%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%A4%A9%E4%BC%9A%E6%A0%B9%E6%8D%AE%E3%80%8A%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95%E3%80%8B%E7%AD%BE%E7%BD%B2%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%E8%BF%AB%E4%BD%BF%E8%82%89%E7%B1%BB%E5%8A%A0%E5%B7%A5%E5%8E%82%E7%BB%A7%E7%BB%AD%E8%BF%90%E4%BD%9C-Xhpbk5-axm0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.001.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-28 02:00:01" itemprop="dateCreated datePublished" datetime="2020-04-28T02:00:01+09:00">2020-04-28</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/28/20200428%E7%AC%AC2101%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%A4%A9%E4%BC%9A%E6%A0%B9%E6%8D%AE%E3%80%8A%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95%E3%80%8B%E7%AD%BE%E7%BD%B2%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%E8%BF%AB%E4%BD%BF%E8%82%89%E7%B1%BB%E5%8A%A0%E5%B7%A5%E5%8E%82%E7%BB%A7%E7%BB%AD%E8%BF%90%E4%BD%9C-Xhpbk5-axm0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/28/20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作-Xhpbk5-axm0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月28号星期二，今天早上起来有一个新闻震惊全美，说可能下周我们就没有猪肉吃了，我老婆早上起来说要不要你去超市强调猪肉怎么回事，美国泰森食品公司是美国特别大的一家食品公司，4月6号4月26号发布警告，说易行导致全美各地肉品加工场暂时关闭，将影响食物供应的短缺。 </p>
+<p>我不知道大家有没有看这个新闻，最近这段时间以来，全世界其他地方在闹粮荒，美国在玩命的浪费粮食。说说到鸡蛋卖不出去，大量的往地里扔，鸡蛋就整箱整筐的往地里扔去，就算是当施肥了，给地扔进去了，还有就是说这个鸡蛋一部分是这种吃的，鸡蛋专门卖给大家吃的，还有一种极端的是专门拿来就是说敷小鸡的那种鸡蛋也是大量的往下扔，为什么说这种鸡蛋如果要敷了小鸡的话，因为你还得喂这些鸡，然后这些鸡吃完之后卖不出去的话，你都是成本都是损失，就算你不为他，你生出来你在处理它也很难，所以干脆这几点就不敷了，直接就扔掉了得了。 </p>
+<a id="more"></a>
+
+<p>然后不光是还有牛奶，说牛奶也往外倒，说为什么牛奶往外倒，因为现在没地儿装了，实在没地儿装了，所有能装就在这全都装满了，没地儿装，卖不出去怎么办？就只能往外倒，也是当着浇地了，当了施肥灌溉了。 </p>
+<p>然后蔬菜也是，他们不是就是说那种大的机器开过去，然后他那机器设置好了之后，蔬菜哗哗哗回来之后直接就扔在地上，就当施肥了。你知道吗？就这样整个机器过去，然后以前的机器这么一定要弄，蔡屋都收走了吗？现在不是。那个机器就直接设置好了，这锅菜就是不要了，说他也不要重的，好像他有时候如果被双动了或什么菜烂了的话，他就这么做，拿着机器一脚把这些菜就都绞碎了之后，平很平均的撒在地上当施肥了。 </p>
+<p>还有小猪仔也是，他们就是说很多小猪也都直接杀掉，就不再往上扬了，因为这个也卖不出去，损失惨重，说他现在如果没养一只猪的话，最后损失的成本是37美元。如果要是卖出去可能也就挣10块钱，所以礼拜礼怎么算都不合适，所以这个也不痒了，也不生产了，整个要暂停。据说要把养猪场什么的产量维持到原先的20%，如果是这样子的话，全美国可能就都没有猪肉吃了。 </p>
+<p>所以今天就是报了这么一个消息，说大家非常紧张，我们得到消息应该在今天现在还没有，但是不过也不好说，现在也到晚上了。应该在今天晚上的时候，川普总统将根据国防生产法要签署的一份行政命令，迫使肉类加工厂的保持开放，要继续保持开放，通过签署行政命令，将宣布这些肉质加工厂的成为美国的关键基础设施，就是说是以国防需要，你们必须要继续生产，机械生产他们可能就要赔钱，那么国防生产法实际上就是说美国政府出订单去跟他们买，这样做等于我觉得泰森公司他们之所以这么说，实际上这么警告也是就是说我觉得会哭的孩子有奶吃对不对？ </p>
+<p>就是说其实就像美国政府去哭诉，想要政府的一些补助也好，什么也好，川普既然签了国防生产法的话，等于就是说把它作为国防需要，由国家来购买这些东西，来弥补他们的损失，让他们继续供应下去，因为他们现在真的供应下去的话，其实每生产一个都是有损失的，损失可能就国家承担了，我觉得这个也是没有办法必须得这样，因为这种东西也是国民需要，你要想想，如果他们都停了，超市里买不着猪肉牛肉的，买不着鸡鸡蛋牛奶的话，这也乱套了，还不就打起来了，对不对？ </p>
+<p>所以我觉得这只能就是说国家出面来让他搞下去，但是提到了会哭的孩子有，奶吃，我要太太分公司这个不说了，大公司他们这么搞也是被逼无奈对吧？这个也是国民需要，这个是应该的。 </p>
+<p>我想想说什么，就是说纽约州的州长科目，我觉得科目真的是有点不要脸到家了，之前哭着喊着说他要3万台这个呼吸机，然后他自己的纽约有1000台呼吸机搁在仓库里边吃亏，然后被串口发现了，然后哭博说的我现在暂时不需要这1000台，所以搁在仓库里，我说我21天之后我需要3万台，我现在不需要，结果这21天之后他需要对吧？当时我们就说我就是说你是疯了要疯了，你要疯了他的飞机干什么，你一煮饺子都吃了是吧？你看现在需要骂也不需要，然后就能哭着喊着要连帮帮她建芳藤医院，我们今天得到消息，5月1号联邦波搭建的三医院就停运了，也没收几个病人，安慰号美国船也是哭着喊着那船过来，大老远那船开过来的，然后船今天开走了，这个船来了期间一共在纽约就治了一百八十几个病人，反正哭落真的就是扯淡。 </p>
+<p>然后他那玩命要买呼吸机，说他跟中国花了25,000美元一台，买了多少台呼吸机，花了那么多钱，然后用不让的复工，然后现在说什么说他这个没有钱付，失业保险说没有钱是失业保险的，我觉得这哥们是有点你不服务失业保险，然后又不让复工，又不让大家挣钱，让你再不服失业保险，这等着要闹骚乱的节奏，我们觉得我不知道科目二是封了吗？ </p>
+<p>科目二这么搞下去，这纽约真的我觉得这样我很替你越担心的苦没在是在搞什么，当然是说会哭的孩子有奶吃，但是你不能这么搞对不对？你这么搞完全就是在搞破坏和浪费了对吧？ </p>
+<p>你搞了花了这么多钱给你建了这么好，建了方向，纽约几个会展中心盖了4个放到医院给他，最后也没怎么用，安慰号也开过来了，最后也没怎么用，收了一百八十几个病人安慰号开走了，对吧？呼吸机说给你33万台，现在你呼吸你也用不上了。我都不知道科摩尔是然后现在他那意思，他说他有什么1000~1500亿的亏空，让联邦政府给钱要发失业补助，如果不发的话，等着老百姓闹事儿，是不是？ </p>
+<p>那钱问题是你把这钱莫名其妙都给中国去买呼吸机了，买你根本就不需要的呼吸机了，你怎么不说呢？对不对？你仓库里有一一台呼吸机，你还要去跟中国买一部多少台花了，花了不多少钱去买25,000台，去买2 25,000美元一台去买那呼吸机，我就觉得真的我不知道民主党是干什么，我知道你们想把川普弄下去，但是你不能这么搞，然后枪立奎瑞德茜蕾不让用，不让研究不让用，然后玩命的在那捣乱，就是说最后是你们通过这种手段是把串口搞下去了，但是你们给国家造成多么大的这种伤害和损失，有多少人为此就最后可能要付出生命的代价，对不对？ </p>
+<p>好吧，我也我也不知道这个湖泊是怎么想的，反正说实话，刚开始的时候有些人对空白的印象比较好，最近我发现吗空管人也越来越多，我觉得科目二自己也要去思考思考，就是说你这么搞下去的话，是吧？因为我看空本现在真的他是有这个野心就是说想将来没准搞不好还要竞选总统的。 </p>
+<p>我看第二次他弟弟不是这个也确诊了之后在自己家的地下室里隔离，然后在第4家地下室跟他哥哥连线，然后问他搁这问题说你想不想当总统？ </p>
+<p>然后我看他哥哥真的是认认真真的想了一下，然后说no，然后弟弟问说你说no是不愿意回答，还是不要选总统？对吧？他说不我给了你答案，答案就是no，但是实际上你能看得出来，他是认认真真的有这个想法的对吧？就跟韩国一样，韩国一当年也是刚当了高雄市长的时候，也是说不但是最后总统还是非常的有诱惑力是吧？我觉得科目二你如果真有这个想法的话，我觉得你现在先要想一想，现在不要沦为民主党的打手，对吧？还是认认真真的去做事情，是吧？ </p>
+<p>反正我有这么个小建议，不知道我能不能听得懂，好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/28/20200428%E7%AC%AC2100%E6%9C%9F-%E4%BA%AC%E4%B8%9C%E6%AC%B2%E6%92%87%E6%B8%85%E5%88%98%E5%BC%BA%E4%B8%9C%E6%80%A7%E4%BE%B5%E6%A1%88%E8%BF%9E%E5%B8%A6%E8%B4%A3%E4%BB%BB-ShFhYGhnV_c/" rel="prev" title="20200428第2100期-京东欲撇清刘强东性侵案连带责任">
+      <i class="fa fa-chevron-left"></i> 20200428第2100期-京东欲撇清刘强东性侵案连带责任
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/29/20200429%E7%AC%AC2102%E6%9C%9F-%E5%82%85%E6%94%BF%E5%8D%8E%E5%8D%B8%E4%BB%BB%E5%8F%B8%E6%B3%95%E9%83%A8%E9%95%BF%EF%BC%8C%E7%94%B1%E5%94%90%E4%B8%80%E5%86%9B%E6%8E%A5%E4%BB%BB-SnK3sLJ0bjU/" rel="next" title="20200429第2102期-傅政华卸任司法部长，由唐一军接任">
+      20200429第2102期-傅政华卸任司法部长，由唐一军接任 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.001.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">475</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/28/20200428%E7%AC%AC2101%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%A4%A9%E4%BC%9A%E6%A0%B9%E6%8D%AE%E3%80%8A%E5%9B%BD%E9%98%B2%E7%94%9F%E4%BA%A7%E6%B3%95%E3%80%8B%E7%AD%BE%E7%BD%B2%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%E8%BF%AB%E4%BD%BF%E8%82%89%E7%B1%BB%E5%8A%A0%E5%B7%A5%E5%8E%82%E7%BB%A7%E7%BB%AD%E8%BF%90%E4%BD%9C-Xhpbk5-axm0/";
+    this.page.identifier = "2020/04/28/20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作-Xhpbk5-axm0/";
+    this.page.title = "20200428第2101期-川普今天会根据《国防生产法》签署行政命令迫使肉类加工厂继续运作";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
