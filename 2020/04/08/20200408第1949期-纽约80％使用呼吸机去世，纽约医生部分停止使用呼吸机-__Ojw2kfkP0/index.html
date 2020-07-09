@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月9号星期四，纽约80%使用呼吸机的去世了，所以部分的纽约医生现在停止使用呼吸机。怎么回事是这样，现在纽约有一些医生都开始主张要减少到使用呼吸机，因为根据研究有些地区使用呼吸机的病患反而死亡率比较高，根据纽约州的数据，至少有80%的患者在使用呼吸机后还是因病去世了。所以在美国的其他地区和中国还有英国也发现使用呼吸机的患者的死亡率异常的高，有些医生说呼吸机可能会进一步伤害">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/08/20200408%E7%AC%AC1949%E6%9C%9F-%E7%BA%BD%E7%BA%A680%EF%BC%85%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA%E5%8E%BB%E4%B8%96%EF%BC%8C%E7%BA%BD%E7%BA%A6%E5%8C%BB%E7%94%9F%E9%83%A8%E5%88%86%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA-__Ojw2kfkP0/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月9号星期四，纽约80%使用呼吸机的去世了，所以部分的纽约医生现在停止使用呼吸机。怎么回事是这样，现在纽约有一些医生都开始主张要减少到使用呼吸机，因为根据研究有些地区使用呼吸机的病患反而死亡率比较高，根据纽约州的数据，至少有80%的患者在使用呼吸机后还是因病去世了。所以在美国的其他地区和中国还有英国也发现使用呼吸机的患者的死亡率异常的高，有些医生说呼吸机可能会进一步伤害">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-07T15:04:09.000Z">
+<meta property="article:modified_time" content="2020-07-09T07:50:24.806Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/08/20200408%E7%AC%AC1949%E6%9C%9F-%E7%BA%BD%E7%BA%A680%EF%BC%85%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA%E5%8E%BB%E4%B8%96%EF%BC%8C%E7%BA%BD%E7%BA%A6%E5%8C%BB%E7%94%9F%E9%83%A8%E5%88%86%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA-__Ojw2kfkP0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/08/20200408%E7%AC%AC1949%E6%9C%9F-%E7%BA%BD%E7%BA%A680%EF%BC%85%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA%E5%8E%BB%E4%B8%96%EF%BC%8C%E7%BA%BD%E7%BA%A6%E5%8C%BB%E7%94%9F%E9%83%A8%E5%88%86%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA-__Ojw2kfkP0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-08 00:04:09" itemprop="dateCreated datePublished" datetime="2020-04-08T00:04:09+09:00">2020-04-08</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/08/20200408%E7%AC%AC1949%E6%9C%9F-%E7%BA%BD%E7%BA%A680%EF%BC%85%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA%E5%8E%BB%E4%B8%96%EF%BC%8C%E7%BA%BD%E7%BA%A6%E5%8C%BB%E7%94%9F%E9%83%A8%E5%88%86%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA-__Ojw2kfkP0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/08/20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机-__Ojw2kfkP0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月9号星期四，纽约80%使用呼吸机的去世了，所以部分的纽约医生现在停止使用呼吸机。怎么回事是这样，现在纽约有一些医生都开始主张要减少到使用呼吸机，因为根据研究有些地区使用呼吸机的病患反而死亡率比较高，根据纽约州的数据，至少有80%的患者在使用呼吸机后还是因病去世了。所以在美国的其他地区和中国还有英国也发现使用呼吸机的患者的死亡率异常的高，有些医生说呼吸机可能会进一步伤害新冠病毒患者的肺部。 </p>
+<p>华盛顿大学医学院的重症监护专家叫Tiffany osborne。 </p>
+<a id="more"></a>
+
+<p>博士4月1号接受访问时说，他说呼吸机实际上会损伤患者的肺部，呼吸机本身会根据需要多少压力来帮助肺部处理氧气，但是这步骤将损害的肺组织。 </p>
+<p>纽约northwest医学院的肺病重症医生，南京还他是是印度人吗？我不知道这个博士在接受采访时表示，尽管呼吸机对肺炎患者疾病的效果，对肺炎等疾病患者的效果不错，但他认为对于新冠病毒患者要考虑这个问题，因为什么？他说他们医院当中凡是使用到呼吸机的新冠患者，最终都没有痊愈。就是说对于以前来讲，对于肺炎是使用，但现在他就发现新冠跟普通的肺炎不一样，它是非典型性的肺炎，你不能把它当成一个典型性的肺炎来治理，他说新冠肺炎对这个肺部的损害比普通的感冒带来的肺炎要大，他说肺部里面充满了液体和其他有毒的化学细胞因子，因为使用呼吸机现在死亡比例的大幅度提高，所以纽约有一部分的医生现在都开始寻找其他非呼吸机的替代方案，让病患不要过度的依赖呼吸机。 </p>
+<p>曼哈顿的急诊医生 geography，这应该是个犹太裔，应该叫我觉得犹太裔他表示他说几周前在几周前的时候，针对这种新冠肺炎的这种严重的患者，上呼吸机都是常规的动作，大家都是这么做，马上上呼吸机，但是现在他说越来越多的医生尝试其他的治疗方法，医生们想办法将患者躺成不同的姿势或者角度，让患者更容易吸氧气达到肺部，通过鼻管为患者提供氧气，并在氧气治疗中新增一氧化碳，以试图增加血液的流量。 </p>
+<p>这个来讲我觉得作为医生来讲，及时的发现问题，解决问题是一个很好的事情，如果真的像他们说的这样子的话，那么在使用呼吸机的时候要谨慎，不过要这样子的话，美国现在大量的去制造呼吸机就变成毫无意义了，对吧？ </p>
+<p>美国政府跟通用好像是10亿美元的大单都签了，让他们去制造呼吸机，现在这样大量制造呼吸机之后，后面还有用没有用，对吧？而且如果最终发现这个是事实的话，你的呼吸机你到美国卖不出去，你卖给别人也卖不出去，你谁突然要这么大量的呼吸机，就平常平常呼吸机市场平常也是一个完全竞争市场，对吧？差不多该有也都有了，对不对？他以前就是说可能就是说一些老的旧的或者一些新医院产生才需要，你现在突然大量的就是几万台呼吸机出来，全世界的市场也消化不了，对吧？反正这是个这就是个问题，对吧？ </p>
+<p>但我觉得对于医生来讲应该思考，如果真的像他们说的80%使用呼吸机，反而去世了的话，这就有就有问题了，对不对？你刚才问什么问题还记得吗？又忘了你就说最后怎么证明，我觉得这东西就是说你说呼吸机，当然我乍一说很多人是不接受这个的对不对？ </p>
+<p>咱们说假如说是一个药，比如说你得了一个病，对不对？你得了一个比如说心脏肺炎，然后有的人是普通肺炎，我这个药当初帮他们治这种普通肺炎的时候效果特别好，然后你得到新冠肺炎之后，我觉得你也是肺炎，我给你用了给普通肺炎的药，我发现80%用的药人死亡了，这说明什么？说明这个药对普通肺炎好，对于心脏肺炎可能不好。能理解了，那么呼吸机也是这样子，如果我对普通肺炎使用呼吸机有帮助，但是我对心脏肺炎的患者使用呼吸机80%人死亡的话，说明心肝肺炎跟普通肺炎是不一样的，不能用这种传统意义上的治疗方式来治疗。 </p>
+<p>好吧？当然了反正是他们现在医生们就是说这几个医生现在发现这问题，他们在呼吁，在思考，我觉得作为一个新闻，我们把它播报希望其他的就是说中国或者其他地区的医生如果能看到的话，也要思考这个问题，就是说是不是还要玩命的上呼吸机就上了呼吸机到底好还是不好？是吧？好吧，这张新闻播到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/08/20200408%E7%AC%AC1948%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%B9%94%E4%B8%B9%E8%B4%A5%E8%AF%89%EF%BC%8C25%E7%B1%BB%E5%95%86%E6%A0%87%E5%92%8C%E5%9B%BE%E5%BD%A2%E8%A2%AB%E6%92%A4-wOf70d3qgys/" rel="prev" title="20200408第1948期-中国乔丹败诉，25类商标和图形被撤">
+      <i class="fa fa-chevron-left"></i> 20200408第1948期-中国乔丹败诉，25类商标和图形被撤
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/09/20200409%E7%AC%AC1950%E6%9C%9F-%E9%BB%91%E9%BE%99%E6%B1%9F%E7%BB%A5%E8%8A%AC%E6%B2%B3%E5%B8%82%E5%9B%A0%E7%96%AB%E6%83%85%E5%AE%9E%E6%96%BD%E4%BA%A4%E9%80%9A%E7%AE%A1%E5%88%B6-IosUpQZOD8w/" rel="next" title="20200409第1950期-黑龙江绥芬河市因疫情实施交通管制">
+      20200409第1950期-黑龙江绥芬河市因疫情实施交通管制 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">573</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/08/20200408%E7%AC%AC1949%E6%9C%9F-%E7%BA%BD%E7%BA%A680%EF%BC%85%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA%E5%8E%BB%E4%B8%96%EF%BC%8C%E7%BA%BD%E7%BA%A6%E5%8C%BB%E7%94%9F%E9%83%A8%E5%88%86%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8%E5%91%BC%E5%90%B8%E6%9C%BA-__Ojw2kfkP0/";
+    this.page.identifier = "2020/04/08/20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机-__Ojw2kfkP0/";
+    this.page.title = "20200408第1949期-纽约80％使用呼吸机去世，纽约医生部分停止使用呼吸机";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

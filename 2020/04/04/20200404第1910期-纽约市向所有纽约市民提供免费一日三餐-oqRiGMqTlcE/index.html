@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月5号星期日，纽约市宣布自4月3号前天开始向所有的纽约市市民提供免费的一日三餐，实际上是昨天我现在刚刚是4月4号刚过了晚上12点，在全市一共设有435个领餐处，遍布了5个行政区。我给你看一下，这上面会写着，我一会我把它这个链接搁在我这个视频下方好吧？然后这里边你看，你往下面拉一点，这有 breakfast和lunch，你点这两个他就会告诉你这个菜单是什么，星期几吃什么。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200404第1910期-纽约市向所有纽约市民提供免费一日三餐">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/04/20200404%E7%AC%AC1910%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E5%90%91%E6%89%80%E6%9C%89%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%B0%91%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E4%B8%80%E6%97%A5%E4%B8%89%E9%A4%90-oqRiGMqTlcE/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月5号星期日，纽约市宣布自4月3号前天开始向所有的纽约市市民提供免费的一日三餐，实际上是昨天我现在刚刚是4月4号刚过了晚上12点，在全市一共设有435个领餐处，遍布了5个行政区。我给你看一下，这上面会写着，我一会我把它这个链接搁在我这个视频下方好吧？然后这里边你看，你往下面拉一点，这有 breakfast和lunch，你点这两个他就会告诉你这个菜单是什么，星期几吃什么。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-03T15:01:00.000Z">
+<meta property="article:modified_time" content="2020-07-09T07:50:24.616Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/04/20200404%E7%AC%AC1910%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E5%90%91%E6%89%80%E6%9C%89%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%B0%91%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E4%B8%80%E6%97%A5%E4%B8%89%E9%A4%90-oqRiGMqTlcE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200404第1910期-纽约市向所有纽约市民提供免费一日三餐 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/04/20200404%E7%AC%AC1910%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E5%90%91%E6%89%80%E6%9C%89%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%B0%91%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E4%B8%80%E6%97%A5%E4%B8%89%E9%A4%90-oqRiGMqTlcE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200404第1910期-纽约市向所有纽约市民提供免费一日三餐
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-04 00:01:00" itemprop="dateCreated datePublished" datetime="2020-04-04T00:01:00+09:00">2020-04-04</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/04/20200404%E7%AC%AC1910%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E5%90%91%E6%89%80%E6%9C%89%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%B0%91%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E4%B8%80%E6%97%A5%E4%B8%89%E9%A4%90-oqRiGMqTlcE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/04/20200404第1910期-纽约市向所有纽约市民提供免费一日三餐-oqRiGMqTlcE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月5号星期日，纽约市宣布自4月3号前天开始向所有的纽约市市民提供免费的一日三餐，实际上是昨天我现在刚刚是4月4号刚过了晚上12点，在全市一共设有435个领餐处，遍布了5个行政区。我给你看一下，这上面会写着，我一会我把它这个链接搁在我这个视频下方好吧？然后这里边你看，你往下面拉一点，这有 breakfast和lunch，你点这两个他就会告诉你这个菜单是什么，星期几吃什么。 </p>
+<p>看我随便给你点一个，你可以看看。比如说你看到没有，这就是4月6号吃什么？4月7号4月8号、4月9号4月10号，这旁边给你写着你都能吃到什么，还带菜单的挺有意思的。然后他说这样可以是从7:30<del>1:30，但是一般是小孩，还有有小孩的这种家庭是7:30</del>11:30，成年人在11:30~1:30去取，然后去了之后你可以他的承诺就是说任何人都可以取，绝对不会拒绝你，然后成年人和小孩都可以一次性的把三顿饭拿走，就是说你去一趟就可以把今天的这三顿three meals都给你拿走，但是只有就只能拿走吃，没有糖吃，不能糖这边避免传染吗？互相。 </p>
+<a id="more"></a>
+
+<p>然后就是说家长和监护人可以帮小孩取，小孩可以不来你们来取，你就说你有几个孩子在取几份也都没问题，然后不需要任何的注册或者是ID都不管，不管你有没有身份，不管你是怎么样，反正你只要来了，你都可以拿三顿饭走，没有任何的限制。 </p>
+<p>然后我看看，但是还有一点就是说你看他最明显的是啥？星期一、星期二、星期三、星期四。然后又是星期一了，这说明什么？6日是没有的，只有一到星期五有，然后给三顿饭，我估计可能就是三个包裹，你可以拿一样拿一个，反正我看到里边有什么 butter，然后还有果果。果冻，有一个果汁，还有一瓶牛奶，一个4.2盎昂子的一个 juicy，还有一个棒子的一瓶牛奶，还有cookie，这里边好像是这么个意思。这是早点。 </p>
+<p>我以前他就发过，以前都是什么时候，我记得好像是夏天的时候，暑假好像是学生他们在学校的时候，如果你说你家里穷，你就吃免费的，需要给你提供免费的午餐，那么到夏天的时候他怕你家里穷，孩子没有东西吃，所以夏天的时候他还给小孩发这东西，但是那个时候都是小孩或者学生，我那时候也上学，但是也不小了，然后好奇我去领过一次，反正里边有一小包蔬菜，一有一杯就那种小纸盒的奶，然后还有一个小三的位置似的是那种东西，当然是给小孩的，我不知道这个会不会比稍微多一点。 </p>
+<p>说实话，按理来说我跟我老婆不应该去领，我们也不算不算穷人，但是我们觉得有必要我们去一次，主要我到时候我拿着，因为我们家门口这有一个我查了一下不是35个，我们岛上就有一个，有一个的话到时候我们去领一次，让大家看看都有什么，我们做一个视频，咱也不是为了去吃人家三顿饭不是对他不光是午餐，他是你去了你可以一次性可以拿三顿走，而且他不是说给穷人提供的，他是给所有的人对给所有的市民他不没有任何的要求，也不需要你是领低保的，或者都没有任何的没有注册，没有ID的限制，不管你是不是有些人不管你交不交税，什么都不管，你只要想来他就给你发免费的食物，所以我说美国这地儿我就说你不用太着急，他不至于把你饿死的，他这种地儿他他饿不死人，以前就平常的时候没有疫情的话，教堂门口到周末也经常会发一些食物，我记得那一楼马斯克不也去当过义工，他们就是美国这人特别喜欢去当义工，给那些轰轰烈烈发食物发粥，你可以吃一顿，然后它会包一点豆什么的，而美国它就是物质极大丰富，对于粮食来讲它就那么回事，你知道吧？ </p>
+<p>所以当然这个是有一定危险性，你去取的时候搞不好被传染病毒什么的，对不对？主要是这个意思，然后你一次只能拿一天量，所以你每天都得去这个不太好，应该一次让你领一个月喝。省心了。然后开玩笑，开玩笑。 </p>
+<p>我们看看这个明天是星期日，后天如果星期一我们要起得来，起得来就是说他好像是成年人，就是11:30~1:30，那么我们如果起来，我们两个到时候我们拿着拿着手机过去，拿着手拿着手机，我们看看要能现场直播，我们就来一个直播，看看有没有被轰出来，两个这么胖了还拿吃的。 </p>
+<p>应该不会，美国比我们胖人多了，我们到时候看看看他那信号要好，我们做个直播信号不好，我们做个路过，给大家看看反正都有什么，然后吃的怎么样，不过我估计不会太好吃了，我以前拿过那都是美国式的那种食物，咱们对咱们亚洲人是不喜欢吃这种东西的，而且他三个位置都是那种凉的凉的，对，里面都是凉肉什么的，你知道吗？我估计要吃的话回来也得。对，你稍微蒸一下，咱们要不咱就老美真的就那么吃了。 </p>
+<p>老美比咱们老美都跟牛一样比不了。好吧，反正到时候我们看看，我们要是能起来，我们坐一起给大家看看，真是，因为你光看菜单，你也不知道到时候那个量是什么量是吧？怎么个包装什么的，我们也是为了做节目，我们丢人现眼去去领一次免费的食物，其实不好意思，你来美国久了这种便宜你就不想沾你知道吗？人迪森就老外讲迪森就是体面比较，你知道你跟他们学的有一点什么，然后老华侨是好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/04/20200404%E7%AC%AC1909%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%8A%A1%E9%99%A2%E5%AF%B9%E4%B8%AD%E5%9B%BD%E7%A0%94%E7%A9%B6%E6%96%B0%E5%86%A0%E8%8D%AF%E7%89%A9%E7%9A%84%E4%B9%B1%E8%B1%A1%E8%BF%9B%E8%A1%8C%E6%95%B4%E9%A1%BF--49hNYUxNE4/" rel="prev" title="20200404第1909期-中国国务院对中国研究新冠药物的乱象进行整顿">
+      <i class="fa fa-chevron-left"></i> 20200404第1909期-中国国务院对中国研究新冠药物的乱象进行整顿
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/04/20200404%E7%AC%AC1911%E6%9C%9F-4%E6%9C%884%E6%97%A5%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E6%B1%87%E6%8A%A5-i0HU5I8HnR4/" rel="next" title="20200404第1911期-4月4日美国疫情汇报">
+      20200404第1911期-4月4日美国疫情汇报 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">573</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/04/20200404%E7%AC%AC1910%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B8%82%E5%90%91%E6%89%80%E6%9C%89%E7%BA%BD%E7%BA%A6%E5%B8%82%E6%B0%91%E6%8F%90%E4%BE%9B%E5%85%8D%E8%B4%B9%E4%B8%80%E6%97%A5%E4%B8%89%E9%A4%90-oqRiGMqTlcE/";
+    this.page.identifier = "2020/04/04/20200404第1910期-纽约市向所有纽约市民提供免费一日三餐-oqRiGMqTlcE/";
+    this.page.title = "20200404第1910期-纽约市向所有纽约市民提供免费一日三餐";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

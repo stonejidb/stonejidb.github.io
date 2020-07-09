@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的4月4号星期六，刘强东卸任的京东的法人执行董事和总经理，我报道过了，去年我记得11月份的时候，刘强东当时黄马褂被人扒了，我当时我就说全国政协委员，他相当于他不是一个官职，你知道吗？它是一种的荣誉，就有点像以前清朝的皇马红马褂一样，这个不是说你有什么权权利或者领兵打仗或者不是的，钦赐黄马褂一种荣誉什么荣誉，比如说建了什么县官，巡抚是不用跪的，一般的草民见了县官，巡抚还要下跪">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200403第1904期-刘强东卸任京东法人、执行董事、总经理">
+<meta property="og:url" content="https://stonejidb.github.io/2020/04/03/20200403%E7%AC%AC1904%E6%9C%9F-%E5%88%98%E5%BC%BA%E4%B8%9C%E5%8D%B8%E4%BB%BB%E4%BA%AC%E4%B8%9C%E6%B3%95%E4%BA%BA%E3%80%81%E6%89%A7%E8%A1%8C%E8%91%A3%E4%BA%8B%E3%80%81%E6%80%BB%E7%BB%8F%E7%90%86-ezKiPpKbMiQ/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的4月4号星期六，刘强东卸任的京东的法人执行董事和总经理，我报道过了，去年我记得11月份的时候，刘强东当时黄马褂被人扒了，我当时我就说全国政协委员，他相当于他不是一个官职，你知道吗？它是一种的荣誉，就有点像以前清朝的皇马红马褂一样，这个不是说你有什么权权利或者领兵打仗或者不是的，钦赐黄马褂一种荣誉什么荣誉，比如说建了什么县官，巡抚是不用跪的，一般的草民见了县官，巡抚还要下跪">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-02T15:00:04.000Z">
+<meta property="article:modified_time" content="2020-07-09T07:50:24.601Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/04/03/20200403%E7%AC%AC1904%E6%9C%9F-%E5%88%98%E5%BC%BA%E4%B8%9C%E5%8D%B8%E4%BB%BB%E4%BA%AC%E4%B8%9C%E6%B3%95%E4%BA%BA%E3%80%81%E6%89%A7%E8%A1%8C%E8%91%A3%E4%BA%8B%E3%80%81%E6%80%BB%E7%BB%8F%E7%90%86-ezKiPpKbMiQ/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200403第1904期-刘强东卸任京东法人、执行董事、总经理 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/04/03/20200403%E7%AC%AC1904%E6%9C%9F-%E5%88%98%E5%BC%BA%E4%B8%9C%E5%8D%B8%E4%BB%BB%E4%BA%AC%E4%B8%9C%E6%B3%95%E4%BA%BA%E3%80%81%E6%89%A7%E8%A1%8C%E8%91%A3%E4%BA%8B%E3%80%81%E6%80%BB%E7%BB%8F%E7%90%86-ezKiPpKbMiQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200403第1904期-刘强东卸任京东法人、执行董事、总经理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-03 00:00:04" itemprop="dateCreated datePublished" datetime="2020-04-03T00:00:04+09:00">2020-04-03</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/03/20200403%E7%AC%AC1904%E6%9C%9F-%E5%88%98%E5%BC%BA%E4%B8%9C%E5%8D%B8%E4%BB%BB%E4%BA%AC%E4%B8%9C%E6%B3%95%E4%BA%BA%E3%80%81%E6%89%A7%E8%A1%8C%E8%91%A3%E4%BA%8B%E3%80%81%E6%80%BB%E7%BB%8F%E7%90%86-ezKiPpKbMiQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/03/20200403第1904期-刘强东卸任京东法人、执行董事、总经理-ezKiPpKbMiQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的4月4号星期六，刘强东卸任的京东的法人执行董事和总经理，我报道过了，去年我记得11月份的时候，刘强东当时黄马褂被人扒了，我当时我就说全国政协委员，他相当于他不是一个官职，你知道吗？它是一种的荣誉，就有点像以前清朝的皇马红马褂一样，这个不是说你有什么权权利或者领兵打仗或者不是的，钦赐黄马褂一种荣誉什么荣誉，比如说建了什么县官，巡抚是不用跪的，一般的草民见了县官，巡抚还要下跪的见大人，你下跪对不对？ </p>
+<p>黄马甲在身没有贵，亲自黄马甲，然后这个地方上比如说一些县官巡抚，比如说你犯了什么罪我对不对？他们是不能抓你的，不能抓只能往上报，说谁亲自黄马甲，犯了什么问题？皇上要批皇上黄马甲一般都是皇家富层次，一般人次不了，对吧？皇上的能力，亲子皇马家，皇上说扒了说罪过太大了，跑马家口扒了之后才能抓，才能上行。身上穿着黄马甲不能抓，不能跪不能上行，这就是一种相当于一种荣誉。 </p>
+<a id="more"></a>
+
+<p>全国政协委员也差不多，全国政协局我所知也是这样，如果是全国政协委员的话，地方一般是不会抓的，出了什么问题的话不抓，一般也不会有什么就像刑讯逼供，这都不可能，全国政协委员是不可能上行的。这个说出来你可能不知道中国现在还有刑讯逼供，但是双方政府委员是不行的，名头，不撤下去的话，不会上行。所以作为一种我觉得正是保护伞其实还是很重要的黄马甲。 </p>
+<p>刘强东的黄马甲就是被人扒了，说实话没有人愿意自己把黄马甲脱下来对吧？因为脱下来之后主要是太难看，其实你给他他也不见得稀罕，但是你愣给他扒了。 </p>
+<p>主要是不好看一点的，还有说像等于像全体的这些人就是说向全国人民投递的一种信一种信号，这个信号是非常不好的一个信号，你知道吗？ </p>
+<p>黄马甲被扒了你懂吗？就是说作为官场那些人，他是狗眼看人低的，明白吧？当年你有火马甲在，你在地方上你做一些投资，你办一些事的时候，他们就是说这事，就是说可办可不办的时候就给你算了，给你办就给你办了。知道吗？但是如果你破马甲一倍，那么大家就开始了，也不是说给你添堵，只是说怎么说咱们呢按规矩办，对不对？规律是什么就是什么。但中国一旦按规矩办，这事就不好办了。你懂这意思吧？ </p>
+<p>所以刘强东猴马侠一般有很多问题非常多问题，以前就行，我给你举个例子，再举个实例，赵本山也是赵本山那个时候赵本山其实没有审过，没有抓过没有判过也没有说过什么重话，只不过就是什么你要抄赵本山怎么出的，事儿嘛特别简单。当时习近平刚上来的时候，要搞一个全国什么文艺明星座谈会，是什么文化座谈会，反正摸怎么着就请来一堆人。 </p>
+<p>我记得当时还有张艺谋，冯小刚什么的，有没有？崔永元我想不起来了，我想不起来了，反正当时好，我记得冯小刚张艺谋他们都有，好像还有成龙、巩俐之类的，好像是有，我记得反正就找了全国的一帮文化体育这些明星们来了。当时带着组织的名单的时候，有人就觉得应该把赵本山也写进去，据说上面的意思不要来不愿意看见他，就没给人家写进去。没写进去。等于就没有他了。这也没有。 </p>
+<p>你知道吧，他就是你说抓也不会抓，判的也不会判，但是就是说地方上就觉得什么呢？上头不愿意看见你，你知道吧？所以你刘小哥大舞台原先不跟地方上签了有协议，协议只要到期了，我就不再跟你续约了。但是没到期的时候我让你先凑合一下，我也不哄你走，但是只要到期了我就不去。我就是说下面他怎么说就是说出来混你知道吧，他照的要亮，就这么个意思。 </p>
+<p>刘强东呢就这么个情况好吧？刘强东现在整个卸任，当然还有一个原因就是说国进民退，马云他们不也都退休了，其实很多人你像我们也都说过，也都是开始了陆陆续续的在泻下，它就是各国的植物。我记得腾讯他们也是，当然他们身上的职务特别多，他们都有几十家公司，你像刘强东，刘强东4月2号是卸任了京东的运营主体，北京京东世纪贸易有限公司的法人，执行董事总经理，由徐雷接任执行董事经理和法定代表人。 </p>
+<p>京东官方说是正常的管理动作，我觉得这其实也没有太大问题，也也不见得就是怎么样。 </p>
+<p>但是2019年从11月开始到现在，刘强东已经卸任了50多家公司的高管职位，远了咱就不说了，咱就说最近这两个月44月1号4月1号一天卸任了，京东旗下宿迁京东旗威企业管理有限公司等13家公司的高管，一天卸了13家。 </p>
+<p>3月2 26号现任京东旗下叫什么宿迁宇业物流有限公司等4家物流有限公司的经理，这4家这加一块都到17家了。然后3月13号卸任了京东先由、云计算有限公司和北京图亨克旅行社有限公司等的共计18家公司的总经理。你就算从3月份4月份这加一起17+18已经是35家了，对吧？你看这都写了多少了？他们主要身上背的植物也特别多，反正一点点的泻，腾讯的老小小马哥好像也是卸任的，有其中的几个公司，但是他身上还有，当然他们这些人不知道，几十家公司你知道吗？所以你也说不清楚了。 </p>
+<p>但刘强东这一次最重要的是什么？他这一次卸卸任的是京东的真正的运营的主体，北京京东世纪贸易有限公司，这是非常重要的一个有点相当于马云好像退了是的。但是刘强东跟马云还不一样，刘强东持的股份比较大，他还是掌握实际的话语权的，没有问题，他不能算退休，只能算是就是说怎么说算退居幕后。 </p>
+<p>对京东影响大不大，我觉得不大。京东已经发展到有没有刘强东其实都还好。就说句实在的，刘强东在美国被抓了坐牢了，京东也是该干嘛干嘛，刘强东去上过博士也其实不会有太大的影响。公司发展到这个阶段，已经完完全全可以就是说自我的去良性运转了，而且去年京东好像还最终是盈利了，据说。 </p>
+<p>最后资产最后还增长了说是有500亿人民币，啊呃说利润有100多亿，反正去年还干的还不错，2019年刘强东干的不错，开玩笑，开玩笑，刘强东同志我觉得有一定的危险，但是京东我觉得没有危险要分开。 </p>
+<p>关于刘强东的说实话，我也觉得刘强东其实从法律法规上来说也没干错什么，在美国虽然搞了这么个事儿，但是从依法来讲我们也看到了，就是说他跟那妹子一块去回宿舍的录像对吧？妹子完全就是说这边请这边请 please sir。是吧？所以我觉得刘强东某种程度上来讲怎么说算是一个婚外情，是吧？算是有一个外遇，真的不能算是不能算强，但是妹子不高兴，但是我们看在摸着良心说，婚外情都说约炮，泡一泡它没有感情的。 </p>
+<p>好吧？但是据说他约炮约的有点多，当时别这么说好不好？对。这是个事实。文但他也是一个风流比较疯狂比较浪漫的，像强东哥还是比较浪漫，东哥其实说实话，我觉得从他个人来讲，有一定风险，他自己还在就是说自我的在解救，其实这一系列的动作我认为都是在尝试自我去去救赎自我，在拯救自己的一个过程当中。 </p>
+<p>但是我想说什么，刘强东其实本身来讲做的事情做的不太多，从道德上可能不太道德。猫眼是约炮还是婚外情什么吧，反正不太大空间可以这么说这个问题对不对？有奸情可以这么说，不太道德。 </p>
+<p>但是就是说也没犯什么，就是说从法律法规面上的错误，公司经营的是不错的，对吧？闹了这种事情，然后美国这边就是说对他狂轰滥炸，而且影响到他的股股票的情况之下，最后还是盈利了，对吧？一年下来盈利还不少，最后公司的净值还还增加了对吧？说明他个人能力还是比较强，经营的是不错。所以我想说什么，就是说皮肤不对，怀疑其罪其实不是说刘强东真的犯了什么错，主要还是京东是快大肥肉，然后被人盯上了他自己在尝试着自我的去去解救。 </p>
+<p>姐就看怎么解救。我的建议可能就是说你要把你的肉分一些给别人，举个例子王健林，王健林你看被盯上了之后，他迅速的就把很多的他连保险牌照都卖了很便宜几十亿，保险牌照都是下金蛋鸡，一般人能拿得着吗？那么很便宜了，把保险牌照都都卖了，那什么意思？不等于就是说把好处分给别人，对吧？他后来很多低价卖了很多的东西，实际上也都是就是说分享把财富分享给别人了，对吧？在这过程当中对破财消灾。 </p>
+<p>所以对刘强东来讲，我觉得也是这么一个情况。现在刘强东的问题是什么？刘强东想尽一切办法用他的聪明才干去自救，但是他就跟他出来嫖一样你知道吗？ </p>
+<p>他真的我跟你说他那次不算强奸，我觉得基本上算一嫖，那妹子就是想弄点好处弄点钱，刘强东就是想白嫖白嫖，叫什么白白条颐4场，白朴次死是吗？这叫农。从从此你能看出来一个问题，刘强东这个人这个钱都拴在肋骨叉子上，宁愿丢人现眼，也绝对就是说不能钱上不能吃亏。其实那个女的到后来的那女的不也放了那个录音吗？那女的不跟他律师去交流了一下。你明白那意思，你们看看要给我应该补偿对吧？我看那妹子那意思要的也不多，我估计一两百万美元，这个应该就打发了，然后那妹子一撤诉就没事了，对不对？ </p>
+<p>最起码我觉得花个一两百万美元的话就是说保存了刘强东的一个脸面，还有就是说给他老婆，他老丈人他丈母娘留了一点脸对吧？但是全中国非常强硬，一分钱没有卖，他妈闹哪闹去也不怕丢人，不怕限制脸。本台的服务宗旨就是不怕，就是这样。本公司的京东的服务宗旨就是不定心眼，反正所以你就知道了对吧？通过这你就能看出来，一两百万美元的小钱，他都不愿意拿，他不可能像王健林那样，王健林纳真的2000多亿坐上800多亿对吧？ </p>
+<p>1000多亿拿出来给大家分了，刘刘强东肯定他做不到，做不到就这样，反正你不愿意破财的，你搞不好就有问题。对吧？所以其实我对公司不是很担心，我对强东有一点小担心，不知道。我觉得咱们看咱们看看他最后怎么办，他们当然最后如果迫于压力实在不行，只能就是破财消灾，要么就撤。 </p>
+<p>但是我知道刘强东就是说尝试了想把一些钱的运出海外来。我记得去年是当时有个报道我们也报道了，他尝试把一些钱运出来，然后被外管局发现了，还开了个1亿多元人民币的罚单给他，是不是？就是孙子那意思就是告诉你孙子别跑，跑我给你罚死你，想拿钱跑哪能别想都别想。但是拿钱跑其实还有很多的方法，地下银行跟别人去交换股权等等的，我想到刘强东体位的话，还是能想出很多办法来的。 </p>
+<p>但是想像潘石屹和李嘉诚那样，我觉得是不可能了，能拿一部分出来就不错。所以如果让我给，因为我就是喜欢这什么自以为是，好为人师，喜欢给别人出主意。 </p>
+<p>如果我有刘强东出主意，我觉得就是说想办法倒一笔钱，然后跑了，跟贾跃亭试了就别回去了，了就完了，我也不回去了，你们那能不知道我倒一笔钱出来，就是说哪怕把身家有1/3或一半能倒出来，也就也差不多。就够花了，你说是不是？我给梁总建议。当然了刘强东肯定他觉得自己没事，他后面有人肯定咱们承认，到了他这个级别后面不可能没有人，对吧？而且他肯定他也算是白手套，京东不是都是他的钱，有一部分也是其他利益集团的，没有问题。 </p>
+<p>但是我要提醒刘强东，吴晓辉怎么样？ </p>
+<p>吴晓辉是邓小平的孙女婿，对不对？吴晓辉当年也觉得自己没问题，后面有人罩得住对不对？ </p>
+<p>吴晓辉当时本来在海外的，他竟然敢回去，吴晓辉现在后悔不后悔，他自己心里知道，对吧？所以我就说刘强东你也不要以为就是说你后面真的有能给你站得住的，我说句不好听的，你后面真有站得住的话，你火马刮不会让人扒了，你自己琢磨琢磨对不对？你后面要真站得住，你和马甲都快让人扒了，你现在还是全国政协委员对不对？对吧？所以你想想好不好？这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/04/20200404%E7%AC%AC1907%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E5%B0%81%E9%97%AD%E7%A4%BE%E4%BC%9A%E5%B8%A6%E6%9D%A5%E7%9A%84%E6%8D%9F%E5%A4%B1%E6%AF%94%E7%96%AB%E6%83%85%E6%9C%AC%E8%BA%AB%E8%BF%98%E8%A6%81%E5%A4%A7-3hZEI2xK2b4/" rel="next" title="20200404第1907期-路透社：封闭社会带来的损失比疫情本身还要大">
+      20200404第1907期-路透社：封闭社会带来的损失比疫情本身还要大 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和憶想，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">573</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/04/03/20200403%E7%AC%AC1904%E6%9C%9F-%E5%88%98%E5%BC%BA%E4%B8%9C%E5%8D%B8%E4%BB%BB%E4%BA%AC%E4%B8%9C%E6%B3%95%E4%BA%BA%E3%80%81%E6%89%A7%E8%A1%8C%E8%91%A3%E4%BA%8B%E3%80%81%E6%80%BB%E7%BB%8F%E7%90%86-ezKiPpKbMiQ/";
+    this.page.identifier = "2020/04/03/20200403第1904期-刘强东卸任京东法人、执行董事、总经理-ezKiPpKbMiQ/";
+    this.page.title = "20200403第1904期-刘强东卸任京东法人、执行董事、总经理";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
