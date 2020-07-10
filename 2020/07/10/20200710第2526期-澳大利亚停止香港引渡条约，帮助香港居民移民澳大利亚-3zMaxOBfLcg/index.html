@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月10号星期五，澳大利亚也宣布停止了跟香港的引渡条约。是7月9号今天白天的时候，澳大利亚总理莫里森宣布的，而且他还宣布要放宽的对已经居住在澳大利亚的香港学生的移民的要求。他说持有临时工作许可的香港移民可以将工作许可的延长5年，然后申请了永久居留，申请工作就相当于澳大利亚的绿卡，拿到澳大利亚绿卡之后，再过几年就可以申请入籍了，等于相当于说给这些香港到澳大利亚的这些居民一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/10/20200710%E7%AC%AC2526%E6%9C%9F-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9C%E6%AD%A2%E9%A6%99%E6%B8%AF%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E9%A6%99%E6%B8%AF%E5%B1%85%E6%B0%91%E7%A7%BB%E6%B0%91%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-3zMaxOBfLcg/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月10号星期五，澳大利亚也宣布停止了跟香港的引渡条约。是7月9号今天白天的时候，澳大利亚总理莫里森宣布的，而且他还宣布要放宽的对已经居住在澳大利亚的香港学生的移民的要求。他说持有临时工作许可的香港移民可以将工作许可的延长5年，然后申请了永久居留，申请工作就相当于澳大利亚的绿卡，拿到澳大利亚绿卡之后，再过几年就可以申请入籍了，等于相当于说给这些香港到澳大利亚的这些居民一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-10T00:02:06.000Z">
+<meta property="article:modified_time" content="2020-07-10T12:32:40.732Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/10/20200710%E7%AC%AC2526%E6%9C%9F-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9C%E6%AD%A2%E9%A6%99%E6%B8%AF%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E9%A6%99%E6%B8%AF%E5%B1%85%E6%B0%91%E7%A7%BB%E6%B0%91%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-3zMaxOBfLcg/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/10/20200710%E7%AC%AC2526%E6%9C%9F-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9C%E6%AD%A2%E9%A6%99%E6%B8%AF%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E9%A6%99%E6%B8%AF%E5%B1%85%E6%B0%91%E7%A7%BB%E6%B0%91%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-3zMaxOBfLcg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-10 09:02:06" itemprop="dateCreated datePublished" datetime="2020-07-10T09:02:06+09:00">2020-07-10</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/10/20200710%E7%AC%AC2526%E6%9C%9F-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9C%E6%AD%A2%E9%A6%99%E6%B8%AF%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E9%A6%99%E6%B8%AF%E5%B1%85%E6%B0%91%E7%A7%BB%E6%B0%91%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-3zMaxOBfLcg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/10/20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚-3zMaxOBfLcg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月10号星期五，澳大利亚也宣布停止了跟香港的引渡条约。是7月9号今天白天的时候，澳大利亚总理莫里森宣布的，而且他还宣布要放宽的对已经居住在澳大利亚的香港学生的移民的要求。他说持有临时工作许可的香港移民可以将工作许可的延长5年，然后申请了永久居留，申请工作就相当于澳大利亚的绿卡，拿到澳大利亚绿卡之后，再过几年就可以申请入籍了，等于相当于说给这些香港到澳大利亚的这些居民一个就是说入籍的这么一个机会，当然虽然道路是很漫长的，这样搞的话搞不好要10年左右可能才能最后都多办妥才入籍，但是最起码说是给了你这么一条道路，我们也经常说移民的做移民间来了之后就跟坐牢一样，因为你要把时间驻马你才能移民。 </p>
+<p>但是无论如何我觉得这也看出澳大利亚的一个也算是一个善意，我觉得这个没有问题，而且澳大利亚现在跟中国的闹得非常僵，之前我们也说了中国现在对的一些农产品，澳大利亚一些酒都进行了抵制，而且还禁止中国就不禁止就是呼吁中国人不要叫大利亚，理由是因为之前澳大利亚提出要对新肺炎进行独立调查，已经闹得非常僵了，现在澳大利亚再出来走的话，我相信以后后澳大利亚和中国的关系会更难处，但是说实话我觉得习近平也应该稍微去思考一下了，现在跟印度的关系处得这么僵，然后跟日本的关系搞得也这么僵，以至于现在日本自民党已经提出来，就是说今年还让不让习近平去日本访问，然后现在跟台湾蔡英文就别提了，简直是视同水火，跟美国也搞成这样，跟加拿大，因为孟满洲也造成了这样，现在跟澳大利亚再闹成这样子，我不知道中国真的有点给我感觉就像当年司机老佛爷像八国联军同时宣战的这种感觉了，就是说我总觉得就是说习近平同志应该冷静的思考一下，就是说你到底要跟谁干，对吧？ </p>
+<a id="more"></a>
+
+<p>你如果因为现在习近平给我的感觉很想武力收复台湾，如果你真有这个想法的话，最少你应该跟美国、英国、什么澳大利亚、加拿大的关系搞得好一点，对不对？你现在同时跟这么多个国家关系搞得这么僵，咱不说你怎么样，但是习近平他觉得他可能无所谓，但是你有没有考虑过其他人？抖音微信、华为、中兴本来大家是可以做生意的，为什么现在做不了了？是因为你习近平跟各个国家的关系闹得太僵，导致华为他们做不了生意了，对不对？现在大家总是说说这个是因为美国要对华为赶尽杀绝，其实你真的冷静下来，你想一想是美国要对华为赶尽杀绝，还是习近平要对华为赶尽杀绝？ </p>
+<p>假如说现在是胡锦涛当政的话，假如说现在是江泽民当政的话，假如说现在是邓小平当政的话，我们会跟美国关系当中这么僵吗？不会的，华为是不是还可以接着做生意？ </p>
+<p>当然可以了对不对？其实2018年你如果不跟美国打这场贸易战的话，你现在华为不是该干嘛干嘛吗？对不对？华为实际上是一场贸易战的牺牲品，对吧？而且抖音微信现在又开始要对斗争，要对中兴要对微信下手了，多少的中国企业在这一次当中受到了影响，都怪川普吗？你习近平一点责任都没有吗？我还是那句话，你现在假如是胡锦涛的江泽民邓小平执政的话，可能ok了。 </p>
+<p>你看这安倍晋三，川普上台之后跟安安安倍刚开始跟船舶关系很不好的，刚开始安被认为是希拉里当选的对吧？跟希拉里搞的关系，你看川普一当中安倍晋三川普还没有上任，安倍晋三马上跑到纽约川普家去会见川普，对不对？马上就开始搞私人关系，你看看安倍晋三为什么能搞到这么好，以至于现在美国跟日本这么跟台湾的关系这么好，我在2018年的时候，我知道做梦都想不到习近平会傻逼乎乎的跟川普把关系闹成现在，到了现在这个地步，然后再加上香港问题，我不知道习近平是怎么想的，我之前跟一个朋友聊天也是说，当然了对香港问题都是比较就是说乐观，总是认为没关系，我们虽然这么搞了，美国也好，澳大利亚也好，加拿大也好，喊口号，他们并不会真的做什么，因为他们在香港也有利益。 </p>
+<p>我觉得你这么想太之前我发过一个视频还记不记得？我说一个美国的共和党的众议院的女议员，他发了一个竞选视频，我就说你要明白他发那个视频不是为了自己高兴的，他发那个视频是为了让大家去选他的，我说你能看懂这个女议员的竞选视频，你才能真正的想了解美国的话，你必须要了解川普，川普就是一个典型的传统意义上的美国人，就是这样子的。他不是不想利益，他想但是有一些根本的底线你不能逾越，你一旦逾越了之后，美国人就把枪端出来了。 </p>
+<p>美国是你看起来好像傻白甜，你去那些中部地区南方地区，他看着人都特别的憨厚，特别的老实，特别的耐死，但是你越过他的底线你试试，你越过去他就敢开枪，这就是美国前一秒可能还是特别的友善，对不对？就是你来了他可能跟你说sir我这个跟你请求你是不是走错了，你是不是不应该进这个地方，你是不是应该出去，你觉得他跟你说的就非常的客气，非常的委婉，非常的那什么对不对？ </p>
+<p>你觉得没事我进哪。下一秒他可能就直接开枪了，你懂我意思吗？这就是美国，这就是白人，就是这样子你明白吗？他实际上内心已经很澎湃了，但是他表面上看起来还是很nice很decent的，但是你要懂他的意思，你不懂，等到他开枪的时候，你会觉得我靠怎么回事怎么直接开枪了，但是这就是白人，你懂吗？ </p>
+<p>习近平你一定要明白，没有人再跟你开玩笑的，你以为加拿大你以为澳大利亚你以为美国在给你开玩笑吗？你以为他们会吞下去吗？这不可能的，这已经涉及到了一个底线的问题了。就像你像你香港国安法这种东西在香港是他们不可能接受的，他没有办法再认为就是说香港跟大陆是不一样的，你让他们默认香港现在还是一个高度自治，这不可能的，他不可能再像香港引渡任何人了，他也不可能再认为香港跟大陆是不一样的。 </p>
+<p>好吧？我不明白怎么给习近平讲，习近平能明白一个道理，但是你必须要明白，你现在这么搞实际上跟慈禧是一样的，你等于是在向八国联军同时宣战。如果你一定要跟美国打这场贸易战的话，你单摘出美国来单打，不要跟澳大利亚跟加拿大跟什么日本同时都闹得这么僵。慈禧那个时候也是，你如果比如说你要什么山东把辽东半岛对不对？你单独的跟德国人打，或者你要哪你单独跟日本人干，你单挑1个出来，你不要同时对8个国家一起宣战，这是非常愚蠢的行为，虽然我不但是我知道我知道现在很多的义和团，很多的小粉红们是支持你的，但是你相信我义和团是打不过八国联军的，好吧？ </p>
+<p>冷静冷静想一想，我想加拿大率先停止了跟香港的引渡，也为香港的一些移民开了一条绿色通道，像澳大利亚也这么做了。很多人认为川普是一个商人，川普不会对香港有过于过分的制裁，只是年龄大有点小，你相信我肯定不会让你等着。现在只不过就是在商量到一个什么尺度，但是这个尺度你相信我你看着绝对超过你习近平的想象，你一定我知道习近平现在还有很多的一些香港人，他认为美国在香港有很多的利益，美国对香港的制裁只是雷声大雨点小，不会有实质的制裁，你相信我第一轮的制裁就让你目瞪口呆，你不信你看看，你以为他能跟你好好说，下一秒就开枪，枪已经上，枪已然上场，猎枪已经端好，子弹已经上膛，你看着好不好？ </p>
+<p>我说了你不信不信，你看2018年的时候，我就告诉你不要打这场贸易战，我就没想到你愚蠢到这种地步。好吧，咱们看现在是7月10号，当时我说两个星期差不多就应该出来，咱们看看我认为再过4~5天7月14号左右，川普这边对香港的制裁就会出来，而这个制裁一定让你意想不到，今天到这里谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/09/20200709%E7%AC%AC2524%E6%9C%9F-%E5%8D%B0%E5%BA%A6%E5%86%9B%E9%98%9F%E5%9C%A8%E4%B8%AD%E5%8D%B0%E8%BE%B9%E5%A2%83%E7%9A%84%E5%90%8E%E5%8B%A4%E8%A1%A5%E7%BB%99%E5%87%BA%E7%8E%B0%E9%87%8D%E5%A4%A7%E9%97%AE%E9%A2%98-rf1NlcXqM_w/" rel="prev" title="20200709第2524期-印度军队在中印边境的后勤补给出现重大问题">
+      <i class="fa fa-chevron-left"></i> 20200709第2524期-印度军队在中印边境的后勤补给出现重大问题
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/10/20200710%E7%AC%AC2527%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%AE%A3%E5%B8%83%E5%88%B6%E8%A3%81%E9%99%88%E5%85%A8%E5%9B%BD-sYXTad6pf1k/" rel="next" title="20200710第2527期-美国宣布制裁陈全国">
+      20200710第2527期-美国宣布制裁陈全国 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">741</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/10/20200710%E7%AC%AC2526%E6%9C%9F-%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A%E5%81%9C%E6%AD%A2%E9%A6%99%E6%B8%AF%E5%BC%95%E6%B8%A1%E6%9D%A1%E7%BA%A6%EF%BC%8C%E5%B8%AE%E5%8A%A9%E9%A6%99%E6%B8%AF%E5%B1%85%E6%B0%91%E7%A7%BB%E6%B0%91%E6%BE%B3%E5%A4%A7%E5%88%A9%E4%BA%9A-3zMaxOBfLcg/";
+    this.page.identifier = "2020/07/10/20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚-3zMaxOBfLcg/";
+    this.page.title = "20200710第2526期-澳大利亚停止香港引渡条约，帮助香港居民移民澳大利亚";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

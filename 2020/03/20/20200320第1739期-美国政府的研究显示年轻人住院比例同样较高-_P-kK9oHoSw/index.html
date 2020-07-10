@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月20号星期五，美国政府的研究显示年轻人的住院比例同样很高，所以告诫年轻人不要太不以不以为然。说的是这样说，美国疾病控制预防中心的报告显示，住院治疗的美国人当中20%的患者年龄在2044岁之间，18%在45岁到54岁之间，年龄在65岁到84岁之间的住院比例最高达到了26%，但是比起来你就会发现2040岁，实际上你20%跟他65~84岁达到26%，也没差多少，所以他那意思">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200320第1739期-美国政府的研究显示年轻人住院比例同样较高">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/20/20200320%E7%AC%AC1739%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E7%A0%94%E7%A9%B6%E6%98%BE%E7%A4%BA%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BD%8F%E9%99%A2%E6%AF%94%E4%BE%8B%E5%90%8C%E6%A0%B7%E8%BE%83%E9%AB%98-_P-kK9oHoSw/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月20号星期五，美国政府的研究显示年轻人的住院比例同样很高，所以告诫年轻人不要太不以不以为然。说的是这样说，美国疾病控制预防中心的报告显示，住院治疗的美国人当中20%的患者年龄在2044岁之间，18%在45岁到54岁之间，年龄在65岁到84岁之间的住院比例最高达到了26%，但是比起来你就会发现2040岁，实际上你20%跟他65~84岁达到26%，也没差多少，所以他那意思">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-19T16:03:09.000Z">
+<meta property="article:modified_time" content="2020-07-10T12:32:40.636Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/20/20200320%E7%AC%AC1739%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E7%A0%94%E7%A9%B6%E6%98%BE%E7%A4%BA%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BD%8F%E9%99%A2%E6%AF%94%E4%BE%8B%E5%90%8C%E6%A0%B7%E8%BE%83%E9%AB%98-_P-kK9oHoSw/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200320第1739期-美国政府的研究显示年轻人住院比例同样较高 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/20/20200320%E7%AC%AC1739%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E7%A0%94%E7%A9%B6%E6%98%BE%E7%A4%BA%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BD%8F%E9%99%A2%E6%AF%94%E4%BE%8B%E5%90%8C%E6%A0%B7%E8%BE%83%E9%AB%98-_P-kK9oHoSw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200320第1739期-美国政府的研究显示年轻人住院比例同样较高
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-20 01:03:09" itemprop="dateCreated datePublished" datetime="2020-03-20T01:03:09+09:00">2020-03-20</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/20/20200320%E7%AC%AC1739%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E7%A0%94%E7%A9%B6%E6%98%BE%E7%A4%BA%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BD%8F%E9%99%A2%E6%AF%94%E4%BE%8B%E5%90%8C%E6%A0%B7%E8%BE%83%E9%AB%98-_P-kK9oHoSw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/20/20200320第1739期-美国政府的研究显示年轻人住院比例同样较高-_P-kK9oHoSw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月20号星期五，美国政府的研究显示年轻人的住院比例同样很高，所以告诫年轻人不要太不以不以为然。说的是这样说，美国疾病控制预防中心的报告显示，住院治疗的美国人当中20%的患者年龄在20<del>44岁之间，18%在45岁到54岁之间，年龄在65岁到84岁之间的住院比例最高达到了26%，但是比起来你就会发现20</del>40岁，实际上你20%跟他65~84岁达到26%，也没差多少，所以他那意思就年轻人也不要太就是说觉得自己不以为意的，不要太不当回事。 </p>
+<p>然后再看看这是住院的比例，然后住进 ICU的住院就普通ICU就是重症监护室了，这就是非常重了非常严重的。他说住到这IC u里来讲，45岁和64岁之间的人占了36%，年龄在20~44岁之间人占了12%，当然这个比例的确是不高，但是也是百分之十几。 </p>
+<a id="more"></a>
+
+<p>那么19岁以下现在还没有入住重症监护室的数据，那么美国的卫生官员就提醒了年轻人要警惕，虽然你们不属于高危人群还是要小心，主要我觉得就是说政府官员出来要吓唬吓唬年轻人，现在年轻人太不当回事了，很多年轻人这个学校比如说不让上了，就开始搞各种party狂欢，还有什么弗罗里达的沙滩上都是年轻人穿着比基尼在那儿晒太阳，挖坑交接玩，而且是完全就是一副还是人挤人的那么一种状态。 </p>
+<p>然后什么是口罩对不对？能穿的都就几片布，他穿的比基尼跟那还没有口罩用的不多，是不是？都是在搞笑，所以就这么一个情况。 </p>
+<p>白宫应对疫情小组领导人之间之一的 books，医生表示说来自法国和意大利的报告显示一些年轻人病得很重，而且在重症监护室里，其实之前中国的时候就是说都是老年人，然后后来但是李文亮34岁去世的，我们就意识到实际上恐怕不是像他们说的只有老年人什么，因为对李文亮也是他身体还是不错的，而且他没有任何的基础病，又那么年轻，他自己又是医生对吧？ </p>
+<p>也非常注意个人的卫生，但是最后还是死了，而且对李文亮他们还是最起码医院里的医生对不对？大家从医生这来讲对他还都是比较照顾对吧？因为你说都是医生你进来了，我今天不好好治你明天你也不好好治我，所以同行们之间还都是其实比较认真的。对他也是治了，不是没有治，真的是治了。 </p>
+<p>但是实在就是说支不过来，但是当然了，我们也承认就是说早期的时候没有太重视，因为毕竟他年轻，而且他这个病也出现了反复，他之前进了重症监护室，后来好了出去了，后来不知道为什么突然已经进入了就是说康康复期了对不对？但后来不知道为什么突然又严重了。然后最后反正当然了没有及时插管也是被诟病的，而且没有给他用的体外的人工肺膜那种东西也没有用，当然这个也是被诟病，但是当时我们必须承认武汉当时的医疗条件没有那么好，大家也要明白，所以也是现实情况。 </p>
+<p>美国卫生官员我觉得主要也是对于现在美国年轻人现状极为不满，美国年轻人真的是有点我觉得太太不以为然了，大家该吃吃该喝喝，该玩玩啥事不往心里搁。 </p>
+<p>我觉得美国官员出来，也就是说吓唬他们，让他们老实点，别胡折腾了对吧？美国也就只能吓唬他跟中国不一样，中国的话可以警察直接就给他们都都低了回去了对吧？ </p>
+<p>在美国这是不可能的，佛罗里达内沙滩上你只能照个照片然后谴责一下对吧？你让他也没辙，他就在沙滩上趴着，他就趴着，你看他一点辙都没有，这毕竟是一个是一个民主国家对吧？有些事是没有办法，但是我觉得年轻人们还是要小心，是吧？我们两个都不年轻了，就更得小心，不过现在那么说，其实我们想想我们也挺不负责任的，对吧？我们上周还不戴口罩，满处冷，乱窜，这个也是应该反省。 </p>
+<p>好吧？没事，就是不以为然，是不认为是对的，不以为意是不在乎无所谓，我这个对你已经放弃了，你想怎么说，但是我担心有些高考的在国内的高中生，我怕你误导他们，所以我你说不以为然是怎么着，不认为是对的，这样的不认为是对的，你觉得我用不以为然，不太应该用不以为意，他们都觉得不当回事儿。不是，我觉得这样有一些美国年轻人真的就认为年轻人的死亡率特别低，他很多美国年轻人他看的不是重症监护室的数据，他看的是死亡率。 </p>
+<p>我们之前也说过，好像20~28岁的死亡率是多少？0%点不到0.1%好像，对吧？19岁以下基本上就没有死的，对吧？所以他们真的不以为然，他们真的就觉得你说这没用，跟我们讲的都不对，我们出来该玩玩。他倒不是说认为他觉得你其实连我看了，我也觉得他们其实就是官员出来吓唬年轻人，你觉得他不说死亡率，他说住院率，然后他说重症监护室的率，他为什么因为死亡率太低了，吓唬不了你。你觉得所以我觉得很多年轻人不以为然，好吧，我觉得这个词应该没有什么太大的问题，不以为意也都可以，是吧？ </p>
+<p>好吧，我觉得这样20~28岁的认为是不以为然，对吧？28岁到44岁可能就是不以为意，这样说可以了，好这够准确了，跟书呆子聊天就累了，是不是？好吧，这期讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/20/20200320%E7%AC%AC1738%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E5%B7%9E%E9%95%BF%E5%BA%93%E8%8E%AB%E6%8B%92%E7%BB%9D%E4%BC%A0%E6%92%AD%E6%81%90%E6%83%A7%EF%BC%8C%E4%BF%9D%E8%AF%81%E7%BA%BD%E7%BA%A6%E4%B8%8D%E4%BC%9A%E5%B0%81%E5%9F%8E-y4gtsECNa00/" rel="prev" title="20200320第1738期-纽约州长库莫拒绝传播恐惧，保证纽约不会封城">
+      <i class="fa fa-chevron-left"></i> 20200320第1738期-纽约州长库莫拒绝传播恐惧，保证纽约不会封城
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/20/20200320%E7%AC%AC1740%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%90%84%E5%A4%A7%E8%B6%85%E5%B8%82%E4%B8%BA%E8%80%81%E5%B9%B4%E4%BA%BA%E5%92%8C%E5%BC%B1%E5%8A%BF%E4%BA%BA%E7%BE%A4%E9%A2%84%E7%95%99%E4%B8%93%E9%97%A8%E8%B4%AD%E7%89%A9%E6%97%B6%E9%97%B4-NOPvVgrxITM/" rel="next" title="20200320第1740期-美国各大超市为老年人和弱势人群预留专门购物时间">
+      20200320第1740期-美国各大超市为老年人和弱势人群预留专门购物时间 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">741</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/20/20200320%E7%AC%AC1739%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E7%A0%94%E7%A9%B6%E6%98%BE%E7%A4%BA%E5%B9%B4%E8%BD%BB%E4%BA%BA%E4%BD%8F%E9%99%A2%E6%AF%94%E4%BE%8B%E5%90%8C%E6%A0%B7%E8%BE%83%E9%AB%98-_P-kK9oHoSw/";
+    this.page.identifier = "2020/03/20/20200320第1739期-美国政府的研究显示年轻人住院比例同样较高-_P-kK9oHoSw/";
+    this.page.title = "20200320第1739期-美国政府的研究显示年轻人住院比例同样较高";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

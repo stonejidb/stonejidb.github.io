@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月21号星期六，最近所有的中国的这些自媒体或者媒体唯一的一件事情就是美国完蛋，美国已经到爆发了，美国没劲了，美国3亿多人有9000多万都得了，每天得死五六千，反正就是这件事，美国衰退了，经济衰退了，然后巴菲特这一辈子还太年轻，才见了七八次，熔断都是在今年等等，说了一大堆，美国一听是不是大爆发了事，不准确的说还没有完全开始，后面会更惨的，你相信我我已经算完了。  我前两天">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/21/20200321%E7%AC%AC1747%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%A4%A7%E7%88%86%E5%8F%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%8F%97%E5%88%B0%E7%9A%84%E4%BC%A4%E5%AE%B3%E6%AF%94%E7%BE%8E%E5%9B%BD%E8%BF%98%E5%A4%A7-pM1MkzzQNgA/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月21号星期六，最近所有的中国的这些自媒体或者媒体唯一的一件事情就是美国完蛋，美国已经到爆发了，美国没劲了，美国3亿多人有9000多万都得了，每天得死五六千，反正就是这件事，美国衰退了，经济衰退了，然后巴菲特这一辈子还太年轻，才见了七八次，熔断都是在今年等等，说了一大堆，美国一听是不是大爆发了事，不准确的说还没有完全开始，后面会更惨的，你相信我我已经算完了。  我前两天">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-20T16:04:07.000Z">
+<meta property="article:modified_time" content="2020-07-10T12:32:40.674Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/21/20200321%E7%AC%AC1747%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%A4%A7%E7%88%86%E5%8F%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%8F%97%E5%88%B0%E7%9A%84%E4%BC%A4%E5%AE%B3%E6%AF%94%E7%BE%8E%E5%9B%BD%E8%BF%98%E5%A4%A7-pM1MkzzQNgA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/21/20200321%E7%AC%AC1747%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%A4%A7%E7%88%86%E5%8F%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%8F%97%E5%88%B0%E7%9A%84%E4%BC%A4%E5%AE%B3%E6%AF%94%E7%BE%8E%E5%9B%BD%E8%BF%98%E5%A4%A7-pM1MkzzQNgA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-21 01:04:07" itemprop="dateCreated datePublished" datetime="2020-03-21T01:04:07+09:00">2020-03-21</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/21/20200321%E7%AC%AC1747%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%A4%A7%E7%88%86%E5%8F%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%8F%97%E5%88%B0%E7%9A%84%E4%BC%A4%E5%AE%B3%E6%AF%94%E7%BE%8E%E5%9B%BD%E8%BF%98%E5%A4%A7-pM1MkzzQNgA/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/21/20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大-pM1MkzzQNgA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月21号星期六，最近所有的中国的这些自媒体或者媒体唯一的一件事情就是美国完蛋，美国已经到爆发了，美国没劲了，美国3亿多人有9000多万都得了，每天得死五六千，反正就是这件事，美国衰退了，经济衰退了，然后巴菲特这一辈子还太年轻，才见了七八次，熔断都是在今年等等，说了一大堆，美国一听是不是大爆发了事，不准确的说还没有完全开始，后面会更惨的，你相信我我已经算完了。 </p>
+<p>我前两天我做那公式不算了，如果每一天死个20多的话，那就是30万，如果每一天死40多就七八万，那么这两天我看每一天现在差不多要死五六十人了，我现在认为我现在预估美国感染人数应该在12万到14万之间，那么后面根据死亡人数，我还会陆续的在改变，当初说武汉的时候，我们也是从10万、15万、20万、22.5万，后来到40万对吧？也是一点点的在递进，美国这个也是这样的，我从最早的就是说3000，后来3万7万多10万到现在我认为应该在12万到13万之间，后面会不会再多，我们后面再说好不好？ </p>
+<a id="more"></a>
+
+<p>但是美国现在正在进入大大爆发，还没有完后面还有更惨的在后边。这是事实衰退，经济看来就是衰退了，说实话我之前我在上个星期都没有想到会到了这么厉害，现在就闹这么厉害了，那么事实出现了，我们就要面对事实，美国一听大爆发了，经济在衰退没有问题。那么谁受到的伤害最大？有人跟我说非常高兴，说你看看你天天说美国好，这次美国已经到发了，美国人民完蛋了，水深火热当中了，叫做终获大赢，知道吗？就是疫情大爆发，中国会成为最大的赢家，就叫终获大赢。 </p>
+<p>就觉得这一次好了，疫情面对全世界面对的疫情，谁先控制住疫情，谁就掌握主动。说中国会最快的速度的复工，中国的经济会迅速的复苏和崛起，中华民族的伟大复兴就在眼前，同志醒醒兄弟别做梦了兄弟。我先告诉你，中国作为世界工厂没有问题，美国在依赖中国，这是事实。美国不可能离开中国制造，反正目前来讲是不可能完全离开之后，美国人生活是非常的有很多的困扰。 </p>
+<p>但是倒回来，中国能离开美国吗？中国的外汇储备92%来自外资企业，来自于对外出口，没有外资企业没有对外出口，你拿什么挣钱？你复工干什么？你卖给谁兄弟？你自己煮着吃，就像象牙一样，现在全世界不让交易象牙了，对吧？各个拍卖行都没有了，只有老价能卖薪的薪价，只要跟虾有关的都不行，保护动物，没有市场了，你抓大象干什么？你卖给谁？没有人敢买。 </p>
+<p>10年前20年前美国你穿个貂皮大衣牛逼爆了，你现在穿大貂不下一出去你妈缺心眼。你看美国的政客有哪个政客的老婆，你看川普的老婆对不对？ </p>
+<p>天天换大牌衣服，你看看哪一次敢穿个吊皮大衣出来，你见过不要说貂皮大衣，现在1万卡他们这些年轻的美国政客的这种二代们，包括希拉里的女儿，对吧？Chelsea。对不对？他们出来连真皮的衣服都不会穿的，尽量少穿，就不穿有皮的，懂什么意思吗？美国到什么程度那些环保分子，美国的富豪们开会开完会了，该带着老婆出来，老婆身上穿着貂皮大衣，然后动物保护协会的那些激进的白索们，拿红油漆的往人那标，让坡哗一破，摩登说谋杀，你穿的都是动物的尸体，你知道吗？ </p>
+<p>然后你要告诉他，你会发现所有舆论都不支持你，都支持他，觉得他做的是对，当时他做的是不对的，但是大家谴责你谴责的更多，你要告诉他们更骂你，所以很多富豪老婆一看干脆就算了，我不告了，我告了之后我更难看，赶快了就算了，我也不告你了。标不大一我也不用，本来不是告诉你赔我赔我衣服衣服挺贵的，我也不用陪了，我有钱我也算了，我也不告诉你咱们就过去了，别提这事了，就完了咱们就算了。 </p>
+<p>所以你会发现在美国，现在连那些富豪按理说富豪吗？资本家我挣的钱想怎么花怎么花，但是连富豪的老婆和子女们也都不会再穿什么叼脾动物的这些东西了。懂不懂？ </p>
+<p>美国现在保护动物，这是一大就是说一个非常的就是说所有人都认同的一个政治政权。你包括连中国非常有名，大家都听说过的叫加拿大鹅，他们那里面搁的是那么加拿大俄说了，我们的所有的鹅毛都是自然脱落的，说我们在哪养了一个动物的乐园，里边养了很多鹅，每一只鹅我都给他们听音乐，吃最好的食物，让他们快乐的生长，然后从来没有人在他们身上拔任何一根毛，所有的毛都是他们在生长的过程当中自然脱落了，他们脱落之后我们扫地，把鹅毛扫出来，然后我们用这些鹅毛，这些鹅毛都是没有痛苦的，鹅毛都是快乐的鹅生长出来的快乐的鹅毛，所以当你用这只当你穿这种毛毛的时候，你会非常的开心，对不对？ </p>
+<p>他都是这样子去宣传，他绝对不敢跟你说这个毛石涛我拔了，我靠你麻烦大了，我的天哪你这你说不清楚你知道吗？他肯定不能这么说对不对？但是皮就在这儿上对不对？你怎么说皮它是自己撕下来的，对吧？所以脾就不好弄是吧？鹅毛还好说，他说它自己脱落的，对吧？为什么加拿大俄每一年就是说买的时候，你会发现都挺难的，不太好买就在这儿，因为它产量有点低，因为它真的因为你拔的话会快一点，你要等他自己掉了他就什么你知道吗？这也是事实，所以这个来讲，美国目前的一个情况，他事实就如此。 </p>
+<p>那么你中国你怎么办？美国人不买了，你就没有产量，你明白吗？你没有市场的话，你要工厂干什么？没有人买象牙了，没有人买貂皮大衣了，你懂吗？没有市场就没有杀害，没有交易就没有痛苦。美国人不买了，你复工你造给谁？最大的伤害是谁？我觉得大家都有伤害，伤害我觉得差不多，所以很多中国人认为就是说美国经济衰退了，美国人受到伤害大，我告诉你我给你打包票，中国的伤害一定不会比美国小最少，是一样的。在短期里边是一样的，我不消费了，你也别生产了，你的工人会失业的，你生产出来卖不出去会滞销的，我的经济有损失，你的经济一样有损失。 </p>
+<p>中国对美国的经济依赖太大了，每年几千亿都卖给美国，所以我就奉劝一些中国人不要开心了，美国一听大爆发了，高兴坏了，中华民族伟大不可能的。 </p>
+<p>自邓小平之后，中国就有点没有聪明人了，小平同志真的是可以说历届中国领导人，我认为最聪明最成熟的，把这个事情看得最透的，他有那种洞察力，那种一般人所没有的洞察力，他能洞察到一点就是什么呢？中国的外交就是队尾对美关系，只要跟美国的关系好，中国的外交就胜利了，跟美国关系不好，中国的外交就是失败。现在情况就是这样子。如果现在是邓小平执政的话，邓小平会想尽一切办办法帮助美国来抑制疫情。 </p>
+<p>习近平现在应该做的是什么？如果我是习近平的话，想尽一切办法由中国来生产生产防护服、生产口罩，我甚至可以无偿的我送给你美国，我送给你我不要钱了，你拿着用就行了，n95口罩。外科口罩你现在不是需要吗？呼吸机我帮你造，到时候我送给你，我帮你来解决疫情，这才是中国目前应该做的。美国的疫情受到最大伤害的实际上是中国，懂吗？我不知道你在幸灾乐祸什么，而中国现在在这么做吗？没有再这么做。就到此为止。 </p>
+<p>就到这了，不再往下说了，就逻辑到这一步，中国的伤害已经很大了。你再往下想，我告诉你，最后中国的伤害会比美国大，为什么要这么说？从奥巴马执政以来，美国在思考的是什么？它又有一个非常大的国家级的目标，就叫制造业回归。018 2018年的时候，川普当时跟中国就开始搞这个贸易摩擦，金灿荣也好，金一南也好，出来的说美国人是不是缺心眼，对不对？为什么要来跟我们抢去造口香糖，去造牛仔裤，对不对？而且你这么搞的话，你的生产链你又没有生产链，你搞来搞去的话，你不可能把整条生产链搬回美国去。 </p>
+<p>当时我驳斥济南，驳斥金泰冷的，我说什么？这一次不是为了钱，你如果真的以为川普来了，跟你打这场贸易战是为了钱的话，你把川普看得太小了。 </p>
+<p>很多人觉得川普就是一个商人，跟中国打这场中美贸易战就是为了捞点钱，不是的。川普有一个更远大的目标，实际上不是从川普这开始，从奥巴马那个时代就有了目标，在美国的政界就已经有了这个目标，叫什么？就叫做制造业的回归，要让制造业重新回流，回归到美国来。但是奥巴马没有做到，说实话没有做到他奥巴马是个好人，但是他没有川普的这么的狠，这么多果敢，这么个胆大，川普通过这一两年跟中国的这场贸易摩擦达到了一定的效果，就是制造业的回归我们承认，但是效果显著不显著，而且更多的是制造业的转移，而不是回归。 </p>
+<p>制造业从中国转移到了其他国家，并没有完完全全回到美国，很多从中国出来可能去越南了，可能去印度了，没有回美国，这不叫制造业的回归，这只能叫制造业的转移。那么这一次疫情不一样了，这一次的翼型改变了很多东西，奥巴马8年不能够实现的，川普跟中国打了三年的贸易战不能够实现的，被这一场疫情轻而易举的实现，美国制造业必须回归，必然回归。 </p>
+<p>这一次之后川普一定会用行政命令会立法，要求美国很多的关系到国计民生的产业，必须要60%或70%在美国本土制造并生产，如果你达不到的话你就滚，我美国就不要你了，你就别到美国卖了。 </p>
+<p>为什么？他就要强调一点，就是说一旦出了问题之后，我只能依靠司机，我不能依靠别人，我现在没有口罩，我没有呼吸机，我现在不够用，我自己又生产不了，原材料有问题，生产有问题，这关系到我的国计民生，关系到国家安全。如果打仗了怎么办？就算不打仗发生疫情了怎么办？疫情也是一场战争，我要为老百姓的安全着想，我必须要知道要回归。好，能够带回来一部分知道也没有错，不会都带回来，但是有一点很重要，它只要带回来的一部分，它就会有上下游的产业，它就会形成一个产业链，不会有一个产业单独回归的，这是很难的。 </p>
+<p>要回归就是一个产业链的回归，产业链的完善之后，就会吸引其他的产业一起回归，他会给大家都营造一个非常好的非常舒适的环境。还有一点，这种回归它必然引起第4次或者第5次的产业革命，就什么意思？像中国这种劳动力密集型的工厂在美国是行不通的，之前我们都看到奥巴马拍的纪录片就是福旺工厂，美国工厂，对吧？这种密集型的劳动力密集型的工厂在美国行不通，必须要改革，我们不能够再像中国一样弄那么多人，我们要就是说我当时不是金一南还记得我就说其实关键的不在于我制造什么，不在于我到底跟你抢是制造口香糖还是制造牛仔裤，关键的是耗。 </p>
+<p>不是我们制造什么，而是我们怎么去制造。如果我都用机器人制造，我第5次产业革命，我不管知道什么都用机器人，口香糖也好，就带库也好，飞机大炮也好，我都是用机器人的话，机械化制造的话，我依然创造了就业岗位，而且我的就业岗位可能比那种普通的更高，质量更高，产率更高，这样就导致了什么？你不再是世界工厂了，因为你的这种产业能力不行，我的产业能力比你高，如果我都是机器人制造，你都是人工制造的话，我的成本会比你还低，到时候我就会来冲击你的市场。 </p>
+<p>而这一次所有奥巴马8年做不到的，川普三年贸易战做不到的，这一次疫情做到了，你会发现在整个就是说可以说在美国立国有200年的时间里边，就是说美国人经常讲叫one nation under god。就是说真是是被上帝宠幸的国家。你也许当然他是新教徒立国他有信仰，但是你不得不承认，这么多年来，所有的危机最终都转化为对美国有利。 </p>
+<p>二战、德国，为什么美国爆发了经济危机，影响了德国，导致德国大量的失业。希特勒趁虚而入，带领着工人阶级搞了一次革命，爆发了二战，美国也受到了很大伤害，但是最终的结果是什么？二战最大的赢家是谁？是美国，二战之前美国不是这个世界上最牛的国家，但是二战之后，所有人都必须承认二战之后整个欧洲都一片狼藉，美国一跃而起，成为了这个世界上唯一的超级大国。美国的军事开支是后面第二名到第10名加在一起的，他一个人包办了世界一半，他的军事力量一跃而起，整个二战最大的赢家就是美国。 </p>
+<p>这是因为美国的一次经济危机，而且你会发现美国历历次美国的经济危机，刚开始看都是美国的经济危机，给美国人民造成了很大的伤害，跟美国的经济造成很大的伤害，但是最终过不了几年你会发现这种伤害最终通过美元转嫁给了全世界其他的国家。美国历次的经济危机，百分之六七十都是这个世界帮他买单了，但是当然了我们也承认，主要的原因就是说美元是世界结算货币是全世界认可的硬通货，所以当他用美元来，而且美国有世界上最好的金融家金融操作手金融市场，华尔街都在这里，这帮人就专门拿美元在玩玩，各种他们拆来倒去的，具体里边操作我不说了，但是最终的结果是什么？ </p>
+<p>要把美国的经济危机，把美国受到的这种经济衰退和伤害转嫁给其他的国家，而且每一次都屡试不爽，聚众美元生生让你把它吞了，是我经济危机导致的，没错我承认。但是我印了美元之后你还得用，你结算时你必须得说我多印了，我多印了怎么着，中国你多印的人民币你自己兜着，美国不是美国我多印的美元，你们全世界都得给我买单。没有办法，我不是说他对，但这是事实，你必须得面对这个事实，美元就有世界唯一的硬通货，所有的东西百分之八九十都是用美元在结算，为什么？中国我们一直想要让人民币入栏，想要让人民币作为国际的结算货币，希望挑战美元的霸权地位和霸主地位，但是这是美国一直都绝不允许的。 </p>
+<p>而目前来讲人民币根本没有力量去挑战美元，那是胡说八道，所有认为人民币能够挑战美元的都是神经病，不多说都是神经病。所以我告诉你，这一次的疫情会让美国经济衰退吗？ </p>
+<p>会没有问题，但是最后是美国兜着，不是的。你相信我一定会转化到你头上的，你最后会明白这一次经济危机，这一次疫情导致了美国的经济的衰退，股市的崩盘，美国人民会兜一部分，但是绝大部分都让全世界人民去分担。美国是这个世界上经济的发动机，你服也好不服也好，现在就是如此。美国经济不好了，不是美国兜着，是你们兜着。所以我告诉你，作为一个中国人，如果你很缺心眼的话，你可以继续庆祝美国疫情大爆发了，美国要完蛋了。 </p>
+<p>如果你稍微有一点经济学的常识，对世界历史有一点了解的话，我告诉你，你现在应该为中国默哀，美国疫情到爆发，受到的伤害，中国比美国大多了，至于中国来讲是第二轮的伤害，第一轮导致你直接没办法开工，没办法复工，第二轮导致你即使复工了，你的产品也卖不出去，没有人买，而且我告诉你还会有第三轮伤害。这一次之后美国一定会有整个制造业和产业链的回归，而且是必然的回归，而且是名正言顺的回归，是为了美国国防安全，国民安全的回归，他是名正言顺的，他可以立法逼他回归。 </p>
+<p>这种回归受到冲击和伤害的是谁还是中国？还没有。当美国的制造业产业链回归了之后，他怎么办？他会让美元去变化，通过美元的变化导致什么？去洗劫全世界的财富。那个时候所有人都会看到美国是未来经济的发展的潜力，各种热钱会投入到美国来，因为产业链在回归，产业在回归，这是巨大的一个挣钱的一个机会。那么全世界的精英都会投入进来，然后通过把之前疫情导致美国的经济的这些衰退和损失，让全世界投入进来的人替他买单。 </p>
+<p>那个时候我相信那里边一定也有我们中国人，所以就是第3轮第4轮的上海，所以不要高兴了，你不要以为美国疫情爆发了，美国受到伤害，只要你不能够让人民币替代美元的话，你记住美国无论爆发了什么，最后都是你买单。 </p>
+<p>你能听懂就听懂，我知道这期讲的很玄妙，很多人可能听不懂我在说什么，但是你就记着这句话，除非有一天国际结算货币是人民币不是美元，如果那一天不来到的话，美国不管是爆发了什么经济危机，什么样子的经济衰退，都是全世界来给他买单。是他犯的错误吗？是他犯的错误。 </p>
+<p>07年08年次贷危机就是美国人犯的错误，雷曼公雷曼银行还有其他几个银行，在房贷方面玩的各种的猫腻和手脚导致的，但最后买单的最后吃亏的是全世界。这一次的疫情，美国cDC有不可推卸的责任，他犯了错没错。但是你相信我最后给他买单的是全世界的。 </p>
+<p>好，最后问题提出来了，那么怎么解决这个问题？到底就是说作为中国来讲，我们应该做什么对不对？ </p>
+<p>我说首先来讲，你从意识形态上必须要想转变过来，我觉得首先不能够把美国当成我们的敌人。现在很多的中国人义和团小粉红们动不动就把美国当敌人，一定认为美国都是这些就好像义和团认为美国的传教士一样，来了拿我们的小孩熬药的，老是觉得美国来占我们便宜，首先来讲这一点，你先不能有意识形态上要正确，你要明白我们跟美国应该是朋友，就是小平同志讲的，中国的对外贸易对外关系就是对美关系跟美国关系好了，一切问题都好说，跟美国就是互惠互利，一起做生意一起挣钱，做生意就这样子。 </p>
+<p>你不管跟谁一起做生意，你不能够想比如说咱俩你拿了50，我拿了50+1%做生意，那挣了钱就应该你分一半我分一半。你不能觉得好像你怎么拿了一半的废话，人家跟你一起做生意，人家不挣钱人干嘛的对不对？你做生意当你的生意伙伴都能挣到钱的时候，你的生意越做越大，就会越来越多的人愿意跟你做生意。如果你做生意光让你挣钱，别人不挣钱，久而久之就没人跟你做生意了，对吧？所以一定要跟要把就是说从意识形态上先摆摆端正，不要动不动就想着好像现在很多人就动不动觉得美国是我们的敌人，然后就是因为美国压着我们影响了我们的中华民族伟大复兴，对不对？ </p>
+<p>老是有这么一种感觉，好像现在就没有美国我们世界老大了，我们就可以统治全球的，不要有那种想法。好吧，这是首先从意识形态上。 </p>
+<p>其次来讲说得玄一点，我希望我们现在领导人的静下心来想一想，每次遇到问题了要想一想，假如小平同志还在，他会怎么处理这个问题？你把这个想明白就好，不要觉得小平同志软弱。 </p>
+<p>64的时候小平同志该强硬是绝对强硬的，这个人是一个真的绵里针，表面是一个和颜悦色，内部是钢铁公司，对不对？想一想小平同志会怎么做？会比较聪明。 </p>
+<p>我知道习近平很不喜欢听这个话，习近平一直想要跳脱邓小平的框架，就认为后面江泽民胡锦涛都在小平同志这个范围内，他不想做一个就是校规曹隋的这么一个他想要开创自己的一番事业。但是首先来讲你要开创事业也好，怎么也好，目标要对，我要跟习近平同志就说，你现在就挑战美国太早了，根本就没有到时候完完全全中国现在没有到了，能够挑战美国，挑战什么世界霸主地，想这些都是胡说八道，明白吗？所以这就是第二个说的玄一点，就是想一想，如果小平还在，怎么解决？ </p>
+<p>好吧，第一个意识形态解决了，第二个想一想邓小平。 </p>
+<p>第三个一点，我觉得的具体的比如说你看具体的应该怎么做，简单一点说的简单一点，别说的这么意识形态，不要说那么悬，简单一点那就说那就复杂了，对不对？那么简单一点，我用最简单的说，当年刘邦刚刚进刚进川的入川的时候，张良给刘邦出了那么三条庙街，深挖洞，广积粮，缓称王。今天这些讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/21/20200321%E7%AC%AC1746%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%BB%8A%E5%B9%B4%E8%82%AF%E5%AE%9A%E8%BF%9E%E4%BB%BB%E6%80%BB%E7%BB%9F%EF%BC%8C%E6%9C%80%E5%A4%A7%E7%9A%84%E5%8A%9F%E8%87%A3%E6%98%AF%E8%B5%B5%E7%AB%8B%E5%9D%9A-97qyR2KKSVA/" rel="prev" title="20200321第1746期-川普今年肯定连任总统，最大的功臣是赵立坚">
+      <i class="fa fa-chevron-left"></i> 20200321第1746期-川普今年肯定连任总统，最大的功臣是赵立坚
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/21/20200321%E7%AC%AC1748%E6%9C%9F-%E5%B7%B4%E8%A5%BF%E6%80%BB%E7%BB%9F%E7%9A%84%E5%84%BF%E5%AD%90%E8%AF%B4%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E7%9A%84%E5%85%A8%E7%A7%B0%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%85%B1%E4%BA%A7%E5%85%9A%E7%97%85%E6%AF%92-riXsn7QBDNk/" rel="next" title="20200321第1748期-巴西总统的儿子说新冠病毒的全称是中国共产党病毒">
+      20200321第1748期-巴西总统的儿子说新冠病毒的全称是中国共产党病毒 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">741</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/21/20200321%E7%AC%AC1747%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%96%AB%E6%83%85%E5%A4%A7%E7%88%86%E5%8F%91%EF%BC%8C%E4%B8%AD%E5%9B%BD%E5%8F%97%E5%88%B0%E7%9A%84%E4%BC%A4%E5%AE%B3%E6%AF%94%E7%BE%8E%E5%9B%BD%E8%BF%98%E5%A4%A7-pM1MkzzQNgA/";
+    this.page.identifier = "2020/03/21/20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大-pM1MkzzQNgA/";
+    this.page.title = "20200321第1747期-美国疫情大爆发，中国受到的伤害比美国还大";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
