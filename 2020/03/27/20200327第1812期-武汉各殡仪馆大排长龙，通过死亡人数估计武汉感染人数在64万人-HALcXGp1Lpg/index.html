@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月27号星期五，这一期现在我没想好就开始录了，没想好到底是会员专享还是搁在非会员里边？我先讲我讲这东西你来决定好不好？是这样，武汉现在开放了，各个殡仪馆都开始可以去领取疫情期间去世人员的骨灰，现在各大宾馆就是说大排长龙，据说有的宾馆要排了5个小时才能领到骨灰，说汉口殡仪馆两天到货了5000多个骨灰盒，说一辆大货车能装到2500多个550，说昨天来了一辆金来一趟来了两天的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/27/20200327%E7%AC%AC1812%E6%9C%9F-%E6%AD%A6%E6%B1%89%E5%90%84%E6%AE%A1%E4%BB%AA%E9%A6%86%E5%A4%A7%E6%8E%92%E9%95%BF%E9%BE%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%BC%B0%E8%AE%A1%E6%AD%A6%E6%B1%89%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E5%9C%A864%E4%B8%87%E4%BA%BA-HALcXGp1Lpg/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月27号星期五，这一期现在我没想好就开始录了，没想好到底是会员专享还是搁在非会员里边？我先讲我讲这东西你来决定好不好？是这样，武汉现在开放了，各个殡仪馆都开始可以去领取疫情期间去世人员的骨灰，现在各大宾馆就是说大排长龙，据说有的宾馆要排了5个小时才能领到骨灰，说汉口殡仪馆两天到货了5000多个骨灰盒，说一辆大货车能装到2500多个550，说昨天来了一辆金来一趟来了两天的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-26T17:01:02.000Z">
+<meta property="article:modified_time" content="2020-07-10T06:55:01.715Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/27/20200327%E7%AC%AC1812%E6%9C%9F-%E6%AD%A6%E6%B1%89%E5%90%84%E6%AE%A1%E4%BB%AA%E9%A6%86%E5%A4%A7%E6%8E%92%E9%95%BF%E9%BE%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%BC%B0%E8%AE%A1%E6%AD%A6%E6%B1%89%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E5%9C%A864%E4%B8%87%E4%BA%BA-HALcXGp1Lpg/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/27/20200327%E7%AC%AC1812%E6%9C%9F-%E6%AD%A6%E6%B1%89%E5%90%84%E6%AE%A1%E4%BB%AA%E9%A6%86%E5%A4%A7%E6%8E%92%E9%95%BF%E9%BE%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%BC%B0%E8%AE%A1%E6%AD%A6%E6%B1%89%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E5%9C%A864%E4%B8%87%E4%BA%BA-HALcXGp1Lpg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-27 02:01:02" itemprop="dateCreated datePublished" datetime="2020-03-27T02:01:02+09:00">2020-03-27</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/27/20200327%E7%AC%AC1812%E6%9C%9F-%E6%AD%A6%E6%B1%89%E5%90%84%E6%AE%A1%E4%BB%AA%E9%A6%86%E5%A4%A7%E6%8E%92%E9%95%BF%E9%BE%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%BC%B0%E8%AE%A1%E6%AD%A6%E6%B1%89%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E5%9C%A864%E4%B8%87%E4%BA%BA-HALcXGp1Lpg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/27/20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人-HALcXGp1Lpg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月27号星期五，这一期现在我没想好就开始录了，没想好到底是会员专享还是搁在非会员里边？我先讲我讲这东西你来决定好不好？是这样，武汉现在开放了，各个殡仪馆都开始可以去领取疫情期间去世人员的骨灰，现在各大宾馆就是说大排长龙，据说有的宾馆要排了5个小时才能领到骨灰，说汉口殡仪馆两天到货了5000多个骨灰盒，说一辆大货车能装到2500多个550，说昨天来了一辆金来一趟来了两天的，已经有5000个骨灰盒了。 </p>
+<p>然后说武汉目前共有是汉口殡仪馆、武昌殡仪馆、青山并进款、菜店宾馆、黄波宾仪馆、新州殡仪馆、江夏殡仪馆、回民宾馆等着佳宾仪馆一共有8个宾馆，说汉口殡仪馆等于这两天就5000个，是不是这5000个就能结束，还不知道咱们就假设说他5000个，我们再来看武昌殡仪馆是这样，武昌毕业馆说从3月23号到4月3号开始，每天放500个500盒，就是每每天来500个领，一共是12天，武昌宾馆大约就是6000个左右，对不对？等于汉口宾馆是5000个，武昌宾馆是6000个，咱们取一个平均值，就是说每个宾馆差不多是5500个骨灰盒，一共是8个殡仪馆，差不多就是44,000个骨灰盒，就是丰城这两个月44,000个骨灰盒让你领走，那么差不多就是44,000个，你一个骨灰盒装一个对不对？ </p>
+<a id="more"></a>
+
+<p>就44,000人对不对？44,000人，但是你不能说都是得心贯死的，对吧？这是肯定的。 </p>
+<p>他那是这样子。就说我看他这个说法是这样，说是这样说中国的年死亡率差不多是千分之7，每1000个人里面死7个多，千分之7点多不到千分之8一，每每10个人死死7个多，那么就武汉市一共有1000万人，因为1000万人的话，他一年的死亡应该在7万多，差不多是7万多，平均到每个月差不多的就6000多人。 </p>
+<p>那两个月分了两个月算的是12,000人，差不多对不对？那也就是说你平常你就是不疯的时候也得死，一般两个也得死，摆2000个这也没跑的，这怎么也得死对不对？不可能比你晚，关门了，你没见过殡仪馆关门的对不对？哪个面能关门对吧？它关不了门对吧？也就是说有12,000是无论如何兜底，都理在这，都是要死的。那么也就是说你现在的死了的44,000个就比平常的是多，这是事实。多了多少拿44,000个减去12,000个，就是说多死了32,000个人，这32,000个差不多就跟新冠军有关系了，对不对？ </p>
+<p>因为你把平常死的12,000已经跑出去了，对吧？多死这32,000，我们就认为这是新官导致的死了，等于武汉差不多死了32,000人左右，32,000人按照死亡率差不多，全国其他地方当中国其他地方报的是2%点多3%点多，但我们得到的消息全国其他地方差不多在4%左右，武汉在5%，其实我昨天也说过了，世界各个地方其实都差不多，多的少的实际上是根据你检测的条件不一样导致的，反正差不多应该是百5%，武汉可能比全国还糟糕一点，因为他医疗后来就有点崩溃了，差不多能按5%的死亡率，32,000人死，对不对？ </p>
+<p>我当时说美国美国你看确诊人数现在不准确的人还没释放出来，你看死亡人数死亡这骗不了人，对吧？他有32,000个人是因为习惯死了的话，那么你除以5%的话，等于差不多应该是64万人。也就是说武汉的感染人数应该在64万，我之前算的40万是按照这个方向医院和火山山连山山算的。 </p>
+<p>但是风险和火山岩山算法不准确，为什么？因为它是重复在使用的，对不对？可能我们不知道他到底重复了多多少次，对吧？每个病房重复多少次算不出来。但是刚当时按照方舱医院和火山类人山规模来讲，我推算应该在40万左右，应该反正超过40万不会低于不会低于40万，不当然这个数字其实一直在变化，从最早的美国CBC估计10万，后来到15万，后来根据日本得韩国他们撤侨的时候算的应该是20~22万左右。后来根据芳藤医院和火山，我们预计应该超过40万，现在根据它殡仪馆的死亡人数，就是说新冠肺炎就是说他一共死亡了44,000人，刨去平常就正常要死亡的12,000人，最后是32,000人除以5%的话，我们认为武汉最后感染人数在64万左右，说实话这个比例我觉得应该也差不多，你看现在这情况，我看美国这样子，美国没有20万人跑，走不了美国，今天已经超过中国了，美国现在是800多，比中国不是超过中国了，他这超不过中国你知道吧？ </p>
+<p>超过了中国的虚假的官方数字了，对吧？美国我看这样子没有20万是走不了了，武汉我看这意思64万差不多，当然了这个是根据它死亡人数倒推出来的，所以这个数字也未必准，但是差不多应该在六十四五万左右。武汉官方公布呢武汉肺炎的死亡人数是2531人，当然这是放屁，黄冈和孝感都快哭了，你知道你说这都是放屁没法听。武汉市的民政局的副局长孙佳彤说说，武汉丰城3月10号到3月10号为止，他认为从1月23号到3月10号，他说47天武汉市共火火化了21,703句，实体每天火化462人，它这个数字不准，因为还有移动化工他没算进去，所以他说是2万多，最后我们算的应该是44,000，比他还要再多一倍，差不多应该是44,000。 </p>
+<p>那就这么一个情况。 </p>
+<p>现在你去殡仪馆大排长龙，而且殡仪馆现在有要求说没有单位或者社区陪同的话，不允许去领骨灰，你要你的骨灰行，你说你哪个单位的派你单位要陪同，如果你说你没有单位或者你是私营业者什么的话，那要社区陪同。社区比如你住在你有地儿住，你住在你当地的社区里派人来，然后让各单位和社区把人排开，不要一起来分开。 </p>
+<p>然后而且说不能全部一起要分批，现在说说是要分批一个来对付，上各种手段让你不要说话，公安给你打电话告诉你不要闹，怕死者家属在一起，聚集在一起闹事容易，然后说殡仪馆那儿管得特别严，到处都是便衣，说你只要拿出手机来，你要拍救人过来的就制止，说基本上都没什么人哭知道吗？说个别有一个人哭，大家都有点很尴尬，就觉得哭什么的都这么多人都在这，也没有人放爱乐也没有哭，大家就默默的来领个骨灰盒了，就各走各的了，反正就事闹成这样了，大家都木讷了。 </p>
+<p>说墓地现在在讲在涨价，说墓地的价格现在说是对外说是78,800，七七八八，说疫情的期间去世的人可以打7折，打完7折算下来是5万的4500。据武汉殡葬行业的人士说，现在武汉房子降价了，但是墓地在涨价，房子降价了，当然你说其实不才死了400多人对不对？你就死了400多人，也不至于房子涨。 </p>
+<p>那房子降价主要原因是什么？好多人跑了，好多人跑了，因为现在有各种传言说武汉这清零这个不对骗人，所以现在你只要敢解封他敢跑。 </p>
+<p>而且还有就是说现在有很多人想要移民，这一次疫情闹到移民的也想想移民人特别多，我都听说了好多人卖了房子要移民要走了，不想在中国呆了，你想一卖房子房价掉下来了，说房价跌了墓地涨，说九峰山原先在疫情之前是48,800的墓地，现在长成的是58,800，都反正从4万多的涨到5万多，基本上反正就这么个情况。然后当然了墓地它这个标准也不一样，说的大概其的价钱可能根据你带的地理位置，你不讲风水，说上下还有反正有差价，但是普遍来讲就涨了1万块钱这个目的。 </p>
+<p>基本上这么个情况好吧？然后有一个网友留言，我觉得网友说的挺好的，我觉得你说这个事到了这个地步，你等等一下，你说这些视频我们到底是发在会员还是非会员？我现在倾向于非会员，不过一会等结束了再说，最后咱们再商量好吧？反正因为这个东西肯定又伤了很多玻璃心，不过说实话我看了一下这个数据，我认为差不多怎么也得死个三四万不可能，3000是骗鬼你知道吗？中国光说谁信谁傻逼，我跟你说中国说那数字知道吗？就是武汉疫情最后一共全国死了3000多，谁信谁傻逼，我真的这话撂在这，对吧？ </p>
+<p>最后死了个等于就是说根据导致肺炎的分子，武汉的死了个3万多，我觉得其实数字是差，但是我知道很多人是玻璃心肯定接受不了，你知道吗？肯定接受不了这两天。很多人对此特别的不高兴，就说中国就是8万多，你美国就是比我们多，你凭什么说我们比你他们这些人就应该由中国政府来治理，知道吧？真的就是因为有这些人的存在，所以中国政府能够在中国就是说这里的就是说这么的一种言辞，就是有什么样子的人民就有什么样的政府，你仔细去理解我这句话，很多人到现在理解不了，知道吧？ </p>
+<p>好，光怎么着？好，我先说说网友的评论好不好？您说中国政府现在不停的在报道，就说意大利有多少棺材，有多少殡仪馆，说意大利都是哭泣的护士，哭泣的病人，然后没有来不及埋葬，来不及火化，说部队都出来运棺材了，就天天在报道说意大利有多惨，对不对？ </p>
+<p>他说所有的这些我们武汉都经历过，我们有多少棺材，我们有多少殡仪馆，我们烧了多少人，我们的护士在哭泣，我们死的人搁在急诊室里没有人去收尸，我们的病人的那种无奈，病人倒在地上了，没有人扶，爱爱分不也是说说那病人倒在地上没有人扶，最后爱分又好像过了一会叫医生护士来扶发烧死的人，那里面不都有，爱芬也说了很多，就车来了之后，车堵的都是人爱跟他们冲出去，到车里看人就死在车里了。多少？对不对？他说所有的这些我们武汉都经历过，但是又怎么样？ </p>
+<p>现在都被中国政府删掉了，全部都删贴，全部都屏蔽掉。如果你不删就说你是少阳。说当国说说全国当时除了一户支援武汉了多少殡仪馆的工作人员，就说那时候不也说有拍照片，说哪的兵一队支援武汉殡仪馆，就说你光来殡仪馆支援了多少人，我们殡仪馆收尸体都收不上来，李德华不也去采访收尸体烧尸体，对不对？他说你难道中国人我们现在我们掩盖自己的苦难，然后去嘲笑别人的苦难，嘲笑其他国家，这就是我们的优越管，这就是我们的优越感和爱国精神。 </p>
+<p>你就这样子会觉得我们有优越感了，我们比别人强，我们死的人少，我们缺的人少，然后你必须这么说才是爱国，如果我说不是我们武汉死了好几万人，我就是不爱国，我就是造谣。他说你现在践踏在别人的痛苦之上，叫嚣就显示出你自己爱国了，你是爱国者，他说你真的爱国家的人民和土地吗？你还是只是爱政府和政权和政党了，到底是人民重要还是政党重要？ </p>
+<p>好吧，我知道这种新闻报出来肯定有人信有人不信，很多人会跟你说胡说八道，武汉怎么可能死了3万多人，对不对？一个官方说了就死2000多，因为我多说也不能多说这么多。你说这些视频是发在非会员还是发在会员里？发非会员就发挥会员由他们去是吧？我觉得他们的玻璃心也应该被敲打了。 </p>
+<p>您说。应该有个人拿个小枝扎着他们，让他们也怎么说兴奋兴奋。激动激动，我觉得有这个必要。您说要不然的话，他们真的以为自己爱国。真心讲到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/27/20200327%E7%AC%AC1811%E6%9C%9F-%E6%B9%96%E5%8C%97%E9%BB%84%E6%A2%85%E8%AD%A6%E6%B0%91%E8%B7%9F%E6%B1%9F%E8%A5%BF%E4%B9%9D%E6%B1%9F%E8%AD%A6%E5%AF%9F%E5%8F%91%E7%94%9F%E5%A4%A7%E9%9D%A2%E7%A7%AF%E7%BE%A4%E6%AE%B4%EF%BC%8C%E6%8A%8A%E8%AD%A6%E8%BD%A6%E9%83%BD%E7%A0%B8%E4%BA%86-NaVBn8udYoQ/" rel="prev" title="20200327第1811期-湖北黄梅警民跟江西九江警察发生大面积群殴，把警车都砸了">
+      <i class="fa fa-chevron-left"></i> 20200327第1811期-湖北黄梅警民跟江西九江警察发生大面积群殴，把警车都砸了
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/27/20200327%E7%AC%AC1813%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E9%B2%8D%E9%87%8C%E6%96%AF%C2%B7%E7%BA%A6%E7%BF%B0%E9%80%8A%E7%A1%AE%E8%AF%8A-7PresVk_Y3g/" rel="next" title="20200327第1813期-英国首相鲍里斯·约翰逊确诊">
+      20200327第1813期-英国首相鲍里斯·约翰逊确诊 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">658</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/27/20200327%E7%AC%AC1812%E6%9C%9F-%E6%AD%A6%E6%B1%89%E5%90%84%E6%AE%A1%E4%BB%AA%E9%A6%86%E5%A4%A7%E6%8E%92%E9%95%BF%E9%BE%99%EF%BC%8C%E9%80%9A%E8%BF%87%E6%AD%BB%E4%BA%A1%E4%BA%BA%E6%95%B0%E4%BC%B0%E8%AE%A1%E6%AD%A6%E6%B1%89%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E5%9C%A864%E4%B8%87%E4%BA%BA-HALcXGp1Lpg/";
+    this.page.identifier = "2020/03/27/20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人-HALcXGp1Lpg/";
+    this.page.title = "20200327第1812期-武汉各殡仪馆大排长龙，通过死亡人数估计武汉感染人数在64万人";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

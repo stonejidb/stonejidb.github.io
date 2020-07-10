@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月28号星期六，美国现在确诊超过了11万人，打了多少人的脸？首先打了4宗金，我们刚开始以为美国几千人刚开始没有查查的不好，还为几千人，不过后来我也迅速的在改变对吧？调整根据他死亡人数，我刚开始预估3万，后来预估到10万，后来预估到现在我预估就是十二二2020万左右。  咱们最后看看20万能不能打得住，看这样要玄，20万可能也挡不住。不过这个来讲，我觉得当初武汉的时候，我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200328第1826期-美国确诊人数超过11万打了多少人的脸">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/28/20200328%E7%AC%AC1826%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%8711%E4%B8%87%E6%89%93%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E7%9A%84%E8%84%B8-bTx0ksE64zI/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月28号星期六，美国现在确诊超过了11万人，打了多少人的脸？首先打了4宗金，我们刚开始以为美国几千人刚开始没有查查的不好，还为几千人，不过后来我也迅速的在改变对吧？调整根据他死亡人数，我刚开始预估3万，后来预估到10万，后来预估到现在我预估就是十二二2020万左右。  咱们最后看看20万能不能打得住，看这样要玄，20万可能也挡不住。不过这个来讲，我觉得当初武汉的时候，我">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-27T17:02:06.000Z">
+<meta property="article:modified_time" content="2020-07-10T06:55:01.771Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/28/20200328%E7%AC%AC1826%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%8711%E4%B8%87%E6%89%93%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E7%9A%84%E8%84%B8-bTx0ksE64zI/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200328第1826期-美国确诊人数超过11万打了多少人的脸 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/28/20200328%E7%AC%AC1826%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%8711%E4%B8%87%E6%89%93%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E7%9A%84%E8%84%B8-bTx0ksE64zI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200328第1826期-美国确诊人数超过11万打了多少人的脸
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-28 02:02:06" itemprop="dateCreated datePublished" datetime="2020-03-28T02:02:06+09:00">2020-03-28</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/28/20200328%E7%AC%AC1826%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%8711%E4%B8%87%E6%89%93%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E7%9A%84%E8%84%B8-bTx0ksE64zI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/28/20200328第1826期-美国确诊人数超过11万打了多少人的脸-bTx0ksE64zI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月28号星期六，美国现在确诊超过了11万人，打了多少人的脸？首先打了4宗金，我们刚开始以为美国几千人刚开始没有查查的不好，还为几千人，不过后来我也迅速的在改变对吧？调整根据他死亡人数，我刚开始预估3万，后来预估到10万，后来预估到现在我预估就是十二二2020万左右。 </p>
+<p>咱们最后看看20万能不能打得住，看这样要玄，20万可能也挡不住。不过这个来讲，我觉得当初武汉的时候，我们也是从10万开始起跳对吧？后来也是一点一点的，最后估计到最后，我现在估计根据这一次武汉他们8个殡仪馆的情况，我估计其实应该感染人数应该在65万左右。美国现在反正我估计是20万，后面会不会再多我们也不知道对吧？武汉当年也是从10万一点一点的加上来的，美国看看最后加到多少是吧？ </p>
+<a id="more"></a>
+
+<p>我觉得我肯定是打脸了，没有问题，那么其他人呢我觉得不光是我吧，当初多少人说说美国不测了，美国放弃了，然后说美国cDC不公布数据了，要盖了，你现在有吗？对吧？当时就我说这是不可能的，还有人说美国数据其实很多，为了怕面子上难看，现在就不报，摁着不报，我说这在美国是不可能的，只要查出来了，查出来一个就报一个，只是没查出来，查今天就报一个。短短的这么就是说从16号到现在1012天的时间里，11万平均下来差不多一就1万的样子。 </p>
+<p>那么美国到底测了多少？有人说70万，有人说100万，现在咱也不知道，甭管测了多少，反正你就想现在测出来的11万每一天都是在几万的在测在增加，有的人就一定要拉着跟我说美国的医疗系统崩溃了，纽约崩溃了，我觉得还没有离，而且我觉得说实话，你就目前的这种情况来讲，离着崩溃还非常的遥远。虽然纽约市的市长是咱一会来说，你看这市长说什么，我觉得怎么叫崩溃，咱们拿中国举例，中国我说句实在话，我觉得除了武汉周边，我觉得武汉黄冈孝感这有点咱先把湖北刨出去，跑了湖北之外，其他地方我认为都没有崩溃，其他地方的医疗都挺住了，而且就武汉来讲也不能用崩溃两个字就去涵盖它。 </p>
+<p>为什么这么说？我觉得武汉在最初的时候是崩溃了，尤其是1月23号刚峰城那头一两天闹的挺夸张的，寻死觅活的，但是后来迅速又冷静下来了。而且武汉我觉得等到了2月七八号，我记得雷火神山最后好像是6号是吧？第一个好像是6号正式开始使用的是吧？然后后来8号又有了一个，我觉得当雷神山火神山进来，然后后面十几个我觉得好像最多的时候见了17个方向医院，当连山火焰山峰医院起来了之后，我觉得基本上已经停住了，在那之前医疗系统是有点崩溃了，但是后来也是个迅速把全国职员，据说最终全国各地支援武汉的医生是武是武汉本地医生的4倍，全国各地的医疗队，然后我们当时也说了，还是习近平派的军机把几个就是说军医学院的什么的，还有3三个军区，一一边出了150个医生派，第一波先试150个军一顶过去了，然后火山山连山也都是部队直接接管了的。 </p>
+<p>剩下方向医院是医生大夫是吧？ </p>
+<p>冯总一算在刚开始头一两天的时候也是挺糟糕的，很多人在那抱怨没有暖气，厕所怎么回事，吃的跟不上，但后来过了一两天就好很多，我记得芳藤医院刚刚开始的时候，我记得我还录了一期视频，我说大家再坚持，我觉得再过个再过三天基本上应该就扛住了，你还记得我说那时候雷神山火车站已经开始，那是我发那天我记得是2月5号也不是6号，那是雷神山火焰山刚刚开始使用，我说刚开始使用的，你怎么也得给他三天的一个周转的时间，然后第一所封城医院也开始了对吧？ </p>
+<p>我说基本上这三天你挺过去之后也就差不多了，医疗系统的崩溃了，就算是挽救回来了，中国还是比较大对吧？全国武汉就挺过来了。现在我觉得中国来讲，其他地方就谈不上崩溃了，武汉曾经崩溃了，那么我觉得从1月23号开始，到2月初2月八九号2月，我记得那时候我说6号应该是789，我说再过三天到2月10号一般就扛住了。所以基本上从1月23号到2月9号2月10号，也就是十几天半个多月的时间，那个时候是有一点崩溃了，后来慢慢的就跑过来了。 </p>
+<p>现在意大利我觉得算是崩溃了，美国现在我觉得的确崩溃，还很遥远，真的是很遥远，咱们这么说咱先看美国这个情况，你看中国其他地方它自己报百分之二点几的死亡率，但我们实际得到的消息我其实反复说，这样的瞒报了基本上应该乘以2，中国其他地方的死亡率应该超过4%4%多一点点，应该是不到5%，然后凡是跟你说那么二三百确诊的实际上都应该×2，是不是应该有400多？ </p>
+<p>但是他们有一一种种原因，尽量的不确诊，不是不给你治给你治，但尽量的就不确诊来做一个比较好看的数字，当时我们不太明白就是说为什么要做这个好看的数字，现在就明白了对不对？你当时做了一个好看的数字，你现在可能嘲笑别人对不对？你当时要是说就是敞开了报的话，现在都是都天文数字了，对不对？你现在怎么去嘲笑别人对吗？所以就是说不光是很多人认为湖北掩盖的数字，其实全国都掩盖了，我之前就说过，当时虽然不明白为什么这么做，但是现在基本上也也就明白了是吧？掩盖数字还是面子上的的确确是好看，咱们得说事实就脸上就是好看，现在可以吵吵，别人看你们都比我们多，你们死的比我们多，确实也比我们多对吧？ </p>
+<p>当然了我们瞒报了大量的数字，这个咱们就不提了。但是即使这种情况之下，我们可以说湖北以外的其他地方完全没有崩溃，从头到尾没有崩溃过，医疗系统完全没有崩溃，死亡4%多一点点，这是非常的正常的，我觉得只要低于5%就可以，这个病实际上现在看起来其实全世界来讲平均下来在5%左右，我认为你只要比5%高，都算是你的医疗体系说算是有一些崩溃，我其实差不多就是说不治都是5%左右。 </p>
+<p>有人就跟我说，你说她要是病了在家躺着没人管吗？给我活饿死了，比如晕倒了三天，连口水都没喝就死了，的确这个事这个就是说没有完全崩溃了。 </p>
+<p>他反正我跟你根据治疗的情况，还是上下会有一些浮动，但是我认为幅度应该不会太大，没有人我不认为最终有人会超过10%，达到15%，意大利目前的死亡情况它这个比例比较高，我觉得主要原因还是因为它大量的确诊的人实际上没测出来，他现在测试的数量不够，如果都测出来之后，你看比例也会降下来。所以我认为就是说所谓崩溃最起码一个前提就是说你大量的确诊测不出来，你的测试水平就达不到，你每天不能提供几万个测试，首先就说明医疗系统就崩溃了，武汉在初期甚至到了后期也是当然了，这个标准在中国不一样，咱不知道中国到底是能够给市值不给，还是就是说崩溃了，给不了市值。 </p>
+<p>反正武汉那个时候一天一天就给2000个，你不可能那数字出不来，美国这是什么？现在是能测测应策进几十万的事实往外扔，你知道吗？所以大量的就出来了，但是美国现在的死亡率是多少？ </p>
+<p>全美国我刚刚看到的数字，不过这数字实在改变了，反正我刚刚看几个小时之前，116,683，我刚才看了数字，死亡人数是1900个38，死亡比例1.66%。反而比以前更低了，初期的时候美国死亡比例是1.89%，有一证，那就说明什么？说明测试是不到位的。还记得现在由于测试的越来越多，死亡比例反而下降了。再来看纽约，很多人认为纽约崩溃了，你再看有你看了纽约的数字，你就知道我跟你说为什么说我说纽约离崩溃还很遥远，在这纽约确诊是52,318，死亡是728，死亡比例多少？ </p>
+<p>1.39%，比整个美国的数字还低，这说明什么？说明美说明纽约现在医疗条件比比美国的其他地方反而要好一点，其他地方的死亡比例比纽约高，所以导致纽约比全国的死亡比例要低，你懂什么意思吗？现在当然了这个东西也是会哭的，孩子有奶吃，刚刚回复一个网友也说，我说这个纽约不是崩溃了，纽约是会哭的，孩子有奶吃，他在这玩命哭哭玩，天天在那吵吵，我们不行了，没有什么崩溃了，给我呼吸机我要3万个呼吸机，川普都还骂鸡了，我靠张嘴叼我，不过我相信川普唑拿她也没辙，第二天川普不是被逼着连国防生玩法都扔出来了吗？直接就给通用用户就调用光商量法了，本来说不用，完了最后被枯没逼着也就扔出来了，我相信最终他们想办法给他解决怎么办对吧？ </p>
+<p>实际上纽约目前的情况，你看到1.39%的死亡比例，你就知道现在完完全全还没有到崩溃，不但没崩溃，他比我觉得其他的美国其他地方现在看起来纽约最多，其他地方的数量好像没有那么多，我觉得主要是什么？纽约的测试盒给的多，其他地方特殊条款给他少，我觉得迅速的后面跟着纽约西雅图他们走，其他地方的数字也都会跟上来。只要这个测试盒到位了之后，所以在这种情况之下，我认为纽约现在不是医疗没有崩溃的问题，是实际上我觉得有点医疗还是处于一个冗余的状态。 </p>
+<p>当然他州长的市长玩命在那吵，那就是本身要人要钱要物，好。然后我们再看看周四，而且还有一点什么，我觉得还有一个说崩溃不崩溃的一个前提是什么就是说媒体的报道和跟踪能不能到位。 </p>
+<p>武汉初期的时候，我记得23号1月23号的时候，当时晚上不是说封城的满脑子一团糟，第二天有一个护士发说你看我们的急诊室妈的三个尸首躺在这儿躺了半天了，23号晚上死到24号早上起来了，都到中午了还没人来收尸，不是发了一个然后就在那一片的讨伐说胡说八道放屁，怎么可能有三个尸首躺了半天没人收拾对不对？昨天晚上死到今天中午了还没人收，怎么可能？那不可能，你们胡说八道，都是造谣，那时候不还出来辟谣吗？那时候我记得我跟你讲，你也说你就不可能那些人怎么可能那死了三个人，旁边还在那玩手机该干嘛？ </p>
+<p>今天报道纽约市的医院门口见了临时的停尸房，说艾姆赫斯的医院周三一天就死了13个，然后也是来不及收拾，所以在医院门口先建了一个临时的平时房，就跟他们先搁一下，说意大利那边刚开始是拿军车，后来发现军车都来不及了，来不及之后怎么办？是拿那种炸土车14就把棺材摞在一起，14就是说炸那么几个，就是说五六个棺材一起扎起来，往车上晕到了这种地步了。 </p>
+<p>你从现在目前看起来，武汉早期有三个人躺在急救室里死了也正常，至于周围的人，他们人物采访分的时候，艾森也说说到了后面没有人哭了，大家都很冷漠，都很木讷安分，不也说说有一个70多岁的老父亲，他三十几岁的儿子死了，老年丧子还是独生子，说也不哭了，就是要个死亡证明，就得大家都好像说就接受了，就已经死到，因为这死就那死1个的，你知道吗？ </p>
+<p>方斌去医院一照一辆车运过来8个果实袋，大家已经好像人到了那个程度了之后，我讲话就到了战场上，一场仗打完了，比如说上午打了一上午，然后中间歇一会，大家都累了吃东西，然后晚上接着打，然后中间的时候那张浩也都是失守，也没有人来得及根本没有来得及去掩盖失手，可能找两个10手搭在这，然后坐在上面就开始先吃着，知道吧？ </p>
+<p>吃完了一会接着打，甚至有人跟我说说战场上到了最后就是说打完之后炮弹不是他们刚开始不是挖战壕，让战壕上面在堆那些东西，然后被人炸的战壕就不行了，不行了之后就拿10手基本上先填上。那么因为拿别的东西慢，你铲土要一铲一铲得铲尸首，一个过来了之后他比你惨，肿块咔咔几个是垫在那，然后就先把那帐号先堵住，不涨你怎么办？那就用打仗打到一定程度，那就是这么残酷对吧？ </p>
+<p>这一次其实疫情就跟一次作战是一样的，所以你现在看起来当年我觉得打脸打了多少人，就是我觉得人民日报觉不觉得自己脸疼，人民日报新华社那时候一堆出来辟谣，我们说武汉有一个护士发视频求救，说这急诊室里边死了三个人，办到了23号死了，24号早上中午了还没有人收，你现在看起来这很正常，意大利也这样，纽约现在又怎么样，不也在医院门口搭停尸房的吗？对不对？ </p>
+<p>目前就这么个情况。是吧？你现在还觉得还需要辟谣吗？现在也不辟谣了，对吧？对吧？方斌那时候说8个失手要把方斌抓起来，对不对？所以好吧，然后我觉得武汉的医疗崩溃，首先一点就是媒体的不发达，没有任何的媒体和记者能够去采访。陈秋实后来去了就是说采访了看了一下情况，方斌看了一下情况，然后马上就被抓了。纽约时报在周四的时候采访了纽约的埃姆赫斯特的医院，这也是一个华人区，算是华人比较多，但是不能算大的华人区。艾姆克斯的医院采访了他们当地的一个医生叫史密斯，就暴露了皇后区艾姆赫斯的医院缺乏医疗器材和保护用品的状况。 </p>
+<p>然后他一曝光当天纽约时报一曝光，晚上市长白思豪就说最后发表了声明，就是说艾姆赫斯医院现在是我们公立医院的最高优先第一个 first priority，第一优先说说该院已经获掉，就马上从其他地方调了50名医护人员去支持，去支援的 M test，并像其它医院转移的一些重症病人，把M会所的医院的中药病人转移到其他医院，以减轻的M test负担。艾姆索斯那儿华人区旁边有个地儿爆发了，我们也听说了，但是这个消息不准确，我不说不愿意去伤害别人，因为我一说好像因为咱们知道纽约华人看咱们挺多的，我不愿意说说完之后有的人就好像什么，因为据说当时报核工程医生的话也给他造成了一些压力，因为他会有一个助理医师蔡敏当时在新的医确诊了，不过也不光是我们一个报，那个时候报的人挺多的，对吧？ </p>
+<p>好，然后而且还运了更多的呼吸机前往艾姆赫斯医院。 </p>
+<p>你要明白周四白天纽约时报报道到了晚上的时候市长就作出反应来了，就把他的中专病人移了一部分走，给他加了50个医护，又送了几十台呼吸机过去，这是什么概念？这是崩溃了，这不是崩溃了，这是会呼的，孩子有奶吃几个小时之后救援就到就到位，这就是纽约时报的微利，因为纽约时报报道了，市长马上就要对不对？但是纽约时报就满处去抱到他，抱到哪儿就得赶快给他想办法。这就是媒体在的时候的力量就在这了，对吧？ </p>
+<p>武汉就是死了人，你不报尸体就在那堆着，你报了他就会解决，实际上是一种呼救，对吧？那是在哭，比如你家小孩哭了，那是要奶吃，你应该给他喂奶，而不是拿个袜子给他嘴堵上，对吧？美国这个情况就是这样子，我哭了马上给买，中国就是一个袜子，就一个臭袜子就塞嘴里了，对吧？所以你说谁崩溃了对吧？ </p>
+<p>周五纽约邮报又刊出了皇后区的准备卡，他说要压买家，其实翻译就是准备卡。我给你说证明这个是个著名的区域，我以前讲过我就去准备卡有一个皇后区域图书馆，特别大一图书馆，我当时想借一本书借一本书，法拉盛图书馆没有。没有，我在网上查，只有牙买加的图书馆有我就去了。 </p>
+<p>开车去了之后我讲过好几次这个故事，就是在他第二人口还挺密集，不好找停车位，找停车位了，两个老黑，一个在前面跑，一个拿着锹就出来了，我讲了很多次，这就是者卡整没卡，大名鼎鼎的去，每次去我都白天去，晚上我都不敢去的地方。说准备海医院的急诊间人满为患，进一步暴露了疫情爆发，政令纽约系统体系不不胜负荷的困境。 </p>
+<p>那么周五市长也赶快给准备卡医院进行了补救，都是这么个情况，就是当天纽约时报包括纽约邮报报了，报了之后当天晚上救援就到位。这就是我觉得其实他们就跟枯魔似的，你知道吗？ </p>
+<p>然后到周五的时候哭没提出了纽约要在建的4个医院，说现在已经建了已经批准了建了4个1000个床位的医院，说要再建4个，所以在这种情况下，我觉得就跟武汉一样，你知道吗？到了这种时候其实医院救护都已经到位了，然后他那艘救援船也到位了，救援船一到实际上就相当于就跟一个火山山一样就到了，所以在这种情况下，我觉得我不认为这个是医疗系统崩溃，完完全全没有，而且纽约现在的死亡率比全国都要低。 </p>
+<p>然后纽约市市长白思豪在周五表示，他说预计超过一半以上的纽约市市民的最终会被感染的新冠病毒，我不知道他这个事为什么这么说，反正纽约市是1800万人口，那么如果是一半以上被感染的话，那就是要多少？ </p>
+<p>要900万对吧？我以前我记得我算过，如果是9600万人感染的话，那么每一天需要死5000多人才可以。如果是900万人感染的话，那么每一天就要死了500个人就是说而因为他说是是纽约，纽约是对不对？如果像他说的纽约市如果有900万人感染的话，那么纽约市每一天需要四五百多500多人，但现在纽约市一共死了728个，所以我不知道他为什么觉得有一半会感染，反正当然了对吧？我觉得就哭就是闹，反正他其实主要就是说要要钱，然后还有一点就是说风投被枯膜抢的有点太多了，所以白思豪最近经常出来语不惊人死不休，目前就这么个情况。 </p>
+<p>所以我我来看，我不认为医疗系统崩溃，其次你通过通过人家的媒体的报道，现实情况，测试数量的到位，医疗水平的到位，你能够反映出来什么？ </p>
+<p>就是说我们武汉在初期的时候为什么没有这些报道？ </p>
+<p>为什么不能允许纽约时报去采访中心医院？为什么有人人物采访了艾芬，到现在了采访了艾芬，还是被删帖，发哨子的人这篇文章现在到中国到底能看了还是不能看？对不对？为什么那么多人发了什么二进制版本的、加密版本的、摩西密码版本的，那么到排版的对不对？ </p>
+<p>什么阿拉伯语版本，为什么呢？到现在了，你采访一个武汉市中心医院急诊室的主任的采访，到现在还不能登出来，你再看人家人家纽约时报去采访 emphasize医师史密斯的视频，当天就报道，当天晚上市长不是一个臭袜子塞过去，而是马上把奶喂过去地方递过去了，这就是区别。所以谁崩溃了，好吧，反正我也承认我的脸也打了，但是我觉得对吧？谁更疼的谁更难受，对吧？所以反正我现在就在纽约，我就待在这儿，对不对？ </p>
+<p>我觉得没有恐慌，也没有骚乱。为什么？因为诚实还记得我们讲的那句话，那个叫什么？也就是以诚那句话，他说当你跟这种疫情去斗争的时候，没有英雄主义，谈不上英雄主义，实际上只有一个武器是什么？诚实，这是非常重要的。现在美国的情况是什么？诚实。我有多少人就有多少人，死了多少就是死了多少。我玩pos一天死了13个，我来不及处理失手，我就在医院的大门口，我一点都不吵，美国人就是这点好，知道吧？没有脸，知道吗？ </p>
+<p>经常我就说本台的服务宗旨就是不怕丢人现眼，错了就错了，马上扔，马上美国也是死的就是死。我不会我在医院后面我不好看，我弄个平时房搁医院不，我就搁医院大门口就让你们看所有媒体来看，你们得赶快给我想办法，知道吗？没有面子只有里子。在这种情况之下，我只能说什么？纽约现在是不是重重灾区，是重灾区，武汉当年也是重灾区，对不对？ </p>
+<p>我在这他妈想说说什么，我会跟方斌一样，我担心有人来敲我门吗？我会担心有人拿个木头板子在那封我门吗？我不会，我就在纽约，我现在就在重灾区。是不是？现在的纽约是不是相当于中国的武汉一样？你武汉人你看看我你能跟我比吗？我在这想干什么干什么，我老婆今天去超市都没戴口罩，就这么去了，没有人管没有人打，也没有人问他你怎么不戴口罩的，就不带。我到现在了，我们俩出门不戴口罩，想去哪儿去哪儿，我们俩现在高兴了，背着包我们就可以开车，去哪都行。 </p>
+<p>但是好像有一些州据说是纽约市民如果来了的话要隔离14天，但是他是建议你自主隔离，不是强制隔离，但是我们还是可以去的。但是你看我有开车跑吗？对不对？为什么我不跑？为什么不恐慌？因为他也没封城对吧？他要说封城的话，我可能我也就跑了，他要跟我说明天封城，我今天带我老婆那就跑了，对不对？摄像机都不要对不对？就不录了，跑了对不对？ </p>
+<p>但是他也不逢辰，到现在他也不封城，超市里什么都有，该买什么买什么，出门你不戴口罩也没人管你。你现在不管是坐地铁坐坐公交车，地铁也没停，公交车也没停，你坐地铁坐公交车你不戴口罩也没人管，这样让你上车互相尊重。戴口罩的也不管，不戴口罩的不带的也不完蛋，谁也不齐是谁对吧？你对你自己选择你了，也带你带不带就算了，政府也不建议，完全是人民的自己的选择，或者说某种程度上政府建议你就可以，如果政府的建议什么，如果你没有病的话，没有症状，你不需要戴手套勤洗手就可以了，这是政府这里联邦执行，但这个只是一个建议，你听不听你得带你带大爷，你也就待了，对不对？ </p>
+<p>也没人管，所以就这么个情况，我们有时候出去的话，我们楼里有中国人戴口罩的人，也就戴口罩了，反正我不戴他，我也不说他，对吧？这就是诚实。 </p>
+<p>我们勇于面对这个东西，然后一切都在表面上，每个人都能看到信息是及时的，媒体想说什么说什么，我到现在也是我到这我想说美国什么真实情况就说什么，这种情况平时房摆门口了，摆在医院门口了，但是医疗系统到现在我不认为它崩溃了，然后测了这么多，5万多人确诊就死了700个，对吧？ </p>
+<p>然后你还想怎么样？百分之一点几的死亡率，对吧？所以我觉得纽约发生了这个之后，反而更足以让北京让武汉，我觉得汉言就是说如果你出了事，我们这没出事的话，你没有比较没有比较反而没有伤害，你知道吗？你就看不出你的谎言是多么的愚蠢，你也看不出来你掩盖这些真相，不撒谎，不诚实，对于这些抗议有多大的伤害？你也看不出来，就是说你这种玩命的强制的过激的这种封存的行为，给人民群众带来多大的伤害，有了比较你才能看出来。 </p>
+<p>我觉得这种美国的这种都是疫情，我们现在就跟我们待的地方就跟中国的武汉一样，对不对？但是我们的这种防御，我觉得这种自由的对。精神这种上海他就没有什么伤害，两个人还是天天在这傻，他还傻乐呵对不对？你看现在纽约就跟武汉一样，你看我们俩在那该干嘛干嘛对吧？接着在这儿逼叨，是吧？这就是区别。比较，其实我想这就是为什么我们移民，如果我现在在武汉的话，如果就是说当年我现在纽约这不也是就是活人山雷人山方舱对不对？ </p>
+<p>如果我也是在2月初到武汉的话，我能在这么开开心心的在这跟你逼叨吗？我能够不戴口罩出去超市买东西吗？对吧？我当然了，有的人就觉得这样不好，有的人觉得这样好，我也明白，有的人觉得你们纽约怎么搞肯定要完蛋的，你瞅瞅你们肯定都得被感染，你到现在出门不戴口罩，你等着确诊，好吧，那就确诊，白思豪不说了吗？ </p>
+<p>一半人要确诊，我们这一共俩对不对？肯定得有一个是吧？但我俩这种情况有一个确诊的，另外一个就跑跑不了了，对不对？要要跑了的话，就观众就不相信爱情，观众观众都不对，观众都不相信爱情了，对吧？所以就这么个情况，所以你说我们俩要一个确诊了，另外一个就没确诊，也得说确诊了，没法交代，说不清楚了是不是？ </p>
+<p>好吧？我觉得自己去理解，我觉得我讲的是比较清楚，但我其实录这些录这期之前，我跟我老婆就说，你说这期我们录不录，录完了之后很多玻璃心是接受不了，理解不了的，对吧？我觉得能听懂听不懂就算了，听不懂的肯定觉得我又在这吹美国，然后黑老公听得懂的就知道我到底在比较什么，这种比较我觉得我认为还算是接近客观是吧？一个真实情况。 </p>
+<p>不过自己去那什么好吧，我还是那句话，就是说对我进行定义，不是你能定义的对吧？你一直你看这两天我看他们又在吵，有人说我是大外圈，有人说我是什么什么反共反华分子，我经常说就是说我到底是大外宣还是反华分子，我觉得都不是你能定义的，而这种定义的是你，我觉得某种程度上我是一面镜子，我是一个镜子，你懂吗？ </p>
+<p>因为我比较接近于中间了之后，我越接近中间，其实我却是一面镜子，你看见的都是你自己了，你两头看我了之后结果不一样，说明什么？说明你到底是在这面镜子的哪一面。是吧？所以我这些事情完了之后，你思考一下，你怎么定义，然后你反过来你就知道你是谁了，懂吗？你如果定义我是大外宣，你肯定就是反华分子了，你要定义我是反华分子，你肯定是5毛了，对不对？你如果觉得我比较客观公正的，还是有眼光，有聪明的，好吧，这期讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/28/20200328%E7%AC%AC1825%E6%9C%9F-%E3%80%8A%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5%E3%80%8B%E5%A8%81%E8%83%81%E7%BE%8E%E5%9B%BD%E6%83%85%E6%8A%A5%E5%AE%98%E5%91%98%E8%A6%81%E5%9C%A8%E4%B8%AD%E5%9B%BD%E9%A9%BB%E7%BE%8E%E5%9B%BD%E6%9C%BA%E6%9E%84%E6%89%BE%E9%97%B4%E8%B0%8D-K4YFYaemIfo/" rel="prev" title="20200328第1825期-《纽约时报》威胁美国情报官员要在中国驻美国机构找间谍">
+      <i class="fa fa-chevron-left"></i> 20200328第1825期-《纽约时报》威胁美国情报官员要在中国驻美国机构找间谍
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/28/20200328%E7%AC%AC1827%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%91%BC%E5%90%81%E5%85%A8%E7%90%83%E5%8C%BB%E7%94%9F%E8%B5%B4%E7%BE%8E%E6%94%AF%E6%8F%B4%EF%BC%8C%E7%BE%8E%E5%9B%BD%E5%9B%BD%E5%8A%A1%E9%99%A2%E5%8F%91%E7%AD%BE%E8%AF%81%E8%B5%B4%E7%BE%8E%E6%8A%97%E7%96%AB-jW10g-A6dQ8/" rel="next" title="20200328第1827期-美国呼吁全球医生赴美支援，美国国务院发签证赴美抗疫">
+      20200328第1827期-美国呼吁全球医生赴美支援，美国国务院发签证赴美抗疫 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">658</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/28/20200328%E7%AC%AC1826%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E4%BA%BA%E6%95%B0%E8%B6%85%E8%BF%8711%E4%B8%87%E6%89%93%E4%BA%86%E5%A4%9A%E5%B0%91%E4%BA%BA%E7%9A%84%E8%84%B8-bTx0ksE64zI/";
+    this.page.identifier = "2020/03/28/20200328第1826期-美国确诊人数超过11万打了多少人的脸-bTx0ksE64zI/";
+    this.page.title = "20200328第1826期-美国确诊人数超过11万打了多少人的脸";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
