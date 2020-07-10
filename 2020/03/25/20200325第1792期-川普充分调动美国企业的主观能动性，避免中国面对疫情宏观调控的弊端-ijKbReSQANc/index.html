@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月25号星期三，川普现在在充分调动美国企业的主观能动性，侠者应的就是说跟中国在初期的时候是不一样的，中国在初期的时候我们得到了一些说中国方面提供了一些线索，就说中国在地方上有一些小的口罩生产商，实际上当时是以为系因为工人的工资工人回不来，工人工资在提高，供很多工人在加班，然后原材料的运不上来，运输成本在提高，导致口罩的成本提高了，而中国政府在购买口罩的时候严格规定口罩不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/25/20200325%E7%AC%AC1792%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%85%85%E5%88%86%E8%B0%83%E5%8A%A8%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7%EF%BC%8C%E9%81%BF%E5%85%8D%E4%B8%AD%E5%9B%BD%E9%9D%A2%E5%AF%B9%E7%96%AB%E6%83%85%E5%AE%8F%E8%A7%82%E8%B0%83%E6%8E%A7%E7%9A%84%E5%BC%8A%E7%AB%AF-ijKbReSQANc/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月25号星期三，川普现在在充分调动美国企业的主观能动性，侠者应的就是说跟中国在初期的时候是不一样的，中国在初期的时候我们得到了一些说中国方面提供了一些线索，就说中国在地方上有一些小的口罩生产商，实际上当时是以为系因为工人的工资工人回不来，工人工资在提高，供很多工人在加班，然后原材料的运不上来，运输成本在提高，导致口罩的成本提高了，而中国政府在购买口罩的时候严格规定口罩不">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-24T16:09:02.000Z">
+<meta property="article:modified_time" content="2020-07-10T08:59:35.187Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/25/20200325%E7%AC%AC1792%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%85%85%E5%88%86%E8%B0%83%E5%8A%A8%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7%EF%BC%8C%E9%81%BF%E5%85%8D%E4%B8%AD%E5%9B%BD%E9%9D%A2%E5%AF%B9%E7%96%AB%E6%83%85%E5%AE%8F%E8%A7%82%E8%B0%83%E6%8E%A7%E7%9A%84%E5%BC%8A%E7%AB%AF-ijKbReSQANc/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/25/20200325%E7%AC%AC1792%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%85%85%E5%88%86%E8%B0%83%E5%8A%A8%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7%EF%BC%8C%E9%81%BF%E5%85%8D%E4%B8%AD%E5%9B%BD%E9%9D%A2%E5%AF%B9%E7%96%AB%E6%83%85%E5%AE%8F%E8%A7%82%E8%B0%83%E6%8E%A7%E7%9A%84%E5%BC%8A%E7%AB%AF-ijKbReSQANc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-25 01:09:02" itemprop="dateCreated datePublished" datetime="2020-03-25T01:09:02+09:00">2020-03-25</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/25/20200325%E7%AC%AC1792%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%85%85%E5%88%86%E8%B0%83%E5%8A%A8%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7%EF%BC%8C%E9%81%BF%E5%85%8D%E4%B8%AD%E5%9B%BD%E9%9D%A2%E5%AF%B9%E7%96%AB%E6%83%85%E5%AE%8F%E8%A7%82%E8%B0%83%E6%8E%A7%E7%9A%84%E5%BC%8A%E7%AB%AF-ijKbReSQANc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/25/20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端-ijKbReSQANc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月25号星期三，川普现在在充分调动美国企业的主观能动性，侠者应的就是说跟中国在初期的时候是不一样的，中国在初期的时候我们得到了一些说中国方面提供了一些线索，就说中国在地方上有一些小的口罩生产商，实际上当时是以为系因为工人的工资工人回不来，工人工资在提高，供很多工人在加班，然后原材料的运不上来，运输成本在提高，导致口罩的成本提高了，而中国政府在购买口罩的时候严格规定口罩不许涨价，导致很多企业就是说每生产一个口罩都是在赔钱的，是吧？ </p>
+<p>我们刚才说的情况，我就说就是说控制价格是应当的，说我觉得他是一个度，就是说你也不能说涨破天气或者有些人低价购买，然后囤积，然后高价去贩卖这种就是说空手套白狼不允许，但是就是说如果是企业的话，正常的我成本提高了之后，正常的涨价你必须得允许，你如果不允许的话，你一刀切很多企业就生产不了了，对吧？出现了这个情况。 </p>
+<a id="more"></a>
+
+<p>美国现在是这样，众议院的议长南非佩勒斯要求川普原用国防生产法来征用美国的工厂，去生产口罩的和呼吸机，川普现在认为没有必要这么做，川普认为就是说国防生产法调动了其中一部分，就是说要国会发钱给我，拿钱了之后我去刺激企业去买，但是我不直接去争这种工厂，我只是把订单摆在这里，然后来充分调动美国企业的自己的这种主观能能动性来生产的各类集中的医疗物资和器具，你们自己去选择，我反正我重金购买，你们想挣利润的话，你们要自己想办法，但是我不强行规定了谁干什么。 </p>
+<p>现在生产内衣裤的公司开始生产口罩了，生产汽车的公司像特斯拉现在在生产呼吸机，政府只是保证我资金充足，然后我再购买，然后工厂在利润的刺激之下，现在积极主动完全的不需要动用国防生产法去强制的征召。工厂，那么加州州长现在表示，伊隆马斯克已经将首批的1000台呼吸机运抵了洛杉矶，这道表示感谢。伊隆马斯克上周宣布说，他的汽车制造厂正在竭尽所能的应对新冠病毒，然后说有可能能够提供1000台，结果正如他所说一周就提供了1000台呼吸机，因为马斯克说我们正在制造呼吸机，在我们能够生产出足够多的产品之前，应该不会出现短缺，就是说目前他认为美国政府和美国社会现在所拥有的呼吸机足够顶到了它的企业，完完全全的生产的足够用，就是说不会在中间出现断口。 </p>
+<p>那一龙马斯克真的是比较强，他们的工厂本来是生产汽车的，然后迅速转产开始生产呼吸机，能够有这种效果令人震惊。不得不承认伊隆马斯克他在这方面能力真的是非常强，就是调动产能的能力上，这点也就体现出来说美国企业它的这种自发性。 </p>
+<p>中国企业很多时候有一些东西它反映不上去，但是美国不会，因为马斯克如果他有问题，他觉得政府不会，他直接发个推特就开始卷，对吧？捡他那么直接卷串谱卷美国政府对吧？美国政府反而有的时候还要给他分的面子，正在中国就不可能你下面的口罩厂商有了问题之后，没有办法像上报，你也不敢去说什么，你只有一些人就是说匿名的把一些材料跑到纽约上网往来交给我，让我去帮他们喊呼吁。 </p>
+<p>后来他们也感谢我，据说我呼吁完了之后，中国政府也对口罩烧伤厂商给了一些更多的理解和宽松的政策，能够为他们帮上一些忙，我也很想很欣慰。 </p>
+<p>但是你看跟美国比较起来，我们在这方面的确有差距，人家对这种就是说充分调动这种市场的机制是非常的，因为当然了串口他自己本身也是商人出身，他很知道如何去刺激和调动这种主观能动性。我们说以前美国在二战的时候也是他的士兵，就是说一旦战场乱了套之后，他自主去做什么的那种，就是说自我创造能力非常强，经常在战场上由于几个士兵突发奇想，就是说扭转了整个战局，都出现过这种情况。 </p>
+<p>这一次面对疫情，美国又显示出来的就是它的这种平常看起来都是个人英雄主义自由散漫，但是等到乱成一锅粥的时候，每一个人都充分利用了自己的这种创造力。中国看起来就是说有没事的时候看起来是大一统，然后心往一处想，劲往一处使，但是真的有问题之后，一旦乱起来了之后，下面就是束手无策，完全就得等等，上面导致了上面的对任何事情都要亲自亲亲力亲为，亲自指挥，有一个指挥不到，下面就没办法。 </p>
+<p>一旦面对一行后面的战争一旦乱起来了之后，下面没有这种主观能动性，上面又可能一时之间照顾不过来，那就会出现各种问题。相比较起来，我觉得应该思考一下，所以我们经常批评美国的个人英雄主义，但是你像易龙马斯克这种个人英雄主义，它也是真的发挥作用，在很多的时候是吧？好吧，这期讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/25/20200325%E7%AC%AC1791%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E4%BB%8A%E5%B9%B4%E4%BB%8E%E7%BE%8E%E5%9B%BD%E8%BF%9B%E5%8F%A3%E7%9A%84%E5%A4%A7%E8%B1%86%E6%AF%94%E5%8E%BB%E5%B9%B4%E5%A4%9A%E4%BA%86%E5%85%AD%E5%80%8D-SbUymuLIPWA/" rel="prev" title="20200325第1791期-中国今年从美国进口的大豆比去年多了六倍">
+      <i class="fa fa-chevron-left"></i> 20200325第1791期-中国今年从美国进口的大豆比去年多了六倍
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/25/20200325%E7%AC%AC1793%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AA%81%E7%84%B6%E6%89%93%E5%85%AD%E5%9B%9B%E7%89%8C%EF%BC%8C%E4%B8%AD%E5%9B%BD%E4%B8%80%E4%B8%8B%E5%AD%90%E6%87%B5%E4%BA%86-3zHCKqUJZJQ/" rel="next" title="20200325第1793期-川普突然打六四牌，中国一下子懵了">
+      20200325第1793期-川普突然打六四牌，中国一下子懵了 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">708</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/25/20200325%E7%AC%AC1792%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%85%85%E5%88%86%E8%B0%83%E5%8A%A8%E7%BE%8E%E5%9B%BD%E4%BC%81%E4%B8%9A%E7%9A%84%E4%B8%BB%E8%A7%82%E8%83%BD%E5%8A%A8%E6%80%A7%EF%BC%8C%E9%81%BF%E5%85%8D%E4%B8%AD%E5%9B%BD%E9%9D%A2%E5%AF%B9%E7%96%AB%E6%83%85%E5%AE%8F%E8%A7%82%E8%B0%83%E6%8E%A7%E7%9A%84%E5%BC%8A%E7%AB%AF-ijKbReSQANc/";
+    this.page.identifier = "2020/03/25/20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端-ijKbReSQANc/";
+    this.page.title = "20200325第1792期-川普充分调动美国企业的主观能动性，避免中国面对疫情宏观调控的弊端";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
