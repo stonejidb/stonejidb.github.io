@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月17号，星期二昨天又报道了川普在他的推特上说，说美国将强烈支持那些受到中国病毒影响的行业，如航空行业等，这句话本身其实倒不是很重要重要的，还是说他把卡罗纳威尔瑞斯称为了Chinese威尔瑞斯，成为了中国病毒，结果在3月17号今天白宫记者会上，当然昨天他一登出来，我们就愣了一看川普终于把这句话说出口了。  记者可能就问川普说中国病毒一词，川普的回答说，说中国推出不实的信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200317第1703期-川普：中国病毒是一个非常准确的术语">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1703%E6%9C%9F-%E5%B7%9D%E6%99%AE%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%97%85%E6%AF%92%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%87%86%E7%A1%AE%E7%9A%84%E6%9C%AF%E8%AF%AD-CsKeXcL_pu0/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月17号，星期二昨天又报道了川普在他的推特上说，说美国将强烈支持那些受到中国病毒影响的行业，如航空行业等，这句话本身其实倒不是很重要重要的，还是说他把卡罗纳威尔瑞斯称为了Chinese威尔瑞斯，成为了中国病毒，结果在3月17号今天白宫记者会上，当然昨天他一登出来，我们就愣了一看川普终于把这句话说出口了。  记者可能就问川普说中国病毒一词，川普的回答说，说中国推出不实的信">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-16T16:00:03.000Z">
+<meta property="article:modified_time" content="2020-07-11T01:24:03.502Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1703%E6%9C%9F-%E5%B7%9D%E6%99%AE%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%97%85%E6%AF%92%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%87%86%E7%A1%AE%E7%9A%84%E6%9C%AF%E8%AF%AD-CsKeXcL_pu0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200317第1703期-川普：中国病毒是一个非常准确的术语 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1703%E6%9C%9F-%E5%B7%9D%E6%99%AE%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%97%85%E6%AF%92%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%87%86%E7%A1%AE%E7%9A%84%E6%9C%AF%E8%AF%AD-CsKeXcL_pu0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200317第1703期-川普：中国病毒是一个非常准确的术语
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-17 01:00:03" itemprop="dateCreated datePublished" datetime="2020-03-17T01:00:03+09:00">2020-03-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/17/20200317%E7%AC%AC1703%E6%9C%9F-%E5%B7%9D%E6%99%AE%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%97%85%E6%AF%92%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%87%86%E7%A1%AE%E7%9A%84%E6%9C%AF%E8%AF%AD-CsKeXcL_pu0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/17/20200317第1703期-川普：中国病毒是一个非常准确的术语-CsKeXcL_pu0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月17号，星期二昨天又报道了川普在他的推特上说，说美国将强烈支持那些受到中国病毒影响的行业，如航空行业等，这句话本身其实倒不是很重要重要的，还是说他把卡罗纳威尔瑞斯称为了Chinese威尔瑞斯，成为了中国病毒，结果在3月17号今天白宫记者会上，当然昨天他一登出来，我们就愣了一看川普终于把这句话说出口了。 </p>
+<p>记者可能就问川普说中国病毒一词，川普的回答说，说中国推出不实的信息，说我们的军队把这个病毒传给了他们，这是不实的，所以我决定无锡争论，我只需按照它的来源来称呼它，那么他是从中国来的，所以我认为这是一个非常准确的术语。他说我不赞赏中国，说我们的军队把病毒传给他们，我们的军队没有传给任何人，然后有人说你这么说是不是就一种污名化，因为你说是差尼斯维尔斯，美国也生活着很多 Chinese是不是？他说我不这么认为，我认为说我们的军队把病毒传给他们，这才是无名化。 </p>
+<a id="more"></a>
+
+<p>美国国务卿彭培傲与中国主管外交的中央政治局委员杨洁篪通话通话，双方还是就是说对外报道了都比较含蓄，我们听说双方在通话的过程当中都不是很礼貌，双方都比较激动。 </p>
+<p>然后中国外交部3月17号今天的回定，今天回应外交部发言人耿场说，他说这是对中国的污名化，我们对此表示强烈反感，坚决反对。昨天我已经说了这种东西，我觉得就这样子，没有什么好说的，求人得人求一得一，这就是你所求的，那么他就来了，对不对？然后我觉得最大的好处就是说我们最后到底看看从哪来，双方法院都这么说，但是能不能拿出证据来，会不会有人去调查。 </p>
+<p>当然了我们昨天也说了，习近平同志反复让他们去查，其实意思很明确，就是说需要他们从理论上从科技上从大数据上来证明这个病毒不来自于中国，要么来自于某一种动物，要么是从境外传入的，我想这个意思已经非常的明确了。能不能推给美国我们不知道，但是现在来讲，看来美国也非常希望能够找到一些证据来证明这个病毒，就是中国病毒来自于中国，实际上是我们所乐见的，不管他从哪来我不知道。我们现在我也不知道也许来自外星系来自三体，是不是也许来自地球也来自哪个国家，我们不知道。 </p>
+<p>但是如果中美两国都如此迫切的想要找到他的真相的话，这个是我乐见的，我非常想知道这个病毒到底从哪里来，它的真相是什么，我想每个人呢都想知道是吧？闹到现在这样子的，我觉得这个最好。至于有人问我说这样搞下去会不会打成战争？我现在认为不会，我认为这是一场冷战没有问题，但是冷战已经来了，从18年当时我们就劝习近平不要跟美国打这场贸易战，在习近平同志看来还是坚定的要跟美国打这场战争，这场战争我认为不是热战，目前来看是冷战，双方我都不认为会真的就是说热战交火这是不太可能的，这场冷战以什么作为结束？ </p>
+<p>我想起来前苏联上一场冷战就是美国跟前苏联，那么最后是以苏联解体作为结束。我觉得历史总是就是说开花谢，它看起来总是似曾相识，所以我认为这一次冷战可能跟上一次冷战的就是说在过程当中，咱具体的细节也有不同，但大体上的方向应该也就不外乎是如此，最后的结局就像我说的应该像第一次冷战那样，最终以苏联的解体作为结束。因为盛名之下其实难副，看起来好像经济特别好，科技非常的发达，当时的苏联不也是说经济特别好，特别发达，好像苏联还先于美国把卫星送进了宇宙，然后导致美国也是痛定思痛，美国最后把人送到了月球是吧？ </p>
+<p>当时大家都花了不少钱，现在又是这么一轮的，我们可以看得出来，中美之间又是一轮的这种科技竞争是吧？ </p>
+<p>军事竞争，经济上的这种交锋都非常的多，当时前苏联表面上看起来是非常强大的，庞然大物一样，好像当时是十几个加盟共和国是吧？就前苏联我记得当时什么乌克兰白俄罗斯什么的，是不是都加一起，我记得十十几个看起来就是不可一世的呢，庞然大物，一场冷战打下来，最后经济就解体了，因为它的经济说句实在的，这种就是说国进民退的以国有资产为主的这种的计划经济，在这种市场经济面前可以说是不堪一击，经济最终难以承受重负。 </p>
+<p>最后的结果大家都知道了，我们就不重复了，我觉得这一次冷战跟上一次的冷战应该整体的走向大概都差不多，历史花开花谢，然后最终以经济崩溃了，作为一个结束，到底是美国经济崩溃了，还是中国经济崩溃了，有我们对吧？我们拭目以待好不好？ </p>
+<p>我的意思我想我说的很明确了，也不需要我说出来对不对？但是当然了就是说最终政治会不会解体，我们现在我还留有这个疑问，因为你毕竟要明白前苏联它的国民相对起来个人素质还是比较高的，受教育程度，国民素质，而且他多年受东正教的影响，国民还是有信仰有追求的，相比起来我们现在国民整体素质跟当时前苏联的比起来是有很大的差距的，我们的人民普遍来讲比较愚昧，对于整个政治体制，对国际体制基本上处在一种就是说不能说所有人，当然你看我觉得有少一部分接触了一些海外一些媒体的，还是有一个比较冷静和清醒的认识，但是绝大多数是属于那种比较愚昧的完完全全蒙蔽了双眼的。 </p>
+<p>然后说实话我不认为防火墙都要倒塌，就能给中国人民带来多么大的这种帮助，会有一部分人觉醒，但是有一部分人肯定还是会坚定的信下去的，对吧？这个是没有办法，满清结束了之后有多少遗老遗少，你捡他辫子他就要烧掉自杀了，他觉得这辫子怎么能捡的对不对？我们中国人把自古就有辫子，但当然是没有的，满满清之前还不留辫子了，对吧？但是中国人他就信有过那么个一两百年下来，他他就信他从祖宗开始，从北京猿人开始就留辫子，他偏要信，你捡他变了他就上吊自杀了，你怎么办？这些人总是有的。 </p>
+<p>满清还有那么多遗老遗少了对吧？共产主义在中国这么多年共产共产主义作为一个信仰，有多少人去相信，对吧？所以这个是没有问题的，我经常说就是说有什么样的人民就有什么样的政府，这个政府是人民选择的，很多人对此非常的不满，他总觉得49年的时候人民没有选择是他们打赢了的，人民不选择他们的话，如果全中国4万万同胞都不选择共产党和共产党怎么打？ </p>
+<p>武器我不明白共产党的武器和枪炮它都是机械化控制，都是机器人控制的是吗？是谁拿的那些枪那些炮去支持的共产党，打赢了这场仗，不是人民是谁，是外星人打赢了那场仗是吗？对不对？国国民党这边共产党打仗的时候，这边国民党这边多少人起义了，多少人不相信，他要相信共产主义，相信毛泽东把相信相信共产主义能够建立一个民主自由的中国，当时老毛不也是美国人不也相信了，对不对？ </p>
+<p>司徒雷登当年不也被老猫骗了，对不对？当然了，他们可能说说不是我们主动选择的，我们也是被骗了，对现在现在你们又被骗了，你们怎么老被骗了？是吧？你们自己也应该想一想为什么被骗的总是你，是吧？好吧，这期讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/17/20200317%E7%AC%AC1701%E6%9C%9F-%E9%A9%AC%E5%85%8B%E9%BE%99%E5%AE%A3%E5%B8%83%E6%B3%95%E5%9B%BD%E8%BF%9B%E5%85%A5%E6%88%98%E4%BA%89%E7%8A%B6%E6%80%81-bxnw_Gk1Tf4/" rel="prev" title="20200317第1701期-马克龙宣布法国进入战争状态">
+      <i class="fa fa-chevron-left"></i> 20200317第1701期-马克龙宣布法国进入战争状态
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/17/20200317%E7%AC%AC1704%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E4%B8%BE%E6%8A%A5%E5%A4%8D%E7%BE%8E%E5%9B%BD%E5%AA%92%E4%BD%93-AgLIAPMru4w/" rel="next" title="20200317第1704期-中国大举报复美国媒体">
+      20200317第1704期-中国大举报复美国媒体 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">770</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1703%E6%9C%9F-%E5%B7%9D%E6%99%AE%EF%BC%9A%E4%B8%AD%E5%9B%BD%E7%97%85%E6%AF%92%E6%98%AF%E4%B8%80%E4%B8%AA%E9%9D%9E%E5%B8%B8%E5%87%86%E7%A1%AE%E7%9A%84%E6%9C%AF%E8%AF%AD-CsKeXcL_pu0/";
+    this.page.identifier = "2020/03/17/20200317第1703期-川普：中国病毒是一个非常准确的术语-CsKeXcL_pu0/";
+    this.page.title = "20200317第1703期-川普：中国病毒是一个非常准确的术语";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

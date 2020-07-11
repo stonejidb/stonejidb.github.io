@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月17号星期二，这些事情说说就是说美国到底有多少人感染这个话题，这个由来已久了，但最近刚开始我估计是三四千，后来说两三万，后来说9600万，后来说150,000,000，现在说3亿，我这两天就一直在思考怎么能够大概齐就是说比较有道理的来计算到底有多少人感染。  在武汉初期的时候，我们用的是韩国和日本撤侨，按他们的比例，他们当时撤侨就是从武汉撤侨，对吧？那么这个侨民也都是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200317第1697期-美国感染人数的计算公式">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1697%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F-NsRRLHCsrGE/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月17号星期二，这些事情说说就是说美国到底有多少人感染这个话题，这个由来已久了，但最近刚开始我估计是三四千，后来说两三万，后来说9600万，后来说150,000,000，现在说3亿，我这两天就一直在思考怎么能够大概齐就是说比较有道理的来计算到底有多少人感染。  在武汉初期的时候，我们用的是韩国和日本撤侨，按他们的比例，他们当时撤侨就是从武汉撤侨，对吧？那么这个侨民也都是">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-16T15:09:07.000Z">
+<meta property="article:modified_time" content="2020-07-11T01:24:03.475Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1697%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F-NsRRLHCsrGE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200317第1697期-美国感染人数的计算公式 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1697%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F-NsRRLHCsrGE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200317第1697期-美国感染人数的计算公式
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-17 00:09:07" itemprop="dateCreated datePublished" datetime="2020-03-17T00:09:07+09:00">2020-03-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/17/20200317%E7%AC%AC1697%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F-NsRRLHCsrGE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/17/20200317第1697期-美国感染人数的计算公式-NsRRLHCsrGE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月17号星期二，这些事情说说就是说美国到底有多少人感染这个话题，这个由来已久了，但最近刚开始我估计是三四千，后来说两三万，后来说9600万，后来说150,000,000，现在说3亿，我这两天就一直在思考怎么能够大概齐就是说比较有道理的来计算到底有多少人感染。 </p>
+<p>在武汉初期的时候，我们用的是韩国和日本撤侨，按他们的比例，他们当时撤侨就是从武汉撤侨，对吧？那么这个侨民也都是生活在武汉，人民也生活在武汉，我们就认为如果他撤侨的比例来计算的话应该差不多，那事实证明比例其实没有武汉本来的高，因为韩国和日本人他们可能相对个人卫生搞得更好一点，最终当时他按照韩国和日本撤侨的话，我们计算出来武汉感染人数应该在20~22万左右，但是后来根据这个方向医院雷山火神山的数据，我们认为实际上武汉应该在40万人左右，对吧？这反正我们就是说怎么计算来讲是有一个依据的，现在来计算美国的话也得有一个依据。 </p>
+<a id="more"></a>
+
+<p>我这两天我想来想去，我终于想明白了一个依据，什么依据？ </p>
+<p>就是说比如说现在比如说美国今天我刚刚查的阿叔网上数据，美国现在确诊有4661人，这是确诊的，确认被感染的死亡的是85个人，对吧？ </p>
+<p>那么这里边就存在一个问题就是说感染人数可能混在人心中的，我们不知道我们没有办法知道到底谁被感染了，在这种情况之下我们就没有办法计算出来他什么可以计算出来，我想一件事有一个数字是隐藏不了的，什么数字就是死亡人数是没有办法避免的，就是说他死的就是死的，要么就死的，要不就没死对不对？他不存在没有计算，对吧？他要是死了就计算进来了，没死就在外面溜达，他不存在的他在外面溜达，但实际上死那就是倭铿带的是吧？ </p>
+<p>那就见了鬼了对吧？所以我们就是说有没有可能就是说感染了，没有被计算起来有可能，但有没有可能死了，没有被残疾人了，这个没有可能对不对？当然了这里面就有人，我们说我跟你说美国肯定好多人死了，然后他们偷偷的就挖了坑给埋了就给烧了，也是用什么高压的那种一移动，什么是蓉火炉焚烧炉就给烧了，如果你这么想问题，这期你就别看了，好不好？我要告诉你这是美国，好吧，包括川普被检测了之后被阴性，中国很多人不相信，觉得说你相信吗？肯定不会的。 </p>
+<p>给川普检测的是美国的军医，川普是美国的三军总司令，对不对？他们肯定不会说实话，川普现在肯定被感染了，他们就不说，如果你这么思考问题，你就别看了对吧？我还是那句话，就是说咱们要谈的问题要有一个基本的共识，这里是美国这是不可能的，川普被检测了之后，是阳就得说阳，是阴就得说阴，你不存在隐瞒的可能性，这里是美国他敢隐瞒的话，纽约时报也不放过他，CNN也不放火大，华盛顿邮报那些人眼线众多，白宫里边有的是民主党的了，窜普给乌克兰总统打完电话，说了抱怨了几句都闹到弹劾对吧？这是不可能的，串口如果阳性了之后欺骗我，重大的对美国人民的而且公共安危的一种欺骗，绝对弹劾了，那就不用选了，直接下台了，可以说共和党人也不敢保他，所以这是不可能出现的问题，美国的死亡人数也是死了就是死了，任何人不敢隐瞒，这种人数是不敢隐瞒的，所以死亡人数是一定会报出来的。 </p>
+<p>所以我们就看死了多少人，按那个比例就可以知道现在大概其的感染人数是多少。 </p>
+<p>好，现在确诊就死了是85个，确诊死了85个，确诊的是4661人，那么比例是多少？1.8%。这是美国目前心脏肺炎的死亡率1.82%，这个数字是算高还是算低？我们做一个比较，目前中国的死亡率是3.9%，我们是8万多人，死了多少来着？反正百3.9%。 </p>
+<p>我再看一眼中国最后是死了，多少我看一下。反正韩国是0.9%，中国现在是81,052个，死了3230个。韩国是韩国在这，韩国是8320个，死了75个，所以按这个计算，中国大概其是在3.9%的死亡率，韩国是0.9%，韩国这次死亡率真的是低。 </p>
+<p>好吧，美国现在的死亡率是1.82%，介于中国和韩国之间我觉得还算正常。因为中国是这样的，中国主要死亡率高是在武汉，但实际上当然了我跟你说中国真正的死亡数是在4%点多，我其实说了好多次了，不管算了，中国偏要说32% 39%，但我们得到的应该是4.1%~4.4%左右，这才是真实的死亡死死亡率，不过其实就差那一点，我们也就不算了，咱们就算它39%好吧？ </p>
+<p>韩国的0.9%，美国现在1.82%，我觉得死亡率还算正常对吧？就是确诊的，然后里面死亡了的好吧？那么你通过怎么能够计算出来实际感染人数，我们看看其他那些没有被计算出来，但是有可能是得了心灌肺炎死了的人，是谁？那就得了流感死了人好吧？ </p>
+<p>根据美国有一个流感的网站叫弗鲁斯尔，这个网站上它统计的从2019年的10月到2020年的2月到上个月为止，那么共记录就是说实验室确认的流感的相关的住院病历里边，66.6%市府路A就是甲型流感，百分之32.9是辅助b是乙型流感，0.3%，这最倒霉的0.3%属于甲型和乙型共同感染，就是弗洛伊弗罗比他都感染了，运气是够糟糕的，但是比例也不多，只占了0.3%，那么还有多少？还有0.3%是流感相关死亡，但是最终并不能确定出来的到底是辅助a还是辅助b那么这就是存疑了，不知道为什么没有测出来的对不对？ </p>
+<p>我就说美国不是说得了流感，或者说你吸电子烟死了之后你说死了就死了，死你得有个原因的，死亡原因是什么？人家都有记录的，知道吧？有了记录之后，当然了这个都是住院治疗，然后包括死的记录，那么有一些因为流感不是很厉害，自己在家吃药的，那种有可能没有记录，有可能测的也没有具体测，当然他测的都是严重的厉害的，对不对？到实验室去错了的，有一些可能也就没错，对吧？ </p>
+<p>好，咱们来看就在这里边重症里边这些死亡的人里边来讲，那么比例的话，把 a b a辅助b都有的，这三种刨去之后，那么没有确定的占了0.3%，那么这2.3%里面的确就有可能的确确是感染了新冠肺炎死了的，没有被查出来好吧？那么他一共有多少人？他有那2600万人的感染，25万人住院，14,000人的死亡，咱们就按这，因为咱们今天看的就是死亡的对不对？ </p>
+<p>咱们看看除了新的分析之后还有多少人死，那么14,000人里边有0.3%，有可能对吧？因为我们也不知道咱们就算他都是有可能是感染心脏肺痒死了的话，它的数字是多少？差不多是42人，就是14,000乘以0.3%，差不多是42个，那么按照1.82%的比例，那么42÷1.82%等于2307个，那么也就是说按照这个比例的话，外面还应该有2307个人是被感染了心梗肺炎，加上现在有的4661家一起应该是600090068。 </p>
+<p>按照目前死亡人数来讲，主要是把现在就是说确诊的新冠死亡的人数再加上流感里边的那些不能确定到底是因为什么死了那些人数加在一起，那么我们认为感染人数应该在6000690068，当然了有人就会说说你说的这是现在死亡的，也有可能明天死后天死，未来一个月死了，因为他现在感染了，现在还没死，对不对？有可能难民明天死了。我们再来看一下，昨天死了27个，今天死了18个，平均下来现在一共是死的就是说85个，这两天还是比较高，之前还是其实比较少，对吧？这两天死的比较多，一个死了27个，1个死了18个，平均下来每天死了22.5个。 </p>
+<p>好吧，我们就按平均每天死22.5个人来计算，那么一个月是多少？是675。好吧，那么就假设按照目前美国的死亡步骤来讲，未来的一个月可能有675人，因为换心灌肺炎而死。那么拿它除以1.82%的死亡率的话，应该是37,087人。所以我认为到就从3月10 16号17号到下个月的16号17号的话，那么确诊人数应该不会超过37,000。那么如果按两个月计算就会死1350人，但是我认为说实话中国用了一个多月就控制住了，按照美国现在几百万的测试纸出来，然后说加州就腾了8万个病床出来，在这种情况之下，我认为美国也就1~2个月也应该就可以控制住了，而且美国毕竟它人少，而且地广人稀对吧？ </p>
+<p>那么最多我们算两个月，两个月就是1350人，1350人的话除以1.82%的最后是74,000人，好吧？按照这个来讲，我认为就我目前的计算来讲，目前我认为感染人数应该在690068人左右，那么未来的一个月有可能感染到37,000人，两个月之后有可能感染到的74,000人，我觉得这个数字是比较我认为来讲就是说从我计算我认为比较可信，应该不会超过这个数字。这个月可能还多一点，我觉得到了下个月基本上应该就会越来越少了。 </p>
+<p>好吧，因为中国也是一个月之后越来越少了，韩国是实际上韩国上三个星期之后就越来越少了。 </p>
+<p>好吧，那么就按美国就比韩国也笨，比中国也笨，两个月之后越来越少的话，它实际上也就是最多应该有7万多人被感染。我不认为有像他们感染病专家说的9600万人，咱们说说我跟你说你通过这样一计算能冷静下来，按逻辑一计算，你会发现9600万人感染是多么的荒谬。为什么这么说？咱们假设说假设说美国有9600万人感染的话，按照死亡率的1.82%的死亡率，一共有174万人将会死亡，174万人死亡是什么概念？ </p>
+<p>如果就是说未来你现在感染了未来一个月，就算你潜伏14天，然后再发病14天，最后死掉，一个月你就死了，那么也就是说在这个月到这个月月底的时候会有170万人死亡，那么如果是170万人174万人在30天之内死亡的话，每天要死5824人，所以你就知道这个数字多么荒谬，27今天死了18个，离着这种数字就是我不知道那些他们就是语不惊人死不休，所以如果按照这种比例来说的话，每天不死个五六千人，根本就没有办法支撑他那种它这种数字。 </p>
+<p>好吧？所以我还是那句话，死亡人数是不能骗人的，死亡人数在这里，你按死亡人数跟死亡比例去推，大概其感染人数其实就在这。好吧，而且我告诉你，有人说美国死亡人数低，我跟你说，你们仔细想一下，死亡比例越低，感染人数就越高，懂我意思吗？死亡比例越高的话，感染人数分母反而就越小，所以我给它往小了算，这个数反而更多，如果往大了算这个数反而更小，你们能听懂就听懂，听不懂我也没办法了，好不好？所以我往死亡比例给他算的比中国小，实际上是为了让感染人数更多一点，因为我觉得说少了，你们又得说我在帮他开脱对不对？ </p>
+<p>所以我把比例缩小一点了，它这样一出来之后它分母就多了，明白吗？当分子不变的时候，你的比例越多，分母实际上越小，比例越小，分子分母越多，懂不懂？好吧，我觉得我说的够清楚了。所以这就是我的计算公式，我认为那就是这样的。 </p>
+<p>也就是说其实我看也就是到4月中旬37,000人，但我认为可能其实因为我不认为会保持每天死20个的这种比例，因为你看到现在实际上已经半个多月才死了85个，也就这两天多一些，我觉得后面死亡人数会越来越低。你看日本那会因为那14个人都是平均年龄75岁，中国瑞德系列之后1个都没死，对吧？所以我觉得以后死亡率可能会更低一点，所以通过基本上我现在就可以感受到之前我是纯粹没有一点的概念，我在就是说胡说几千几万个几几千万个几亿个，但是现在来讲我通过这个计算，我估计到4月15号之前不会超过37,000人，就算38,000不会超过38,000好不好？ </p>
+<p>咱们看看我最后我这个计算公式会不会打脸。 </p>
+<p>好吧，如果在4月16号之前超过了38,000，那说明我的计算公式有问题，或者也有可能如果要那样的话，那就说明美国的病死率太低了，那就不是1.8%了，可能病死率只有0.9%，病死率一定要比1.8%再低才行。 </p>
+<p>那就说明美国有特效药，它其实都是一些变量，病死率什么之类的，但是你的思路我觉得是可以套用的。反正大意是这么一个思路，它的量跟着变的话你也跟着变，其实大概就是这么个意思。反正大概这么个意思，反正3万多7到7万多人，我觉得应该就是这个意思，应该我觉得一个月之内应该不会超过38,000，两个月之内不会超过74,000。对，我觉得按照因为毕竟美国它现在动起来了，对吧？马路上人就少了。 </p>
+<p>这两天曼哈顿人也少了，地铁人也少了，新泽西实行校庆。对，现在都是这样的对吧？让他因为美国动起来之后，后面感染之后反而会下降，对吧？要像之前那么一个个的就是地主家的傻傻儿子那种胎害劲，可能感染症还多一点。 </p>
+<p>本来还想大半夜去新泽西玩，结果人家宵禁了，晚八到早五咱也别去了，再加上晚上8点到早上起来5点，全部都孝敬对吧？我前两天还想，我还说人人少，咱们去新泽西吃他日本拉面去，他家还看了不看美国的，因为看应该超市应该开门对吧？开门是开门，现在纽约市只能外卖不能常吃的，有他可能这边把餐馆开了，可能超市还开，这边餐餐馆可能都关了，也可能会有可能好吧，反正这是我的计算方法，咱们最后看看看我这方法有没有道理，好吧？ </p>
+<p>谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/17/20200317%E7%AC%AC1696%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E8%B6%85%E5%B8%82%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E7%9A%84%E5%8F%91%E7%94%9F%E6%8A%A2%E8%B4%AD%E6%9C%89%E7%9A%84%E6%B2%A1%E4%BA%BA%E6%8A%A2%E8%B4%AD-ZrYkteUXmmY/" rel="prev" title="20200317第1696期-美国超市为什么有的发生抢购有的没人抢购">
+      <i class="fa fa-chevron-left"></i> 20200317第1696期-美国超市为什么有的发生抢购有的没人抢购
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/17/20200317%E7%AC%AC1698%E6%9C%9F-%E5%85%A8%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%8E%A5%E7%A7%8D%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97%E7%9A%84%E4%BA%BA-Uw8eap8vch8/" rel="next" title="20200317第1698期-全世界第一个接种新冠疫苗的人">
+      20200317第1698期-全世界第一个接种新冠疫苗的人 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">770</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/17/20200317%E7%AC%AC1697%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%84%9F%E6%9F%93%E4%BA%BA%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F-NsRRLHCsrGE/";
+    this.page.identifier = "2020/03/17/20200317第1697期-美国感染人数的计算公式-NsRRLHCsrGE/";
+    this.page.title = "20200317第1697期-美国感染人数的计算公式";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
