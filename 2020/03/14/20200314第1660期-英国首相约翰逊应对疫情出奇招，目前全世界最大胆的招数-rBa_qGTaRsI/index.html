@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月14号星期六，英国对防疫出了奇招了，英国首相约翰逊约翰逊号称是英国川普，不一样就是不一样，这个目前可以说全世界最大胆的招数，怎么回事？3月12号，英国首相鲍里斯他召开了代号叫眼镜蛇的第三次紧急内阁会议，会后鲍里斯宣布英国进入抗击疫情的第二阶段，什么阶段它叫delay？拖延阶段我们来看看怎么拖延，他说这样。  首先他宣布暂不关闭学校，因为他认为根据科学建议停课弊大于利，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/14/20200314%E7%AC%AC1660%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%BA%94%E5%AF%B9%E7%96%AB%E6%83%85%E5%87%BA%E5%A5%87%E6%8B%9B%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%85%A8%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%83%86%E7%9A%84%E6%8B%9B%E6%95%B0-rBa_qGTaRsI/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月14号星期六，英国对防疫出了奇招了，英国首相约翰逊约翰逊号称是英国川普，不一样就是不一样，这个目前可以说全世界最大胆的招数，怎么回事？3月12号，英国首相鲍里斯他召开了代号叫眼镜蛇的第三次紧急内阁会议，会后鲍里斯宣布英国进入抗击疫情的第二阶段，什么阶段它叫delay？拖延阶段我们来看看怎么拖延，他说这样。  首先他宣布暂不关闭学校，因为他认为根据科学建议停课弊大于利，">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-13T15:06:00.000Z">
+<meta property="article:modified_time" content="2020-07-12T05:40:24.697Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/14/20200314%E7%AC%AC1660%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%BA%94%E5%AF%B9%E7%96%AB%E6%83%85%E5%87%BA%E5%A5%87%E6%8B%9B%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%85%A8%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%83%86%E7%9A%84%E6%8B%9B%E6%95%B0-rBa_qGTaRsI/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/14/20200314%E7%AC%AC1660%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%BA%94%E5%AF%B9%E7%96%AB%E6%83%85%E5%87%BA%E5%A5%87%E6%8B%9B%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%85%A8%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%83%86%E7%9A%84%E6%8B%9B%E6%95%B0-rBa_qGTaRsI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-14 00:06:00" itemprop="dateCreated datePublished" datetime="2020-03-14T00:06:00+09:00">2020-03-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/14/20200314%E7%AC%AC1660%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%BA%94%E5%AF%B9%E7%96%AB%E6%83%85%E5%87%BA%E5%A5%87%E6%8B%9B%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%85%A8%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%83%86%E7%9A%84%E6%8B%9B%E6%95%B0-rBa_qGTaRsI/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/14/20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数-rBa_qGTaRsI/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月14号星期六，英国对防疫出了奇招了，英国首相约翰逊约翰逊号称是英国川普，不一样就是不一样，这个目前可以说全世界最大胆的招数，怎么回事？3月12号，英国首相鲍里斯他召开了代号叫眼镜蛇的第三次紧急内阁会议，会后鲍里斯宣布英国进入抗击疫情的第二阶段，什么阶段它叫delay？拖延阶段我们来看看怎么拖延，他说这样。 </p>
+<p>首先他宣布暂不关闭学校，因为他认为根据科学建议停课弊大于利，就是说弊端更多，比有利的地方还要多，那么相应的就是说爱尔兰和法国都已经宣布全国停课了，做一个比较就跟他然后他说从3月13号开始，所有出现咳嗽发烧等症状的人，必须再加上隔离7天，7天之后，如果症状继续恶化的话，再叫救护车。 </p>
+<a id="more"></a>
+
+<p>第二，英国政府不再检测，每一个有症状的人就不检测了，那不检测的话，你到底得没得他也不知道，反正就不检测。那么就是说如果在家隔离，仅有轻微症状的人就不需要接受检测，未来将重点检测的症状严重的患者就说如果你这样特别严重了，我在检测轻微的就不检测了，是不是也不需要知道了？ </p>
+<p>然后禁止学校安排学生的出国旅行，建议70米70岁以上的老年人近期不要出行。还有英国境内他说已经感染新冠的人数，他估计因为他也不错了，就估计我不错了，你不会想知道个数，他说我估计超过5000人不到1万人是5000~1万之间，但是我就不测了，浪费时间浪费钱，浪费时间的浪费钱浪费精力。他说英国现在差不多是4周之前的意大利就是4周之后可能就会变成意大利的现在了。他说所以英国要做好失去所爱的人的准备，这话说的真够狠的。 </p>
+<p>然后暂不关闭学校，然后也不禁止大型活动，连球赛都不听，英超接着踢，而且一般要踢的话不都空场踢，空场踢就现场直播就完了，现场没有球迷没事，球迷可以进场接着看球，没关系，不进。牛不牛，这是对吧？全世界最大胆的抗议行为，这真是。 </p>
+<p>然后当然就是强调洗手的重要性，至于口罩没提，随便不管，然后说新冠的死亡率是1%，但是它就不好说了，对吧？各个国家比例是不一样的，意大利我们说了已经超过6%了，对吧？他说英国目前的重点不是防止所有人被传染，而是因为他认为阻止每个人被传染是不可能的，所以也就算了。 </p>
+<p>佛佛系抗议，然后说英国政府准备尽量拖延疫情到达顶峰的时间，与此同时也需要有人并感染感染并产生抗体，好吧？就是说那么说说他这么做的原因，有一些媒体对他进行了一个分析，说首先来讲就是说为什么只让轻症患者隔离7天？他说这样说英国的医学官员认为就说这个病在初期的时候最具传染性，刚出现症状的两三天是传染力最强的时候，那么之后传染率会急剧下降，7天之后传染力会变得很低，就不再传染别人了，这样就可以出门了。这是他的观点。 </p>
+<p>然后第二个说为什么不停课？他说首先英国现在确诊人数并不多，不希望在现在这个时候采取可能引发深远社会和经济影响的极端措施，关闭学校的效果有限，而且会造成较大的社会影响。所以一旦关闭学校，很多医护人员的家长都不得不在家照顾小孩，这样会影响医护的压，会增加医护压力，影响公共卫生的资源。而且小孩留在家里跟老人在一起的话会更危险，因为老人得了病会更危险，搞不好传染给老人对吧？还有说心脏病毒在儿童中感染感染率不高，大多数儿童的症状都非常轻微，所以学生的感染风险较低，所以就不停课了。 </p>
+<p>然后说为什么不取消大型的体育活动，比如说英超赛事对不对？他说是这样。 </p>
+<p>在一个大型的体育比赛活动当中，一个观众可以传染的人数实际上就是坐在他周围的那两三个人，并不会造成大范围的传播，如果不允许大家去现场看比赛，如果你是现场不能看比赛的话，都要看电视直播的话，那么人们可能聚在一个密闭的室内空间里边聚会，这样反而会加速病毒的传播，反正这是他的观点，这是他的观点。然后为什么不检测轻症患者，他说所有轻微症状的人在家隔离7天，不要去医院求诊，也不要检测，以时间来换取空间，让轻症不要去医院，就是把疫情的爆发点尽量往后推迟，推迟到夏天去，这样可以避免的医疗资源发生挤兑，同时全力来救治的那些重症患者。 </p>
+<p>就轻症患者，你反正也没什么事自己在家扛着得了，就这么个意思。说英国的防御政策到底是什么呢？彭博社在鲍里斯发表完他的观点了之后，就不是他的观点了，这是英国政府的决定了，等于算是最终对吧？因为他毕竟是英国的现在就是总理对吧？你服也得服，不服首首相对吧？你服也得服，不服也得服对吧？好，那么彭博社说说是这样，鹏博士我认为是这样，他说他减缓这种超方法，可以减缓新冠病毒的传播速度，这是肯定的对吧？但是又不彻底的去终结它，为什么让他大部分人得病，最终许多人可能会转染成了重症，但是几乎所有人都会康复，因为他把医疗资源都腾出来给这些重症了，对吧？这样保证了死亡率很低。 </p>
+<p>那么这样子的目的是什么？就是说可以获得一个群体的免疫力，也就是在英国当中有很多人都有了这种免疫力，就是说到了一定的时间点之后，这个群体当中的大部分人都已经得过病了，而且也因此获得了免疫力，这样一来这个疾病就不会被继续传播给其他没有病的人了，因为反正都得了个面都差不多了，就这么个意思好吧？这也就是英国为什么说它的第二阶段的阶段叫什么？叫底类，延迟就是说我可能不能终结你，但是我让你缓缓地慢慢地释放出来，就这样子。 </p>
+<p>当然了就招致了大规模的批评。那么比较著名的一个批评者就是英国纽约刀的主编，纽约刀是在全世界的医护当中都非常著名的一个医疗期刊，对吧？他的主编瑞查的亨特，当然了公开抨击英国政府的政策，他说不停学校不停聚会，我们的政府没有为我们做好准备，我们需要马上禁止一切大型活动，应该他认为就应该有两派的专家再给鲍里斯提意见，一派的就是跟他一样，另外一派就像鲍里斯现在做的，他说最终鲍里斯选择了疯狂的群体感染计划，他说这一次下的赌注比脱欧还要大得多。 </p>
+<p>说实话，英国这一次的确比较大胆，但是实际上据我们所知，新加坡和印尼采取的措施跟他比较像，至于最后怎么样，那么众说纷纭对不对？我相信鲍里斯在做这个决定之前，也是听取了英国这些卫生部医疗局各种医疗专家的各种的建议，对不对？可能两派也是口水战，互相恨不得把对方淹死对吧？ </p>
+<p>最终反正他选择的这么一个计划，最后到底效果怎么样？说实话我觉得不能看广告，抵抗疗效，咱们看看最后的疗效怎么样，最后的结果是怎么样，反正这一次疫情出来之后，各国都采取了自己认为正确的方法，有中国的方法，有韩国的方法，英国的方法，美国有美国的方法，加拿大跟大家也都不一样，对不对？日本也不一样，是吧？那么最终谁的更好，我觉得到最后总会对他做一个一个总结的，对吧？八仙过海的各显神通。 </p>
+<p>咱们最后看好吧？因为什么台湾方面也认为就是说其实学生停课的话给社会造成了很大的负担。我觉得其实学生的话不停课，我觉得我可以其实我是可以理解和接受的，从我个人来讲，但是这个球赛的话，其实我觉得还是真的应该就是说现场就不要去了，对吧？我觉得如果想不停的话，可以就是说实况转播，对吧？你说如果密闭空间这种事，我觉得你可以把酒吧什么的，就不让就是说禁止酒吧播放球赛不就完了，别去酒吧自己在家看不就完了。对不对？ </p>
+<p>反正不管怎么样，咱们最后看疗效，从我个人来讲，我也觉得他这种计划有一点过于大胆了。因为他这种计划它基于一个前提，一个什么前提？就是说新冠病毒是像流感一样得了。好了，然后就没事了，就抗体了。但是新冠到底能不能得了，好了就有抗体就没事了，实际上现在还是众说纷纭，有人说得了之后还会复发，有人说得了之后并没有抗体，对吧？ </p>
+<p>有人说没有，我们看到了很多都是得了，治好了出院了，后来又复发了，甚至还有人后来就又死掉了，这种都有。然后还有人还携带了病毒，所以你能不能把它当成一个流感来处理，其实我觉得现在从医学上来从科学上来讲，还没有足够的医学来证明这一点，对吧？你是想让群体大多数人具有抗体，但是最后能不能有抗力，而且会不会有后遗症，对吧？你像我们那天谈这个发烧字人那篇里边分就提到了，他们认为有一些人就是说即使被治愈了之后，它还是心跳过速，是吧？ </p>
+<p>如果有后遗症怎么办？03年的萨斯之后，有一些人就有很严重的后遗症，对吧？所以这个东西都只能证明他跟流感其实还是不太一样的，对吧？它是一种冠状病毒，他跟流感在愈后，很多东西都不一样，所以在这种情况之下，但是人家英国我相信也是有很多的医学专家对吧？给出的主意，我们先不抨击他，但是我也抨击过了对吧？我这人说不抨击也抨击了一顿，但是我觉得什么，如果英国真的这么去搞这么处理的话，我希望美国总统川普能够尽快的就把英国也进了德了，对吧？ </p>
+<p>因为现在是光进欧洲不进英国，因为英国脱欧了，但是英国这种处理的话，我觉得要不也把英国就进了，希望川普看到我这一期迅速采取行动，好吧，这期讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/14/20200314%E7%AC%AC1659%E6%9C%9F-%E6%96%B9%E6%96%B9%E6%AD%A3%E9%9D%A2%E5%9B%9E%E5%BA%94%E8%A2%AB%E4%B8%BE%E6%8A%A5%E5%88%A9%E7%94%A8%E7%89%B9%E6%9D%83%E9%80%81%E4%BA%B2%E5%B1%9E%E5%87%BA%E5%A2%83-wObDdPpNTak/" rel="prev" title="20200314第1659期-方方正面回应被举报利用特权送亲属出境">
+      <i class="fa fa-chevron-left"></i> 20200314第1659期-方方正面回应被举报利用特权送亲属出境
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/14/20200314%E7%AC%AC1661%E6%9C%9F-%E6%BD%98%E7%9F%B3%E5%B1%B940%E4%BA%BF%E7%BE%8E%E5%85%83%E5%87%BA%E5%94%AESOHO%E4%B8%AD%E5%9B%BD%EF%BC%8C%E5%9B%BD%E5%86%85%E8%B5%84%E4%BA%A7%E5%9F%BA%E6%9C%AC%E6%B8%85%E7%A9%BA%E4%BA%86-5630NkHIRIM/" rel="next" title="20200314第1661期-潘石屹40亿美元出售SOHO中国，国内资产基本清空了">
+      20200314第1661期-潘石屹40亿美元出售SOHO中国，国内资产基本清空了 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">804</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/14/20200314%E7%AC%AC1660%E6%9C%9F-%E8%8B%B1%E5%9B%BD%E9%A6%96%E7%9B%B8%E7%BA%A6%E7%BF%B0%E9%80%8A%E5%BA%94%E5%AF%B9%E7%96%AB%E6%83%85%E5%87%BA%E5%A5%87%E6%8B%9B%EF%BC%8C%E7%9B%AE%E5%89%8D%E5%85%A8%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E8%83%86%E7%9A%84%E6%8B%9B%E6%95%B0-rBa_qGTaRsI/";
+    this.page.identifier = "2020/03/14/20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数-rBa_qGTaRsI/";
+    this.page.title = "20200314第1660期-英国首相约翰逊应对疫情出奇招，目前全世界最大胆的招数";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
