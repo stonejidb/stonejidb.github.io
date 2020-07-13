@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月13号星期五，路透社报道说湖北黄冈在疫情期间每天死100多人，说现在说以前厉害的时候每天死100多个，说现在好一点了，每天也要死几十个，这个数字就太夸张了，我刚刚看了一下，中国认为确诊的就是8万多人，认为死了3000多人，比例是3.9%不到4%，就是死亡比例。  如果湖北光黄冈一地在疫情厉害的时候100现在每天死几十个的话，这一个多月来就黄冈一地就得死了3000，对不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200313第1648期-路透社：湖北黄冈每天死一百多人">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/13/20200313%E7%AC%AC1648%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E6%B9%96%E5%8C%97%E9%BB%84%E5%86%88%E6%AF%8F%E5%A4%A9%E6%AD%BB%E4%B8%80%E7%99%BE%E5%A4%9A%E4%BA%BA-u-wEKX6XyFo/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月13号星期五，路透社报道说湖北黄冈在疫情期间每天死100多人，说现在说以前厉害的时候每天死100多个，说现在好一点了，每天也要死几十个，这个数字就太夸张了，我刚刚看了一下，中国认为确诊的就是8万多人，认为死了3000多人，比例是3.9%不到4%，就是死亡比例。  如果湖北光黄冈一地在疫情厉害的时候100现在每天死几十个的话，这一个多月来就黄冈一地就得死了3000，对不">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-12T16:04:08.000Z">
+<meta property="article:modified_time" content="2020-07-13T04:17:12.220Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/13/20200313%E7%AC%AC1648%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E6%B9%96%E5%8C%97%E9%BB%84%E5%86%88%E6%AF%8F%E5%A4%A9%E6%AD%BB%E4%B8%80%E7%99%BE%E5%A4%9A%E4%BA%BA-u-wEKX6XyFo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200313第1648期-路透社：湖北黄冈每天死一百多人 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/13/20200313%E7%AC%AC1648%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E6%B9%96%E5%8C%97%E9%BB%84%E5%86%88%E6%AF%8F%E5%A4%A9%E6%AD%BB%E4%B8%80%E7%99%BE%E5%A4%9A%E4%BA%BA-u-wEKX6XyFo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200313第1648期-路透社：湖北黄冈每天死一百多人
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-13 01:04:08" itemprop="dateCreated datePublished" datetime="2020-03-13T01:04:08+09:00">2020-03-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/13/20200313%E7%AC%AC1648%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E6%B9%96%E5%8C%97%E9%BB%84%E5%86%88%E6%AF%8F%E5%A4%A9%E6%AD%BB%E4%B8%80%E7%99%BE%E5%A4%9A%E4%BA%BA-u-wEKX6XyFo/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/13/20200313第1648期-路透社：湖北黄冈每天死一百多人-u-wEKX6XyFo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月13号星期五，路透社报道说湖北黄冈在疫情期间每天死100多人，说现在说以前厉害的时候每天死100多个，说现在好一点了，每天也要死几十个，这个数字就太夸张了，我刚刚看了一下，中国认为确诊的就是8万多人，认为死了3000多人，比例是3.9%不到4%，就是死亡比例。 </p>
+<p>如果湖北光黄冈一地在疫情厉害的时候100现在每天死几十个的话，这一个多月来就黄冈一地就得死了3000，对不对？就一天100个，一个月下来也得死的，死了3800，光黄冈一个人就把全国的死亡名额全占了，对不对？这个数字有点夸张，说实话，如果不是路透社发的，我真的我有点我不敢报这个消息。不好意思有点吵，我老婆后边煮着肉了，大家就坚持忍受一下，我们家就这么大点地儿，后面炖肉还挺香的，那种人文炖的排骨还挺香的，稍微有点吵。 </p>
+<a id="more"></a>
+
+<p>接着说是怎么回事？美国之音也给他们备书了，美国之音刊登了路透社对黄冈一个居民叫王小梅的采访，王晓梅在采访里边说，说死的人特别多，每天死100多，到现在都有，现在每天死几十个，我一会把美国之音发的路透社的采访链接搁在我这个视频的下方，一会大家感兴趣可以去看一下。 </p>
+<p>好吧，然后王晓梅认为就是说大量死亡的主要原因是就医难，他说他自己也是托关系住的院，而且注射的别人难以得到的是叫什么球蛋白才得以幸免。说球蛋白在医院现在因为供应量也比较少，所以是限量供应的，医院一般人是不给打的，有的人说比黄晓梅还先到医院了好几天，结果等到黄晓梅出院了，他们都还在发烧，因为没有给用这个药。 </p>
+<p>说这个球蛋白为免疫球蛋白是一种存在于人体中的血清蛋白，可以有效的提升免疫力，反正这是受采访的黄小梅自己说的，他是黄冈居民，然后我看了一下，黄冈要说也不是很小了，但是在中国来讲真要算小地方，人口差不多在750左右，有人说740万，有人说不到800万，反正是750万上下。每天如果就是说死100多，好像从人口基数来讲也还行，因为700多万人每天100一个月死个3000多，对一个700多万人的城市来讲，咱也说得过去，但是中国政府偏要说全国就死了3000多个，你说黄冈一个地儿，你就把全国的名额都包干了，而且说实话我真的我不认为黄冈死的人会比武汉多，我觉得武汉肯定比黄冈死的人多，对吧？拿脚趾头想都能想出来。 </p>
+<p>你想要如果黄冈真的像黄小梅说的，王小梅说的就是说死这么多的话，武汉死多少，武汉起步一个武汉要死上万了，对不对？不过当然了对吧？是不是一直在烧对吧？ </p>
+<p>好吧，按理来讲就是说他说的数字这么的恐怖，这么的吓人，按理来讲这种视频我应该发在会员专享视频里的。但是既然是美国知音和路透社，这两个都算是咱们兄弟台大媒体，既然他们两个作为背书发了，那么我们如果还把它作为一个小道消息发就不太好了，对吧？因为你看路透社和美国知音发的都闹小道消息，这不能叫小道消息的，这都属于国际大媒体对吧？既然他们发了咱也就跟着发，对吧？ </p>
+<p>但是反正死这么多人，我们也不知道是真是假，我们只能说反正路透社和北国之音是这么说的，对吧？大家可以去参考着去听。当然有的人一直就说武汉死的人实际上就报的要多，这个可能也证实了很多人之前的猜测，有的人是绝对相信党和政府觉得中国政府绝对就是说有多少报多少，绝对没有瞒报，没有少报。不过因为我不太一样，我天津人我们天津大爆炸的时候数字和我们听说的数字差距挺大的。 </p>
+<p>我们天津哪儿什么第二有一个百货商场，忘了叫什么地了，有百货商场烧了，百货商场烧了，反正1~4楼全都烧光了。然后后来说的死亡数字和我们听说到死亡数字之间的也有这个上下也是不一样，反正我们天津得到的消息，每一次在某别的地儿咱不懂，我们天津每一次就出现这种重大的灾难的时候，官方报的死亡数字和我们民间听说的数字都不一样。所以反正我们天津有传统，我不知道中国政府是不是就是说跟天津政府不一样就是说天津政府老是少瞒报，中国政府都从来不发生这种情况。 </p>
+<p>我觉得以我作为中国人多年对吧？我觉得如果电视机前的观众朋友，当然你像港台的不了解中国就算了，我觉得电视机台电视机前只要是咱们也可能是手机钱，我怎么着看咱们节目的观众朋友们，如果你在大陆生活多年，我想你自己心里怎么说，我觉得人心都是肉长的，每个人心里都有杆秤，对吧？今天这期聊这里，然后我一会把王小梅的视频搁在我视频下方，大家自己可以去看看，好吧？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/13/20200313%E7%AC%AC1646%E6%9C%9F-%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E%E4%B8%89%E7%A7%8D%E7%97%87%E7%8A%B6%E5%9C%A8%E7%BE%8E%E5%9B%BD%E8%8D%AF%E6%88%BF%E8%83%BD%E4%B9%B0%E5%88%B0%E7%9A%84%E9%9D%9E%E5%A4%84%E6%96%B9%E8%8D%AF-kveme6XFp1M/" rel="prev" title="20200313第1646期-新冠肺炎三种症状在美国药房能买到的非处方药">
+      <i class="fa fa-chevron-left"></i> 20200313第1646期-新冠肺炎三种症状在美国药房能买到的非处方药
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/13/20200313%E7%AC%AC1649%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%E7%BE%8E%E5%9B%BD%E5%85%A8%E5%9B%BD%E8%BF%9B%E5%85%A5%E7%B4%A7%E6%80%A5%E7%8A%B6%E6%80%81-YrZ0qpQ_MO0/" rel="next" title="20200313第1649期-川普宣布美国全国进入紧急状态">
+      20200313第1649期-川普宣布美国全国进入紧急状态 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">820</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/13/20200313%E7%AC%AC1648%E6%9C%9F-%E8%B7%AF%E9%80%8F%E7%A4%BE%EF%BC%9A%E6%B9%96%E5%8C%97%E9%BB%84%E5%86%88%E6%AF%8F%E5%A4%A9%E6%AD%BB%E4%B8%80%E7%99%BE%E5%A4%9A%E4%BA%BA-u-wEKX6XyFo/";
+    this.page.identifier = "2020/03/13/20200313第1648期-路透社：湖北黄冈每天死一百多人-u-wEKX6XyFo/";
+    this.page.title = "20200313第1648期-路透社：湖北黄冈每天死一百多人";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
