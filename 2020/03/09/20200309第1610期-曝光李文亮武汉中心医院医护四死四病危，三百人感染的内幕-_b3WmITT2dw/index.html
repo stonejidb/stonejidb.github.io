@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月9号星期一，今天得到消息，李文亮所在的武汉中心医院又有一个退休的已经退休了，但是现在返聘的一个主任叫朱和平，因为现在疫情很多，退休的也都后来接着先顶上医护人员缺少医护人员的缺失，结果他也染了武汉肺炎去世。  现在就是说武汉市中心医院现在已经是4个，说着医护人员已经是4死4病危了，包括李文亮梅主任、姜主任退休的朱主任，现在还有另外44个医生，现在是嫔威，是消化内科专家王">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1610%E6%9C%9F-%E6%9B%9D%E5%85%89%E6%9D%8E%E6%96%87%E4%BA%AE%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%BF%83%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%8A%A4%E5%9B%9B%E6%AD%BB%E5%9B%9B%E7%97%85%E5%8D%B1%EF%BC%8C%E4%B8%89%E7%99%BE%E4%BA%BA%E6%84%9F%E6%9F%93%E7%9A%84%E5%86%85%E5%B9%95-_b3WmITT2dw/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月9号星期一，今天得到消息，李文亮所在的武汉中心医院又有一个退休的已经退休了，但是现在返聘的一个主任叫朱和平，因为现在疫情很多，退休的也都后来接着先顶上医护人员缺少医护人员的缺失，结果他也染了武汉肺炎去世。  现在就是说武汉市中心医院现在已经是4个，说着医护人员已经是4死4病危了，包括李文亮梅主任、姜主任退休的朱主任，现在还有另外44个医生，现在是嫔威，是消化内科专家王">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-08T16:01:00.000Z">
+<meta property="article:modified_time" content="2020-07-14T10:11:44.011Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1610%E6%9C%9F-%E6%9B%9D%E5%85%89%E6%9D%8E%E6%96%87%E4%BA%AE%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%BF%83%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%8A%A4%E5%9B%9B%E6%AD%BB%E5%9B%9B%E7%97%85%E5%8D%B1%EF%BC%8C%E4%B8%89%E7%99%BE%E4%BA%BA%E6%84%9F%E6%9F%93%E7%9A%84%E5%86%85%E5%B9%95-_b3WmITT2dw/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1610%E6%9C%9F-%E6%9B%9D%E5%85%89%E6%9D%8E%E6%96%87%E4%BA%AE%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%BF%83%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%8A%A4%E5%9B%9B%E6%AD%BB%E5%9B%9B%E7%97%85%E5%8D%B1%EF%BC%8C%E4%B8%89%E7%99%BE%E4%BA%BA%E6%84%9F%E6%9F%93%E7%9A%84%E5%86%85%E5%B9%95-_b3WmITT2dw/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-09 01:01:00" itemprop="dateCreated datePublished" datetime="2020-03-09T01:01:00+09:00">2020-03-09</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/09/20200309%E7%AC%AC1610%E6%9C%9F-%E6%9B%9D%E5%85%89%E6%9D%8E%E6%96%87%E4%BA%AE%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%BF%83%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%8A%A4%E5%9B%9B%E6%AD%BB%E5%9B%9B%E7%97%85%E5%8D%B1%EF%BC%8C%E4%B8%89%E7%99%BE%E4%BA%BA%E6%84%9F%E6%9F%93%E7%9A%84%E5%86%85%E5%B9%95-_b3WmITT2dw/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/09/20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕-_b3WmITT2dw/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月9号星期一，今天得到消息，李文亮所在的武汉中心医院又有一个退休的已经退休了，但是现在返聘的一个主任叫朱和平，因为现在疫情很多，退休的也都后来接着先顶上医护人员缺少医护人员的缺失，结果他也染了武汉肺炎去世。 </p>
+<p>现在就是说武汉市中心医院现在已经是4个，说着医护人员已经是4死4病危了，包括李文亮梅主任、姜主任退休的朱主任，现在还有另外44个医生，现在是嫔威，是消化内科专家王平，泌尿外科的胡卫峰，心胸外科的一凡，还有伦理委员会的刘丽，这4个现在是病危，死了44个病危，就是武汉中心医院到底怎么回事，他们现在内部就极为不满，透露出来很多的消息和内幕，看来就是说积怨已久，主要就这样说，认为现在很多的医生没有防护服隔离服，就是没有防护隔离服的话，上旬基本上就是送着去感染的，对不对？ </p>
+<a id="more"></a>
+
+<p>说现在就是说在不穿防护服隔离服的情况之下，在处理了呼吸道的插管，那户到茶馆是最危险的，回到茶馆的时候就是说好像有大量的病菌都喷出来，你知道吗？好，那么说在没有防护服的情况下，就要多次消毒，反复进行的无菌操作，就成为了唯一的选择，对吧？然而武汉市中心医院的拒绝个人捐助酒精原因是因为个人捐助的标准不统一，不愿的承担风险，要求各科室自行联系。 </p>
+<p>然后还有在2月份的时候，有人联系到中心医院，愿意捐赠半吨大米，司机开车前往医院来送大米，然后管理层退回说不行，说因为中心医院要严守一切物资，通过红十字会的规定，随后中心的医院食堂就断粮了，反正就是说现在医生全都怪谁，就怪医院的领导，就觉得领导在湖港，还有他们急诊科的主任叫艾芬，多次向公共卫生和医务处报告病例，就是说我们现在怎么样什么情况了，然后医院领导训斥他说你这不负责任，造谣生事，急诊科主任艾芬说，操我他妈到什么要我在急诊科什么样的我不知道对不对？这要是自动季报的，你能说到毫升是我一急诊科主任对我报告这叫造声势对不对？ </p>
+<p>你不糊粥吗？什么怎么回事？对吧？真的都见了鬼了，对不对？ </p>
+<p>我是一线对吧？怎么会我报告情况说大华盛世，然后就说说武汉市中心医院的院长叫彭玉香，然后书记一把手书记是蔡丽，说彭一箱它是一个本科医学毕业，然后毕业之后一直从事教育工作，临床经验的匮乏，按理说要往医生干的话还得往上修本科当不了医生。 </p>
+<p>然后还有医院的一把手蔡力，蔡丽就更别提了，蔡丽根本就没什么医学背景，他是卫生局系统的，他是官员出身，在卫生局里边是在局里边当搞行政的公务员出身，所以完全不清楚医院的运作方式，不过因为他是党党委书记，党委书记主要还是从党员这边来走的，对吧？院长是搞这种就是说对吧？院长他倒是医学毕业，但他就住一本科毕业，他没有搞过临床对吧？然后说完完全全的他们就不了解医院的运作方式。 </p>
+<p>然后举了个例子说菜地是查急诊科的时候，当时发现这几年前三年前就发现说冬季外伤的患者比较少，冬季穿的比较多，外伤患者比较少，就说那这样把冬季比较多的呼吸科的病人拉过来一起一起治得了，然后医生就觉得我见了鬼了，哪有这么干的。但是因为他是书记，大家也不敢说什么，然后就这么干了。然后说在命令执行的三年当中，大量的呼吸科的病人和外伤病人交叉感染，说骨折治好了就得了肺炎，说在医院来讲这不叫决策失当，在医院这叫医疗事故。 </p>
+<p>然后他说现在武汉中心医院是一所的三甲医院，在前线来讲基本上都得是博士，就是说大量的都是博士人才，说光读医学都要10年以上才能够参加工作，你没有读到这个之后，你根本就不能当医生，不能参加工作的，然后却被两个根本没有临床经验的本科的这种官僚在指挥，所以医院一团糟，说医院在隔离，拿木板隔离，说你见过闹瘟疫的拿木板隔离，那玩意能隔离的住吗？说为什么就是说医护大量的发生感染，然后死亡和病危呢？ </p>
+<p>在这么个情况就是说他俩根本搞不清楚状况，然后说目前医院的所有职工的微信号都已经被监察科来监控，不许他们就是说通过微信向外边，因为现在你向上报告的话，就直接训斥你，那是不负责任的，造谣生事，如果通过微信或者社交网络向外报告，直接就认为你算什么泄露国家机密我也不知道。反正就不是造谣传谣了，肯定就要把他们打成什么汉奸走狗卖国贼，是吧？说什么恨我党带路党是不是收取了，就说肯定就说说你们这帮一线的医护人员都是收取了外国境外勾勾结境外势力，是不是就有意损毁我党的形象之类的，反正咱们能等不就一这套科从文革开始念念到他妈现在了，是不是？ </p>
+<p>要间谍特务，是不是？反正无非也是这样，基本上这么一个情况。 </p>
+<p>我看就是说这样下去他们医院还得死人，玩玩不了，医院现在一户就极为不满，能把这些东西透露出来，就是说其实也是为了自保，中国老百姓我经常说的都是这样子，不到了最后自己有生命危险的时候，尽量的就不说话对吧？ </p>
+<p>现在能够把这些东西透露出来的，就说明大家都认为在不透露出去估计我也活不长了，就没有办法了，对不对？ </p>
+<p>真的是民不畏死，奈何以死惧之，现在真的是到了生死关头了，怎么办？不知道。 </p>
+<p>能不能换我看也够呛，因为如果一旦要换了，因为现在这个时候你如果真的换了一个敢说话敢干事的，说实话办实事的，那就把这个真相曝光了，对不对？就是说我觉得把这些人都病死了，累死了害死了，也不能让真相的传出来。因为说实话这些人都死了，对中共的伤害不大，真相传出来的话，对共产党的执政伤害就大了。所以我觉得以中共的执政理念，中共这么多年的执政理念来说，这些人都可以牺牲，只要能够保证政治安全，执政第一就可以，这些都是炮灰而已。 </p>
+<p>是吧？好吧，这期讲到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/09/20200309%E7%AC%AC1609%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%B0%86%E7%BB%99%E4%B8%96%E7%95%8C%E5%8D%AB%E7%94%9F%E7%BB%84%E7%BB%872000%E4%B8%87%E7%BE%8E%E5%85%83%E5%B0%81%E5%8F%A3%E8%B4%B9-MUKd2OGm12o/" rel="prev" title="20200309第1609期-中国将给世界卫生组织2000万美元封口费">
+      <i class="fa fa-chevron-left"></i> 20200309第1609期-中国将给世界卫生组织2000万美元封口费
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/09/20200309%E7%AC%AC1611%E6%9C%9F-%E6%84%8F%E5%A4%A7%E5%88%A9%E5%85%A8%E5%A2%83%E7%9B%91%E7%8B%B1%E5%A4%A7%E6%9A%B4%E4%B9%B1-HtuDCwbq8gQ/" rel="next" title="20200309第1611期-意大利全境监狱大暴乱">
+      20200309第1611期-意大利全境监狱大暴乱 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">861</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1610%E6%9C%9F-%E6%9B%9D%E5%85%89%E6%9D%8E%E6%96%87%E4%BA%AE%E6%AD%A6%E6%B1%89%E4%B8%AD%E5%BF%83%E5%8C%BB%E9%99%A2%E5%8C%BB%E6%8A%A4%E5%9B%9B%E6%AD%BB%E5%9B%9B%E7%97%85%E5%8D%B1%EF%BC%8C%E4%B8%89%E7%99%BE%E4%BA%BA%E6%84%9F%E6%9F%93%E7%9A%84%E5%86%85%E5%B9%95-_b3WmITT2dw/";
+    this.page.identifier = "2020/03/09/20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕-_b3WmITT2dw/";
+    this.page.title = "20200309第1610期-曝光李文亮武汉中心医院医护四死四病危，三百人感染的内幕";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

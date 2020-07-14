@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月9号星期一，钟南山团队他们通过了模型，研究了武汉、湖北乃至全国的隔离措施对疫情发展的影响，然后他们在胸部疾病杂志发表了题为基于二优化模型和对待公共卫生干涉下的中国新冠疫情发展趋势预测的文章，这个文章为什么发在了胸部疾病杂志，因为到海外去投稿的时候被人退稿了，人家认为它里面的数字人家不是很认同，所以被退稿了。  被退考了之后就发在了胸部疾病杂志，胸部疾病杂志是什么杂志？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200309第1603期-钟南山团队研究证明中国政府行动太慢了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1603%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A1%8C%E5%8A%A8%E5%A4%AA%E6%85%A2%E4%BA%86-zaBkfGDXUfc/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月9号星期一，钟南山团队他们通过了模型，研究了武汉、湖北乃至全国的隔离措施对疫情发展的影响，然后他们在胸部疾病杂志发表了题为基于二优化模型和对待公共卫生干涉下的中国新冠疫情发展趋势预测的文章，这个文章为什么发在了胸部疾病杂志，因为到海外去投稿的时候被人退稿了，人家认为它里面的数字人家不是很认同，所以被退稿了。  被退考了之后就发在了胸部疾病杂志，胸部疾病杂志是什么杂志？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-08T16:00:03.000Z">
+<meta property="article:modified_time" content="2020-07-14T10:11:43.966Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1603%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A1%8C%E5%8A%A8%E5%A4%AA%E6%85%A2%E4%BA%86-zaBkfGDXUfc/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200309第1603期-钟南山团队研究证明中国政府行动太慢了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1603%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A1%8C%E5%8A%A8%E5%A4%AA%E6%85%A2%E4%BA%86-zaBkfGDXUfc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200309第1603期-钟南山团队研究证明中国政府行动太慢了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-09 01:00:03" itemprop="dateCreated datePublished" datetime="2020-03-09T01:00:03+09:00">2020-03-09</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/09/20200309%E7%AC%AC1603%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A1%8C%E5%8A%A8%E5%A4%AA%E6%85%A2%E4%BA%86-zaBkfGDXUfc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/09/20200309第1603期-钟南山团队研究证明中国政府行动太慢了-zaBkfGDXUfc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月9号星期一，钟南山团队他们通过了模型，研究了武汉、湖北乃至全国的隔离措施对疫情发展的影响，然后他们在胸部疾病杂志发表了题为基于二优化模型和对待公共卫生干涉下的中国新冠疫情发展趋势预测的文章，这个文章为什么发在了胸部疾病杂志，因为到海外去投稿的时候被人退稿了，人家认为它里面的数字人家不是很认同，所以被退稿了。 </p>
+<p>被退考了之后就发在了胸部疾病杂志，胸部疾病杂志是什么杂志？是广州呼吸健康研究院和呼吸疾病国家重点实验室的官方出版物，等于是他们广州自己做的一个杂志。 </p>
+<a id="more"></a>
+
+<p>总编辑是谁？就是朱南山。所以等于他们团队写了这篇文章，然后到国外权威杂志投稿被退稿了，退稿之后没办法就只能发在自己家的杂志上了。 </p>
+<p>执行总编辑是广州医学院第一附属医院院长何建行，那么钟南山何建行两个，一个是总编辑，一个是执行总编辑，那两个人也是这篇文论文的通信作者，两个人搁在自己家，搁在自己家了，然后预测的模型，但是这个模型我认为是这样，它的数字也许就是说国外的权威杂志认为就是说不是很认同，但是我觉得它的结论我觉得还是其实是有道理的。咱们先来看他说什么。他预测认为就是说2月中旬或下旬疫情就要达到疫情的高峰了，那么确诊病例约了六七万，然后投稿到国外权威期刊被退稿，人家认为你的画几天之内就会被粉碎掉，就是说普遍认为2月中旬不会达到疫情的高峰，2月中旬或下旬就到2月底的时候是不会的。 </p>
+<p>现在是3月9号，我们必须得承认他的研究对于中国来讲还是有一定的道理的，就是中国现在目前我们看起来的的确确就是说已经过了拐点在朝下走，对吧？对于全世界来讲就不是对于全世界的其他国家来讲，现在可能才刚刚开始，尤其像对于美国来讲对吧？对于美国来讲，我们现在可能还有欧洲的像德国、英国，像美国这些可能这离着高峰还很遥远，我们现在不知道高峰在哪号对吧？所以我想国外的期刊对此退稿也是可以理解的，但是从国内的情况来看，我觉得它这个是有一定道理。 </p>
+<p>好吧，最关键的一点是什么？他的研究也证明了中国政府行动太慢了。咱们来看它说通过模型预测新冠亿情在4月底的时候应该逐步平缓了，应该差不多就结束了，他认为总感染人数是最终他认为应该会有12万，但是他也说就是说根据他们的分析，就是说如果隔离措施推迟5天的话，比如1月23号开始封城对吧？如果再推迟5天到28号29号的话，那么疫情的规模将增加三倍，达到35万里，也就是说1月23号丰城还算比较及时，如果再往后拖的话就更加的不好控制的。 </p>
+<p>但是他这里边也说了，如果提前5天采取措施，1月23号提前5天的话，您提前到1月18号对吧？从1月18号就开始，武汉如果封城的话，那么感染人数将是现在的1/3，应该不到25,000个，这就是它的分析，说句实在的，我们什么时候知道武汉爆发了疫情呢？反正我知道有很多人比我们都先得到，现在都证明了很多人可能12月初的时候像啥叫什么医疗，他们稳稳健医疗，他们12月初的时候就把他们本来在武汉开的会议改成了到深圳，然后开这个视频会议了，对不对？ </p>
+<p>那12月七八号的时候就有人得到消息了，反正就我们来讲我认为我消息份比较灵通了对吧？我们是12月30号我们发的消息，中国政府是在1月23号封城，按照钟南山来讲，如果提哪怕提前5天到1月18号开始采取措施的话，也只有现在的1/3的规模，而且这1/3你要明白一点，就是说不仅仅是中国，是现在1/3的规模，对全世界可能都是现在1/3的规模，之前我们说了它差不多是1:8的比例，你在预防的时候投入一分的力量，等到它发生了之后，你可能要用8倍的力量才去才能他把你之前就是说预防的时候的那一辈弥补过来，对吧？ </p>
+<p>那么中国政府到底是就是说非常及时的果断的去封城了呢？还是真的像有些人说的拖了一个多月，是吧？ </p>
+<p>那么稳健医疗是怎么在12月7号8号的时候就得到消息就开始做准备了呢？ </p>
+<p>然后国际大媒体使用地又怎么在12月30号就得到消息开始吹哨了呢？对吧？那么你们为什么到了1月23号，一直到了我1月20号，我们拿到了国家卫建委的材料，我们这边都报出去了，对吧？你们1月23号才封城，到底是快乐还是完了？ </p>
+<p>你要想想1月20号，当我拿到这个配件这个材料什么时候的，那说明他们说明内部认为从内部直接往上报已经上不去了，对不对？才会把这个材料捅到外边来，对吧？你想想他们什么时候报上去的呢？好吧？中国政府到底是行动太慢了，还是行动太快了？我想1000个人看哈姆雷特，就1000个哈姆雷特，我认为每个观众都有自己的观点，有人认为中国政府简直太及时了，全世界欠中国一声感谢。要我就认为中国政府行动太慢了，12月30号我们报完了之后，给你三天时间到1月3号其实就应该采取行动了，如果你1月3号采取行动的话，现在的规模可能只有现在的就是说，因为你1月18号采取行动都只有现在的1/3，如果你再提前到1月3号1月5号的话，可能就只有现在的1/10。 </p>
+<p>从我个人来讲，我认为中国政府行动太慢了，在整个初期的时候，行整个中国的行政体系从下往上报，疫情非常的不通畅，而且很多的疫情实际上都是内部的这些人捅出来，是我们外部在报，对吧？你内部报不出来，最后都是你自己你翻翻那些老的视频，哪个不是我们率先报道的，是吧？那好吧，当然了这是我的观点，不强迫观众的接受我的观点，观众可以有自己的观点，观众如果觉得中国特别及时，全世界欠中国一个感谢的也好，我经常说政见不同没关系，对不对？咱们互相尊重好吧？ </p>
+<p>这期讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/09/20200309%E7%AC%AC1604%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E8%82%A1%E5%B8%82%E6%9A%B4%E8%B7%8C%EF%BC%8C%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8%E7%86%94%E6%96%AD%E6%9C%BA%E5%88%B6-erBtORd3NYk/" rel="next" title="20200309第1604期-纽约股市暴跌，自动启动熔断机制">
+      20200309第1604期-纽约股市暴跌，自动启动熔断机制 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">861</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/09/20200309%E7%AC%AC1603%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%9B%A2%E9%98%9F%E7%A0%94%E7%A9%B6%E8%AF%81%E6%98%8E%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E8%A1%8C%E5%8A%A8%E5%A4%AA%E6%85%A2%E4%BA%86-zaBkfGDXUfc/";
+    this.page.identifier = "2020/03/09/20200309第1603期-钟南山团队研究证明中国政府行动太慢了-zaBkfGDXUfc/";
+    this.page.title = "20200309第1603期-钟南山团队研究证明中国政府行动太慢了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
