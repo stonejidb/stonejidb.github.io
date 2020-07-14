@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月12号星期四， NBA在今天宣布 NBA的整个的赛季的常规赛全部暂停了，等于这赛季就停赛了。当然了它原计划 NBA本来想明天要宣布的就是说比赛先不停止，要在空场来举行，就是没有观众但是随着哥贝尔确诊之后，联盟随机决定本赛季停赛，哥贝尔他是爵士的中锋，哥贝尔这哥们前几天在一个发布会上新闻发布会上，然后有记者采访他，就对于新冠疫情完全就不以为然，他在采访结束之后还拿手去摸">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200312第1633期-戈贝尔确诊，NBA本赛季停赛">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/12/20200312%E7%AC%AC1633%E6%9C%9F-%E6%88%88%E8%B4%9D%E5%B0%94%E7%A1%AE%E8%AF%8A%EF%BC%8CNBA%E6%9C%AC%E8%B5%9B%E5%AD%A3%E5%81%9C%E8%B5%9B-UZzHCO7JN3c/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月12号星期四， NBA在今天宣布 NBA的整个的赛季的常规赛全部暂停了，等于这赛季就停赛了。当然了它原计划 NBA本来想明天要宣布的就是说比赛先不停止，要在空场来举行，就是没有观众但是随着哥贝尔确诊之后，联盟随机决定本赛季停赛，哥贝尔他是爵士的中锋，哥贝尔这哥们前几天在一个发布会上新闻发布会上，然后有记者采访他，就对于新冠疫情完全就不以为然，他在采访结束之后还拿手去摸">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-11T16:03:03.000Z">
+<meta property="article:modified_time" content="2020-07-14T01:32:59.121Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/12/20200312%E7%AC%AC1633%E6%9C%9F-%E6%88%88%E8%B4%9D%E5%B0%94%E7%A1%AE%E8%AF%8A%EF%BC%8CNBA%E6%9C%AC%E8%B5%9B%E5%AD%A3%E5%81%9C%E8%B5%9B-UZzHCO7JN3c/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200312第1633期-戈贝尔确诊，NBA本赛季停赛 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/12/20200312%E7%AC%AC1633%E6%9C%9F-%E6%88%88%E8%B4%9D%E5%B0%94%E7%A1%AE%E8%AF%8A%EF%BC%8CNBA%E6%9C%AC%E8%B5%9B%E5%AD%A3%E5%81%9C%E8%B5%9B-UZzHCO7JN3c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200312第1633期-戈贝尔确诊，NBA本赛季停赛
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-12 01:03:03" itemprop="dateCreated datePublished" datetime="2020-03-12T01:03:03+09:00">2020-03-12</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/12/20200312%E7%AC%AC1633%E6%9C%9F-%E6%88%88%E8%B4%9D%E5%B0%94%E7%A1%AE%E8%AF%8A%EF%BC%8CNBA%E6%9C%AC%E8%B5%9B%E5%AD%A3%E5%81%9C%E8%B5%9B-UZzHCO7JN3c/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/12/20200312第1633期-戈贝尔确诊，NBA本赛季停赛-UZzHCO7JN3c/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月12号星期四， NBA在今天宣布 NBA的整个的赛季的常规赛全部暂停了，等于这赛季就停赛了。当然了它原计划 NBA本来想明天要宣布的就是说比赛先不停止，要在空场来举行，就是没有观众但是随着哥贝尔确诊之后，联盟随机决定本赛季停赛，哥贝尔他是爵士的中锋，哥贝尔这哥们前几天在一个发布会上新闻发布会上，然后有记者采访他，就对于新冠疫情完全就不以为然，他在采访结束之后还拿手去摸所有的话筒，还假装咳嗽，就这意思表示没事你们大惊小怪什么多大点屁事知道吗？ </p>
+<p>然后在今天他确诊为阳性。咱先不说这个，因为他他确诊了对不对？他今天确诊了，你也不知道他是不是今天得的，也可能是前几天得的，那么前几天他在接受采访的时候，说明那个时候他可能已经是携带者了。在采访的时候门口摆了好多麦克风，然后对着麦克风说话，然后咳嗽还摸那些麦克风，那么所有的那些麦克风在他之后，如果没有消毒，其他人用的话，都是很危险的。而当时的情况因为大家都不以为然，他这么做大家都觉得他很幽默，就被他逗笑了，没有人当回事，没有人大家都不以为然，所以也没有人跟那些麦克风去进行消毒。 </p>
+<a id="more"></a>
+
+<p>那么那些麦克风后面使用的那些人，按道理来说，所有的人都得隔离。所以我觉得哥贝尔的这种行为它也整个体现出来就是说美国人也好，或者说是而且个别可能它是欧洲过来的球员，整个的西方对疫情的不重视不以为然，淋漓尽致的体现出来了。 </p>
+<p>今天不光是哥贝尔阳性了，我们得到消息，汤姆汉克斯和他老婆也阳性了，他们看到他老婆好像是去澳大利亚玩，然后回来之后阳性了，就在澳大利亚呆着，现在还到还没回来，那就留到那边，暂时先别回来了，老老实实在澳大利亚待着。目前就是这么一个情况好吧？ </p>
+<p>我觉得也不错，我觉得哥贝尔这个事它最起码也给美国人敲响一个警钟对吧？ </p>
+<p>Nba在美国影响力巨大，整个NBA停赛了的话，对于整个美国我觉得都是敲响的一记警钟，不过当然了咱们必须得承认 NBA它的影响力主要还是在全世界，实际上在美国它跟什么橄榄球棒球比起来是有一定的差距的。美国的第一运动实际上是美式橄榄球，是美国的第一运动，他的观看度其他的任何东西都不能跟他相比。我记得我以前有看过美国美剧的收视，好像永远都是星期日的橄榄球之夜，永远都是收视冠军，从来没有人能超过他，任何的美剧基本上都不能跟他去比，就连你以为那些很牛牛逼爆了的，你就像什么全球有很高了，这不可能跟橄榄球职业比，因为当然全球还有一点，全球它是在收费电台播，所以它的收视率也受影响，它也不是公共电视台。 </p>
+<p>橄榄球在美国才是影响最大的是全美都关注的。每一年的 super world超级版在美国就相当于春晚了，基本上在美国都能接近，就是说一半的人在观看，这在美国简直是不可想象的一个数字了。如果过两天也许一个星期也许两个星期，如果假如有一个美国的橄榄球的明星阳性，然后如果橄榄球的比赛在全美停了的话，要全美要开始封国了。 </p>
+<p>我们不希望看到这一点，但是说实话我觉得如果没有过就是说重量级的事情的话，也引不起美国的重视来，因为到目前为止还是没有人再戴口罩，纽约就这样了，上面你 new result已经隔离了对不对？虽然隔离的位置不大，隔离了有个七八万人，但是那也是隔离了，对不对？但是今天你出去你发现怎么着？还是没有人戴口罩，大家还是在那该搞什么搞什么，这样子搞下去的话，我觉得真的要搞出个两三万人来了。 </p>
+<p>好吧？我希望就是说哥哥贝尔这个事情，然后 NBA的停赛，能够帮美国人敲响一记警钟，他们有点真的就都像歌人一样，完全的在耍宝，耍宝的一样在对待，就跟一帮小孩一样在对待这个事，完完全全不把这个事当回事。好吧？这期就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/11/20200311%E7%AC%AC1631%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5%EF%BC%9A%E7%97%85%E6%AF%92%E5%B7%B2%E7%BB%8F%E6%97%A0%E5%A4%84%E4%B8%8D%E5%9C%A8%EF%BC%8C%E7%BE%8E%E5%9B%BD%E9%94%99%E5%A4%B1%E4%BA%86%E9%81%8F%E5%88%B6%E7%97%85%E6%AF%92%E7%9A%84%E8%89%AF%E6%9C%BA-QTR3Z8b3Y-8/" rel="prev" title="20200311第1631期-纽约时报：病毒已经无处不在，美国错失了遏制病毒的良机">
+      <i class="fa fa-chevron-left"></i> 20200311第1631期-纽约时报：病毒已经无处不在，美国错失了遏制病毒的良机
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/12/20200312%E7%AC%AC1634%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%E5%AF%B9%E6%AC%A7%E6%B4%B2%E5%8F%91%E5%B8%8330%E5%A4%A9%E6%97%85%E6%B8%B8%E7%A6%81%E4%BB%A4-CTyDyFht9p8/" rel="next" title="20200312第1634期-川普宣布对欧洲发布30天旅游禁令">
+      20200312第1634期-川普宣布对欧洲发布30天旅游禁令 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">838</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/12/20200312%E7%AC%AC1633%E6%9C%9F-%E6%88%88%E8%B4%9D%E5%B0%94%E7%A1%AE%E8%AF%8A%EF%BC%8CNBA%E6%9C%AC%E8%B5%9B%E5%AD%A3%E5%81%9C%E8%B5%9B-UZzHCO7JN3c/";
+    this.page.identifier = "2020/03/12/20200312第1633期-戈贝尔确诊，NBA本赛季停赛-UZzHCO7JN3c/";
+    this.page.title = "20200312第1633期-戈贝尔确诊，NBA本赛季停赛";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
