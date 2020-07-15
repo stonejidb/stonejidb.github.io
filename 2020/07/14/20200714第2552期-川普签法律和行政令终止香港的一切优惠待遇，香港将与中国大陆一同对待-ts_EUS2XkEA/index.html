@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月14号星期二，刚刚在一个多小时之前，川普总统签署了香港自治法，也发布了行政命令，这个就算是彻彻底底终结了香港的一切的优惠待遇，那么从今以后香港将与中国大陆一同对待，所以我从去年8月份我就说最终的结果，习近平处理结果包括川普的反应，那么一步一步的都按照我去年8月份的说法是百%的按照走下来，那么就是习近平结束一国两制，川普这边不再给香港的任何的这种特殊待遇，就把香港看成是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/14/20200714%E7%AC%AC2552%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A1%8C%E6%94%BF%E4%BB%A4%E7%BB%88%E6%AD%A2%E9%A6%99%E6%B8%AF%E7%9A%84%E4%B8%80%E5%88%87%E4%BC%98%E6%83%A0%E5%BE%85%E9%81%87%EF%BC%8C%E9%A6%99%E6%B8%AF%E5%B0%86%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%80%E5%90%8C%E5%AF%B9%E5%BE%85-ts_EUS2XkEA/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月14号星期二，刚刚在一个多小时之前，川普总统签署了香港自治法，也发布了行政命令，这个就算是彻彻底底终结了香港的一切的优惠待遇，那么从今以后香港将与中国大陆一同对待，所以我从去年8月份我就说最终的结果，习近平处理结果包括川普的反应，那么一步一步的都按照我去年8月份的说法是百%的按照走下来，那么就是习近平结束一国两制，川普这边不再给香港的任何的这种特殊待遇，就把香港看成是">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-14T01:05:02.000Z">
+<meta property="article:modified_time" content="2020-07-15T02:41:56.691Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/14/20200714%E7%AC%AC2552%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A1%8C%E6%94%BF%E4%BB%A4%E7%BB%88%E6%AD%A2%E9%A6%99%E6%B8%AF%E7%9A%84%E4%B8%80%E5%88%87%E4%BC%98%E6%83%A0%E5%BE%85%E9%81%87%EF%BC%8C%E9%A6%99%E6%B8%AF%E5%B0%86%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%80%E5%90%8C%E5%AF%B9%E5%BE%85-ts_EUS2XkEA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/14/20200714%E7%AC%AC2552%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A1%8C%E6%94%BF%E4%BB%A4%E7%BB%88%E6%AD%A2%E9%A6%99%E6%B8%AF%E7%9A%84%E4%B8%80%E5%88%87%E4%BC%98%E6%83%A0%E5%BE%85%E9%81%87%EF%BC%8C%E9%A6%99%E6%B8%AF%E5%B0%86%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%80%E5%90%8C%E5%AF%B9%E5%BE%85-ts_EUS2XkEA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-14 10:05:02" itemprop="dateCreated datePublished" datetime="2020-07-14T10:05:02+09:00">2020-07-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/14/20200714%E7%AC%AC2552%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A1%8C%E6%94%BF%E4%BB%A4%E7%BB%88%E6%AD%A2%E9%A6%99%E6%B8%AF%E7%9A%84%E4%B8%80%E5%88%87%E4%BC%98%E6%83%A0%E5%BE%85%E9%81%87%EF%BC%8C%E9%A6%99%E6%B8%AF%E5%B0%86%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%80%E5%90%8C%E5%AF%B9%E5%BE%85-ts_EUS2XkEA/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/14/20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待-ts_EUS2XkEA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月14号星期二，刚刚在一个多小时之前，川普总统签署了香港自治法，也发布了行政命令，这个就算是彻彻底底终结了香港的一切的优惠待遇，那么从今以后香港将与中国大陆一同对待，所以我从去年8月份我就说最终的结果，习近平处理结果包括川普的反应，那么一步一步的都按照我去年8月份的说法是百%的按照走下来，那么就是习近平结束一国两制，川普这边不再给香港的任何的这种特殊待遇，就把香港看成是中国的这种北上广深，但是我一直也不是说对香港多么的悲观，我也就是说你变成北上广深也没什么不好，北上广深不过也挺开心的，对不对？ </p>
+<p>上海的房价不也那么高，对不对？经济发展的也很好，只不过香港就不再是香港了。 </p>
+<a id="more"></a>
+
+<p>这个事情我觉得对于其他的频道的观众可能算是个新闻，对于我们频道的观众来讲这还是旧闻对吧？7月1号的时候我就说两周之内到7月14号川普一定会有所行动的，昨天晚上我在播新闻的时候又我说我们得到消息应该是今天就应该我昨天说我说明天或者是后天肯定川普就要来了，就准备好了，我说对于他要发布这个是没有任何的疑问了，就是说看力度怎么样，现在力度看起来，我按我目前看基本上还是口头上的具体的措施和细节，我们后面再说咱们先看看，反正现在说什么，他下午5点开了记者招待会，关于交际教代会的一种细节我们再整理一下，因为它都是英文的，我们一会整理一下，我看看能给大家再详细说说，反正现在大一上这样，他下午今天下午的5点在白宫举行教练会，他讲现在签署了正式签署了香港的自治法，我也说了自治法参议院都是两党两院全票通过了，他签不签都没有什么意义，但是他肯定得签，这种时候没有不要了对吧？可能就呛了。 </p>
+<p>然后还发布了一项行政命令，终止美国对香港的一切的优惠待遇，香港将获得与中国大陆的相同的待遇。川普简单的说了说就说这样，他说香港现在将获得与中国大陆相同的待遇，没有任何的特权，没有特殊的经济待遇，不允许从美国出口敏感技术到香港，也包括了关税，就是说对中国收什么关税，对香港也什么收什么关税。那么川普说香港已不再是香港，他不再能与自由市场去竞争，美国失去了一个非常认真的竞争的对手，也表示一个遗憾。 </p>
+<p>串口表示香港的安全法将为北京政府提供了强有力的新工具，破坏香港的自由与自治的个人和实体的地北反正基本上都是套话，那么后面我觉得更详细的，我们一会总结看看后续的更多的情况出来，到底就是说因为还有很多细节的问题怎么去处理还没有出来。 </p>
+<p>但是我想我觉得就是说香港最后变成一个广州或者深圳或者上海那样子，只是一个时间问题，最终是百%会朝走过去，当然这个过程当中我觉得还需要时间，还有很多问题，包括我刚谈到他的教育问题，他的教育肯定要改革，他的教育以后，我相信我甚至现在认为就以后香港的教育有可能跟内地的教育就是接轨，使用跟内地同样的教材就得了就省事了，因为现在香港已经也没有一国两制了，一国两制已经谢谢观看了对吧？已经叠案子了，已经结束了，已经就是说死了可以烧纸了，对吧？ </p>
+<p>有事烧纸了已经结束了，结束在这种情况之下，在被香港准备一套就是说跟中国大陆不一样的教材或者什么东西的话，其实北京现在不满也不放心，因为目前反送终也好，各种运动也好，北京现在认为就是说香港的教育出现了严重的问题，觉得主要是教育问题怎么教育出来这么一帮玩意儿，对吧？北京是不能接受的，对不对？ </p>
+<p>那么就要彻彻底底改变教育，那么最好的方法实际上其实最简单的对北京来讲最省事的就是干脆你也甭弄什么教材了，你就跟以后看广州的小学教什么，你们一块教什么，跟着广州深圳小学走一块走，你们一起来一一勺会了，你以后没有区别了，你知道吗？你就是一个地方而已，跟我们跟任何的地方都一样，北京、北京、上海、广州、深圳交什么你也交什么，那么就是从教育上彻彻底底的改革全过来，当然这个不会马上都就这样子，但是我跟你说是一个时间问题之间可能会有一个过渡，但是最终的结果是要这样，也许5年也许10年，但是肯定只是一个时间问题。 </p>
+<p>好吧，然后教育的改革，然后关于互联网现在跟几个互联网公司实际上已经就是说采取了这种相当强硬和威胁的口吻了，对不对？就是说你们思考清楚，你们就配合，不配合的话就要对你们进行罚款，还有坐牢这种东西，而且甚至就是说如果你不配合我强行切掉你的服务，这些狠话都已经说出来了，说出来了你也不会知道老公不在再咽回去，对不对？那么很多的这些互联网公司最终可能就是没有选择，我们现在知道这个抖音已经算是就是说撤出中国香港了，他说香港目前局势有问题，他们就撤出了之后，现在自打他宣布之后，后来有网友跟我说在香港的小伙伴说斗金国际版现在在香港已经不能使用了，人家说撤出就真的撤出了。 </p>
+<p>那么我相信这只是第一个，后面陆陆续续的还会有其他的其他的我觉得比较危险的几个什么Facebook推特、 YouTube这些我觉得都是非常危险，我觉得这些东西在香港最终被禁，我觉得只是一个时间问题。所以对于一些香港的小伙伴，我要跟你们说，你们从现在开始就要学习如何去使用正确使用，为偏了要为这个做好准备，随时都有可能的。断网当然了你当然我也知道不会这么快，还需要再等一等，但是你相信我一定都只是时间问题。 </p>
+<p>那么中国对美国的这些网络服务下手，美国也会对中国的网络服务下手，前两天我已经播了这个新闻，然后我也说了，就是说呼吁我们在美国的一些小伙伴们，如果你们在用 A信，因为很多人做生意用微信叫外卖的，什么税务服务的，法律咨询的人就有很多的美国地方做很多事情都需要律师法律咨询的，包括一些餐馆的订餐什么都在用微信对不对？ </p>
+<p>现在我也看到了，反正我就自打我的新闻发布了之后，很多人都及时看到了，都开始改，我们现在看到了我们经常使用的一些这些服务的小伙伴们，现在都纷纷的转了，有转沃斯二普有转用land，有用泰勒格瑞姆的，但不管怎么着，反正大家都在转，都在给一个就是说一个备胎，对吧？就是说很多我们用到一些企业，他们都是就是说以后我们的客服转到line或者work up上去了，但是反正怎么说，我觉得要做好一个新准备，就是说美国这边有可能过一段时间就用不了抖音和微信了，香港那边可能就看不了Facebook推特 YouTube之类的了，这些我觉得都是有可能的，大家都要做好心准备，而因为这些软件很多人都是经常使用的，那么一旦用不了了之后，会给很多人带来很多的麻烦，对吧？ </p>
+<p>所以我觉得小伙伴们开始做准备，现在我想这个样子，因为之前我跟一个朋友我们连线聊天儿朋友还是觉得香港问题，我觉得他认为最后大陆和美国会互相妥协一下，雷声大雨点小不会怎么样，但是当时其实我也说得很清楚，我觉得没有办法在香港问题上，中美必然是迎头相撞，在这地方没有办法没不存在双方去妥协的余地，除非现在我还是那句话，除非现在习近平把那本香港国安法咽回去吃回去，但是你觉得现在习近平可能把这本香港公安法院会去吃回去吗？这不可能的。 </p>
+<p>他咽不回去吃回去那就逼着串谱或者特鲁多或者逼着马克隆吃进去，他们也没办法这东西抛石你拉完了你扔在香港了，谁也吃不进去，只能香港就抽了，你知道吗？就只能这摊石子摆在香港了，就没办法。香港就终于也成为一个粪坑地区，经常说一个当然粪坑其实不是我们说的，原先小桂子说的，小桂子说的中空完就说大粪坑里面一堆去，这都是当年小桂子说的。所以香港终于也是这一摊屎往上一拉，娜也终于成了一个粪坑。 </p>
+<p>我们是非常的不高兴，其实从去年的8月份就我说其实我已经非常敏锐的看到这个苗头，我希望我们大家一起携起手来，避免了这个事情的发生。因为去年8月份我讲了很多次，我说习近平就是郑伯克段于鄢这个故事，你好好去看看这个故事，你会发现整个这个事情就是这么走过来的，这门课依然这个故事老毛也非常喜欢，老毛也是非常推崇的，这老毛以前也经常推荐给别人看的，你知道吗？习近平就真的是毛主席的好学生，毛主席的好战士基本上就学了老毛这一套，现在越来越像，真的就是一个小猫大猫小猫。 </p>
+<p>好吧，在这种情况之下我想已经没什么可说的了，我当初是希望我们一起大家都能像我一样比较早地意识到这一点，我们一起想办法努力的去阻止他，我就想说事情，你如果提前一年能预知她的话，你才有办法是想办法去改变和影响他，对不对？ </p>
+<p>后来发现很多人都不能理解，我比较早的看到这一点，很多人也没有做什么，大家都觉得不可能的，现在最后我们什么也没有做最后这个事情，但不能说我们什么的，我还是做了一些什么的对不对？我这边提前我给你们就是说我那个村门口鬼子来了敲钟的知道吧？ </p>
+<p>鬼子来了对吧？敲钟的对不对？你们听完了我敲了我中的，我反正是敲了，你们不想办法，最后就这样也没办法对不对？怎么办对吧？现在到了这个地步了之后，我又开始敲钟了对不对？我说鬼鬼子把粮食藏下来，对吧？反正能干嘛对不对？然后我已经推荐了很多香港的朋友要跑，对吧？资金要跑，人员要跑，好吧？ </p>
+<p>然后这些软件要开始做准备，香港那边也是因为我知道很多香港人他们有很多的社团组织，都是通过什么Facebook推特这些word up什么这些去联络或者是搞什么东西的，你们现在要想办法找替代的产品了，美国这方面也要对抖音微信这些找替代的这些产品要提前做准备，因为看起来中美在香港就是要蝇头相撞，关于港币我有一些新的消息，那么但是这个事说的太复杂，一会我们看看，有机会我们再录一期，好吧？这期先讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/14/20200714%E7%AC%AC2551%E6%9C%9F-%E5%A3%B0%E6%8F%B4%E2%80%9C%E6%B7%B1%E6%89%92%E8%92%99%E7%89%9B%E4%BC%8A%E5%88%A96%E5%A4%A7%E7%BD%AA%E7%8A%B6%E2%80%9D%E7%9A%84%E4%BD%9C%E8%80%85-lPVvgAkgNj4/" rel="prev" title="20200714第2551期-声援“深扒蒙牛伊利6大罪状”的作者">
+      <i class="fa fa-chevron-left"></i> 20200714第2551期-声援“深扒蒙牛伊利6大罪状”的作者
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">881</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/14/20200714%E7%AC%AC2552%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E6%B3%95%E5%BE%8B%E5%92%8C%E8%A1%8C%E6%94%BF%E4%BB%A4%E7%BB%88%E6%AD%A2%E9%A6%99%E6%B8%AF%E7%9A%84%E4%B8%80%E5%88%87%E4%BC%98%E6%83%A0%E5%BE%85%E9%81%87%EF%BC%8C%E9%A6%99%E6%B8%AF%E5%B0%86%E4%B8%8E%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E4%B8%80%E5%90%8C%E5%AF%B9%E5%BE%85-ts_EUS2XkEA/";
+    this.page.identifier = "2020/07/14/20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待-ts_EUS2XkEA/";
+    this.page.title = "20200714第2552期-川普签法律和行政令终止香港的一切优惠待遇，香港将与中国大陆一同对待";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
