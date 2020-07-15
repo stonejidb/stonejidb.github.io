@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月6号星期五，这一期要大骂美国cDC了，我跟你说太不像话了。美国现在一共有310例确诊死亡的14例，华盛顿是重灾区，数字我就不报了，因为现在差不多每一个小时数字都不一样，我现在终于知道为什么美国cDC他们不报数字了，就在这没法报。  华盛顿的重灾区微软亚马逊和Facebook开始鼓励员工在家工作了，然后西雅图市的北岸学期关闭的下属33家学校关的14天，华盛顿州长结衣英利">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200306第1577期-美国310例，死亡14例">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/06/20200306%E7%AC%AC1577%E6%9C%9F-%E7%BE%8E%E5%9B%BD310%E4%BE%8B%EF%BC%8C%E6%AD%BB%E4%BA%A114%E4%BE%8B-mMhsbSy33ik/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月6号星期五，这一期要大骂美国cDC了，我跟你说太不像话了。美国现在一共有310例确诊死亡的14例，华盛顿是重灾区，数字我就不报了，因为现在差不多每一个小时数字都不一样，我现在终于知道为什么美国cDC他们不报数字了，就在这没法报。  华盛顿的重灾区微软亚马逊和Facebook开始鼓励员工在家工作了，然后西雅图市的北岸学期关闭的下属33家学校关的14天，华盛顿州长结衣英利">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-05T15:07:07.000Z">
+<meta property="article:modified_time" content="2020-07-15T08:03:55.123Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/06/20200306%E7%AC%AC1577%E6%9C%9F-%E7%BE%8E%E5%9B%BD310%E4%BE%8B%EF%BC%8C%E6%AD%BB%E4%BA%A114%E4%BE%8B-mMhsbSy33ik/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200306第1577期-美国310例，死亡14例 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/06/20200306%E7%AC%AC1577%E6%9C%9F-%E7%BE%8E%E5%9B%BD310%E4%BE%8B%EF%BC%8C%E6%AD%BB%E4%BA%A114%E4%BE%8B-mMhsbSy33ik/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200306第1577期-美国310例，死亡14例
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-06 00:07:07" itemprop="dateCreated datePublished" datetime="2020-03-06T00:07:07+09:00">2020-03-06</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/06/20200306%E7%AC%AC1577%E6%9C%9F-%E7%BE%8E%E5%9B%BD310%E4%BE%8B%EF%BC%8C%E6%AD%BB%E4%BA%A114%E4%BE%8B-mMhsbSy33ik/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/06/20200306第1577期-美国310例，死亡14例-mMhsbSy33ik/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月6号星期五，这一期要大骂美国cDC了，我跟你说太不像话了。美国现在一共有310例确诊死亡的14例，华盛顿是重灾区，数字我就不报了，因为现在差不多每一个小时数字都不一样，我现在终于知道为什么美国cDC他们不报数字了，就在这没法报。 </p>
+<p>华盛顿的重灾区微软亚马逊和Facebook开始鼓励员工在家工作了，然后西雅图市的北岸学期关闭的下属33家学校关的14天，华盛顿州长结衣英利斯鼓励居民和各机构考虑取消或推迟大型活动，因为美国你下命令也没有用对吧？ </p>
+<a id="more"></a>
+
+<p>纽约市的卫生局表示正在对2773名纽约市民进行隔离观察。 </p>
+<p>美国的疾控中心cDC说，目前正在升级系统，希望很快的能够实现实时追踪全美与心冠肺炎疫情相关数据，他们说之前不是说不报了，当时说就是说以后就这样子，各州只要有确诊了，那么就说这周是有的，如果没有确诊的这周就是弄就没有，然后各州的数据让各州去报，因为 c DC觉得因为50个州你报上来，我这儿说的数字和下面数字肯定也不一样，不要你们又得骂我，所以你们看各州的得了，结果不报也被骂，骂到最后 c DC现在没办法了。 </p>
+<p>等于所以说他们要升级的系统，然后跟个州联网，只要就是说但是他们也不做统计，就是各州只要一报，因为是电子联网的，他那边一显示他这儿马上就加一个就完了就变成这样了，就以后他也不管了，就你往上加，你们只要报我这就给你加一个。然后最后反正保证你各周报的数据到我这来是一样的，让你那边如果过两天说误诊了，你往下减一个，我这也自动的给你减一个，这样就走了，就搞成这样了，现在这次大家都小伙伴们都满意了，所以也被骂了一头包，然后加州旁边有一个至尊公主号，当然我们说了现在统计完3500个人全部都要测，当时我记得钻石公主号上也查也是3500还是3700，反正最后查出来了是700多个是吧？ </p>
+<p>我看它这上面估计也差不多，然后加州的首例死亡病例也是从至尊公众号上下船的，刚下船就死了。然后船上的乘客拍了这个视频，然后已经发到网上了，说很多乘客站在甲板上等着这直升机往下投放测试的试剂盒，然后直升机已经将测试试剂盒投放至游轮，让他们拿着去测，然后美国 c DC说对游轮上与死者接触的乘客在进行调查，包括2月份就已经下船的游客，也就是说他们好像每一次靠岸，就是说下来上去的人还不一样，你知道吗？这个人死者是2月份从哪出来的时候他就没下船，那么当时有一些人跟他同城的人有人下船了，反正现在就乱了套了，这条船是乱了套了，到底下多少人反正还在查还在追踪。 </p>
+<p>然后大骂cDC在这，我们纽约的一个咱们的网友小伙伴给我们发来的消息，他说他们现在纽约的医院里，他们现在试剂盒完全就不够用，现在根本就没有发下来。 C DC现在放给各州了之后，让各州去自己去想办法，cDC手里没有那么多资源，然后现在各种不给测试，来了之后，只要看看差不多的不行就不给它，因为试剂盒不够用，跟武汉初期差不多十几盒不够，然后说已经开放了私人的实验室，但是还要等是私人实验室，也不是说开放了马上行，私人实验室也要做准备，说可等他们可以测了之后可能会比较好。 </p>
+<p>之前我们也说了， c DC认为到下周的周末的时候，好像是能够就全美国提供100万份的试剂盒，我觉得可能到那个时候我觉得有100万分应该暂时就可以顶住了就够了。但是现在还不行，还没到下周还有一个星期。然后现在纽约一共他们跟我说测了不到200个，出了33个阳性了，现在纽约33200个出了33，说他们医院的急诊已经专门用充气帐篷，在外面搞了一个单独的区域，就是说只要是发热的都去那，别进医院来。现在惹不起。 </p>
+<p>目前就这么个情况， c DC真的是缓慢，刚刚我们说新德西确诊的住院，纽约的那个人也是他妈还在给他送饭，后来当时有网友跟我说，说现在好像也不让送饭了，隔离了。反正现在这个情况真的每一个小时每一个小时都在发生变化，我们只能说反正我尽量把我得到的消息尽快公布给大家。 </p>
+<p>然后首先来讲我也在反省，我原先估计全美国3000个是过于保守了，现在来讲我也要改变预估，不过我也这么说，当时武汉到的时候，我第一时间的时候我给预估我认为是超过10万，后来我得到美国cDC的预估是15万，后来根据端正公众号，我们改掉了22万，然后后来根据17个方舱医院，1个雷珊珊1个火山，我认为应该到最终是有40万的。我也不是一上来就说武汉就40万对吧？ </p>
+<p>最初的时候我们说是超过10万，后来ctc15万到20万22.5万，然后到40万，也是就是说在一个多月时间内一步一步涨上来的，对吧？变化情况一直在变化，美国的情况也在变化，那么美国我最初认为是3000多人，现在我也认为3000多看来是不太可能了，那么到底到多少？ </p>
+<p>我今天我的预估咱们这么说，我预估平均下来，因为有的州人多，有的州人少，我预估平均下来每个州500人，那么整个的50个州应该在25,000左右，这是我目前的预估。但是既然之前说说查了32个，就有一个就是1/32，那么到按这个来算就是说到了下周他能提供100万份，样品的话100万的2/1/32差不多就是3万多，那么就是说2万多到3万多这么一个数字。然后再加上这个朋友跟我说，说测了不到200个就有33个的话，这样子差不多就是百分之16。 </p>
+<p>16%，如果按照这个计算的话，100万最后就会出来16万确诊。 </p>
+<p>我目前来讲，我还不认为美国会有16万确诊，现在我认为可能就是说25,000~35,000，这个是我今天的预估，但是咱们因为很多人说说你双标怎么一到美国就往少了，说咱们美国再往最多了说好不好？ </p>
+<p>但是我只是就因为是网友网友在推，我往最多说，我说那这100100万如果按照200个出33个的话，应该能够到16万对不对？但是我现在可不认为16万，因为网友推我，咱们就随便不过美国无所谓大嘴吗？你随便说对吧？我也不担心有警察来了借我是不是？ </p>
+<p>好吧，说我最夸张的好不好？因为我觉得16万都不算最夸张，对不对？我咱说的最夸张的按美国流管算，但是你数据得有来源对不对？你不能在这一拍脑门，我说4个亿确诊的，美国一共3亿人对不对？你们超过那1亿都是鬼对不对？所以数据你要有来源对不对？ </p>
+<p>我刚刚说我预估的就是每个周平均下来500个人，因为有周多有的州州少平均下来25,000，对吧？然后如果按照1/32100万个也就3万个，我认为这个比较可以，两三万是比较合理的，然后16万就胡说八道了，然后咱们再最胡说八道一个最多的好不好？美国流感全美国是1300万人感染，12万人的住院，最后死了1万多，我认为这个习惯肺炎再怎么着也应该不会超过流感的数字了，那么也就是说最多我觉得不会超过1300万感染，但是说实话中国也没有那么多，对吧？ </p>
+<p>中国那边我也是你们老观众都知道，我们秉持着一贯走过来的我的立场，对中国那边我也都是按实实在在的来说，我到现在来讲，我认为我说武汉的40万感染，我觉得你有心的人你智商够用的，我你都能觉得我这个数字差不多，全中国我认为不肯定不会超过60万，我觉得可能50万都超不过，就是武汉主要就是40万人在武汉，剩下其他地方应该我觉得4不超过10万，全中国应该不超过50万，这是中国的数字，所以其实实际上来讲，我不认为美国会超过这个数字，但是你们既然咱要高高的挑这1300万跟着流感走，对不对？ </p>
+<p>但是我觉得只要智商正常的，我觉得这都是说着玩的胡说八道，不过在美国也无所谓，我就在美国我就在纽约对不对？我经常在窗户那路对吧？ Fbi以后找我直接看窗户就可以来敲我家门好不好？但是我说实话我自己我也不认为能够出现这么离谱的数字，对不对？我现在我预估25,000~35,000好吧？ </p>
+<p>我说的这我认后面161,300万都是网友逼的，我也说那都是胡说八道，那都是胡说八道对不对？但是25,000<del>35,000这是我说的FBI，如果觉得我说25,000</del>35,000有问题可以来撬我家门，好不好？ </p>
+<p>你看看有美国有没有前程跟我关系今天是吧？我觉得应该不会，美国我们自媒体也是媒体，美国媒体是受到保护的，是没有问题的，对不对？所以我不认为他跟我打官司，我不认为他能赢，好不好？首先第二修正案就在那顶着，然后再加上我我自媒体也是媒体对吧？我们也对不对？所以我不认为他能怎么着。 </p>
+<p>这点来讲我觉得说不是我双重标准了，对不对？这是现实情况，标准就是不一样，我要在中国我现在要做在武汉，我能在这儿跟你这么说吗？我说妈1300万朝着美国流感走，对不对？慢慢打死你对不对？但是你看在美国它就是不一样，所以不是我双方标准，而是事实，它的两个标准就是不一样，对不对？所以你不能强迫我们按照中国的标准，如果按中国标准的话，我现在就跟李兰亮一样，就他把对把骨灰盒准备好了，对不对？但是还是要大骂美国cDC但是不能骂总统，我还是比较喜欢传统的。 </p>
+<p>作为一个川粉，我觉得这也不能怪川普，主要要怪一个怪cDC c DC在这次处理上真的是比较缓慢不够狠，但是主要的原因还是因为美国的特殊的国情，cDC它想狠也狠不起来，那么政府反正把副总统已经顶过去了，对吧？已经派了彭斯去统领，那么如果要骂，我觉得还是骂彭斯，我觉得要不下一届竞选的时候换个副总统是吧？读懂不能换，串口不能换。 </p>
+<p>不过在这上我要说，当然有的人说你看你就喜欢川普给川普洗地，但是咱们得说一下，我可不光给像川普洗涤，我当初也给习近平洗过地，说说中国的事的时候，我也说到习近平也不知道，对不对？ </p>
+<p>习近平我当时还说习近平看了我们的视频，才知道武汉真成那样了，对吧？ </p>
+<p>我1月20号的视频，习近平看了之后1月23号就封城了，我说在那之前习近平了解这个情况，但是不知道这么严重，我现在目前认为川普和彭斯也跟我前两天一样完全的轻忽了美国的情况，这两天各种情况上来之后，我相信川普和彭斯之后也会采取更果断的措施，对吧？包括昨天我还给习近平洗地了，对不对？我还说习近平现在不下令要彻查，他们就做了三天的全面的消毒工作，把现场都给摧毁了，对吧？我还说我估计习近平恐怕也不太了解情况。 </p>
+<p>昨天有一个网友还跟我说说这个情况，他说他认为习近平肯定知道这么大的事，习近平不可能不知道，反正我跟他说的观点我就这么说，我说是这样子，你觉得一定知道，比如说我举个例子，你在小学当班主任，你班里可能50 50多个学生或60个学生对不对？ </p>
+<p>以前我们班我记得56，反正差不多一般五五六十个学生对不对？你觉得班主任对每个学生都了如指掌，你觉得比如说学校里打架了，对不对？出了事了，当然那个人说要打架那种小事，班主任有可能说不清楚，但是如果假如一个学生把另外一个学生捅死的话，班主任就应该知道是怎么回事了，对不对？我个人认为就是班主任所了解的情况跟真实情况未必一样，这两个学生闹了矛盾打起来的时候知道吧？ </p>
+<p>他们两个比如说他说他拿我橡皮，他拿我的，肯定不是因为拿橡皮这件事，之前就有事，班里的学生打架斗殴，我跟你说很多的时候可能都是上个月，怎么回事，积怨已久，所以有的时候说不清楚，知道吧？到最后谁把谁打死了，怨气就更大了。你知道吧？有可能是因为女同学也有可能是因为学业各种问题都有可能，而最终来讲就说他自己愿不愿意承认都不好说，你懂吗？比如说俩一男一女发生就情杀，对不对？把这女的杀了，他可能都说这女的搞破鞋的，对不对？ </p>
+<p>这女的为什么搞破鞋？对吧？有时候我不愿意说，你就像王宝强和他老婆闹闹的问题，所有人都是说是马蓉的问题，王宝强好像是个玩人士，个圣人一样，一白璧无瑕不可能的，夫妻之间有问题，双方都有问题，各有各的责任，对不对？两个学生打起来也是你说都是死的活该，或者杀人是大魔头大坏蛋，说不清楚的班主任也搞不清楚，你懂我意思吧？所以习近平对于这个事我只能这么说，我觉得就是说到底是不是泄露的，我觉得习近平应该知道的，但是到底怎么泄露的，我说句实在的我觉得习近平也够呛。 </p>
+<p>还有一点我以前就说了，时政力可能都不知道，因为如果知道泄露了就不会泄露了，谁想让他泄露肯定就是一次事故，他不定是谁哪一次没洗干净手，或者出了什么事出了的或者呢又是尸首没处理好是吧？对吧？ </p>
+<p>三体咱深越深，所以我就好像比如说你老婆要把把钥匙丢了，对不对？你就说你肯定知道你是不是成心搁哪儿，你老婆说我知道不就找着了，对不对？他就找不着，所以他不知道忘了，你懂我意思吧？所以这个事他没法查，我估计时政力最后也搞不清楚下面是谁泄露的。我估计泄露的那个人可能自己都没意识到，所以你让习近平怎么知道，他没法不是我给习近平洗地，而是他就是这么个事，你懂吗？就是说而且比如说两个学生，一个学生把一个学生捅死了，校长是要担责任对不对？ </p>
+<p>但是校长说我他妈也日了狗了对不对？我哪知道他们俩为了一个女学生一个把一个捅死了，对不对？我也是真的是对吧？他就是这么个情况。所以真的不是说我给川普或习近平喜地目前就是这样子对不对？我觉得我不算太太双标，是不是？ </p>
+<p>中国的时候我也是一点一点数字上去的，习近平那边我刚开始也认为习近平了解的不是很，到现在我也认为心情了解的不是百%清楚，川普这边我觉得是一样的，我对两边态度差不多，之所以认为美国人少一点，我之前讲过，首先美国3亿人，中国14亿基数分母它就不一样，你就按照比例走，它也不会多少，而且中国我认为也不会超过50万，所以你偏跟我说美国1300万，我觉得你在扯淡，中国都没到的，中国都没有1300万对吧？中国不才几十万，美国怎么会超过1000，那不扯了好吧？ </p>
+<p>不管怎么着，我现在认为25,000~35,000，如果我后边我根据数字不同，我肯定还会有变化，对吧？因为中国那边武汉我也从10万15万、20万到40万一点点上来的美国这也是这样子，在初期的时候数字不准，大家都不准，也不是我的问题，对不对？那钟南山一开始数字也不准，对吧？所以就不要因为就攻击我好不好？ </p>
+<p>我又不是医学专家，我又不是cd而且不是我就是cDC的主任又怎么着？CDC的主任你看他清楚吗？我看他也是一一头包被骂的，他也是觉得日了狗了，你知道吗？都是这样子好不好？反正有了新的情况，我就给大家汇报好不好？目前我们就打着25,000~35,000走，好不好？ </p>
+<p>反正下周100万的市值就出来了。我个人认为如果真有100万就够了，因为中国不才不到50万，美国怎么会需要有100万人需要测试，或者是一个人需要多次用好几个试纸才能测出来，也有可能，不过我觉得按照美国的生产能力，如果他在两周之内能准备一一一百万个试纸的话，那么到下周还能最起码能在再增加50万，对，如果按照这种速度的话，我觉得一个月之后可能能够怎么也能提供200~300万份，我觉得就足够了。因为我真的不认为需要1300 1300万，好吧，1300万好不好？ </p>
+<p>这期先讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/06/20200306%E7%AC%AC1575%E6%9C%9F-%E7%BA%BD%E7%BA%A6%E4%BD%95%E6%81%AD%E7%A8%8B%E8%81%94%E5%90%88%E5%8C%BB%E7%96%97%E4%B8%AD%E5%BF%83%E5%8A%A9%E7%90%86%E5%8C%BB%E7%94%9F%E7%A1%AE%E8%AF%8A%EF%BC%8C4%E5%AE%B6%E8%AF%8A%E6%89%80%E5%85%B3%E4%BA%863%E5%AE%B6-KuOOA7I0M0w/" rel="prev" title="20200306第1575期-纽约何恭程联合医疗中心助理医生确诊，4家诊所关了3家">
+      <i class="fa fa-chevron-left"></i> 20200306第1575期-纽约何恭程联合医疗中心助理医生确诊，4家诊所关了3家
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/06/20200306%E7%AC%AC1578%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%87%BA%E7%8E%B0%E5%90%84%E7%A7%8D%E2%80%9C%E8%B7%AF%E5%80%92%E2%80%9D%E8%A1%97%E5%A4%B4-ViXn0_7hrhk/" rel="next" title="20200306第1578期-伊朗出现各种“路倒”街头">
+      20200306第1578期-伊朗出现各种“路倒”街头 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">903</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/06/20200306%E7%AC%AC1577%E6%9C%9F-%E7%BE%8E%E5%9B%BD310%E4%BE%8B%EF%BC%8C%E6%AD%BB%E4%BA%A114%E4%BE%8B-mMhsbSy33ik/";
+    this.page.identifier = "2020/03/06/20200306第1577期-美国310例，死亡14例-mMhsbSy33ik/";
+    this.page.title = "20200306第1577期-美国310例，死亡14例";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
