@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的3月2号星期一，纽约确诊了第一例，也终于有了，我们一直其实从1月份过年的时候，咱们跟亲戚一块吃饭，就我说纽约肯定得有，结果现在一直没有，到了3月份终于有了，但是还真的不是来自中国的，这是一个女性年龄在35岁到40岁之间，曾去伊朗旅行，去过伊朗应该是在伊朗那传的，说目前在曼哈顿家中隔离，这样我听到大家去马顿，要不就歇了，是吧？  然后是在纽约州的卫生厅的实验室进行检测确诊的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍">
+<meta property="og:url" content="https://stonejidb.github.io/2020/03/02/20200302%E7%AC%AC1532%E6%9C%9F-%E7%B4%90%E7%B4%84%E7%A2%BA%E8%A8%BA%E7%AC%AC%E4%B8%80%E4%BE%8B%EF%BC%8C%E7%BE%8E%E5%9C%8B%E8%8F%AF%E4%BA%BA%E4%B8%8D%E7%94%A8%E6%85%8C%EF%BC%8C%E7%BE%8E%E5%9C%8B%E6%AF%94%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%89%E5%85%A8%E5%8D%81%E5%80%8D-Jns-2FcIiqM/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的3月2号星期一，纽约确诊了第一例，也终于有了，我们一直其实从1月份过年的时候，咱们跟亲戚一块吃饭，就我说纽约肯定得有，结果现在一直没有，到了3月份终于有了，但是还真的不是来自中国的，这是一个女性年龄在35岁到40岁之间，曾去伊朗旅行，去过伊朗应该是在伊朗那传的，说目前在曼哈顿家中隔离，这样我听到大家去马顿，要不就歇了，是吧？  然后是在纽约州的卫生厅的实验室进行检测确诊的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-01T15:03:02.000Z">
+<meta property="article:modified_time" content="2020-07-15T15:19:50.341Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/03/02/20200302%E7%AC%AC1532%E6%9C%9F-%E7%B4%90%E7%B4%84%E7%A2%BA%E8%A8%BA%E7%AC%AC%E4%B8%80%E4%BE%8B%EF%BC%8C%E7%BE%8E%E5%9C%8B%E8%8F%AF%E4%BA%BA%E4%B8%8D%E7%94%A8%E6%85%8C%EF%BC%8C%E7%BE%8E%E5%9C%8B%E6%AF%94%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%89%E5%85%A8%E5%8D%81%E5%80%8D-Jns-2FcIiqM/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>造谣，洗地，跪舔</b> 行为大全<br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/03/02/20200302%E7%AC%AC1532%E6%9C%9F-%E7%B4%90%E7%B4%84%E7%A2%BA%E8%A8%BA%E7%AC%AC%E4%B8%80%E4%BE%8B%EF%BC%8C%E7%BE%8E%E5%9C%8B%E8%8F%AF%E4%BA%BA%E4%B8%8D%E7%94%A8%E6%85%8C%EF%BC%8C%E7%BE%8E%E5%9C%8B%E6%AF%94%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%89%E5%85%A8%E5%8D%81%E5%80%8D-Jns-2FcIiqM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-02 00:03:02" itemprop="dateCreated datePublished" datetime="2020-03-02T00:03:02+09:00">2020-03-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/03/02/20200302%E7%AC%AC1532%E6%9C%9F-%E7%B4%90%E7%B4%84%E7%A2%BA%E8%A8%BA%E7%AC%AC%E4%B8%80%E4%BE%8B%EF%BC%8C%E7%BE%8E%E5%9C%8B%E8%8F%AF%E4%BA%BA%E4%B8%8D%E7%94%A8%E6%85%8C%EF%BC%8C%E7%BE%8E%E5%9C%8B%E6%AF%94%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%89%E5%85%A8%E5%8D%81%E5%80%8D-Jns-2FcIiqM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/03/02/20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍-Jns-2FcIiqM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品里 <b>谣言</b> 的成分比较多，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的3月2号星期一，纽约确诊了第一例，也终于有了，我们一直其实从1月份过年的时候，咱们跟亲戚一块吃饭，就我说纽约肯定得有，结果现在一直没有，到了3月份终于有了，但是还真的不是来自中国的，这是一个女性年龄在35岁到40岁之间，曾去伊朗旅行，去过伊朗应该是在伊朗那传的，说目前在曼哈顿家中隔离，这样我听到大家去马顿，要不就歇了，是吧？ </p>
+<p>然后是在纽约州的卫生厅的实验室进行检测确诊的，今天早上起来的，还有一个网友跟我说，他在纽约这块当医生，他就特别不高兴，说纽约正好纽约市如果有了这一次的话要送到澳门，你去澳门你还对去挺远的这一次送货，他说估计要说好像要几天才能够出来这个结果，而且他说纽约这块反正他所在的医院，他认为前线的医生都有点没有把就是说太当真，他说他认为防护措施其实就是说如果他觉得防SARS还行，但是他现在因为也是在网上看，觉得好像这次新冠比以前的萨斯穿的力度高，他认为他们现在防护措施防SARS是没问题，防新官他有担心，但是你要明白就是说你知道这个医生如果是按照防线，就目前防习惯这个标准的话，医生出来多个市场老人市场你知道吗？那都是全副武装。 </p>
+<a id="more"></a>
+
+<p>对，有点就跟穿着太空服出来那种感觉的，你知道吗？如果穿那个的话，他也是不方便，之前我们说武汉在丁香园还有柳叶刀上发了文，他们不也说，说如果是全副武装的话，有时候要开的包装都特别难，给打针都不得劲，你知道吧？所以这也是个问题，不过我依然认为其实我觉得还好，你看今天3月2号了，我要没记错，川普是从2月2号开始就已经禁止所有从中国来的，不管你什么国籍的，对吧？全都不许入境了，只有美国公民还有直系亲属可以对吧？ </p>
+<p>你想已经一个月过去了对吧？我觉得该发的应该也差不多了，因为咱不管它隔离期应该是14天还是24天，现在不论如何，差不多三三十天不到30天，2月29号29天反正差不多29天过去了，我觉得该发的也都差不多了，说实话我真的认为美国华人是不用慌。 </p>
+<p>今天早上起来还有一个咱们在外周的一个留学生也是说，问我说他是不是该开始囤粮了，他说他的同学们都在囤粮，说押钞的东西好多架子都空了，我跟他说我说美国不会闹粮荒，但是我说的亚超会这个没办法，什么叫亚超？就是亚洲超市，亚洲超市在外，亚超一般也都是中国人开的，他们反正我不知道其他地方。纽约周边咱们以前不也在纽约周边的，上周咱们小丫超也都是从纽约进货，现在纽约的主要是纽约的亚朝，他们都被中国人买光了，所以他们你想就是说他是二手的，他来进货对吧？这的货都没有了对吧？ </p>
+<p>所以我觉得纽约周边的亚超有可能闹量化，但是我跟你说，如果咱们有咱观众里有很多在外州留学留学生，我说我不知道你们当地有没有歪个门锁，我们那地方有个外地的外壳S对weGM w e GM a n s麦格本斯里边它有卖一种日本的k开头的一种日本米，其实很好吃对吧？ </p>
+<p>我们以前在那的时候其实反而不去驾照买，不去亚超买米，反而去迈克每次买米，对不对？觉得外国miss的米反正我觉得反而更好吃一点，是老外的超市，所以我觉得老外的超市反而不会闹两口，还有如果你在外周的话，我其实真的不用太担心，我觉得美国两个地儿要担心，一个是加州，一个是纽约，这两个地儿的人口密度太大，其他的还有人问我说西雅图我觉得西雅图反正是中国人也是多一点，但是它真的是地广人稀。 </p>
+<p>因为以前我有一个朋友在温哥华，他们在温哥华就经常有时候跑西雅图买东西去，离的比较近，就开车过去开几个小时车，但是他说下图那边物价比这边便宜多了，然后他们有人还去西雅图炒房子，然后都是血本无归。然后说因为温哥华房价太高了，就是说西雅图环境也不错，就说然后房子又便宜又好，就觉得去西雅图买，然后觉得我们这么多中国人过去西雅图买房子，西雅图房价肯定被我们炒起来了，对不对？这样到时候我们还能挣一笔，后来都血本无归，因为西雅图那儿实在是地广人稀，这房子怎么吵都吵不起来，太多了供不应求。 </p>
+<p>所以在这种情况之下，我觉得西雅图那边其实不用太担心，因为人口密度太小了，主要要担心的也就是一个纽约，一个洛杉矶，实际上就所谓的纽约州，其实也就纽约市加州那边也就加州当然了洛杉矶旧金山密度有点大，你们就加州纽约其他地还好。 </p>
+<p>然后还有一点我觉得说句实在的，美国华人慌什么慌，加拿大华人还没慌，是不是？大家这么说有点不厚道，但是事实是如此，对不对？我今天跟一个加州的网友聊天，我也说我说这说句实在的，我觉得加拿大比美国危险10倍，我一点都不开玩笑，美国川普2月2号开始就全封了，我们都封了一个月了，你加拿大什么时候开始封不到，现在还没开始封，对不对？而且不光是从中国来的，从伊朗来的，好多都去加加拿大了，对不对？ </p>
+<p>美国这边虽然这个是一两个，但这块这个不知道他怎么回事，他应该是特殊情况，我估计这个女的应该有美国公民或者美国绿卡，因为从川普上任以来，对伊朗的签证基本上就属于一个半瘫痪状态，对吧？当时川普要给伊朗还有其他几个穆斯林国家拒签的时候，最后民主党他们一直告到最高法院，所以我觉得这个女的从伊朗旅行回来的话，这个女的应该是美国公民或者是绿卡，对他应该是记者去对他应该他去那6，但是关于它的具体信息，因为美国讲人权是不能够曝光的，所以到现在我们也不知道他到底是做什么工作或者干什么的，但是就根据他这个情况，我分析他肯定是美国公民，他不会拿签证回来的。 </p>
+<p>这个东西上行下效，美国目前就是这样，川普上台之后，实际上他没有说要管控签证，但是我觉得咱们中国人如果你经常往返美国，中美的话，让你有朋友你要去签证的话，其实你会发现自创普上任以来，美国的签证是玩命的在收缩，咱不说对穆斯林国家，就对中国也是奥巴马的时候，我们那个年代就是说咱们都好多同学都是刘先生很容易奥巴马时代这都迁过来了，一到川普的时代你会变得非常的困难，对吧？就是非常艰难，而且旅游签证也难得很多对吧？ </p>
+<p>就我们认识的有的有那大土豪家里那么挣钱对吧？还有亲戚迁不过来对不对？那么多钱都没迁过来，你就想他已经管控到一个什么程度了，对吧？所以相对来讲，美国比加拿大我觉得要安全的多了，而且我今天跟网友聊天我也说，我说尤其是在面对像这种疫情这种情况的时候，我更加的就普瑞弗尔像川普这样的总统，就更喜欢像川普这样的总统，川普跟特鲁多比起来，如果闹翻译了的话，我更信任川普。 </p>
+<p>所以我跟他说我说不用担心，他也很担心他在加州也很担心美国，我觉得完完全全不用担心，因为我觉得只要有川普在，当然了我也是川汾，但是就是川普这么怎么说就这么混蛋你知道吧？你不用太担心，一旦美国出现问题，他觉得有必要的话，他能够把行政的措施挤压到就是说在一个民主国家才能挤压到一个极限，就是说不服不服你去化最高法院告我去，我也先把它压下去再说，对不对？所以相对于特鲁多那种白左有点圣母婊那种来讲，我相信串口是能够他只要需要的话，他需要耍混蛋的时候，他一定能够混蛋的起来，这点你可以放心，所以美国现在来讲比较安全。 </p>
+<p>外周的留学生如果你觉得有必要，你担心压超过两天没有你想吃的，中国的那些小饼干小零食的，你可以去买一点，这个有可能。但是凉风是不可能的，你毕竟还有沃尔玛，还有歪闷死在沃尔玛有卖米的吗？啥咱们还真没看过，我没去沃尔玛买过米我们都去歪歪吗？米好吃，沃尔玛好像也有米，但是他的米好像不如外国妹子的好，反正但是我觉得沃尔玛和埃文斯绝对不会闹粮荒的，就是吃了你还有最后实在不行了就去沃尔玛。6块钱6块钱一个基金，还有卡斯扣，对那种烤鸡虽然是不好吃，但是反正我跟你说你就吃那鸡也饿不死，你就美国卖，就美国卖那鸡，我跟你说，你就买不行，就沃尔玛买点炸鸡，那个炸鸡我觉得最后不会慌的，那肯定不会。 </p>
+<p>你放心，但我觉得妈你吃醋了那东西一点那东西就外面皮好吃，里边肉不好吃，我刚来美国的时候，刚才新鲜吃头一两个还行，后边就没法吃了，你吃过这鸡吗？没有，你说不好吃，我一直没让你吃过，你来的晚，我后来因为我对那鸡实在是深恶痛绝了，我刚开始在外头吃了好好一阵鸡，就刚刚开始，那时候也不愿意做饭，买一个就往那皮外面皮有点味吃了，然后剩下肉丝不丝不弄点什么东西炒一炒吃，反正就把我吃真的是吃伤了，但是当两晃的时候你也就别挑了是吧？ </p>
+<p>不过我还是那句话，美国不会闹粮荒的，亚超有可能我不敢给亚超打打打包票，因为亚洲就没跟中国人挂钩，一跟中国人挂钩，把什么事都不好说，但是美国就不会闹凉风的，反正最后可能有东西吃。 </p>
+<p>美国就这么个情况，然后加拿大的华人听了之后不知道你们焦虑不焦虑，反正我有点替你们焦虑。不好意思，咱们其实加拿大观众很多，但是真的怎么办？你们自己选了特别多的总统，我真的不认为特鲁多能连任。去年特务多今年连着就我我都惊呆了，我真的我惊呆了。因为我三大预言之一，我就说川普上来了之后，我觉得整个世界会随着串播往右转，现在来讲真正实现的也就是英国。 </p>
+<p>英国张森真的有点像川普是完全右转，欧洲那边我现在还没有看到有像川普这样的，加拿大我本来以为他们去年回来一个靠谱一点的结果还是这样，但是我说句实在的，咱们看这一次疫情，如果加拿大混过去就完事，这次疫情如果加拿大真的有个小爆发的话，我觉得我的天我觉得你们下次真的要慎重，再考虑的选一个特有多这样的是吧？我真的认为加拿大应该考虑向右转，好吧？ </p>
+<p>这期先讲到这里好吗？谢谢大家。谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/02/20200302%E7%AC%AC1531%E6%9C%9F-%E8%B4%BA%E6%99%93%E9%BE%99%EF%BC%9A%E5%AD%99%E6%9D%A8%E5%BA%94%E8%AF%A5%E8%A2%AB%E7%A6%81%E8%B5%9B%EF%BC%8C%E6%B2%A1%E6%9C%89%E4%BB%BB%E4%BD%95%E5%86%A4%E6%83%85-nHhwwaA-k7Q/" rel="prev" title="20200302第1531期-贺晓龙：孙杨应该被禁赛，没有任何冤情">
+      <i class="fa fa-chevron-left"></i> 20200302第1531期-贺晓龙：孙杨应该被禁赛，没有任何冤情
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/03/02/20200302%E7%AC%AC1533%E6%9C%9F-%E6%8B%9C%E7%99%BB%E8%B5%A2%E5%BE%97%E5%8D%97%E5%8D%A1%E7%BD%97%E6%9D%A5%E7%BA%B3%E5%B7%9E%E7%9A%84%E6%B0%91%E4%B8%BB%E5%85%9A%E5%88%9D%E9%80%89%E8%AF%B4%E6%98%8E%E6%B0%91%E4%B8%BB%E5%85%9A%E5%86%85%E7%96%AF%E5%AD%90%E5%A4%AA%E5%A4%9A-W1wvs8lYz1k/" rel="next" title="20200302第1533期-拜登赢得南卡罗来纳州的民主党初选说明民主党内疯子太多">
+      20200302第1533期-拜登赢得南卡罗来纳州的民主党初选说明民主党内疯子太多 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中包含海量不可证实的小道消息和意淫，俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">943</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/03/02/20200302%E7%AC%AC1532%E6%9C%9F-%E7%B4%90%E7%B4%84%E7%A2%BA%E8%A8%BA%E7%AC%AC%E4%B8%80%E4%BE%8B%EF%BC%8C%E7%BE%8E%E5%9C%8B%E8%8F%AF%E4%BA%BA%E4%B8%8D%E7%94%A8%E6%85%8C%EF%BC%8C%E7%BE%8E%E5%9C%8B%E6%AF%94%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%AE%89%E5%85%A8%E5%8D%81%E5%80%8D-Jns-2FcIiqM/";
+    this.page.identifier = "2020/03/02/20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍-Jns-2FcIiqM/";
+    this.page.title = "20200302第1532期-紐約確診第一例，美國華人不用慌，美國比加拿大安全十倍";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
