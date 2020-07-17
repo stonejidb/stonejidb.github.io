@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月17号星期五，美国最近确诊一直在增加，从刚开始突破了4万每天，确诊的时候还到5万6万，现在好像已经到了7万多了是吧？但是在这种情况之下，美国的病死率却没有怎么太增加，虽然确诊人数一直在增加，为什么？我们总结了一下经验教训，反正也看了一下美国这边的一些介绍，发现很重要来讲还是他的医生有了一些改进，我觉得他们总结了一些在面对新官的时候一些经验教训，我觉得给全世界其他地方都">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200717第2570期-美国确诊增加，但病死率不增加的原因">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/17/20200717%E7%AC%AC2570%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E5%A2%9E%E5%8A%A0%EF%BC%8C%E4%BD%86%E7%97%85%E6%AD%BB%E7%8E%87%E4%B8%8D%E5%A2%9E%E5%8A%A0%E7%9A%84%E5%8E%9F%E5%9B%A0-7BcALRNnVgA/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月17号星期五，美国最近确诊一直在增加，从刚开始突破了4万每天，确诊的时候还到5万6万，现在好像已经到了7万多了是吧？但是在这种情况之下，美国的病死率却没有怎么太增加，虽然确诊人数一直在增加，为什么？我们总结了一下经验教训，反正也看了一下美国这边的一些介绍，发现很重要来讲还是他的医生有了一些改进，我觉得他们总结了一些在面对新官的时候一些经验教训，我觉得给全世界其他地方都">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-17T02:07:00.000Z">
+<meta property="article:modified_time" content="2020-07-17T13:26:23.458Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/17/20200717%E7%AC%AC2570%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E5%A2%9E%E5%8A%A0%EF%BC%8C%E4%BD%86%E7%97%85%E6%AD%BB%E7%8E%87%E4%B8%8D%E5%A2%9E%E5%8A%A0%E7%9A%84%E5%8E%9F%E5%9B%A0-7BcALRNnVgA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200717第2570期-美国确诊增加，但病死率不增加的原因 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/17/20200717%E7%AC%AC2570%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E5%A2%9E%E5%8A%A0%EF%BC%8C%E4%BD%86%E7%97%85%E6%AD%BB%E7%8E%87%E4%B8%8D%E5%A2%9E%E5%8A%A0%E7%9A%84%E5%8E%9F%E5%9B%A0-7BcALRNnVgA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200717第2570期-美国确诊增加，但病死率不增加的原因
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-17 11:07:00" itemprop="dateCreated datePublished" datetime="2020-07-17T11:07:00+09:00">2020-07-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/17/20200717%E7%AC%AC2570%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E5%A2%9E%E5%8A%A0%EF%BC%8C%E4%BD%86%E7%97%85%E6%AD%BB%E7%8E%87%E4%B8%8D%E5%A2%9E%E5%8A%A0%E7%9A%84%E5%8E%9F%E5%9B%A0-7BcALRNnVgA/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/17/20200717第2570期-美国确诊增加，但病死率不增加的原因-7BcALRNnVgA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月17号星期五，美国最近确诊一直在增加，从刚开始突破了4万每天，确诊的时候还到5万6万，现在好像已经到了7万多了是吧？但是在这种情况之下，美国的病死率却没有怎么太增加，虽然确诊人数一直在增加，为什么？我们总结了一下经验教训，反正也看了一下美国这边的一些介绍，发现很重要来讲还是他的医生有了一些改进，我觉得他们总结了一些在面对新官的时候一些经验教训，我觉得给全世界其他地方都带来了一些借鉴作用。 </p>
+<p>当然了首先也得承认过去刚开始被感染到了各个年龄段都有，所以有很多老年人可能就去世了，死的比较多，他主要的到死的就是60 65岁以上的，现在老年人知道保护自己了，对吧？一般来讲现在得的都是这些不知好歹的人，年轻人对吧？这个也是原因之一，但是当然了医生开始学会如何去应对这个东西也很重要。我们来看一看，当然了有一些医院和医生现在也在就是说反省，觉得其实如果在病毒来的初期的时候，对新冠的疫情和病毒有更多的了解的话，其实当时有很多人现在看起来可能死不了。 </p>
+<a id="more"></a>
+
+<p>我们看看他说首先就是说心梗，肺炎它心梗它导致了肺炎对吧？肺炎导致病死，因此认为呼吸机是救命的设备，但是现在的医生们认识到病毒它导致肺部和身体的很多的血管的凝结，从而导致氧合减少，因此紧靠呼吸机是不行的。我们之前说过在纽约他们最后做了调查，发现上了呼吸机的80%人都死掉了，就是说有是存在一些问题的对吧？那么说仅靠呼吸机的不行，必须使用防止凝血的药物，例如阿司匹林和肝素，这点非常重要，配合呼吸机一起使用。 </p>
+<p>第二血氧饱和度降到90%，一般情况下就会感到呼吸困难。但是有一些心梗病人很奇怪，他们没有反应，就是说徐阳宝和甚至下降到了70%，他自己还没有意识到，就是说叫什么叫无症状缺氧，就是说没有感觉出来自己缺氧了，所以往往在去医院的途中倒地直接就死过去了。 </p>
+<p>就是说武汉初期的时候，还有后来在伊朗我们都看到有这种情况，有一些人骑着骑着车或者往医院走，在路上走着走着摸不清，一躺就躺地上了，然后就死了。学养建造已经非常低了，就在那之前他自己没有特别明显的反应和意识，没有意识到这些。当时我们就不明白这人为什么，你还记得我们武汉初期的时候，我们看到了很多，他当时那些闭路电视录的都是骑着骑着车突然倒地了，走路突然倒地了，突然倒地就给猝死掉了，现在看来这个情况就是无症状缺氧导致的，血氧饱和了已经降到非常低的，但是自己竟然没有任何的反应，不自知。所以现在就认为即便没有症状，也要不断检查自己的血氧饱和度，一旦发现低于93%就要去医院。 </p>
+<p>实际上在1月20号的时候，当时我们发了一个我们得到的中国内部的文件里边，有人就说到了，一定要配一个血氧的检测仪，那么美国在安门电厂差不多能够就是说卖过三四十块钱就有血糖、血压、血氧的检测仪。我这样一会我发一个m字的链接给你们，也不是说买，但是你看一眼就让你知道他在美国要说名字大概几长什么样子的，然后有的很贵的，其实没有必要三四十块的那种就很好了，它够用就好。 </p>
+<p>因为我可以在我视频下方发一个链接，感兴趣的可以自己去看一下是什么东西。也就是说实际上如果你觉得你是高危险人群的话，其实你应该背一个因为有可能你自己不自知，你的血氧掉下去了，你还不知道，存在的这种情况。 </p>
+<p>第三当然就是这个药了，现在瑞德西北羟氯喹等等的出现，虽然众说纷纭，但是大家还是在抢这些药，这些药多多少少都能够就是说帮助一些反正提供一些帮助，对吧？各种这个实验都表明了这些药反正是有帮助，你说是一个灵丹妙药，吃下去就不死了，是谈不上，但是的的确确对于减少康复所需要的时间，减少死亡率多多少少都有一些帮助。那么第4个就是致死原因，有的时候往往不是病毒，实际上你并不是被心脏病毒弄死的，而是被你自己的自身免疫系统搞死的。你自身免疫系统的面对心脏病同时常产生的反应非常的强烈，这个东西不仅杀死了病毒，也在杀死你自己，这种时候就要用这种肋骨醇之类的这种有点激素类的这种药物，要防止细胞因子的风暴。 </p>
+<p>最后一个还是关于呼吸机的使用，就是说正确使用呼吸机是非常重要的。 </p>
+<p>在新冠初期的时候认为有很多人现在反省，当时因为有很多人实际上不应该使用呼吸机，有时有的是被呼吸机给吹死的，后来很多像纽约的医生都在思考，有些病人要是能不上呼吸机，先不上呼吸机，有一些病人就老说你不给我上呼吸机我死，但是有些时候医生不给你上的是有他的原因的，以前我们有一个中国的蔡敏，他不也是得了之后，他就是希望大夫给他上呼吸机，大夫说你先别上，他说你不上呼吸机就死了，就明显也没死。说是就说这意思对不对？ </p>
+<p>现在发现其实上了呼吸机不见得是好事，有很多上了呼吸机80%都死掉了，所以当时要上了呼吸机搞不好他就没有命了，所以当时大夫没给他上，没准还救了他一命，所以这东西一定要小心，呼吸机现在刚开始的时候对美国的呼吸机非常的迷信，觉得必须得有呼吸机，呼吸机要足够我要几万台，后来发现的不对，这个情况不是那么回事，也在及时的去反省。 </p>
+<p>我觉得这些东西我觉得反正纽约他们这边一些医生，美国的医生积攒的一些经验教训，反正提供给大家，我觉得全世界各地都可以，不一定偏要照他这个去做，但是可以思考一下他有没有一些借鉴作用。好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/16/20200716%E7%AC%AC2568%E6%9C%9F-%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%8F%91%E8%87%AA%E5%B7%B1%E5%AE%B6%E5%B0%8F%E7%8B%97%E7%8E%A9%E2%80%9C%E5%B0%8F%E7%86%8A%E7%BB%B4%E5%B0%BC%E2%80%9D%E7%9A%84%E7%85%A7%E7%89%87%EF%BC%8C%E5%83%8F%E5%B0%8F%E5%AD%A9%E5%AD%90%E5%90%B5%E6%9E%B6%E6%9C%89%E7%82%B9%E6%97%A0%E8%81%8A-Jqv5PCPndng/" rel="prev" title="20200716第2568期-蓬佩奥发自己家小狗玩“小熊维尼”的照片，像小孩子吵架有点无聊">
+      <i class="fa fa-chevron-left"></i> 20200716第2568期-蓬佩奥发自己家小狗玩“小熊维尼”的照片，像小孩子吵架有点无聊
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/17/20200717%E7%AC%AC2571%E6%9C%9F-%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90%E5%B0%81%E5%9F%8E-JqX5ozG9fbI/" rel="next" title="20200717第2571期-乌鲁木齐封城">
+      20200717第2571期-乌鲁木齐封城 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">992</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/17/20200717%E7%AC%AC2570%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E7%A1%AE%E8%AF%8A%E5%A2%9E%E5%8A%A0%EF%BC%8C%E4%BD%86%E7%97%85%E6%AD%BB%E7%8E%87%E4%B8%8D%E5%A2%9E%E5%8A%A0%E7%9A%84%E5%8E%9F%E5%9B%A0-7BcALRNnVgA/";
+    this.page.identifier = "2020/07/17/20200717第2570期-美国确诊增加，但病死率不增加的原因-7BcALRNnVgA/";
+    this.page.title = "20200717第2570期-美国确诊增加，但病死率不增加的原因";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

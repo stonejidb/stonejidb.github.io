@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月25号，星期二，伊朗的卫生部的副部长确诊了新冠病毒，也就是武汉肺炎，他叫哈里奇。美联社当时报道了说美联社得到消息，从2月13号至今，伊朗的圣城库姆已经有50人死于了新冠状肺炎的病毒，那么伊朗卫生部的副部长在前一天还否认，他说库姆的死者人数如果是美国媒体报道的1&#x2F;4我就辞职，你不说50个人1&#x2F;4的话就12个，只要达到12个我就辞职。  美联社以我觉得美联社应该也不是这种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200225第1478期-伊朗卫生部副部长中招">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/25/20200225%E7%AC%AC1478%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%8D%AB%E7%94%9F%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E4%B8%AD%E6%8B%9B-jtjKUmrMlIY/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月25号，星期二，伊朗的卫生部的副部长确诊了新冠病毒，也就是武汉肺炎，他叫哈里奇。美联社当时报道了说美联社得到消息，从2月13号至今，伊朗的圣城库姆已经有50人死于了新冠状肺炎的病毒，那么伊朗卫生部的副部长在前一天还否认，他说库姆的死者人数如果是美国媒体报道的1&#x2F;4我就辞职，你不说50个人1&#x2F;4的话就12个，只要达到12个我就辞职。  美联社以我觉得美联社应该也不是这种">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-24T15:07:08.000Z">
+<meta property="article:modified_time" content="2020-07-17T13:26:23.305Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/25/20200225%E7%AC%AC1478%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%8D%AB%E7%94%9F%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E4%B8%AD%E6%8B%9B-jtjKUmrMlIY/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200225第1478期-伊朗卫生部副部长中招 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/25/20200225%E7%AC%AC1478%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%8D%AB%E7%94%9F%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E4%B8%AD%E6%8B%9B-jtjKUmrMlIY/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200225第1478期-伊朗卫生部副部长中招
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-25 00:07:08" itemprop="dateCreated datePublished" datetime="2020-02-25T00:07:08+09:00">2020-02-25</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/25/20200225%E7%AC%AC1478%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%8D%AB%E7%94%9F%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E4%B8%AD%E6%8B%9B-jtjKUmrMlIY/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/25/20200225第1478期-伊朗卫生部副部长中招-jtjKUmrMlIY/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月25号，星期二，伊朗的卫生部的副部长确诊了新冠病毒，也就是武汉肺炎，他叫哈里奇。美联社当时报道了说美联社得到消息，从2月13号至今，伊朗的圣城库姆已经有50人死于了新冠状肺炎的病毒，那么伊朗卫生部的副部长在前一天还否认，他说库姆的死者人数如果是美国媒体报道的1/4我就辞职，你不说50个人1/4的话就12个，只要达到12个我就辞职。 </p>
+<p>美联社以我觉得美联社应该也不是这种随便瞎发的，对吧？他既然发了的话，我觉得也有一定的道理。 </p>
+<a id="more"></a>
+
+<p>美美联社说他们的消息来自于哪？来自于伊尔纳的通讯社，说伊尔通讯社采访了父母当地的一位议员，这位议员叫艾哈迈德阿米里亚巴迪，法拉哈尼，很长的名字是库姆当地的这个议员说库姆已经有超过250人被隔离了，有50个人的死亡，这50个人最早的死亡是2月13号，有人就得这个病就死亡了，为什么已经在伊朗？其实应该他认为已经传了有一段时间了，对吧？到最后发病死亡到潜伏，那算起来应该1月份实际上就应该得病了，对吧？就已经被传染上了。 </p>
+<p>他们说这个的意思是什么呢？就是说如果从1月份就已经发生了社区传染的话，那么到现在你想这一个传了多少了对吧？它主要是这个意思，伊朗卫生部副部长里奇就断然否认了，就说如果是这样我就辞职，结果话音刚落，第二天他自己被确诊了新冠病毒，说说实话我看到这个消息之后，我现在深深的被伊朗捏了一把汗，虽然韩国和意大利闹得也比较厉害，但他们的政府官员尤其高级官员保护得还不错，中国这边也还是你要明白一个卫生部的副部长什么概念，就是说他用的防护措施全部都是最好的，对吧？它应该已经是最小心的了，而且在这种特殊时期，一个卫生部的副部长是肯定要跟部长开会的，部长很有可能就会跟伊朗的最高领导层去汇报，对吧？ </p>
+<p>一个副部长如果被确诊了的话，对吧？那么它前面有没有潜伏期？在潜伏期里他有没有跟其他的高官有直接或间接的接触，那会让你就会想你会发生一个联想，就是说在伊朗的最高领导层内，是不是也有人现在就是说处于潜伏期，而且就说明什么？说明伊朗的整个的卫生条件非常的糟糕，说明也就是说连副部长采取的防护措施都不到位，对吧？要这样子的话，如果卫生部副部长的防护措施都不到位的话，下面就更别提了，设备就更糟糕，如果它能被传染的话，下边任何人都有可能了。 </p>
+<p>他级别有点高，就是说他一旦被传染的时候，就说明什么？上面的任何人也都甚至有可能到梅内伊都有可能。因为他跟哈梅内伊之间，也许他没有直接见到哈梅内伊的机会，但是肯定会有间接的中间人能够见到梅内伊的在这种时期肯定会跟梅内伊去报告，对吧？也就是说一两个卫生部副部长一旦被确诊了之后，网上一直到梅内伊都有可能，往下的话那就别提了，每一个公民都危险，都是不安全的，对吧？反正我们为伊朗祷告，因为伊朗的这么多年被美国制裁，导致它的整个的医疗条件非常不好，如果在伊朗大面积爆发的话，恐怕是个人间灾难，因为它的整体的经济发展的情况，医疗条件跟中国都没法比，我觉得他的水平可能我觉得可能比北朝鲜好点都有限。 </p>
+<p>但是梅内伊在这一次的事件上处理，虽然他年纪很大了，但是竟然处理的还不如北朝鲜的一个80后的小伙子，是不是处理得真不好，这次当时我说北朝鲜算处理的很好的，当然很多人说北朝鲜也有过确认，当然北方奖离中国太近了，病毒又这么厉害，但是北朝鲜到现在就是说还能维持在目前这个阶段，我觉得北朝鲜算处理的很好。 </p>
+<p>伊朗在这次事件里处理的看来是真的是不行，我不知道伊朗怎么回事，作为一个体制体制近似的也是这种独裁专制的国家，我觉得它应该跟中国有那种理解，有那种心灵的共鸣才对，他应该很清楚的，对，你看北朝鲜的金正恩就是他撇一眼就知道中国怎么回事，对不对？虽然你说什么他根本就不信，对不对？它直接咔就把就给你关了对不对？而且就是说以至于到什么程度，就是说北朝鲜现在叛逃了，以前叛逃的不都抓回来吗？现在叛逃了叛逃我不要了，留给你了，我不要了，兄弟都是你的，跑了就滚，再也别回来，是吧？ </p>
+<p>所以我觉得梅内伊真的有点老了，包括之前处理苏莱曼尼的事件处理的也是很有问题，处理整个就是一个就是一个笑话，就是一个笑一个笑柄，对于全世界来讲，我觉得现在大家就真的是在看伊朗的笑话了，觉得阿弥陀佛真的是老了有点老糊涂了，在苏丹曼尼事件的时候处理的也是非常的就是糟糕，真的就是打肿脸充胖子那种。然后这一次面对武汉病毒也是没有采取一个坚决的措施，我觉得在这种情况之下，其实某种程度上我认为武汉肺炎很有可能是压垮伊朗的最后一根稻草。 </p>
+<p>我在这儿我为梅内伊以他的政权捏一把汗，我觉得就很有可能这个就要压垮他执政几十年了。如果是我的话，我如果是他的就是说算是阁员或者是参谋人员的话，其实现在我会建议梅内伊考虑就是说辞职或者退休，当然他是宗教领袖，宗教领袖，宗教领袖也是可以退休，我觉得因为教皇还有退休这个概念，叫房有个年纪特大了，就退休换一任新的教皇对不对？所以我觉得梅内伊也可以考虑，就是说现在退下来换一个人换一个相对来讲自己比较放心的一个人，我觉得可以缓冲矛盾，然后可以保自己一面。 </p>
+<p>如果现在再不下来，再坚持下去的话，我觉得我认为他最后很有可能是萨达姆或者卡扎菲的下场。好吧，反正我去给他出主意，能不能听得懂就是他的问题了是吧？不好好学中文就是吃亏，你知道吗？掌握一门外语是多么的重要。好吧，这期讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/25/20200225%E7%AC%AC1477%E6%9C%9F-%E9%93%9C%E9%94%A3%E6%B9%BE%E4%B9%A6%E5%BA%97%E6%A1%82%E6%95%8F%E6%B5%B7%E7%9A%84%E5%86%85%E5%B9%95-meODWUtbEkY/" rel="prev" title="20200225第1477期-铜锣湾书店桂敏海的内幕">
+      <i class="fa fa-chevron-left"></i> 20200225第1477期-铜锣湾书店桂敏海的内幕
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/25/20200225%E7%AC%AC1479%E6%9C%9F-28%E5%B9%B4%E5%89%8D%E7%9A%84%E5%8D%97%E5%8C%BB%E5%A4%A7%E8%BF%B7%E6%A1%88%E5%91%8A%E7%A0%B4%EF%BC%8C%E9%99%84%E5%B8%A6%E5%88%81%E7%88%B1%E9%9D%92%E6%A1%88%E5%92%8C%E7%99%BD%E9%93%B6%E6%A1%88-vLoJ6lfJjKs/" rel="next" title="20200225第1479期-28年前的南医大迷案告破，附带刁爱青案和白银案">
+      20200225第1479期-28年前的南医大迷案告破，附带刁爱青案和白银案 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">992</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/25/20200225%E7%AC%AC1478%E6%9C%9F-%E4%BC%8A%E6%9C%97%E5%8D%AB%E7%94%9F%E9%83%A8%E5%89%AF%E9%83%A8%E9%95%BF%E4%B8%AD%E6%8B%9B-jtjKUmrMlIY/";
+    this.page.identifier = "2020/02/25/20200225第1478期-伊朗卫生部副部长中招-jtjKUmrMlIY/";
+    this.page.title = "20200225第1478期-伊朗卫生部副部长中招";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
