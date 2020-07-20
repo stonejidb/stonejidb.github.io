@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月17号星期一，我们这么说刚刚发生了一个事实，我们来陈述这个事实。有人用陈全椒的名义实名在微博上举报王研一王延一是武汉病病毒所的所长，对吧？陈全椒是他们的研究员，陈全椒不知道大家知道不知道，昨天的时候新京报采访了两个人，一个是陈全椒，一个是时正立。问的关于王艳玲的事，不知道是谁说的王艳玲的事，黄艳玲的事不知道是谁，不知道为什么心情不好去问他们黄艳玲的事。开玩笑，我们知道">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E6%9C%89%E4%BA%BA%E4%BB%A5%E9%99%88%E5%85%A8%E5%A8%87%E7%9A%84%E5%90%8D%E4%B9%89%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E7%8E%8B%E5%BB%B6%E8%BD%B6%E8%A2%AB%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%A0%E5%B8%96%E5%92%8C%E8%BE%9F%E8%B0%A3-gX9KxDKBBH0/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月17号星期一，我们这么说刚刚发生了一个事实，我们来陈述这个事实。有人用陈全椒的名义实名在微博上举报王研一王延一是武汉病病毒所的所长，对吧？陈全椒是他们的研究员，陈全椒不知道大家知道不知道，昨天的时候新京报采访了两个人，一个是陈全椒，一个是时正立。问的关于王艳玲的事，不知道是谁说的王艳玲的事，黄艳玲的事不知道是谁，不知道为什么心情不好去问他们黄艳玲的事。开玩笑，我们知道">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-16T15:00:07.000Z">
+<meta property="article:modified_time" content="2020-07-20T16:25:00.709Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E6%9C%89%E4%BA%BA%E4%BB%A5%E9%99%88%E5%85%A8%E5%A8%87%E7%9A%84%E5%90%8D%E4%B9%89%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E7%8E%8B%E5%BB%B6%E8%BD%B6%E8%A2%AB%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%A0%E5%B8%96%E5%92%8C%E8%BE%9F%E8%B0%A3-gX9KxDKBBH0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E6%9C%89%E4%BA%BA%E4%BB%A5%E9%99%88%E5%85%A8%E5%A8%87%E7%9A%84%E5%90%8D%E4%B9%89%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E7%8E%8B%E5%BB%B6%E8%BD%B6%E8%A2%AB%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%A0%E5%B8%96%E5%92%8C%E8%BE%9F%E8%B0%A3-gX9KxDKBBH0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 00:00:07" itemprop="dateCreated datePublished" datetime="2020-02-17T00:00:07+09:00">2020-02-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E6%9C%89%E4%BA%BA%E4%BB%A5%E9%99%88%E5%85%A8%E5%A8%87%E7%9A%84%E5%90%8D%E4%B9%89%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E7%8E%8B%E5%BB%B6%E8%BD%B6%E8%A2%AB%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%A0%E5%B8%96%E5%92%8C%E8%BE%9F%E8%B0%A3-gX9KxDKBBH0/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/17/20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣-gX9KxDKBBH0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月17号星期一，我们这么说刚刚发生了一个事实，我们来陈述这个事实。有人用陈全椒的名义实名在微博上举报王研一王延一是武汉病病毒所的所长，对吧？陈全椒是他们的研究员，陈全椒不知道大家知道不知道，昨天的时候新京报采访了两个人，一个是陈全椒，一个是时正立。问的关于王艳玲的事，不知道是谁说的王艳玲的事，黄艳玲的事不知道是谁，不知道为什么心情不好去问他们黄艳玲的事。开玩笑，我们知道是谁，开个玩笑，我这还不好笑，自己开玩笑不太好笑。 </p>
+<p>Upon that。其中有一个就是陈全椒，那么陈全椒说明陈全椒和徐正立在武汉病毒实验所，还是就是说算比较重要的人物对吧？所以向他们两个去咨询关于黄艳玲的事情。 </p>
+<a id="more"></a>
+
+<p>那么今天就有人用陈全椒的名义，我们不知道是不是陈教，我们不知道，这是微博的截图好吧？他们用陈先娇说大家好，我是什么武汉明研究员陈娇，身份证号什么的就不给大家看了，咱们也不知道是不是真的，是不是也有可能是假的。然后你看这是一小之前对吧？玩儿够，然后马上一个小时之后，经核实为谣言，然后就已经开始了大面积的删贴和辟谣了好吧？首先来讲我们说我不知道是真是假，我不知道是不是成交，我也不知道他说的内容是不是真的，它内容里面你们自己可以去看。 </p>
+<p>好吧，晚上现在铺天盖地的都有这东西，好吧？这张照片我们还发吗？你说。别发了，我们就不发了，你们自己去网上去搜搜好吧？网上铺天盖地的都都是这两张照片对吧？我们也就不发了，如果我们要发的话，我们也得把他的身份证号给他盖上。我们把他身份证号证号盖上之后能发吗？就证明基本上我们说的是事实，我们也不是坐在屋里瞎编的，可以对不对？好不好？这样我们一会把他的这身是虽然我们不知道是不是他的身份证号，但是我们出于大媒体我们负责任，我们现在真的小心翼翼的做每一件事，我们把他的身份证号给他盖上，我们再把这张图片发出去来证明。 </p>
+<p>我们说的我们陈述的事实是真的发生过，有人以陈全椒的名义举报了他，然后一个小时之后被辟谣了，被答辩及删贴这个事的确发生了，至于他们到底谁真谁假我不知道。 </p>
+<p>好吧？ </p>
+<p>这个新闻播报完了，我说一下我自己的观点，我自己的观点我认为这个事应该是假的，但是我只能说我的主观，我臆测，我猜测我认为应该是假的，我觉得陈青椒在这种时候他不会站出来做这种事，我个人的观点我没有任何的证据，我只是主观臆测，只不过我做节目老观众都知道我最讨厌的就是做哪种节目，我有时候看那些就是器材的APP主，比如说拿了一个索尼的镜头，拿了一个适马的镜头，然后两个比较了半天之后告诉你观众朋友们你更喜欢哪一个？ </p>
+<p>刘岩告诉我，我他妈脆死你，我来看你是看我想知道你的观点是什么，你更喜欢哪一个？他把优点比如说体积小，重量轻，价格便宜太大了，优缺点都说了一顿，扔的优缺点在网上都能查得到，然后最后他也说自己的观点，就他问你你们的观点是什么？你是神经病吗？我他妈来看你来我不就看你的观点吗知道吧？所以我这人做视频我知道，当然很多人跟我说说，你就像他们那样的，你对我说模棱两可的话，你不要有自己的观点，然后对这样你也谁也不得罪，但是我绝对不行，我一定要有自己的观点，笑骂由人好不好，这什么尔曹身与名俱废，不废江河万古流吗？ </p>
+<p>什么事，反正我一定要我的观点，我认为这件事是假的，我认为成交不会这么做，但是我现在通过这个事我越来越发现了一个问题，什么问题？就是说网络传言说时政利跟王彦义之间有隔阂，有私人医院，我认为这个没有问题。 </p>
+<p>现在网络都在传，就是说石丽和王一两个人闹得很不愉快，出了这个事之后，网络有传言说他们两个人互相在用自己的一些小孩或者水军哪往对方身上泼脏水，说刚开始王延义很多事不就大面积的说王延义，苏宏斌就是有网络传言好不好？反正我觉得这样子有的人看不惯王延义，有的人看不惯时政令，看不惯王言意味什么，觉得王延一年轻，然后说他是什么，当初是特长生招进来的，然后他的学术背景不是很过硬，完全靠着睡男人上来的。 </p>
+<p>所以有一些人对他不满意，对于时政利有一些人不满意，为什么？就说时政利这个人虽然他的科研水平大家承认，但是这个人非常就是说不近人情，然后特别的严厉，然后容易出让别人得罪了很多人，好吧，两个人都得罪了很多人。那么互相之间我觉得好像某种程度上像现在他们都被推在了那风口浪尖，刚好他们研究的就是这东西，然后刚好又发生在武汉，所以就有了很多的压力和揣测，然后我觉得某种程度上就是说有一种人是纠纷和人事斗争在里面，我现在甚至怀疑我们某种程度上也被卷入了这场的人事纠纷，最早的铺天盖地地对王研一的这种回人格毁灭性的这种就关于把他的老公，他的上尉，他老公在哪他就去哪儿读书，这一路走过来，然后她老公到哪他要去哪上班，他老公一一一度把它浮上来，这些事我们也进行了报道，对吧？ </p>
+<p>我觉得某种程度上那个时候其实就被当枪使了，后来又报道了关于时政力的他们 p3，好像某种程度上我感觉又把王延一洗干净，对不对？我觉得我现在怀疑我没有证据，但是我怀疑我们是被人利用了，来攻击了时政力和p3，要把木目标和注意力从王延义和 p4转移到石胜利和他第三句，甚至我有这个怀疑，但是现在我也不知道对吧？我现在也不能证实，也不能证明，我只能说我有这个怀疑，完全就是一个主观臆测。 </p>
+<p>所以最终我的想法，我暂时当然我们俩还在商量，到现在我们俩也没想好，就说到底要不要把爆料人的信息弄出来，我现在有一点犹豫，因为爆料人他再也不用原先的号跟我们联系了，他换了一个号换了这个号，反正他真的是再求情，再讲道理，晓之以情动参以里讲了很多，弄得我们也是好像也有点心软了是吧？ </p>
+<p>我再思考一下关于他这个事儿，但是我现在我怀疑我不认为他给我的理由是对的。对，现在我不认为他是一个高中生，他我不认为他是他自己说的，我特别可怜，我是一个未成年人，我是一个小孩子，我是一个高中生，我就是一时想吹牛逼。 </p>
+<p>现在其实对我觉得这个背后是很复杂，它只是用这个装成一个弱势群体，希望我们能同情他，能够可怜他，但是我还是觉得我们应该是被人盗抢是吧？但不管怎么样，就是说还是怪我们自己智商低，对不对？ </p>
+<p>常在河边走哪能不湿鞋，不过给自己找个理由和借口，这个消息来了之后，其实我也犹豫了4天，到了最后我也是我不确认我也是说我这个是做了一个梦，我说我在三体星上怎么样对吧？但是这种理由借口给自己找也没意思，还是应该反省自己的智力水平，以后我们必须要定一条铁规，一条一条纪律就是说凡是给我们爆料了必须得滚钉板，对，不给钉板以后我们就不报了，对不对？我们就不报，也就是说你说以后这种未经证实的小道消息就全不报了，那也没什么就没有趣味了，生活感觉。 </p>
+<p>好像没有去了，还是我们干脆就定义为一个相声拼的八卦品的，以报未经证实的小道消息为主，我也不知道咱们是把自己定位成一个像我可以觉得像宝洁哥看齐，宝洁哥那个是真的吗？ </p>
+<p>真的实体又活了，小女孩家里的妈妈死了多少天，他居然每天都有饭吃爱喝。对一会儿宝杰哥不高兴，好多人不知道宝洁哥是谁，我很喜欢宝洁哥哥，他为什么要不高兴，宝杰哥天天都在播那种见了鬼的新没事就见了鬼，转角遇到鬼。我呵呵。 </p>
+<p>他说保健科那方面的发展，我也不知道，我现在也在犹豫，其实我从头开始一直很希望就是说因为我是一个求真求切的一个人，对吧？尽量报什么的话，我尽量还是求真实，一旦我不能不能够有把握的话，最少我告诉你，就是说我这是一个未经证实的，对吧？或者我做了一个梦，是吧？我觉得还是这样。 </p>
+<p>我觉得还是这样子，我们还是我们不给自己定一个方向，我们就走自己的路，我们不学任何人就随风飘散，就听到就想说凄凉的。我说咱们就这样，我们以后还是这样，我以后我能够有把握的消息，我说我有把握的，如果没有把握的消息，我就说是未经证实的小道消息，那么对于观众朋友们来讲，那么就取决于你了。你喜欢看未经证实的八卦小道消息，你就看你如果不喜欢看的话，你别点进来，好吧？如果你点进来了，我还是那句话，我们都是成年人，对吧？我作为一个老爷们，我对我的言行负责，观众朋友们的你也要对你自己的言行负责。 </p>
+<p>如果我明明在题目上就告诉你的是未经证实的小道消息是我做了一个梦，你还要点进来你还要看，看完之后你还要当真的话，我觉得你也是没有，你也是缺乏责任感和责任心，不用说那么看得观众了也不好，自己推责任推给我们了，你还这么不要脸，说说眼睛不能说，也是就把自己吹起来，是不是就是撇干净，你舔干净的，都是你们的责任跟我没关系，是不太好还是当然我我也有责任，我有责任，但是你要明白就是说我现在很犹豫在哪儿，如果我承认是我的责任的话，那么从今以后我频道再也不能播任何未经证实的小道消息了，但是老观众知道我们未经证实的小道消息里边最终都是超前的小道消息，对，你会发现最终成真的比那个不成真的要多，说实话，虽然到现在我们可以说是被围殴的情况之下，我依然从我内心深处里，当然你可以说我是傻逼，自信多，也有可能因为我缺心眼，比较自信，我的内心深处我依然坚定的认为这个病毒是一个事故，我依然我在心里来讲，虽然我现在有点承受不住压力了，我现在已经有点就是说他们所有人都在攻击，我都说这明明是一个来自大自然的病毒，你为什么偏要说它是这个人为的对不对？ </p>
+<p>我有点快坚持不住了，我被所有的这些什么呼吸进的，还有海外的这些呼吸进的图的图，真的我现在怀疑就是海外有一帮实际上是跟呼吸进是一起的，这帮人都在向我施压，都想让我承认一件事就是说这个病毒不是人工的，这个病毒就是来自大自然，是来自于什么蝙蝠，来自于什么穿山甲，我也不知道反正来自于某某一种动物知道吗？ </p>
+<p>所有人都在向我施压，就想让我承认这一点，但是我从内心深处里，我真的我就不想承认这一点，你知道吗？虽然不断的被人围殴，但是观众里边还是有好多和我们观点比较相比，我这点还是我非常感谢观众里边来讲，在留言我们看就是说80%以上还是支持我们的，对吧？而且比较认同我们这个观点。我是说别的咱就不管了，对观众支持我们的多，我是说叫胡锡进，不是观众对。 </p>
+<p>还有一些就是说有一些是国内的媒体，我觉得国内的媒体咱就不说了，国内的媒体都姓党，没有不姓党的媒体，但是我不知道为什么海外这么多姓党的这么多党媒，我不明白，现在我愣了你知道吗？我说怎么就你国内的这些人姓党，这肯定得党媒姓党吗？不信党你怎么干你怎么干，国内没有任何一个媒体是不姓党的，可以不接受党的监督和管理，但是我不知道为什么海外这么多的媒体也要接受党的监督和管理，你说我说观众也都是想要听你的观点和你的一些逻辑推理和一些分析，所以别的就别管了，你把自己的价值发挥出来就行了。 </p>
+<p>好吧，我的价值就是报道小票消息。扶不起来。开个玩笑，不过我还是那句话，其实老观众能知道我们报道到小道消息，最终我觉得还是成真的多，对吧？不成立的其实还是少，不成立的我们就赶快又跟进了，对不成立的我们最后自己我们也都承认了，好吧？先讲到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E9%92%BB%E7%9F%B3%E5%85%AC%E4%B8%BB%E5%8F%B7-RavPVcGZqQQ/" rel="prev" title="20200217第1407期-钻石公主号">
+      <i class="fa fa-chevron-left"></i> 20200217第1407期-钻石公主号
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1408%E6%9C%9F-%E6%88%91%E4%BB%AC%E6%9C%80%E7%BB%88%E5%86%B3%E5%AE%9A%E4%B8%8D%E6%9B%9D%E5%85%89%E4%BB%96%E4%BA%86-uKHD5HuENNc/" rel="next" title="20200217第1408期-我们最终决定不曝光他了">
+      20200217第1408期-我们最终决定不曝光他了 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1074</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1407%E6%9C%9F-%E6%9C%89%E4%BA%BA%E4%BB%A5%E9%99%88%E5%85%A8%E5%A8%87%E7%9A%84%E5%90%8D%E4%B9%89%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E7%8E%8B%E5%BB%B6%E8%BD%B6%E8%A2%AB%E5%A4%A7%E9%9D%A2%E7%A7%AF%E5%88%A0%E5%B8%96%E5%92%8C%E8%BE%9F%E8%B0%A3-gX9KxDKBBH0/";
+    this.page.identifier = "2020/02/17/20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣-gX9KxDKBBH0/";
+    this.page.title = "20200217第1407期-有人以陈全娇的名义实名举报王延轶被大面积删帖和辟谣";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月17号星期一，上海的美国商会对109家美国公司进行了一项调查，78%都表示他说在中国的工厂缺乏工人已恢复全部生产，就是现在很难恢复生产，不过这个也是一个现实情况。  这109家美国公司分布在上海、苏州、南京和长江三角洲等地区，主要反正集中在上海周边，其中48%都说关闭工厂的疫情防控措施已经影响到了他们的全球供应链，不过这个也是没有办法目前怎么办对吧？其余的公司预计这种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200217第1411期-109家美国公司78％表示难以恢复生产，供应链加速迁出中国">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1411%E6%9C%9F-109%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B878%%E8%A1%A8%E7%A4%BA%E9%9A%BE%E4%BB%A5%E6%81%A2%E5%A4%8D%E7%94%9F%E4%BA%A7%EF%BC%8C%E4%BE%9B%E5%BA%94%E9%93%BE%E5%8A%A0%E9%80%9F%E8%BF%81%E5%87%BA%E4%B8%AD%E5%9B%BD-Ah-yW-OaA3A/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月17号星期一，上海的美国商会对109家美国公司进行了一项调查，78%都表示他说在中国的工厂缺乏工人已恢复全部生产，就是现在很难恢复生产，不过这个也是一个现实情况。  这109家美国公司分布在上海、苏州、南京和长江三角洲等地区，主要反正集中在上海周边，其中48%都说关闭工厂的疫情防控措施已经影响到了他们的全球供应链，不过这个也是没有办法目前怎么办对吧？其余的公司预计这种">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-16T15:01:01.000Z">
+<meta property="article:modified_time" content="2020-07-20T16:25:00.789Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1411%E6%9C%9F-109%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B878%%E8%A1%A8%E7%A4%BA%E9%9A%BE%E4%BB%A5%E6%81%A2%E5%A4%8D%E7%94%9F%E4%BA%A7%EF%BC%8C%E4%BE%9B%E5%BA%94%E9%93%BE%E5%8A%A0%E9%80%9F%E8%BF%81%E5%87%BA%E4%B8%AD%E5%9B%BD-Ah-yW-OaA3A/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200217第1411期-109家美国公司78％表示难以恢复生产，供应链加速迁出中国 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1411%E6%9C%9F-109%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B878%%E8%A1%A8%E7%A4%BA%E9%9A%BE%E4%BB%A5%E6%81%A2%E5%A4%8D%E7%94%9F%E4%BA%A7%EF%BC%8C%E4%BE%9B%E5%BA%94%E9%93%BE%E5%8A%A0%E9%80%9F%E8%BF%81%E5%87%BA%E4%B8%AD%E5%9B%BD-Ah-yW-OaA3A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200217第1411期-109家美国公司78％表示难以恢复生产，供应链加速迁出中国
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 00:01:01" itemprop="dateCreated datePublished" datetime="2020-02-17T00:01:01+09:00">2020-02-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/17/20200217%E7%AC%AC1411%E6%9C%9F-109%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B878%25%E8%A1%A8%E7%A4%BA%E9%9A%BE%E4%BB%A5%E6%81%A2%E5%A4%8D%E7%94%9F%E4%BA%A7%EF%BC%8C%E4%BE%9B%E5%BA%94%E9%93%BE%E5%8A%A0%E9%80%9F%E8%BF%81%E5%87%BA%E4%B8%AD%E5%9B%BD-Ah-yW-OaA3A/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/17/20200217第1411期-109家美国公司78%表示难以恢复生产，供应链加速迁出中国-Ah-yW-OaA3A/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月17号星期一，上海的美国商会对109家美国公司进行了一项调查，78%都表示他说在中国的工厂缺乏工人已恢复全部生产，就是现在很难恢复生产，不过这个也是一个现实情况。 </p>
+<p>这109家美国公司分布在上海、苏州、南京和长江三角洲等地区，主要反正集中在上海周边，其中48%都说关闭工厂的疫情防控措施已经影响到了他们的全球供应链，不过这个也是没有办法目前怎么办对吧？其余的公司预计这种影响将在一今后的一个月内出现，也就是现在48%已经直接受到影响了，剩下还有52%认为我们现在暂时没有，但是以后的一个月肯定会受到，因为我们上下游的企业都受到影响了，我们最终也必然会受到影响的，对吧？ </p>
+<a id="more"></a>
+
+<p>上海的美国商会会长吉布斯说，他说现在最大的问题还是缺少工人，他说工人们受到隔离和行动限制，任何人从任何地方回来都要被隔离14天。这个之前我们也讲过了，当时你不也说有一个人好像去了先去武汉隔离14天，去北京又隔离14天，后来一看哪都去不了，回上海又隔离14天，反正觉得最近一个半月都在被隔离，就是说不管你从哪来，不管你之前隔离的没隔离，你只要换地你都得隔离是吧？所以弄得工人们就是说莫名其妙的就被隔离起来了。 </p>
+<p>所以他说现在大部分工厂虽然已经获准，就政府来讲，习近平也说了，应该让他们恢复生产，不然的话中国经济受到了伤害太大了。所以大部分工厂都已经获准了恢复生产，但是都存在工人数量严重的不足。 </p>
+<p>但是你要明白他们所谓的大部分的工厂都是这种美国工厂，说的是106家美国公司，据我们知道中国的一些小企业，一些小的中国的民营的工厂，实际上是没有或者恢复生产的，恢复生产都是什么？红海，美国这些大公司他们不一样，对吧？可问题是在这了，就是说就好像航空母舰一样，你光让航空母舰出海，航空母舰周围的那些为它服务的小的船舰，如果不出海的话，航空母舰它出海是没有用的，他要成靶子了，你懂吧？ </p>
+<p>他是要一个航母群，一个航母战舰群来保护它才行的，对不对？一个大的企业也在这大的外资企业，他们想要良性运转，它上下游有很多小企业要给它服务的，对吧？就好像比如说你这一个公司，你们比如说恢复上班了，然后扫厕所的做卫生的，倒热水的全都不来，你会发现来了之后你上班你也没法上，对吧？没有热水喝，厕所的垃圾堆成山都是臭的，对不对？ </p>
+<p>那些为你服务的那些小的，平常你可能你没有认真对待的那些做卫生的阿姨，搬水工，你会发现没有了，他们之后，你的工作也没办法去正常的去运行，所以目前就这么个情况对吧？所以他说怎么办？现在就是说美国商会的调查显示，1/3的公司都表示，如果工厂不能开工的话，就必须得把工厂变搬离中国，我们就得走，那这样我们下去我们我们就得黄了对不对？我们只能走2/3的企业，认为他们的产品的需求将会低于往常就没有办法，因为还有很多的我的产品不是大家销售的，可能就是给其他公司的，如果其他公司的产量降低了的话，原材料它不需要的，我这个是很容易理解的，对吧？ </p>
+<p>2/3的企业可能都会受到影响，那么在中国的大部分的美国公司都认为已经开始准备要加快把自己的供应链搬离中国。这两天很多人都想说说让我说说就是说疫情对中国经济的影响，这个影响肯定是很大的，而这种影响就是说我觉得它最大的最厉害的其实不是短期的一个冲击，其实短期的冲击是很容易扛过去的，最难的是一种长期的就是说这些企业如果不说里边都比如1/3或者1/4，如果把供应链搬离中国的话，那种伤害是在后面一点点像7伤拳一样是一点一点体现出来的，而且这种伤害她一旦体现出来之后，几乎你就很难再逆转。 </p>
+<p>我们必须得承认从邓小平同志改革开放几十年以来，中国由于他的体制导致了我们有很多的优势，我们的工人更加的刻苦耐劳，劳动密集型的企业在中国是可以接受的，对环境偶尔有一些就是说在排污方面不达标的话，我们政府也默认了这些东西给了外商在中国建厂提供了非常多的好处和优势，他们的挣的钱，但是我们也得承认他们来了之后带来了很多的技术，这几十年来由于他们的技术导致我们的整体的这种工业水平也在急速的增加，我们不说就是说中国占了外商的便宜，也不说外商中了占了中国的便宜，我们只能说双方各取所需所需在某一种利益点上达成了某一种的利益的平衡。 </p>
+<p>但是目前我们得承认中国的人工越来越贵，现在新上来的新的年轻的工人80后90后，以至于可能00后也基本上就要开始也要马上就要顶上来了，那么他们在刻苦难得的精神上，在低收入的这种忍耐力上越来越低，中国劳工的这种低廉的工资已经越来越不复存在了。原材料原先那种低廉的便宜的原材料也不会存在的，现在东西越来越多越来越贵，对吧？那么外商在中国已经变得步履维艰了，再加上美国各种的施压和打击，然后要减少中国的这种中美贸易逆差，我们必须承认中国的这种对外的贸易顺差绝大部分都是在美国，一旦美国翻脸了的话，那么那些外商在中国搞出口的话会受到很大的冲击，但是所有的这一切其实还没有让他们就是说下定决心，但是我想这一次的疫情彻彻底底的坚定了很多人的这种信念。 </p>
+<p>这种东西我觉得它的影响不是我现在说半年之后或1年之后怎么样，而是未来5年未来10年会怎么样。去年的时候就有一种悲观的说法，说今年并不今年是很糟糕，但是肯定不是未来10年的最糟糕的，甚至有可能的是未来10年最好的一年。我们不知道这种说法最终能不能实现，但是都是说实话，从我内心深处，我对中国人就是说追求财富创造财富的这种能力，我是非常的认可的。 </p>
+<p>但我们也说过对吧？中国的外贸出口90%，实际上是靠的外资企业，如果外资企业大面积的撤离，大面积的供应链离开的话，对中国的伤害将是没有办法去评估的，好吧？ </p>
+<p>目前就这么个情况，中国政府就需要考虑这个问题就是说，不光是要让这些外资企业大的企业恢复生产，也要想办法尽快帮助那些小的企业，那些不起眼的做卫生的阿姨们也要尽快的去复工，要不然的话大企业也没法良性运转，因为你只有这样子才是在保护中国的工业，在保护中国的经济，但这里面就有一个悖论了，一旦大面积的工人复工的话，会不会使得之前这一个月这一个多月对疫情的所有的这些防控的措施，不到一个月1月23号才开始封城，到2月23号才是一个月，这个不到一个月的时间里，对异形所做出的这些努力，会不会由于大面积的复工，导致之前所有的防御的努力都付诸东流了。 </p>
+<p>所以怎么说我觉得走到了这一步真的是进退围歼，我们看看习近平以及他的中央政府在里边怎么寻找到一个平衡点，因为不可能超过两条走都不行，一定不能走极端，一定是爱中间寻找到一个比较平衡的地方。好吧？提醒到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1410%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%B9%E5%87%86%E8%BF%9B%E5%8F%A3%E7%BE%8E%E5%9B%BD%E6%89%80%E6%9C%89%E7%9A%84%E5%AE%B6%E7%A6%BD%E5%92%8C%E7%A6%BD%E8%82%89%E4%BA%A7%E5%93%81-0gquSMnB4wA/" rel="prev" title="20200217第1410期-中国政府批准进口美国所有的家禽和禽肉产品">
+      <i class="fa fa-chevron-left"></i> 20200217第1410期-中国政府批准进口美国所有的家禽和禽肉产品
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1412%E6%9C%9F-%E3%80%8A%E6%B1%82%E6%98%AF%E3%80%8B%E5%88%8A%E7%99%BB%E4%B9%A0%E8%BF%91%E5%B9%B31%E6%9C%887%E6%97%A5%E5%B0%B1%E4%B8%8B%E8%BE%BE%E4%BA%86%E6%8C%87%E7%A4%BA-dopSl0IKuME/" rel="next" title="20200217第1412期-《求是》刊登习近平1月7日就下达了指示">
+      20200217第1412期-《求是》刊登习近平1月7日就下达了指示 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1074</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1411%E6%9C%9F-109%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%85%AC%E5%8F%B878%%E8%A1%A8%E7%A4%BA%E9%9A%BE%E4%BB%A5%E6%81%A2%E5%A4%8D%E7%94%9F%E4%BA%A7%EF%BC%8C%E4%BE%9B%E5%BA%94%E9%93%BE%E5%8A%A0%E9%80%9F%E8%BF%81%E5%87%BA%E4%B8%AD%E5%9B%BD-Ah-yW-OaA3A/";
+    this.page.identifier = "2020/02/17/20200217第1411期-109家美国公司78%表示难以恢复生产，供应链加速迁出中国-Ah-yW-OaA3A/";
+    this.page.title = "20200217第1411期-109家美国公司78％表示难以恢复生产，供应链加速迁出中国";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

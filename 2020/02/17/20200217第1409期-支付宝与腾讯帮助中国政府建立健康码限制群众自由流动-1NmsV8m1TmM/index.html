@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月17号星期一，支付宝与中国官方联名发表了一篇文章，说什么？说杭州在使用彩色的健康码，区别居民的健康程度。简单说什么？就是说杭州的用户要上网到健康码的申请平台填写表格，提供自己的身份证号码和有关自己最近是否离开过杭州，有发烧咳嗽等的这些个人信息，然后用户将在手机上收到一个有颜色的健康码，红色码就要求持有人实行14天的隔离，并要求在钉钉网上连续打卡14天，如果没有任何病症">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1409%E6%9C%9F-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%B8%8E%E8%85%BE%E8%AE%AF%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%BB%BA%E7%AB%8B%E5%81%A5%E5%BA%B7%E7%A0%81%E9%99%90%E5%88%B6%E7%BE%A4%E4%BC%97%E8%87%AA%E7%94%B1%E6%B5%81%E5%8A%A8-1NmsV8m1TmM/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月17号星期一，支付宝与中国官方联名发表了一篇文章，说什么？说杭州在使用彩色的健康码，区别居民的健康程度。简单说什么？就是说杭州的用户要上网到健康码的申请平台填写表格，提供自己的身份证号码和有关自己最近是否离开过杭州，有发烧咳嗽等的这些个人信息，然后用户将在手机上收到一个有颜色的健康码，红色码就要求持有人实行14天的隔离，并要求在钉钉网上连续打卡14天，如果没有任何病症">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-16T15:00:09.000Z">
+<meta property="article:modified_time" content="2020-07-20T16:25:00.757Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1409%E6%9C%9F-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%B8%8E%E8%85%BE%E8%AE%AF%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%BB%BA%E7%AB%8B%E5%81%A5%E5%BA%B7%E7%A0%81%E9%99%90%E5%88%B6%E7%BE%A4%E4%BC%97%E8%87%AA%E7%94%B1%E6%B5%81%E5%8A%A8-1NmsV8m1TmM/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1409%E6%9C%9F-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%B8%8E%E8%85%BE%E8%AE%AF%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%BB%BA%E7%AB%8B%E5%81%A5%E5%BA%B7%E7%A0%81%E9%99%90%E5%88%B6%E7%BE%A4%E4%BC%97%E8%87%AA%E7%94%B1%E6%B5%81%E5%8A%A8-1NmsV8m1TmM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-17 00:00:09" itemprop="dateCreated datePublished" datetime="2020-02-17T00:00:09+09:00">2020-02-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/17/20200217%E7%AC%AC1409%E6%9C%9F-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%B8%8E%E8%85%BE%E8%AE%AF%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%BB%BA%E7%AB%8B%E5%81%A5%E5%BA%B7%E7%A0%81%E9%99%90%E5%88%B6%E7%BE%A4%E4%BC%97%E8%87%AA%E7%94%B1%E6%B5%81%E5%8A%A8-1NmsV8m1TmM/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/17/20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动-1NmsV8m1TmM/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月17号星期一，支付宝与中国官方联名发表了一篇文章，说什么？说杭州在使用彩色的健康码，区别居民的健康程度。简单说什么？就是说杭州的用户要上网到健康码的申请平台填写表格，提供自己的身份证号码和有关自己最近是否离开过杭州，有发烧咳嗽等的这些个人信息，然后用户将在手机上收到一个有颜色的健康码，红色码就要求持有人实行14天的隔离，并要求在钉钉网上连续打卡14天，如果没有任何病症就可以转成绿色健康网。 </p>
+<p>那么黄色健康码要求用户在家隔离7天，绿色健康码的用户就可以自由行动了，然后要拿这个码才可以进入的一些小区、地铁、餐馆上公交等公共场所，那么这个系统将安装在火车站或者公路的各个交通检查站上，也会安装在社区里使用，就是说如果你家有个小区的话，你要出入社区，也需要。那就是说你如果是个红色马的，你最好就别出去了，因为你出去你可能就回不来了，你就得睡马路上了。 </p>
+<a id="more"></a>
+
+<p>那么杭州现在表示好多的这种居民楼，还有超市都已经开始要求健康板了，那么有可能就是说跟支付宝在昨天宣布，有可能跟中国政府的合作将向全国来推广这套系统，那么腾讯当然也不希望让支付宝阿里巴巴他们一家独大，腾讯也说在与国家发发改委合作开发一个类似的这么健康码的这么体系，腾讯的系统现在在深圳的开始使用，支付宝是在杭州，大家就想就是说因为这套系统是怎么说，以后如果就是说全国推广的话是覆盖全国的，而且这套系统就太厉害了。 </p>
+<p>说实话现在是有疫情，现在如果目前疫情需要的话，推广这套系统其实我觉得是有道理的，是可以支持的，但问题是疫情早晚会过去。我经常说我说也许到夏天就过去了，也许到明年就过去了，反正现在我们得到的消息，现在世界上很多的这些医疗机构和科学家，甚至都不太愿意投入太多的金钱人力和物力去开发的疫苗，为什么？ </p>
+<p>因为他们都怀疑病毒最终跟2003年的非典一样，到了夏天的莫名其妙就消失了，据说在2003年的时候，很多的这些医疗机构科学家投入了很多钱去研发它的这些药品疫苗等等的，但是最后就是说几百万美元甚至上千万美元投入进去了。那么刚刚有一点成成色了，病毒结束了。所以这一次大家都在持一个谨慎的观望态度，就觉得我们现在有没有必要这么做，会不会一到夏天他又没有了，我们现在投入这么多人力精力物力对吧？ </p>
+<p>所以我觉得这个疫情无论如何都会过去的，对吧？他一过去了之后，不管是支付宝和腾讯跟中国政府建立的这套系统就太厉害了，以后我可以给你每一个人弄一个码，我马只要比如说我把你列为的，比如说上访人员，或者什么失信人员，对吧？ </p>
+<p>那么超市你进不去了，家回不去了，公交坐不了，地铁坐不了，火车坐不了，你以后再想上访想都别想，以后甚至高速口也要验证，高速口验证拿出来看，如果你车上有人员红色马的话不许出境，对吧？就不许你去北京上访或者什么的。我就说这套系统威力太大了，如果给一个负责任的政府，我觉得是可以的，但是一旦给了一个就是说像中共目前这样子，我觉得说实话不是那么很负责任，很多时候都是稀里马虎的，给这样的稀里马虎的一个政府这么大威力的武器的话，其实我是很担心的，但是咱们也要分开来说，目前疫情当头，开发这套系统，我觉得我可以理解可以接受，但是以后怎么办？ </p>
+<p>就是说你现在把这个权力已经放出了牢笼，你以后怎么再把它重新关回到笼子里去，这是我们要思考的问题，好吧，今天这节到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1408%E6%9C%9F-%E6%88%91%E4%BB%AC%E6%9C%80%E7%BB%88%E5%86%B3%E5%AE%9A%E4%B8%8D%E6%9B%9D%E5%85%89%E4%BB%96%E4%BA%86-uKHD5HuENNc/" rel="prev" title="20200217第1408期-我们最终决定不曝光他了">
+      <i class="fa fa-chevron-left"></i> 20200217第1408期-我们最终决定不曝光他了
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/17/20200217%E7%AC%AC1410%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%B9%E5%87%86%E8%BF%9B%E5%8F%A3%E7%BE%8E%E5%9B%BD%E6%89%80%E6%9C%89%E7%9A%84%E5%AE%B6%E7%A6%BD%E5%92%8C%E7%A6%BD%E8%82%89%E4%BA%A7%E5%93%81-0gquSMnB4wA/" rel="next" title="20200217第1410期-中国政府批准进口美国所有的家禽和禽肉产品">
+      20200217第1410期-中国政府批准进口美国所有的家禽和禽肉产品 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1074</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/17/20200217%E7%AC%AC1409%E6%9C%9F-%E6%94%AF%E4%BB%98%E5%AE%9D%E4%B8%8E%E8%85%BE%E8%AE%AF%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%BB%BA%E7%AB%8B%E5%81%A5%E5%BA%B7%E7%A0%81%E9%99%90%E5%88%B6%E7%BE%A4%E4%BC%97%E8%87%AA%E7%94%B1%E6%B5%81%E5%8A%A8-1NmsV8m1TmM/";
+    this.page.identifier = "2020/02/17/20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动-1NmsV8m1TmM/";
+    this.page.title = "20200217第1409期-支付宝与腾讯帮助中国政府建立健康码限制群众自由流动";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
