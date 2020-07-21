@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月13号星期四，美国政府今天2月13号，今天以16项罪名起诉中国的电信设备公司，指控华为数10年来窃取美国企业的商业机密，美国司法部表示，纽约布鲁克林联邦法院公开的起诉书起诉指控华为密谋违反反勒索及受贿组织法案，从6家美国科技公司侵占智慧财产，借以扩展全球业务。然后一共16项罪名，还有其他的就什么涉嫌违反禁令与伊朗及北韩怎么遭制裁，国家有生意往来。这个事儿说实话我们你要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200213第1392期-美国政府以16项罪名起诉华为">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月13号星期四，美国政府今天2月13号，今天以16项罪名起诉中国的电信设备公司，指控华为数10年来窃取美国企业的商业机密，美国司法部表示，纽约布鲁克林联邦法院公开的起诉书起诉指控华为密谋违反反勒索及受贿组织法案，从6家美国科技公司侵占智慧财产，借以扩展全球业务。然后一共16项罪名，还有其他的就什么涉嫌违反禁令与伊朗及北韩怎么遭制裁，国家有生意往来。这个事儿说实话我们你要">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-12T15:09:02.000Z">
+<meta property="article:modified_time" content="2020-07-21T01:14:16.038Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200213第1392期-美国政府以16项罪名起诉华为 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200213第1392期-美国政府以16项罪名起诉华为
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-13 00:09:02" itemprop="dateCreated datePublished" datetime="2020-02-13T00:09:02+09:00">2020-02-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/13/20200213第1392期-美国政府以16项罪名起诉华为-qz-hkOf8DZ4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月13号星期四，美国政府今天2月13号，今天以16项罪名起诉中国的电信设备公司，指控华为数10年来窃取美国企业的商业机密，美国司法部表示，纽约布鲁克林联邦法院公开的起诉书起诉指控华为密谋违反反勒索及受贿组织法案，从6家美国科技公司侵占智慧财产，借以扩展全球业务。然后一共16项罪名，还有其他的就什么涉嫌违反禁令与伊朗及北韩怎么遭制裁，国家有生意往来。这个事儿说实话我们你要明白，就今天他去起诉，实际上他应该前后也准备了几个月的时间，所以这个是一个连续性的行为，我觉得也我想这个行为一出来，很多人觉得美国怎么这样，现在就是说好像趁老共病要老共病一样是吧？ </p>
+<p>现在正是最难受的时候，然后美国还这么搞，实际上来讲也不是最近的，实际上他们也准备了几个月的时间，刚好这个时间点就到这儿了，对吧？反正你能看得出来就是说从美国政府来讲，对华为看来就是要赶尽杀绝。 </p>
+<a id="more"></a>
+
+<p>看来华为以后的日子不太好过，不过说实话，现在中国也就不担心华为了。目前的情况我们知道，苹果好像要求所有给苹果就是说来提供这种硬件设备的这些工厂，所有的工厂它要求都一样，就是说如果你的工厂只能够在中国生产的话，苹果以后就不会再给你下单了，所有的你必须要有在中国之外的工厂也能够保证生产，苹果才能给你下单，多种原因，一个是中美的贸易战，这肯定是原因之一。 </p>
+<p>另外一个也就中国的这次的疫情，也让很多的外资企业对中国从在信任方面是大打折扣。很多外资企业纷纷在撤离，本来中美贸易战就要撤离，这一次更加要撤离。 </p>
+<p>当然了现在我们得到消息说像比如说红海什么的都得到了，就是说复工的批准红海申请复工他们批准了。 </p>
+<p>但是这存在一个问题，像鸿海这样的大厂子大公司，他们很容易就能拿到这种批准，对不对？但是你要明白像这种大公司大厂子，他在复工的时候，它在生产的时候，它需要很多的小的企业小的公司，它上下游的公司要为他服务，它才能够运转的良好。有一些原材料有需要人提供它的一些产品，它的垃圾一些副产品，需要有一些其他的小企业就把它消耗掉，你明白吧？它才能够就是说良性的去运转，但问题就在这红海是复工了。 </p>
+<p>他上下游的那些小企业能不能复工呢？甚至说句不好听的那些小企业，在这一次的全国性的瘟疫面前能不能存活下来？我们现在都打一个问号都不好说，很多小企业有点要扛不住了，很多的小企业真的就是说如果就是说很多小企业有一些小企业主就给我们发来了一些求助信，他们就是说现在复工有问题，他们在哪，然后能不能呼吁一下，因为发来的哪都有，各个地方现在都是由于好说国道也都封了，导致他的人员回不来，然后设备到不了，各种反正各种问题导致就没法复工，他们都让我们都去呼吁说这些小企业他们就说有一些小企业真的就是说如果再有一个月再不能复工的话，这企业可能就得黄了，因为他们这种资金运转是必须要连续运转，只要一停的资金链一断，这企业可能就扛不下去了。 </p>
+<p>在这种情况之下，你让我们怎么呼吁？ </p>
+<p>现在的问题就在这，某种情况下我们必须要承认，从1月23号武汉丰城开始，全国可以说大半个中国都处在一种就是说咱们说一一响应或者说是半封闭的这种状态，这个状态是给经济造成了一定问题，但是我们必须承认这种状态对于疫情的蔓延和发展起到了很好的遏制作用，这是事实。如果我们现在马上又开始全国大范围的这种交流运输的话，那么你之前你所取得的从1月23号封城，全国大半个中国就是说封禁隔绝产生的这种对疫情的遏制的这种作用。 </p>
+<p>随着你一旦开放之后，可能一个礼拜你之前的所有努力全部都付诸流水了，就功亏一篑了，所以目前这个阶段的话，我也明白小企业生存很艰难，但是你让我在这呼吁，就是说我们重新打开让大家自由，天这是一个非常难的悖论。所以很多人就说说习近平无能怎么样，说实话到了目前这个阶段给谁都麻爪，因为不管是你说你不复工经济对一些小企业可能就是毁灭性的打击。你对于疫情可能就从药就要重燃，你之前的努力全部付诸流水了，整个疫情就控制不住了。 </p>
+<p>所以在这种情况之下真的就是进退两难，所以我经常说就跟下棋一样，我以前就说北京有一个中国象棋特级大师，他说那张强他就说他的很多的骑友经常都是比如说在棋院里他们正玩，张翔一进来他说张大师他不推大师吗？ </p>
+<p>张大师快来我这棋不行了，帮我救救。 </p>
+<p>张强说有的时候我过去我抽你丫扭头就走，就个屁，你们认输棋，你把胡荣华许云川叫来也没有用了，你知道吗？你得叫上帝才能救你，那不是人能救齐，舒乐死了认输别费劲了。知道吧？所以走到了这一步，你再让我说你让我出主意，你说so你给出个主意，你说怎么办？就是说得早办，你知道吗？我12月份报武汉有非典的时候，你要是就办了，就不会到现在了，对不对？这个下棋也是你前三步你就要做准备了，等下到这了之后，说实话你这个企业你跟人商量倒一步都够呛了，你知道吧？有的齐真的让你悔一步，没有弄了，那事就吹牛逼说不行让你悔一步，那其悔一步已经解决不了了，你明白吗？ </p>
+<p>其诋毁三部分才行。所以我也比较同情他，我也比较同情习近平同志，然后对于中国目前的现状，我也是其实表示同情和理解，还有支持。 </p>
+<p>所以为什么最近这段时间来很多的一些海外的民运对我也很不满，就是说觉得好像我这个时候好像在背在帮中共说去好像在缓缓霞，我也觉得我真的我也是的的确确我承认我有这种行为在我总觉得目前的这种情况下，中国的承受非常巨大的压力，全国人民都承受了非常巨大的压力。在这种时候，如果我们海外给予的不是支持，而是就是说保持着一种趁你病要你命的话，我真的不认为在目前的情况之下，如果政府的组织力失去了的话，如果乱了的话会对中国有好处。 </p>
+<p>面对目前这个疫情的话，我们还是需要一个有一定组织力的政府，虽然中国政府的组织力运行运转的能力都是非常让人质疑，但是在目前这种情况之下，有一个政府比无政府要好，反正这是我目前的观点，当然如果你们觉得这种观点大外宣我也没辙，你们就乱，你那就造反砸锅，就上街去我也不知道了，主要现在的主要矛盾主要问题是疫情应该先抓主要矛盾，而不是去搞其他乱七八糟的没有用。 </p>
+<p>我经常说我们这些人是为了这个国家好，是为了人民好，对不对？就是说在发生的问题的时候，反正要把人民和老百姓放在优先的位置对吧？ </p>
+<p>还是我那天讲这个故事对吧？就是说无常桥是山，是吧？不忍见儿，就是说常对有网友问我这是什么意思？无能，我长曾经的意思桥是侨居地桥，嗷峤就是说我曾经是山这座山，吴，长桥是山，我曾经在这座山我居住过，所以我不忍看他就烧掉了，说不忍见耳，就这么个意思。所以其实我的意思就是说，我们每一个人无论如何滋润我们移民了或者怎么样，我们已经不在那里了。 </p>
+<p>但是吴长桥是山，我们曾经在那里生活，我们都在那里出生，我在那里长大，我们队长是有感情的对吧？我们不忍见耳对吧？ </p>
+<p>所以在这个时候我们还是秉持着一个我觉得还是要善良，对吧？ </p>
+<p>我经常说你现在看起来好像在这段时间里，大家都在说这些事情，但是最终我经常说，我跟其他的这些所谓的海外民运，或者说是这些自媒体，我经常都说，我说这些事情都是短暂的，他们最终都会过去的。我相信这个疫情到明年的这个时候肯定就过去了，对不对？ </p>
+<p>咱别说夏天过去，不过要明年一年总过去了，对不对？所以我经常说我们到最后还能不能留下来看的是什么？是你善良不善良，是你的人品怎么样？还是我觉得情怀虽然没什么用，但是其实非常重要。好吧？咱们还是我觉得一心为民，把老百姓的这种更幸福的一个生活摆在首位。其他的我觉得都不重要。好吧，这就讲到这里，好吧？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/13/20200213%E7%AC%AC1391%E6%9C%9F-%E5%8D%81%E5%A0%B0%E5%B8%82%E6%88%98%E6%97%B6%E7%AE%A1%E5%88%B6%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8D%81%E5%A0%B0%E6%98%AF%E4%B8%AD%E5%9B%BD%E5%9C%B0%E4%B8%8B%E9%95%BF%E5%9F%8E%E7%9A%84%E4%B8%AD%E6%9E%A2-3eDkozq-Yoo/" rel="prev" title="20200213第1391期-十堰市战时管制的原因十堰是中国地下长城的中枢">
+      <i class="fa fa-chevron-left"></i> 20200213第1391期-十堰市战时管制的原因十堰是中国地下长城的中枢
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/" rel="next" title="20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒">
+      20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1095</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/";
+    this.page.identifier = "2020/02/13/20200213第1392期-美国政府以16项罪名起诉华为-qz-hkOf8DZ4/";
+    this.page.title = "20200213第1392期-美国政府以16项罪名起诉华为";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

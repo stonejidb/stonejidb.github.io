@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月14号星期五，差不多我记得一个星期前有一个网友给我发了一条消息，说在中国出现了一个病例，有一位女的她得了武汉肺炎，病好了之后，然后康复之后回家，回家之后5天之后他母亲确诊了，然后当时就怀疑是不是他传的，但是那个消息我至死也没有报，因为在中国中国有这种症状的人比较多，所以咱们说不清楚到底是这个女的，她病好了回家他传染给她母亲的，还是他母亲从其他地方车站到的，对吧？  不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月14号星期五，差不多我记得一个星期前有一个网友给我发了一条消息，说在中国出现了一个病例，有一位女的她得了武汉肺炎，病好了之后，然后康复之后回家，回家之后5天之后他母亲确诊了，然后当时就怀疑是不是他传的，但是那个消息我至死也没有报，因为在中国中国有这种症状的人比较多，所以咱们说不清楚到底是这个女的，她病好了回家他传染给她母亲的，还是他母亲从其他地方车站到的，对吧？  不">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-13T15:09:03.000Z">
+<meta property="article:modified_time" content="2020-07-21T01:14:16.044Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-14 00:09:03" itemprop="dateCreated datePublished" datetime="2020-02-14T00:09:03+09:00">2020-02-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/14/20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒-tl6-mLJDDLY/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月14号星期五，差不多我记得一个星期前有一个网友给我发了一条消息，说在中国出现了一个病例，有一位女的她得了武汉肺炎，病好了之后，然后康复之后回家，回家之后5天之后他母亲确诊了，然后当时就怀疑是不是他传的，但是那个消息我至死也没有报，因为在中国中国有这种症状的人比较多，所以咱们说不清楚到底是这个女的，她病好了回家他传染给她母亲的，还是他母亲从其他地方车站到的，对吧？ </p>
+<p>不能确认的情况之下，我就没有播这个消息，因为这个消息如果播出来的话会比较吓人。什么意思？它就说明有一些人在康复了之后，他依然携带病毒，就存在可能性。 </p>
+<a id="more"></a>
+
+<p>今天我想我们可以播这个消息了，因为为什么是这样子？这个是加拿大，这个叫加拿大，the star星报，我也不知道这是加拿大星报还是多伦多星报。但我上网查了一下报纸，好像在加拿大还是一个比较正规的一个报纸，所以我觉得不能算是小道消息，算是加拿大一个正规报纸他们出来的消息，我一会我会把他报道的链接搁在我视频下方，但是他这个是英文的，有的人可能看起来有一些困难，所以我简单跟你说一下他的意思，他是这样，他报道在多伦多确诊了两例，新冠状病毒感染者已经康复，但现在仍被隔离在家，因为医生通过检测发现他们的鼻子和咽喉处所取得的细胞的样本中，一直都有新罐病毒的痕迹。 </p>
+<p>安大略省公共卫生局的doctor牡，本来三ellen是吧？他说个体样本中还残留一些遗传物质或病毒物质，这是人类从未见过的这种病毒，就是我们没见过这种病毒为什么康复了，还有虽然现在还不能确认这是活病毒还是死病毒，所以他说仍存在该病毒的一部分，我们需要遵循已经制定的标准，在获取两个阴性检测结果之后，才能了解更多，但是它现在检测必须间隔至少24小时才能对患者进行近一次的病毒检测，所以要等待，现在还不完全确认，但是肯定它带有就是说带有星光病毒的痕迹，这是没有问题。 </p>
+<p>所以目前按照它们的规章制度，这两位虽然康复了，但是还要隔离在家。但是这里边医生他也说了一点，他说这样，他说这个男子他50多岁康复病人，他50多岁，而且他还有一些其他的健康状况，可能有一些慢性病，他年纪也比较大了，有一些慢性病，所以说是会影响到他清除病毒的能力，也就是说有可能在一些一些年纪比较大的有慢性病的人身上，他自己本身体质有问题，本身的体质有问题，所以导致他即使康复了之后还有可能携带病毒。他举了另外一个例子，就是在西安大略大学有一个20多岁的女生，这个女生是1月23号从武汉返回三天内就康复了，被确诊了之后三天就康复了，然后到就是说周三的时候就已经没有任何的病毒了，这就非常的快。 </p>
+<p>所以这个病毒我想从目前来讲，我们能发现一个问题，就是说还有说关于今天网络流传，说有中国这边的病毒专家说这个病有一些人可能没有办法根治，一直会带着我觉得我说说我的感受，反正到到此为止，就是说这官方消息报完了，我后面说一下我的感受，我觉得这个病毒它有一种就是说变异性，他跟根据人不同，他有他的不同就是说有的人你会发现有的人就是说非常快，两三天咳嗽咳嗽可能有点就跟小感冒那种症状似的，就好了，兄弟们去的，而且两三天你看他刚刚说这个女的西安大略的20多岁的，这个女生就是三天内就康复了，非常快，有的人可能就跟赶了一场小感冒一样，就很轻松就过去了。 </p>
+<p>有的人可能就要寻死觅活的，搞不好就把命都没有了，你看连李文亮医生对吧，他其实也很年轻34岁，然后本来就是说见好已经出了ICU了，后来突然又恶化，然后最后就抢救不过来，人就没有了，所以我觉得我们很难说它到底能不能根治，因为我觉得现在根据的不同人不一样，我现在怀疑就是说这个病毒有的人的的确确可能就根治不了，有的人是可以，所以这个病毒就像加拿大医生说的，说我们从来人类从未见过的这种病毒，这个病毒它非常独特的这种特异性，我觉得是什么？ </p>
+<p>就是说某种程度上来讲，连病毒自己本身对自己也有疑惑，你知道吗？就是说我觉得还是我越来越倾向于有人为的对这个病毒进行了一些改变，比如说就好像我们给一只老虎安了一翅膀对吧？这老虎它自己本身它怎么着？他也有点疑惑，就是说他有的时候到他抓人的时候，他一使劲他飞起来了，您知道吗？他怎么多了两个东西你知道吗？他也很疑惑，所以我觉得这个病毒也是就是说他如果你就是一只普通的老虎对吧？它是大自然借掌上老虎，他们很清楚自己要怎么铺怎么挠对不对？但是当你人为的给它装了两只翅膀之后，他也在学习怎么去使用这两个翅膀，你知道吗？所以我觉得这个病毒它自己有的时候也是非常的就是晕头转向的，你知道吗？所以它不疼的时候，它表现出来的东西也不一样，所以在不同人身上表现出来非常不一样的反应特征和特点，他自己也在尝试和摸索自己的方向。 </p>
+<p>所以在目前这个情况之下，我觉得不能算危言耸听，就是说即使是你的朋友或者亲戚康复了的话，也还要隔离，也还要看一看，尤其是年纪大的，然后有慢性病的这种，它自己消灭病毒能力差，那么就是说我觉得即使康复了回家了，最好也在自己自我隔离。 </p>
+<p>14天，是吧？至于像以前说的那种就是说确诊了不是的就更别提了，根本那些都不准，现在对吧？不管是ct还是核酸的，核酸是指没有一个是准的，没有百%准确的对吧？准确度最高的就是ctct也只有70%多，那80%都不到。所以这个病毒目前就是这样子。 </p>
+<p>为什么我其实很想去尝试去探探求出这个病毒的起源是哪儿，到底是从哪儿出来的。因为我觉得有了这个之后，它更有利于我们去研究它。如果我觉得就是说中国政府现在已经就知道了它的起源的话，其实应该把这个东西我觉得更多的贡献给了全世界的科学家，你把它贡献出来之后，没准谁就有办法把它去解决了，你闷着不说，你光你自己搞，他搞的就很慢。 </p>
+<p>我记得以前清华大学有一个投毒案也是，当时那个女生好像叫朱令是吧？朱令我记得朱令当时也是他生了病之后，实际上他们说当时用的剂量不足以让他就是说这么的，后来就是说这么的痛苦，他又没有死，你知道吗？他倒是非常痛苦，就说最初的时候也是医院误诊导致了耽误了大量的治疗时间，就最早的时候把它当成一种病在治，而不是说中毒，还是他的朋友们把他的症状就是说描述用英文描述之后发到互联网上去求助，求助了之后就发现全世界的很多的这种众多学家，这对这种病毒学家们发来电信的百分之七八十都认为他这是明显的中毒迹象，然后再去跟医院说，然后刚开始医院说医院还不觉得网络哪两种形式不值一提，后来慢慢的也越来越意识到了是后来开始从这个叫什么他中毒是吧？ </p>
+<p>从这里边然后去治疗了之后，才把它迅速的才算就把他救回来，对不对？所以我觉得目前的中国这个事也是这样子，我就说呼吁一下，出了这种事故谁也不愿意，但是如果你能够及早的把他的初始，当当初你到底给他种了啥，你把它说出来的话，没准大家现在更有利于大家去研究它，而你不说，实际上你会发现现在很多的外国专家也都在想办法拿到了从共同途径拿到这个病毒，然后再研究，其实逐渐的也就研究出来了。 </p>
+<p>你像今天我刚刚在推特上发了一个也是一个美国这边的一个病毒学家研究这个病毒，他认为这个病毒里边有一个叫什么矢量素是什么的东西，他说这东西一般来讲，你是不会在病毒里能看到的，这应该是人为的功效对吧？实际上你包括你看白宫，美国的cDC其实现在基本上他们的研究都指向了同一个问同一个问题，对吧？所以希望还是就是说中国政府能够增加透明度，好吧？好吧，这条消息拨到这里好吧？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/13/20200213%E7%AC%AC1392%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E6%94%BF%E5%BA%9C%E4%BB%A516%E9%A1%B9%E7%BD%AA%E5%90%8D%E8%B5%B7%E8%AF%89%E5%8D%8E%E4%B8%BA-qz-hkOf8DZ4/" rel="prev" title="20200213第1392期-美国政府以16项罪名起诉华为">
+      <i class="fa fa-chevron-left"></i> 20200213第1392期-美国政府以16项罪名起诉华为
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/14/20200214%E7%AC%AC1394%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%EF%BC%9A%E7%94%9F%E7%89%A9%E5%AE%89%E5%85%A8%E7%BA%B3%E5%85%A5%E4%B8%AD%E5%9B%BD%E5%9B%BD%E5%AE%B6%E5%AE%89%E5%85%A8%E4%BD%93%E7%B3%BB%EF%BC%8C%E5%B0%BD%E5%BF%AB%E6%8E%A8%E5%8A%A8%E2%80%9C%E7%94%9F%E7%89%A9%E5%AE%89%E5%85%A8%E6%B3%95%E2%80%9C-4Hd_yubRgio/" rel="next" title="20200214第1394期-习近平：生物安全纳入中国国家安全体系，尽快推动“生物安全法“">
+      20200214第1394期-习近平：生物安全纳入中国国家安全体系，尽快推动“生物安全法“ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1095</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/14/20200214%E7%AC%AC1393%E6%9C%9F-%E5%8A%A0%E6%8B%BF%E5%A4%A7%E5%B7%B2%E5%BA%B7%E5%A4%8D%E7%9A%84%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92%E6%84%9F%E6%9F%93%E8%80%85%E4%BB%8D%E7%84%B6%E6%90%BA%E5%B8%A6%E7%97%85%E6%AF%92-tl6-mLJDDLY/";
+    this.page.identifier = "2020/02/14/20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒-tl6-mLJDDLY/";
+    this.page.title = "20200214第1393期-加拿大已康复的新冠病毒感染者仍然携带病毒";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
