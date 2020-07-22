@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月7号星期五，陈秋实已经被证实现在被隔离了，我早晨起来的时候为李文亮的事弄得我心里特别难受，一直也没说他这个事儿。还有一个就是说跟一个朋友也聊，然后也要询问人家那边的感受，因为我也是说实话实说，我不知道我帮他呼吁了之后，到底是好还是不好，然后那边商量了一下，反正最终的意思还是就是说希望也能够呼吁一下，但是给我一个要求，公平公正的说，公平公正的说，咱们说实话，你说陈秋实现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/07/20200207%E7%AC%AC1359%E6%9C%9F-%E5%91%BC%E5%90%81%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%85%AC%E5%B9%B3%E5%85%AC%E6%AD%A3%E7%9A%84%E5%AF%B9%E5%BE%85%E9%99%88%E7%A7%8B%E5%AE%9E%EF%BC%8C%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E5%8F%97%E4%B8%8D%E4%BD%8F%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%8E%E6%96%87%E4%BA%AE%E4%BA%86-5ZGnmGdtuU4/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月7号星期五，陈秋实已经被证实现在被隔离了，我早晨起来的时候为李文亮的事弄得我心里特别难受，一直也没说他这个事儿。还有一个就是说跟一个朋友也聊，然后也要询问人家那边的感受，因为我也是说实话实说，我不知道我帮他呼吁了之后，到底是好还是不好，然后那边商量了一下，反正最终的意思还是就是说希望也能够呼吁一下，但是给我一个要求，公平公正的说，公平公正的说，咱们说实话，你说陈秋实现">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-06T15:05:09.000Z">
+<meta property="article:modified_time" content="2020-07-22T14:30:03.713Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/07/20200207%E7%AC%AC1359%E6%9C%9F-%E5%91%BC%E5%90%81%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%85%AC%E5%B9%B3%E5%85%AC%E6%AD%A3%E7%9A%84%E5%AF%B9%E5%BE%85%E9%99%88%E7%A7%8B%E5%AE%9E%EF%BC%8C%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E5%8F%97%E4%B8%8D%E4%BD%8F%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%8E%E6%96%87%E4%BA%AE%E4%BA%86-5ZGnmGdtuU4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/07/20200207%E7%AC%AC1359%E6%9C%9F-%E5%91%BC%E5%90%81%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%85%AC%E5%B9%B3%E5%85%AC%E6%AD%A3%E7%9A%84%E5%AF%B9%E5%BE%85%E9%99%88%E7%A7%8B%E5%AE%9E%EF%BC%8C%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E5%8F%97%E4%B8%8D%E4%BD%8F%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%8E%E6%96%87%E4%BA%AE%E4%BA%86-5ZGnmGdtuU4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-07 00:05:09" itemprop="dateCreated datePublished" datetime="2020-02-07T00:05:09+09:00">2020-02-07</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/07/20200207%E7%AC%AC1359%E6%9C%9F-%E5%91%BC%E5%90%81%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%85%AC%E5%B9%B3%E5%85%AC%E6%AD%A3%E7%9A%84%E5%AF%B9%E5%BE%85%E9%99%88%E7%A7%8B%E5%AE%9E%EF%BC%8C%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E5%8F%97%E4%B8%8D%E4%BD%8F%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%8E%E6%96%87%E4%BA%AE%E4%BA%86-5ZGnmGdtuU4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/07/20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了-5ZGnmGdtuU4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月7号星期五，陈秋实已经被证实现在被隔离了，我早晨起来的时候为李文亮的事弄得我心里特别难受，一直也没说他这个事儿。还有一个就是说跟一个朋友也聊，然后也要询问人家那边的感受，因为我也是说实话实说，我不知道我帮他呼吁了之后，到底是好还是不好，然后那边商量了一下，反正最终的意思还是就是说希望也能够呼吁一下，但是给我一个要求，公平公正的说，公平公正的说，咱们说实话，你说陈秋实现在应不应该隔被隔离？ </p>
+<p>从法律法规上来说是符合法律法规的，咱们就是说咱一碗水端平，为什么这么说？实际上是方斌事件之后，方斌当时去了第五医院拍了这段视频之后，武汉市就专门为了方斌的事件出了这么一个通告，是2月2号中共武汉市的新灌肺炎防控指挥部发布了第10号通告，通告说什么呢？全市要在2月2号中午12点前，集中隔离了4类人员，这4个人员是什么？是确诊患者，疑似患者，发热患者和确诊患者的密切接触者，共4类人员。 </p>
+<a id="more"></a>
+
+<p>是什么意思？就是说如果你去了像什么没有第5医院协和医院，这些就是说定点收治的这些病人的医院，你只要去了那儿的前线，因为那种医院里边他总会有一个确诊患者的，他不可能一个都没有对吧？医院里一一堆患者总有一个所以你只要去了急诊室，你在那溜了一圈，拍了个视频，或者你跟谁说两句话聊聊天，那么你肯定最起码算是第4类人，就是确诊患者的密切接触者。那就是说任何人你只要敢去那种地儿拍视频去那儿溜达，他们按照第10号通告都可以隔离你。 </p>
+<p>这个是一点问题都没有。如果咱们公平公正的说就是这样，陈英是被隔离是完全完完全全符合法律法规的。你想如果公平公正的说的话，它符合法律法规，我们在这里我们就不能够呼吁说中国政府或者武汉政府尽快释放陈秋实因为他也不算是被抓捕了，只能说是被隔离了。隔离根据防疫法也好，根据什么也好，它这也是应该被隔离。 </p>
+<p>所以我想来想去，如果公平公正的来说，我只能呼吁了中国政府就是说公平公正的来对待陈秋实，对吧？主要来讲从所有的他的这些亲友来说，实际上都担心就是说我看看他们原话说的就是这样子，我看一下这个原话他们说的是什么。现在就是说从他们的亲友来讲，最担心陈秋实被传染，说陈秋实身体一直都不是很好，之前他视频也说过，他好像是做手术导致他可能喝的那么一两个月的流食导致的。 </p>
+<p>希望我觉得公平公正的对待，他没有任何症状，对吧？你如果说你核酸检测是阳性，那么你给它隔离到某一些什么地方，我们那也就认了，对不对？如果不是的话，那么我们觉得就是说隔离应该像我觉得应该特事特办，对于全球时的隔离的话，我应该在一个我觉得说更好一点的一一个环境里边，对吧？有人给我发了一个消息，我不知真假，给了我一个地址，是叫什么江芳路江芳路的一个解放路。解放。 </p>
+<p>我不知道这人为什么偏给我发的是英文，我不知道他担心什么，知道吗？他跟我说秋实树的病因，武汉，然后后面有一个地址address，给我发了是个英文的地址，但是其实你翻译过来是解放路。我查了一下这地址是一个政府部门，我觉得如果真的是像这人说的，在这个地址隔离的话，我觉得就别动了，我觉得一直挺好。我觉得这地儿不错。这地儿还比较安全，这件比较安全，所以我就说如果是武汉政府或者北京政府能看到的话，我觉得如果就在这儿的话，那就在这儿。 </p>
+<p>不要往其他的地儿送，因为也是我觉得非常时期，然后特殊人物特殊对待，如果在这个位置隔离我觉得也不错，隔离了14天。然后那是14天没有，我觉得如果武汉市政府对于他在那儿觉得添乱，隔了一个14天就让他回青岛找他妈去就得了，对吧？隔了一个14天没事你见他回家找你妈去吧，对吧？就送走就得了。 </p>
+<p>反正我觉得这样子来处理会比较的公平公正。亲属因为大家也知道中共现在政府就处于一个塔西佗陷阱，不论你说什么都没人信，你做的你说的是真的是假的，都没人信，你做的是好的是坏的。大家都怀疑你有恶意，所以我觉得在这种情况之下，我呼吁中国政府公平公正的对待陈秋实。因为说实话我认为中国政府目前也是一个内忧外患之际，对吧？我认为中国政府现在可能承受不住第二个李文良了，如果陈修时有点什么问题的话，哪怕是他真的自己感染的，如果有个问题，所有的人都会怀疑谁，都会怀疑武汉政府，都会怀疑中国政府，对不对？所以我觉得对于中国政府来讲，你哪怕是为了避嫌，避免嫌疑，我觉得也应该找一个更安全的地方来隔离他，那么他能把他的世界这个事情处理的我觉得更文明更理性对吧？ </p>
+<p>而陈秋实目前来讲，在整个海外引起了很大的重视，对吧？我觉得海外几乎所有的媒体都不能够回避，都在报道，对吧？今天我看美国之音也在报道他被隔离的事情，所以我觉得不管是对内还是对外，中国政府目前来讲是应该展现的自己，就是说更文明更理性。对中国政府目前自己来讲也是更好的，对吧？我觉得我这种呼吁完完全全还是就是说如果我完完全全站在陈秋实这边去做不切实际的呼吁的话，我觉得对中国政府也不公平，你也听不进去。 </p>
+<p>所以我觉得我应该就是说站在中国政府这边，我来思考这个问题怎么解决。对陈秋实也比较好，对中国政府也比较好，达到一个双赢。我觉得我刚刚说的我觉得对陈秋实也是可以接受的，对他人身安全对吧？是可以接受的，对于中国政府来讲的话，在目前的阶段再出第二个里面量，我觉得中国政府应该思考一下，你能不能承受得住？对吧？陈游时从各方面来讲，可能比李文亮的影响力知名度好像还更还更高一点，还更高也不好说，不过因为全球石现在主要来讲，我觉得还是在海外有名，国内其实中国人你知道对吧？ </p>
+<p>我在录这期节目之前，我跟我老婆商量这个事，我老婆还跟我说，我说我说你看我这题目行不行？我老婆说你不要跟中国政府枪火，中国政府以中国政府的自信来讲，中国政府就认为现在不要说第二个理论量，再来10个政府也扛得住，我也承认的确是我知道我这这样说其实也没什么效果，中国政府真不怕，真不怕，不要说不要说李文亮，不要说陈秋实小波，李小波是诺贝尔和平奖得主，对不对？那在世界上的各方面来讲，他这个分量对吧？ </p>
+<p>64它也是非常重要的人物，对吧？我印象特别深刻，64的时候，刘晓波的视频他把枪砸的视频对吧？非常深刻，也扛得住，我能明白，所以我想一想，我也不是说就是说一定要拿好像李文亮拿陈金石来威胁政府，我觉得这样也不好，不想目前这个时候我们不想激化矛盾，我只是觉得人总都是有一个善良的，对吧？我政府我相信尤其像习习近平先生到了这个位置了，我绝对相信他，他已经没有什么个人的这种私利的追求了。 </p>
+<p>我记得我18年的时候，我是不是录过一个视频，我说我谈谈习近平先生，那些视频我觉得还不错，你感兴趣你们可以去看一下。当时我就说对于习近平来讲走到了这一步，其实更多的追求的已经不是就是说眼前要得到什么，对吧？你说荣华富贵大家讲都是浮云，没有什么用了对吧？权利也都顶天到头了。我觉得对于习近平来讲，现在应该追求的是一种是深厚，就是说在生前没有什么追求都到头了，对吧？追求的反而是死了之后的名声，就是说百年之后后人怎么来评价你？ </p>
+<p>这很重要。就是说自己在历史上的一个位置，这都是非常重要的，我觉得说因为总是有各种的这种巧合，各种巧合好像证明了还有北京好像有人在看是吧？ </p>
+<p>假设说非常的有运气，就是说习近平先生能看到这期视频的话，或者有他的身边的人能说上话的人，可能这些视频的话，其实我觉得如果能够文明的理性的来处理陈秋实这个事件，对中国政府对习近平先生来讲，这个人的名声来讲，我觉得都是一件好事情。你说。而且我总觉得这样子就是说，我相信陈秋实也是希望中国好，对吧？每一个人都希望中国好对吧？我们总是说一件一旦不合不统一了，总觉得好像我是为中国好，你不是你是汉奸，是吧？每个人都是这么想对吧？ </p>
+<p>中国就是说最多的就是汉奸，你知道吗？真的就1个广告牌砸下来，砸死10个有8个的，但是你从我来讲，我总觉得其实我见过的汉奸真不多，因为我们都是中国人对吧？中国不好，我们每一个人都受卡巴，包括你现在的话，其实我们在美国我们也受到歧视，是吧？所以我觉得既然大家都是为了中国好，我觉得我们就应该互相包容，互相理解。 </p>
+<p>对是吧？我觉得我这么说算公平公正吧，对大家都好是吧？我觉得我提的建议也那不算过分，是不是？好吧？刚才你讲的都是为了国家好，然后就想起柏拉图说的一句话一段话说，如果因为要允许不同的声音出现，所以就是说如果尖锐的批评完全消失，温和的批评将会变得刺耳。如果温和的批批评也不被允许沉默，将被认为是居心叵测，如果沉默也将不再被允许，赞扬不够卖力将是一种罪行，如果只允许一种声音存在，那么唯一存在的声音就是谎言。 </p>
+<p>所以我觉得无论是你或者是陈秋实，就是一种批评的声音。对。我觉得可但是你这么说对全球是特别不好，为什么？为什么这么说？因为我觉得咱们既然公平公正的说，咱们冒着良心说，我觉得对于中国和中国政府来讲，像我这种人反而更容易包容，因为我没有行动力。我只是说我只提建议，听就听了，不听就算了，不听我十几岁了，我没有任何行动力。 </p>
+<p>但是陈秋实不一样，他是一个真的有行动力的人。所以对于政府来讲，其实会更加的就是说不喜欢，你明白我意思吧？因为他有行动，就是说实际上你跟我一样，你就坐家里，你就光是批评你也就批评了是吧？批评对吧？或者你移民以前有10来年，我觉得其实很容易就可以移民，对不对？你移民出来，如果你只是在海外批评批评，我相信中国政府不会有任何的什么就懒懒得理你，像我们这种懒得理你对不对？的理我们，然后就没办法迫使他们做出改变，去行动上进行完善，自我提升自我。 </p>
+<p>陈秋实那样的话可能会迫使他们去进行行动上自我完善和发展。对，但是危险性就更高，对。对，所以为什么你说我乐了，我觉得我完美的捞了你的完美的。 </p>
+<p>因为我觉得中国的政府整体还算是讲理的，讲理的，我说这个可能会能听得进去。 </p>
+<p>千人之诺诺不如一一士之谔谔，武王谔以昌，殷，纣墨墨以亡。所以都是这个道理，不过你知道吧你懂我意思是吧？就是中国目前的这个现状就是这么一个现状，所以反正道理我们都讲了，对吧？能不能听的你怎么办对不对？我们两个算是正版都说了。对算是反正我们把正的反的都说了，我们能够进的心来都进到了，希望怎么办？你政府你看着办对不对？我还是觉得怎么说？民不畏死，奈何以死拒止是吧？ </p>
+<p>好吧，这期间到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/07/20200207%E7%AC%AC1358%E6%9C%9F-%E6%A0%B8%E9%85%B8%E6%A3%80%E6%B5%8B%E5%87%86%E7%A1%AE%E7%8E%87%E4%B8%8D%E5%88%B050%25%EF%BC%8C%E8%AF%AF%E8%AF%8A%E7%9A%84%E6%AF%94%E7%A1%AE%E8%AF%8A%E7%9A%84%E8%BF%98%E5%A4%9A-F7Sv6tUPMfQ/" rel="prev" title="20200207第1358期-核酸检测准确率不到50％，误诊的比确诊的还多">
+      <i class="fa fa-chevron-left"></i> 20200207第1358期-核酸检测准确率不到50％，误诊的比确诊的还多
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/08/20200208%E7%AC%AC1360%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8D%AB%E7%94%9F%E9%83%A8%E9%97%A8%E7%A1%AE%E8%AE%A4%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E5%8F%AF%E4%BB%A5%E7%A9%BA%E6%B0%94%E4%BC%A0%E6%9F%93-n4Xd2q4QuM4/" rel="next" title="20200208第1360期-中国卫生部门确认新型冠状病毒可以空气传染">
+      20200208第1360期-中国卫生部门确认新型冠状病毒可以空气传染 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1145</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/07/20200207%E7%AC%AC1359%E6%9C%9F-%E5%91%BC%E5%90%81%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E5%85%AC%E5%B9%B3%E5%85%AC%E6%AD%A3%E7%9A%84%E5%AF%B9%E5%BE%85%E9%99%88%E7%A7%8B%E5%AE%9E%EF%BC%8C%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E6%89%BF%E5%8F%97%E4%B8%8D%E4%BD%8F%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%9D%8E%E6%96%87%E4%BA%AE%E4%BA%86-5ZGnmGdtuU4/";
+    this.page.identifier = "2020/02/07/20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了-5ZGnmGdtuU4/";
+    this.page.title = "20200207第1359期-呼吁中国政府公平公正的对待陈秋实，目前的中国政府承受不住第二个李文亮了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
