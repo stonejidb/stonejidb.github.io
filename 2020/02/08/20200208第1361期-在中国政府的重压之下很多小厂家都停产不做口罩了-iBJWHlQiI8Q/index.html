@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月8号星期六，我之前讲过就口罩这个事，我说适当的涨价必须得允许，如果你一旦不允许的话，你最后导致的结果就是你没有口罩用了。亚当斯密在国富论里讲得非常的清楚，当每一个人都为自己的私利，为了自己的私心去追求的时候，就会有一只看不见的手，让整个社会的良性运转起来。我说了口罩这个东西不要过分的压价，现在导致由于政府过分的压价，在重压之下，现在口罩短缺，我们今天得到了一个消息，有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/08/20200208%E7%AC%AC1361%E6%9C%9F-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E9%87%8D%E5%8E%8B%E4%B9%8B%E4%B8%8B%E5%BE%88%E5%A4%9A%E5%B0%8F%E5%8E%82%E5%AE%B6%E9%83%BD%E5%81%9C%E4%BA%A7%E4%B8%8D%E5%81%9A%E5%8F%A3%E7%BD%A9%E4%BA%86-iBJWHlQiI8Q/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月8号星期六，我之前讲过就口罩这个事，我说适当的涨价必须得允许，如果你一旦不允许的话，你最后导致的结果就是你没有口罩用了。亚当斯密在国富论里讲得非常的清楚，当每一个人都为自己的私利，为了自己的私心去追求的时候，就会有一只看不见的手，让整个社会的良性运转起来。我说了口罩这个东西不要过分的压价，现在导致由于政府过分的压价，在重压之下，现在口罩短缺，我们今天得到了一个消息，有">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-07T15:06:01.000Z">
+<meta property="article:modified_time" content="2020-07-22T00:59:33.851Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/08/20200208%E7%AC%AC1361%E6%9C%9F-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E9%87%8D%E5%8E%8B%E4%B9%8B%E4%B8%8B%E5%BE%88%E5%A4%9A%E5%B0%8F%E5%8E%82%E5%AE%B6%E9%83%BD%E5%81%9C%E4%BA%A7%E4%B8%8D%E5%81%9A%E5%8F%A3%E7%BD%A9%E4%BA%86-iBJWHlQiI8Q/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/08/20200208%E7%AC%AC1361%E6%9C%9F-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E9%87%8D%E5%8E%8B%E4%B9%8B%E4%B8%8B%E5%BE%88%E5%A4%9A%E5%B0%8F%E5%8E%82%E5%AE%B6%E9%83%BD%E5%81%9C%E4%BA%A7%E4%B8%8D%E5%81%9A%E5%8F%A3%E7%BD%A9%E4%BA%86-iBJWHlQiI8Q/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-08 00:06:01" itemprop="dateCreated datePublished" datetime="2020-02-08T00:06:01+09:00">2020-02-08</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/08/20200208%E7%AC%AC1361%E6%9C%9F-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E9%87%8D%E5%8E%8B%E4%B9%8B%E4%B8%8B%E5%BE%88%E5%A4%9A%E5%B0%8F%E5%8E%82%E5%AE%B6%E9%83%BD%E5%81%9C%E4%BA%A7%E4%B8%8D%E5%81%9A%E5%8F%A3%E7%BD%A9%E4%BA%86-iBJWHlQiI8Q/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/08/20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了-iBJWHlQiI8Q/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月8号星期六，我之前讲过就口罩这个事，我说适当的涨价必须得允许，如果你一旦不允许的话，你最后导致的结果就是你没有口罩用了。亚当斯密在国富论里讲得非常的清楚，当每一个人都为自己的私利，为了自己的私心去追求的时候，就会有一只看不见的手，让整个社会的良性运转起来。我说了口罩这个东西不要过分的压价，现在导致由于政府过分的压价，在重压之下，现在口罩短缺，我们今天得到了一个消息，有一个我们的网友上次也说过了，我们有一个网友他能够转产口罩，现在有一个他跟我说他专门做口罩的，他希望我反映一下，因为他说他们现在无所谓，挣钱不挣钱都无所谓，关键是想为祖国为人民的出一份力，但现在出不了这份力。 </p>
+<p>怎么回事是这样，网友我不说他在哪儿了好吧，我不能透露他的个人信息，反正他经营的一个小型的一次性口罩的厂家，现在就是缺口罩对吧？他跟我说首先来讲一个原因就是好多工厂现在还没有开工，春节返工了，工人没回来，没有工人开不了，光有机器没法转，让你逼着成长一个人，他也运转不了一个工厂对吧？就没有办法。 </p>
+<a id="more"></a>
+
+<p>另外一个原因是好多厂家现在根本就不愿意生产，不做干脆就停工了。 </p>
+<p>为什么是这样？他说他们这块当地有4个工厂，他们都是做的互相都有窗户，他们4个工厂都是这样，就是说出了疫情之后，现在缺口罩，政府直接派人来工厂就直接采购，但是就是说不许涨价。物价局规定原先是什么价，现在就是什么价，但是工商税务并不放过我们，税是一分钱不能少交，一点优惠也没有，价格还不许涨。他说问题在这，就是说他说你现在这个时间点，我雇工人的费用是平时的几倍，很多工人没有返工，你如果愿意雇工人，如果冒着生命危险，因为他来工厂他也担心被传染，工厂幂环境你也不知道谁有大家都是冒着生命危险来生产的。 </p>
+<p>这个时候人工是平时的就几倍，平时你可能几块钱一个小时，现在可能就要几十块钱一个小时，要不然没有人愿意来。对吧？那么人工翻翻了几倍，然后现在物流不方便，各个省都是说不说峰有好几个就风了，温州和广州现在都是疯了，其他的什么国道高速好多都封了，然后很多原先小工厂根本连他们村都出不来，你知道吗？那村都让土道都封了，所以物流根本出不来，物流不方便出不来，很多原材料拿不到，他说我工厂我做口罩，我需要几个东西，第一我得有工人运转机器，第二我得有原材料，对不对？我不可能拿空气，我不可能把空气做成口罩，对吧？ </p>
+<p>老乡。所以现在就是说物流不方便之后，很多的原材料的提供的都是要走走快递的，所以原材料就涨得非常的恐怖，因为就连物流的成本都提高了。原来1万块钱左右的无纺布，现在要14,000块钱左右，一次性口罩最重要的这种熔喷布说以前是3万块钱左右，现在要6万，就是成本的基本上要不就是翻了一半，要不就直接翻一翻。 </p>
+<p>他说现在政府是不允许涨价，这个我们也能理解对吧？但问题现在工厂就不做了，我们不做了，因为我们做一个赔一个实在赔不起，知道吗？不管人工成本还是原材料都比原先基本上都翻翻了一倍。所以他说我们也都理解政府部门的管控不佳，我们也想做了之后给人民群，因为人民群众现在的确需要全国都需要，对不对？我们也愿意做尽一份的绵薄之力，就是说我们不挣钱可以，但是能不能让我们不赔钱，就说我运转我白干，但是工人的工资我得给人家发，我不给发工资，没有人愿意来，最后我上厂家我不挣钱可以，但是你让我不赔钱就行。 </p>
+<p>对吧？那么现在就是说他说他周围很多小的厂家根本赔不起，直接就不做了，那就不做了，所以这直接就导致口罩现在供应不上来就是说不要，按理说现在国家出了问题，我们应该口罩加班加钱24小时去运转去做，对不对？应该就是说赶快把需求供应上。 </p>
+<p>但是现在实际问题是什么？就是说由于疫情发生之后，由于国家管控不力，导致现在据他所知，口罩的生产还不如发生争议之前，就是说连现在的产量连发生争议之前的一半都没有，是吧？我们很多人都说，说以中国目前口罩生产能力，我们不会缺口罩，我们很快加班加点的就能感知出来。但是现实的情况不是现实的情况是我们的口罩的生产反而比以前更低了。这就是我说的就是亚当斯密的理论。 </p>
+<p>你信也好，你不信也好，最后在社会的真正的运转当中，为什么100年了，这么多后面无数的经济学家，这么多聪明的人，这么多研究经济的人，都尊亚当斯密，当然不是所有的了，我也承认，但是80%的经济学的学者、学生、教授、经济学家都遵亚当斯密为现代经济学之父，这是他妈有原因的，你懂吗？ </p>
+<p>你能明白吗？为什么？不是，人家跟你不一样，你们中国政府拿枪逼着别人说你对说你中国政府对人亚当斯密没有人就写了一本书搁在那儿了，大家都是自发的认为亚当斯密是对的，为什么？因为实践证明它是对的，他不跟你共产党不一样，他不是靠新闻联播说成对的，也不是靠人民日报说成对的，不是靠着武警来了之后，你说的不对就抓你去训诫，问你明白吗？明白，能不能能做到吗？能明白吗？明白，不是的，亚当斯密没有派人来抓，人家是靠着真实，就是说我这价我的这个东西是有价值的，懂不懂？ </p>
+<p>现在搞成这样了，口罩现在倒好，按理说原先我们假如说把一天做10个，我们现在应该一天做15个，一天做20个才对。可现在倒好，由于你管控物价导致小小商家根本不做了之后现在倒好，我原先原先能做10个了，现在还能做5个还能做6个，口罩更加的不够用。 </p>
+<p>你现在怎么办？你们自己去想，解决方法我之前就说过了，不听。你有没有发现一个问题？不听老人言吃亏在眼前，每次我说了你不听你都吃亏，为什么现在各地现在抢口罩，你看大理什么的都是你这个口罩只要从我这过，雁过拔毛，我先扣一半，为什么？因为口罩的产量没有增加，反而减少了。目前的这种情况之下，口罩适当的涨价是必须的，物价涨了，物流涨了，工人又没有返工，在这种情况之下你不涨价没有人做，杀头的买卖，有人做赔钱的买卖没人做。 </p>
+<p>你这么弄完了之后，就是说你看似好像你是为了公益，但是最后受到伤害的是公益。亚当斯密就说了，每一个小厂家你让他们挣着钱，在这种时候他们都愿意加班加点的，对不对？我一个口罩让你多挣两块钱，原先你挣一块，我现在让你挣两块，小厂家怎么办？就妈开足了马力，想尽了一切办法，能多生产一个就多产一个，他的积极性调动起来了，懂不懂？ </p>
+<p>大锅饭吃了这么多年大锅饭行，国营企业行吗？市场调控行吗？你要行的话，你搞改革开放干什么？邓小平当时搞改革开放干什么？对不对？事实证明你不行，对不对？你行的话你就不搞改革开放，你就不搞市场经济了。毛泽东不搞的就是说规划经济，最后怎么样不就吃了大锅饭就能吃得上吗？一个个不都妈饿死了。集约住房怎么成的？这么多年了这点东西学不会是吗？中国就没有一个真正的经济学家，没有人家亚当斯密人家英国有你学学不行吗？今天讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/08/20200208%E7%AC%AC1362%E6%9C%9F-%E9%99%88%E4%B8%80%E6%96%B0%E7%A9%BA%E9%99%8D%E6%AD%A6%E6%B1%89%EF%BC%8C%E8%BF%99%E6%AC%A1%E5%BA%94%E8%AF%A5%E6%98%AF%E7%9C%9F%E7%9A%84%E4%BA%86-LqHSkjbEeag/" rel="next" title="20200208第1362期-陈一新空降武汉，这次应该是真的了">
+      20200208第1362期-陈一新空降武汉，这次应该是真的了 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1125</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/08/20200208%E7%AC%AC1361%E6%9C%9F-%E5%9C%A8%E4%B8%AD%E5%9B%BD%E6%94%BF%E5%BA%9C%E7%9A%84%E9%87%8D%E5%8E%8B%E4%B9%8B%E4%B8%8B%E5%BE%88%E5%A4%9A%E5%B0%8F%E5%8E%82%E5%AE%B6%E9%83%BD%E5%81%9C%E4%BA%A7%E4%B8%8D%E5%81%9A%E5%8F%A3%E7%BD%A9%E4%BA%86-iBJWHlQiI8Q/";
+    this.page.identifier = "2020/02/08/20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了-iBJWHlQiI8Q/";
+    this.page.title = "20200208第1361期-在中国政府的重压之下很多小厂家都停产不做口罩了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月10号星期一，我们首先要说做梦要延迟24小时，有人联系我们了，有人跟我们说往上报，但是他说比较慢，他说你也知道咱们的体制非常慢，所以你给24小时那是不可能的，希望我们能够往后延12个小时，我说这个没有问题，这个没有问题，但是12个小时可能是不行，因为12个小时之后，正好是我们到夜里了，我们就得睡觉去了。我看不到那个时候，所以要严干脆就严24个小时延到明天得了，但是就只">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200210第1368期-延迟24小时做梦">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/10/20200210%E7%AC%AC1368%E6%9C%9F-%E5%BB%B6%E8%BF%9F24%E5%B0%8F%E6%97%B6%E5%81%9A%E6%A2%A6-zVcMEJ0o4tU/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月10号星期一，我们首先要说做梦要延迟24小时，有人联系我们了，有人跟我们说往上报，但是他说比较慢，他说你也知道咱们的体制非常慢，所以你给24小时那是不可能的，希望我们能够往后延12个小时，我说这个没有问题，这个没有问题，但是12个小时可能是不行，因为12个小时之后，正好是我们到夜里了，我们就得睡觉去了。我看不到那个时候，所以要严干脆就严24个小时延到明天得了，但是就只">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-09T15:06:08.000Z">
+<meta property="article:modified_time" content="2020-07-22T00:59:33.883Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/10/20200210%E7%AC%AC1368%E6%9C%9F-%E5%BB%B6%E8%BF%9F24%E5%B0%8F%E6%97%B6%E5%81%9A%E6%A2%A6-zVcMEJ0o4tU/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200210第1368期-延迟24小时做梦 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/10/20200210%E7%AC%AC1368%E6%9C%9F-%E5%BB%B6%E8%BF%9F24%E5%B0%8F%E6%97%B6%E5%81%9A%E6%A2%A6-zVcMEJ0o4tU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200210第1368期-延迟24小时做梦
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-10 00:06:08" itemprop="dateCreated datePublished" datetime="2020-02-10T00:06:08+09:00">2020-02-10</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/10/20200210%E7%AC%AC1368%E6%9C%9F-%E5%BB%B6%E8%BF%9F24%E5%B0%8F%E6%97%B6%E5%81%9A%E6%A2%A6-zVcMEJ0o4tU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/10/20200210第1368期-延迟24小时做梦-zVcMEJ0o4tU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月10号星期一，我们首先要说做梦要延迟24小时，有人联系我们了，有人跟我们说往上报，但是他说比较慢，他说你也知道咱们的体制非常慢，所以你给24小时那是不可能的，希望我们能够往后延12个小时，我说这个没有问题，这个没有问题，但是12个小时可能是不行，因为12个小时之后，正好是我们到夜里了，我们就得睡觉去了。我看不到那个时候，所以要严干脆就严24个小时延到明天得了，但是就只能沿着一次，绝对不会再给第二次了。 </p>
+<p>因为我也是觉得他们说的对，就是说大陆这种缓慢的反应机智，你给24小时就跟没给是一样的，所以我们觉得有道理给48小时，好吧？ </p>
+<a id="more"></a>
+
+<p>然后从昨天我说完了之后没隔两个小时就有人来问我了，说是不是到点了？你说该做梦，是不是该说了？昨天我想我说的很清楚，美国东部时间的2020年的2月10日的上午的11:11，凡是能够会用网络的，实际上你在百度或者谷歌上，你搜美国东部时间，他都会马上给你显示出美国东部的计时时间来。所以对此我思考了一下，我觉得我要对我的推特进行一个清理了，因为最近真的是人越来越多，每一天起来了之后，推特上都有几百个留言，有一些的的确确是有价值的，有一些就可以说一点价值都没有，所以我决定我以后要对推特进行一个清理，因为我要说我拿推特，我不是拿来跟别人聊天的，推特尔对我来讲是一个工具，是辅助我工作的一个工具，这里边有很多我们经过长期的爆料互相联系，建立了非常好的这种互信关系的一些网友，也可以说是我们的记者火台3000记者遍布全球，那里面有一些非常的没有价值，完全在浪费我的宝贵时间，所以有一些人我可能就要把他们就清掉了。 </p>
+<p>因为你知道早上起来一看几百个留言的话，他的很多那些没有价值的，就把那些有价值的就给淹没了。举几个例子，首先我要说一个事儿，昨天 windy的事儿里边，我看一下我还能不能找到有一个人来找我跟我说，然后看看我可能找不到。首先来讲他说什么，就是说我们不说在温地上有二氧化硫的，超标到了1000多，然后他就去了，他找完之后他说没有，知道吗？跟我说没有，你是不是造假，然后我就没办法的人，这个人看看这怎么能够把我这边的引去，我等一下我把这挡一下，等一下这个来了，他跟我说他去问地上找了，找了之后没有跟我的数据不一样，然后我去Google上搜了一个我发给他了，然后他根据我这个去找，然后到最后跟我说，他说他说好，看到了，但是是很细小的，并不是确切的位置，是在武汉的周边。 </p>
+<p>然后你要明白一点，比如说举个最简单的例子，我跟你说我录了一期节目，我说昨天晚上我看见流星了，在哪我们家我朝拜从哪，然后你过了一会你给我发了，你说你说瞎话，你说完之后我马上去看了，没有看见刘星，我想抽死你，你知道吧，我他妈想抽死你。然后来问很多，这是第一个提问的，我回复了他回复他之后他自己找到了，找到之后等到他看的时间已经还剩下的1184，我们当时看时是1300多，然后他我一会我去做一个我把他做一个截屏发在我的推特上，证明就是说我跟他交流，以此来证明这个是事实存在的，但是他们后来可能是不烧了，这两天可能也发现海外也发现了他们停止烧了。 </p>
+<p>然后网上也有很多视频显示，就是说武汉的人招到了武汉，在前天发生了大量的雾霾，很多武汉人也都是非常的奇怪，就觉得这两天武汉都停工了，工厂都停了，马路上也没有车，哪来的雾霾对吧？然后就这么一个情况。至于烧的什么，昨天我没有说对吧？我说我也不知道烧什么，但是不管烧什么，我的建议不要再烧了，因为这个量太大了之后，他有毒素对老百姓的健康的不利，这是我的说法，对吧？不能不过你是烧垃圾，是烧一次性口罩，你是比如说你怀疑有一些动物在传染，你在烧动物的尸体，你烧什么都好，我不管我也不知道，我只是建议你不烧了，至于来直接就骂我，说你一片要说烧尸体，我可没有说。 </p>
+<p>昨天我市民说的很清楚，好吧？以前个别有一些人来了，也没有看我的视频，也不知道我视频说什么，或者我不知道是看了是没看明白是怎么着，来了之后把我视频里的话原封不动的说了一遍，或者就是说明明像昨天那种，我没有说他烧尸体，偏要来了，偏要说是我说武汉在烧尸体的，像这种我就觉得要么你就是蠢，就真的听不懂，要么就是坏诚心来抬杠，浪费我时间这种。只要我有以后我就不再做解释了，还有像这种温蒂，这个是我做的最后一次，最后一次解释，我以后我不想浪费这个时间，我还要去谷歌上，你自己去谷歌上查都能查得到的，对吧？你自己连Google都不会用，像这种我们完全就把它屏蔽掉，因为我觉得这是没有价值的，浪费我时间的。 </p>
+<p>这个消息很多人就问我说为什么关评论这也是其中之一，我不希望他浪费我的时间，我每天的时间非常宝贵，我老婆知道我天天的时间我是连轴转的，知道吗？反正这种在浪费我的时间，我的时间就是生命，浪费我的时间就浪费我的生命的这种绝对不留。因为留言里边内容99.99%是没有价值的，完全没有价值，就是垃圾就在浪费你的时间，就跟垃圾食品一样，那么没有营养，只不过就在给你添乱。所以像这种就一会我给截个屏搁在那，就证明我们有过这种交流。 </p>
+<p>好吧，然后后面还有好几个都类似的情况，我都没有再理。好吧？但是这个人我暂时我先不屏蔽，我再说一下，我们不溯及既往，就什么意思呢？我现在说的这几种标准，从现在往前的我都不屏蔽，好吧，因为之前我没说过，但是从这一刻再往后，只要再有这种情况我就屏蔽。好吧，我不溯及既往，但是以后的不行。这是其中一种，就是说你自己看完了之后，自己动动脑子，自己去谷歌上去去佐证，如果你觉得我说的有错误，你可以自己去YouTube上发视频，你来这个质疑我，那么有愿意听你的就听你的，你不用来跟我质疑，我没有时间给你解释。 </p>
+<p>好吧？第二种，我昨天已经说过了，最近在互联网上很多人天天在我的屁股后面等着我拉屎，然后去做饭去吃，这两天不断的有人来跟我说，谁又拿你的屎去炒菜了，谁又吃你的屎了，你能不能回应一下？你让我回应什么？我问他我的食好吃吗？是撬黄瓜好吃，还是炒鸡蛋好吃？还是炖肉好吃？你要我回应什么？ </p>
+<p>首先来讲我没有时间看那些视频，因为太多了，你现在在互联网上你随便一搜，天天的得有十几个人都跟在我后面吃屎，每个人说20分钟，我天天看他们可能10个小时就没有了，我怎么有时间看他们那些勒瑟你懂我意思吗？就是说你拉了一泡屎，如果有人比如说有你假如说你拉了一泡屎，有人拿你的屎翘了点黄瓜炒了一盘菜，问你你要不要尝一口，你会尝一口吗？你是不是傻缺心眼，所以我觉得这些人不是蠢，坏属于什么叫斗蛐蛐？ </p>
+<p>什么叫斗蛐蛐？就是说我逮着两只蛐蛐来让他们打架，对不对？我跟这个自媒体说谁我跟你说你什么了，然后跟说4兄弟他说你什么了，就希望两个人打起来，然后一打起来了，好好。知道吗？打得不够凶，你把他腿咬掉了，你咬他头两个蛐蛐在那逗你知道吗？互相咬个钱抓咬掉以后腿才好了。这种叫斗蛐蛐的，知道吗？叫挑拨离间。 </p>
+<p>我经常说挑拨离间这种事是跟智商挂钩的，首先你要严重的思考一下，就是说你的智商是不是达标，从现在开始，所有在给我发，谁拿了我的屎炒菜吃了，问我香不香的，一律屏蔽。没有时间，我没有时间看他们，这是一个最主要的问题。我每天看的新闻太多了，有价值的东西太多了。好吧？我实在是也没有时间，然后你们也别把我当个蛐蛐再挑了，没我不参与这种事好不好？ </p>
+<p>我经常说昨天我都说了对吧？靠说郭德纲吃饭的最后都饿死了，我就只能说作为一个自媒体来讲，真的有本事的话，说你自己的新闻，没有本事靠着别人吃饭的，最终你会饿死。好吧？就这么个情况。 </p>
+<p>就像奥斯卡奥斯卡全盛的韩国电影parasite寄生者，他们如果不会自己讲新闻，光会说别人的话， parasite一群寄生虫对差不多就跟寄生虫差不多，他就他衣服在我身上就靠我的屎来养活他们，你知道吗？差不多就这么个情况。所以这种我不再那什么了。还有说看不懂时间的，好不好？ </p>
+<p>我今天说了我瞬间24小时顺延到的美国东部时间的2月的11号的上午的11:11，但是这是最后一次，我只给这一次明天无论谁在跟我说什么，我都播了。好吧，就这一次，后来我想一下也是24小时给的时间太短了，48小时我觉得足够了。 </p>
+<p>有一帮跟我说什么我认识，什么上海国安的我认识，那来找我，你跟我说我去给他们汇报反映，我告诉你我不需要这种给老领导修脚的，我认识太多了，知道吧？我认识太多了。 </p>
+<p>我不说我不能说话，我不能说我认识谁，我认为太多了，但是我不要间接的渠道把这个东西反映上去，为什么？因为我对中国体制比较了解，入这种间接的渠道反映上去之后，他们不会认真查的东西，反映上去了也是石沉大海。我就要跟他们正面刚知道吗？就是说我要你做一个承诺，就是说你要调查，我这个消息我不能白给你，给了你之后你不调查的话，等于就浪费掉它了。 </p>
+<p>有人跟我说说，你经常说公众有知情权，出了这个事之后，你为什么不愿意把这个事情公诸于众？我说我解释一下，这是我最后一次解释，再问类似问题的就全部屏蔽了。 </p>
+<p>好吧，我不管很多人都来了，跟我说你能不能讲讲美国流感闹那么厉害，你能不能讲美国流感，然后我还挨个给他们发，我之前我可能一个月前讲美国流感的视频，我前面都讲过，还有人来了更有意思，自动他们说你是大外宣，你能不能做一期节目阐述一下你的政治立场？大哥我做了1000多期了，我的政治立场我都快讲烂了，你一个新来的听了一期，然后让我把以前1000多期的东西都给你重复一遍，你是神经病吗？以后像这种我以前都忍了，就从以后开始之前我全都不忍，这种我不要这些垃圾人，这些垃圾内容，这些垃圾信息浪费我的时间。 </p>
+<p>好吧？自己去翻。 </p>
+<p>我的政治观点，我的立场我讲了1000多期了，我不断的重复我的政治立场，我的观点，我想的太多了，好吧？然后谁在质疑什么我都不管了。国内质疑5毛们就说我是什么，每每分到什么拿acIa的钱，什么fbI什么nned然后海外对反正乱七八糟的，反正海外就说是拿中领馆的钱是大外宣，只要再有人来了，就说质疑，然后让我去做解释的，全部屏蔽。我没有时间实在是没有时间。 </p>
+<p>好吧？最后还要说就是说刚刚没说完，就是说首先我跟你说，我只能说是我做了一个梦，为什么我只有一个消息源，然后这个消息源现在我丢失了，联系不上了，他不联系了，校园已经完完全全消失了，我找不到他。 </p>
+<p>但是跟你说，从武汉虽然发展以来，不断的有人来跟我爆料说武汉肺炎的原因是什么？我觉得没有300个这种信息也差不多了，得有300个左右的人来了不断的跟我们说武汉肺炎他掌握他也从哪儿来，在这300多个信息里只有一个信息引起了我的注意，而且让我反复的去思考。我是从2月7号拿到这个信息的，到现在三天过去了，经过我反复思考，我还是认为非我非常倾向于相信它是真的，但是这种东西只能说是基于我的判断，剩下那200多个都是在扯淡，我都不想看好吧？ </p>
+<p>这是唯一一个让我认为它是真的基于是什么？基于我做了一年多来有数千次的爆料，在这里边我在无数的假的消息里边去辨别真消息的这种能力，这种的嗅觉，这个东西我经常说它不是靠脑子去思考的，是靠鼻子去闻的，我闻出来的。但是我就说我没有百%确凿的证据的话，我不敢把这个播出来，因为影响力实在是太大了，而现在的问题就在这，我没有百%的证据。一般来讲像这种消息就是这样子，你报给我，可以，我以前录过一些视频叫滚钉板和当枪使，但是你不能拿我当枪使，你不能说把子弹给我，我给你打出去这不行，你要自己出来滚钉板，我联络他，我给了他我的我们就是说做视频采访的联络方式，然后他就被吓跑了。 </p>
+<p>他说他绝对不能露面，这人就彻底跑掉了，被我给吓跑了。在此情况之下我也有点怎么说，我也有点觉得的确有一人所能有一些东西是可以稳定版的，有一些的确是不行。像他就属于真的是不行，而且它非常的有价值信息，但是他这个信息其实也很容易去追查，作为一个就是说如果是追踪记者的话，调查记者的话，其实很容易，因为他给的信息太准确，太详实了，知道吗？实际上只要我们有一点能力，往往往下一查，有几个信息点只要一查进去，我们就知道他说的是不是真的，但非常抱歉抱歉。 </p>
+<p>他说的那几个位置都是那种特别的就是说吊诡的那些位置，我现在实在是没有能力了往下查，尤其在目前这种情况之下，很多人在盯着我们，我只要一查，我只要一松口，有很多人都来问我说我就是武汉前线的，我怎么回事能你你跟我说我去给你查，但是我不敢你知道吗？我不敢把这个消息给出去，因为我这消息一给出去了，就炸锅，你知道吗？在学校也是这样子，你在学校里班如果你上过学，你会发现一个问题，全班同学有一件事，你想让全班知道你怎么办，你只要跟一个同学说，我跟你说的事，你千万别跟任何人说，你把你只要跟一个人说了，不管他是谁，你相信我过不了三天全班都知道，所以就在这儿中国人保密能力极为的弱，我只能说到现在为止，我没有跟任何人说这个消息，在这还我再回应一个质疑，质疑李文亮当时这个病例，说那个病例那么简单，你只要找个医生问就可以，没错，我找医生问了，但是我不可能把这张图片发过去，我只能说就是说通过我看他们给打了50针肾上腺素，是不是这对不对？ </p>
+<p>医生马上告诉我这肯定不对，不能这么干。你知道吗？是我们问错了，我没有把这张图给任何人，从我来讲我没确认我不能发之前，我不会把我的消息给任何人，在此我是非常谨慎和小心的。所以凡是质疑的全部屏蔽，自己去动脑子，我不要挨个解释。 </p>
+<p>还有一点就是说不怕没好事，就怕没好人。事儿出现了，你往好处想，你就会认为我在我力所能及的范围内我竭尽全力了，对吧？你不往好处想，你怎么想我都是什么汉奸走狗，恨华党大外宣或者是什么，每间要不就是汉奸，要不我也不知道，反正都是对应的你知道吗？反正就是今天去美领馆领钱，明天去中领馆领钱你知道吗？所以这种看你是往好处想还是往坏处想了，所以这个事儿出现了，不管这个事儿是好事儿还是坏事儿，我看你这个人你是个好人，你是个善良的人，咱们交个朋友，你不是你就滚，很简单。 </p>
+<p>好吧？所以关于武汉飞肺炎这个是我接着把它说完，就是说我现在没有真相，我要讲也是我做了一个梦，我为什么要做这个梦？我已经说了，我觉得这个信息出来这个信息非常的重要，根据线索往下查的话，会签发出很多东西来。我是希望能往下查，但是所以中国政府如果来了跟我说他们愿意往下查，我愿意给他们让他们去做调查。 </p>
+<p>至于有人说他问我，你说中国政府去调查之后，我们会不会知道真相？不会的，你放心好了。知道吧？但是只要查的话它是有价值。我看的已经不在这个事，我看的已经不再是真相了，我是价值，为什么这么说？我的信息我自己能找能找到真相吗？我找不到，我给他们我也找不到，但是我给了他们之后他有价值，能够帮助到很多人，只能达到这个目的就可以了。 </p>
+<p>这个事情到了现在，就是说真相目前来讲，不是我第一追求的目标，我第一追求的目标是能够帮助到千千万万在中国正在煎熬的那些人，这个比真相现在就目前这个阶段来讲对我更重要。什么时候去寻找真相？ </p>
+<p>等这次事件结束了，我们重新过上了和平的稳定的幸福的安康的生活之后，那个时候我们再去我再想办法再去诉求真相，等到那个时候我得到真相，我一定会公诸于众。 </p>
+<p>但是目前来讲，首先我考虑的是让这些人能够得救，能够过得舒服一些。这是我目前思考的最重要的所以这也是为什么我联系他们，然后我希望官方给我一个肯定，但是有人跟我说，他说官方不可能给你承诺，官方要联系你，也只能让一些私下的人联系你，拿这个东西走，然后他们不能给你承诺，因为给了你的话他们很丢人。我说没有错，没有错，他们直接找我就是丢人，没有错。但你相信我，他们不找我，明天我做个梦，我不把我的梦说出来，他们会更丢人的。 </p>
+<p>所以两害相权取其轻，让他们自己去做决定，但是无论如何明天肯定不拖了，好吧？明天我再说一遍，美国东部时间2020年的2月11号的11:11，在那之前谁在来催我就屏蔽谁。好吧，自己去谷歌上去百度上搜，美国东部时间是什么时间，没有，到点的时候不要催我，催我我就屏蔽，催我就删，我不留任何垃圾。好吧？好，那就这么一个情况。好吧？如果他们不找我，其实我知道99.99%我觉得是够呛。 </p>
+<p>这个跟我说让我睡前12小时的基本上也就拖过一下，知道吗？他们能拖一下。他们现在思考的不是怎么解决这个问题，他们现在想的不是怎么跟我商量去调查去解决这个问题，他们现在想的是怎么把我解决了。我很明白他们现在想他们是要他们一向的作为都是这样的，不是要解决问题，而是解决的提出问题的人。 </p>
+<p>知道吧？不过没关系。好吧，我再给他们24小时让他们解决我好不好？不管怎么着，情况就是这样子。好吧，最终你们也不用太的焦虑，太着急，很多吃瓜群众就是想着吃瓜，不用太焦虑，也不用太着急。 </p>
+<p>然后我觉得我说出来了，也是一堆人骂我，因为这个里边说实话有很多地儿我也想不通，我也觉得有问题，所以不用抱有太大的希望。我说出来之后，你们最后都是幻灭，知道吧？都是一场空，知道吧？所以有价值还是对中国政府有价值，对普通观众价值不大。 </p>
+<p>然后我现在告诉你，我在这说的这会功夫，我这里边现在已经有30多条，推特上30多条留言了，所以我也不知道这里边有什么有用的，所以也可能我录完这期发完了之后又有用的来了。不过咱们到时候再说好吧？所以所有东西都在不断的这种，我觉得在演变的过程当中，是吧？所以大家也都不要着急，好吧？今天这期讲到这里好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/09/20200209%E7%AC%AC1367%E6%9C%9F-%E6%AD%A6%E6%B1%89%E7%81%AB%E7%A5%9E%E5%B1%B1%E8%AE%BE%E8%AE%A1%E5%9B%BE%E9%97%B4%E6%8E%A5%E8%AF%81%E6%98%8E%E5%9C%A8%E5%BB%BA%E8%AE%BE%E7%81%AB%E7%A5%9E%E5%B1%B1%E7%9A%84%E6%97%B6%E5%80%99%E5%B0%B1%E7%9F%A5%E9%81%93%E7%97%85%E6%AF%92%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%B0%94%E6%BA%B6%E8%83%B6%E4%BC%A0%E6%92%AD-dPo-gS54p90/" rel="prev" title="20200209第1367期-武汉火神山设计图间接证明在建设火神山的时候就知道病毒可以通过气溶胶传播">
+      <i class="fa fa-chevron-left"></i> 20200209第1367期-武汉火神山设计图间接证明在建设火神山的时候就知道病毒可以通过气溶胶传播
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/10/20200210%E7%AC%AC1369%E6%9C%9F-Trailer%EF%BC%9A%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%80%E4%B8%AA%E6%A2%A6-87zrVgRCVfI/" rel="next" title="20200210第1369期-Trailer：我做了一个梦">
+      20200210第1369期-Trailer：我做了一个梦 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1125</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/10/20200210%E7%AC%AC1368%E6%9C%9F-%E5%BB%B6%E8%BF%9F24%E5%B0%8F%E6%97%B6%E5%81%9A%E6%A2%A6-zVcMEJ0o4tU/";
+    this.page.identifier = "2020/02/10/20200210第1368期-延迟24小时做梦-zVcMEJ0o4tU/";
+    this.page.title = "20200210第1368期-延迟24小时做梦";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
