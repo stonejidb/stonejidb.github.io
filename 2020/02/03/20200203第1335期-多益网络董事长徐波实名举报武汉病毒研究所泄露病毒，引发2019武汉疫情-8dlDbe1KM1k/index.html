@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月4号星期二，多亿网络董事长徐波10名公开举报武汉病毒研究所泄露病毒，引发了2019年的武汉疫情。对这个事情其实之前我报道过我的分析，我认为这个事情比较扯，我认为可能性不是很大，但是不管怎么着，我觉得作为一个中国的民营企业家，他敢站出来实名举报的话，就这一点来讲我还是钦佩他的。我以前做过一期节目，我就说来我这反映情况的，我就说你要滚钉板，别把我当枪使对吧？那期节目就叫滚">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/03/20200203%E7%AC%AC1335%E6%9C%9F-%E5%A4%9A%E7%9B%8A%E7%BD%91%E7%BB%9C%E8%91%A3%E4%BA%8B%E9%95%BF%E5%BE%90%E6%B3%A2%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E7%A0%94%E7%A9%B6%E6%89%80%E6%B3%84%E9%9C%B2%E7%97%85%E6%AF%92%EF%BC%8C%E5%BC%95%E5%8F%912019%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85-8dlDbe1KM1k/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月4号星期二，多亿网络董事长徐波10名公开举报武汉病毒研究所泄露病毒，引发了2019年的武汉疫情。对这个事情其实之前我报道过我的分析，我认为这个事情比较扯，我认为可能性不是很大，但是不管怎么着，我觉得作为一个中国的民营企业家，他敢站出来实名举报的话，就这一点来讲我还是钦佩他的。我以前做过一期节目，我就说来我这反映情况的，我就说你要滚钉板，别把我当枪使对吧？那期节目就叫滚">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-02T15:03:05.000Z">
+<meta property="article:modified_time" content="2020-07-23T01:40:29.383Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/03/20200203%E7%AC%AC1335%E6%9C%9F-%E5%A4%9A%E7%9B%8A%E7%BD%91%E7%BB%9C%E8%91%A3%E4%BA%8B%E9%95%BF%E5%BE%90%E6%B3%A2%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E7%A0%94%E7%A9%B6%E6%89%80%E6%B3%84%E9%9C%B2%E7%97%85%E6%AF%92%EF%BC%8C%E5%BC%95%E5%8F%912019%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85-8dlDbe1KM1k/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/03/20200203%E7%AC%AC1335%E6%9C%9F-%E5%A4%9A%E7%9B%8A%E7%BD%91%E7%BB%9C%E8%91%A3%E4%BA%8B%E9%95%BF%E5%BE%90%E6%B3%A2%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E7%A0%94%E7%A9%B6%E6%89%80%E6%B3%84%E9%9C%B2%E7%97%85%E6%AF%92%EF%BC%8C%E5%BC%95%E5%8F%912019%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85-8dlDbe1KM1k/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-03 00:03:05" itemprop="dateCreated datePublished" datetime="2020-02-03T00:03:05+09:00">2020-02-03</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/03/20200203%E7%AC%AC1335%E6%9C%9F-%E5%A4%9A%E7%9B%8A%E7%BD%91%E7%BB%9C%E8%91%A3%E4%BA%8B%E9%95%BF%E5%BE%90%E6%B3%A2%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E7%A0%94%E7%A9%B6%E6%89%80%E6%B3%84%E9%9C%B2%E7%97%85%E6%AF%92%EF%BC%8C%E5%BC%95%E5%8F%912019%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85-8dlDbe1KM1k/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/03/20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情-8dlDbe1KM1k/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月4号星期二，多亿网络董事长徐波10名公开举报武汉病毒研究所泄露病毒，引发了2019年的武汉疫情。对这个事情其实之前我报道过我的分析，我认为这个事情比较扯，我认为可能性不是很大，但是不管怎么着，我觉得作为一个中国的民营企业家，他敢站出来实名举报的话，就这一点来讲我还是钦佩他的。我以前做过一期节目，我就说来我这反映情况的，我就说你要滚钉板，别把我当枪使对吧？那期节目就叫滚钉板或当枪使，就说你敢滚这钉板，我就敢跟你说。 </p>
+<p>对于徐波来讲，反正你自己你敢站出来实名举报的话，我作为一个媒体我敢给你播，那么最后你如果证明你不对，那是你的问题对吧？我作为媒体来讲，我不知道这个事是不是真的，但是他实名举报，这是真的，对不对？但是就是说武汉病毒式搜索到底是不是泄露的病毒引发了武汉肺炎疫情这个事我不确认，但是徐明多益网络董事长徐明他实名举报了，所以我们还要给他拨一下，我觉得出于对他的行为的一个一个敬佩，我希望中国能有更多的个人或者企业家们能有勇气，他叫什么名字？徐波。 </p>
+<a id="more"></a>
+
+<p>我刚才说错名字了，徐明了我说错了几次，徐明两次我两次都说徐明了是吧？好对不起，这个人叫徐波，我刚刚凡是说错名字我道歉好吧，这人叫徐波我就不重录了。不管怎么样，我觉得中国的民营企业家或者个人来讲，你如果有勇气，你敢站出来实名举报，不管你是举报任何一个地方，我们都敢给你拨，我们鼓励这种行为，就是说民告官的这种行为行为，我们认为在中国非常的缺少这种人，好吧，我们来看徐波说他说本人实名带可靠证据，作为线索举报武汉病毒研究所，希望国家彻查该研究所实验动物管理情况及相关蝙蝠冠状病毒改造改造为可感染人类的研究情况。 </p>
+<p>他说第一点，他说没有证据能够证明野生蝙蝠所携带的冠状病毒能够感染的，能够感染人类，那么缺乏中间的宿主，缺乏进化演绎的证据。二在2015年开始，武汉病毒研究所联合美国把原本不感染人的蝙蝠冠状病毒及小鼠的SARS病毒组用病毒基因重组技术，把原本不能够感染人的蝙蝠的冠状病毒改造成了能感染人类的新冠状病毒。2015年的自然杂志论文说已经做了老鼠的实验，证明了损害老鼠的肺部，还在继续做猴子的实验。 </p>
+<p>那么第三，武汉华南海鲜市场有出售活猴，所以他认为有可能是实验室把猴子做完实验之后，卖到了华南华南的海鲜市场。 </p>
+<p>42019年武汉华南海鲜市场相关病人当中，首次发现能感染人造能感染人造成肺炎的2019年新冠状病毒是在一个繁华都市，首先发现的，而不是在偏僻的乡镇首发，为什么？他说你要是感染的话，也应该是在跟内蒙古闹闹那个数，一一是不就在那种那种郊区，他们抓土拨鼠吃导致的吗？不会迅速的传染到繁华都市里来。为什么会传染到繁华都市？ </p>
+<p>这是他就认为整个的证据链都指向了武汉病毒实验室的做实验的猴子，然后五他说武汉病毒研究所手上有大量种类蝙蝠的冠状病毒样本，他说其中至少有一种于2019年导致一型的武汉肺炎的新型冠状病毒高度相似，相似度达96%。他说6武汉病毒研究所是类似萨斯病毒的相关病毒疫苗研制的利益相关体，那么类似在这种杀毒软件行业进行自研病毒，并且自自解的可能就是说我自己来研发病毒，然后我自己想办法怎么去解决这个病毒。那么也就是说他们认为就是说他们创造了这种病毒，然后他们在想办法去解决这个病毒，但是在这个过程当中出现了失误。 </p>
+<p>第七，武汉病毒研究所至少在2020年的1月2日就已经确定了2019新冠状病毒的全基因序列，也就是说他们应该对这个病毒是非常了解的。八上海燕郊园发现武汉冠状病毒是通过s蛋白与人的ac一兔结合，这恰好就是2015年实证力团队改造蝙蝠冠状病毒传染给人的研究目的。九，ace吐受体主要存在于人的肺和肠道当中，那么也就是说如果是蝙蝠传染的话，那么蝙蝠的粪便里就应该带有这种病毒，他说但是中国人以中药治疗，以中药治病的话，吃了上千年的蝙蝠的粪便，中药里有一味药叫夜明砂，实际上就是冕服的粪便，但是都没有导致冠状病毒的肺炎分一，说明蝙蝠的这种冠状病毒是不能传染给人的。 </p>
+<p>但是近期在非常短的时间内出现了变异，出现了变异，那么这种的概率是极低的，所以很有可能是人类通过转基因的病毒技术造成的这种快速的变异。10:00政立团队认为蝙蝠携带的冠状病毒可能传染给人，而抓蝙蝠时却不带防护装备，为什么？他有他拿出来的时政类团队在接受采访时公布的照片，他们去抓蝙蝠来做实验的时候，没有带任何的防护装备，真相是什么？他认为就是说实证力团队，他们知道蝙蝠的冠状病毒是不可能传染给人的，需要中间宿主，所以他们在抓蝙蝠的时候没有带防护装备。 </p>
+<p>那么实验室的转基因改造跳过了自然进化的过程，把这种蝙蝠的病毒感染给人的可能性的途径，达到了城镇然后他说事实证据如下，一刚刚他讲的是他分析的整个的脉络，然后第一，武汉病毒研究所史正立2015年在自然期刊发布的相关论文，由于野生蝙蝠身上的冠状病毒几乎都不能感染人类，但只要把蝙蝠身上的冠状病毒的s蛋白里的ace图受体的开关一调，这个病毒马上就可以传染给人类。他们令入他们利用病毒基因重组技术，将蝙蝠的s蛋白和小老鼠的萨斯病毒重组，得到了新病毒能感染人类的呼吸道细胞，发现新病毒能够损害老鼠的肺部，于是时政类团队开始用猴子做实验，模拟在人体上的效果。 </p>
+<p>那么蝙蝠的病毒传染到人的身上，需要一个到多个的中间的宿主，而实证力团队的实验就使得老鼠和猴子成为了蝙蝠的这种病毒，发展到能够传染到人身上的中间的进化过程和它的速度，也就是说先把碘伏病毒传染到小老鼠身上，再通过小老小老鼠生长这种病毒的重组之后传染到猴子，然后通过猴子再传染给人类，要不然的话蝙蝠病毒是不能直接传染给人类的。 </p>
+<p>二，他说美国医学专家2020在2015年发表在自然期刊的质疑文章，也在质疑执行力团队的这种行为非常的危险。三，媒体对2019的新冠状病毒与武汉病毒研究所手上的病毒的蝙蝠病毒有90%度一致的高度相似的报道。四媒体对华南海鲜市场也未见出售活猴的报道，就认为是从猴子身上传过来的，而不是蝙蝠，因为蝙蝠直接传染人是传染不了的，这中间发生了变异。所以他的意思就是说是通过蝙蝠到小老鼠到猴子再到人，而这个过程不是自然进化的过程，而是他们团队通过人为的转基因技术达到了这种效果。 </p>
+<p>五武汉病毒研究所2020年1月2日就确定了2019新冠状病毒基因全序列的报道，那么报道来证明这是事实。六媒体报道武汉病毒研究所正开展新型冠状病毒疫苗开发，1月21号中国科学院上海斯德研究所的好配研究员，军事医学研究院，国家应急防控药物工程技术研究中心，中午研究员和中科院分子植物卓越中心合成生物学重点实验室的李轩研究员合作发文，对武汉新型冠状病毒感染人的机机制和通路进行了分析，他们最终的当然这里边有很复杂我就不说了，咱们直接说结论，他们的结论就是说武汉的这种冠状病毒是通过s蛋白与人的ace2互作的分子机制来感染人的呼吸道上皮细胞，以上事实清楚，证据充分，相关性明显，逻辑合理周密，所以我徐波认为这很可能导致了2019年心梗状病毒的原因，应当彻查以便控制疫情及防范，避免未来类似的疫情。 </p>
+<p>好吧？我对他胆子非常大的冒险行为，我首先表示不容易，中国人当中能够有这种胆子在这种时候站出来，不容易，但是我要说一下，如果是别人，如果什么崔永元、白岩松或者是什么柴静，我会更相信一些，但是徐波我有点担心，为什么这么说？徐波同志是大名鼎鼎，很多人可能没听他没听说过他，但是作为我们这种常年关注新闻，是我从小就喜欢看新闻，看大量的新闻，每一天我老婆也知道，每天看大量的新闻，我是所以我对这种新闻事件是非常的敏感，我一看到多义董事长徐波这几个字我立刻想起来了，上门这个可以想起来了。 </p>
+<p>徐波同志他多义董事长，他们的CEO叫唐一鲁，是位女士，那么董事长和CEO相当于什么？董事长相当于就是东家，CEO有点相当于掌柜的，帮东家聚起来运营的ce o就首席执行官。 </p>
+<p>那么同志在有一次徐波这个人胆大，爱出风头，喜欢喝酒，喜欢搞女人。他那有一次喝醉了酒，喝高了，喝高了之后在公司他是董事长，他们公司有一个群都是公司的员工，然后不小心把视频发错了，本来视频要发给他的朋友去炫耀一下的。这个视频是什么？是他就是说多批他好像他一就是他跟另外两个男的，然后还有后面三个女的好像当然那个视频我看过，但是这边有一个看不出来到底是男是女，反正他们我印象里应该是5个人，5个人不管到底是两男三女还是三女两男的，不是还是不管怎么着，反正他们都特别乱。 </p>
+<p>他把这视频本来是要发给他的朋友去炫耀一下的，知道吗？结果发错了，可能是他喝大了，喝大了之后发到了公司的群里，然后喝大了之后就睡着了，好多人给他打电话他也不接，发短信他也没接到，第二天酒醒之后才发现的。发错了，然后就去想去诚心删视频，但是12个小时之后有点来不及了。最倒霉的是什么就是说另外那几个反正都是他的狐朋狗友，其中有一位女士多一公司的废油唐奕鲁，大家就不永远年纪轻轻的腾一撸，为什么就能够成为了上市公司的 CEO，结果就发现了原来唐一鲁女士非常的能干，多一公司有了事情的时候，唐奕鲁来干，没事的时候干塘一炉，所以徐波出来实名举报，我就有点担心，我一一看多艺徐波我有点犹豫你知道吧？ </p>
+<p>有点犹豫，因为这哥们我说喝多了，又喝多了不知道。不管怎么着，中科院中科院他们的官方微博叫中科院之声，已经马上的出来辟谣，说这个是不实的。不管怎么样这么个情况，我觉得这样咱们也不能不能够因人肺炎，不能说因为徐波同志是吧？喜欢喝酒出风头对吧？搞女人我们就说他说的话，都是因为为了出风头博眼球，我觉得这个事在这种时候博眼球是找死，不过不知道是不是又喝多了，不知道。但是我觉得这样咱不因人废言，她竟然敢站出来说我们还是钦佩他，我们给他报导。 </p>
+<p>然后虽然他跟我的观点不一样，我认为可能性不大，但是咱们媒体的老观众都了解，我这个人就是说不怕打脸没有关系，我录视频一定有我自己的观点，但是如果只要有一天证据证明我的观点是错误的，我第一个不用别人革我的命，我自己给我自己的命，我不需要别人出来跟我的名，我自己出来打我自己的脸。只要有一天如果能够证明武汉病毒实验室泄露的病毒，就像徐波说的，是通过什么蝙蝠到老鼠，从老鼠到猴子，从猴子再到人，然后因为他们把做实验的猴子拿出来卖到了武汉华南海鲜市场，然后导致了这个事只要有最终有证据能够证明的话，我第一时间出来。 </p>
+<p>三这个视频我第一时间出来给大家道歉，我第一时间来承认，但是目前来讲，对于徐波同志我还是有点心虚，所以目前我只能说我们现在不能证实，也不能证伪，我们存疑。好吧？目前只能是这样子。 </p>
+<p>那么等到有进一步的证据，我会第一时间向大家这个来播报，因为我们频道两个最重要的特点，一个是快速并且及时，二一个是绝对。面对现实，勇于说真话，只要错了，我第一时间来承认错误。好吧？这条新闻播到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/03/20200203%E7%AC%AC1331%E6%9C%9F-%E5%AE%98%E5%AA%92%E8%BE%9F%E8%B0%A3%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%B2%A1%E4%BA%8B%EF%BC%8C%E4%BD%86%E6%98%AF13%E5%88%86%E9%92%9F%E7%9A%84%E8%BE%9F%E8%B0%A3%E8%A7%86%E9%A2%91%E9%87%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%80%E4%B8%AA%E9%95%9C%E5%A4%B4%E9%83%BD%E6%B2%A1%E6%9C%89%EF%BC%8C%E5%8D%8A%E4%B8%AA%E5%B0%8F%E6%97%B6%E5%90%8E%E5%A4%AE%E8%A7%86%E7%BD%91%E6%8A%8A%E8%BE%9F%E8%B0%A3%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6%E4%BA%86-cibfL/" rel="prev" title="20200203第1331期-官媒辟谣习近平没事，但是13分钟的辟谣视频里习近平一个镜头都没有，半个小时后央视网把辟">
+      <i class="fa fa-chevron-left"></i> 20200203第1331期-官媒辟谣习近平没事，但是13分钟的辟谣视频里习近平一个镜头都没有，半个小时后央视网把辟
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/03/20200203%E7%AC%AC1336%E6%9C%9F-%E4%B8%AD%E5%A4%AE%E5%AF%B9%E6%B9%96%E5%8C%97%E7%9C%81%E7%BA%A2%E5%8D%81%E5%AD%97%E4%BC%9A%E5%BC%80%E5%88%80%EF%BC%8C%E5%A4%9A%E4%BA%BA%E8%A2%AB%E5%85%8D%E9%99%A4%E8%81%8C%E5%8A%A1-3wLuSqpMmlQ/" rel="next" title="20200203第1336期-中央对湖北省红十字会开刀，多人被免除职务">
+      20200203第1336期-中央对湖北省红十字会开刀，多人被免除职务 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1160</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/03/20200203%E7%AC%AC1335%E6%9C%9F-%E5%A4%9A%E7%9B%8A%E7%BD%91%E7%BB%9C%E8%91%A3%E4%BA%8B%E9%95%BF%E5%BE%90%E6%B3%A2%E5%AE%9E%E5%90%8D%E4%B8%BE%E6%8A%A5%E6%AD%A6%E6%B1%89%E7%97%85%E6%AF%92%E7%A0%94%E7%A9%B6%E6%89%80%E6%B3%84%E9%9C%B2%E7%97%85%E6%AF%92%EF%BC%8C%E5%BC%95%E5%8F%912019%E6%AD%A6%E6%B1%89%E7%96%AB%E6%83%85-8dlDbe1KM1k/";
+    this.page.identifier = "2020/02/03/20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情-8dlDbe1KM1k/";
+    this.page.title = "20200203第1335期-多益网络董事长徐波实名举报武汉病毒研究所泄露病毒，引发2019武汉疫情";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
