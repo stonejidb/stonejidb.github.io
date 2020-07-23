@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的2月2号星期日，我们之前说川普已经搬了总统的禁令，就是说禁止除美国公民之外，美国公民绿卡和直系亲属之外的其他所有人的，主要从中国路就路过都不许进美国对吧？最起码就是说美国公民绿卡，还有美国公民和绿卡的直系亲属还是可以进来的。  前两天还有人问我们询问我们就是说执行薪酬怎么算，然后如果有的话怎么去，因为他可能有亲戚在美国，然后他想到就是说看能不能符合条件，能不能就是说赶快跑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/02/02/20200202%E7%AC%AC1328%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%9E%E8%A1%8C%E5%91%98%E5%B7%A5%E4%BC%9A%E8%A6%81%E6%B1%82%E6%97%97%E4%B8%8B1.5%E4%B8%87%E9%A3%9E%E8%A1%8C%E5%91%98%E6%8B%92%E9%A3%9E%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%99%E4%B8%8B%E8%BF%9E%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E4%B9%9F%E5%9B%9E%E4%B8%8D%E6%9D%A5%E4%BA%86-GOyV_UWYx6k/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的2月2号星期日，我们之前说川普已经搬了总统的禁令，就是说禁止除美国公民之外，美国公民绿卡和直系亲属之外的其他所有人的，主要从中国路就路过都不许进美国对吧？最起码就是说美国公民绿卡，还有美国公民和绿卡的直系亲属还是可以进来的。  前两天还有人问我们询问我们就是说执行薪酬怎么算，然后如果有的话怎么去，因为他可能有亲戚在美国，然后他想到就是说看能不能符合条件，能不能就是说赶快跑">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-02-01T16:02:08.000Z">
+<meta property="article:modified_time" content="2020-07-23T13:45:45.609Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/02/02/20200202%E7%AC%AC1328%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%9E%E8%A1%8C%E5%91%98%E5%B7%A5%E4%BC%9A%E8%A6%81%E6%B1%82%E6%97%97%E4%B8%8B1.5%E4%B8%87%E9%A3%9E%E8%A1%8C%E5%91%98%E6%8B%92%E9%A3%9E%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%99%E4%B8%8B%E8%BF%9E%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E4%B9%9F%E5%9B%9E%E4%B8%8D%E6%9D%A5%E4%BA%86-GOyV_UWYx6k/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/02/02/20200202%E7%AC%AC1328%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%9E%E8%A1%8C%E5%91%98%E5%B7%A5%E4%BC%9A%E8%A6%81%E6%B1%82%E6%97%97%E4%B8%8B1.5%E4%B8%87%E9%A3%9E%E8%A1%8C%E5%91%98%E6%8B%92%E9%A3%9E%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%99%E4%B8%8B%E8%BF%9E%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E4%B9%9F%E5%9B%9E%E4%B8%8D%E6%9D%A5%E4%BA%86-GOyV_UWYx6k/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-02 01:02:08" itemprop="dateCreated datePublished" datetime="2020-02-02T01:02:08+09:00">2020-02-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/02/02/20200202%E7%AC%AC1328%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%9E%E8%A1%8C%E5%91%98%E5%B7%A5%E4%BC%9A%E8%A6%81%E6%B1%82%E6%97%97%E4%B8%8B1.5%E4%B8%87%E9%A3%9E%E8%A1%8C%E5%91%98%E6%8B%92%E9%A3%9E%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%99%E4%B8%8B%E8%BF%9E%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E4%B9%9F%E5%9B%9E%E4%B8%8D%E6%9D%A5%E4%BA%86-GOyV_UWYx6k/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/02/02/20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了-GOyV_UWYx6k/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的2月2号星期日，我们之前说川普已经搬了总统的禁令，就是说禁止除美国公民之外，美国公民绿卡和直系亲属之外的其他所有人的，主要从中国路就路过都不许进美国对吧？最起码就是说美国公民绿卡，还有美国公民和绿卡的直系亲属还是可以进来的。 </p>
+<p>前两天还有人问我们询问我们就是说执行薪酬怎么算，然后如果有的话怎么去，因为他可能有亲戚在美国，然后他想到就是说看能不能符合条件，能不能就是说赶快跑过来，现在看来恐怕是要惨了，这下我估计美国公民还有绿卡也回不来了。因为就是说你在海关就算川普允许你入境的话，你坐飞机回来对不对？你怎么能游回来了，要不就坐船回来了。 </p>
+<a id="more"></a>
+
+<p>美国飞行员协会代表他们旗下1.5万飞行员到了德克萨斯州的达拉斯的法庭的起诉航空公司，要求法庭马上颁发一个临时的县令，立即停飞中国飞行员协会的总裁佛格森发了一个书面的声明，说说很多其他飞往中国的主流航空公司，包括英国的航空公司，加拿大的航空公司，还有德国的航空公司都已经决定停飞了，所以为什么美国还不完全停飞，要求立即采取行动，立即采取行动，停飞所有的中国航班。 </p>
+<p>现在虽然从政府层面已经把中国列为一区的，不许他们进来了，对不对？但是还有公民喊回来的对不对？他撤桥就那一架飞机就撤了300人，光在湖北就还剩700个没撤回来，还不包括美国中国的其他各地对吧？ </p>
+<p>中国我觉得全中国加一块，你说能有10万美国公民吗？不知道，我觉得几万人总是要有了，如果是全中国的话对吧？我就北京上海有大量的美国人在那下逛逛，你像我们天津还有好多教什么英语教英语，有的公司也喜欢雇个洋人在前台成门面你知道吗？所以我记得我们天津都有，我觉得天津得有几千老外，有，我记得我们那时候他一个语言学校都有几十个，对，他有的是英国人，有的是别国的，我们好像美国人他喜欢招美国人，因为教美音。 </p>
+<p>你知道吗？现在不都流行学美音吗？不管怎么样，反正他就要立即停飞了，他如果完全停飞的话，因为我知道有一些美国公民还不着急，你知道吗？觉得没事，我是公民，我到时候买张飞机票我就回去了。现在我看公民也够翘了，不过可能不知道中国的航班停没停，那要最后不行，只能坐中国的飞机回来了，是吧？因为那是这样子，他现在要求立即采取行动停飞所有中国航班，对不对？但是现在不管你停飞不停飞，现在佛格森说工会已经通知了全部的飞行员，要求他们拒绝接受往来中国的飞行任务，那么把所有的人身损失还有诉讼金等都写在了诉讼要求里，要求航空公司赔钱。 </p>
+<p>当然他给一个理由也是什么？他说机场起飞的这些机长们平均年龄是61岁，所以染病的风险很大，因为这个病对年龄越大的就是染病的风险越大，然后伤害越大，然后越重死亡率越高，目前就这么个情况，然后我要跟你说，为什么我看了这个之后，我就知道这够呛了。我告诉你，美国这些工会力量非常大，不要说航空公司一般情况下就连总统国会的都不敢招惹他们，知道吗？是轻易不敢招惹工会的知道吧？ </p>
+<p>工会他首先来讲他人数多，然后有选票影响力又大，而且各个工会之间还是一个互相支持。你像一般来讲它就是飞行员，工会都是飞行员，然后空城的就是说空姐他们工会会跟飞行员的工会会和爱杠借一期沆瀣一气，会沆瀣一气，然后还有其他的工会，他们之间都会互相地就是说去支援一下，就是说因为你现在抗争的时候，我们之间你一下他的我们抗争你在支援我们一下，美国公然有力量，这个不好弄，然后一般来讲是这样，飞行员要么我就不支持工会，我就不参加工会了，对不对？ </p>
+<p>我既然参加工会，他们参加工会的话，每个月还要给工会交钱的，你知道吧？工会不是白参加的，他们交完钱了之后竟然都已经参加了工会，那么工会给他们所谓就是说提建议或者也好，但实际上就是命令。 </p>
+<p>为什么？就是说你如果不接受的话，那么工会就有很多的方法来，然后让你难受你知道吗？他一般加入工会的都是听工会的，工会只要说了现在工会要求你们停飞所有中国航班的话，它旗下的1.5万个飞行员基本上就都停飞了，要不然他就退出工会，要不然我就可以，我要还愿意在公会里我就得听你的，你明白吧？就是说要不你可以退对吧？就跟中国共产党一样，你不行你退党，但你要是还在党内，你不退党，那你就去听。 </p>
+<p>现在上海那部我上次发那视频不也是吗？他要求一线的工作人员都撤下来，然后把医院里边那些所有党员都顶上去，你们是共产党吗？就给你们顶上去，对不对？你不服不服你退党，对不对？你就上去，要不就退党，你自己选对吧？这个也是这样就具备，要不你就退出工会对吧？ </p>
+<p>基本上他们是不会退出公会的，你知道吗？在公会里有很多的保障，非常多的保障而能得到很多的支持，所以他们是必须要在工会里的。所以公会只要要求的基本上就歇菜了，他们就停飞了，机长飞行员一停飞，你飞行公司没办法，你总不能让公空警开飞机，对吧？ </p>
+<p>除非有一种可能性，就是政府参与进来，政府参与进来之后，政府紧急的就调动部队的力量，就是说马上要调空军的飞行员进来，到航空公司暂时先飞着，知道吧？ </p>
+<p>这个应该没有问题，因为空军的飞行员一般都比银行的还要更厉害一点，因为他们开战斗机他要个有各种那种极限动作你知道吗？很多的骚操作翻滚什么380度720度你知道吗？都是搞那个的，所以他们来飞民航就觉得怎么说不够刺激，不过他按战斗机飞马，乘客就太自由了是吧？所以不过一般来讲，他们退役了之后，很多都是进了航空公司，航空公司喜欢要花费5%，不是360多了，没有了吧？ </p>
+<p>不管怎么样，反正目前就这么个情况，这样子的话我就说看来对于连美国公民都要提高警惕，你就要赶快想办法了。因为各国航空公司在停飞，我不知道中国航空公司会不会停飞，后面如果中国航空公司在停飞的话，你就只能坐船回来了，跟偷渡一样。 </p>
+<p>好吧，反正这么一个令人比较还是比较悲哀的一个消息，我要赶快的播报出来，因为我知道现在还有一些美国公民仗着自己的事，自己是美国公司，还在中国得瑟还得瑟，得了不回来，你们要小心要我不过估计我看来够呛了，当初我跟你们说你们24小时，你们只有24小时时间你们不相信，现在他如果下了命令的话那就完了，工会一下命令就没有机长飞了，没有机长和飞行员飞，各个航空公司在设航班为宜，不过其实是不对的，因为它还有很多物资，有一些是政府需要的人员，自己的公民物流等等全停了以后，我的天哪。 </p>
+<p>因为这样子的话，不光是运人的运货的游艇了，你从中国买什么东西也寄不过来了现在。如当如果空运你还可以走船，它有水运的，只要是空运的都过不来了，等于就对吧？可能觉得健康第一，别的都是美国工会，有的时候也是小题大做，你知道底特律为什么倒霉了吗？就让工会害惨了。 </p>
+<p>还有咱们看的福旺的玻璃厂，对也是工会，他们反正得整点吆骡子就那幺蛾子，但是他们力量很强，而且他既然选了这家法院你知道吗？他就认为这家法院他有信心，他为什么要去这家法院打你知道吗？他非常有信心，他没进去之前他就知道法官怎么判了，所以我跟你说他既然他选了这家法院选了就德格萨斯的，他特意选了这家法院，我都跟你说他有百%工会还是很有钱的，我跟你说工会他们每个月都收钱，他们很有钱，有钱之后他们请了很多法律顾问，然后他们对怎么打官司，找哪个法院找哪个法官，他们门清他们是专业干这个的，所以他既然选择这家法院去申请，我告诉你99.99%，他能把限飞令申请下来。 </p>
+<p>刚才你说的总统要明示飞机什么的，你觉得这可能性大吗？要看如果就是说有国家需求的话，有公民要回来，有物流要保障的话，最后没办法，最后怎么办？只能调动。 </p>
+<p>部队今天咱们不还报了1个新闻就是说最后总统特批，特批之后把4个军事基地改成隔离所了，因为你弄民间的不服，民间可能美国这个是韩国的是过来抓卫福部副部长，抓他的衣服，然后拿水瓶子砸他对不对？美国可不是，美国他们烧完烧的时候有，往往那一拉手你就别进去了，你可别上去动手，你动手他开枪好，他比你还狠，我跟你说。 </p>
+<p>他跟警察他美国不一样，上次我看那俩德克萨斯那不就是他们想没收人家的牛，你知道吗？说什么战地说这个地要被政府征收了，然后你不征收你把牛没收了，结果弄了几百个民兵组织来拿的都是什么AR51什么的你知道吗？阻击枪跟政府就要干起来了，当时还是时任总统奥巴马了，奥巴马最后下令要国防卫队要撤离，不能跟老百姓开枪，难怪了德克萨斯的人民不麻烦，警察对都比较彪悍了，所以美国这块是不可能，美国要是人民起来说我这小区你不许你安不能安置，那就真不能安置。 </p>
+<p>他跟中国不一样，中国可能是拿着什么调灯，什么锤子跟你谈械斗斗卸完了之后，最后还是舅舅就楞充进来了，美国很没戏，美国娜娜闹出人命来，那也不可能哪个总统或者哪个地方州的，敢就是说真的让警察跟居民对射，然后屠杀好，是吧？开锅了就所以要为什么我跟你说，虽然美国每一年都发生枪击案，从我来讲我还是支持美国人民要持枪的，美国持枪自由知道吗？就保证永远保证了一点，就说你政府绝对别想凌驾于人民之上，不服人民掏出钱来就跟你干，你知道吗？那美国的人民彪悍尼了，你知道吗？他有枪你知道吗？就是真的我想起来以前不就是民国的时候说是那谁就说说你好像不是袁世凯，他们上次跟我说是谁是叫我想不起来了，反正民国一军阀你知道吗？好像是冯冯玉祥是吧？ </p>
+<p>可能是冯玉祥，然后他的幕僚跟他说说命令不能下，大帅命令下了可能老百姓会反弹的，他说没事有枪在，对不对？也有枪，知道吗？美国老百姓就告诉你没事有枪在倒过来，你知道吗？你敢我看看，我不让你进就不能进，没就所以人美国特色你没法说，反正美国人民他是生活得很自在很痛快，你知道吧？中国人民痛快不你就痛快不起来，你就知道了，就这么个情况。反正大家自求多福好吧？能看到，因为我知道咱们还是有很多都是华裔，都是拿了美国公民身份的，看我们的视频通知你们好不好？你们可能要赶快了，我看你们这次的24小时都没有了，看看甭管是哪个国家的航班，只要能出来先赶快先出来，然后你还得找那个国家，尤其你进入你要是从中国出来的话，你看从中国出来，好多国家你14天之内他都不让你入境了，他新加坡直接就不让你入境。 </p>
+<p>很艰难，你别在中国得瑟了，赶快想辄有的是在国内陪自己的父母，这样正好因祸得福，可以多陪陪自己的父母他们。 </p>
+<p>我觉得你那样子还不如把父母带出来，其实我觉得目前的情况下，因为父母直系亲属按理说是应该能够带到美国来的，我觉得你要真的是公民的话，太大了。我觉得越是年龄大，现在目前越不应该留在中国。目前这个病毒就是专找老年人，你知道吗？你很有可能年轻人出去买个菜回来，他没事你老头死了，你知道吧？所以我觉得越是年龄大了，越得赶快跑出来。因为我跟你说还没到高峰期，高峰期在后面，咱们2月15号见，你看这我这话撂在这，高峰期在后面，好吧，这条消息过到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/02/20200202%E7%AC%AC1327%E6%9C%9F-%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E5%A4%A7%E9%87%8F%E6%AD%BB%E8%80%85%E8%A2%AB%E6%99%AE%E9%80%9A%E8%82%BA%E7%82%8E%EF%BC%8C%E4%B8%8D%E5%85%81%E8%AE%B8%E5%88%97%E5%85%A5%E5%AE%98%E6%96%B9%E6%95%B0%E6%8D%AE%20-_1Yu7aW3TRo/" rel="prev" title="20200202第1327期-武汉肺炎大量死者被普通肺炎，不允许列入官方数据">
+      <i class="fa fa-chevron-left"></i> 20200202第1327期-武汉肺炎大量死者被普通肺炎，不允许列入官方数据
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/03/20200203%E7%AC%AC1331%E6%9C%9F-%E5%AE%98%E5%AA%92%E8%BE%9F%E8%B0%A3%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%B2%A1%E4%BA%8B%EF%BC%8C%E4%BD%86%E6%98%AF13%E5%88%86%E9%92%9F%E7%9A%84%E8%BE%9F%E8%B0%A3%E8%A7%86%E9%A2%91%E9%87%8C%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%80%E4%B8%AA%E9%95%9C%E5%A4%B4%E9%83%BD%E6%B2%A1%E6%9C%89%EF%BC%8C%E5%8D%8A%E4%B8%AA%E5%B0%8F%E6%97%B6%E5%90%8E%E5%A4%AE%E8%A7%86%E7%BD%91%E6%8A%8A%E8%BE%9F%E8%B0%A3%E8%A7%86%E9%A2%91%E4%B8%8B%E6%9E%B6%E4%BA%86-cibfL/" rel="next" title="20200203第1331期-官媒辟谣习近平没事，但是13分钟的辟谣视频里习近平一个镜头都没有，半个小时后央视网把辟">
+      20200203第1331期-官媒辟谣习近平没事，但是13分钟的辟谣视频里习近平一个镜头都没有，半个小时后央视网把辟 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1179</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/02/02/20200202%E7%AC%AC1328%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%9E%E8%A1%8C%E5%91%98%E5%B7%A5%E4%BC%9A%E8%A6%81%E6%B1%82%E6%97%97%E4%B8%8B1.5%E4%B8%87%E9%A3%9E%E8%A1%8C%E5%91%98%E6%8B%92%E9%A3%9E%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%BF%99%E4%B8%8B%E8%BF%9E%E7%BE%8E%E5%9B%BD%E5%85%AC%E6%B0%91%E4%B9%9F%E5%9B%9E%E4%B8%8D%E6%9D%A5%E4%BA%86-GOyV_UWYx6k/";
+    this.page.identifier = "2020/02/02/20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了-GOyV_UWYx6k/";
+    this.page.title = "20200202第1328期-美国飞行员工会要求旗下1.5万飞行员拒飞中国，这下连美国公民也回不来了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月23号星期四，中国大陆要出现了第一家苹果手机的代工厂，怎么回事这样？是苹果手机现在的第三大代工厂，台湾微创要以33亿的人民币将位于中国昆山的工厂出售给中国大陆的企业，叫立讯精密。那么收购完成之后，立讯精密就成为了中国大陆的第一家苹果手机代工厂，实际上代工厂原先是台湾的，把莫名其妙的把它给买过来了，买完之后变成我们的了，就跟麦当劳和什么金拱门是吧？差不多，要打破台湾企业">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/23/20200723%E7%AC%AC2600%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E5%8E%82%E8%AF%9E%E7%94%9F%EF%BC%8C%E6%89%93%E7%A0%B4%E5%8F%B0%E6%B9%BE%E4%BC%81%E4%B8%9A%E5%9E%84%E6%96%AD%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E7%9A%84%E5%B1%80%E9%9D%A2-CjCehMZaVR4/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月23号星期四，中国大陆要出现了第一家苹果手机的代工厂，怎么回事这样？是苹果手机现在的第三大代工厂，台湾微创要以33亿的人民币将位于中国昆山的工厂出售给中国大陆的企业，叫立讯精密。那么收购完成之后，立讯精密就成为了中国大陆的第一家苹果手机代工厂，实际上代工厂原先是台湾的，把莫名其妙的把它给买过来了，买完之后变成我们的了，就跟麦当劳和什么金拱门是吧？差不多，要打破台湾企业">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-23T05:00:00.000Z">
+<meta property="article:modified_time" content="2020-07-23T13:45:45.647Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/23/20200723%E7%AC%AC2600%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E5%8E%82%E8%AF%9E%E7%94%9F%EF%BC%8C%E6%89%93%E7%A0%B4%E5%8F%B0%E6%B9%BE%E4%BC%81%E4%B8%9A%E5%9E%84%E6%96%AD%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E7%9A%84%E5%B1%80%E9%9D%A2-CjCehMZaVR4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/23/20200723%E7%AC%AC2600%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E5%8E%82%E8%AF%9E%E7%94%9F%EF%BC%8C%E6%89%93%E7%A0%B4%E5%8F%B0%E6%B9%BE%E4%BC%81%E4%B8%9A%E5%9E%84%E6%96%AD%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E7%9A%84%E5%B1%80%E9%9D%A2-CjCehMZaVR4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-23 14:00:00" itemprop="dateCreated datePublished" datetime="2020-07-23T14:00:00+09:00">2020-07-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/23/20200723%E7%AC%AC2600%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E5%8E%82%E8%AF%9E%E7%94%9F%EF%BC%8C%E6%89%93%E7%A0%B4%E5%8F%B0%E6%B9%BE%E4%BC%81%E4%B8%9A%E5%9E%84%E6%96%AD%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E7%9A%84%E5%B1%80%E9%9D%A2-CjCehMZaVR4/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/23/20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面-CjCehMZaVR4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月23号星期四，中国大陆要出现了第一家苹果手机的代工厂，怎么回事这样？是苹果手机现在的第三大代工厂，台湾微创要以33亿的人民币将位于中国昆山的工厂出售给中国大陆的企业，叫立讯精密。那么收购完成之后，立讯精密就成为了中国大陆的第一家苹果手机代工厂，实际上代工厂原先是台湾的，把莫名其妙的把它给买过来了，买完之后变成我们的了，就跟麦当劳和什么金拱门是吧？差不多，要打破台湾企业的垄断，手机苹果手机代工厂的这么一个局面，终于有了大陆的第一家。 </p>
+<p>之前也都说过，就是说我们欢迎这些企业到中国来，就是为了学他们的技术，最后有一天要取而代之，现在开始就是展露出来的局面。 </p>
+<a id="more"></a>
+
+<p>关于这个事现在众说纷纭，方方面面有各种的不同的说法，我们来看看这几个方面的说法，然后说一下我们的看法。 </p>
+<p>首先中国方面的观点就认为因为台湾方面认为这是中国大陆在背后捣鬼了，就是说你们就这么搞，你们成心中国大陆首先当然了要这么说，咱先说台湾的说法，台湾就是说说你们的导轨了，说怎么回事，说立创精密的创办人王兰春，是富士康来中国大陆招聘的第一批的150名员工之一，说第一批的150名员工跟后面员工是不一样的，后面你现在富士康在招人招来的那些流水线的工人，农村小孩那就一点关系什么也没有什么背景。 </p>
+<p>但是那时候富士康来到中国跟中国大陆洽谈，因为中国大陆的设厂，然后第一批这150个都是我们安排过来的，当时的富士康给足大肚面子，就是说你说谁我就用谁，我那时候福志康来了，我要跟你就是说合作，那时候改革开放初期合作，中国大陆有这边的想法对吧？由你台湾过来的，大陆那边觉得你不是搞特务，我当时那个年代都能经验比较丰富，都能意识也比较强，所以第一批是150员工都是中国大陆的给安排的，这些人都是来了，就是说打探一下虚实，看看能不能学什么东西。 </p>
+<p>这个就是头一批的，后面当然了后面开始建了厂，开始招人之后就乱套了，什么都有了。 </p>
+<p>说他最开始过来之后，是从一个普通的流水线上的工人成长，最后到了管理上千人的一个科长。然后当时说他为什么后来离开了富士康，他说触碰到了大陆员工在台湾代工厂的天花板，就是说不能再往上升了，他不让我升了。 </p>
+<p>台湾也对这边也不放心，觉得你们这边大陆派的人你们有你们的想法对不对？郭台铭也不傻，郭台铭很明白，就是说你们最终的目标是要取代我，是要取代我，富士康是要取代我，郭台铭对不对？你们不是来帮我挣钱的，美国企业来的不也是这样吗？咱们都是或者日本企业不都是吗？ </p>
+<p>最终有一天我们是希望我们的企业，我们的民族企业对不对？能够取代台湾取代日本工厂去到美国工厂一第一世界之林，反正已经都这样吗？所以人家也是小心，就是说知道你是来探这个东西来学东西的对吧？尽量的已经是瞒着了，但是在这种情况之下还是没有用。1999年的时候，创办人王丹春就离开了富士康，离开了之后马上辞职创立了这个叫立讯精密。 </p>
+<p>那么干什么就干的跟富士康的一模一样的工作。中国特色以前不是开玩笑说这个犹太人是这样，比如说这有一个新兴的城市，犹太人来了，我一看新型城市肯定有很多有人往这运东西跑长途，我们要先一个加油站，对不对？然后第二个犹太人来了一看他搞了一个加油站，他们可能你吃饭对不对？我卖一个汉堡包店，你们加个油来我这吃个汉堡包，旁边那个人他来我搞一个电影院，你们可以看电影，然后再搞个什么超市或者反正怎么着，大家一块慢慢的就把这小烫就搞起来了，中国人不一样，中国人就是说我发现商机，我在这开了一家加油站，中国人来了给这家加油站打工，然后第二年在对面开了另外一家加油站，然后然后过了没几年你会发现这条街上陆陆续续都是中国的加油站，都是以前这些加油站的员工们知道吧？中国特色就这样。 </p>
+<p>王来春第一批被派到富士康的，在富士康干了几年学得差不多了，1999年在对面开了另外一家富士康，跟富士康干着一样的工作，也是研发生产销售各种的电子连接线连接器等等的。2017年的时候立讯精密就取得了苹果手机艾尔破损的代工资格，说现在苹果的新款降到了手耳机，艾尔波斯普诺已经全部由立信精密来代工，最终就是说干掉了他的老东家取而代之。说当前立讯精密的市值在A股上上市的市值已经超过了同在A股上市的富士康，跟我来给你打工，跟你学怎么干加油站，然后我再对我干一个比你还要再大的加油站，中国特色，所以台湾就说他们这拨人当初来的时候就是来偷我们东西就要跟我们学，从来的那一天的目的就不是要跟我打工取要取而代之，这是台湾方面的观点。 </p>
+<p>这个观点怎么说呢？你也不能说人家错对不对？我们历来如此，但我们也说了，我们跟丰田跟本田我们跟谁干，我们这一套都是尽早先学，学完之后对面开一家我也开一家车企跟你一模一样，然后还把你干掉，好吧？ </p>
+<p>然后当然了还有一点说明什么？说明当然了有一些批评中国的，就说中国经济完蛋了，还完蛋了。说电子代工产业本来就是说低附加值低利润比较低，说瑞刚他们给苹果代工，最后大钱都是苹果挣走了，富士康的指证了很少的，那一点跟苹果的没法比，所以利润率很低，附加值也很低。 </p>
+<p>说然后再加上中国的大陆的这种电子代工企业在挤压，导致台湾企业有点就是说干不下去了。本来利润又低，大陆的企业就是说本来我可能我这做一个我就挣1毛钱了，大陆来说我挣8分，他说我妈不干了卖给你的了，受不了了，你没有你们这么干的。再加上中美贸易战，现在台湾问题，台湾香港问题等等的，导致现在台湾的电子代工企业连年亏损。所以现在就干脆就算了，我也不干了，我把这昆山工厂都卖给你，你你去干得了。 </p>
+<p>就说现在焦虑的情绪在台湾的过程当中也在蔓延，所以台湾现在对大陆这个也是极为不满，觉得你政治也胡搞，然后你政府补贴说什么立讯经历能够以这么低你知道吗？赔钱的价格跟我们都亏损了，对不对？ </p>
+<p>我们台湾企业我们也不是不吃苦到老，我们搞了这么多年，我们对成本的控制，我们的利润都已经压到了最后一分了，对不对？最后我就挣一分钱了，你他妈连一分都不挣，你们还亏一分，我怎么给你搞？ </p>
+<p>就跟那华为一样对吧？ </p>
+<p>不是说爱立信他们不想跟华为竞争，是实在没法竞争，华为他们都是那利西金币都是什么？都是有中中国政府在背后做支持要干掉你，你知道吗？我就以本伤人，我宁可赔钱，我早把你干掉，把你们都清收市场，最后我只要垄断市场就行。我的目的不是为了挣钱，我的目的是要垄断，是把你们都急着死，把你们都弄死，他以此他不是以挣钱为目的，他给弄死你的为目的，你知道吗？所以台湾企业说我妈不干了，你们就我死了，我不傻对他做啥？受不了了。 </p>
+<p>所以就没有办法。 </p>
+<p>所以就是说为什么大陆在背后支持就是说大陆的阴谋诡计，当然台湾他们的想法说什么？ </p>
+<p>说这样说他首先要打击台湾引以为浩的这种电子的代工产业，这些产业像什么伪创、富士康这些每一年给台湾带来了巨大的经济效益，让台湾的政策很多很多钱，首先然后主要就是我们现在跟台湾的关系越闹越僵，以前马英九时机关系还不错，大家到现在蔡英文时期现在关系到得非常的僵，而且以至于到现在简直就是没法沟通没法说话了。 </p>
+<p>尤其这一次年初的大选让老公更加的难堪，而且对台湾的彻底的一个死了心了。以前就是说我诚心让利，让会给一些给你让你们台上在那干，让你们挣钱，就是希望你们说我大陆的好，念我大陆的好对吧？需要像郭台铭，还有像什么旺旺的，他叫什么蔡什么旺来着，想不起来了。 </p>
+<p>还有吗？还有菜农王是吧？采访可能是吧蔡永旺就是说让你们在大陆挣钱，然后到台湾的去帮助大陆去做宣传，他们旺旺集团不还台湾搞什么媒体，就天天的宣传老公好，宣传大陆好，专门搞这些，现在发现对你们也死心了，也绝望了，你们宣传半天也没用，现在台湾的年轻人现在对大陆就是说天然毒天然的筹筹筹供对老公已经完了，老公现在对你们也不抱希望了，干脆你们也甭搞了，我替代你们得了，你们一点狗屁都没有，白让你们挣了这么多钱，对不对？吃饭是由你们干活的一个比一个不着调。 </p>
+<p>然后还有一点就是说还要打击每年台湾从大陆获得的巨额的贸易顺差。 </p>
+<p>怎么回事是这样，说台湾企业通过大量的来采购台湾的零部件，为台湾带去了巨额的贸易顺差。 </p>
+<p>比如说福士康微创，他们虽然在中国设厂，但是他们采购很多零部件是从台湾来的，对不对？这样子就导致了台湾就挣了大陆很多钱，说在2000年的时候两岸的贸易的逆差是200亿，就是说每一年台湾多挣了中国大陆200亿美元，到了2018年的时候，台湾每一年能够多挣到中国大陆的1200亿美元了，也就是说从2000年到2019年是差不多20年的时间对吧？我不知道你会不会就把2000年算上对吧？从01~19这是19年对吧？ </p>
+<p>2000年算算是20年，20年的时间，台湾从大陆获得的顺差总和达到了1.56万亿美元，这还真的是很大的一笔钱。马英九执政的8年的时候，从大陆顺差到了8年加在一起差不多是6000亿美元，已经够多的了。结果到了蔡英文第一，第一个任期头4年，他们今年不是连任了，对不对？前面他第一个任期这4年从大陆获得的这种顺差有4500亿美元，也就是说比马英九时期还多了，为什么这么说？马英九是8年6000亿，对不对？均背下来了，每4年应该3000亿才对的，结果蔡英文来了这4年第一个任期就挣了4500亿，它挣得越来越多，中国大陆对此现在是极为不满，4年搞了我们这么多钱，现在干脆我就彻底的把你的代工产业我弄过来，弄完之后我零件也不给你大，不给你谈了买了，我从我大陆买，我完完全全把我不光是买你一个代工厂，我把我上下游的企业全部都转过来，你连钱也别挣了，你们都给我滚蛋，你们也不念我好吗？我也不让你挣钱了都滚，就大大一的这么个意思，所以台湾认为这种事情在背后是由大陆政府做支持的，说因为现在这个东西根本就不挣钱，搞成这样的话，说立讯精密能够这么搞，是因为他就是赔着钱赔钱由谁赔，由大陆政府来赔，我政府出资赔赔就是一本商人就不让你挣了，不让他们挣钱，就这么个意思。 </p>
+<p>中国大陆当然对此就不满，说你不是胡说八道，跟我没关系，你别这么说血口喷人。 </p>
+<p>你们又都说说到了政府搞的说不是说是这样，中国大陆的观点他这么说，他说这个事我跟你说，不是我中国大陆搞的，是苹果公司搞的，是苹果公司程序要扶持的立讯精密，来牵制最大的手机代工厂的富士康，就怕你的富士康一家独大，到时候因为你店大大欺客，都是你福昌给我做，万一你以后富士康要是翘尾巴翘辫子了，我苹果还不好弄你了，对不对？ </p>
+<p>我现在我在弄一个代工厂，我扶持的立讯精密，到时候你服装要翘辫子吗？我就把更多的市场的订单我交给例行经理，这样你扶持之后就不敢给我顶嘴，这个是中国大陆方面的说法，这个方法能站得住脚吗？完全站不住脚，完全就是放屁。 </p>
+<p>来说句实在的，人家前面的台湾说这些你想想都有道理，他是能站得住脚的。中国大陆这种借口完全站不住脚，就跟胡继进的胡椒盘一样，反正我就给你找一个表面上看说得通，但实际上你仔细一想根本说不通，为什么这么说？因为你就是不卖给你立讯精密，原先是伪创的话，我跟富士康也没关系，你懂我意思吗？ </p>
+<p>因为咱们就觉得什么，咱们中国就觉得这些都是政府说了算，甭管是华为还是什么，中兴都是政府说了算，都是听共产党的，共产党让你们怎么着，他们的不存在的竞争，对不对？只不过是互补，但是台湾不一样，台湾它是民主国家，美国也一样，你懂不懂？你看什么高通苹果没事打官司互相告对不对？你要按照中国人的思维方式就觉得苹果和高峰打什么官司，美国政府一出面，你这样你那样两人说好，那你就听着就干了，那放屁，知道吗？ </p>
+<p>只能在中国行，你知道吗？在美国门也没有总统跟苹果公司说，我说你谁你们赶快下台，下街就不是你了，孙子，他没有用你知道吗？你觉得川普跟库克是跟说厨子就听话，说滚你下一届就拜登了兄弟，你没几天了你知道吗？所以台湾的企业也是这样子，他不是那么听的政府的话，你今年马英九明年搞不好换蔡英文了，对不对？今年选点还是韩国云对吧？反正说这意思对不对？所以人家伟创和富士康人家是真的竞争，人家不是那种虚头巴脑的，都是听政府统一安排的，你懂吧？ </p>
+<p>所以对于苹果公司来讲，我交给伟创和富士康已经是互相在竞争，互相在制约了，对不对？只不过我们大陆人的思维就是说加拿大台湾人怎么可能会有打仗，他们一定是团结，他们灭我之心不死，他们都是派来的特务。中国大陆人的这种思维方式你懂不懂？就是我们这种阶级斗争的这种意识积累的强，你知道吗？看着谁都像坏人，非我族类其心必异都是来害我的，知道吧？ </p>
+<p>总有刁民想害朕，但是人家不是这么搞，所以你这个东西只就这种理由和借口，只能是大陆政府说说给大陆人民在大陆的这种思维方式里，这种政治体制里，这种正常环境里，你的这种语境里边你听有道理。实际上你只要离开了大陆，你在海外生活几年，你了解了海外台湾民主国家什么样子，互相在议会扔鞋扔水球，美国吵吵成什么样你就明白了，搞屁海外都是真正的就是说完全竞争市场，它不是像中国大陆这种的胡搞的知道吧？所以这种鬼话就只能骗没有出过国大陆人，我跟你说只有没出过国大陆人能相信这种鬼话，就是说伪造和富士康都挺是蔡英文的小三儿是吧？ </p>
+<p>都挺蔡英文的，他们没办法互相制约，所以苹果看透了这一点，要把伪创的卖给了立讯精密，这样就可以互相制约了，这种东西我就裤口听了都愣了，我就 what什么玩意儿，你懂吧？所以就这种东西你就明白了，所以看起来还是我觉得你知道吗？ </p>
+<p>就是说你现在看的很明白，就是说当年王来春中大陆派进福士康的第一批150个寄予厚望的员工的之一，当年就是说你们就去了，好好跟他学学了之后，咱们干一个取代他，最后反正是励精图治，可以说十年三四十年下来，最终终于达到了当年把王来春他们这150个人派到第一批员工派到富士康到的目的就在这了，最终终于算是成功了，但是几十年之后吧知道吗？ </p>
+<p>台湾他们也终于看明白了就明白了，当年你派别人来，你就是想跟我偷偷偷师，偷师完之后想干一些企业，最终你成功了，你牛逼30年你争取把我干掉了，你把我买了，对不对？我自杀。反正就是这样子。 </p>
+<p>从这个我觉得是一个缩影，不光是台湾企业，包括日本企业，美国企业都是这样，就你来了我要给你偷偷师偷学，学的差不多了之后，终于有一天我要干掉你，我要成为你知道吧，咱也不能不承认，这也是的的确确大陆企业大陆的这些人，可以说历经了这么多年，二三十年来历经图治终于达到了我们也是表达也恭喜的确的对吧？求人得人求一得，一最后他们终于算是成功了。 </p>
+<p>好吧，这些就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/22/20200722%E7%AC%AC2599%E6%9C%9F-Line%E5%AE%A3%E5%B8%83%E5%B0%86%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%92%8C%E6%95%B0%E6%8D%AE%E4%B8%AD%E5%BF%83%E6%90%AC%E7%A6%BB%E9%A6%99%E6%B8%AF%E5%B9%B6%E9%94%80%E6%AF%81%E5%9C%A8%E9%A6%99%E6%B8%AF%E7%9A%84%E5%85%A8%E9%83%A8%E6%95%B0%E6%8D%AE-bjZwWGTXKUk/" rel="prev" title="20200722第2599期-Line宣布将伺服器和数据中心搬离香港并销毁在香港的全部数据">
+      <i class="fa fa-chevron-left"></i> 20200722第2599期-Line宣布将伺服器和数据中心搬离香港并销毁在香港的全部数据
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/23/20200723%E7%AC%AC2601%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E5%8F%82%E8%AE%AE%E5%91%98%E8%AF%81%E5%AE%9E%E4%B8%AD%E5%85%B1%E9%A9%BB%E4%BC%91%E6%96%AF%E9%A1%BF%E6%80%BB%E9%A2%86%E4%BA%8B%E9%A6%86%E6%98%AF%E9%97%B4%E8%B0%8D%E4%B8%AD%E5%BF%83-7YEGN3vFKCM/" rel="next" title="20200723第2601期-美国参议员证实中共驻休斯顿总领事馆是间谍中心">
+      20200723第2601期-美国参议员证实中共驻休斯顿总领事馆是间谍中心 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1179</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/23/20200723%E7%AC%AC2600%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86%E7%AC%AC%E4%B8%80%E5%AE%B6%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E5%8E%82%E8%AF%9E%E7%94%9F%EF%BC%8C%E6%89%93%E7%A0%B4%E5%8F%B0%E6%B9%BE%E4%BC%81%E4%B8%9A%E5%9E%84%E6%96%AD%E8%8B%B9%E6%9E%9C%E6%89%8B%E6%9C%BA%E4%BB%A3%E5%B7%A5%E7%9A%84%E5%B1%80%E9%9D%A2-CjCehMZaVR4/";
+    this.page.identifier = "2020/07/23/20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面-CjCehMZaVR4/";
+    this.page.title = "20200723第2600期-中国大陆第一家苹果手机代工厂诞生，打破台湾企业垄断苹果手机代工的局面";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
