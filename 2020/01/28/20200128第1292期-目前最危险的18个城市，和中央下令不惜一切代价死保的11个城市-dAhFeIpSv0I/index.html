@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的1月29号星期三，英国的南安普顿大学发布了研究报告，他说基于位置服务lBS的人口迁移数据，Yann个城市的输出风险量化推算出反正他到底怎么弄的咱就不管了，反正保你知道吧？他推算出就是说武汉肺炎的18个高危险的城市，那么给大家说一下，主要包括当然武汉就不用说了，其次北京排第二，因为武汉之后不知道为什么现在各方面统计出来大数据都认为从武汉往北京去的人是最多的，然后武汉、北京、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市">
+<meta property="og:url" content="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1292%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%8418%E4%B8%AA%E5%9F%8E%E5%B8%82%EF%BC%8C%E5%92%8C%E4%B8%AD%E5%A4%AE%E4%B8%8B%E4%BB%A4%E4%B8%8D%E6%83%9C%E4%B8%80%E5%88%87%E4%BB%A3%E4%BB%B7%E6%AD%BB%E4%BF%9D%E7%9A%8411%E4%B8%AA%E5%9F%8E%E5%B8%82-dAhFeIpSv0I/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的1月29号星期三，英国的南安普顿大学发布了研究报告，他说基于位置服务lBS的人口迁移数据，Yann个城市的输出风险量化推算出反正他到底怎么弄的咱就不管了，反正保你知道吧？他推算出就是说武汉肺炎的18个高危险的城市，那么给大家说一下，主要包括当然武汉就不用说了，其次北京排第二，因为武汉之后不知道为什么现在各方面统计出来大数据都认为从武汉往北京去的人是最多的，然后武汉、北京、">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-27T15:09:02.000Z">
+<meta property="article:modified_time" content="2020-07-24T02:20:01.501Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1292%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%8418%E4%B8%AA%E5%9F%8E%E5%B8%82%EF%BC%8C%E5%92%8C%E4%B8%AD%E5%A4%AE%E4%B8%8B%E4%BB%A4%E4%B8%8D%E6%83%9C%E4%B8%80%E5%88%87%E4%BB%A3%E4%BB%B7%E6%AD%BB%E4%BF%9D%E7%9A%8411%E4%B8%AA%E5%9F%8E%E5%B8%82-dAhFeIpSv0I/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1292%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%8418%E4%B8%AA%E5%9F%8E%E5%B8%82%EF%BC%8C%E5%92%8C%E4%B8%AD%E5%A4%AE%E4%B8%8B%E4%BB%A4%E4%B8%8D%E6%83%9C%E4%B8%80%E5%88%87%E4%BB%A3%E4%BB%B7%E6%AD%BB%E4%BF%9D%E7%9A%8411%E4%B8%AA%E5%9F%8E%E5%B8%82-dAhFeIpSv0I/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-28 00:09:02" itemprop="dateCreated datePublished" datetime="2020-01-28T00:09:02+09:00">2020-01-28</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/01/28/20200128%E7%AC%AC1292%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%8418%E4%B8%AA%E5%9F%8E%E5%B8%82%EF%BC%8C%E5%92%8C%E4%B8%AD%E5%A4%AE%E4%B8%8B%E4%BB%A4%E4%B8%8D%E6%83%9C%E4%B8%80%E5%88%87%E4%BB%A3%E4%BB%B7%E6%AD%BB%E4%BF%9D%E7%9A%8411%E4%B8%AA%E5%9F%8E%E5%B8%82-dAhFeIpSv0I/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/01/28/20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市-dAhFeIpSv0I/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的1月29号星期三，英国的南安普顿大学发布了研究报告，他说基于位置服务lBS的人口迁移数据，Yann个城市的输出风险量化推算出反正他到底怎么弄的咱就不管了，反正保你知道吧？他推算出就是说武汉肺炎的18个高危险的城市，那么给大家说一下，主要包括当然武汉就不用说了，其次北京排第二，因为武汉之后不知道为什么现在各方面统计出来大数据都认为从武汉往北京去的人是最多的，然后武汉、北京、上海、广州、郑州、天津，那么郑州已经要建除武汉之外的另外一个出武汉火车山连山之后的另外一个小小汤山了，所以你就知道郑州那边河南那边还是有一些风险的，对吧？然后天津、杭州、嘉兴、长沙、西安、南京、深圳、重庆、南昌、成都、合肥、福州和东莞。 </p>
+<p>好吧，这是他们说的18个高危城市，大家应该要小心。然后我们现在得到的情况是中央已经下令了，要不惜一切代价，不惜甚至就是说不息牺牲其他城市，也要保护11个大城市。这个就是说怎么说，这就是一个事实，也是没办法，我在我很小的时候，我上小学的时候，我记得天津那时候闹过洪水，然后当时为了保天津，然后他们最后开闸泄洪，把天津周边的地方给淹了，据说还淹死了人，因为当时天津还是算是工业化城市，如果淹了之后，对于国家来讲损失太惨重了，所以为了保天津当时开闸泄洪了，当然这个是好好就几十年前的事了，很久以前我上我记得上小学的时候那时候的事，所以这个也是没有办法的情况。 </p>
+<a id="more"></a>
+
+<p>那么要说就是说中央下令要不惜一切代价，不惜牺牲其他城市要保护的11个城市分别是什么？第一个当然就是北京了，那不用说天津、上海、广州、深圳、香港、西安、乌鲁木齐、沈阳、哈尔滨和杭州，但是到底为什么他定的是保死保这11座城市呢？咱就不知道了，反正这是我们得到的消息，大家可以把这两个消息作为一个参考，好不好？然后关于香港就是说香港到底应该不应该封，有人说就是说应该把香港封了，不让大陆人去，香港人也不去，大家就跟风武汉市的但是就是说香港的对外对国际的航班不取消，只是封闭跟中国跟大陆的对内地的这种任何的交通都封闭，跟国际上的倒不封闭。 </p>
+<p>这个来讲说实话从道理上来讲，他说的其实是有一定的道理的，但是这么做太难看。所以目前我们所知实际上香港已经向北京要求了，就是说探讨有没有可能性，北京现在对迟迟的难以下决心，所以我们所知香港恐怕还要再等一等。好吧？ </p>
+<p>然后下一个很有可能被封成的，我们要说应该是深圳，为什么？因为深圳有很多的高科技企业在深圳，为了保护这些高科技企业，对中国来讲非常重要，那么下一个很有可能要封的是深圳好吧？ </p>
+<p>然后再说一件事说有人跟我们说说武汉的同济，还有什么协和，还有武武汉大学中南医院，他们呢通知通知医患说什么说这样说明日也就30日起，1月30号开始要停到肿瘤科所有放疗化疗的项目，所有癌症的病患就先回家，作为病患现在对此就不满意，觉得怎么能这样，虽然是闹了肺炎对吧？但是我们这些癌症你该放疗化疗你还是得做。 </p>
+<p>我们也联系了一下武汉那边的跟医学他们有关系的，医生那边的人问了一下，他们说是因为封城导致他们部分设施现在不齐全导致的，所以就是说他们不停的也暂时好像是没办法，所以也是不得不停，也是很无奈。希望大家能理解就是说物资现在在保证的供应，但是他有一个优先级，所以其实这也应该放在第一优先级的，但是不知道为什么，反正出了问题这个情况的的确确是存在，然后有很多人也在跟我们呼吁，让我们去呼吁一下，就说什么说现在武汉的物价相对来讲还是保持的比较好，因为中央现在下令了，武汉的物价不能够出现离谱的波动，然后有人给我们发了好多照片，说武汉倒是物价稳定住了，其他城市就是说都出现了问题，蔬菜口罩都出现了不同程度的涨价，然后说让我们来呼吁来谴责这些人，说他们发国难财，说有人可能就是说30块钱一包的口罩卖成了30块钱一个，在这种情况之下我又要出来找骂了，我要说我的观点是这样子，我以前讲过一本书，你们可以去搜在我的频道里面搜国富论。 </p>
+<p>讲到国富论博哥国弗顿里边亚当斯密是国富论的作者，他说了一段话，他说这样，他说社会的每一个人想到的只有他自己的利益，在这种情况下有一只无形的手可以引导达到一个他并没有想要达到的目的，也就是他追求自己的利益，往往比真正出于本意的情况下，更有有效的促进了社会的利益。利己心是人类一切经济行为的推动力，个人自私可以有助于整个社会的福利，这个不是我的理论。 </p>
+<p>我要说一遍，这个理论不是我发明创造的，我不想去跟亚当斯密抢，因为作为一个经济学的经济系的学生，我要说这是我的会被人笑死的，我倒给你反复强调，这是亚当斯密国富论里边最重要的一个最有价值的论点，很多近代的经济学家孙亚当斯密为现代经济学之父，也是因为这一点目前的情况就是这样子，我们都是希望很多人是出于对社会的一个公益的目的，一个利它的一个新出来，无偿地为大家服务，无偿地为大家去分发口罩，分发食品，分发粮食。 </p>
+<p>这个是不是应该鼓励？是应该鼓励，但是做这个人比较少，你如果就想等着别人去牺牲自己，把他的口罩无偿的提供给你，或者就是说把他的口罩，比如他7块钱买了7块钱卖给你，这个我觉得是可以的，但是它不能解决目前社会的需求，目前社会的需求什么是大量的，我们需要口罩和物资，所以在这些就是说愿意牺牲自己去奉献别人的基础之上，我们还要鼓励社会有一些人愿意冒着风险铤而走险的出来挣一些就是说有风险的钱。因为他出来他就有可能被传染的病毒，甚至有最终有可能就是说牺牲掉。 </p>
+<p>人家冒着这种就是说生命危险的情况之下，人家出来来为这个社会来提供服务，你要明白他就是在为社会提供服务，当然了他的目的不是为了社会提供服务，像亚当斯密说的，他的目的是为了追求自己的个人利益，他想挣一笔横财，发一笔财，但是最终实际上它满足了社会的某一些人对口罩，对粮食对物资的一个需求。以前在战争年代也是有很多人说香港那边有跑丝的，那么走私就是说驾船走私运粮食，因为那时候大陆需要粮食，需要很多的医药药品，他们在这个过程当中，因为当时日本人就把港口都封了，不许他们去走私往里面运，一旦抓着了之后，日本人就特别狠，日本人就把这帮人扒光了，拿个神就拴在日本人的船头，然后也不管就一直在那拴着，拴到最后就还剩骨头什么的，你知道吧？说说刚开始说完后来死了烂了，烂掉了之后被鸟吃了，然后最后还是还剩了骨头之后，骨头也烂了之后，比如拴着两只手，到最后可能就只有两只手，还带了别的东西都不知道到哪去了，就这么搞。 </p>
+<p>但是就在日本人就这么搞这么狠的情况之下，还有很多人他们想办法驾船去走私粮食，走私当时大陆需要的这些医药，他们目的是什么？ </p>
+<p>当然我承认其中可能有一部分人是为了祖国，为了什么？是为了人类，为了什么？为了崇高理想。但是我们必须得承认里面有很大的一部分人，百分之七八十的人都是为了私利为了发财。但是你必须承认，由于他们的存在，解决了当时很多的这种物资的需要，所以我只能说这个就是说呼吁那些愿意为了帮助别人的人，也你可以走出来，但是那些为了自己个人私利的人，我也不想去谴责。 </p>
+<p>但是有人说说物价过高根本买不起，我认为这是不对的，他不存在这个情况，因为价格不是有走私的人去决定的，价格是由市场去决定的，他卖不出去他也白跑，他也白玩，他也没有意义，对吧？他也要卖出去，所以那个价格我相信最终市场会去调节，这就是宏观体制，最后导致整个国家越来越死，而市场的机制通过市场的调节，就导致在很多的时候，当你急需某一种物资的时候，你愿意花钱的话，你还是能够得到他的对吧？那么当然了缺点就是说你花了比平常可能更多的钱，但优点就导致这个市场还存在，一旦你真的不得不需要的时候，还是能够提供给你。 </p>
+<p>所以在这种情况之下遵循现代经济学之父，当然了我知道很多人不承认有，但是我觉得还是大多数，因为我是数学和经济，我是大包没准我是双学位。我认为在经济系里面还是有很多人是承认亚当斯密经济学现代经济学之父地位，让个别人不承认，不过咱不今天不探讨学术方面问题，但是我个人我是承认亚当斯密的在现代经济学当中的崇高地位的，所以我对亚当斯密这种就是说个人的私心，利己心促进能够最大的去促进社会利益社会公共利益的这种理论，我认为亚当斯密的说法是有道理的。 </p>
+<p>如果现在我们打击和谴责这种行为的话，所有那些就想出来挣点钱的人觉得你们又骂我我也不去了，你们随便它会导致社会的物资反而更加的匮乏。有的人说说我没有钱怎么办？没有钱的话就现在就逼着你，你要想办法，怎么你也能够为社会去提供一些服务，现在社会就是这样子，每一个人你都要想想别人需要什么，我怎么能够为别人提供一些服务，来争取一些利益，有了这些利益之后，我要拿这些利益去买我需要的粮食，我需要的口罩，我需要的蔬菜，当每个人都这么做的时候，我们的经济就没有死亡，如果当每个人都觉得我做压缩就等着政府来的话，那就会更糟糕。 </p>
+<p>所以我觉得亚当斯密说的是有道理的，然后我知道我这么说，今天我有人要又有钢筋要怼我，不过各种理论都有经济学，各种理论都有，我比较推崇亚当斯密的这种理论。所以反正这是我的观点，你有什么想说的？我有一个问题，中国大陆现在一些物价，比如说白菜的价格涨的特别高，然后政府就有一些相关的部门对商场进行处罚了，你对政府的手法或者是作为有是持什么态度的，你是觉得政府这是政府应该做的，私人应该做私人的，政府跟私人不一样，我刚刚说的我是鼓励每一个人都想办法去看到这个这个社会需要什么，我们去做点什么，但是政府有它稳定物价的职责，对这是政府有它的职责，因为政府要提供一些就是说便宜的物价来维持市场的稳定，作为市场的参考，所以还是要在市场宏观调控的基础之上，政府是需要做出一些小方面小局部的调控是吧？宏观调控反正中国是强调西方国家相对来讲对宏观调控其实是不以为然的，是政府它会西方比如说美国它会完全放任市场由市场经济这个规律来决定，还是政府在在某一些情况下也会出手去干预一下市场经济？ </p>
+<p>我觉得某些时候可能也会但问题在这是一个度的问题，我觉得不是说政府完全不应该做或完全应该做，他我觉得这不是一个非黑即白的问题，而是一个度，我觉得都是有的，只不过是对美国它是不能够就是说太谴责这些人，如果你太强调这些人都没有的话，你的日子更难过。 </p>
+<p>我是这么一个观点，当然我不是说我的观点一定对，但是我希望大家能够思考一下我的观点，就是说如果所有人不做，都坐在家里等着政府去安排政府去提供的话，你觉得那样子更好，还是每一个人都力所能及的去做点事情会更好？ </p>
+<p>我现在明白你讲的侧重点了，你讲的是市场调控下没有调控之下，每个人为了他的利利己心和他个人私利去做一些事情，比你坐在家里完全等政府要好。目前的情况之下，你如果只是什么都不做，就坐在家里完全等政府的话，我觉得可能你的日子会更难受一点，当然这是也不算是我的个人观点，我再强调一遍，这不是我的理论，这是亚当斯密的理论，我把这个理论介绍给你。 </p>
+<p>然后我觉得亚当斯密说到有一定的道理，但是你可以觉得他没有道理，那么单单你们自己去抉择目前的情况就你自己抉择，你愿意不愿意冒着生命危险出去也为社会做点什么？ </p>
+<p>如果你愿意的话，我觉得这个社会就应该回馈你。Ok从资金上就应该回馈你，如果你什么都不愿意做，你就想等政府的，那你就等政府。但是政府有的时候你知道吧，政府就是政府对吧？就这样没有办法，反正比如说出了水灾了对吧？你有两两包方便面我没有，从政府来讲，政府可能觉得你应该把你那包方便面把你那包方便面分一包给我，对于你来讲你觉得凭什么？你懂我意思吗？ </p>
+<p>如果你是一个政府部门的话，比如说你是政府部门，你是教育局或者你是什么救灾数，那么你就应该把你的那边后面分一包给我，因为你是政府部门，但如果你是私人的话，政府不能够在这种时候就强迫私人把他的口罩或者他的方向面去分给别人，你不能这么做，因为私有财产不容侵犯，这是必须的，你懂我意思吗？然后在这个时候你不能说你不分我就要谴责你，从道德上去谴责和绑架你。我认为这个是不对的，我认为如果你这么做的话，你觉得是对的，但是最终吃亏的是整个社会和每一个人。 </p>
+<p>如果你不这么做，你倒过来你尊重私有财产不容侵犯，你尊重到了这种情况之下，他有权利去决定我这边饭店是卖给你还是送给你，还是我自己留下吃的话，你这种情况下你要尊重每一个人的个人利益的时候，这个社会我觉得才有保障，才有希望。说到底我们是追求一个公共利益，还是追求一个个人利益，就当然了这一讲又涉及到一个哲学问题了，亚当斯密的经济学问题，然后这进而就涉及到哲学问题，所有问题就是什么？就是说其实中国已经几千年争论不休的那叫什么？ </p>
+<p>杨朱是要洋洋洋洋洋猪是吧？什么就拔一毛而立，天下不为也。听过这个吗？这就是它的一个理论就是说拔一根毛有利于天下我不做，因为对于我的个人私利没有好处，其实跟亚当斯密的观点是一样的，这样很多人其实误会了他扬州的理论就是拔一毛而立天下，不为当然这个就是一个几千年争论不休的哲学问题了。今天不但不太好那么多好不好探讨这种问题，他而且这个问题明白，你讲的人侧重点爱亚当斯密的理论提出来几百年了，也是争论不休，扬州的理论就是拔一毛利天下不为，这也是这几千年了更加地争论不休，我们今天就不探讨这个了好吧？ </p>
+<p>反正从我来讲，我觉得我个人我认为应该鼓励那些人去活跃市场，活跃经济，为每一个愿意掏钱的人去提供的各种的服务，不管是口罩是粮食是蔬菜，我觉得当你拿经济利益去刺激他们的时候，就能解会解决目前的社会需求。这是我的一个一个观念，我觉得能听懂的，但是要听懂了，听不懂的钢筋我就删，好了我就是屏蔽。好吧，我就干，我就是一秒钟，我不想我不去矫情也不变的，因为这种辩论的没有意义。亚当斯密理论辩论的几百年了，经济学他们别问不就进近100年，你讲可能有100年100年来，现在变了一100年，羊猪我不知道有没有1000年还是2000年，也是辩论了这么久了，最后也没辩论，吃过扶手引导来，所以你跟我说我要给你辩论辩论什么辩论扬州拔1毛1毛1毛一天下村，去你妈的大哥腾送元明星那么多士大夫阶级讨论那么多年没有个结果，咱俩能被人听出来，你是缺心眼，我跟你辩论知道了，你去你去写个学术路，你可以去参加诺贝尔经济学奖，你可以写一篇，你这养阳斯密写了一本国富论，你不服你也写本书，对不对？你写个民宿对你去诺贝尔参加一次经济学奖，不要跟我辩论，我不跟你探讨这些问题。 </p>
+<p>好吧？他说我的东西我讲完了，你能听听不能听算，我就说这样温和的改良派，我只提意见，你能听听不能听我洗洗我睡，是不是？好吧？讲完了谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/28/20200128%E7%AC%AC1291%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E2%80%9C%E6%88%91%E4%B8%80%E7%9B%B4%E4%BA%B2%E8%87%AA%E6%8C%87%E6%8C%A5%E3%80%81%E4%BA%B2%E8%87%AA%E9%83%A8%E7%BD%B2%E2%80%9D%E8%AF%B4%E7%9A%84%E5%8F%AA%E6%98%AF%E9%83%A8%E5%88%86%E4%BA%8B%E5%AE%9E-ppGrmdqfUo0/" rel="prev" title="20200128第1291期-习近平“我一直亲自指挥、亲自部署”说的只是部分事实">
+      <i class="fa fa-chevron-left"></i> 20200128第1291期-习近平“我一直亲自指挥、亲自部署”说的只是部分事实
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/29/20200129%E7%AC%AC1293%E6%9C%9F-%E6%95%99%E4%BD%A0%E6%80%8E%E4%B9%88%E4%B9%B0%E5%88%B0N95%E5%8F%A3%E7%BD%A9%E5%B9%B6%E5%9C%A82%E5%A4%A9%E5%86%85%E6%8B%BF%E5%88%B0%E8%B4%A7-r36Xk46cz_A/" rel="next" title="20200129第1293期-教你怎么买到N95口罩并在2天内拿到货">
+      20200129第1293期-教你怎么买到N95口罩并在2天内拿到货 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1216</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1292%E6%9C%9F-%E7%9B%AE%E5%89%8D%E6%9C%80%E5%8D%B1%E9%99%A9%E7%9A%8418%E4%B8%AA%E5%9F%8E%E5%B8%82%EF%BC%8C%E5%92%8C%E4%B8%AD%E5%A4%AE%E4%B8%8B%E4%BB%A4%E4%B8%8D%E6%83%9C%E4%B8%80%E5%88%87%E4%BB%A3%E4%BB%B7%E6%AD%BB%E4%BF%9D%E7%9A%8411%E4%B8%AA%E5%9F%8E%E5%B8%82-dAhFeIpSv0I/";
+    this.page.identifier = "2020/01/28/20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市-dAhFeIpSv0I/";
+    this.page.title = "20200128第1292期-目前最危险的18个城市，和中央下令不惜一切代价死保的11个城市";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

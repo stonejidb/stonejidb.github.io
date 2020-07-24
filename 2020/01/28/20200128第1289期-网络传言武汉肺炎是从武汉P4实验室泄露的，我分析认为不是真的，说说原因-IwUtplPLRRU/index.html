@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的1月28号星期二。大家好，这一期视频的名字我想就叫做不是网络传言，武汉肺炎是从武汉的 p四实验室泄漏的，我分析认为不是真的说说原因，一说这题目让我想起来什么了，上次出过一个类似的题目叫网络传言，相亲是叶选宁的外甥，我分析认为不是真的说说原因，后来那期视频被叶选宁的女儿叶静子大闺女叶静子看见了，叶静子在微博上也出来了澄清，说不认识像新和他老婆共青，说他他俩人的宿卫蒙面说不认">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因">
+<meta property="og:url" content="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1289%E6%9C%9F-%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%A8%80%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E6%98%AF%E4%BB%8E%E6%AD%A6%E6%B1%89P4%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E9%9C%B2%E7%9A%84%EF%BC%8C%E6%88%91%E5%88%86%E6%9E%90%E8%AE%A4%E4%B8%BA%E4%B8%8D%E6%98%AF%E7%9C%9F%E7%9A%84%EF%BC%8C%E8%AF%B4%E8%AF%B4%E5%8E%9F%E5%9B%A0-IwUtplPLRRU/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的1月28号星期二。大家好，这一期视频的名字我想就叫做不是网络传言，武汉肺炎是从武汉的 p四实验室泄漏的，我分析认为不是真的说说原因，一说这题目让我想起来什么了，上次出过一个类似的题目叫网络传言，相亲是叶选宁的外甥，我分析认为不是真的说说原因，后来那期视频被叶选宁的女儿叶静子大闺女叶静子看见了，叶静子在微博上也出来了澄清，说不认识像新和他老婆共青，说他他俩人的宿卫蒙面说不认">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-27T15:08:09.000Z">
+<meta property="article:modified_time" content="2020-07-24T02:20:01.492Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1289%E6%9C%9F-%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%A8%80%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E6%98%AF%E4%BB%8E%E6%AD%A6%E6%B1%89P4%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E9%9C%B2%E7%9A%84%EF%BC%8C%E6%88%91%E5%88%86%E6%9E%90%E8%AE%A4%E4%B8%BA%E4%B8%8D%E6%98%AF%E7%9C%9F%E7%9A%84%EF%BC%8C%E8%AF%B4%E8%AF%B4%E5%8E%9F%E5%9B%A0-IwUtplPLRRU/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1289%E6%9C%9F-%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%A8%80%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E6%98%AF%E4%BB%8E%E6%AD%A6%E6%B1%89P4%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E9%9C%B2%E7%9A%84%EF%BC%8C%E6%88%91%E5%88%86%E6%9E%90%E8%AE%A4%E4%B8%BA%E4%B8%8D%E6%98%AF%E7%9C%9F%E7%9A%84%EF%BC%8C%E8%AF%B4%E8%AF%B4%E5%8E%9F%E5%9B%A0-IwUtplPLRRU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-28 00:08:09" itemprop="dateCreated datePublished" datetime="2020-01-28T00:08:09+09:00">2020-01-28</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/01/28/20200128%E7%AC%AC1289%E6%9C%9F-%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%A8%80%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E6%98%AF%E4%BB%8E%E6%AD%A6%E6%B1%89P4%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E9%9C%B2%E7%9A%84%EF%BC%8C%E6%88%91%E5%88%86%E6%9E%90%E8%AE%A4%E4%B8%BA%E4%B8%8D%E6%98%AF%E7%9C%9F%E7%9A%84%EF%BC%8C%E8%AF%B4%E8%AF%B4%E5%8E%9F%E5%9B%A0-IwUtplPLRRU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/01/28/20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因-IwUtplPLRRU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的1月28号星期二。大家好，这一期视频的名字我想就叫做不是网络传言，武汉肺炎是从武汉的 p四实验室泄漏的，我分析认为不是真的说说原因，一说这题目让我想起来什么了，上次出过一个类似的题目叫网络传言，相亲是叶选宁的外甥，我分析认为不是真的说说原因，后来那期视频被叶选宁的女儿叶静子大闺女叶静子看见了，叶静子在微博上也出来了澄清，说不认识像新和他老婆共青，说他他俩人的宿卫蒙面说不认识，他们说不是他爸的外甥，也不也不是他的表。 </p>
+<p>表弟和表兄反正跟他们没关系，然后他怕别人不相信，就把我的视频，我那个视频不是说我说网络传员向新是叶选宁的外甥，我认为不是真的说说原因，把我那期视频搁在了他的微博下方，那个意思就是说我知道我来辟谣，你们也不相信我，对不对？你们去看的海外大媒体子冬季死冬季也说了，不是真的始终既说了原因，你听死东丽说的，你知道吧？当时我看完了之后，我就说首先咱们也感谢对不对？这根红苗正的红三代对吧？就是说以前我老说红二代红三代看我的视频，你们都不信这次有根红苗正的对吧？ </p>
+<a id="more"></a>
+
+<p>出来了这个证明对吧？我再表示感谢，另外一方面我也比较同情他们，就说什么，我就说你们中共的每一年花了这么多钱在媒体上，最后出需要有了这种造谣，有了恶毒攻击出来辟谣的时候，你们这么多媒体，什么人民日报新华社你们养了多少钱，都养了多少人，每年花多少钱，最后你们说的话跟放屁一样，根本没有人信。海底我出来给你们辟谣，然后我辟完爻的，你们自己还得拿着我的视频来证实你说的是对的，反正你们也是真是进入了塔西佗陷阱，就是说不管你说什么做什么，别人都不相信你了，对吧？ </p>
+<p>最近这段时间实际上传言武汉肺炎是从武汉批次的实验室泄露的，很长一段时间了，我最近这段时间发给我各种视频，让我看什么，从20分钟开始看，从弄好开始看，什么17年有一个女的不从加拿大拿了什么，然后法国又合作了什么，然后的反正种种的迹象都是说说武汉肺炎是从武汉的 p四实验室泄露的，我为什么这个事儿这么长时间我都不说，我就不想提这个事儿，一堆人在那问，我说你为什么不说这事，你是不是被老公收买了，你是不是大外宣？ </p>
+<p>你是不是在躲避什么？你在回避什么？我不愿意说这是为什么？因为我很知道这个事是海外的哪个组织，就是说经营出来的，知道吧？这个组织他先把谣言造出来，其他的这些组织迅速的就跟进，觉得这个好，什么意思？就是这个叫趁你病要你命，老公现在不是有病对不对？他们都要趁这个机会要劳动的命。我经常说你说我反对不反对独裁，我反对，反对不反对共产党现在这么做，他有很多行为我不喜欢，但是我经常说只要能够就是说把体制改革了之后，老共共产党可以留下来，就跟台湾的国民党一样可以留下来，没有问题，对不对？所以我觉得我反对的不是某一个人或者某一个政党，我没有敌人，我反对的是这个体制不改革，你就是把老公改了又怎么样，就海外这帮义和团这帮红灯教，你让他们回去了，能治理能比老公治理的好，说实话我撇一眼，他们要我说还让老公接着治，就这帮孙子回去更他妈扯淡，人民更加的民不聊生，知道吧？所以我知道这帮人一撅屁股就知道这帮孙子拉什么屎，但是你们也要明白，我们没有团队，我跟他们不一样，人家是有团队有组织知道吗？ </p>
+<p>人家有人家的帮，有人叫它叫，人家是一堆人对不对？人家光海外这些你看看有多少是法轮功背景，有多少是他们那边的对不对？这么多只有我老婆，我们俩对不对？我也是一支队伍，也是一支队伍，两个人虽然小，也是一支队伍，还有头衔，还有主任和副主任。对没错。 </p>
+<p>你说想想我以前一一朋友也是，他们07年08年次贷危机，我那朋友在麦顿一个公司上班上了好久，终于次贷危机升值了，生成叫VP就是vice就是VP升值到 VP的副总裁，我说他说高兴个屁，公司裁员了，把那帮人都抬下去了，最后就只剩了我，因为他是一个中国人，那边都是老外知道吗？中国人干事勤快麻利，也不跟上级顶嘴，所以他裁员的时候把那些干事慢的都裁掉了，觉得他这么一个中国人就留着他了，然后这个公司最后就剩下p和VP了，然后就剩我们俩了知道吗？ </p>
+<p>然后屁不想干活，留了我中国人觉得我干活麻痹，让我一个人把另外原先的原先他们一共有四五个，把原先的四五个人的活都我一个人干了，但是他也知道这工作量增加了怎么办？就给我生了一个 VP还少了，我就是威逼咱家，不就是你是 P我是那VIP，你们就哄我玩了对不对？我谁也不领导还被领导好不管怎么着，所以在早期的时候他们在那下鸡巴胡，我也不想着去理他们，就这帮孙子，你知道吗？ </p>
+<p>我怎么说咱们都在海外混，不愿意跟他们说正面有什么冲突，但是最近这个事是越说越扯淡，越说越扯淡，实在是，而且今天有个国际新闻网站叫j news也刊登了文章，说此新型冠状病毒肺炎是由中国政府在武汉设立的批复实验室泄露的，中国大使馆的发言人回应了说这是毫无依据且居心叵测的恶毒谣言，你知道吗？他们跟我不说媒体了，发现咱媒体有一个记者是收了他们钱的，也在那儿扯，但是他们还不敢像这样的这么公开说，他们都是就是说先说武汉肺炎在说那有一个批次实验室他不直接说，但是他那暗示就给你这么个意思，都是这么个意思好吧？ </p>
+<p>我觉得最后逼着我实在是没办法了，我经常都说我反对这个体制，我也觉得共产党现在做的不好，但是要改革我觉得是这样子。 </p>
+<p>我要战胜你，我是说实话战胜你，我不是说瞎话战胜你，如果我是说瞎话，因为老公是天天在胡说八道，没有一对没有一句实话。但是如果我们也是跟他一样，用老公的方法战胜了老公，最后我们就变成了一个新的老公，这样没有意义的，中国不需要一个新的共产党，中国需要的是一个新的体制，知道吗？就是说与恶龙缠斗过久，最后恶龙被你打败了，你变成了新的欧龙，就是龙者斗恶龙，知道吧？所以我们一定要坚持一个就是说我们依据事实说实话，所以习近平不用谢共产党不用谢，今天我来帮你说这事，因为你说什么也没人信了，还是你看你的4栋歌，还得看你的国际大媒体动机我都会背了。 </p>
+<p>好吧，咱们先看看是这样子。首先法国在病毒领域的研究，它在全球是领先的，法国里昂有一个p4的实验室，是全欧洲规模最大的病毒研究中心，所以中国从2003年非典之后，就像法国法国政府请求协助协助中国也开设一个同类型的病毒研究中心，因为当时03年在非典上吃了大亏，所以咱们也想研究这东西。但是法国担心中共会使用法国提供的技术来研制化学武器，法国的情报部门也向法国政府提出了严重的警告，就是说不能给他们，但是到最后当时的时任的法国总理叫拉法兰，最后还是支持这个事情。 </p>
+<p>所以中法于2004年签署了合作协议，法国就协助中共建设了 p4的病毒实验室，中共就承诺不会将此技术用于攻击性的活动，只是用来防卫或者做为人类做研究。法国但是最后法国发现了一个问题就是说原先就是说定就是说法国帮中共来建 p4实验室，是由法国的建筑设计设计所的rtv修建实验室，但最后却是中共去选择了武汉的中元国际工程有限公司下属的一个华中分公司来负责工程。法国安全部的调查显示，中元国际工程有限公司是中国军方下属部门的，然后也一直是美国中央情报局的监控在监控这个公司，就是说他在中国就是中国军方的关系非常密切的公司，等于就是中国中国军方在负责来建批次的实验室。 </p>
+<p>武汉的 p4这病毒中心于2017年正式开始运营，实验室可从事了三类的病毒研究，包括埃博拉，刚果克里米亚出血热以及尼帕病毒。实验室原计划于今年2020年获得世卫组织的认证，从而就可以被纳入世卫组织的合作实验室，使它可以说权力运转了就可以了，终于就可以出来了，但是所以今年是非常重要的一年，但是现在看来就别想了忘了这事。好吧，法国政府的消息人士表示，中方在与法方的合作当中多次违背了承诺，中方当年承诺就在武汉只建这么一个批次的实验室，但是法方的情报部门发现，中方依据法方提供的资料，新建了多个类似的实验室，等于不光在武汉，在其他地方也建了这种p4级别的实验室。 </p>
+<p>说到这种情况，我们要说说什么是p4级别的实验室， p就是prototype就是英文保护的意思。国际上分为 p1、p2、p3、p44个生物安全等级，第4级就是p4就是最高的等级，说可以有效阻止传染病原体释放到环境中，为研究人员提供安全保证。传染病源也是分了4个等级，第一级就是与人类成人的健康和疾病的无关，就不会导致人类得病，这是第一级。 </p>
+<p>第二级是可以引起人类的疾病，但是不致命。第三级是引起人类严重或致死的疾病，但是有预防和治疗的方法。第4级就是引起人类严重或致死的疾病，但无预防和治疗的方法。 </p>
+<p>P4的实验室就是说要跟你说一下，首先有一种说法就是说是泄露出来的，不是诚心的，那么这个观点来讲，我认为就不太可能，为什么这么说？我们来看 p四实验室由更衣室、过滤区、缓冲区、消毒区、核心区组成，实验室4周专有高效空气过滤器到达实验室的核心区一共有10道门，最里面的7道门是互锁的，如果一道门没有关好，另一道门是完全无法打开，避免了空气的流通。 </p>
+<p>更衣室还分为外更衣室、淋浴室、内更衣室消毒区分为还有化学淋浴室，就是说一道一道的过来工作人人员要离开主实验室的时候，首先要经过化学淋浴消毒、正压防护服，表面核心区任何相邻的门之间都是自动连锁装置，防止两个相邻的门被同时打开。 </p>
+<p>核心区配有生物安全柜、超低温冰箱、离心机、电热细胞培养，培养贵显微镜、实验台、小型动物工作室，生物安全柜顶上有一个直径0.5米的粗管子，直接通到了房顶，也是负压状态，主要的操作都需要在生物安全柜中来进行，核心区的工作人员相互之间要离开的时候，要把全身上下消毒一遍，才能到缓冲区，到了缓冲区，除去外层的防护套口罩外层手套，然后要进入灭菌容器或消毒袋内，关闭实验室门后再取下防护，木匠再将其装入传递箱进行消毒，然后工作人员再经过另外一个缓冲间退到准备间，才可以取下身上所有的防护器具，然后在沐浴室也在洗澡之后才可以离开实验室。 </p>
+<p>所以PC实验室只有得到批准和持有此卡通行证的人才能进入，而所有出入人员都有电脑记录在案。所以在这种级别的配四实验室里边，我认为不存在泄露的可能性。 </p>
+<p>然后当然有人就说中共建完了之后，首先来讲粗制滥造，然后管理在不善可能就有问题，你还不了解中国吗？我了解。有没有可能？有可能，但是不是现在为什么这么说，因为到目前为止批次的实验室还不能全负荷的去运转，为什么？因为还没有得到这个世卫组织的认可。 </p>
+<p>那么什么时候得到世卫组织认可的？就是今年认可，所以在今年得到世卫组织认可之前，还是管理的非常严格的，然后随时欢迎世界卫生组织来检查和做，所以在这段时间里，我认为不存在泄露的可能性。如果就是说今年被检查合格了，然后加入了他的合作实验室，然后开始高速运转了之后，以后掉以轻心泄露的可能有没有？有，但是不是，因为现在还是夹着尾巴做人的时候，还是都要靠别人认可和认定的时候，所以在这个时候我不认为就是说会有泄露。 </p>
+<p>那么有没有可能是人为的，刚刚我也说了对吧？他这个都是要记录在案的，对吧？所以我认为人为的可能性不大。 </p>
+<p>为什么这么说？咱们就假设说咱先假设说是有人为的，咱们拿逻辑来推理是有人为的要做，就是反社会，不管他是报复社会是要干什么，假设说他要这么做的话，我告诉你对于这种新型冠状病毒的研究，实际上是不需要在p4级别实验室的，在p3级别就可以，这个病毒不算是那种第4等级的最高级的病毒，它里边研究的其他等级的病毒比这要厉害多了，知道吗？ </p>
+<p>这个病毒真的在p四里边来讲，毛毛雨不是最厉害的。如果一个人这个人真的有能力能够进去把这个病毒偷出来的话，这个人是相当懂，这个实验室才行，明白吗？一定是内部人员，而且是高级内部人员才能有可能把这个病毒偷出来。如果他要偷的话，就算你进去了对不对？琳琅满目，里面各种武器各种病毒，如果你要偷的话，你偷什么？你肯定偷最厉害的对不对？你不可能拿里边最皮尼的，对不对？你都已经进去了对吧？ </p>
+<p>这边原子弹这边核弹这边氢弹，然后你看只有把AK47不错，它不可能的，对不对？你进去你是干嘛去了对不对？他不拿这个了，有的是比较厉害的，他从里边随便摘不摘不出来，武汉现在估计都死一半了，知道吗？这是此其一。 </p>
+<p>其二，如果是有人重新进去把它偷出来就要释放出来的话，就不会光放到华南海鲜市场去了，知道吗？如果他都已经偷了，他要给你干了跟你拼了，你反正到哪都是对不对？而且它都不光在武汉扔了，对不对？武汉扔一个，上海扔一个，北京早就炸锅了，对不对？他反人类对不对？不可能只往偏跑到果子里一卖，果子一那会去他怎么了？上次跟老板买了一只，他克扣了我，他销了半只卖我的报酬，是吧？它不是那么回事，对不对？ </p>
+<p>所以我觉得我觉得不太可能，还有一点是什么？假如就算是说我觉得我说到这儿的话，可以说人为的已经刨去了，对吧？因为人为要偷的话可能偷更厉害的，而且会让我多过点傻，不会只在海淀市场对吧？所以人为我觉得到此就可以屏蔽掉了，那么剩下就是说泄露，当然我刚才说的管理很严格，你也不相信咱们就说假如说是他实验室泄露出来了，对不对？那么泄漏的话为什么只泄露到华南海鲜市场去了，别地怎么就没有了。 </p>
+<p>当然有人说华南海鲜市场不是第一感染区，还有一个第一感染区，但是甭管怎么着，如果是发生了泄漏的话，那么应该也是会有多个渠道，可能有小动物进去摇走了或怎么着的话，那样子的话也会传播的点比较多，不会这么都集中在这儿，这是第一点。 </p>
+<p>第二点如果发生了泄泄漏的话，不会就只出来一种病毒，反正我是这么一个感觉。到这可能还不够完善，咱们再补充一点就是什么，假如说真的是泄露了，当时我也说了12月份这个病毒一出来，他们武汉二胡医院就已经检测出来了，也送交了 p四实验室，他那有一个叫什么华什么华东科技什么生物公司也检测出来了，实际上我在报的时候为什么这么重大的消息，我12月30号我把题目上我就给你写上，对不对？ </p>
+<p>武汉发生武汉爆发非典型性肺炎，为什么我敢就是说我从三个渠道都得到了证实，就是说这个是一个新冠状性病毒，就是萨斯的变异体对不对？ </p>
+<p>要不然的话我又说武汉一次爆发对不对？我就加个一次两字了，为什么？我那时候我就敢说，因为三个点都测完了都没有有问题，对不对？那么也就说明什么？也就是说到了12月的时候，他们已经知道这玩意是什么了，对不对？假如是从自己的实验室泄露出去的话，那时候就知道了，对吧？到那个时候一旦知道的话，我告诉你他是有可能他就觉得坏了，泄露了我要隐瞒，就是说不要上级知道，但是有一个问题，如果是他们自己泄露的话，他就会知道这东西的厉害性在哪儿，就是说到底应该怎么防治他应该知道，但是不要说12月份，到了现在，他知道吗？他还是不知道，他要知道他就不这么搞了，到现在他都不知道这玩意是什么，他现到现在没弄清楚，说白了你能看得出来吗？ </p>
+<p>中国政府现在是一团糟，根本没弄明白，到现在都没有弄明白，如果是病自己的实验室的泄露出来的话，最小它大概集会知道一个方向是什么了，而且应该朝哪个方向去努力，但是现在有个没有，现在用的是最土的最笨的最最原始的方式和方法。一点都说白了就是对这个东西现在一点不冒门，而且对它的传染力度什么的，在早期的时候也不毛纹。所以从此来看，我认为不是，如果是的话，其实在早的时候，他最起码他知道应该如何去做这个东西了，就是说如何防范如何应该怎么做。 </p>
+<p>所以就是说我这么分析下来，我认为这个不是批次实验室泄露出来的，我不认为有小动物能够钻到那里面去，反正这是我的观点。好吧？说了那么多，我最后还是要说关于此，我现在没有任何的实质的证据来证明它到底是泄露的或者不是泄露的，所以我既不能证实也不能证伪，对不对？我只能说我现在分析我认为是不真实的。 </p>
+<p>然后我来说一下我的思路，就关于整个思路走下来，我的想法是什么？当然了你们可以不认同好吧？我也不是说一定是真的，但是我把我的这种逻辑思维方式提供给你的一个去思考的这个方式去至于那边的各种的红灯，教什么太平天国，是吧？我算了，我也不想跟你们说，你们随便好吧，我就这点好，知道吗？共产党我不怕，你们这边我也不怕，耐谁，我还是那句话，我想说什么说什么，你们谁也别想管我，知道吗？ </p>
+<p>我跟你们不一样，你会发现这帮孙子有一个特点就是说什么呢？骂共产党跟共产党干的时候，他们一个个胆大极了，什么都敢说，什么都敢干知道吗？为什么？因为他们知道共产党的不会把他们怎么着？共产党瞧不起他们也没有影响力，你会发现真的就是这个事闹了半天，你看他们闹了半天，有多少人相信，不都还是来问我。你发现了没有？现在老公的多吗？不多，现在他们多吗？也不多。都在，我现在就跟公道伯一样，你知道吧？ </p>
+<p>都公道博就是出了事儿大家都是一般包公就叫公道国，你知道吗？就是出了事了大家都不信，咱问包公，然后包公断一下，我现在就跟那公道婆似的，知道吗？都在等着要听听自动断一下，然后怎么着咱们再说，因为老公这边是没实话，那边的黑老公也是黑的，没有天津，你知道吗？都是反着来都对两两边差不多，说这边是共产党，这边是西医共产党，你知道吗？就东共产党辛苦包上你知道吧，反正都都差不多你知道吗？反正就是尽量的秉持一个公正，对吧？ </p>
+<p>那么我就说你会发现一个问题就是说，这帮人里边就有一个问题就是说你看小鬼子闹成这样，你看这帮孙子有一个敢去跟小魏的得了没有，怂的要命，一个个被小小桂子是没皮没脸的从头骂到尾，他们连小贵的名字都不敢提，你知道吗？为什么？因为他们知道一点，就是骂共产党没有即时性的危险，想怎么怎么骂，共产党说也不好听的，不要说不理他们，共产党撒泡尿都不知道他头上尿都不知道他头上湿，知道吗？ </p>
+<p>但是小柜子不一样，小贵子不敢惹他们惹了小贵，他把小贵子告诉他们，告诉他们他们马上就真的有危险了。你知道吗？骂共产党是可以挣钱的，骂小贵子是要赔钱自己去，顾律师是花钱打官司的，知道吗？所以你就看明白了，这帮人基本上就这么个情况，所以小柜子没头没脸，他怎么死的他们他们也不说话，共产党他们就玩命，因为小贵子是真的拿尿呲他们，那么共产党是真的不拿尿滋，你知道吗？所以就这么个情况你知道吗？所以却一怂货一帮怂人，今天有个不俗的出来，不过我觉得就以目前来讲，老公这边是不是我得的比较苦，那边得的也比较苦。 </p>
+<p>我觉得从今天开始，咱们俩就作为咱们替母就要被围殴了，好吧？反正就这么个情况，我觉得无论如何不管压力多大，不管怎么着，我还是要秉持着我自己的良心，说我想说的大实话，至于你们要追杀要围殴，你们随便，好吧，放马过来。好吧？不一样的柴火，你是卖柴火，你说卖老公拿老公能卖挣点钱对吧？被你看出来了好吧？今天你到这里。谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/28/20200128%E7%AC%AC1288%E6%9C%9F-%E9%92%9F%E5%8D%97%E5%B1%B1%E5%87%BA%E6%9D%A5%E8%BE%9F%E8%B0%A3%E4%BA%86%EF%BC%8C%E8%82%AF%E5%AE%9A%E4%BA%86%E6%9D%8E%E5%85%8B%E5%BC%BA%EF%BC%8C%E9%9A%BE%E6%8E%A9%E5%A4%B1%E6%9C%9B-XT5JZlJe1ZM/" rel="prev" title="20200128第1288期-钟南山出来辟谣了，肯定了李克强，难掩失望">
+      <i class="fa fa-chevron-left"></i> 20200128第1288期-钟南山出来辟谣了，肯定了李克强，难掩失望
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/28/20200128%E7%AC%AC1291%E6%9C%9F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E2%80%9C%E6%88%91%E4%B8%80%E7%9B%B4%E4%BA%B2%E8%87%AA%E6%8C%87%E6%8C%A5%E3%80%81%E4%BA%B2%E8%87%AA%E9%83%A8%E7%BD%B2%E2%80%9D%E8%AF%B4%E7%9A%84%E5%8F%AA%E6%98%AF%E9%83%A8%E5%88%86%E4%BA%8B%E5%AE%9E-ppGrmdqfUo0/" rel="next" title="20200128第1291期-习近平“我一直亲自指挥、亲自部署”说的只是部分事实">
+      20200128第1291期-习近平“我一直亲自指挥、亲自部署”说的只是部分事实 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1216</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/01/28/20200128%E7%AC%AC1289%E6%9C%9F-%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%A8%80%E6%AD%A6%E6%B1%89%E8%82%BA%E7%82%8E%E6%98%AF%E4%BB%8E%E6%AD%A6%E6%B1%89P4%E5%AE%9E%E9%AA%8C%E5%AE%A4%E6%B3%84%E9%9C%B2%E7%9A%84%EF%BC%8C%E6%88%91%E5%88%86%E6%9E%90%E8%AE%A4%E4%B8%BA%E4%B8%8D%E6%98%AF%E7%9C%9F%E7%9A%84%EF%BC%8C%E8%AF%B4%E8%AF%B4%E5%8E%9F%E5%9B%A0-IwUtplPLRRU/";
+    this.page.identifier = "2020/01/28/20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因-IwUtplPLRRU/";
+    this.page.title = "20200128第1289期-网络传言武汉肺炎是从武汉P4实验室泄露的，我分析认为不是真的，说说原因";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
