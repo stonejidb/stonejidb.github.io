@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的1月6号星期一，昨天我们报了一个新闻，伊拉克的议会做了决议，要驱逐外国军队，当然也主要是美军川普今天就对此发表了他的看法，两个字还钱。他说美军在伊拉克新建了一个空军基地，费用用了几数10亿美元，他说您把钱付清了，不然我们走不了没没法撤。还有一个就是说若美军被迫撤离伊拉克，就是说如果你们最后议会一定要让政府就是说逼着要美军撤的话，那么美国就要对伊拉克实施的经济制裁。  川普">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下">
+<meta property="og:url" content="https://stonejidb.github.io/2020/01/06/20200106%E7%AC%AC1198%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E6%98%AF%E5%9C%A8%E6%81%90%E5%90%93%E4%BC%8A%E6%8B%89%E5%85%8B%EF%BC%8C%E5%B7%9D%E6%99%AE%E5%AE%9E%E9%99%85%E4%B8%8A%E7%BB%99%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E4%B8%AA%E5%8F%B0%E9%98%B6%E4%B8%8B-psFlVfRaW7k/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的1月6号星期一，昨天我们报了一个新闻，伊拉克的议会做了决议，要驱逐外国军队，当然也主要是美军川普今天就对此发表了他的看法，两个字还钱。他说美军在伊拉克新建了一个空军基地，费用用了几数10亿美元，他说您把钱付清了，不然我们走不了没没法撤。还有一个就是说若美军被迫撤离伊拉克，就是说如果你们最后议会一定要让政府就是说逼着要美军撤的话，那么美国就要对伊拉克实施的经济制裁。  川普">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-01-05T16:09:08.000Z">
+<meta property="article:modified_time" content="2020-07-28T17:17:40.993Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/01/06/20200106%E7%AC%AC1198%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E6%98%AF%E5%9C%A8%E6%81%90%E5%90%93%E4%BC%8A%E6%8B%89%E5%85%8B%EF%BC%8C%E5%B7%9D%E6%99%AE%E5%AE%9E%E9%99%85%E4%B8%8A%E7%BB%99%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E4%B8%AA%E5%8F%B0%E9%98%B6%E4%B8%8B-psFlVfRaW7k/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/01/06/20200106%E7%AC%AC1198%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E6%98%AF%E5%9C%A8%E6%81%90%E5%90%93%E4%BC%8A%E6%8B%89%E5%85%8B%EF%BC%8C%E5%B7%9D%E6%99%AE%E5%AE%9E%E9%99%85%E4%B8%8A%E7%BB%99%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E4%B8%AA%E5%8F%B0%E9%98%B6%E4%B8%8B-psFlVfRaW7k/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-06 01:09:08" itemprop="dateCreated datePublished" datetime="2020-01-06T01:09:08+09:00">2020-01-06</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/01/06/20200106%E7%AC%AC1198%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E6%98%AF%E5%9C%A8%E6%81%90%E5%90%93%E4%BC%8A%E6%8B%89%E5%85%8B%EF%BC%8C%E5%B7%9D%E6%99%AE%E5%AE%9E%E9%99%85%E4%B8%8A%E7%BB%99%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E4%B8%AA%E5%8F%B0%E9%98%B6%E4%B8%8B-psFlVfRaW7k/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/01/06/20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下-psFlVfRaW7k/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的1月6号星期一，昨天我们报了一个新闻，伊拉克的议会做了决议，要驱逐外国军队，当然也主要是美军川普今天就对此发表了他的看法，两个字还钱。他说美军在伊拉克新建了一个空军基地，费用用了几数10亿美元，他说您把钱付清了，不然我们走不了没没法撤。还有一个就是说若美军被迫撤离伊拉克，就是说如果你们最后议会一定要让政府就是说逼着要美军撤的话，那么美国就要对伊拉克实施的经济制裁。 </p>
+<p>川普说，我们对伊拉克实施要对经济制裁将是从未有过的，如果我实施这个制裁的话，这个制裁将使得我们对伊朗的制裁看起来都像是小儿科，恐吓伊拉克，不过我觉得其实不是恐吓，实际上给伊拉克一个台阶下，为什么这么说？因为就是说伊拉克现在目前很简单，它要做给伊朗看，对吧？就是那意思，这个事跟我没关系，因为苏莱曼尼是死在了伊拉克队，是被美国炸死的伊拉克。那么就是说肯定伊朗那边有想法，说是不是你们伊拉克这边有人出卖了他的行踪，对吧？ </p>
+<a id="more"></a>
+
+<p>还有你们有没有参与这个事对吧？那么伊拉克这么做实际上就是把自己撇干净了，跟我没关系，都是美国的事，你们别在我们这打，你们你们爱往哪去往哪去对不对？就这么个意思。 </p>
+<p>当然了外国军队不包括不光是美军，还有英国军队和法国军队，英国和法国今天也都表态了，英国说恳请巴格达政府让英军留下继续打击伊斯兰国，所以也是就说得很客气，比串口要客气得很多。但是意思是一样的，就是想让爷爷走没门，想就别想。 </p>
+<p>然后法国总理马克龙打电话给川普表示，法国完全支持美国，而且马克龙还警告伊朗说避免要使紧张的局势再升级。高等医疗别惹麻烦揍你。马克隆还更强硬一些。 </p>
+<p>对于伊拉克这边来讲，我们要说一下，就是说议会通过了是不是就代表了全体伊拉克人民的态度，现在我们得到的消息其实也不全是，它主要是代表了它的什叶派。穆斯林里面主要两两个大派别，一个逊尼派，一个什叶派，然后伊拉克还有一些库尔德。 </p>
+<p>以前萨萨达姆在伊拉克不还是对库尔德进行大规模的破害吗？你还记得你要当初为什么要推翻萨达姆吗？我也不懂萨萨达姆，当时一个他对别的国家进行入侵，另外一个他在自己本国对他们本国的库尔德人进行了一个迫害，就有点像是中国吧，好像对新疆的维吾尔族进行了迫害，知道吧？他就认为你这个是不道德的，反正累的等等，当时现在这个库尔德人也有自己的意愿，就是说在政治上有自己的一席之地这么个意思。现在伊拉克不是一个民主国家，是这么个意思。 </p>
+<p>首先决议案现在还没有形成法律，所以它不具备就是强制执行的能力。所以如果想要要想那什么的话，就必须要立法，就是说你要立法驱逐外国军队，他就民主国家你总要走这个就是说程序，从程序上来说，现在这纸还不是一个法律。 </p>
+<p>另外一个就是说逊尼派和库尔德议员是不支持什叶派的提议的，他们是欢迎美国留下来的，因为伊朗也是主要是以什叶派为主，伊拉克这些什叶派的这些议员跟伊朗的关系走得太近，那么逊尼派和库尔德人家就担心美军走了之后，他们拉着伊朗一块就是揍，我们的权利就要受到又要受到迫害，所以他们还是认为美军应该留下来，所以他们现在就是杯葛议案，那么不参与投票杯葛，所以在议会当中得到的全部的票数都来自10月派逊尼派和库尔德人，就是杯葛根本就不参与投票，但是他们人数太少，因为他们议员数量也是靠老百姓选，因为他什叶派人人数多，对大舅跟中国一样吗？ </p>
+<p>你要选议员的话，最后肯定还是汉人的这一原多，其他的少数民族选不出几个来对吧？所以在议会一通过决议，基本上汉族这边的一员一同意就过了，那没办法对吧？所以目前就这么个情况。 </p>
+<p>然后而且伊拉克总理叫麦赫迪，他在去年2019年10月就两个月前他已经辞职了，所以目前的伊拉克政府是一个看守政府，就要重新的再选一个新的总理上来。 </p>
+<p>他为什么辞职？据说反正也是贪污腐败的原因，然后老百姓上街游行，它现在是一个民主国家，一旦你发现了贪污腐败，老百姓一看游行的就只能辞职就下台了。反正他现在就按照一个民主国家在运转，民主国家运转就有他的问题就是说他不是这样的，就是说他现在这些上来的这些领导人就有点像是满清末年民国的时期，比如说什么袁世凯什么还有谁邻海之外，还有谁黎元洪是什么，是不是？反正都是那种各个军阀对吧？ </p>
+<p>后边反正就军阀割据这些人对不对？一般的老百姓你像孙中山这些人也很难就是说能够上台当总统对吧也不太容易，因为你的实力还是不行对吧？其实清廷灭亡了之后，最后能够出来当总统的还是各地的这些军阀手握兵权的这些大员们，易拉克现在也是，但是它毕竟是个民族的国家，就是你原始卡上来之后，你如果太糊涂了，老百姓如果都反对你的话，你也得下台。对吧？ </p>
+<p>到了民国的时候不也是就是说而且那时候很多人去骂蒋介石，后来蒋介石当了领导人之后，不也骂吗？蒋介石曾经有一度还下野了，就被逼无奈就还下野过一段时间，就说民主制国家吗总是这样子，就是说你说到了民国的时候，我们有点就是说民主半共和那种对不对？你说他发展的速度就快，他也不见得就快对吧？所以乱乱糟糟的，因为大家都能把自己的意见表达出来，对不对？ </p>
+<p>但是他也不会出现的就是说什么文革像什么这种节约度荒，像大跃进这种事情。共产党上台之后，当然了共产党如果好，如果发展经济搞改革开放的话，我们迅速的集中力量就可以把经济就搞上来了。虽然这里边有大量的腐败关岛，然后红顶商人，是不是老百姓会觉得最后你发现挣了大钱的都是你们红二代红三代，但是老百姓无力反抗，只能忍受并享受对吧？你反抗不了只能忍受，然后忍受差不多享受经济，反正也是发展起来了，对不对？ </p>
+<p>虽然人家都是挣了几百亿上千亿，但是老百姓你去送个外卖，你一个月也能拿到整体水平，都可以跟着上去，它的经济发展速度比较快，你像民国时期就是说它就没有那么快，对吧？他可能就慢一点，但是相对来讲也不会有一些就是说稳一些，然后你就不会的说大量的去对大量的去贪污，也不会有大的这种失误，一旦合法性就属于阶段。所以就是说它有利有弊，都有利有弊，就这么个意思，麦克迪这哥们倒可以，麦克迪他也承认，苏联曼尼来伊拉克来跟我会见的是我约他他就是来见我的。 </p>
+<p>所以你就明白了，他们就是说什叶派的麦赫底也是，因为什叶派人数多选出来的总理，所以他也是跟伊朗的关系比较好，就是这么个情况。所以然后麦赫迪还有他们的前总理麦赫迪，前面的总理麦赫迪现在已经辞职了，但是他现在看守等到新的总理总理选出来之后还有下台，但是现在还没新的还没出来，所以他现在暂时还是总理，还有前总理他们一起都去了伊朗，出席了苏莱曼尼的葬礼，所以伊拉克目前就是这么一个这么一个局，市局很混乱，有点像是我们民国那个时期军阀，反正就是各过的勾心斗角，但是因为美军在所以大家也打不起来，只能美国你必须得选举，通过投票来就是说想上互相打对不对？ </p>
+<p>就是说什么北那时候蒋介石不是黄埔军校不北伐吗？这个就不行，美国也不知道你们打美军在这你甭打，你们就民主搞大民主制，在这种情况下有点慢，而且他们还是有很多这种宗教的因素在里面。 </p>
+<p>但是好处就是说也不会出现什么文革，什么大跃进，节约度荒，全国各司几千万人这种事，也不会出现，因为民主制就是说好也好不了多少，坏也不会那么坏，方式荒唐一下，不是这样的荒唐方式。 </p>
+<p>也荒唐不就是说好吧它也好不起来荒唐也荒唐不了多少。你反正就是民主制一点一点地缓慢地在提高，但是其实还是在提高的，民主是最终你放了10年20年看你会他是提高，但它一个非常稳妥地缓慢的提高，不会那种做不正常那种，要么对哗出有钱，要不就哗就饿死几千万，咱们就是那种你知道吗？因为他民主初期，所以民主的那些缺点在他这儿显得更多一些，是不是这么个意思？ </p>
+<p>我觉得就跟种竹子一样，你知道那种竹子就是说头三年它可能就长了两厘米厚三厘米，它到最后才能够起来，它现在正在一个就是慢慢的往上走，对，所以你也不能拔苗助长，也不能太太着急。反正就这么一个这么一个情况。 </p>
+<p>我认为川普现在他也明白伊拉克的意思，就是跟美国把这个事撇清，苏丹曼尼跟我们的死没有关系，川普现在恐吓他们一下，吓唬吓唬也是送给伊朗看，就这意思，伊拉克跟我们不是一事跟他没关系，其实我觉得是给他们个台阶下，大家把这个事做足了，就把伊拉克的就撇出去了，对。这是我这么一个观点，好吧？这一期先讲到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/01/06/20200106%E7%AC%AC1197%E6%9C%9F-%E5%A4%A7%E9%99%86%E6%96%B0%E5%B9%B4%E9%AB%98%E9%80%9F%E5%85%AC%E8%B7%AF%E9%80%9A%E8%A1%8C%E8%B4%B9%E6%98%AF%E5%8F%AF%E4%BB%A5%E8%A6%81%E5%9B%9E%E6%9D%A5%E4%B8%80%E9%83%A8%E5%88%86%E7%9A%84-QXaIukRmZMM/" rel="prev" title="20200106第1197期-大陆新年高速公路通行费是可以要回来一部分的">
+      <i class="fa fa-chevron-left"></i> 20200106第1197期-大陆新年高速公路通行费是可以要回来一部分的
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/01/06/20200106%E7%AC%AC1199%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%A3%E5%BC%8F%E9%80%9A%E7%9F%A5%E7%BE%8E%E5%9B%BD%E5%9B%BD%E4%BC%9A%E9%9A%8F%E6%97%B6%E5%8F%AF%E8%83%BD%E5%AF%B9%E4%BC%8A%E6%9C%97%E5%BC%80%E6%88%98-P_-bjkPlogg/" rel="next" title="20200106第1199期-川普正式通知美国国会随时可能对伊朗开战">
+      20200106第1199期-川普正式通知美国国会随时可能对伊朗开战 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1343</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/01/06/20200106%E7%AC%AC1198%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E6%98%AF%E5%9C%A8%E6%81%90%E5%90%93%E4%BC%8A%E6%8B%89%E5%85%8B%EF%BC%8C%E5%B7%9D%E6%99%AE%E5%AE%9E%E9%99%85%E4%B8%8A%E7%BB%99%E4%BC%8A%E6%8B%89%E5%85%8B%E4%B8%80%E4%B8%AA%E5%8F%B0%E9%98%B6%E4%B8%8B-psFlVfRaW7k/";
+    this.page.identifier = "2020/01/06/20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下-psFlVfRaW7k/";
+    this.page.title = "20200106第1198期-川普不是在恐吓伊拉克，川普实际上给伊拉克一个台阶下";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
