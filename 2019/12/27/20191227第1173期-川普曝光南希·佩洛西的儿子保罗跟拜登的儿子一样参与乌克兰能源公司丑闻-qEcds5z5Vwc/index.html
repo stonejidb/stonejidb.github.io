@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2019年的12月27号星期五，在差不多十几分钟应该是不到20分钟之前，我现在是9:50在美国时间的12月27号晚上的9:31，也就是19分钟之前，美国总统川普在他自己的个人推特上曝光了众议院议长南西佩勒斯的儿子保罗，参与了乌克兰能源公司的丑闻事件，我觉得美国民主国家就是这点好，互相政治家们的互相曝光。  你在中国你很难看到习近平在他的微博上来曝光，比如说李克强家的家族的丑闻是吧？这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻">
+<meta property="og:url" content="https://stonejidb.github.io/2019/12/27/20191227%E7%AC%AC1173%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%9B%9D%E5%85%89%E5%8D%97%E5%B8%8C%C2%B7%E4%BD%A9%E6%B4%9B%E8%A5%BF%E7%9A%84%E5%84%BF%E5%AD%90%E4%BF%9D%E7%BD%97%E8%B7%9F%E6%8B%9C%E7%99%BB%E7%9A%84%E5%84%BF%E5%AD%90%E4%B8%80%E6%A0%B7%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E8%83%BD%E6%BA%90%E5%85%AC%E5%8F%B8%E4%B8%91%E9%97%BB-qEcds5z5Vwc/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2019年的12月27号星期五，在差不多十几分钟应该是不到20分钟之前，我现在是9:50在美国时间的12月27号晚上的9:31，也就是19分钟之前，美国总统川普在他自己的个人推特上曝光了众议院议长南西佩勒斯的儿子保罗，参与了乌克兰能源公司的丑闻事件，我觉得美国民主国家就是这点好，互相政治家们的互相曝光。  你在中国你很难看到习近平在他的微博上来曝光，比如说李克强家的家族的丑闻是吧？这">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-26T16:07:03.000Z">
+<meta property="article:modified_time" content="2020-07-30T02:12:55.409Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2019/12/27/20191227%E7%AC%AC1173%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%9B%9D%E5%85%89%E5%8D%97%E5%B8%8C%C2%B7%E4%BD%A9%E6%B4%9B%E8%A5%BF%E7%9A%84%E5%84%BF%E5%AD%90%E4%BF%9D%E7%BD%97%E8%B7%9F%E6%8B%9C%E7%99%BB%E7%9A%84%E5%84%BF%E5%AD%90%E4%B8%80%E6%A0%B7%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E8%83%BD%E6%BA%90%E5%85%AC%E5%8F%B8%E4%B8%91%E9%97%BB-qEcds5z5Vwc/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2019/12/27/20191227%E7%AC%AC1173%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%9B%9D%E5%85%89%E5%8D%97%E5%B8%8C%C2%B7%E4%BD%A9%E6%B4%9B%E8%A5%BF%E7%9A%84%E5%84%BF%E5%AD%90%E4%BF%9D%E7%BD%97%E8%B7%9F%E6%8B%9C%E7%99%BB%E7%9A%84%E5%84%BF%E5%AD%90%E4%B8%80%E6%A0%B7%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E8%83%BD%E6%BA%90%E5%85%AC%E5%8F%B8%E4%B8%91%E9%97%BB-qEcds5z5Vwc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-27 01:07:03" itemprop="dateCreated datePublished" datetime="2019-12-27T01:07:03+09:00">2019-12-27</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/12/27/20191227%E7%AC%AC1173%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%9B%9D%E5%85%89%E5%8D%97%E5%B8%8C%C2%B7%E4%BD%A9%E6%B4%9B%E8%A5%BF%E7%9A%84%E5%84%BF%E5%AD%90%E4%BF%9D%E7%BD%97%E8%B7%9F%E6%8B%9C%E7%99%BB%E7%9A%84%E5%84%BF%E5%AD%90%E4%B8%80%E6%A0%B7%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E8%83%BD%E6%BA%90%E5%85%AC%E5%8F%B8%E4%B8%91%E9%97%BB-qEcds5z5Vwc/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/12/27/20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻-qEcds5z5Vwc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2019年的12月27号星期五，在差不多十几分钟应该是不到20分钟之前，我现在是9:50在美国时间的12月27号晚上的9:31，也就是19分钟之前，美国总统川普在他自己的个人推特上曝光了众议院议长南西佩勒斯的儿子保罗，参与了乌克兰能源公司的丑闻事件，我觉得美国民主国家就是这点好，互相政治家们的互相曝光。 </p>
+<p>你在中国你很难看到习近平在他的微博上来曝光，比如说李克强家的家族的丑闻是吧？这个事你在中国你看不见，在美国经常会有这种惊天丑闻，总统曝光众议院议长的儿子，串口发帖说 crazy Nancy也就是疯子Nancy。What’s going on？怎么了？大姐，怎么了妹子？This is big stuff，这可是个大事，政府说。 </p>
+<a id="more"></a>
+
+<p>然后下面有一个视频在视频里曝光，南极佩罗斯的儿子保罗朱尼尔就小保罗是乌克兰的威慑阔友的董事会的成员，也是其相关公司nrg lab的执行官。该公司在乌克兰从事能源业务，然后南斯尼佩鲁斯一同志出现在了该公司的宣传视频当中，不过这个视频已经被南戴佩罗斯他们删掉了，但是川普总统还是找到了视频的一个片段，曝光总是要无图无真相，要有视频作为证据。总统曝光众议院议长出现在了乌克兰能源公司的宣传视频当中。 </p>
+<p>然后2017年的时候，南斯尼佩洛斯的儿子出访了乌克兰，接待方是乌克兰的政府，不是这个公司代表，是乌克兰政府的代表。然后双方是做了商业的协议，双方谈了商业协议，然后佩洛西说什么，南非佩洛西说说儿子去了，跟乌克兰政府谈的不是商业协议，去乌克兰是与乌克兰政府讨论青少年的足球合作计划，但是川普爆料说他们谈的是关于乌克兰能源公司方面的商业协议，到底是就是说川普的爆料是不是真实？ </p>
+<p>还是美国总统的用黑用报假料，用黑材料来黑众议院议长，我们拭目以待，我相信这个总统曝光了，下面总还是要司法部总还是要查查的是吧？就是说如果是假的，最起码也要还给众议院议长一个清白是吧？议长也干是不是？所以我觉得把民主国家这点也不错，对不对？这种政治家如果互相去爆丑闻的话，对于我们老百姓来讲其实是个好事，虽然你看起来可能就是说挺难看的，挺丑闻的，是不是？ </p>
+<p>但是就是说你就会觉得你想众议院议长在中国相当于什么？相当于人大的主席，全国人大主席可能差不多是吧？ </p>
+<p>参议院相当于政协主席对吧？人大委员长人家不到，人人人大委员长，全国人大委员长差不多，等于就是习近平国家主席曝光了全国人民委员长他儿子去其他国家贪污的丑闻，我觉得中国我们什么时候能够就是说第4圈如此的发达，三权分立之后，我们能够就是说人大政协监督，习近平的监督，他们互相监督是吧？我觉得能达到那个情况的话，我觉得我们老百姓的生活会比现在我觉得更舒服一些，也更透明一些，对吧？ </p>
+<p>然后这些当官的这些子弟也不敢这么玩命贪污，是不是？动不动就在海外买几千万的豪宅，以前不都曝光过。周永康的儿子还有反正只要这都是倒了，倒了之后就会曝光出来，他们儿子在海外购买豪宅，薄熙来在什么法国买这豪宅，都曝光出来了，对吧？倒了之后才曝光出来。你像现在众议院议长还没倒了，就被串口曝光出来了，这不挺好，我觉得这是好事，我不知道为什么就很多的5毛特别的反感，就说这样不行，这太丢人了，咱们偷着看我不能呵呵不能曝光出来。 </p>
+<p>不过这个事从我来讲，我比较愿意倾向于先信总统的爆料，为什么？因为你会发现南非佩罗斯基这次谈何总统有点疯狂，我们之前也讲过了，实际上是完全站不住脚的，他现在一不敢往法院送，二不敢往参议院送，在众议院的草草通过的，众议院的草草通过不走法律程序，他说是因为着急，必须要快速弹劾，因为要赶在选举之前，等众议院通过了之后，他又不着急了，是不是？他又不交了。 </p>
+<p>我们就不明白为什么南非佩诺斯一在总统就是说尝试着跟乌克兰合作，一起调达，一起调查拜登吉他拜登的儿子亨利拜登在乌克兰能源的丑闻上如此的就是说疯狂跳脚，就说绝对不许查，不许查乌克兰丑闻，不许查亨利拜登也不许查拜登家族在乌克兰的参与的能源事件的这种背后的引擎，现在我们明白了，原来这事不能查，查的话会查到保罗朱利尔佩洛西，然后他儿子头上来，原来不光是为了弹劾总统，主要还是为了保护自己的儿子，当妈的也是不容易是吧？ </p>
+<p>为了儿子，我觉得怎么说，拜登和南非配套司机的儿子，我觉得都不太着调。一个坑爹一个。坑妈是吧？ </p>
+<p>好吧，我们拭目以待，不过有一点是差不多，美国也这样子，就是说你一定要明白知道吧？亨利拜登差不多相当于国家的副主席对吧？他是副总统当年就唱到差不多相当于王岐山那个位置等于王岐山的儿子，南c佩特c差不多相当于人大委员长的儿子对吧？你要明白就是说刑不上士大夫，就是说即使在一个民主国家，我们经常说民主国家有它好的名，独裁专制国家有它不好的一面，对不对？好的一面最起码的总统会把比如说好像就习近平会把王岐山的儿子和人大委员长儿子丑闻的曝光出来，对不对？ </p>
+<p>但是这点比中国强，中国就明着谈谁也不敢报，对不对？除非它倒了，只要不打就一直捞，美国有多少能曝光出来，但是美国能不能绳之以法，说实话，我也不太看好，因为这种政治之间的博弈，你说最后会不会就是说亨利拜登坐牢了，或者保留或者保罗佩托斯会为此承担什么责任或者坐牢了，我看也够呛，毕竟人家这是真的就是皇亲国戚这事真的太复杂，对不对？这个不是八旗子弟，这都是太子党们。 </p>
+<p>对吧？所以我觉得太子党最后真的能够坐牢的可能性不大，但是被调查一下，然后收敛一下，还是合理的。也就是说我觉得反正民主国家比独裁专制国家好还是好一些，但是你说就是说天堂一点这种贪污腐败都没有，这个也不现实对吧？我经常说的美国也不是天堂，中国也不是地狱，对吧？等于这种丑行在哪都有区别就是说最起码的美国他官员之间的两党之间的互相掐，能把这些丑行都曝光出来。 </p>
+<p>你像这两天选举的话，我们不太知道台湾行政院院长苏贞昌，还有他们党内的大佬，然后苏贞昌家里丢了钱，不报警，丢了没关系。不是我的钱不报警是吧？在高铁上丢了300多万，不报警没关系，小钱是吧？所以就这么个情况对不对？但问题还是这点，就是最起码的我们能知道是吧？ </p>
+<p>他们瘫了，对吧？我们能知道他们丢钱了，你要是中国这事你能知道吗？对不对？你知道不了对不对？当然了你也能知道对不对？你及时的买一个vpn，然后及时订阅死东西，会告诉你这些事好吧？不管怎么着，就这么个情况，我觉得做两还是通过这种事，也是两个政治体制做一个比较，我觉得还是民主的。稍微好一点。 </p>
+<p>昨天我跟我老婆还看了台湾的总统大选的第三场辩论，对吧？反正我也是问你，我说中国那段让你看起来比较体面，他们的争夺什么的都在桌子底下，你看不见。 </p>
+<p>台湾这种就是说斗到桌面上来了很丢人，互相在那儿你指责我贪污，我指责你腐败的对不对？ </p>
+<p>韩国鱼说你这成立特侦组调查你的腐败，然后蔡英文说调查什么，你的老大哥们都在监狱里坐着蹲着，对不对？但是但是最后我觉得你也是认为还是这种就是说能够暴露出来，让老百姓去知道，会比我们那种在桌子下面都玩黑的，好像其实你看起来好像不体面，但是它实际上我觉得还更干净一点，对吧？ </p>
+<p>所以我一向我就这么说，说我们应该就是说争取一个间接民主，让中国就变得比现在更好一点，你说这是天堂，我觉得也不是，但是能够好一点的就人往高处走，水往低处流，是不是？我觉得我这样说还是比较客观，是不是？不偏激是不是？好吧，今天讲到这里好吗？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/27/20191227%E7%AC%AC1172%E6%9C%9F-%E8%A4%9A%E6%97%B6%E5%81%A5%E5%92%8C%E5%AD%99%E5%B0%8F%E8%99%B9%E5%88%B0%E5%BA%95%E5%BE%97%E7%BD%AA%E4%BA%86%E8%B0%81-a8MQ-FLm2-A/" rel="prev" title="20191227第1172期-褚时健和孙小虹到底得罪了谁">
+      <i class="fa fa-chevron-left"></i> 20191227第1172期-褚时健和孙小虹到底得罪了谁
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/27/20191227%E7%AC%AC1174%E6%9C%9F-%E6%88%91%E9%BC%93%E5%8A%B1%E6%8A%95%E7%A5%A8%E8%94%A1%E8%8B%B1%E6%96%87%EF%BC%8C%E6%88%91%E8%80%81%E5%A9%86%E6%94%AF%E6%8C%81%E9%9F%A9%E5%9B%BD%E7%91%9C-5JwsRoC7Y2Q/" rel="next" title="20191227第1174期-我鼓励投票蔡英文，我老婆支持韩国瑜">
+      20191227第1174期-我鼓励投票蔡英文，我老婆支持韩国瑜 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1372</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2019/12/27/20191227%E7%AC%AC1173%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%9B%9D%E5%85%89%E5%8D%97%E5%B8%8C%C2%B7%E4%BD%A9%E6%B4%9B%E8%A5%BF%E7%9A%84%E5%84%BF%E5%AD%90%E4%BF%9D%E7%BD%97%E8%B7%9F%E6%8B%9C%E7%99%BB%E7%9A%84%E5%84%BF%E5%AD%90%E4%B8%80%E6%A0%B7%E5%8F%82%E4%B8%8E%E4%B9%8C%E5%85%8B%E5%85%B0%E8%83%BD%E6%BA%90%E5%85%AC%E5%8F%B8%E4%B8%91%E9%97%BB-qEcds5z5Vwc/";
+    this.page.identifier = "2019/12/27/20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻-qEcds5z5Vwc/";
+    this.page.title = "20191227第1173期-川普曝光南希·佩洛西的儿子保罗跟拜登的儿子一样参与乌克兰能源公司丑闻";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
