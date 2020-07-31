@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的7月30号星期四，杭州市西湖区双浮镇胡埠村垃圾场，他们的在村里建了一个垃圾场，然后把它化学污水排放到河道，然后好像嫁接的时候不知道怎么回事，嫁接错了，嫁接到了的引用水管道了，导致有1600人喝了两个月的化学污水，说下雨天雨水的管道爆破了，然后才发现很多人都出现了拉肚子、过敏、头晕、肠炎等症状。现在当地的村民就不干了，在闹事，然后搞的游行示威，网上有很多视频我就不给大家展示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/07/30/20200730%E7%AC%AC2650%E6%9C%9F-%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E5%8F%8C%E9%93%BA%E9%95%87%E6%B9%96%E5%9F%A0%E6%9D%91%E6%8A%8A%E5%8C%96%E5%AD%A6%E6%B1%A1%E6%B0%B4%E5%AB%81%E6%8E%A5%E5%9C%A8%E9%A5%AE%E7%94%A8%E6%B0%B4%E7%AE%A1%E9%81%93%E4%B8%8A%E4%BA%86-qfQmC6f7m9E/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的7月30号星期四，杭州市西湖区双浮镇胡埠村垃圾场，他们的在村里建了一个垃圾场，然后把它化学污水排放到河道，然后好像嫁接的时候不知道怎么回事，嫁接错了，嫁接到了的引用水管道了，导致有1600人喝了两个月的化学污水，说下雨天雨水的管道爆破了，然后才发现很多人都出现了拉肚子、过敏、头晕、肠炎等症状。现在当地的村民就不干了，在闹事，然后搞的游行示威，网上有很多视频我就不给大家展示">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-30T07:05:00.000Z">
+<meta property="article:modified_time" content="2020-07-31T02:44:13.198Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/07/30/20200730%E7%AC%AC2650%E6%9C%9F-%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E5%8F%8C%E9%93%BA%E9%95%87%E6%B9%96%E5%9F%A0%E6%9D%91%E6%8A%8A%E5%8C%96%E5%AD%A6%E6%B1%A1%E6%B0%B4%E5%AB%81%E6%8E%A5%E5%9C%A8%E9%A5%AE%E7%94%A8%E6%B0%B4%E7%AE%A1%E9%81%93%E4%B8%8A%E4%BA%86-qfQmC6f7m9E/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/07/30/20200730%E7%AC%AC2650%E6%9C%9F-%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E5%8F%8C%E9%93%BA%E9%95%87%E6%B9%96%E5%9F%A0%E6%9D%91%E6%8A%8A%E5%8C%96%E5%AD%A6%E6%B1%A1%E6%B0%B4%E5%AB%81%E6%8E%A5%E5%9C%A8%E9%A5%AE%E7%94%A8%E6%B0%B4%E7%AE%A1%E9%81%93%E4%B8%8A%E4%BA%86-qfQmC6f7m9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-30 16:05:00" itemprop="dateCreated datePublished" datetime="2020-07-30T16:05:00+09:00">2020-07-30</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/07/30/20200730%E7%AC%AC2650%E6%9C%9F-%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E5%8F%8C%E9%93%BA%E9%95%87%E6%B9%96%E5%9F%A0%E6%9D%91%E6%8A%8A%E5%8C%96%E5%AD%A6%E6%B1%A1%E6%B0%B4%E5%AB%81%E6%8E%A5%E5%9C%A8%E9%A5%AE%E7%94%A8%E6%B0%B4%E7%AE%A1%E9%81%93%E4%B8%8A%E4%BA%86-qfQmC6f7m9E/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/07/30/20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了-qfQmC6f7m9E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的7月30号星期四，杭州市西湖区双浮镇胡埠村垃圾场，他们的在村里建了一个垃圾场，然后把它化学污水排放到河道，然后好像嫁接的时候不知道怎么回事，嫁接错了，嫁接到了的引用水管道了，导致有1600人喝了两个月的化学污水，说下雨天雨水的管道爆破了，然后才发现很多人都出现了拉肚子、过敏、头晕、肠炎等症状。现在当地的村民就不干了，在闹事，然后搞的游行示威，网上有很多视频我就不给大家展示了，大家感兴趣就搜这个就行了。 </p>
+<p>你就搜什么杭州市西湖区双浦镇胡埠村，然后空格化学污染，应该以化学污水，然后可以就会出来很多的视频，特警也去了，他们堵贷特警的车前面不让过，然后双方发生了这种争执，这东西怎么说，当然了我们也明白现在你报道了明天肯定说你是造谣生师，网上有视频，他们就是说照到了管子就接错了，但是我相信过两天肯定得把照视频的人就都抓了，说他们的做了虚假视频，以前不有什么家长去查学校食物过期什么的，不也说说都是家长做到家，然后把家长抓了拘留，然后说这就是谣言，不传谣不信谣。 </p>
+<a id="more"></a>
+
+<p>我觉得中国处理这种事情还不都这样吗？ </p>
+<p>过几天把村民们抓了抓，打了打关的关，然后让他们写个什么道歉书，说他们这个不应该造假而诽谤造假，反正这么个情况好吧？最后到底你觉得这是真事还是造假你自己去决定，但是我要说就是说反正中国目前这么搞下去，前两天我看四川的还是两个人走着走着路，好像一个桥突然就塌了，两个人到掉下去了。然后还有一个他们买的房子，然后地弄就裂了，立了之后他们就撕，那么就发现拿那手都能把楼就撕开了。寿司就可以把楼撕开，所以才发现里边水泥弄的就有问题，看了很多的杂质，导致水泥也不牢。 </p>
+<p>然后里边按理说应该是钢筋，然后灌注水泥，结果它里面都是铁丝罐子的水泥的水泥，还是这种就是说劣质的，发现手一撕都从钢丝上把水泥都撕下来，这种化学污水排放到河道，嫁接到的饮用水的管道上，可能我不知道当年可能图纸看错了，按理说应该搁到下水道上对吧？结果他搁到上水饮用水的管道里了。 </p>
+<p>这种事反正你说当然了官方肯定说造谣生事诽谤，但我们觉得在中国出这种事也正常。 </p>
+<p>我觉得就是说对于任何你生活在中国的人来讲，不管你是不是生活在杭州市西湖区，这个地方你生活在任何地方，都有可能出现就突然塌方了，你掉下去了。广州以前地铁站不也就塌了，他那都掉了掉了，掉下去之后他们也不救，迅速的就灌水泥对吧？ </p>
+<p>所以你不知道的你懂吗？不管你开什么车，你懂吧？ </p>
+<p>你可能你便宜的花个有几万块钱，我不知道买一辆最便宜的现在多少什么车，夏利，是不是下线下一还做吗？我们以前可能最便宜就是夏利，你几万块钱买辆夏利，你还是几百万几几百万的买量，比如说我不知道几百万，现在也可能好像上千万劳斯莱斯什么上千万在中国，比如你买了上千万的劳斯莱斯，对吧？不管你是开什么车，你在这马路上都有可能有一天塌方了，你就掉下去了。然后当你在车里等着别人救你的时候，你发现车上面他们在灌水泥，不管你是什么车，不管你是谁，你生活在这个国家，你懂吧？ </p>
+<p>你喝到的水都有可能有污染物，所以你走在马路上任何地方都有可能。前些日子还有一个就是公交车站，也不是有公交车开进来，然后塌了，调进几个人，另外几个人在那站着，想把他们那几个人拉上来，结果第二次坍塌，拉救人那几个人也掉下去了。那就是对吧？所以中国这个事你懂我意思对吧？我看拍电影就是那个谁黄渤拍的电影，他们小孩丢了找找小孩，其中里边有一个不是一个特别有钱，那个人出钱把全国小孩10 10行的这些家长们都组织在一起，一起找孩子，然后他来出钱组织活动，然后对吧？他还是很有钱的，当地对不对？ </p>
+<p>最后小孩还是丢了，对吧？他说从来都住的都是那种高级的小区有保安的，然后出门也不到哪儿，一扭头小孩就没了，对吧？所以中国就是说不管你是有钱没有钱，你是处在社会的什么位置，有一些东西就是说任何人都有可能对吧？塌方的时候你那个地还看一眼上面什么车在塌对不对？这东西都不好说，而且你越是好车，你越可能它对吧？ </p>
+<p>便宜车还轻对不对？你想你要劳斯莱斯的空军，这两吨多，对不对？一般的像夏利有两吨多，夏利一般能有一吨，一下得多多少，我想不起来了。反正就说这意思对不对？ </p>
+<p>你们自己反正去思考，我觉得就是说所有人，除非你就是说我就挣钱，我这移民我就走了，他就是沉船我不管，好不好？坏不坏跟我没关系，对不对？ </p>
+<p>不然的话你只要想要长期的就是说你的子孙后代长期的在这地方去生活的话，我觉得这种事情就是说你都应该去关注一下，因为你不今天是别人喝了，你再看笑话，明天搞不好或者就是你甚至有可能今天其实你就喝了这种污水，只是你还不知道而已，对吧？所以我觉得大家去思考，当然官方肯定又是说这造谣对不对？怎么办？我也没办法，对吧？进行到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/30/20200730%E7%AC%AC2649%E6%9C%9F-%E8%AE%B8%E7%AB%A0%E6%B6%A6%E5%90%A6%E8%AE%A4%E5%AB%96%E5%A8%BC%EF%BC%8C%E8%81%98%E8%AF%B7%E5%BE%8B%E5%B8%88%E5%8F%B8%E6%B3%95%E7%BB%B4%E6%9D%83-z37V9djHu5U/" rel="prev" title="20200730第2649期-许章润否认嫖娼，聘请律师司法维权">
+      <i class="fa fa-chevron-left"></i> 20200730第2649期-许章润否认嫖娼，聘请律师司法维权
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/07/30/20200730%E7%AC%AC2651%E6%9C%9F-%E6%AD%A6%E6%B1%89%E6%9B%9D%E5%85%89%E6%8A%97%E7%96%AB%E9%BB%91%E5%B9%95%E6%8A%A4%E5%A3%AB%E5%9D%A0%E6%A5%BC%E5%8E%BB%E4%B8%96%EF%BC%8C%E5%AD%A9%E5%AD%90%E8%BF%98%E4%B8%8D%E8%B6%B32%E5%B2%81-cqz8zEpC-T0/" rel="next" title="20200730第2651期-武汉曝光抗疫黑幕护士坠楼去世，孩子还不足2岁">
+      20200730第2651期-武汉曝光抗疫黑幕护士坠楼去世，孩子还不足2岁 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1383</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/07/30/20200730%E7%AC%AC2650%E6%9C%9F-%E6%9D%AD%E5%B7%9E%E5%B8%82%E8%A5%BF%E6%B9%96%E5%8C%BA%E5%8F%8C%E9%93%BA%E9%95%87%E6%B9%96%E5%9F%A0%E6%9D%91%E6%8A%8A%E5%8C%96%E5%AD%A6%E6%B1%A1%E6%B0%B4%E5%AB%81%E6%8E%A5%E5%9C%A8%E9%A5%AE%E7%94%A8%E6%B0%B4%E7%AE%A1%E9%81%93%E4%B8%8A%E4%BA%86-qfQmC6f7m9E/";
+    this.page.identifier = "2020/07/30/20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了-qfQmC6f7m9E/";
+    this.page.title = "20200730第2650期-杭州市西湖区双铺镇湖埠村把化学污水嫁接在饮用水管道上了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
