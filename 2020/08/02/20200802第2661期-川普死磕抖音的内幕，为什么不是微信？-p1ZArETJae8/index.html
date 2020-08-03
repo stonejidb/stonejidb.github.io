@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的8月2号星期日前天我们报了一个消息，就是关于抖音海外版，也就是所谓的在美国版，那么在美国运营受到了川普的死磕，有美国媒体报道说就两种可能性，一种川普直接就逼着抖音必须要出售，另外一个就是逼着抖音，就是说干脆别在美国搞了关闭美国业务。  后来到了昨天就有了这个消息，说抖音已经同意出售自己了，然后微软要接手，我们其实得到的消息不是这样，为什么昨天我没有说想等一下准确的消息，我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200802第2661期-川普死磕抖音的内幕，为什么不是微信？">
+<meta property="og:url" content="https://stonejidb.github.io/2020/08/02/20200802%E7%AC%AC2661%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%BB%E7%A3%95%E6%8A%96%E9%9F%B3%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%BE%AE%E4%BF%A1%EF%BC%9F-p1ZArETJae8/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的8月2号星期日前天我们报了一个消息，就是关于抖音海外版，也就是所谓的在美国版，那么在美国运营受到了川普的死磕，有美国媒体报道说就两种可能性，一种川普直接就逼着抖音必须要出售，另外一个就是逼着抖音，就是说干脆别在美国搞了关闭美国业务。  后来到了昨天就有了这个消息，说抖音已经同意出售自己了，然后微软要接手，我们其实得到的消息不是这样，为什么昨天我没有说想等一下准确的消息，我">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-02T07:06:01.000Z">
+<meta property="article:modified_time" content="2020-08-03T14:16:27.703Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/08/02/20200802%E7%AC%AC2661%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%BB%E7%A3%95%E6%8A%96%E9%9F%B3%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%BE%AE%E4%BF%A1%EF%BC%9F-p1ZArETJae8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200802第2661期-川普死磕抖音的内幕，为什么不是微信？ | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/08/02/20200802%E7%AC%AC2661%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%BB%E7%A3%95%E6%8A%96%E9%9F%B3%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%BE%AE%E4%BF%A1%EF%BC%9F-p1ZArETJae8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200802第2661期-川普死磕抖音的内幕，为什么不是微信？
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-02 16:06:01" itemprop="dateCreated datePublished" datetime="2020-08-02T16:06:01+09:00">2020-08-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/02/20200802%E7%AC%AC2661%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%BB%E7%A3%95%E6%8A%96%E9%9F%B3%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%BE%AE%E4%BF%A1%EF%BC%9F-p1ZArETJae8/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/02/20200802第2661期-川普死磕抖音的内幕，为什么不是微信？-p1ZArETJae8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的8月2号星期日前天我们报了一个消息，就是关于抖音海外版，也就是所谓的在美国版，那么在美国运营受到了川普的死磕，有美国媒体报道说就两种可能性，一种川普直接就逼着抖音必须要出售，另外一个就是逼着抖音，就是说干脆别在美国搞了关闭美国业务。 </p>
+<p>后来到了昨天就有了这个消息，说抖音已经同意出售自己了，然后微软要接手，我们其实得到的消息不是这样，为什么昨天我没有说想等一下准确的消息，我们得到的消息抖音的张一鸣还在这个是死的抵抗，他不希望把斗因卖给微软，而且微软开的价格也不令人满意。那么张一鸣他们这边认为斗音的估值应该在1000亿美元左右，微软这边开发的价格是500亿那么便宜的一半，那么觉得这不胡说八道，你不抢劫吗？那么以此就引出来了很多的问题，说有很多的内幕，川普为什么死磕抖音？ </p>
+<a id="more"></a>
+
+<p>无非有这么两种，一种就认为说抖音伤害了川普，因为之前我们报道过在川普就是说疫情结束之后的第一次的选举的造势大会上，抖音上有一帮人说开始说说我们这样我们都去认领了川普的股票，不是川普的门票，我们认领了门票之后，它门票是免费的，你来参加这招生活动的话，但是门票是有限的，知道吗？那么所以你们在网上去认领，那么先来先得认领了之后，那么你到时候拿着门票就可以去做了，门票就是发给你的。 </p>
+<p>但是大家都知道了门票到有多少了，后面没有了他就不再发了，因为怕来的人太多就装不下，然后外面都是人的话，会引发一些安全的隐患。那么在抖音上就有一些人就是说民主党那些人就开始使坏，就说我们一块他的门票认领完之后，我们不去给老头亮，当我们把全场的门票都认领了之后，那些知识串口人就没有门票了，你进不去对不对？你进不去的话我们再不去差不多成光杆了就这么做，最后导致这个事实就是体育场最后就已经做了一半，现在一半差不多没有，就没有人都是民主党的人认领的，这种行为实际上本身是可耻的，然后民主党拿去嘲笑川普，这个东西就好像比如说你们家特别有钱对不对？ </p>
+<p>然后我知道你把钱藏哪了，然后我去了我把钱偷了之后，我说你看你在穷逼，你说你自己有钱，这种行为就是说你自己首先不应该去做这种事情对不对？然后你自己就是说你把别人害了，或者你把把别人家比如说别人家开着车法拉利你觉得特别好，你去了你拿个针上邦邦邦给那几个轮胎都扎了，扎完之后在笑，你看你的法拉利开着开不了轮胎都爆了，这种东西我觉得我不知道民主党是怎么想的，然后民主党媒体大肆的宣传觉得串服他傻逼了，然后办个屋头都坐不满，我就觉得是小孩子吗？ </p>
+<p>多大了小小小学生吗？做这种事情愚蠢不愚蠢，然后自己还在那笑话，我不知道是在笑我川普还是需要我自己，但是无所谓了，反正我怎么着这个事情是在抖音上的发展起来的，那么说伤害了穿薄，所以窗户现在要跟斗音去死磕，我要说一句什么，就是说还有说胡锡进今天又开始得把胡伟俊说，川普现在害怕痘印说如果不搞斗印的话，在这次选举之权斗一又会有人说我们不川普呼吁大家去选拜登，我就在想一件事，这推特上没有人呼吁吗？推特都是支持川普的，Facebook都是支持川普的，莫斯阿普都是支持川普的，只有抖音不支持川普，这不怕放屁吗？ </p>
+<p>推特现在已经一边倒支持民主党了，川普是在推特上说过什么，他们都说假消息都给屏蔽了，你都得点它能进去看，对不对？Facebook也是一屁股站在民主党那边，对不对？美国这些大的这些就是说提供这种社交平台的全部都是支持领导的，为什么之前我们讲过这个新闻，不知道大家还有没有印象，因为川普认为你们作为这些大的Facebook也好，抖音也好，推特也好，你们不能够既有权利又不承担义务，就是说你要么你就没有权利，你没有权利的去审核，就别人发什么，你就得让他发什么，比如说我这贴了一个板，对不对？ </p>
+<p>我有一个公告栏，那么你贴什么？我也没办法，你就自己贴了对不对？跟我那没责任，我就不承担这个责任，但是我也不能管，对不对？但是如果我能管的话，比如说这个板我贴了一块玻璃，外面你贴不了，你只能往里边你就得跟我申请，或者你交个一块钱两块钱我给你贴，对不对？如果是这样子，那么你就相当于一个出版商了，如果你是出版商的话，你就得承担责任，那么出版的东西如果不符合法律要求，你连带要承担责任，就是说但是现在Facebook也好，推特也好，他们这些大的平台也好，都有一个什么？ </p>
+<p>有什么权利，就是说你提的东西我不满意，我就可以给你删除，我认为不符合公众利益，我认为它不是真实的，我就可以给你删除，但是如果你贴了这个东西之后，证明比如说我现在认为你串口说了，都是瞎话，我不让你穿我说话，然后我让民主党说什么都行，你就纽约时报也是吗？就是纽约时报编辑不也说吗？现在只要骂川普说什么都行，怎么下3万都可以，你去把人家的法大利兰博基尼的车胎给人扎了，然后你去笑我觉得都可以的，你就可以这么做对不对？但是如果是倒过来，如果是共和党把民主党的撤台沙的还在那笑，他们找你，小偷盗贼你马上就指责了，对不对？ </p>
+<p>那么在这种情况之下，你就完完全全你可以支持这边，而不受到任何惩罚，对吧？那么川普和共和党就认为你不能这么搞，你这么搞你的权力太大了，你成了一个旁你成了一个怪物了，等于你完完全全你在控制舆论导向，还不承担任何责任，对不对？你可以完完全全支持一方，不支持另外一方，对不对？然后如果你支持那方最后有过激的行为了，你不承担任何责任，你说这跟我没关系，他们这是一个公共平台，不是公共平台，你可以控制，对不对？当然在这种情况之下， Facebook推特就觉得坏了，如果川普在当中如果改革的话，我们的权利减少了，我们的义务反而增加了，对不对？对我们的股票对我们的这种运营都会受到影响，所以他们转而支持完全这是民主党的是正常的，因为民主党那边还是我觉得就是说现在来讲跟这些权贵跟华尔街的这些金融大鳄们的交织的比较深，我们得承认串普上来川普的这种执政方式对我们这些老百姓这些草根好处更大。 </p>
+<p>很多的跨国公司最后不得不回到美国之后，他们的利润就是减少了，但是老百姓能得到一些利益。我们以前在上学周上周上学的地方就是以前什么好多，我不说公司名称，公司大家都知道是哪儿了，就好几个美国公司，最后要么就是说把这个部门砍掉了，要么就搬到中国去了，要么就最后破产了，为什么都是被中国公司挤了的，对不对？ </p>
+<p>那么这些公司最后走了，比如说搬到中国去了，他住那边零下劳动力还卖多少钱，它的利润是增加了，我不是说全球化不好，全球化给很多大的富豪能够有本事把工厂开到中国去的人，的确确是提供了好处，这是事实，但是对我们这些人有好处吗？你对中产阶级有好处吗？烫整个变成一个死烫了，对不对？ </p>
+<p>老中产阶级都没有了，都变成穷人了，这对美国是好事，美国多少的企业都搬到中国去了，对那些大企业主大企业家们，市政的盆满钵满的，对老百姓的中产阶级受到了伤害，所以串口现在在支持的是中产阶级，是普通的老百姓，是真正拿的薪水去去工作的人，你懂吗？ </p>
+<p>对于他们来讲我要有一份工作，我要有收入，我管你你企业看到中国去，你看到越南看到吗？ </p>
+<p>菲律宾你看到哪跟我有什么关系我也去不了，对不对？你中产阶级能够跟着走吗？他把工厂开中国去你就跟着去，他带不走那么多人带走都是中层的以上的干部，对不对？你的那些真正的劳苦大众是根本跟不过去的，对吧？所以在这种情况之下，这些大的企业家知识传播我们也是可以理解的，对不对？这涉及到他们自己的个人利益，Facebook Twitter也好，那些大企业家，但是老百姓支持谁？自己心里没有点逼数吗？你有多少钱？ </p>
+<p>你资产只要不过1000万美元，不要跟我扯什么支持你支持谁。算了接着说导音咱有点跑题。 </p>
+<p>回来接着说这个，所以我的意思就是说根本不存在，就因为抖音伤害到川普，因为Facebook推特都在上海，对不对？都有知识串口的，当然推特上也有很多知识串口，我们也承认美国还是还有6000多万选串口的，对不对？但是我的意思就是说不是说把斗一弄死了，然后大选川普就赢定了，这种说法就是说胡锡进之流编出来的就忽悠你的，你懂不懂？就是说香港只要要普选，要坚持基本法，要自己来选香港特首，他就跟你说香港这帮人是是港独，他们要求独立，当年你基本法你答应的，你懂我意思吗？就是说你只要干点什么，他都能给你安一个罪名，然后有一帮人就真心你懂吗？ </p>
+<p>就现在串普弄推动弄这个抖音，大家就觉得是因为伤害了窗口，影响到上身去的，不是那个字，知道吗？ </p>
+<p>除了抖音之外影响创作宣传的东西多了，美国撤销平台多了，伊斯科尔姆、Facebook推特沃萨尔那么多了，那么光一个抖音是吗？那不是那么所以这个完完全全是不存在的好不好？ </p>
+<p>另外一个就是说中国公司，然后微软想要说这是中国公司，微软想要，然后抖音伤害到了Facebook，所以Facebook想弄死它，然后微软想买，川普就出来给他帮忙，前面刚说了微软的Facebook什么比尔盖茨这都是反川普的，然后现在他又变成川普的好兄弟了，这都不挨着你知道吗？这就互相矛盾，他根本跟他们关系也就那么回事，知道吗？对于Facebook来讲，抖音是不是对Facebook有伤害，的确它是一个竞争关系。 </p>
+<p>即使但是真的就是说让微软把抖音买了之后，Facebook就可以终于把它卖给微软，不是的。没有关系的卖给微软之后不不见得是坏事。有了微软大金主在背后做支撑的话，抖音在美国的发展可能更上一个台阶，可能会发展得更好，可能对Facebook伤害更大，所以不存在就是说非得不可想，想要借机弄死他，他也弄不死。好吧，然后他也不是一家中国公司，他是中国主要现在控制，但是他现在其实股份超过差不多超过50% 70%左右，实际上都是美国投资者的钱。 </p>
+<p>抖音从一上来到美国发展就完全它要美国就要T Top，他就不叫抖音，它跟中国的业务完全是波离开的，中国的抖音用户是上不了美国的提克套卡的，他不挨着，你懂吧？她一上来的时候他就知道自己如果这么搞的话，可能会受到美国政府的制裁，他的文全是玻璃开的，他可以说实际上是一家美国公司，但是当然主要由中国方面就是说字节跳动在控制，现在川普认为就是说你就不要控制了，让它彻底的独立出来。就是说你现在70%好像我知道现在最多的控股应该叫美国有叫老虎基金，然后还有日本的软银控股，这算是比较高比较多的蒜里边大股东，那么也就是说如果出售的话，伤害的并不完全是中国的利益，如果低价出售的话，对于美国的基金公司对于日本的也都有影响。 </p>
+<p>投资者多了，这算是一家国际公司对吧？所以我觉得是这样子，这不存在说好像就是说，因为你等于你是逼着美国的一家的什么老虎基金卖给了微软，就好像微软占便宜了，就好像他原先认为什么股票都在中国人手里掌握着，所以逼着中国人低价卖给微软，让中国人吃亏，美国人占便宜，现在他实际上不是这样子的。因为它里边的控股美国人日本人也很多，所以如果这么做了之后，美国人也受到伤害，肉烂烂在锅里，并不是说美国人得了什么便宜，所以我认为也是不存在的。 </p>
+<p>好吧，而且对于抖音来讲，真的如果完完全全卖给一家美国公司，卖给像微软或者是什么这个公司之后，对于抖音的发展我觉得更上一个台阶。就像以前爱马仕，我记得那时候迪奥他们那控股叫什么来着？ </p>
+<p>我想不起来，他们当时就想收购爱马仕，反过来收购爱马仕，胜在马市的时候，在这个倒逼的过程之后，实际上B逼着爱马仕进行了内部的改革，整个的品牌反而得到了提升。 </p>
+<p>这一次也是我认为抖音也是抖音如果卖到微软之后，我觉得抖音在美国的业务它的发展会得到巨大的提升。 </p>
+<p>微软不会几百个亿把它买进来之后就放不管了，微软肯定会投更多的钱，更多的东西他要去跟 Facebook去竞争，所以对于董莹来讲真的卖给微软，我觉得其实不是一件坏事，那么真实的原因是什么？就是说提到了为什么他不对微信下手，有的人认为好像微信影响力更大，它的伤害更多，受到的监控也更多，对不对？而且微信是完完全全由中国这方面掌握的，他跟斗音还不一样，抖音还有很多的美国的投资者在里边对吧？那么真实原因是因为抖音在美国的用户比微信要多，而且比例就是说美国用户的比例也更高。 </p>
+<p>抖音现在在美国据说有1亿的用户，那么微信在美国有多少我不知道，但是绝对没有抖音多，为什么？因为偶因在美国主要是美国人在用，而微信在美国主要是以中国人为核心的这么一个团体在用，有一些美国人用或者有一些什么abc亚太用的，完全都是因为跟中国人有中国朋友，所以我们专门装wechat，而美国人里边他没有达到规模，所以美国里边用微信的比重抖音的要少很多，而且这个比例也不一样，就是说抖音里面主要是美国用户占的比例比较高，而微信的里边就是说还是中国用户占的比例比较高，所以就是说它对于美国来讲，切实的是抖音对美国的伤害大，到底伤害是什么？是这样。 </p>
+<p>比如说抖音里边就是说他发明短视频，那么就说了，比如说有一个人发了一个比如说美国一个军事基地在那照了一张照片，他说更好，你到那去，他们就往那照，这些东西多多少少给美国人带来了一些伤害。 </p>
+<p>他里边发各种小小视频，然后对于中国就是说去了解美国的一些军事基地自然环境，首先是就是说它会引起一些一些问题，其次还有一点就是说因为他掌握了大量的美国用户的个人信息，而这个会造成伤害。因为太多了。你懂我意思吧？所以他现在要把它就是说卖给一家美国公司，然后把服务器把什么的完完全全都用到美国化，然后受美国公司受美国的监管，实际上主要是这么个问题，其实我觉得跟影响创业不像超过关系不大，主要还是大家，因为我们中国人的思维方式觉得微信比抖音的影响大，但是在美国不是水土不服，斗音在美国比微信的影响力要大在美国人的圈里边，所以我觉得这才是真实的一个原因。 </p>
+<p>然后接下来说到抖音最后的结局是什么？这两天呢消息特别多，我觉得不准确，我再说一下张一鸣现在还在抵抗，张一鸣的想法就是说让抖音独立，他不愿意卖给微软，首先价格也不合适，其次他觉得就完卖了之后好像自己孩子卖了彻底没有了，所以他就是说认为干脆我们让抖抖音独立出来，完完全全的从中国的字节跳动母公司独立出来成为一个由美国投资者控股比较多的这么一个独立的公司，完完全全的受到美国的监管，我甚至可以把这个公司完完全全切割给美国，就成为在美国上市的美国的独资的，这就是不是独资算是独立的一家公司，跟中国的母公司完全没关系了，我把它弄出来，而且他认为斗因在美国将来的发展前景更加的客观，因为现在刚刚也就是说差不多1亿左右，他认为以后还能够更多，而且甚至有可能他认为能够就弄死了，Facebook取代Facebook，所以他是非常有野心的。 </p>
+<p>关于微软微软之前是想买的，但是昨天川普跟记者说，他说他不赞同由一家美国公司完全收购了替克套的抖音在美国业务的这种交易，川普也认为这样的也不妥，不是医院的好事情，实际上它不利于自由市场的这种自由竞争。所以华尔街日报今天也在报道说，在川普总统做出上述表示之后，微软已经停止了有关的收购的讨论，但是这个准确不准确我们不知道，但是创普现在不是很支持，但是微软想买是肯定的，对不对？这个替他找张一鸣那边不想到这么卖，这个也是肯定的，反正双方还在谈判，还在斗争，那么最后微软能不能得偿所愿，其实我们不知道这是一到现在这个阶段就变成一场资本的博弈，当然了也有很多政府的人员的介入进来，我相信这个听到他们因为他们在美国这边有很多什么老虎基金，老虎基金以前投资过很多它是非常有名的一家基金公司，它在美国也有它的这种社会资源，它可能会调动它的国会的力量，让微软会调动自己在国会的力量，这种政治的角力在里边，然后资本的博弈最后的结果是什么？ </p>
+<p>现在我不知道，但是现在我们得到的消息还没有，不是现在像有一些媒体说的，就是微软肯定要收购抖音还不确定，但是也不是说它就一定收购不了，现在也不知道大家还在博弈，最后的博弈结果是什么，说句实在就跟打仗一样对吧？100我这边100个人大家势均力敌在这搏杀，最后打完了之后，最后到底哪边胜了哪边，最后可能就剩那么四五个人还活着，对不对？ </p>
+<p>到底这四五个是这边的还是那边的？我们也不知道咱们最后看，反正我认为就是说所谓死蝌蚪音的内幕有很多，我认为是不准确的。我认为有像胡金这些中国人的一些揣测，阴谋论在里边，我觉得更多的我觉得比较接近于我现在说的这种说法。好吧，你是有什么想想说的，没有什么想说的，好，继续讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/01/20200801%E7%AC%AC2658%E6%9C%9F-%E4%BD%B3%E8%83%BD%20EOS%20R5%20%E5%92%8C%20%E7%B4%A2%E5%B0%BC%20a7s3%20%E6%88%91%E4%BC%9A%E4%B9%B0%E5%93%AA%E4%B8%80%E4%B8%AA%EF%BC%9F-rc_K4PUVNvM/" rel="prev" title="20200801第2658期-佳能 EOS R5 和 索尼 a7s3 我会买哪一个？">
+      <i class="fa fa-chevron-left"></i> 20200801第2658期-佳能 EOS R5 和 索尼 a7s3 我会买哪一个？
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/02/20200802%E7%AC%AC2662%E6%9C%9F-%E5%88%98%E9%B9%A4%E7%BE%9E%E8%BE%B1%E6%9D%8E%E5%85%8B%E5%BC%BA%E8%BF%98%E6%98%AF%E6%9D%8E%E5%85%8B%E5%BC%BA%E8%87%AA%E5%B7%B1%E5%A4%84%E7%90%86%E4%B8%8D%E5%A5%BD-KKPvTFYraWs/" rel="next" title="20200802第2662期-刘鹤羞辱李克强还是李克强自己处理不好">
+      20200802第2662期-刘鹤羞辱李克强还是李克强自己处理不好 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1413</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/08/02/20200802%E7%AC%AC2661%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%AD%BB%E7%A3%95%E6%8A%96%E9%9F%B3%E7%9A%84%E5%86%85%E5%B9%95%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E6%98%AF%E5%BE%AE%E4%BF%A1%EF%BC%9F-p1ZArETJae8/";
+    this.page.identifier = "2020/08/02/20200802第2661期-川普死磕抖音的内幕，为什么不是微信？-p1ZArETJae8/";
+    this.page.title = "20200802第2661期-川普死磕抖音的内幕，为什么不是微信？";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
