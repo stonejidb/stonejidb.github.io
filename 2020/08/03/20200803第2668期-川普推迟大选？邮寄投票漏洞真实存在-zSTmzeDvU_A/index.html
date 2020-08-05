@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的8月3号星期，一小伙伴来问我说怎么就不说川普要推迟大选的事儿，其实没有什么好说的，他不可能推迟大选，大家都知道川普也知道川普的目的，他就不是说要推迟大选，他的目的就为了让你重视邮寄选票，这个事不当然了，我知道。为什么我不愿意说这事在这了？  如果我跟你说川普很聪明，比如说怎么说他是一个商人，他讨价讨价还价，比如说他想把这iPad卖给你对不对？他想卖给你1000块钱，你问他">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在">
+<meta property="og:url" content="https://stonejidb.github.io/2020/08/03/20200803%E7%AC%AC2668%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%8E%A8%E8%BF%9F%E5%A4%A7%E9%80%89%EF%BC%9F%E9%82%AE%E5%AF%84%E6%8A%95%E7%A5%A8%E6%BC%8F%E6%B4%9E%E7%9C%9F%E5%AE%9E%E5%AD%98%E5%9C%A8-zSTmzeDvU_A/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的8月3号星期，一小伙伴来问我说怎么就不说川普要推迟大选的事儿，其实没有什么好说的，他不可能推迟大选，大家都知道川普也知道川普的目的，他就不是说要推迟大选，他的目的就为了让你重视邮寄选票，这个事不当然了，我知道。为什么我不愿意说这事在这了？  如果我跟你说川普很聪明，比如说怎么说他是一个商人，他讨价讨价还价，比如说他想把这iPad卖给你对不对？他想卖给你1000块钱，你问他">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-03T07:06:08.000Z">
+<meta property="article:modified_time" content="2020-08-05T14:06:12.748Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/08/03/20200803%E7%AC%AC2668%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%8E%A8%E8%BF%9F%E5%A4%A7%E9%80%89%EF%BC%9F%E9%82%AE%E5%AF%84%E6%8A%95%E7%A5%A8%E6%BC%8F%E6%B4%9E%E7%9C%9F%E5%AE%9E%E5%AD%98%E5%9C%A8-zSTmzeDvU_A/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/08/03/20200803%E7%AC%AC2668%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%8E%A8%E8%BF%9F%E5%A4%A7%E9%80%89%EF%BC%9F%E9%82%AE%E5%AF%84%E6%8A%95%E7%A5%A8%E6%BC%8F%E6%B4%9E%E7%9C%9F%E5%AE%9E%E5%AD%98%E5%9C%A8-zSTmzeDvU_A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-03 16:06:08" itemprop="dateCreated datePublished" datetime="2020-08-03T16:06:08+09:00">2020-08-03</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/03/20200803%E7%AC%AC2668%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%8E%A8%E8%BF%9F%E5%A4%A7%E9%80%89%EF%BC%9F%E9%82%AE%E5%AF%84%E6%8A%95%E7%A5%A8%E6%BC%8F%E6%B4%9E%E7%9C%9F%E5%AE%9E%E5%AD%98%E5%9C%A8-zSTmzeDvU_A/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/03/20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在-zSTmzeDvU_A/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的8月3号星期，一小伙伴来问我说怎么就不说川普要推迟大选的事儿，其实没有什么好说的，他不可能推迟大选，大家都知道川普也知道川普的目的，他就不是说要推迟大选，他的目的就为了让你重视邮寄选票，这个事不当然了，我知道。为什么我不愿意说这事在这了？ </p>
+<p>如果我跟你说川普很聪明，比如说怎么说他是一个商人，他讨价讨价还价，比如说他想把这iPad卖给你对不对？他想卖给你1000块钱，你问他有多少钱，他跟你说1200，知道吗？他重新留给你一块余地知道吗？让你去划价，知道吧？比如说他说太阳卖1000，你说1200，你说那1100你说再多给点，反正就甭管怎么着，反正最后只要1000万多他就合适对吧？所以川普他现在认为邮寄选邮寄选票有问题，这不有错楼，而且对他不利。 </p>
+<a id="more"></a>
+
+<p>那么川普就是说他它如果直接跟你说邮寄选票有问题，你也不关注它对不对？所以川普直接喊我们有几个问题，我们干脆有大选延迟了，然后媒体呜就上来，他也明白对不对？媒体都得围着他开始说，实际上他也没有说要推迟，他就说我们就应该这么做，对不对？其实这种反正但是媒体我就帮他宣传媒体，我觉得是这样子，这些媒体其实是有一定问题的，在2016年就是说串口很知道怎么去操纵媒体，然后这些媒体也是，反正媒体也是就是说诚心的要砸他，要咬他要逗他，但是就是说互相斗龙互相背利用，我觉得基本上是这么一个情况。所以当然了，如果你觉得川普就是个笨蛋，他是真的想推迟大选，他不知道大选推迟不了，你如果这么认为，你到这你也就别看了，因为咱们你要是对吧？ </p>
+<p>所以因为我不知道为什么总有一帮人就认为川普就是个傻逼，知道吗？他的智力水平还不如一个小小小学五年级的学生了，如果你这么思考问题能让你开心的话，我恭喜你，好，你胜利了好不好？ </p>
+<p>但是就是说你纵观川普这一生，在商场可以说叱咤风云，他父亲的公司其实曾经申请过破产，他自己在接过来，然后他的公司也申请过破产，他在这里边就是说辗转腾挪，你包括他做的这些脱口秀的节目，他的这种反应，他在脱口秀上的他的表现，他的口才，他的反应，如果你一定觉得他是一个傻逼的话，我说什么对不对？你一定觉得他就不是一个商人，他就是的，他想说一就说一，他肯定不是为了绕你，对吧？反正你能够愉快就好，行不行？只要你能把自己哄开心了就行，对不对？ </p>
+<p>我就不说别的了好吧？ </p>
+<p>如果你能够意识到川普他是一个很聪明的商人，你知道吗？他非常狡诈，他通过这个他在搞事情的话，我们看看邮寄选票，关于游戏选票其实就是这样子，邮寄选票不光是对川普不利，不光是对共和党不利，实际上他对民主党也不立，而且还有一点邮寄形象有一点很什么就是说有很多年轻人不太愿意去投票站，我这一站站几个小时去投票，而且还有一点是什么？ </p>
+<p>今年投票很明显一点，投票的两个大阵营之前我都说过，一个就是支持川普的阵营，一个是反对川普的人员，就讨厌川普的阵营，知道吗？这是两大阵营，剩下非常小的一个小阵营，支持拜登的阵营，这什么非常小，几乎可以忽略不计了，你知道吗？所以今年选举就是说说外交能不能让那些讨厌创作者的来给他投票，但是讨厌川普的人在讨厌川普的时候他有热情，但是真的外甥投票的时候他没有热情。 </p>
+<p>还有一点民主党的现在的造势，他偏要造成一个什么事就是说串口死定了，你们都不用投票抄谱就完了，大事一边倒，知道吧？他必须他偏要做出这么一一种假象来，那么这就导致了投票率可能会比较低，但是不做这个假象，如果让你看出来创股现在已经定了真的真实的情况出来的话，你也不想投票了对不对？所以民主党在夹带着这些支持左派的这些媒体就偏要做出这么一种的虚假的这么一个形象出来，但是他又就怕又怕了年轻人不去投票，而且还担心讨厌川普的人在投拜登的时候不积极不热情，所以如果是邮寄投票的话，可能投票率比较高，投票率高了，拜登还有点可能性，对吧？ </p>
+<p>拜登最后也就剩这点可能性了，所以这也就是说为什么他们在邮寄投票上有争执，就川普为什么讨厌？因为串普这边热情之高，那就没无法想象对吧？你能看得出来对不对？支持。其实你真的在美国生活，你会发现举着串土的旗子，你就让他我们在拉斯维加，我们就看那哥们光着膀子举着川普的旗子游街，对不对？你看有哥们光着膀子举着拜登旗子出来游街，这非常的少对吧？所以你就能明白这种热情度是不一样的。 </p>
+<p>好吧，我经常说就是说支持川普的这些人平常可能不说话，到了投票那一天外面下刀子顶着锅盖也要出去投票的，支持拜登的，就那么点没有多少人他也没有热情，然后当时他怕万一不去投票，怎么办？ </p>
+<p>对于邮寄投票是有问题的，其实川普发现了很多美国存在的问题，美墨边境是有问题，应该怎么解决，剑桥能不能解决，当然这个有待去探讨，但是非法移民肯定是有问题，这个是要解决的。美国的基础建设，美国的很多的机场，高速公路、高铁严重落后，这些都应该要搞基建，这也是传播发现的问题，创造发现这问题没有错，问题都是对的，都应该先解决它。 </p>
+<p>大选有问题，移民有问题，美国目前的移民法已经严重的跟不上时代了，里边有很多的问题，应该彻彻底底地进行一次的移民改革。基础建设应该整个要重搞美国的基础建设，不要说跟中国比，跟很多就是说中国的还是跟中国比，想不出别人来，想还是跟中国就不要跟北上广相比，对不对？跟中国很多二线和三线城市都已经比不了了，所以这些东西都含蓄改革。 </p>
+<p>美国的投票也是美国投票说实话防君子不防小人，这种的话事实上里边有很多的漏洞。16年选举的时候，我就听说过在纽约就有那种绿卡都登记的去选举，去投票，按理说绿卡是不应该去投票的，但是他也就登记这么干。你看看我们看现在半数的美国的州允许邮寄投票，这有一套怎么着？就是把选票寄到你家里来，你那填好了之后封好了之后，寄回又在选，选要在选举日前或寄回，或者在选举日那天你把他送到投票站，搜索投标站的话你就不用排队进去了，你就往里面一投，就跟着信箱这一投你可以走了知道吗？但这里面有很多问题，有谁要说像什么选民签字难以辨认，邮寄时间过晚或者物流延迟表格填写不规范的，都会使你选票干脆就作废了。 </p>
+<p>那么举个例子，今年3月佛罗里达初选有18,500张邮寄的选票作废，6月份的内华达州初选有6700张选票作废，肯塔基州有6645张邮寄的投票也作废了。而且邮局投票还有很多问题，他可以让一些在不同的选区有住址的人可以多次在多地进行投票。而且司法部长巴尔也说说邮寄的投票有很多的问题，他说除了打开信封的人，没有知人知道选民的是如何投票的，伪造选票也难以辨别，其实我说美国邮寄投票就这样，如果你要实在不行，你干脆就跟以前那种咱们考试拿铅笔拿二笔铅笔画那样，就弄完之后搁进去都把这些选票全部用到机器，让机器去读不就完了，你可以反正我就出这个建议你知道吗？ </p>
+<p>反正现在这样就是说实际上打开信封让那些人去去记录，这里边就存在很多问题，这里面他也会有倾向性。但是当然了咱也不能说说都是倾向于民主党的，那么这里面也有倾向于共和党的，所以这是对双方都不利，而且最关键的不是说对谁有利，对谁没利，而是说他不公平。所以现在选举的，我觉得美国的选举的这些体系都要重新进行改革，当然川普现在想改革，但没法改革，因为川普现在还没选对不对？如果川普现在进行改革，他们肯定说你改革就为了让你连任的，为了你的选举有利，对不对？ </p>
+<p>所以只能等到第二个任期，看看串口的能不能痛下决心对美国的选举的这些规则进行了改革，而且在今年5月12号，新泽西州的叫帕特森，他们在地区举行地区选举的时候，那么全部采用了邮寄投票的模式，因为今年有疫情，5月份的时候结果就出现了选举舞弊，导致了2%的选票都被标记为欺诈选票，现在就这4个人提起诉讼，所以邮寄选票的的确确是有问题，咱们就是说抛开哪个政党不说，那么这一次来讲，由于拜登和川普的特殊情况，所以拜拜登他现在支持邮寄选票，但是实际上等到这一次过去了之后，咱们不把这一次就是船舶和拜登的选举作为一个长期来看，咱们就哪怕这次过去了，我为什么不想说？ </p>
+<p>我想这个事我本来想放到了就是说选举之后我们再说，但是因为我现在说因为我是支持川普的，大家会觉得你做出这只船主，我说其实这个里边就是说它是不公平的，对谁都有问题，对吧？因为你打开你选票，这个人也许搞不好，打开你选票，这个人是个川普的一个狂热支持者，对吧？他也会发生问题，所以这个里面我认为最好就是公平。选举只要是公平，那么愿赌服输，哪怕外甥赢了我没有认了，我经常我都这么说对吧？ </p>
+<p>所以我觉得整个的选举体制需要改革，那么也感谢川普，由于川普他川普现在影响力大，川普放个屁，媒体开始就拿着放大镜显微镜就去了，我就说2016年选举的时候，不我有个漫画，就是说后面有一座山，山上写着是希拉里的丑闻，然后在地上有个小土包，然后看着什么就是说一堆人，然后都是什么CNN纽约时报都去了，趴在地上，你知道吗？趴在地上拿着那放大镜，看着川普的小小土包，后面一座山看不见你知道吗？就没没有办法，现在的媒体整个要不串口说他们是非肯定死的，就在这了，就真的已经没有道理可讲了。 </p>
+<p>整个美国的这些媒体也需要改革了，真的纽约时报已经到了丧心病狂的地步了，我们之前播了一个就是说纽约时报他们一个专栏的编辑，他是专栏的作者，也是同样的也是一个编辑高级撰稿人，那么他在纽约时报辞职是他写的那封公开信，你们可以去看一看，你就能意识到现在整个包括纽约时报、华盛顿邮报、 CNN这些真的已经到了一个歇斯底里病态的一个地步了。在这种情况之下，我觉得如果再不改革的话，对于他们自己本身也有伤害。 </p>
+<p>好吧，所以这就是我对川普所谓的要推迟大选的，我的看法就是说也感谢川普，也感谢了这些媒体的炒作，让我们开始意识到了邮寄投票的危害，和他这里边存在着的各种可以去就是说胡搞可以去操作的，这些东西要意识到这一点，我觉得对于大众来讲是有好处的一件事情。好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/03/20200803%E7%AC%AC2667%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%82%A3%E4%B8%AA%E5%9F%8E%E5%B8%82%E9%80%82%E5%90%88%E5%8D%8E%E4%BA%BA%E5%B1%85%E4%BD%8F%EF%BC%8C%E6%88%91%E7%9A%84%E9%80%89%E6%8B%A9%E6%98%AF%EF%BC%9F-B7pCmCxsK08/" rel="prev" title="20200803第2667期-美国那个城市适合华人居住，我的选择是？">
+      <i class="fa fa-chevron-left"></i> 20200803第2667期-美国那个城市适合华人居住，我的选择是？
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/03/20200803%E7%AC%AC2669%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A9%BB%E5%8C%97%E4%BA%AC%E5%A4%A7%E4%BD%BF%E9%A6%86%E6%B8%85%E7%90%86%E6%8B%8D%E5%8D%96%E8%B4%A2%E7%89%A9%EF%BC%8C%E5%87%86%E5%A4%87%E6%92%A4%E7%A6%BB%EF%BC%9F-7_prPnQZwnY/" rel="next" title="20200803第2669期-美国驻北京大使馆清理拍卖财物，准备撤离？">
+      20200803第2669期-美国驻北京大使馆清理拍卖财物，准备撤离？ <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1433</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/08/03/20200803%E7%AC%AC2668%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%8E%A8%E8%BF%9F%E5%A4%A7%E9%80%89%EF%BC%9F%E9%82%AE%E5%AF%84%E6%8A%95%E7%A5%A8%E6%BC%8F%E6%B4%9E%E7%9C%9F%E5%AE%9E%E5%AD%98%E5%9C%A8-zSTmzeDvU_A/";
+    this.page.identifier = "2020/08/03/20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在-zSTmzeDvU_A/";
+    this.page.title = "20200803第2668期-川普推迟大选？邮寄投票漏洞真实存在";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
