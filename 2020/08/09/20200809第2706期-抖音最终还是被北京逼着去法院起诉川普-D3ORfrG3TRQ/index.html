@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的8月9号星期日，抖音没有想到最终被北京逼着还是要去法院去起诉川普。我个人我认为张一鸣跟我的想法应该是一样的，目前来讲其实卖了我觉得对于抖音更好去打这场官司的话，实际上风险很大。张冠他如果你打输了之后，你可能卖的钱更少，倒是倒是让你卖还不知道，竟然让你卖的话，你可能卖的钱更少，这样官司能打赢的可能性是非常低的。  有人就跟我说说，以前你不说，我昨天不就说，我说微软当时跟美国">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200809第2706期-抖音最终还是被北京逼着去法院起诉川普">
+<meta property="og:url" content="https://stonejidb.github.io/2020/08/09/20200809%E7%AC%AC2706%E6%9C%9F-%E6%8A%96%E9%9F%B3%E6%9C%80%E7%BB%88%E8%BF%98%E6%98%AF%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%BC%E7%9D%80%E5%8E%BB%E6%B3%95%E9%99%A2%E8%B5%B7%E8%AF%89%E5%B7%9D%E6%99%AE-D3ORfrG3TRQ/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的8月9号星期日，抖音没有想到最终被北京逼着还是要去法院去起诉川普。我个人我认为张一鸣跟我的想法应该是一样的，目前来讲其实卖了我觉得对于抖音更好去打这场官司的话，实际上风险很大。张冠他如果你打输了之后，你可能卖的钱更少，倒是倒是让你卖还不知道，竟然让你卖的话，你可能卖的钱更少，这样官司能打赢的可能性是非常低的。  有人就跟我说说，以前你不说，我昨天不就说，我说微软当时跟美国">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-09T08:00:06.000Z">
+<meta property="article:modified_time" content="2020-08-09T17:27:56.325Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/08/09/20200809%E7%AC%AC2706%E6%9C%9F-%E6%8A%96%E9%9F%B3%E6%9C%80%E7%BB%88%E8%BF%98%E6%98%AF%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%BC%E7%9D%80%E5%8E%BB%E6%B3%95%E9%99%A2%E8%B5%B7%E8%AF%89%E5%B7%9D%E6%99%AE-D3ORfrG3TRQ/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200809第2706期-抖音最终还是被北京逼着去法院起诉川普 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/08/09/20200809%E7%AC%AC2706%E6%9C%9F-%E6%8A%96%E9%9F%B3%E6%9C%80%E7%BB%88%E8%BF%98%E6%98%AF%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%BC%E7%9D%80%E5%8E%BB%E6%B3%95%E9%99%A2%E8%B5%B7%E8%AF%89%E5%B7%9D%E6%99%AE-D3ORfrG3TRQ/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200809第2706期-抖音最终还是被北京逼着去法院起诉川普
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-09 17:00:06" itemprop="dateCreated datePublished" datetime="2020-08-09T17:00:06+09:00">2020-08-09</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/09/20200809%E7%AC%AC2706%E6%9C%9F-%E6%8A%96%E9%9F%B3%E6%9C%80%E7%BB%88%E8%BF%98%E6%98%AF%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%BC%E7%9D%80%E5%8E%BB%E6%B3%95%E9%99%A2%E8%B5%B7%E8%AF%89%E5%B7%9D%E6%99%AE-D3ORfrG3TRQ/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/09/20200809第2706期-抖音最终还是被北京逼着去法院起诉川普-D3ORfrG3TRQ/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的8月9号星期日，抖音没有想到最终被北京逼着还是要去法院去起诉川普。我个人我认为张一鸣跟我的想法应该是一样的，目前来讲其实卖了我觉得对于抖音更好去打这场官司的话，实际上风险很大。张冠他如果你打输了之后，你可能卖的钱更少，倒是倒是让你卖还不知道，竟然让你卖的话，你可能卖的钱更少，这样官司能打赢的可能性是非常低的。 </p>
+<p>有人就跟我说说，以前你不说，我昨天不就说，我说微软当时跟美国打这个官司，又说关于垄断属美国政府说为了垄断吗打一场官司，然后说微软当时一天花了100万美元，微软到最后这个官司打得也不算赢，反正双方算是妥协，微软反正就是说把自己的拯救了，对不对？有人就说你看微软不会最后就还达到了自己想要的效果，我说你不能跟微软比，同时不是你跟微软比你就找乐了。你懂吧？ </p>
+<a id="more"></a>
+
+<p>微软是一家美国公司，你知道参议院众议院有多少参议员和众议员帮微软在国会里去说情绪说好话吗？你能在微软比吗？你要想想你抖音国会里有哪个参议员众议员敢出来给你说好话的？你跟微软比你不找到了吗？对不对？那么扯了对不对？微软它再怎么着，它不关系到美国的安全问题，对吧？微软它肉烂烂在锅里，它在垄断怎么不好，对市场不好，他首先来讲他不涉及到他不影响美国的安全，或者给美国造成什么什么这个问题，而且还有一点就是说你也承认一点，微软的垄断其实现在越来越不行了，后来苹果的异军突起，苹果手机苹果的操作系统的出现，导致微软的份额实际上急剧的在减少。 </p>
+<p>而且微软原先手机里它有一定的份额，当时我记得最多的是微软，微软的 windows系统的手机，曾经最高要是占个10%，现在基本上就完蛋了，所以微软到现在这种统治地位实际上已经真的是你像我们现在弄的都是苹果的电脑对吧？ </p>
+<p>Windows系统基本上我多年不用windows系统，我都多少年不用windows系统了，对不对？所以就是说微软的垄断，现在看起来的的确确也不是说他说不是他现在垄断地位就是没有以前那么强了，对吧？这是一个事实，而且你现在更多的人都是用iPad，手机也在搞对吧？你手机你就是不用苹果的，永远做了它跟微软也没有关系对吧？你iPad除非你用surface对不对？要不然的话其实跟他也没有什么太大关系了。 </p>
+<p>然后我要说抖音，抖音我觉得你不应该去参照微软，我觉得抖音应该参照是谁？以前俄罗斯有一家企业叫卡巴斯基，是俄罗斯的一个杀毒软件公司，其实做的不错，我挺喜欢卡巴斯基的杀毒的简单粗暴，然后后来在美国就中午最后被美国就提出了，不让他进美国市场，卡巴斯基当时就在美国法院跟美国政府打官司，最后惨败，那个时候当然了那个时候不一样，那个时候美国还认为自己的首要的这种敌人就是意识形态的敌人，就是俄罗斯，俄罗斯是美国的全球最重要的敌人，现在不一样，现在美国从上到下从左到右从里，甭管是白左还是白右，甭管是左派还是右派，两党全部都认为美国现在最大的敌人是谁？就是中国共产党。 </p>
+<p>你懂了吧？所以你现在抖音来讲，你就是跟卡巴斯基当时是一样的，尤其是你搞的位置，还是一个特别让美国人就是说讨厌的位置，卡巴斯基搞杀毒软件，对不对？那么你这个杀软件一进来了之后，实际上如果你自己转转给我入侵我的电脑的话，我是一点反应都没有，因为你就是转变边，你既然要知道的话，我一点辙都没有，这对美国非常大有害。你这个抖音也是你亲你里边容留了大量的美国的各种的这种信息账户，个人信息个人的情况对吧？ </p>
+<p>所以这个来讲的话，如果你的意识形态跟我是敌对的，不管你现在你用不用就是卡巴斯基也说我们现在没有入侵，但是问题是这样，对于美国来讲，你现在是没有入侵，但如果我在美国，我要政府部门在个人部门我大量使用的话，一旦有一天普京想入侵的时候，你不是一抬手又入侵了吗？对不对？我不能让你把枪一直天天的就顶在我脑门上了，对不对？你现在你说你是不开枪对不对？ </p>
+<p>万一你哪天你想开枪了呢？对不对？我反正不能让你天天拿枪指着我，对你们家邻居要买了，你们家邻居如果买了一把AK47天拿枪对着你那窗户，你受得了吗？你也得报警了对不对？你对吧？所以就是这么一个情况。中国也是这样，所以抖音目前的情况我之前已经说了，想告赢美国的可能性非常低，我觉得以张一鸣这么聪明的人，不用我跟他讲这个道理，为什么最后抖音现在我们得到消息当然还不见得准确，反正我们现在得到消息，抖音下周准备要去法院告美国政府告川普。 </p>
+<p>那么最快可能就是8月11号，如果不行就下周五之前应该反正就下周地点选在哪，选择是他斗因在美国的总部所在的南加州，因为我总不在这儿去南加州，去南加州的联邦地区法院去告川普说川普的行政命令违宪，反正以死为理由先打着打着后面再说这场官司到底打多久我们不知道。 </p>
+<p>我估摸着以美国司法来讲，最少也是打个几个月半年一年也是跟玩一样，如果后面再上诉，这在打个一两年都没有问题，那么抖音反正现在看来我觉得这么去搞，被北京逼的，北京让他走，北京现在就是要堵什么堵11月份串口连任不了。但是我觉得对抖音是非常有害的。我认为张一鸣不该这么做，但是他现在就这么做了，也没办法，咱们就看现在几乎我可以跟你这么说，虽然这两天不断的有人说，说能不能再讲讲川普，我怎么觉得川普要选船舶不选兄弟你放心，拜登绝对赢不了。 </p>
+<p>从民主党选了拜登，就是说实际上当然了民主党现在正式任命提名，拜登还没到，他们要搞代代表大会才行了，对不对？还没开了。 </p>
+<p>还有材料正式提名，但是实际上从伯尼桑德斯一退选，那么他了就没有别人了，对不对？从那一天开始我就跟你说大选就结束了，就跟去年韩国鱼的时候也是我就说国民党只要韩国鱼一赢得重选，国民党就该打包回家了，明白吧？今年也是民主党，今年当时我就说不能是拜登，我跟你说你波尼桑德斯都还好，伯尼桑德斯希拉里布隆伯格我觉得都还行。 </p>
+<p>今年如果是布隆伯格出来代表民主党的话，那是很有希望一能够一战的。但是他们自己的意识形态的问题，导致了自己就一定要选出这么一个拜登来，就完了，你就不用想了，你懂吗？一定输我现在就告诉你一定输好不好？具体的我就不分析了，没有什么意思，必输无疑，所以你现在去打这场官司，你去激怒川普，对你日后没有好处，这样官司你跟卡巴斯基一样，你最后官司你一定输，川普的选举他一定连任，等他连了任他在翻过手弄你，你看着你看着你，恐怕现在据说微软已经给他开到300个亿了，到时候你看我估计连300个亿都卖不了了，本来说500个亿的，现在300个亿，你在现在再去搞，再在拖几个月，好吧？ </p>
+<p>今天讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/09/20200809%E7%AC%AC2705%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%AD%BE%E8%A1%8C%E6%94%BF%E5%91%BD%E4%BB%A4%EF%BC%8C%E6%8F%90%E4%BE%9B%E7%96%AB%E6%83%85%E7%BA%BE%E5%9B%B0%E6%95%91%E5%8A%A9-Yqv2byGuakU/" rel="prev" title="20200809第2705期-川普签行政命令，提供疫情纾困救助">
+      <i class="fa fa-chevron-left"></i> 20200809第2705期-川普签行政命令，提供疫情纾困救助
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1451</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/08/09/20200809%E7%AC%AC2706%E6%9C%9F-%E6%8A%96%E9%9F%B3%E6%9C%80%E7%BB%88%E8%BF%98%E6%98%AF%E8%A2%AB%E5%8C%97%E4%BA%AC%E9%80%BC%E7%9D%80%E5%8E%BB%E6%B3%95%E9%99%A2%E8%B5%B7%E8%AF%89%E5%B7%9D%E6%99%AE-D3ORfrG3TRQ/";
+    this.page.identifier = "2020/08/09/20200809第2706期-抖音最终还是被北京逼着去法院起诉川普-D3ORfrG3TRQ/";
+    this.page.title = "20200809第2706期-抖音最终还是被北京逼着去法院起诉川普";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
