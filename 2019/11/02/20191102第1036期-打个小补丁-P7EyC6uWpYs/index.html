@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2019年的11月3号星期日打一个小补丁，打一个小补丁，刚刚讲到王思聪的事，就是一迷太监。行远一点，刚刚谈到毛泽东的事情的时候，你没有出来了，我肯定出去了，弄了也要给别人出去。好。  刚刚提到王思聪这个事，我说了就是说王思聪的微博被清空了，然后有网友跟我说说这个不准确，需要打一个小补丁，就是说现在不确认王思聪的微博到底是清空了，还是没有完全清空，他是这样子，王思聪现在微博设置的是仅半">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20191102第1036期-打个小补丁">
+<meta property="og:url" content="https://stonejidb.github.io/2019/11/02/20191102%E7%AC%AC1036%E6%9C%9F-%E6%89%93%E4%B8%AA%E5%B0%8F%E8%A1%A5%E4%B8%81-P7EyC6uWpYs/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2019年的11月3号星期日打一个小补丁，打一个小补丁，刚刚讲到王思聪的事，就是一迷太监。行远一点，刚刚谈到毛泽东的事情的时候，你没有出来了，我肯定出去了，弄了也要给别人出去。好。  刚刚提到王思聪这个事，我说了就是说王思聪的微博被清空了，然后有网友跟我说说这个不准确，需要打一个小补丁，就是说现在不确认王思聪的微博到底是清空了，还是没有完全清空，他是这样子，王思聪现在微博设置的是仅半">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-11-01T15:03:06.000Z">
+<meta property="article:modified_time" content="2020-08-12T15:31:53.035Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2019/11/02/20191102%E7%AC%AC1036%E6%9C%9F-%E6%89%93%E4%B8%AA%E5%B0%8F%E8%A1%A5%E4%B8%81-P7EyC6uWpYs/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20191102第1036期-打个小补丁 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2019/11/02/20191102%E7%AC%AC1036%E6%9C%9F-%E6%89%93%E4%B8%AA%E5%B0%8F%E8%A1%A5%E4%B8%81-P7EyC6uWpYs/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20191102第1036期-打个小补丁
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-02 00:03:06" itemprop="dateCreated datePublished" datetime="2019-11-02T00:03:06+09:00">2019-11-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/11/02/20191102%E7%AC%AC1036%E6%9C%9F-%E6%89%93%E4%B8%AA%E5%B0%8F%E8%A1%A5%E4%B8%81-P7EyC6uWpYs/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/02/20191102第1036期-打个小补丁-P7EyC6uWpYs/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2019年的11月3号星期日打一个小补丁，打一个小补丁，刚刚讲到王思聪的事，就是一迷太监。行远一点，刚刚谈到毛泽东的事情的时候，你没有出来了，我肯定出去了，弄了也要给别人出去。好。 </p>
+<p>刚刚提到王思聪这个事，我说了就是说王思聪的微博被清空了，然后有网友跟我说说这个不准确，需要打一个小补丁，就是说现在不确认王思聪的微博到底是清空了，还是没有完全清空，他是这样子，王思聪现在微博设置的是仅半年可看，那么就是说反正最起码的近半年来，王思聪发的微博都清空了，对于这个也有争论，有人说近半年没有发过微博了，有人说他之前前几天还在微博上，就是说他们 I g战队打打比赛的时候，他还对过对面的战队对过人家拿人家就是说 kuso挖苦挖苦对战队，我觉得王思聪来讲一般也忍不住半年不发微薄，所以说近半年王思聪没发过微博，这个可能性我觉得不大，所以我一直也没有关注她微博，所以我也不知道，但是我觉得不大，它应该我觉得另外一个网友说的是有道理的，就是说他之前还在微博上对过就是说kuso过挖苦过其他的战队，但是他就把近半年的微博全部都清空了，或者也有可能是把前面的都清空了，但现在我们不知道。 </p>
+<a id="more"></a>
+
+<p>所以网友就是说关于技术细节一定要跟我争论，就到底有没有清空。我说你能不能确认到底是指清空了半年还是都清空了，他说这谁都知道，他也不知道，但是他很肯定的，现在这个账号设置的是仅半年可见，然后反正这半年的事肯定就清空了，是没有了，所以就是说现在看起来这个状态就像是全部清空了，但是也有可能是既设置了半年可见，然后也全部清空了。 </p>
+<p>反正网友你知道吗？我也不好意思说他们是钢筋吧，反正他一定要这个基础细节要跟你探讨一下，但在这个技术细节他能不能确认，他也确认不了到底是全部清空的还是仅半年，但是无论如何他们说有一种可能性是什么？说王思聪就是不想，因为他王思聪那哥们比较能得得一天得第一对空气你知道吗？对完范冰冰对有什么奶茶妹对着章泽天，反正得谁得谁对谁对吧？所以如果一条一条删的可能比较累，他可能就清空一个半年，再设一个半年可见的，从技术上达到了一个清空了微博的这么一个效果或者这么一个目的，我也有可能人家就是说可能就是雇的人清就全都清空了，因为你现在不知道到底清空没清空对不对？ </p>
+<p>反正就杠杠精，我觉得我现在说的算是够，就我把所有的可能性都说出来了，对不对？有可能是半年轻。 </p>
+<p>有一个肯定的就是说只是半年可见，另外一个就是说前半年可见他这半年也没有发什么微博是吗？有可能是半年没发，也有可能是发了删除了。 </p>
+<p>就是说但是有人说他半年没有发微博了，有人说瞎说什么半年没发，前两天还怼其他战队呢，还苦就苦手，其他战队你刚听懂我的意思没听懂，还有哪还不明白，现在我都说明白了吧，对不对？就是说现在说不清楚，但是现在目前的情况是它达到了一个清空微博的这么一个技术效果，继续。至于具体它后台是怎么操作的，我们现在就不知道了，好吧？我应该把所有可能性都说了，对不对？ </p>
+<p>这次没有钢筋再跟我抬杠了，好，然后我想说一下，就是说你要考虑一个什么，其实就达到了这个技术效果，其实这个都不重要，最重要的点是什么？ </p>
+<p>是之前王思聪被冻结了股权对吧？然后不但冻结了股权，实际上王思聪在被冻结股权，他是10月份被冻结的股权，而他实际上在半年前在5月份的时候，就已经知道自己要出事了，就已经把公司整个质押给了大连万达，大连万达对吧？他就质押给了王健林他爸爸的公司对吧？这么说够准确了，也就是说实际上5月份的时候他已经知道要出事了，就已经质押过去了，我们之前也分析过质押是优先于那些冻结的，对不对？就说这个钱肯定主要先还给他爸爸那边，也就是说这边只要有钱都归他爸了，对吧？其他的债权人都得等着跟你们都没有关系的，也就是说什么？ </p>
+<p>王思聪在5个月前在半年前已经知道自己要出事了，明白吧？然后我们今天又讲到了潘石屹，潘石屹的事，你想一想，潘石屹是不想公开卖这些地方的，懂我意思吗？潘石屹也要脸要面子，而且他也知道影响不好，对吧？他是想私下来卖的，那么是谁是什么力量把这个事弄到桌面上来了，弄得这么难堪，以至于现在就网上又有人喊口号了，说不要让潘石屹跑了，对不对？为什么？对吧？所以我的意思就是说你仔细思量一下，马云退休了，本来有在马云退休之前，有人就是说喊口号说马云先不要退，因为今年中国经济不好，跟中美贸易摩擦弄的，中国产业链真的是有点在崩，很多外资企业都在逃离，我们当时也说了对吧？ </p>
+<p>日本的、韩国的、台湾的都在撤，纷纷在撤，在这种情况之下，他们认为马云如果在退休了，对中国经济就从信心上来讲又是一个打击，希望马云再停一停，但是无论如何最后也不停了也下去了，所以你把马云退休，潘石屹要跑，潘石屹实际上四五年前就开始跑了，但为什么今年被人揭开了，把锅盖揭开了，对不对？藏在下面跑你知道吗？你不知道，对不对？ </p>
+<p>王思聪半年前就知道自己要出事，把公司押给他爸爸了。所以你要明白一点，咱们不要说一般的民营企业家，从表面上看起来，你觉得王健林也好，潘石屹也好，王思聪也好，马云也好，这些是民营企业家，实际上不是的，这些人都是白手套，你不要看他们几百亿上千亿的资金不都是他们自己的，属于他们自己的那部分，他们能操作的那部分早就都跑到国外了。 </p>
+<p>你不要以为什么王健林的潘石屹，马云在海外没有资产，没有小金库，我告诉你瑞士银行里哥几个都有自己的小金库，早就把钱都准备好了，现在出了什么问题，为什么这些都不叫民营企业家，这些都是白手套，而且这都是大白手套，这都是数一数二的白手套，在中国这些名字说出来都是响当当的白手套，能够做到这个级别的白手套说明什么？ </p>
+<p>说明它的背后是什么人你明白吗？都是封疆大吏，都是真正中国能够有妈收的，有肌肉的有力量的，利益集团在背后撑腰，才能够成为他们这样的白手套。可是在现在这种情况下，你会发现这么大的这么牛的几百亿上千亿的白手套们，日子都不好过了，地主家都没有余粮了。你能明白中国经济到什么程度了吗？你把这些信号穿在一起思考，你就明白了。之前我们说的那句话，就是说你不要以为今年中国的经济不好，今年可能是未来10年经济最好的一年，后边可能更糟糕，懂我意思吧？ </p>
+<p>所以我们就说这些我知道的，再往下说多了，很多人又不满意，说你又唱衰中国，好，不是我唱衰中国知道吗？是马云唱衰中国，是潘石屹唱衰中国，是李嘉诚唱衰中国，懂吗？我唱衰我只是架个相机在这说，我拿嘴说，李嘉诚把所有的大陆的资产能卖的全他妈卖了。潘石屹现在旗下八大金刚，所有的搜狐的房产全部都要出售。是我唱衰中国是吗？你自己有脑子吗？说这种话的人，李嘉诚在干什么？潘石屹在干什么？王健林在干什么？王健林现在基本上再把他的房地产的项目想办法再往外清，然后要换成非房地产的项目，懂不懂？ </p>
+<p>马云退休了之后，现在据说是在纽约这边买了房产要退来美国退休，买了个对他就不算他那买的特别大的相当于一个一个工作，一个森林买了个森林，马云在这买了一个三分别，所以你就明白了，我们只是坐在这说，我们不看好中国经济，而王健林、李嘉诚、潘石屹、马云这些这些真的是响当当的大卡，中国数一数二的大卡，我要没记错，王健林和马云曾经都是当过中国首富的人，是吧？他们两个都就是说交替交替领先，都是当过中国首富的人，你就想这些人在这种实际行动唱衰中国经济，唱衰中国房地产，对不对？ </p>
+<p>李嘉诚如果对中国经济有信心，对中国房地产有信心的话，他在中国所有的物业全部清空吗？潘石屹对中国经济有信心，对中国的房地产有信心的话，他会开始卖吗？玩命的这么卖，这么简直就是说要把所有家长都卖了，这么来卖，懂不懂？我不是在唱衰中国，我是把这些现象提供给你，让你通过这些现象想一想背后是什么原因导致的，明白吗？所以我就不说什么了好吧，我再说多就说我唱衰对吧？李嘉诚我妈房子都卖光了，他没唱衰我唱衰我服了，真的是我都没有房子卖。 </p>
+<p>中国经济可能不是说特别好，但是也不会说衰败的特别迅速，就是不会破船还有3000钉了，对，因为前几天你跟雪石先生一块讨论中国的房地产和一些投资的事时候，他都讲了你也认同这个房产，如果在我们俩观点其实不一样，当时你不知道你听没听那一集，雪石认为中国房地产完蛋了，我认为还没有完蛋，还没有到最后的疯狂。因为我认为现在经济不好，实业搞不起来，企业都搞不起来，然后中国又玩命，为了救经济，大量的释放现金流进来，放水进来，而这些水没地儿搁，最后我认为这些水最后还得进房地产，因为房地产最后还会有一次疯狂，有一次最后的疯狂最后的晚宴好吧？ </p>
+<p>这是我的观点，我跟他觉得不一样，你是从宏观讲，他从微观上讲，投资如果在北上广地一线城市或者是一些第二三线的城市群去购买房子的话，他说这也是一个保守的是一个可行的投资方案，他说的这不是投资方案，他说如果你是刚需的话，你怎么搞？雪石说的原话说的是现在目前中国稍微有脑子的人都不会把房地产当做投资的项目了，就是说你如果是刚需的话，你在这些城市群你买可能还行，如果你不是刚需的话，你还不如去点买点茅台什么的，这是他的观点，如果你是投资的话，我不认为 Ok。 </p>
+<p>再有人就是说你懂我意思吧？但是我觉得是这样，如果你想挣最后一个一个铜板，你想参与最后的这一次疯狂的话，你可以试一试，不过这个是非常危险的，只有李嘉诚走的时候，为什么说我不争最后一个铜板，就在这了，知道吧？你接着说。我说完了我就是想补充一下你的意思，就算是它的经济就算是在慢慢的衰败，但是也不至于一下子就崩溃了，或者是全部彻底完了，就这个意思，不会，我还认为最后会有一次疯狂，等到最后的那一次疯狂，整个炮都崩开了，对不对？ </p>
+<p>还有一点说还要看美国这边的一个表现，但是我想也是很明显了，说李嘉诚、潘石屹等等王健林这些人的这些情况，我觉得说得很清楚，对吧？还有一点就是什么？就是说经济我倒不是说唱衰中国或者怎么样，全世界的经济都是如此，美国经济日本经济都是如此，就是说它是一个波段性的周期，它是一个周期，是一个波段性，大家都是涨一块，然后有一块。对或者经济萧条区没有，这不是平台，真的上下调，美国都是这样，30年代大萧条，07年的经济大萧条，日本的经济大萧条都会有任何一个经济体都有大萧条的时期，而且大萧条时期通常都要有7~8年的这么一个时间，一个萧条一个向下的区间，通过这个区间来排除水分，然后把经济里面那些不良的因素问题发现掉，不良因素排除掉，肯定都是这样，而中国经济自改革开放以来，只有向上没有向下，是没有道理的，也不可能出现的，你明白吗？没有任何一个经济体是只往上不往下，没有盘整，没有萧条期的。 </p>
+<p>所以就是说你从理论上来说，中国经济最起码我觉得就是说它已经接近于萧条期了，这是肯定的没有问题，但是你说会不会一下子到底我认为不会，破船还有3000钉，而且中国经济发展了这么多年，瘦死的骆驼也比马大，但问题就是这样子，到了经济萧条期的时候，你怎么把你自己作为一个良性的资产在这里边存活下来，而不是作为一个恶性资产就被淘汰掉了。因为美国经济大萧条的时候，那007年08年雷曼直接就倒闭了，雷曼雷曼倒闭不说，曼哈顿那边很多公司一裁员裁一半裁2/3，100个人才50个，100个人才70个，比比皆是。 </p>
+<p>你懂我意思吗？多少人就完全失业了，对吧？所以中国也是这么一个情况，我不是说认为经济一崩溃之后就怎么样，但是进入萧条期的话，大太原没有问题，对不对？人民币贬值没有问题，房地产的泡沫会崩溃，这都没有问题对吧？ </p>
+<p>所以这些我觉得我还是那句话，我不是说唱衰什么，我只是说我提出来这个建议，然后我给大家提供一个思考的方向，那血石他的观点是认为你应该买这古董茅台什么的，但是我其实那期节目的时候，你会发现我跟雪石做节目，我尽量还是就是说我不想过多的去就是说针锋相对，其实但是当时我的话说到了，我不知道有没有人听懂，我当时就我说盛世的古董，乱世的黄金，在盛世的时候买古董是好事，古董一直在往上升，但是乱世的时候我觉得黄金会更好，对不对？ </p>
+<p>但是中国未来到底是盛世还是乱世的话，就是神者见人智者见智了，我只是但是我该说的我说到我点到了对不对？那么如果你预计未来的中国你很看好，你觉得这是一个盛世，那么你就要投那些收藏品，古董、邮票、茅台酒这些东西，如果你觉得未来的中国有可能是乱世的话，我觉得可能有点黄金也是不错的。因为你会发现在中国历史上，尤其到了乱世的时候，真正的硬通货奏是黄金。除此之外别无其他了。 </p>
+<p>以前国民党跟中跟中共打到最后国民党败退要去台湾的时候，那个时候有很多人就害怕共产党，害怕共产党清算就要跑往台湾跑，当时上传一张传票，你要拿什么买吗？ </p>
+<p>金条，你甭跟我说别的，纸币没有了，国民党发达纸币根本就不要，银元太沉了，您就拿金条出来，就是一张传票，几根金条，咱就说清楚，你什么拿古董的，他不看什么表，金表可能还行，如果是纯金的，你懂我的意思吗？到了那种时候你会发现什么东西都没有金条好使，金条你知道吗？所以盛世的古董的乱世的金条，不过到底是盛世和乱世的，我不下断言你自己去评判好吧？因为我知道你们还都比较看好中国可以两手都抓吗？可以，就是说我觉得说别把鸡蛋都放在同一个篮子里，对不对？ </p>
+<p>还有一点，你如果真的特别有钱，可以学学王健林、潘石屹，李嘉诚什么把一部分资产换成外币呢？转出去，对吧？就是这么一个情况，是不是？当然了也有可能就是说是我判断有误，也有可能李嘉诚判断有误，潘石屹判断有误，我们这些人都判断错误了，中国经济最后蒸蒸日上。一每年6%的这种经济增长率持续不断的涨100点，也有可能你比如说我这算够柔和了，这么说也可以，对不对？ </p>
+<p>但是也有可能就李嘉诚算对了，也有可能潘石屹算对了，不过说实话，纵观几十年李嘉诚纵横商场，我看李嘉诚看对的时候比较多，我们这些人看对的时候少一点，所以还是考虑一下对吧？ </p>
+<p>为什么李嘉诚叫李超人？对吧？而且说句实在的，李嘉诚那时跑的时候有几个人意识到该跑了，对吧？ </p>
+<p>但是说实话，咱们跟雪石聊天，雪石也承认，就是说中国这些有钱人早就都跑了，李嘉诚一跑的时候那帮人都跟着跑了。雪时的原话就是说潘石屹早几年就跟李嘉诚就开始跑了，肯定不是现在跑对吧？所以我觉得像雪石也好，潘石屹也好，李嘉诚他们这些也好，在商场纵横过的，实际上根本都不需要我说了，对吧？什么情况？对吧？只是老百姓的后知后觉，而我老婆就属于老百姓，因为没有钱不需要去考虑那么多东西是吧？我们也没有房子卖了无所谓，对，所以就再补充一小点点，金表、金项链这种黄金制品都不行，它不保值，只有金条是保值的。 </p>
+<p>对盛世的古董，乱世的黄金。 </p>
+<p>好吧，这期讲到这里好吧？谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/11/02/20191102%E7%AC%AC1035%E6%9C%9F-%E7%8E%8B%E6%80%9D%E8%81%AA%E7%9A%84%E5%BE%AE%E5%8D%9A%E5%85%A8%E9%83%A8%E6%B8%85%E7%A9%BA%E8%AF%B4%E6%98%8E%E7%8E%8B%E5%81%A5%E6%9E%97%E5%8D%B1%E7%9F%A3%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%85%B3%E9%97%AD%E8%AF%84%E8%AE%BA%E5%8C%BA-Ns_F57KmzXg/" rel="prev" title="20191102第1035期-王思聪的微博全部清空说明王健林危矣，为什么关闭评论区">
+      <i class="fa fa-chevron-left"></i> 20191102第1035期-王思聪的微博全部清空说明王健林危矣，为什么关闭评论区
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/11/03/20191103%E7%AC%AC1037%E6%9C%9F-%E7%BD%97%E6%B0%B8%E6%B5%A9%E6%AC%A0%E5%80%BA%E8%A2%AB%E6%B3%95%E9%99%A2%E5%88%A4%E5%AE%9A%E4%B8%BA%E8%80%81%E8%B5%96%E5%B9%B6%E9%99%90%E5%88%B6%E6%B6%88%E8%B4%B9-pf2jNjurkgQ/" rel="next" title="20191103第1037期-罗永浩欠债被法院判定为老赖并限制消费">
+      20191103第1037期-罗永浩欠债被法院判定为老赖并限制消费 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1476</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2019/11/02/20191102%E7%AC%AC1036%E6%9C%9F-%E6%89%93%E4%B8%AA%E5%B0%8F%E8%A1%A5%E4%B8%81-P7EyC6uWpYs/";
+    this.page.identifier = "2019/11/02/20191102第1036期-打个小补丁-P7EyC6uWpYs/";
+    this.page.title = "20191102第1036期-打个小补丁";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
