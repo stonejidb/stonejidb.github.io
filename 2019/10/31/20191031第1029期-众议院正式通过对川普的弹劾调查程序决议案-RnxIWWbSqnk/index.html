@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2019年的10月31号星期四刚刚传来的消息，几个小时之前，在今天10月31号的下午，美国众议院以232票赞成，196票反对的表决结果，通过了针对总统川普的谈合调查程序的决议案，共和党人全部都投了反对票，民主党人有两个判断了后来共产党这边来了投了反对票，但是剩下的230 32个都投了赞成，等于民主党这边一共是234个人，有2个是投了反对票，那么也即使就是说在民主党这边也不是所有人都赞">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案">
+<meta property="og:url" content="https://stonejidb.github.io/2019/10/31/20191031%E7%AC%AC1029%E6%9C%9F-%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E5%BC%B9%E5%8A%BE%E8%B0%83%E6%9F%A5%E7%A8%8B%E5%BA%8F%E5%86%B3%E8%AE%AE%E6%A1%88-RnxIWWbSqnk/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2019年的10月31号星期四刚刚传来的消息，几个小时之前，在今天10月31号的下午，美国众议院以232票赞成，196票反对的表决结果，通过了针对总统川普的谈合调查程序的决议案，共和党人全部都投了反对票，民主党人有两个判断了后来共产党这边来了投了反对票，但是剩下的230 32个都投了赞成，等于民主党这边一共是234个人，有2个是投了反对票，那么也即使就是说在民主党这边也不是所有人都赞">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-10-30T15:02:09.000Z">
+<meta property="article:modified_time" content="2020-08-13T15:29:54.780Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2019/10/31/20191031%E7%AC%AC1029%E6%9C%9F-%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E5%BC%B9%E5%8A%BE%E8%B0%83%E6%9F%A5%E7%A8%8B%E5%BA%8F%E5%86%B3%E8%AE%AE%E6%A1%88-RnxIWWbSqnk/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2019/10/31/20191031%E7%AC%AC1029%E6%9C%9F-%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E5%BC%B9%E5%8A%BE%E8%B0%83%E6%9F%A5%E7%A8%8B%E5%BA%8F%E5%86%B3%E8%AE%AE%E6%A1%88-RnxIWWbSqnk/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-10-31 00:02:09" itemprop="dateCreated datePublished" datetime="2019-10-31T00:02:09+09:00">2019-10-31</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/10/31/20191031%E7%AC%AC1029%E6%9C%9F-%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E5%BC%B9%E5%8A%BE%E8%B0%83%E6%9F%A5%E7%A8%8B%E5%BA%8F%E5%86%B3%E8%AE%AE%E6%A1%88-RnxIWWbSqnk/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/10/31/20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案-RnxIWWbSqnk/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2019年的10月31号星期四刚刚传来的消息，几个小时之前，在今天10月31号的下午，美国众议院以232票赞成，196票反对的表决结果，通过了针对总统川普的谈合调查程序的决议案，共和党人全部都投了反对票，民主党人有两个判断了后来共产党这边来了投了反对票，但是剩下的230 32个都投了赞成，等于民主党这边一共是234个人，有2个是投了反对票，那么也即使就是说在民主党这边也不是所有人都赞成弹劾的，对吧？这个就是一个闹剧，不过投票结果还是打了共和党某一些众议员的脸。 </p>
+<p>因为之前民主党主导的国会众议院在对川普进行谈合调查的时候，一直是闭门进行的，就是属于秘密进行的。有一些共和党人就批评说，未经中院投票授权说你们程序是不正当的，甚至有共和党的议员说的，你们有种子拿到国会来，咱们投票，你们肯定过不了就过了。过了共和党很不满，觉得民主党这边太不要脸了，他们觉得就是说还是应该有一个正义感，这个事情来讲不应该去开展弹劾调查的，但是没有想到牛角那边还是非常团结的，虽然跑了两张票，但是就是说该拿的票还都拿到了，对吧？ </p>
+<a id="more"></a>
+
+<p>这样来讲必须要承认对佩洛斯在众院的掌控能力还是很强，对于党内的这种约束力在里边淋漓尽致的体现出来了。南非佩诺斯以前其实一直是反对开启调查程序的，他经常就认为就是说其实没有必要谈何而谈何劳民伤财，最后的结果也未必行，而且最重要一点南非 AC之前也说过，因为现在参议院在共和党手里对吧？你即使在众议院通过的话，也不可能再在参议院通过，那两个愿不能通过的话，你众议院在这儿闹来闹去的就劳民伤财了，就没有任何意义对吧？所以它一直是是反对搞弹劾，现在南非PVC可以说是全力以赴的投入到了弹劾程序当中，为什么呢？ </p>
+<p>其实跟昨天我们讲的金灿荣的观点是一样的，也就是说其实昨天金灿荣我们讲金灿荣就透露了，习近平那边为什么要跟川普签了就是中美贸易协定一第一阶段这个协议，但是还没有签，就准备要签，能谈得成为什么？就是说中共那方面现在对民主党这边的选举已经不抱希望了，拜登已经玩了对吧？伊丽莎白也不行，所以我们分析过，然后玻璃伤到死也不行，所以民进党这边也发现了民主党当初不愿意去谈，何川普不愿意搞这些没有用的东西，主要的原因就是因为他们认为拜登还有机会，我以前说过，我说赖清德是台独的金孙，拜登是民主党的白祖的金爷，年纪大了别管他叫金孙吧，一个金金爷爷对他是抱有极大一大的希望的，认为他是能够最终，因为奥巴马时期他当了8年的副总统，也是广受白左的爱戴，为什么广受美国人民爱戴，我还想不是受白佐的爱戴，他们对他是抱以了厚望，没有想到的拜登有个不争气的儿子是吧？ </p>
+<p>别提就都是坑爹的，是不是？有个坑爹的儿子，所以拜登就没戏了，没戏之后其他两个其实我想这个男CK到C也是很清楚，民进党内部也很清楚，那两个做到了，一个就是说伯尼桑德斯同志和另外一个到杀富济贫的，不好意思，我们外边一帮小孩跑来跑去的，今天是哈利顿，他们在外边就在那满处对不对？其实满处去要糖去各种东西吵来吵去的，不过咱们接着说你跑过去就得了。好，所以就是说我觉得弹劾案就是说已经说明民主党对大选不抱希望了，弹劾案最后就是一个孤注一掷了，最后生死都再死一搏了，就是说希望能把水搅浑，能把水搅浑，通过弹劾案看看能不能打击一下串口，让他们的选举还能有点希望，我已经说了对吧？ </p>
+<p>有人我咱们不不说是谁，反正我们都要一些消息，有人就有这种想法，想让这个博客出来选，看看民主党那边能不能支持，因为希望民主党这边能够明白，就是说你现在还有可能的两个候选人，一个拨尼桑德斯，一个伊丽莎白窝的，这两个几乎都不行，能不能像2014年就是说民进党礼让柯文哲一样，然后礼让普通伯格，或者就是说让布洛克或者怎么想办法让布洛克参加到民主党的初选当中来，让他来参与进来，然后想办法让他能够获胜，因为他如果要获胜的话，必须得用咱们党内的大佬们想办法帮他运作一下，因为如果完全靠他自己去初选的话，他是不可能赢的，因为他不够左。 </p>
+<p>但是我一直都说民主党内就是这样的，你如果够锁了，能初选的人一定赢得大选，不够所的人，虽然初审的时候很艰难，但是有可能有大选，布伦伯格是一个非常强劲的对手，我也觉得民主党当然我是知识串口的，但我就觉得咱们我这人都是这样的，我下手足以，我给这边递个砖头，那边递个棒子的对不对？ </p>
+<p>也明朗也出主意，我觉得其实这个提议不错，但是绝对不能让布隆伯格作为独立参选人来参选，那样绝对不行的，因为民主党的百年大党不可能不没有自己的提名人，一旦有了之后党内就很为难，对不对？你说到底提只支持自己的提名的人，还是支持不能被格了对吧？所以民主党要做的话，我觉得现在可能还有时间，因为毕竟初选是明年2月份才正式开始是吧？ </p>
+<p>现在是10月底，当然了虽然说初选的辩论会已经搞了好几场了，对吧？但是能不能想办法说党内就是说给一个开个绿灯，因为郭台铭的参选也是党内开了绿灯，参加这一次的国民党的初选，对吧？也是给了一个荣誉党员的身份，能不能党内开立这种想办法把布隆布尔的赶快塞进来，因为目前来看，如果没有布隆布尔的话，这次选举就没有机会了，对吧？ </p>
+<p>中共那个方面也在想尽一切办法在运作这种可能性。但是现在据我们所知，博隆伯格自己本人倒是不是那么积极，因为他现在非常的不看好博隆伯格这个人，非常的他一定要有百%的把握才肯动手，但是从这次众议院的民主党的弹劾程序的决议案的通过，能看出来民主党这次在弹劾上已经是孤注一掷了，轻全党之力了。好吧，川普肯定是非常不满，川普在决议案通过之后，马上在推特上就宣称，他说这是美国历史上最大的猎物行动。 </p>
+<p>好，我们最后看看决议案到底给了什么权利，这个决议案通过之后，他就规定了众议院可以就谈何调查进行公开听证，传票的发放可以发传票叫人来提问对吧？有提问权，有提交调查结论的权利，还有以及就谈何建议进行投票等方面的程序和规则都做了规范，同时也给白宫方面一些权力喝，这么吵的小孩也允许白宫方面已要求己方做任正坐正或提供证据出席听证会，反驳证人证词，反复执巡证人等等方式来表达自己的不满和意见，但是决议案里面，但是他给了众议院的司法委员会的主席认定白宫不配合调查的话，就有权拒绝川普及其律师的要求。 </p>
+<p>现在因为众议院完完全全在民主党的法官当中，司法委员会的主席也是民主党的人，所以等于就是说虽然说是给了串铺权利，但是随时有权可以拒绝来讲，对众议院在众议院的进行对川普川普进行盘活的调查是非常有利的。 </p>
+<p>但是还是那句话，你虽然是倾全党之力，在众议院的强行的通过了这个也开始展开了调查，但是无论你调查结果是什么的话，你一定要明白参议院在共和党手里，而且参议院的议长就是副总统彭斯对吧？所以这个东西完完全全就跟自己就自己过家家了，自己哄自己开心就多了，弹劾是不可能通过的。最少在明年大选之前不可能，就是说你如果要通过的话，你必须要通过明年大选把参众两院都拿到手，对吧？但是如果大选你能把参众两院拿到手的话，总统也换人了，谈何案也就没有必要再进行了，对不对？ </p>
+<p>所以你就能够通过我的分析，你就能看出来民主党现在是有多么的歇斯底里，多么的绝望，对好吧，这条消息播到这里了，好吧，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/10/30/20191030%E7%AC%AC1027%E6%9C%9F-%E5%88%86%E6%9E%90%E9%87%91%E7%81%BF%E8%8D%A3%E2%80%9C%E5%8F%B0%E6%B9%BE%E9%97%AE%E9%A2%98%E5%92%8C%E4%B8%AD%E7%BE%8E%E5%85%B3%E7%B3%BB%E2%80%9D%E7%9A%84%E8%AE%B2%E8%AF%9D-CXsEWlkM2cg/" rel="prev" title="20191030第1027期-分析金灿荣“台湾问题和中美关系”的讲话">
+      <i class="fa fa-chevron-left"></i> 20191030第1027期-分析金灿荣“台湾问题和中美关系”的讲话
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/11/01/20191101%E7%AC%AC1030%E6%9C%9F-AirPods%20Pro%E4%B8%BB%E8%A7%82%E8%AF%84%E6%B5%8B%EF%BC%8C%E5%AF%B9%E6%AF%94AirPods%E7%AC%AC%E4%B8%80%E4%BB%A3-KyBt8SpVm4Y/" rel="next" title="20191101第1030期-AirPods Pro主观评测，对比AirPods第一代">
+      20191101第1030期-AirPods Pro主观评测，对比AirPods第一代 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1489</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2019/10/31/20191031%E7%AC%AC1029%E6%9C%9F-%E4%BC%97%E8%AE%AE%E9%99%A2%E6%AD%A3%E5%BC%8F%E9%80%9A%E8%BF%87%E5%AF%B9%E5%B7%9D%E6%99%AE%E7%9A%84%E5%BC%B9%E5%8A%BE%E8%B0%83%E6%9F%A5%E7%A8%8B%E5%BA%8F%E5%86%B3%E8%AE%AE%E6%A1%88-RnxIWWbSqnk/";
+    this.page.identifier = "2019/10/31/20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案-RnxIWWbSqnk/";
+    this.page.title = "20191031第1029期-众议院正式通过对川普的弹劾调查程序决议案";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
