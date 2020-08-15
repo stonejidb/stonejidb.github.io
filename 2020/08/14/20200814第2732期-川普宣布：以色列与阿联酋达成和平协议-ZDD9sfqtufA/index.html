@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的8月14号星期五，今天有一个大新闻其实在美国这边算是比较有轰动性的，但是一般来讲中国网友对不是特别关注什么，川普宣布以色列和阿联酋达成了和平协议，为中东的和平可以说做出了巨大的贡献。川普今天在白宫宣布，说双方将全面的关系正常化，蓬佩奥形容这是一个历史性的日子，迈向了中东和平的一大步。  然后川普和以色列的总理内塔尼亚胡这个叫什么？阿布打比方的王储默罕默德发表了联合声明，最">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200814第2732期-川普宣布：以色列与阿联酋达成和平协议">
+<meta property="og:url" content="https://stonejidb.github.io/2020/08/14/20200814%E7%AC%AC2732%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%EF%BC%9A%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%98%BF%E8%81%94%E9%85%8B%E8%BE%BE%E6%88%90%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-ZDD9sfqtufA/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的8月14号星期五，今天有一个大新闻其实在美国这边算是比较有轰动性的，但是一般来讲中国网友对不是特别关注什么，川普宣布以色列和阿联酋达成了和平协议，为中东的和平可以说做出了巨大的贡献。川普今天在白宫宣布，说双方将全面的关系正常化，蓬佩奥形容这是一个历史性的日子，迈向了中东和平的一大步。  然后川普和以色列的总理内塔尼亚胡这个叫什么？阿布打比方的王储默罕默德发表了联合声明，最">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-14T08:03:02.000Z">
+<meta property="article:modified_time" content="2020-08-15T16:50:39.908Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/08/14/20200814%E7%AC%AC2732%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%EF%BC%9A%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%98%BF%E8%81%94%E9%85%8B%E8%BE%BE%E6%88%90%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-ZDD9sfqtufA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200814第2732期-川普宣布：以色列与阿联酋达成和平协议 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/08/14/20200814%E7%AC%AC2732%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%EF%BC%9A%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%98%BF%E8%81%94%E9%85%8B%E8%BE%BE%E6%88%90%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-ZDD9sfqtufA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200814第2732期-川普宣布：以色列与阿联酋达成和平协议
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-14 17:03:02" itemprop="dateCreated datePublished" datetime="2020-08-14T17:03:02+09:00">2020-08-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/14/20200814%E7%AC%AC2732%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%EF%BC%9A%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%98%BF%E8%81%94%E9%85%8B%E8%BE%BE%E6%88%90%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-ZDD9sfqtufA/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/14/20200814第2732期-川普宣布：以色列与阿联酋达成和平协议-ZDD9sfqtufA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的8月14号星期五，今天有一个大新闻其实在美国这边算是比较有轰动性的，但是一般来讲中国网友对不是特别关注什么，川普宣布以色列和阿联酋达成了和平协议，为中东的和平可以说做出了巨大的贡献。川普今天在白宫宣布，说双方将全面的关系正常化，蓬佩奥形容这是一个历史性的日子，迈向了中东和平的一大步。 </p>
+<p>然后川普和以色列的总理内塔尼亚胡这个叫什么？阿布打比方的王储默罕默德发表了联合声明，最后同意双方关系正常化，而且说在未来几周将要签署了相关的协议，说是关于投资观光航班直飞安全保障以及互设大使馆等。那么以色列当然就是说做出了一些妥协，以色列的同意暂停对约旦河西岸部分地区去声索的主权，就这块地我不去跟你抢了，但是他只是说暂停，并没有说不这么做了。那么阿联酋也在这里也成为了第一个与以色列建立外交关系的海湾的阿拉伯的国家。 </p>
+<a id="more"></a>
+
+<p>是第三个与以色列建立外交关系的阿拉伯国家，在阿拉伯国家里是第三个，在海湾地区他是第一个，其实具有历史性意义的。之前约旦和埃及是作为第一个和第二个和以色列达成和平协议的，但是这都到90年代了，到现在这是有多少年了？我20年了。20年20多年了，没有过这种。他是9我记得2994年到现在26年、26年、20多年没有了这种和平协议。当然了阿联酋的外长加尔格表示，那意思就是说我们翰林阿联酋得到了利益和好处，他就说我们的协议可以阻止以色列吞并土地的野心，说是阿联酋解除了一个计时炸弹。 </p>
+<p>那天塔尼亚胡说协议的是以色列历史的一刻，埃及总统塞西认为可以为中东带来和平。中国网友对其实不是特别关注，对于美国来讲这是一个重大事件，中东地区怎么说就是一个炸药库，天天出各种问题，以色列能够跟阿联酋能够关系正常化，建立这种正式的邦交和往来，我觉得对于以后的发展，对于美国、对于以色列、对于中东都有巨大的好处。 </p>
+<p>还有一点就是说我觉得为什么川普能够促成20多年了，这么多届总统过去了，没有能串能够达成这么一个协议，因为其实对于美国总统来讲就是说在中东这块达成像类似的这种协议是非常需要的，因为大家都在看你美国把中东政府怎么能够安抚下来，对吧？川普为什么能够达到，我觉得她得到了双方面的信一个信任，因为创普谈他呢不讲过多的那种意识形态的东西，它也不去过多的干涉别国的这种内政，而且他从利益出发，咱们说我们离我美国的利益要保障，你以色列的利益也要保证安全，阿联酋的利益也要保证咱们的利益出发，把尽量把这种意识形态的东西说不要弄得太多，我觉得他得到了双方的信任。从以色列来讲，几十年来，我觉得以色列没有更信任过其他的美国总统，从来没有哪个美国总统，那么跟以色列就是说关系这么好，可能说是以色列最信任最喜欢的一个美国总统了。 </p>
+<p>然后阿联酋那方面我觉得也是沙特阿拉伯，阿联酋那方面也是川普对他们国内的一些事情其实不过多的过问，对他来讲，我觉得也得到了阿联酋方面的信任，所以才能达成共识。 </p>
+<p>我觉得最重要的一点还是对川普今年的选举连任会非常有帮助。以前希拉里他们还有克林顿他们搞了基金会，他们几个基金会比较大的金主实际上都来自于中东地区。那么川普在这种作为的话，我觉得在中东地区，当然这恨他的可能就更恨了，但是喜欢的可能更喜欢，而且会还是爱好和平的多，不都是疯子，对不对？很多爱好和平领域他这么做的比较好，认为如果这样做的话，对于中东以后的和平进展会更有好处，我觉得有一些希拉里和民主党的金主可能就会考虑，我们是不是应该就是说更支持共和党和川普这边。 </p>
+<p>那么对于以色列来讲，当然以色列是我觉得现在全世界最支持川普的，最希望川普能够继续连任的两个，一个就是以色列，一个台湾蔡英文，民民进党政府也是非常希望川普能连任，然后内塔尼亚胡也是非常希望，但是台湾对美国这方面的影响远远的没有以色列那么多。美国犹太人虽然人数不是很多，好像据说就是4%不到5%的占比，但是影响力是巨大的。我觉得我相信以色列跟美国内部的很多的这些犹太组织有千丝万缕的联系。 </p>
+<p>在这种情况之下，我觉得以色列方面会认为就是说如果川普连任的话，对以色列有好处，尤其就是说比较讨厌的就是说拜登为什么这么说？以色列跟美国关系最糟糕的时候，在奥巴马时期双方关系真的走到了可以说接近冰点。 </p>
+<p>那么奥巴马时期拜登就是美国的副总统，我相信内塔尼亚胡不想再跟一个类似奥巴马那样的人去打交道。这一次拜登是奥巴马的当时的副总统，然后现在选的他的副总统瑞斯哈瑞斯就是现在号称的女版奥巴马对不对？我觉得内塔尼亚胡一一听说奥巴马的副总统再加一个女本奥巴马，我觉得那是内塔尼亚胡脑仁都疼。所以我觉得如果以色列能够发挥他们的各种的这种方方面面的影响力的话，对于川普今年的选举，我觉得还是会有很大的帮助，所以这个事情我觉得咱们说首先对中东是有巨大的帮助的，和平的和平进展有巨大帮助，这个绝对是好事。 </p>
+<p>其次对于今年川普到的竞选，我觉得那种潜移默化的影响力是巨大的。尤其由于以色列所在地又是一个就是说几个宗教都是发源地。 </p>
+<p>对于美国这边我觉得作为天主教徒，犹太教徒和基督教徒来讲，这种事情的宗教的感染力我比较强，我觉得这些人在投票的时候，他们会我经常说在投票的时候他们会聆听到上帝的声音，你懂我意思？对吧？所以我觉得其实是一个大新闻，不过但是我知道咱们中国网友对这个就觉得拿中东打打打打不打，好像跟我们没什么太大关系，我感觉离八丈远是不是？但是在美国来讲是个大新闻，我们还是要说一下好吧？今天讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/13/20200813%E7%AC%AC2731%E6%9C%9F-%E5%BD%AD%E5%8D%9A%EF%BC%9A%E4%B9%A0%E8%BF%91%E5%B9%B3%E5%90%8C%E6%84%8F%E4%B8%AD%E5%9B%BD%E9%93%B6%E8%A1%8C%E5%8D%8F%E5%8A%A9%E5%B7%9D%E6%99%AE%E5%88%B6%E8%A3%81%E6%9E%97%E9%83%91%E6%9C%88%E5%A8%A5-dTSubhfiqkk/" rel="prev" title="20200813第2731期-彭博：习近平同意中国银行协助川普制裁林郑月娥">
+      <i class="fa fa-chevron-left"></i> 20200813第2731期-彭博：习近平同意中国银行协助川普制裁林郑月娥
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/14/20200814%E7%AC%AC2733%E6%9C%9F-%E4%BC%A0%E8%A8%80%E4%B8%AD%E5%85%B1%E8%80%83%E8%99%91%E5%88%B6%E8%A3%81%E5%9C%A8%E6%BE%B3%E9%97%A8%E6%8C%81%E6%9C%89%E8%B5%8C%E5%8D%9A%E7%89%8C%E7%85%A7%E7%9A%84%E4%B8%89%E5%AE%B6%E7%BE%8E%E5%9B%BD%E5%8D%9A%E5%BD%A9%E5%85%AC%E5%8F%B8-nKmzFYEp2ww/" rel="next" title="20200814第2733期-传言中共考虑制裁在澳门持有赌博牌照的三家美国博彩公司">
+      20200814第2733期-传言中共考虑制裁在澳门持有赌博牌照的三家美国博彩公司 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1508</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/08/14/20200814%E7%AC%AC2732%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%AE%A3%E5%B8%83%EF%BC%9A%E4%BB%A5%E8%89%B2%E5%88%97%E4%B8%8E%E9%98%BF%E8%81%94%E9%85%8B%E8%BE%BE%E6%88%90%E5%92%8C%E5%B9%B3%E5%8D%8F%E8%AE%AE-ZDD9sfqtufA/";
+    this.page.identifier = "2020/08/14/20200814第2732期-川普宣布：以色列与阿联酋达成和平协议-ZDD9sfqtufA/";
+    this.page.title = "20200814第2732期-川普宣布：以色列与阿联酋达成和平协议";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
