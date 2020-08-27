@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的8月27号星期四，8月27号，今天在中国的广东深圳有一个市民因为微信的号被封了，影响他做生意，那么多次申诉无果，他最终从腾讯公司坠楼身亡，已经跳楼自杀了。那么腾讯表示他涉嫌违规，那么说被封几天之后就可以解禁，不知道他为什么这么着急，他这个微信号跟他这个生意有关系，他觉得影响了他家的生意，他可能觉得愧对于家人。然后腾讯认为这个事情与腾讯公司无关，完全是你自己的责任。  这点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币">
+<meta property="og:url" content="https://stonejidb.github.io/2020/08/27/20200827%E7%AC%AC2784%E6%9C%9F-21%E5%B2%81%E7%94%B7%E5%AD%90%E5%BE%AE%E4%BF%A1%E8%A2%AB%E5%B0%81%E5%8F%B7%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%94%E5%81%BF15%E4%B8%87%E5%85%83%E4%BA%BA%E6%B0%91%E5%B8%81---lDC39CObg/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的8月27号星期四，8月27号，今天在中国的广东深圳有一个市民因为微信的号被封了，影响他做生意，那么多次申诉无果，他最终从腾讯公司坠楼身亡，已经跳楼自杀了。那么腾讯表示他涉嫌违规，那么说被封几天之后就可以解禁，不知道他为什么这么着急，他这个微信号跟他这个生意有关系，他觉得影响了他家的生意，他可能觉得愧对于家人。然后腾讯认为这个事情与腾讯公司无关，完全是你自己的责任。  这点">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-08-27T08:08:04.000Z">
+<meta property="article:modified_time" content="2020-08-27T16:59:52.536Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/08/27/20200827%E7%AC%AC2784%E6%9C%9F-21%E5%B2%81%E7%94%B7%E5%AD%90%E5%BE%AE%E4%BF%A1%E8%A2%AB%E5%B0%81%E5%8F%B7%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%94%E5%81%BF15%E4%B8%87%E5%85%83%E4%BA%BA%E6%B0%91%E5%B8%81---lDC39CObg/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/08/27/20200827%E7%AC%AC2784%E6%9C%9F-21%E5%B2%81%E7%94%B7%E5%AD%90%E5%BE%AE%E4%BF%A1%E8%A2%AB%E5%B0%81%E5%8F%B7%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%94%E5%81%BF15%E4%B8%87%E5%85%83%E4%BA%BA%E6%B0%91%E5%B8%81---lDC39CObg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-27 17:08:04" itemprop="dateCreated datePublished" datetime="2020-08-27T17:08:04+09:00">2020-08-27</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/08/27/20200827%E7%AC%AC2784%E6%9C%9F-21%E5%B2%81%E7%94%B7%E5%AD%90%E5%BE%AE%E4%BF%A1%E8%A2%AB%E5%B0%81%E5%8F%B7%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%94%E5%81%BF15%E4%B8%87%E5%85%83%E4%BA%BA%E6%B0%91%E5%B8%81---lDC39CObg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/08/27/20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币---lDC39CObg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的8月27号星期四，8月27号，今天在中国的广东深圳有一个市民因为微信的号被封了，影响他做生意，那么多次申诉无果，他最终从腾讯公司坠楼身亡，已经跳楼自杀了。那么腾讯表示他涉嫌违规，那么说被封几天之后就可以解禁，不知道他为什么这么着急，他这个微信号跟他这个生意有关系，他觉得影响了他家的生意，他可能觉得愧对于家人。然后腾讯认为这个事情与腾讯公司无关，完全是你自己的责任。 </p>
+<p>这点来讲实际上我觉得大家也要就是说去理解腾讯，当然了我对腾讯也是很生气，我的QQ也被他们封了，我在QQ上说话都是很小心的，但是还是被封了。这也是莫名其妙，而且我们还是永久被封了，那解不开了，不知道为什么。甭怎么着。所以我对腾讯公司也是确实不打一处来，但是咱们摸着良心，我经常说咱们评论要尽量的就是说中立和客观，把自己的恩怨就是说宅开，有的时候风你还真的不是说腾讯在封你，因为好像国安他们自己就有后门，有的时候是国安就直接把你封了，从一个公司连知道都不知道。 </p>
+<a id="more"></a>
+
+<p>腾讯他们内部有一个就是说他们养着一帮就是说国安部的人在那儿，就是说设立了一个中心，由他们的直接去搞，他们有这个权限，他们根本就不会跟腾讯公司连通知都不通知，他们只要认为涉及到国家安全问题，他们直接就给你封了。腾讯想给你解封也解放不了，这个还真不是马化腾说的算的。所以就是说大家要明白这一点好吧？ </p>
+<p>那么家属就跟腾讯公司发生了争执，经过警方进行了4次调解之后，那么这个家属跟腾讯公司签下了承诺书，承诺书就是什么？就是说腾讯没有责任，但是腾讯公司出于人道主义的这种义务，赔偿了15万元的人民币，在然后家属就承诺赔偿了之后就不再追究腾讯的责任了就算了。在这种情况之下，警察就把死者他不自杀了，把他的手机就还给了家属。 </p>
+<p>在这之前警方扣着这手机，不给。不给家属。 </p>
+<p>那么当手机还给了家属之后，家属才发现死者在临死之前自拍了一段视频，在这视频里边他详细介绍了自己为什么自杀，为什么就是说跟他们就是说吵成这样都要跳楼自杀，他整个的前因后果，死者的哥哥就质疑，为什么这么重要的视频，就是说死者的遗言，警方不告知他的存在，警方就直接进行调解。等签了承诺书之后，警方他把这个还给了还回来，才能知道这个情况。 </p>
+<p>那么家属看到了这个视频之后，对腾讯公司就更加的愤怒，就觉得前面签下了所谓的赔偿的承诺书，完全是被警方和腾讯公司的欺骗了。现在把这个视频上交给了相关部门，希望腾讯的公司还要再给说法，说这样可不行，你这个解决不了，你骗了我们了，对不对？你说是他自己，但是实际上情况不是这样子。现在跟腾讯公司还在谈，所谓的给个说法，实际上也就是说我觉得再多赔点钱，因为现在人已经死了，人死不能复生，你也不能让腾讯公司把他救回来，救不回来的只能就是说从钱上的去考虑这个问题。 </p>
+<p>当然了这个事情我刚刚也说了，我个人认为腾讯公司也是很无奈，这个是真的要赔，应该是国安去陪。腾讯公司，你要他陪她人对吧？冤有头债有主，但是让国安赔的可能性不大。所以最后还是你的，腾讯的去赔，赔个15万人民币，你说对于家属来讲，根本就没有办法去弥补的那种伤痛。 </p>
+<p>这个我觉得我经常说中国是个大茶几，上面摆满了悲剧，这就是一个悲剧，而这种悲剧我觉得是体制造成的。你很难你说你怪国安，我们有人家国安说了，我们尤其是基层的国安干警，他有他的工作，我经常说中国这种基层的警员，基层的公安干警也不好做，而且他封你的账号，某种程度上他看了之后，他也觉得你说了这没问题，我也想说，但是他有工作在，他不得不这么做，所以我就觉得你很难找到错的那个人。 </p>
+<p>我经常说中国的事情，其实你让某一个人来承担这个责任是很难的，它是整个体制的问题，我们必须一起来解决体制问题不解决的话，在体制下谁来都一样，悲剧就会不断的重演，这就是个大差距。 </p>
+<p>这上面又增加了一个悲剧，我在这里还是要奉劝大家，我奉劝了很多次，在使用QQ和微信的时候一定要小心，尤其是你现在有很多你的账号资金的都让他绑定，一旦封停了之后会对你反正分成那几天的话，对你的账户各种东西进造成了非常巨大的影响，对你的生活造成很多的这种负担，可能有的负担甚至是无法承受之重，所以要异常的小心。 </p>
+<p>不当然了，我也承认这种东西，站着说话不腰疼，我天天的劝你们要小心，所以我QQ号被封了，对吧？对，也给我造成了很大的困扰。因为我有一个游戏是用QQ号，没有了之后游戏打不开，你知道吗？我QQ虽然不用了，但是我那游戏还在玩对吧？所以就很讨厌你知道吧？所以大家反正就以你此种歌作为一个前车之鉴，对不对？还想好好打游戏，是吧？别惹对吧？别惹房管。 </p>
+<p>好吧，当然了不好的没戏漂亮，这个人家21岁这么年轻，最后跳楼自杀了，对不对？咱们也是表示沉痛的挨到，然后我在最后还要跟所有的网友们要说一个人生走过来几十年不容易，你经常会遇到很多的挫挫折和困难。我在十八九岁的时候也有一段就是说很黑暗的时期，我也是就是说有各种的这种就是说想法，但是最后还是坚持要走得过来。吴总觉得人生总是会改变的。你要坚持下来，还是以前芙蓉镇里面不就说的就是说要活下去，无论如何要活下去，像牲口一样活下去，你要相信我未来总是会有希望，要珍惜自己，珍惜生命。 </p>
+<p>我不相信中国的体制永远都这样，这是不可能的，总是会改变的，奴隶制总是会结束的，封建体制也总是会结束的，这种一党独裁一党专制最终总是会结束的。我们现在不得不承认，我们每个人都应该接受这个事实就是说对于未来来讲，我觉得这种民主的共和的体制，就是说或者说一种是间接民主，实际上我是不赞成直接民主的，就是说间接民主，共和、分上议院、下议院，众议院，我觉得这种政治体制，现在历史证明将来早早晚晚都会走到这么一个方向。 </p>
+<p>中国也许20年，也许30年，也许100年1000年，但是独裁的统治肯定他已经不再是，你看我这样前两天看中国好像蒙牛要买澳大利亚的一个奶业公司，也被人家拒绝了。华为、中兴、抖音、微信都在处处碰壁。你会发现我们的政治体制已经极大的我们上层建筑已经极大的限制了我们生产力的发展。我们再想建立这种跨国的在全球范围内的那种大型的这种集团化的像三星，像索尼，像丰田这种公司的时候，我们现在已经准备好了，我们可以成立这样的公司这种规模的，但是我们的上层体制没有准备好，它在限制了我们中国企业走出国门，走出国门去征服世界。 </p>
+<p>所以在这种情况之下，我觉得实际上我认为越来越快了，我相信很多人我们有生之年都能看到那一天，所以要怀揣一个希望，珍惜生命，相信我未来一定是光明的。好吧，这就讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/08/26/20200826%E7%AC%AC2783%E6%9C%9F-%E4%B8%AD%E5%85%B1%E9%A9%BB%E6%97%A7%E9%87%91%E5%B1%B1%E6%80%BB%E9%A2%86%E9%A6%86%E4%B9%9F%E5%BC%80%E5%A7%8B%E4%B8%BA%E6%92%A4%E7%A6%BB%E5%81%9A%E5%87%86%E5%A4%87-eek53Y32Phg/" rel="prev" title="20200826第2783期-中共驻旧金山总领馆也开始为撤离做准备">
+      <i class="fa fa-chevron-left"></i> 20200826第2783期-中共驻旧金山总领馆也开始为撤离做准备
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/27/20200827%E7%AC%AC2785%E6%9C%9F-%E4%B8%AD%E5%9B%BD%E5%8F%91%E5%B0%84%E4%B8%A4%E6%9E%9A%E5%AF%BC%E5%BC%B9%E5%AF%B9%E2%80%9C%E8%B6%8A%E5%8D%97%E2%80%9D%E5%8F%91%E5%87%BA%E8%AD%A6%E5%91%8A-wgDeS06nr6U/" rel="next" title="20200827第2785期-中国发射两枚导弹对“越南”发出警告">
+      20200827第2785期-中国发射两枚导弹对“越南”发出警告 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1570</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/08/27/20200827%E7%AC%AC2784%E6%9C%9F-21%E5%B2%81%E7%94%B7%E5%AD%90%E5%BE%AE%E4%BF%A1%E8%A2%AB%E5%B0%81%E5%8F%B7%EF%BC%8C%E8%85%BE%E8%AE%AF%E8%B5%94%E5%81%BF15%E4%B8%87%E5%85%83%E4%BA%BA%E6%B0%91%E5%B8%81---lDC39CObg/";
+    this.page.identifier = "2020/08/27/20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币---lDC39CObg/";
+    this.page.title = "20200827第2784期-21岁男子微信被封号，腾讯赔偿15万元人民币";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
