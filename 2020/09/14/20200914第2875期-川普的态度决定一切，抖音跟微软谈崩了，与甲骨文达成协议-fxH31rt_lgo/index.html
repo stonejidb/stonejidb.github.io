@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的9月14号，星期一，我们都知道川普定的抖因必须要出售在美国业务的期限，最后期限就是明天9月15号的明天了。那么在期限的最后的48小时发生了很多事情，微软在昨天晚上的时候9月13号发表声明说字节跳动已经通知了微软，不会将斗音在美国的业务出售给微软，在美国幼教提个talk反正就都差不多。  然后彭博社9月13号也是昨天的报道说字节跳动与甲骨文之间的交易，包括有甲骨文在替克套口">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议">
+<meta property="og:url" content="https://stonejidb.github.io/2020/09/14/20200914%E7%AC%AC2875%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%9A%84%E6%80%81%E5%BA%A6%E5%86%B3%E5%AE%9A%E4%B8%80%E5%88%87%EF%BC%8C%E6%8A%96%E9%9F%B3%E8%B7%9F%E5%BE%AE%E8%BD%AF%E8%B0%88%E5%B4%A9%E4%BA%86%EF%BC%8C%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-fxH31rt_lgo/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的9月14号，星期一，我们都知道川普定的抖因必须要出售在美国业务的期限，最后期限就是明天9月15号的明天了。那么在期限的最后的48小时发生了很多事情，微软在昨天晚上的时候9月13号发表声明说字节跳动已经通知了微软，不会将斗音在美国的业务出售给微软，在美国幼教提个talk反正就都差不多。  然后彭博社9月13号也是昨天的报道说字节跳动与甲骨文之间的交易，包括有甲骨文在替克套口">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-14T09:07:05.000Z">
+<meta property="article:modified_time" content="2020-09-16T06:58:39.306Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/09/14/20200914%E7%AC%AC2875%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%9A%84%E6%80%81%E5%BA%A6%E5%86%B3%E5%AE%9A%E4%B8%80%E5%88%87%EF%BC%8C%E6%8A%96%E9%9F%B3%E8%B7%9F%E5%BE%AE%E8%BD%AF%E8%B0%88%E5%B4%A9%E4%BA%86%EF%BC%8C%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-fxH31rt_lgo/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/09/14/20200914%E7%AC%AC2875%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%9A%84%E6%80%81%E5%BA%A6%E5%86%B3%E5%AE%9A%E4%B8%80%E5%88%87%EF%BC%8C%E6%8A%96%E9%9F%B3%E8%B7%9F%E5%BE%AE%E8%BD%AF%E8%B0%88%E5%B4%A9%E4%BA%86%EF%BC%8C%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-fxH31rt_lgo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-14 18:07:05" itemprop="dateCreated datePublished" datetime="2020-09-14T18:07:05+09:00">2020-09-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/09/14/20200914%E7%AC%AC2875%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%9A%84%E6%80%81%E5%BA%A6%E5%86%B3%E5%AE%9A%E4%B8%80%E5%88%87%EF%BC%8C%E6%8A%96%E9%9F%B3%E8%B7%9F%E5%BE%AE%E8%BD%AF%E8%B0%88%E5%B4%A9%E4%BA%86%EF%BC%8C%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-fxH31rt_lgo/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/14/20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议-fxH31rt_lgo/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的9月14号，星期一，我们都知道川普定的抖因必须要出售在美国业务的期限，最后期限就是明天9月15号的明天了。那么在期限的最后的48小时发生了很多事情，微软在昨天晚上的时候9月13号发表声明说字节跳动已经通知了微软，不会将斗音在美国的业务出售给微软，在美国幼教提个talk反正就都差不多。 </p>
+<p>然后彭博社9月13号也是昨天的报道说字节跳动与甲骨文之间的交易，包括有甲骨文在替克套口在美国的业务这里面持股，更像是一个企业重组，而不是直接出售，也就是说它并不是要把直接套用要把在美国的抖音卖给甲骨文，而是跟他来合作，一起重新组成这么一个公司。什么意思？就是这样，就是说甲骨文作为 t k Top美国技术的一个合作伙伴，将抖音的数据存储在甲骨文的云服务器当中，这样自己的跳动就可以不直接出售抖音的情况之下来获得白宫的批准，为什么这么说？因为白宫说你必须要把在美国的 t k Top就这个抖音在美国的要出售的原因就是认为你可能会把美国的这些用户的个人信息泄露给中国政府，那么如果我斗因我们提个Top，我们把我们所有的数据都搁在一家美国公司，我们自己不掌握这些数据，都有甲骨文来掌握我们的只是运营，这样就没有安全风险了，你白宫就不能在指责我了，因为所有的数据都在甲骨文那儿的服务器里边，我们没有我们实际上不掌握数据，我们只是在运营，这样子的话就有可能绕过美国政府的监管，使得张一鸣就可以在不出售套的情况之下继续在美国就是说运营，这也是反正我们之前也说了，等于习近平那方面就是说不希望就是说张一鸣的出售 talk如果出售的话，会觉得是在美国的逼迫之下，然后中国这方面屈服了，中国政府显得中国的企业都过于软弱，这样子来讲就比较聪明的就回过去了，那么如果要是不出售，如果被美国政府就干脆你滚蛋，你别干了，整个就灰飞烟灭了，一分钱都没有了，损失又太大，所以在这种情况之下，这就是张一鸣想出来的一个应对之策，一边应对美国政府，一边应对就是说中国政府那么在这里边来讲，就是说他串朴的态度就决定了一切了，川普的态度就决定了这一切能不能成型，川普同意就行，川普不同意可能还是不行，对不对？ </p>
+<a id="more"></a>
+
+<p>彭博社报道，甲骨文跟串口的关系是非常密切了。在川普2016年上台之前，甲骨文知识川普的甲骨文几个，他们创始人或公开的或间接实际上都是知识，船舶是跟创客的关系还都不错。所以川普之前也曾经公开表示过，说是支持了甲骨文的收购，他说甲骨文的联合创始人埃利森是一个了不起的人，很牛。 </p>
+<p>实际上为什么就是说甲骨文跟川在美国大企业来讲，川普跟甲骨文的关系还不错，是因为甲骨文跟中国一点关系都没有，它完完全全不受中国共产党的影响，其他的那些企业实际上只要在中国做生意，受中国共产党影响的话，实际上都更跟民主党就会更好一点，因为民主党很明显就像台湾一样对吧？国民党明显就跟中国共产党走的更近一些，民进党跟共产党就是势不两立，美国差不多，美国就是共和党现在跟共产党走得比较远，民主党那就是对吧？就甭提了。 </p>
+<p>川普的经济顾问阿玛罗，纳瓦罗写知名中国的，他也是支持由甲骨文来收购抖音，瓦罗反对将抖音出售给微软，这都是他们之前说的，当然现在都因为现在就是说自觉跳动，不想卖给微软，想要跟 t q套口去重组，这是今天最新的消息，那么川普和纳瓦罗还没有根据最新的消息发表他们的见解，我们现在说的都是之前的之前的一些见解，但是从这里边你能看出来，就是说甲骨文跟川普和纳瓦罗关系都还不错，但是纳瓦罗说他说如就是说如果我们对比微软和甲骨文的话，我们就可以发现在美国的国家安全方面，两家公司的区别就是微软在中国有很大的业务，而甲骨文在中国和它的业务之间实际上是有一道防火墙的，是没有办法的，中国不允许它，他军中他也在中国搞不了，所以他不受中国政府的制约，所以就认为甲骨文可能更好。 </p>
+<p>所以在这种情况之下，我们就可以看到，虽然现在川普他们还没有表态，但是我们能看得出来，就是说甲骨文对川普以及川普的这些幕僚是有一定影响力的，现在这个事能不能成行，就不看张一鸣了，张一鸣已经竭尽全力了，对不对？现在能不能成型就要看甲骨文，因为甲骨文他们肯定有他们的游说的这种公司对吧？美国大企业都有这种他们会到国会会到白宫去想办法去游说去商谈，能不能成功就看甲骨文，现在等于去看甲骨文了，我认为这个事情今天甲骨文公司跟资源好动谈妥了的话，甲骨文认为这种公司的重组，这种业务的往来对甲骨文是有利的，对甲骨文的发展公司有利，对他们有利可图，对于他们来讲，他们可能是愿意促成促成这件事情，但是剩下就要看川普了，反正就很快，明天结果就会出来。 </p>
+<p>从我个人来讲，我比较倾向于我觉得川普可能就是说会同意这种重组，由甲骨文来重组字节跳动在美国的 T Top或者抖一点把文章。 </p>
+<p>为什么这么说？因为如果串口完完全全把它关了的话，对美国有损失，他串口在美国现在差不多有1亿用户，影响力也是非常的大，如果最后强行关闭的话，对于川普的冲击力也马上就要选举了，冲击力也是非常大的，对不对？而且经济效益也不好。要说继续搞下去的话，甲骨文的政权如果一拍两散了，大家对张一鸣可能损失很大，美国这边公司也有损失，甲骨文这收入就没有了，对不对？所以我觉得川普最后有可能会就是说妥协，但是真的是不好说。 </p>
+<p>咱这么说我经常都这样，有些事我会分析，比如说比如说我分析比如像班农这个是吧对不对？你说半通这个事他都能这样做的好不好，但是我分析认为它是不会监狱的，但是不代表这例子举得不好，我们举另外一个例子是吧？ </p>
+<p>那么买彩票，比如说我买了一张彩票，然后你说爱斯诺波你来分析一下，你这张彩票会不会中大奖，比如美国泡泡泡和麦克米利这些可能一中可能有时候少了能挣个几千万美元，多了可能有上亿甚至有几个亿的时候，比如说子东哥你来分析一下，你买任何彩票会不会中奖，我跟你说我认为我买了张彩票，不可能中奖，中了奖就见了鬼了，中了奖把张桌子吃了对不对？不可能中几千万上个亿，然后你就会说了，你说死弄看傻了，他缺心眼，他竟然买了张彩票，他不希望中几千万美元或几亿美元的大奖，这个我是希望的对不对？ </p>
+<p>你说谁买了张彩票不希望中个几亿美元挣个几十亿我也能接受对不对？你挣个几百亿我能我是希望的，但是你要让我分析的话，我认为我是不可能中的，你懂我意思吧？所以这个里面就这样，就是说你让我分析的话，我认为川普有可能妥协，但是你如果问我我希望什么的话，我希望川普不妥协，我希望川普直接就干掉他。 </p>
+<p>为什么？因为不是一家公司，现在摆明了就是说中国政府和张一鸣出来唱双簧，一个红脸一个白脸，一个前台一个后台，现在摆明了是这么搞。如果你在这个地方妥协了的话，那么其他的公司后面你都得妥协，后面微信还有什么大疆什么的，他都不听你的了，他都是你说一套，他想办法给你应对一套。所以在这儿就是说这是第一个处理对不对？一刀切。滚。 </p>
+<p>我如果川普真的够狠，老爷子够狠，11月大选了，我也敢这么干，也就这么横让你试试。你不是跟我逗闷子吗对不对？我要你卖你不卖对不对？你弄中国来什么搞了一个什么这个目录目录的是不是？你跟我扯没有用的对不对？我就让你死一刀砍下去，后面所有的中国公司都服了，中国政府在后面也不敢再玩这些猫腻了。 </p>
+<p>实际上现在中国政府在张一鸣背后玩猫腻，张一鸣在前面装孙子，非常的明确，但是现在就吃准了，你串口也没准11月你要大选了。我这个抖音我在美国上亿的用户，我的话你也受损失，知道吧？实际上就是这样子。 </p>
+<p>但是对于后面治理其他的公司都有问题。你这么搞完了之后，那么微信也可以说了，我也找过美国企业被我也把数据搁在美国企业的云服务一场不就完了吗对不对？你只要这个口一开，后面大家都在钻这洞，你懂不懂？就像一面墙一样，等于张艺谋在那挖了个洞，他钻进去了，腾讯一看我也从这钻，对不对？ </p>
+<p>别人大家一看到我以后我在美国我卖这个无人机，你不也是有大家要我们买的无人机不也是吗？你要什么注册一个帐号开始弄拿手机什么的对不对？我也把这个用户信息都到云服务器上，不都这么搞，大家都从这栋端你这种强就没用了，那么你要是串口够狠，我这面墙就是一面墙，我画了一条红线就是一条红线。你别在这儿给我发动你别想在这撬墙角，我觉得会更好。 </p>
+<p>但是说实话，有的时候我们的愿望都是很丰满的，但是现实他是很骨感的，你知道吧？我觉得我觉得川普可能够呛，没有办法，因为毕竟11月要大选，所以总是要面对现实，但是我觉得这样这件事情说实话，川普作为一个美国总统的话，这件事情做到这一步已经很不容易了，我都是很钦佩他。但是如果川普能够就更狠一点，就是说你不跟我玩猫腻，我就一刀剁死你，对吧？ </p>
+<p>如果能到这的话，我会更佩服，但是如果不行了的话，我也能接受，就是说最后给你个漏洞让你翻过去的，对不对？我也能接受。但是咱们最后看好不好？我还是那句话，咱们这么着到最后我给你一个结尾，就是说我预言川普会接受，如果川普不接受，9月15号就能知道川普不接受我就打脸了，但是我打脸的我很高兴这件事，我希望我打脸，好不好？这期就到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/13/20200913%E7%AC%AC2874%E6%9C%9F-%E7%BE%8E%E5%9B%BD%E9%A3%93%E9%A3%8E%E8%BF%87%E5%90%8E%E5%8F%91%E7%94%9F%E7%BD%95%E8%A7%81%E7%81%BE%E7%A5%B8%EF%BC%8C%E5%A4%A7%E9%87%8F%E7%89%9B%E7%BE%A4%E6%83%A8%E6%AD%BB-kZLGF7pm5E4/" rel="prev" title="20200913第2874期-美国飓风过后发生罕见灾祸，大量牛群惨死">
+      <i class="fa fa-chevron-left"></i> 20200913第2874期-美国飓风过后发生罕见灾祸，大量牛群惨死
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/14/20200914%E7%AC%AC2876%E6%9C%9F-%E5%AE%89%E5%80%8D%E6%99%8B%E4%B8%89%E5%A6%82%E6%84%BF%E4%BB%A5%E5%81%BF%EF%BC%8C%E8%8F%85%E4%B9%89%E4%BC%9F%E6%8E%A5%E4%BB%BB%E8%87%AA%E6%B0%91%E5%85%9A%E6%80%BB%E8%A3%81%E5%92%8C%E6%97%A5%E6%9C%AC%E9%A6%96%E7%9B%B8-C1CV1Ex0Kts/" rel="next" title="20200914第2876期-安倍晋三如愿以偿，菅义伟接任自民党总裁和日本首相">
+      20200914第2876期-安倍晋三如愿以偿，菅义伟接任自民党总裁和日本首相 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1663</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/09/14/20200914%E7%AC%AC2875%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%9A%84%E6%80%81%E5%BA%A6%E5%86%B3%E5%AE%9A%E4%B8%80%E5%88%87%EF%BC%8C%E6%8A%96%E9%9F%B3%E8%B7%9F%E5%BE%AE%E8%BD%AF%E8%B0%88%E5%B4%A9%E4%BA%86%EF%BC%8C%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E8%BE%BE%E6%88%90%E5%8D%8F%E8%AE%AE-fxH31rt_lgo/";
+    this.page.identifier = "2020/09/14/20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议-fxH31rt_lgo/";
+    this.page.title = "20200914第2875期-川普的态度决定一切，抖音跟微软谈崩了，与甲骨文达成协议";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
