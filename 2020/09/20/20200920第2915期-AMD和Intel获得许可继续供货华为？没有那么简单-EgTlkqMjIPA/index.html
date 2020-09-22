@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的9月20号星期日，有网友跟我说说有消息说美国所有处理器的有两个大厂，一个AMD，一个英特尔，说他们两个可能都获得了继续给华为供货的许可，说华为是不是没事的？  我觉得应该不是，咱们来看看，首先是美国的 AMD它的一个高级副总裁数据中心暨香肉式部门业务总经理叫forest nod，在德银技术大会上表示，说目前AMD已经获得了许可证，预计不会因为美国对华为的禁令而对AMD的业">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单">
+<meta property="og:url" content="https://stonejidb.github.io/2020/09/20/20200920%E7%AC%AC2915%E6%9C%9F-AMD%E5%92%8CIntel%E8%8E%B7%E5%BE%97%E8%AE%B8%E5%8F%AF%E7%BB%A7%E7%BB%AD%E4%BE%9B%E8%B4%A7%E5%8D%8E%E4%B8%BA%EF%BC%9F%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95-EgTlkqMjIPA/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的9月20号星期日，有网友跟我说说有消息说美国所有处理器的有两个大厂，一个AMD，一个英特尔，说他们两个可能都获得了继续给华为供货的许可，说华为是不是没事的？  我觉得应该不是，咱们来看看，首先是美国的 AMD它的一个高级副总裁数据中心暨香肉式部门业务总经理叫forest nod，在德银技术大会上表示，说目前AMD已经获得了许可证，预计不会因为美国对华为的禁令而对AMD的业">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-20T10:01:05.000Z">
+<meta property="article:modified_time" content="2020-09-22T12:17:18.432Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/09/20/20200920%E7%AC%AC2915%E6%9C%9F-AMD%E5%92%8CIntel%E8%8E%B7%E5%BE%97%E8%AE%B8%E5%8F%AF%E7%BB%A7%E7%BB%AD%E4%BE%9B%E8%B4%A7%E5%8D%8E%E4%B8%BA%EF%BC%9F%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95-EgTlkqMjIPA/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/09/20/20200920%E7%AC%AC2915%E6%9C%9F-AMD%E5%92%8CIntel%E8%8E%B7%E5%BE%97%E8%AE%B8%E5%8F%AF%E7%BB%A7%E7%BB%AD%E4%BE%9B%E8%B4%A7%E5%8D%8E%E4%B8%BA%EF%BC%9F%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95-EgTlkqMjIPA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-20 19:01:05" itemprop="dateCreated datePublished" datetime="2020-09-20T19:01:05+09:00">2020-09-20</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/09/20/20200920%E7%AC%AC2915%E6%9C%9F-AMD%E5%92%8CIntel%E8%8E%B7%E5%BE%97%E8%AE%B8%E5%8F%AF%E7%BB%A7%E7%BB%AD%E4%BE%9B%E8%B4%A7%E5%8D%8E%E4%B8%BA%EF%BC%9F%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95-EgTlkqMjIPA/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/20/20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单-EgTlkqMjIPA/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的9月20号星期日，有网友跟我说说有消息说美国所有处理器的有两个大厂，一个AMD，一个英特尔，说他们两个可能都获得了继续给华为供货的许可，说华为是不是没事的？ </p>
+<p>我觉得应该不是，咱们来看看，首先是美国的 AMD它的一个高级副总裁数据中心暨香肉式部门业务总经理叫forest nod，在德银技术大会上表示，说目前AMD已经获得了许可证，预计不会因为美国对华为的禁令而对AMD的业务产生重大影响，那意思就是说我们还可以给华为供货，但是这个其实是有所怀疑的，为什么这么说？因为就是说当然了反正就根据他这么一说，媒体揣测认为是AMD获得了给华为供货的许可，然后就紧接着就有消息说，说英特也获得了美国政府的许可令，也可以正常给华为供货。 </p>
+<a id="more"></a>
+
+<p>首先来讲到底有没有获得给华为供货的许可证，现在说不好，因为他的 forest他说的什么，他说他并没有透露这个许可证是到底什么时候获得的。 </p>
+<p>去年5月份的时候，美国针对华为的第一轮制裁之后，美国英特尔AMD都获得过对华为出口的许可证，得得以继续向华为供货。但是到了今年8月份的第三轮鉴定之后，之前的许可证实际上是面临失效的，所以美光在9月15号开始了就停止了像华为的供货，所以目前现在没有办法确认弗瑞斯说的许可令到底是什么时候的，因为他如果只是说今年的话，因为今年华为大量的买货，全部买进来之后，囤货之后，实际上把今年一年已经买完了，所以可能对今年没有影响，明年会不会有影响？ </p>
+<p>不好说。所以他说的说的不是的，很清楚和明白。另外一个处理器，他们两家的处理器都是给华为的笔记本电脑用的，好吧，对于手机来讲当然有一定的帮助，但帮助不大。另外一点就是说如果光有处理器的话，笔记本电脑还是造不了，因为还剩下显示屏、内存、硬盘等等这些核心的部件。目前三星、LG等显示面板厂商没有得到许可，美光、SK、海力士这些纯属的这些芯片厂商也没有让他们图像传感器的厂商索尼什么的也都是都在断供，所以当你这些东西都没有什么显示器，内存的硬盘的摄像头这些都没有的时候，你还是造不出一台笔记本来，你光有芯片是没有用的。 </p>
+<p>所以这就是我觉得是一个现实问题。还有一点就是说如果你想就是说手机上的话，你必须要台积电和高通对你的帮助，如果台积电和高高通还是被禁的话，华为的手机业务还是开展不起来。所以首先我就对AMD和英特尔获得许可，继续给华为供货，这一个消息我就有质疑，因为这个消息其实现在是没有一个准确的消息，只是从他的一一一句话里边大家揣测。其次即使有他们两个供货的话，也是远远的就是说于事无补。所以我觉得这个事我们还是在观察。 </p>
+<p>好吧，直接讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/19/20200919%E7%AC%AC2914%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%BF%E8%AF%BA%E5%9C%A8%E4%B8%8B%E5%91%A8%E6%8F%90%E5%90%8D%E4%B8%80%E4%BD%8D%E5%A5%B3%E6%80%A7%E5%80%99%E9%80%89%E4%BA%BA%E5%8F%96%E4%BB%A3%E9%87%91%E6%96%AF%E4%BC%AF%E6%A0%BC%E5%A4%A7%E6%B3%95%E5%AE%98%EF%BC%8C%E7%BB%9D%E5%AF%B9%E4%B8%8D%E4%BC%9A%E6%88%90%E5%8A%9F%EF%BC%8C%E7%AB%8B%E6%AD%A4%E4%B8%BA%E8%AF%81-ogngAQIskoE/" rel="prev" title="20200919第2914期-川普承诺在下周提名一位女性候选人取代金斯伯格大法官，绝对不会成功，立此为证">
+      <i class="fa fa-chevron-left"></i> 20200919第2914期-川普承诺在下周提名一位女性候选人取代金斯伯格大法官，绝对不会成功，立此为证
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/20/20200920%E7%AC%AC2917%E6%9C%9F-%E7%BE%8E%E5%AA%92%E7%88%86%E6%96%99%EF%BC%9A4%E5%90%8DCIA%E7%89%B9%E5%B7%A5%E5%9C%A8%E5%AF%B9%E4%B8%AD%E5%85%B1%E7%A7%98%E5%AF%86%E8%A1%8C%E5%8A%A8%E4%B8%AD%E4%B8%A7%E7%94%9F-Mfkra4VE3MQ/" rel="next" title="20200920第2917期-美媒爆料：4名CIA特工在对中共秘密行动中丧生">
+      20200920第2917期-美媒爆料：4名CIA特工在对中共秘密行动中丧生 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1692</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/09/20/20200920%E7%AC%AC2915%E6%9C%9F-AMD%E5%92%8CIntel%E8%8E%B7%E5%BE%97%E8%AE%B8%E5%8F%AF%E7%BB%A7%E7%BB%AD%E4%BE%9B%E8%B4%A7%E5%8D%8E%E4%B8%BA%EF%BC%9F%E6%B2%A1%E6%9C%89%E9%82%A3%E4%B9%88%E7%AE%80%E5%8D%95-EgTlkqMjIPA/";
+    this.page.identifier = "2020/09/20/20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单-EgTlkqMjIPA/";
+    this.page.title = "20200920第2915期-AMD和Intel获得许可继续供货华为？没有那么简单";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>

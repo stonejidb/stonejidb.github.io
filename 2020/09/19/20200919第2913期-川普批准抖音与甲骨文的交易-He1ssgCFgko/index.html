@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的9月19号星期六，川普基本上就是说批准了甲骨文和抖音的交易，他是9月19号就是今天的晚上，他说他从概念上反正但基本上就是批准了他们的概念上批准了甲骨文和沃尔玛，还有与斗音之间的交易，等于他们最后他们三家一起搞的，那么就允许斗音继续在美国经营。川普说这笔交易已经得到了我的祝福，如果他们能完成交易很好，如果他们完不成也没关系。  他说我在概念上已经同意了这笔交易。有记者就问他">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200919第2913期-川普批准抖音与甲骨文的交易">
+<meta property="og:url" content="https://stonejidb.github.io/2020/09/19/20200919%E7%AC%AC2913%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%B9%E5%87%86%E6%8A%96%E9%9F%B3%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%9A%84%E4%BA%A4%E6%98%93-He1ssgCFgko/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的9月19号星期六，川普基本上就是说批准了甲骨文和抖音的交易，他是9月19号就是今天的晚上，他说他从概念上反正但基本上就是批准了他们的概念上批准了甲骨文和沃尔玛，还有与斗音之间的交易，等于他们最后他们三家一起搞的，那么就允许斗音继续在美国经营。川普说这笔交易已经得到了我的祝福，如果他们能完成交易很好，如果他们完不成也没关系。  他说我在概念上已经同意了这笔交易。有记者就问他">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-19T10:01:03.000Z">
+<meta property="article:modified_time" content="2020-09-22T12:17:18.426Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/09/19/20200919%E7%AC%AC2913%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%B9%E5%87%86%E6%8A%96%E9%9F%B3%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%9A%84%E4%BA%A4%E6%98%93-He1ssgCFgko/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200919第2913期-川普批准抖音与甲骨文的交易 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/09/19/20200919%E7%AC%AC2913%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%B9%E5%87%86%E6%8A%96%E9%9F%B3%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%9A%84%E4%BA%A4%E6%98%93-He1ssgCFgko/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200919第2913期-川普批准抖音与甲骨文的交易
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-19 19:01:03" itemprop="dateCreated datePublished" datetime="2020-09-19T19:01:03+09:00">2020-09-19</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/09/19/20200919%E7%AC%AC2913%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%B9%E5%87%86%E6%8A%96%E9%9F%B3%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%9A%84%E4%BA%A4%E6%98%93-He1ssgCFgko/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/19/20200919第2913期-川普批准抖音与甲骨文的交易-He1ssgCFgko/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的9月19号星期六，川普基本上就是说批准了甲骨文和抖音的交易，他是9月19号就是今天的晚上，他说他从概念上反正但基本上就是批准了他们的概念上批准了甲骨文和沃尔玛，还有与斗音之间的交易，等于他们最后他们三家一起搞的，那么就允许斗音继续在美国经营。川普说这笔交易已经得到了我的祝福，如果他们能完成交易很好，如果他们完不成也没关系。 </p>
+<p>他说我在概念上已经同意了这笔交易。有记者就问他问到他说字节跳动是否会在新的 t k套客公司持少数股份的时候，川普说他们很快会通报这项协议的全部情况，但是tk Top将完全由甲骨文和沃尔玛来控制，沃尔玛和甲骨文掌握掌控的一切。他的说法跟t个套口的声明其实是不一样的，说明这里边我当然了我有我的理解，咱先说踢套的说声明说说沃尔玛和甲骨文在新成立的tick talk，global的股份最多只有20%依然是持有少数股份，他们要把它更名叫tk Top和global。 </p>
+<a id="more"></a>
+
+<p>协议内容是什么？是把替个套口的总部迁到了美国，给予甲骨文监督 t个套就抖音在每业务的全部签的权利就由他来监督，所以川普说的就是说说沃尔玛和甲骨文掌握一切，就是说他们来监督来管理，就是说但是他们不持有的多数股份，按理说应该谁持有多数股份，谁来监督和管理。但是他们的协议内容就是说，虽然甲骨文和沃尔玛加在一起，只能到持有的20%的股份，但是由他们监督和管理，为了达到一个安全的一个要求，那么自觉跳动将保留对t可靠的多数的股权，然后更名为 talk global全球，全球抖音或抖音全球 globe我读的是什么？ </p>
+<p>客户信号。我也是看心情，你叫什么格罗伯，我做什么格logo，格罗勃号阁楼，甲骨文和沃尔玛将占有T Top上市前最高20%的股份，替克特尔发布的声明说，说沃尔玛也将参与这一交易在美国新增的2.5万个工作岗位，这就是基本上就全部这么一个情况了，好吧？ </p>
+<p>7个talk还将联合多家公司投资，建立总额为50亿美元的教育基金会，这是什么意思？就是说川普又说了，说你们要把交易搞成的话，美国政府要得到好处，最后说如果强行要好处不合法，那也得有点好处，这雁过拔毛。 </p>
+<p>最后提个报告就承诺跟多家公司一起一起投资，建立总额为50亿美元的教育基金会，然后通过技术在线视频提升美国和全球教育水平，就是把这话说的很委婉，就是说我们一起拿，但是实际上7个套套，抖音拿大头主要由他拿，然后说事要提升美国和全球教育水平，但是主要的是要提升的美国的教育水平，其实就是给美国政府交了这个叫什么？保护费差不多，就这么个意思，只不过就是说的好听一点，基本上就这么个情况，说实话我是很遗憾，其实那天当提到这个事的时候，我说其实我也明白，最终恐怕串口就是说必须得妥协。 </p>
+<p>当时也说了全美国一共3亿多人，不到4亿人提个talk，抖音在美国有差不多超过1亿的用户，那么在大选之前，就是说一刀把7个talk，把抖音砍翻在地的话，对川普的选举也会有巨大的冲击和影响，我相信川普也是没有办法，我希望他能够勇敢一点，然后一刀砍下去，但是我当时我就说我说我预言他不会，我预言他会妥协，我说我希望我打脸，但是时间证明很难打脸就打不了脸，你知道我是真的，我非常这个真的，其实我的预言很多的预言我都非常向往他，去年8月份我预言习近平会要结束一国两制，我非常希望能够打脸，这一次也是我希望川普能够让我打脸，那么一刀将 Top砍翻在地，但他就是这么怂。 </p>
+<p>不过从此你能看出来川普它毕竟就是一个商人，对吧？我记得我好像跟袁红彬老师我们聊天的时候，就我说中国人的事情还得是我们中国人自己解决，对吧？你想指着美国来帮我们解决，这是不现实的，想指着川普来帮我们解决就不现实，你不可能总幻想着美国来了一位就是说一个领袖，一个圣人或者一个什么救世主，然后带领着美国帮我们中国人把问题解决了，这不现实，这不可能。他想的肯定还是美国优先，这个来讲最后对美国帮助很大，50亿，帮助美国发展教育等于教育基金等于其实就是帮政府在发展教育，对不对？拿出50亿来搞了等于交了保护费，然后又帮美国政府增加了2.5万个就业岗位，而且据说就业岗位还都是高收入的，高收入的就业岗位不是一般的就业岗位，对吧？ </p>
+<p>而且又把总部收到这边来，这一系列的这种投资对就业的帮助，对于整个美国的教育、就业、基建都会有很多的帮助，对于川普来讲就是说可以接受，然后完完全全的接受的甲骨文和沃尔玛的监督和管理，在安全上也达到了这个要求。反正你说他妥协你怎么办？对不对？我们当然希望他能够再坚持一下，但是也不现实对吧？也是不现实，其实我那天我说的时候就说不太现实，基本上我也想到了又没能打脸又被我说中了，我也是很遗憾进行到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/19/20200919%E7%AC%AC2912%E6%9C%9F-%E5%B7%9D%E6%99%AE%E4%B8%8D%E4%BC%9A%E5%9C%A8%E6%80%BB%E7%BB%9F%E5%A4%A7%E9%80%89%E5%89%8D%E6%8F%90%E5%90%8D%E6%96%B0%E7%9A%84%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%A4%A7%E6%B3%95%E5%AE%98-RLLtiAHeeMs/" rel="prev" title="20200919第2912期-川普不会在总统大选前提名新的最高法院大法官">
+      <i class="fa fa-chevron-left"></i> 20200919第2912期-川普不会在总统大选前提名新的最高法院大法官
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/19/20200919%E7%AC%AC2914%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%BF%E8%AF%BA%E5%9C%A8%E4%B8%8B%E5%91%A8%E6%8F%90%E5%90%8D%E4%B8%80%E4%BD%8D%E5%A5%B3%E6%80%A7%E5%80%99%E9%80%89%E4%BA%BA%E5%8F%96%E4%BB%A3%E9%87%91%E6%96%AF%E4%BC%AF%E6%A0%BC%E5%A4%A7%E6%B3%95%E5%AE%98%EF%BC%8C%E7%BB%9D%E5%AF%B9%E4%B8%8D%E4%BC%9A%E6%88%90%E5%8A%9F%EF%BC%8C%E7%AB%8B%E6%AD%A4%E4%B8%BA%E8%AF%81-ogngAQIskoE/" rel="next" title="20200919第2914期-川普承诺在下周提名一位女性候选人取代金斯伯格大法官，绝对不会成功，立此为证">
+      20200919第2914期-川普承诺在下周提名一位女性候选人取代金斯伯格大法官，绝对不会成功，立此为证 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1692</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/09/19/20200919%E7%AC%AC2913%E6%9C%9F-%E5%B7%9D%E6%99%AE%E6%89%B9%E5%87%86%E6%8A%96%E9%9F%B3%E4%B8%8E%E7%94%B2%E9%AA%A8%E6%96%87%E7%9A%84%E4%BA%A4%E6%98%93-He1ssgCFgko/";
+    this.page.identifier = "2020/09/19/20200919第2913期-川普批准抖音与甲骨文的交易-He1ssgCFgko/";
+    this.page.title = "20200919第2913期-川普批准抖音与甲骨文的交易";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
