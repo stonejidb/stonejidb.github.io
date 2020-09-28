@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的9月27号星期日，腾讯像美国的商务部提出了一些整改微信的一些新的方案，是这样，美国司法部25日向法院提交了一些内部文件，其中一份是美国商务部部长9月17号签署的一份报告。  报告指出说腾讯公司向美国政府提出了几项建议，都包括什么是这样，比如说建立美国版本的微信，之前有人就跟我说说你不懂，我跟你说抖音和微信不一样，你不能说他们两个要一起解决，知道吗？说中国的抖音和美国的版本">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20200927第2950期-腾讯向美国商务部提出整改微信的新方案">
+<meta property="og:url" content="https://stonejidb.github.io/2020/09/27/20200927%E7%AC%AC2950%E6%9C%9F-%E8%85%BE%E8%AE%AF%E5%90%91%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E6%8F%90%E5%87%BA%E6%95%B4%E6%94%B9%E5%BE%AE%E4%BF%A1%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-9UWxaK4urBE/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的9月27号星期日，腾讯像美国的商务部提出了一些整改微信的一些新的方案，是这样，美国司法部25日向法院提交了一些内部文件，其中一份是美国商务部部长9月17号签署的一份报告。  报告指出说腾讯公司向美国政府提出了几项建议，都包括什么是这样，比如说建立美国版本的微信，之前有人就跟我说说你不懂，我跟你说抖音和微信不一样，你不能说他们两个要一起解决，知道吗？说中国的抖音和美国的版本">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-27T10:05:00.000Z">
+<meta property="article:modified_time" content="2020-09-28T05:40:44.562Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/09/27/20200927%E7%AC%AC2950%E6%9C%9F-%E8%85%BE%E8%AE%AF%E5%90%91%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E6%8F%90%E5%87%BA%E6%95%B4%E6%94%B9%E5%BE%AE%E4%BF%A1%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-9UWxaK4urBE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20200927第2950期-腾讯向美国商务部提出整改微信的新方案 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/09/27/20200927%E7%AC%AC2950%E6%9C%9F-%E8%85%BE%E8%AE%AF%E5%90%91%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E6%8F%90%E5%87%BA%E6%95%B4%E6%94%B9%E5%BE%AE%E4%BF%A1%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-9UWxaK4urBE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20200927第2950期-腾讯向美国商务部提出整改微信的新方案
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-27 19:05:00" itemprop="dateCreated datePublished" datetime="2020-09-27T19:05:00+09:00">2020-09-27</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/09/27/20200927%E7%AC%AC2950%E6%9C%9F-%E8%85%BE%E8%AE%AF%E5%90%91%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E6%8F%90%E5%87%BA%E6%95%B4%E6%94%B9%E5%BE%AE%E4%BF%A1%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-9UWxaK4urBE/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/09/27/20200927第2950期-腾讯向美国商务部提出整改微信的新方案-9UWxaK4urBE/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的9月27号星期日，腾讯像美国的商务部提出了一些整改微信的一些新的方案，是这样，美国司法部25日向法院提交了一些内部文件，其中一份是美国商务部部长9月17号签署的一份报告。 </p>
+<p>报告指出说腾讯公司向美国政府提出了几项建议，都包括什么是这样，比如说建立美国版本的微信，之前有人就跟我说说你不懂，我跟你说抖音和微信不一样，你不能说他们两个要一起解决，知道吗？说中国的抖音和美国的版本的抖音是完全分开的，腾讯它微信没有分开，所以你不懂，我们就懒得回答这种问题，你知道吧？就自打串谱要进微信和抖音，很多人就说你技术上达不到，你做不到的你根本进不了。 </p>
+<a id="more"></a>
+
+<p>这个东西是这样子，就是说你在思考那个问题，你在想那个问题是什么？是那些大学毕业生或者刚刚的研究生毕业的，或者刚刚博士生毕业的那些码农们应该想的问题，你懂我意思吗？就是说我探讨的是我跟串通我们这个级别我们在探讨的问题，我们不管你在技术上怎么达到，你懂我意思吧？就是我美国我要进微信或者我进抖音，技术上怎么达到，是你们那些马龙是你们干活人去想的，在技术上你怎么做到，我们作为政策的这种执行者，我只是告诉你我们要做什么，具体去做的工作你自己去做。 </p>
+<p>至于你说我说这有一抖劲挖了个洞钻过去了，微信也要钻这洞，然后你说微信转不了微信，我告诉你，那个不是我们要思考的，是微信自己去思考的，微信花钱雇了那么一一一帮研究生一帮博士生，他们是干什么？就他们去干这个懂了吧？ </p>
+<p>你看没有微信现在马上就提出版本，就跟我说的是一样的，它要在美国建立一个美国版本的微信，他们管的叫美国版本叫什么 v或者v反正就是说美国抖音在美国版本不要踢个套卡，反正名字不一样，但意思都差不多。我建立一个每个版本的，当然你又说了他达不到，技术达不到，你是傻子吗？对不对？你达不到不是微信他的技术人员去做，他技术人员会做到的，那人比你聪明，你不用去他操那种就是说替古人操心，你知道吗？操那种操不着的心他会达到的好不好？ </p>
+<p>所以微信就说了也是就是说我干脆我也跟抖音一样，我建立一个美国版本的，然后还有说我设定了一个特定的安全措施来保护美国版的微信的原始码，而且我与美国的云端供应商合作来储存用户的数据。所谓的美国云南客户说不就跟斗，因为甲骨文签就把数据都搁甲骨文那是吧？不就这意思，把我找一个类似甲骨文这样的一个公司，我来存储把数据都在这。 </p>
+<p>我当时跟你说什么，我说只要抖音钻了这个洞，微信马上我也往外钻，他蹿我就往外钻，就你看这跟我说有什么区别呢？对不对？我不知道为什么有人骗，我觉得送不到，微信能做到，你放心好了好不好？这没有什么不就这样子了，其实就这意思。 </p>
+<p>然后还有他说以及透过一间以美国为基地的实体来管理美国版的微信，实际上就跟抖音的抖音不就跟沃尔玛跟甲骨文不也是这样就是说设立一个美国版本的抖音，然后设定的特定的安全措施，保护美国版抖音的原始码，然后与美国的云端服务上的甲骨文来存储到用户数据，然后再透过甲骨文的来管理美国版的抖音，微信一点没改，所有的把抖音换成微信复制黏贴直接拿过来就交给了美国。 </p>
+<p>上火锅我就跟你说，我就这帮孙子我拿眼一夹，我就知道他们要干什么，就抖音只要这洞一钻过去，微信马上就来，她可灵了你知道吗？就也要在那动。 </p>
+<p>他说而且在美国形成实体，会用美国政府认可的管理体系和结构，这就是微信它的腾讯公司像美国商务部提出来的，商务部的回复是这样，商务部回复认为这些建议仍允许腾讯持有微信的所有权，因此不会消除商务部对腾讯的疑虑。所以就是说如果他最后报告的结果就是说，如果腾讯不能完全剥离，对微信的所有权就没有办法来创造信任的基础。非常重要。 </p>
+<p>为什么我要说这个就是说这在这儿就是说抖阴线到底转没转过去，我们还不知道，还得还要探讨。 </p>
+<p>之前我们说的就是说川普有一个抖音的版本，都音自己有一个版本，就这两个版本是合不上的。现在中国那方面习近平同志已经非常明确的就说了，就是说抖音提供了这版本，我勉强我能接受，你串土提着这版本我接受不了，现在就到了腾讯的微信了。微信现在也这样，微信提供的版本实际上跟抖音的版本几乎是一样的，几乎就是黏贴复制过来了，把这个名字一换就来了，现在就要看商务部，如果商务部对抖音的版本能接受的话，那么微信这版本实际上也能接受，因为反正就这动了，大家一起钻，对不对？ </p>
+<p>现在如果商务部说你腾讯这版本解决不了的话，那么腾讯就不干了，为什么斗安排一个洞懂移动端我不能钻，对不对？你不等于就是说你创作你跟甲骨文好吧，因为他跟甲骨文谈的，我们跟别人谈就不行，对吧？所以通过这个能看出来，也就是说从川普来讲，从美国的商务部来讲，对抖音端这个洞其实也是不满意的，也是不接受的。 </p>
+<p>这样子看起来不光是微信危险，如果商务部这种表态的话，我觉得连抖音实际上也危险，也就是说这动不行。他现在也意识到了这个问题，几个星期之前你斯诺哥跟你说的这个问题就是说你只要这个洞让抖音钻过去了，微信马上就来算，你看这微信多快，马上他也来算这东，你后面大疆怎么办？肯定也钻这洞大江也来了，也是这就40年前过来特别简单，说大江公司向美国政府提出数项建议，包括建立美国版本的大疆，设立特定的安全措施，保护美国版大疆的原始码，与美国云端供应商合作存储的用户数据，以及透过一间美国为基地的实体来管理美国版的大疆，而且实体会用美国政府认可的管理体系结构，把你这句话粘贴复制过来，所有的微信换大疆就结束了，对不对？所以我就说就这个洞还是这句话，就是你串铺和美国商务部要想好了，这个洞开不开，你资料开后面一个一个来，对不对？ </p>
+<p>所以我说这种东西对于别人来讲是新闻，对于我们来讲都是旧闻，我两个星期前三个星期前我就想到了，肯定是这个结果，但是现在看来美国商务部对于让他们一个钻洞其实是不满意的。所以我推测抖音微信大疆估计都要够呛，就是这么一个情况。好吧，这些讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/27/20200927%E7%AC%AC2949%E6%9C%9F-%E7%BE%8E%E5%A4%9A%E5%90%8D%E5%8F%82%E8%AE%AE%E5%91%98%E8%81%94%E5%90%8D%E4%BF%A1%E6%8A%B5%E5%88%B6%E3%80%8A%E4%B8%89%E4%BD%93%E3%80%8B%E4%BD%9C%E8%80%85%E5%88%98%E6%85%88%E6%AC%A3--eE_i0OcEFk/" rel="prev" title="20200927第2949期-美多名参议员联名信抵制《三体》作者刘慈欣">
+      <i class="fa fa-chevron-left"></i> 20200927第2949期-美多名参议员联名信抵制《三体》作者刘慈欣
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/09/28/202009243%E7%AC%AC2939%E6%9C%9F-%E6%99%AE%E4%BA%AC%E5%A2%9E%E5%85%B5%E4%B8%AD%E4%BF%84%E8%BE%B9%E5%A2%83%EF%BC%8C%E4%B8%BA%E4%B8%AD%E5%8D%B0%E5%BC%80%E6%88%98%E5%81%9A%E5%87%86%E5%A4%87-wrWaa-ykTi8/" rel="next" title="202009243第2939期-普京增兵中俄边境，为中印开战做准备-wrWaa-ykTi8">
+      202009243第2939期-普京增兵中俄边境，为中印开战做准备-wrWaa-ykTi8 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1726</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/09/27/20200927%E7%AC%AC2950%E6%9C%9F-%E8%85%BE%E8%AE%AF%E5%90%91%E7%BE%8E%E5%9B%BD%E5%95%86%E5%8A%A1%E9%83%A8%E6%8F%90%E5%87%BA%E6%95%B4%E6%94%B9%E5%BE%AE%E4%BF%A1%E7%9A%84%E6%96%B0%E6%96%B9%E6%A1%88-9UWxaK4urBE/";
+    this.page.identifier = "2020/09/27/20200927第2950期-腾讯向美国商务部提出整改微信的新方案-9UWxaK4urBE/";
+    this.page.title = "20200927第2950期-腾讯向美国商务部提出整改微信的新方案";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
