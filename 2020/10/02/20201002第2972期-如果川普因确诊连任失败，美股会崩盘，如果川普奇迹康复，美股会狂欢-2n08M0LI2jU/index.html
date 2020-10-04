@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的10月2号星期五，有网友就跟我说说能不能分析一下，就是说川普的确诊，那么后面有没有可能对股市什么的，还有美国的房市造成一定的影响？我其实昨天的时候我已经说了，川普这一次得病之后，其实最主要的还要看他的自己的身体，还有就是新冠这个病毒是一个非常怪的病毒，你很难说我当时就举李文亮，李文亮那么年轻对吧？刚开始进的 ICU，后来没事出来了，出来之后第二次再进去就死在里边了。所以这">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢">
+<meta property="og:url" content="https://stonejidb.github.io/2020/10/02/20201002%E7%AC%AC2972%E6%9C%9F-%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%9B%A0%E7%A1%AE%E8%AF%8A%E8%BF%9E%E4%BB%BB%E5%A4%B1%E8%B4%A5%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E5%B4%A9%E7%9B%98%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%A5%87%E8%BF%B9%E5%BA%B7%E5%A4%8D%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E7%8B%82%E6%AC%A2-2n08M0LI2jU/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的10月2号星期五，有网友就跟我说说能不能分析一下，就是说川普的确诊，那么后面有没有可能对股市什么的，还有美国的房市造成一定的影响？我其实昨天的时候我已经说了，川普这一次得病之后，其实最主要的还要看他的自己的身体，还有就是新冠这个病毒是一个非常怪的病毒，你很难说我当时就举李文亮，李文亮那么年轻对吧？刚开始进的 ICU，后来没事出来了，出来之后第二次再进去就死在里边了。所以这">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-02T10:07:02.000Z">
+<meta property="article:modified_time" content="2020-10-04T04:23:24.645Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/10/02/20201002%E7%AC%AC2972%E6%9C%9F-%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%9B%A0%E7%A1%AE%E8%AF%8A%E8%BF%9E%E4%BB%BB%E5%A4%B1%E8%B4%A5%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E5%B4%A9%E7%9B%98%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%A5%87%E8%BF%B9%E5%BA%B7%E5%A4%8D%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E7%8B%82%E6%AC%A2-2n08M0LI2jU/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/10/02/20201002%E7%AC%AC2972%E6%9C%9F-%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%9B%A0%E7%A1%AE%E8%AF%8A%E8%BF%9E%E4%BB%BB%E5%A4%B1%E8%B4%A5%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E5%B4%A9%E7%9B%98%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%A5%87%E8%BF%B9%E5%BA%B7%E5%A4%8D%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E7%8B%82%E6%AC%A2-2n08M0LI2jU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-02 19:07:02" itemprop="dateCreated datePublished" datetime="2020-10-02T19:07:02+09:00">2020-10-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/10/02/20201002%E7%AC%AC2972%E6%9C%9F-%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%9B%A0%E7%A1%AE%E8%AF%8A%E8%BF%9E%E4%BB%BB%E5%A4%B1%E8%B4%A5%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E5%B4%A9%E7%9B%98%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%A5%87%E8%BF%B9%E5%BA%B7%E5%A4%8D%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E7%8B%82%E6%AC%A2-2n08M0LI2jU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/02/20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢-2n08M0LI2jU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的10月2号星期五，有网友就跟我说说能不能分析一下，就是说川普的确诊，那么后面有没有可能对股市什么的，还有美国的房市造成一定的影响？我其实昨天的时候我已经说了，川普这一次得病之后，其实最主要的还要看他的自己的身体，还有就是新冠这个病毒是一个非常怪的病毒，你很难说我当时就举李文亮，李文亮那么年轻对吧？刚开始进的 ICU，后来没事出来了，出来之后第二次再进去就死在里边了。所以这个病是一个不断的反复不断的它在一个变化的病。 </p>
+<p>那么最后川普最后对股市，其实大家关心的还是股市，股市要不房是因为有人就听我的，也准备要买房子，就是说又有点串补，要是确诊的话这房子还买吗？股票现在是不是该卖了？反正就这么一个观点。 </p>
+<a id="more"></a>
+
+<p>我只能跟你这么说，你听我说。川普现在确诊了，如果由于他确诊导致他后来进了ICU了，最后选举拜登这段时间没事对吧？一个进ICU一个没事，很有可能他可能就够呛了，而且以篡补这个年纪来讲，甚至有可能对吧？有一些就是说是有风险的，咱们不说太严重吧，但是具有风险的对吧？如果由于确诊之后导致他最后连任失败的话，我跟你说美股就会崩盘，如果出现这种结果的话，咱们就分析，那么你现在就应该卖股票，还有另外一种结果，串口没事，奇迹般的康复了，而且胖王子归来连瘦都没瘦，看吃得更胖了，你看得病了多吃点好的更胖了更壮了，来了之后可能就是一个王子归来，国王归来对不对？整个美股就是狂欢，哗一下就好还不低于，对不对？ </p>
+<p>小萧的来一波高潮，我估计怎么也得往上涨个二三百点三四百点四五百点都有可能。据说就是说今天美股已经跌了，就是说500点往下往下跌了，由于川普确实已经跌了500点，我告诉你如果川普连任失败，美股就彻底崩盘。我一点不跟你开玩笑，民主党是不会搞政治的，民主党只会花钱花钱，他们不会挣钱。奥巴马时期你就看到了奥巴马上来的时候是多少，欠多少钱，我马下意识欠多少钱，整个欠债翻了一倍，而且奥巴马凯尔根本就是难以为继，民主党现在搞的就是表面上看着好给你发钱往外撒钱，但是根本就难以的民主党上来，如果再像如果拜登在像奥巴马那样搞下去的话，美国最后就是一个大号的底特律，整个破产华尔街那帮人是非常少，为什么没昨天串补一确诊，今天华尔街股市跌500点，就在这儿了，华尔街那帮人是非常聪明的。 </p>
+<p>你看在3月份的时候，当我跟你说美国疫情已经触底了，要开始反弹了的时候，当普罗大众还在不可，华尔街在干什么？华尔街在筑底，华尔街在大量的在吸纳股票，从3月27号整个华尔街那一发不可收获，我靠整个 v字反弹，一个大火箭腾就上来了。 </p>
+<p>你那帮人聪明到什么程度，对不对？不是一般老百姓能够理解的。所以我告诉你，川普如果连任了，华尔街的人是非常清楚的，尤其是拜登现在这种政这种政策对经济的打击是非常巨大，而目前的美国经济从本质上来说，也根本就不支撑美国的实体经济，实际上我说了好多次了，就这次股票哗涨得真的太快了，这种涨完完全全是基于一个就是说华尔街也好，美国的老百姓也好，对川普搞经济的一种信任。这种东西美国目前的股市实际上与自己的实体经济的发展其实不是特别的相符，实体经济受到了很大的冲击。 </p>
+<p>本来股市就有一点点虚高了，目前如果川普不能连任，不是跌500点的问题，我跟你说如果川普这一次由于确诊导致连任失败的话，股市最起码去1/4 25%，就从现在开始这500点都算白饶你了，再往下跌25%，直接下1/4下1/3。 </p>
+<p>如果出现那种情况，那说什么现在赶快卖对不对？ </p>
+<p>但是普京俄罗斯总统普京今天有记者就采访普京问普京说川普确诊了，你有什么观点和看法？普京说他认为以川普顽强的生命力，他会战胜病毒的。说实话我也是这么觉得，我也觉得川普应该没有问题。如果说川普要是归来的话，你现在应该干什么？现在就应该拿着你的股票不要撒手，或者现在跌了500点，如果那会你看有机会搞不好还能再买一点，对不对？等着串府王者归来，哗跟着再来一波。 </p>
+<p>两边的我都说完了，但是我经常说我做视频绝对不跟别人一样，就是说我说怎么着，然后大家你们有什么想想法，然后把你们想法搁在下边留言里，我绝对不那么干，我最后一定会跟你说一个我的想法，好不好？我的想法是这样，以前有记者采访过李嘉诚，他说李嘉诚先生您就是说这一辈子这么成功做成你这么成功，你看到了到了最后习近平上台之后，李嘉诚这次的大叛逃大逃离，多么的成功，真的是胜利，大逃亡胜利有谁能跟李嘉诚比？ </p>
+<p>如此的聪明，如此的牛，就是说想问问李嘉诚先生，就是说您觉得您的成功，您的发财，您的富有诀窍是什么？这个话题上是很大的一个话题，应该说是很难回答。 </p>
+<p>李嘉诚先生连想都没想，李嘉诚先生直接就回答了。李嘉诚说我觉得我的成功，我能够发财，能挣这么多钱我就绝交了，就两个字，特别简单，谨慎。所以在目前的情况下，包括这一次川普连任，很多人说你觉得川普连任你是不是应该买一点？我就跟你说，如果小小地买一点买个1000块钱无所谓，输赢无所谓了，对不对？赢能赢几块钱，输也输不了几块钱，对不对？买个1000块钱玩玩可以再买多了，我觉得没有必要，因为这种东西就跟赌博一样，你看我去拉斯维加斯我也不做这样的想法，我就我不赌这种东西，你知道吧？ </p>
+<p>就是说不要去赌运气，因为有些东西是有一个很大的运气成分在里边的，我经常这么说，要动手下是稳拿把掐的，比如说今年的3月份股票跌成那样了，我跟你说你看以前我从来不建议买股票，那个时候高那个时候稳拿把掐，因为美国的实体经济没有那么的糟糕，当然跟现在比起来有一点是支撑不住，但是就跟那时候比起来的话，什么绝对没有那么高，完全是被一压下去的。那个东西你必然就知道它一定会反弹上去的，不可能一直在那待着，那只是一个就是说当大家恐慌了，哗见了个底而已，很快的就上去了，对不对？ </p>
+<p>但是现在不一样，因为病情新冠病毒到现在为止，它都像个谜一样，到现在你说不清楚这个病毒从哪来的，这个病毒到底是在自然界产生的，还是人为创造的？ </p>
+<p>到现在说的清楚吗？其实是众说纷纭的，对吧？甭管是有那种说法，但是到现在谁也拿不出实质的证据来证明他到底是怎么回事，对不对？所以这个病毒是一个非常怪异的病毒，它后面怎么变化都有可能。 </p>
+<p>你包括在今年年初的时候，我说我认为这个病毒我当时这个病毒刚出来的时候，我说到了夏天的时候，这病毒应该就过去了，跟非典一样，但是现在到了你看现在夏天夏天都过去了，冬天都快来了，这个病毒还没过去，这说明什么？说明这个病毒跟非典不一样，非典是真的大自然界产生的，而这个病毒现在看起来越来越不像，你懂我意思，我这话说的很含蓄，但是其实你懂，但我也没有证据，对吧？但实际上能看得出来，如果他真的是大自然界产生的话，太阳一出太阳一晒也就差不多了。 </p>
+<p>但是有吗？没有这个病毒之顽强，根本就不像是来自大自然界。 </p>
+<p>所以面对这样的一个病毒的话，我觉得就像李嘉诚先生说的这两个字，哪两个字就是谨慎，所以目前的情况之下，我觉得你在投资美股的话应该要谨慎，因为实际上是不好说的。所以我觉得是这样子，假如你现在卖了，他后来王者归来他涨上去了，你那是少挣了一部分，但是假如你现在没卖，川普真的后来病情恶化了，出了什么问题的话，那么你可能你就是真金白银的损失了很多钱，对吧？ </p>
+<p>当然了有很多朋友有一种观点就说不捡就是丢，我少挣了跟丢了是一样的，他这种思维方式我认为还是就是说孙子兵法上那句话，先为不可胜，以待敌之可胜，知道吗？炒股票也好，做投资也好，首先想的是什么？是不亏，然后力所能及的范围之内能挣点挣一点，但是不要有那种又说一夜暴富的那种想法，那是不现实的，也不对。炒股票我觉得像巴菲特说的，就是说长期投资，而且是价值投资，很稳的，就是说我也不多，我每一年最后我能挣个百分之8<del>11%或者12%就可以了，8%</del>12%差不多我就可以接受，一年就这样，每一年就这样子。 </p>
+<p>我不会想我今年投了100万，明年我变1000万了，你不要那种想法，知道吗？所以稳的非常稳的这种长期的价值的投资，我觉得这才是你作为一个股票投资所应该有的一种心态和理念。所以基于这种理念的话，我的观点可能现在我觉得部分的减仓，减持我觉得可能会更好一点。 </p>
+<p>股市这是我的观点了，对不对？我觉得谨慎不要去追高。 </p>
+<p>好吧，当然了，因为我其实跟我的分析判断是不符的，我分析判断我认为川普应该没事，最后应该王者归来。 </p>
+<p>但是我觉得投资的时候，就是说投资的时候你要给自己的是一个什么，就是说它是一个规矩，你懂吗？就是说比如说炒股票为自己设定一个10%，我就抽手就是说或者20%，跌多少一撤，赔了多少你就不行了，我这两天走了，一定要给自己定这么一个规矩，等到了那个点就要遵守你的规矩，就要撤就要走。而你去赌场玩也是，比如说我自己进赌场之前，我给自己定一规矩，今天我输多少，我今天输3000我走，说33万我走或者我输30万我走，我就离开了，我今天就不玩了，今天可能运气不好我就撤了，一定要有这么一个规矩。 </p>
+<p>你不要说丢输了300，我觉得不行，我就把生产挣回来，我没找着那就坏了，你懂我意思吧？就是说玩股票也是这样子，不管你前面是怎么分析的，到了关键的时刻谨慎规矩，遵守规则才是最重要的，这才是保证，因为你炒股票不是这一笔，你懂我意思吗？你要看的是10年或20年，所以稳才是最重要的。短期的爆发都是浮云，长期你稳稳的每一笔每一笔的小钱，积少成多是最重要的，所以这股票就这样，虽然我的分析我认为传播最有可能王者归来，但是我劝你要谨慎，我相信尽量的部分的减仓。 </p>
+<p>当然还有一点，我认为美国现在实体经济也不足以支撑了，这也是原因之一，但是我就不说那么多，好吧，我只把结果告诉你，因为要分析起来说的太多没有意思。 </p>
+<p>说房子我对房子的观点和看法，反而我觉得房子还是应该买，当然也是我自己也买房子了，对不对？为什么这么说？就是说还是那句话，美联储放的水太多，如果股市上大家都像我这种想法就是说我们要谨慎，要减持的话，那么很多人就会把股票卖了，那么导致什么？导致市面上的水更多了，这些水去哪里？ </p>
+<p>马上这句话它能够冲牛奶，能够冲到大米里面吗？不行，不要说美国政府，中国政府也不会同意让你去掌握这种老百姓的这种民生的物价，这些东西大量的会去哪，就跟中国一样，我们这几年就是动不动扔了几万亿出来，对不对？但是物价也在上涨，但是尽量就是说因为涉及到老百姓的民生，物价不能让你长得太扯淡了，他让大家吃不起大米吃不了牛，吃不起猪肉那不完蛋了，对不对？所以那些钱最后去哪了呢？去房地产市场了。 </p>
+<p>所以我觉得就这样，从股市上来讲，我觉得有一定的风险了到后面。那么也就是说如果股市有风险，大家都开始谨慎的话，那么股市不能投，钱又这么多水，这些水分去哪儿？ </p>
+<p>我觉得最后还是进房地产市场。因为房地产市场相对来讲它盘口比较大，他能接得过来，你别的东西他也接不过来这么些钱，美联储一下子几万亿扔出来，对不对？一般人一般的这就叫蓄水池，你知道吗？一般的蓄水池是接不了这么多钱的，一般来讲除了股市，也就是楼市的房事，还能有这么大笔的资金进得去，别的事就不去，要不然你这些钱去哪儿？实体经济现在搞的实际上不好，实体经济很难消化掉这些钱。 </p>
+<p>所以我觉得这些钱最终没有办法，就是说股市有危险，那就进楼市了。中国不也是就是这么多钱进来了之后，就股市他老是要坑你，就老是割韭菜，大家一看到算了，我买房子还是房子他稳妥，对不对？所以我觉得房市反而由于股市出现风险了，我觉得房事反而更更保险了，如果股市玩命往上涨的话，可能这大笔的资金大家都拿出去去进股市与股市的快，他肯定比房子快，对不对？ </p>
+<p>还有股市往上涨，我们刚才卖了房子去买股票对不对？房市可能还不那么火爆，但一旦股市有了风险，大家看我有有点风险，要掌握稳妥点的买房子了，房子他稳妥一点的，怎么总得因为股票稳妥，他在那搁着对不对？他跑不了，他不能长着腿跑了，那过两天一来我房子哪去了？对不对？跟野男人跑了不可能对吧？所以这就是反正我对川普确诊之后，对美国股市和楼市的我的一个分析。但是还是那句话，我把我的观点就告诉你了，我觉得房子应该买，股市应该要谨慎部分可能要减持。 </p>
+<p>好吧？当然这是我的观点，指定要你自己要去做决定，我把就是说我怎么逻辑一个分析的过程，怎么走到这一步的，他说我告诉你了，我的一个思路希望对你有启发，好吧，最后的决定还是由你自己去定，好吧，进行到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/02/20201002%E7%AC%AC2971%E6%9C%9F-%E6%8B%9C%E7%99%BB%EF%BC%8C%E4%BC%8A%E4%B8%87%E5%8D%A1%EF%BC%8C%E5%BA%93%E4%BB%80%E7%BA%B3%EF%BC%8C%E5%BD%AD%E6%96%AF%EF%BC%8C%E8%93%AC%E4%BD%A9%E5%A5%A5%E7%9A%84%E6%96%B0%E5%86%A0%E6%A3%80%E6%B5%8B%E7%BB%93%E6%9E%9C%E5%85%A8%E9%83%A8%E5%87%BA%E7%82%89-X5lCI_ZYt3g/" rel="prev" title="20201002第2971期-拜登，伊万卡，库什纳，彭斯，蓬佩奥的新冠检测结果全部出炉">
+      <i class="fa fa-chevron-left"></i> 20201002第2971期-拜登，伊万卡，库什纳，彭斯，蓬佩奥的新冠检测结果全部出炉
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/02/20201002%E7%AC%AC2973%E6%9C%9F-%E5%B7%9D%E6%99%AE%E7%A1%AE%E8%AF%8A%E6%96%B0%E5%86%A0%E5%90%8E%E6%9C%80%E6%96%B0%E7%97%85%E6%83%85%E6%B1%87%E6%8A%A5-CMa6-2cohYo/" rel="next" title="20201002第2973期-川普确诊新冠后最新病情汇报">
+      20201002第2973期-川普确诊新冠后最新病情汇报 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1754</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/10/02/20201002%E7%AC%AC2972%E6%9C%9F-%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%9B%A0%E7%A1%AE%E8%AF%8A%E8%BF%9E%E4%BB%BB%E5%A4%B1%E8%B4%A5%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E5%B4%A9%E7%9B%98%EF%BC%8C%E5%A6%82%E6%9E%9C%E5%B7%9D%E6%99%AE%E5%A5%87%E8%BF%B9%E5%BA%B7%E5%A4%8D%EF%BC%8C%E7%BE%8E%E8%82%A1%E4%BC%9A%E7%8B%82%E6%AC%A2-2n08M0LI2jU/";
+    this.page.identifier = "2020/10/02/20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢-2n08M0LI2jU/";
+    this.page.title = "20201002第2972期-如果川普因确诊连任失败，美股会崩盘，如果川普奇迹康复，美股会狂欢";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
