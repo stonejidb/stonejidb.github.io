@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的10月8号星期四，川普之前就有传言，川普要朝 h1b开刀，今天终于大刀向 h1b砍去，根据他新的改变来讲，基本上可以说你如果留学美国，你学的是文科的话，看来你 h返b基本上可以说就是没有什么希望了，当然了这也是我自己的理解。好吧？美国劳工部和美国国土安全部都出了他们的修改的文件。我一会儿我这样我想问一下，我也别光说我自己的理解，因为我的理解也许就是说因为这种东西算是这种尤">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20201008第2994期-川普大刀向H1B砍去，文科生基本无望了">
+<meta property="og:url" content="https://stonejidb.github.io/2020/10/08/20201008%E7%AC%AC2994%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%A4%A7%E5%88%80%E5%90%91H1B%E7%A0%8D%E5%8E%BB%EF%BC%8C%E6%96%87%E7%A7%91%E7%94%9F%E5%9F%BA%E6%9C%AC%E6%97%A0%E6%9C%9B%E4%BA%86-rKvLz_w1D-s/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的10月8号星期四，川普之前就有传言，川普要朝 h1b开刀，今天终于大刀向 h1b砍去，根据他新的改变来讲，基本上可以说你如果留学美国，你学的是文科的话，看来你 h返b基本上可以说就是没有什么希望了，当然了这也是我自己的理解。好吧？美国劳工部和美国国土安全部都出了他们的修改的文件。我一会儿我这样我想问一下，我也别光说我自己的理解，因为我的理解也许就是说因为这种东西算是这种尤">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-08T10:09:04.000Z">
+<meta property="article:modified_time" content="2020-10-09T10:54:27.196Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/10/08/20201008%E7%AC%AC2994%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%A4%A7%E5%88%80%E5%90%91H1B%E7%A0%8D%E5%8E%BB%EF%BC%8C%E6%96%87%E7%A7%91%E7%94%9F%E5%9F%BA%E6%9C%AC%E6%97%A0%E6%9C%9B%E4%BA%86-rKvLz_w1D-s/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20201008第2994期-川普大刀向H1B砍去，文科生基本无望了 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/10/08/20201008%E7%AC%AC2994%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%A4%A7%E5%88%80%E5%90%91H1B%E7%A0%8D%E5%8E%BB%EF%BC%8C%E6%96%87%E7%A7%91%E7%94%9F%E5%9F%BA%E6%9C%AC%E6%97%A0%E6%9C%9B%E4%BA%86-rKvLz_w1D-s/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20201008第2994期-川普大刀向H1B砍去，文科生基本无望了
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-08 19:09:04" itemprop="dateCreated datePublished" datetime="2020-10-08T19:09:04+09:00">2020-10-08</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/10/08/20201008%E7%AC%AC2994%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%A4%A7%E5%88%80%E5%90%91H1B%E7%A0%8D%E5%8E%BB%EF%BC%8C%E6%96%87%E7%A7%91%E7%94%9F%E5%9F%BA%E6%9C%AC%E6%97%A0%E6%9C%9B%E4%BA%86-rKvLz_w1D-s/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/08/20201008第2994期-川普大刀向H1B砍去，文科生基本无望了-rKvLz_w1D-s/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的10月8号星期四，川普之前就有传言，川普要朝 h1b开刀，今天终于大刀向 h1b砍去，根据他新的改变来讲，基本上可以说你如果留学美国，你学的是文科的话，看来你 h返b基本上可以说就是没有什么希望了，当然了这也是我自己的理解。好吧？美国劳工部和美国国土安全部都出了他们的修改的文件。我一会儿我这样我想问一下，我也别光说我自己的理解，因为我的理解也许就是说因为这种东西算是这种尤其是一种已经接近于一种法律的这种条文了，对吧？我把它的原文的链接我给出来，你们自己的这种感性你自己去看一下，我觉得你还是看他的这种法律法规的原文可能更准确。 </p>
+<p>好吧？对于那些就不想去看原文的，我大概给你说说的是什么意思，说说我的理解。好吧？简而言之是这样，10月6号美国政府宣布 h1b大改革要提高h1b最低工资要求和收紧 h万b申请人的专业限制，基本上被外界认为是20年来最严格的新的规定。那么两个，一个就是h1b的工资要求，这是由美国劳工部出来的，我会把劳工部的原文搁在下边。另外一个就是限制 h1b的申请资格，这是美国国土安全部的这个出来的文件，我也会把它的搁在下边，这两个的链接我都会给你，你自己去看。 </p>
+<a id="more"></a>
+
+<p>好吧？然后美国国土安全部的代理部长片，他说他也知道这个可能是非常的严格，他认为可能约有1/3，就目前来讲有1/3的 h 1b的申请人将会被拒，就基本上是不符合新的规定了。首先来讲就是这个公司要求，现在的公司要求分4级4级都往上调升了，最高的就基本上翻了一倍，准确的数字，你去看这个原文就得了，好不好？ </p>
+<p>当然了有的人他理解就认为差不多要到年薪要超过10万到14万，才可以。我对他的理解我他说的比较复杂，你自己去看自己去去计算，反正是分到4级又翻翻你知道吧？所以我觉得我还是就不说了，反正公司要求比以前的差不多，可以说double×2就得了好吧？具体数字你自己去算，因为他这种东西挺挺复杂的，我也就不费那神去给你算具体数字了，好吧？ </p>
+<p>生效日期是10月8号直接就生效了，是公司要求是劳工部的。劳工部的就是说他10月6号说了，10月8号直接生效，两天就生效了。 </p>
+<p>另外一个是工作安全部的叫限制h万b的申请资格，目前是任何在美国你在美国留学，具有美国大学学位，就是说一般的本科的大学本科学位，或者同等经验的外籍的劳工都可以申请的h1b的从事来专专业工作。他改变了之后就不一样了，他说改变之后，实际上他说申请人的专业必须和从事的工作直接相关，才能符合申请资格。一名软件开发人员，如果你拥有的是电气工程学位的话，就没有办法了在反正也是有点要求的就是说苛刻了。 </p>
+<p>他说如果任何就是说普通专业，例如什么工商管理，一些什么文科的，像什么文学对文学。翻译，他说都能从事的工作就不能算到专，但我觉得是翻译还得算翻译算是专业工作，这个是事实。这个还比这翻译不算，我觉得什么工商管理MBA之类的这种可能都算是这种有点谈不上那种专业，好像是则不能算的这种专业工作。 </p>
+<p>当然还是是我的个人理解具体的专业到底怎么着，你自己去看工作安全部的这个文件好不好？因为这个东西我也是只能说我的理解，好吧？然后不但让这种东西出来之后，一般这种移民律师会先去解读，他们会在里面找出就是说他们理的理解怎么去使用，好吧？ </p>
+<p>然后在使用的过程当中，他们也会不断的打补丁，所以我相信这个东西里边还是我觉得具体的准确的，你还是应该找一个移民律师对吧？你做移民的话找个移民律师，让他给你看好不好？我只能毕竟我不是律师对不对？我只能跟你说个大概齐好吧？ </p>
+<p>然后就是说还有目前通过第三方雇佣的外籍劳工的h1b的签证有效期是三年，那么今后通过第三方公司雇佣的外籍劳工的签证有效期缩短为一年，这也是在时间上也缩短了。那么这个公司安全部他们说主要的就为了打击h1b签证的滥用，来保护美国本土的工人的这种工作机会。美国国土安全部代理秘书长不是代理秘书叫查德沃夫，他说我们进入了一个时代，这个时代经济安全是国土安全不可分割的一部分，经济安全就是国土安全，我们必须竭尽所能确保把美国的工人放在首位，就American first美国人优先。 </p>
+<p>这个来讲我觉得也没有什么就是说不对的，你中国难道就是说把你的工作机会都让给外国人，然后让中国人都是让外国人去工作，这也不可能对不对？你也不能说外国留学生来了什么，我学校最好的优秀条件都给外国留学生，然后中国学生反而还不如外国留学生的待遇好，你不能不能拿中国举例子，中国是特殊的情况，能不能拿中国对中国的外国留学生好像的确是比中国学生待遇好一点，好像是外国留学生上清华都比中国本地生容易一些是吧？对，中国是中国特色的社会主义，中国是个特殊的国家，你不能拿中国做例子。 </p>
+<p>好不怎么着接着说。那么国土刚才劳工部的新规10月8号就生效了，国土安全部的新规是这样，它这个新规不经过公众的评估程序，他现在暂时是作为暂行的最终条例于公布60天之后直接实施生效，也就说你们也甭讨论，别扯没有用了，就60天之后生效，但是现在已经是这种暂行，但是60天之后算是正式生效，基本上这么一个情况。 </p>
+<p>我跟你就是说反正说一下我的理解和解释，但是因为这个东西还是涉及到一些法律法规的问题，我觉得移民还是应该找一个一名律师，虽然有一些移民律师也不是特别认真，但是好歹也比咱们这个专业也比咱们认真。我觉得在美国你如果做这种事情，我觉得你最好还是找个律师的理解，还是可能会更准确一些，对吧？如果你真的想做，如果我觉得很多人看完之后可能直接就放弃了，我连申请都不申请了。 </p>
+<p>其实以前我们就知道很多中国留学生根本就一看看一眼就头疼，真的这条路走上去我跟你说，这叫什么？路漫漫其修远兮是吧？我估计如将上下而求的真的真是一条非常的漫漫长路，这条路走上去，我跟你说熬真的都是熬，这就叫当然了你在美国其实你不管怎么去申请移民的，多多少少都有一点时间实际上比较长，我们讲就叫做移民间，大家都有过这种就是说在等待着这种经历。 </p>
+<p>当然了就是说你可以不留下，你可以回去对吧？我觉得很多的人人易逝爱国青年，还是可以回去建设新中国，对吧？为富二代在美国买豪宅，买法拉利添砖加瓦，对不对？我觉得每个人都要做出贡献来，对不对？因为富二代又要换新车了，总之是吧？好吧，就说这意思。当然也不刺激大家了，我知道有很多学生看完这个之后非常的就是说失落，但是也是没有办法，我相信目前只是暂行的个人，我认为在川普的第二个任期，川普很有可能就是说朝整个的移民法去进行一次改革。 </p>
+<p>美国现行的移民法几十年的历史里边有很多的问题，我觉得但也许在几十年前在当时是ok的，是合理的，但是几十年之后随着很多情况发生变化之后，我觉得其实是不合理的，是有问题的。我觉得我们可能真的需要对整个的移民法进行一次彻头彻尾的彻底的一次改革，川普的第一个任期也没敢碰这个东西，我不知道他第二任期敢不敢碰，这个东西碰起来是非常的艰难，会动了很多人的奶酪，但是美国目前的移民的整个的整体的策略和政策，对于美国来讲，我觉得真的不是很好。 </p>
+<p>相对来讲我觉得像加拿大、新西兰、澳大利亚，当然了他们的移民政策也不是说就是说是完美的，也有很多问题，也有很多漏洞，但是相比起来，我觉得比美国的移民政策要更现代化，也更成熟一些，更符合目前这个世界整体我觉得发展的这么一个阶段。好吧？这些东西我觉得日后等到移民法正式的大的改革的时候，这些东西可能都会要重新的再去定夺，所以我觉得可能目前这几年的时间，当然留学生也是很难等，你说我赶巧了这几年毕业马上就要面临这些问题，有很多人问我怎么办？ </p>
+<p>其实具体的案例要具体的分析，很多东西我也是 of one。跟你说的，我如果能够公开我们这么说的，其实对你已经没有什么用，说实话那种东西在网上都能查得到对吧？不能公开说的，我也就不能说，就有用的倒不能说能说的没有用。我觉得最有用的一点还是我其实反复强调的，最好还是找一个律师，找找你身边的朋友，有没有认识给你推荐一个比较靠谱一点的那么一个移民的律师，我觉得对你还是会有很多的帮助，因为就是说他们专门研究他对整个的就是说各种的移民方式，他都有所了解和研究，它会针对你的情况，给你一些我觉得更专业的，然后更合法合规的建议，我觉得这个还是都是我觉得会更好一些。 </p>
+<p>因为真的我要跟你说，在你的情况之下，有人帮你分析好了，给你一些好的建议，你是事半功倍。因为移民的过程当中你都会有损失，很多的美国公司它或者一些其实包括连一些华人的公司，他们愿意就是说雇一些外来移民来工作，就是说他就是吃准了，你一般情况下你不会轻易的去变换工作，因为这项工作你可能要重新排期重新申请，说到很多问题就很麻烦，很多人就不愿意去换工作。所以在这段时间里，他对你就是说可以说用压榨这个词有点重，但是其实基本上真的就是说这个女的当男那种男的当牲口用，然后这个公司他还不会给你开很高，反正对你就是各种的高要求。 </p>
+<p>我当然这个情况也是在我觉得一些小公司或者一些华人公司比较多一些，美国大公司在这方面做的还是相对好一些，但是大公司就那么几件，每一年几十万中国留学生，最后有几个就进来，大公司对不对？所以我觉得绝大多数人还是其实在这个过程当中受到了某种的这种欺负和压榨。 </p>
+<p>其实当在大公司你也会发现，就是说你走到一定程度，你会发现对你这些中国留学生他是有天花板的。我觉得当然如果你是一个有理想有抱负，我一定要对不对？就是走走到 c什么，当上CEO赢取白富美，走向人生巅峰的话，我建议可能还是得回国，美国的公司对于中国人来讲，但是我觉得这么说其实也不公平的，你说印度人为什么人家印度人就没有天花板，当然一个这个话说起来，我这么说可能有人不爱听，但是说实话中国人很不团结，印度人相对来讲在公司的时候比我们团结，印度人他进去一个之后，他就可能还在带其他运动员进来，进来之后他们还抱团，还团结一起往上拱一个老大出来，然后老大罩着下边这帮。 </p>
+<p>那么中国人进去之后凭什么你当老大，我要当老大，然后两人就互相抢，互相抢，互相曝光对方的这种丑闻，互相失败，是不是？其实这种例子不光是在美国的这种公司里边，你就包括咱们华人自媒体，对不对？真正的能够出来就是说不计前嫌的部分，就是说支持还是不支持，能够去推荐一些其他的媒体，能够就是说敢于去推荐，敢于去提及，敢于给别人机会的，像这种就是说能够这样去做事的，有几个可能你看来看去可能就只有那么对不对？我们中国是不是就缺少这种人和这种精神，所以还是要更加的我觉得怎么说，珍惜你死动作。 </p>
+<p>好吧，先讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/08/20201008%E7%AC%AC2993%E6%9C%9F-%E5%8F%B0%E6%B9%BE%E9%80%9A%E8%BF%87%E2%80%9C%E5%8F%B0%E7%BE%8E%E5%A4%8D%E4%BA%A4%E2%80%9D%E8%AE%AE%E6%A1%88%E6%98%AF%E4%B8%80%E5%9C%BA%E4%B9%8C%E9%BE%99%EF%BC%8C%E6%8F%90%E5%89%8D%E7%A5%9D%E8%B4%BA%E9%9F%A9%E5%9B%BD%E7%91%9C%E5%BD%93%E9%80%89%E4%B8%8B%E4%B8%80%E5%B1%8A%E5%9B%BD%E6%B0%91%E5%85%9A%E5%85%9A%E4%B8%BB%E5%B8%AD-BqMPs5Y7XeQ/" rel="prev" title="20201008第2993期-台湾通过“台美复交”议案是一场乌龙，提前祝贺韩国瑜当选下一届国民党党主席">
+      <i class="fa fa-chevron-left"></i> 20201008第2993期-台湾通过“台美复交”议案是一场乌龙，提前祝贺韩国瑜当选下一届国民党党主席
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/08/20201008%E7%AC%AC2995%E6%9C%9F-%E8%A7%A3%E6%94%BE%E5%86%9B%E4%B8%BA%E5%86%AC%E5%A4%A9%E4%B8%8E%E5%8D%B0%E5%BA%A6%E5%BC%80%E6%88%98%E5%81%9A%E5%A5%BD%E5%87%86%E5%A4%87-nj11tF4wGds/" rel="next" title="20201008第2995期-解放军为冬天与印度开战做好准备">
+      20201008第2995期-解放军为冬天与印度开战做好准备 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1772</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/10/08/20201008%E7%AC%AC2994%E6%9C%9F-%E5%B7%9D%E6%99%AE%E5%A4%A7%E5%88%80%E5%90%91H1B%E7%A0%8D%E5%8E%BB%EF%BC%8C%E6%96%87%E7%A7%91%E7%94%9F%E5%9F%BA%E6%9C%AC%E6%97%A0%E6%9C%9B%E4%BA%86-rKvLz_w1D-s/";
+    this.page.identifier = "2020/10/08/20201008第2994期-川普大刀向H1B砍去，文科生基本无望了-rKvLz_w1D-s/";
+    this.page.title = "20201008第2994期-川普大刀向H1B砍去，文科生基本无望了";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
