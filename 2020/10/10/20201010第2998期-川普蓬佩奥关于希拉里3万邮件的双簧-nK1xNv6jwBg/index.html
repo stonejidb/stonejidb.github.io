@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的10月10号星期六，把日子弄对了，川普跟鹏飞关于希拉里这3万封的电子邮件反正有一点小争吵，有人说你看川普跟国务卿吵起来了，我觉得某种程度上不是我觉得有点是两个人唱的，就是这种双簧。新手怎么回事？新亚里克林顿在他当国务卿时期使用了他自己的私人服务器来发一些处理公务的 EMAIL，然后用的因为政府是这种安全服务器来处理国务院的信函对吧？希拉里用的是私人服务器，这个后来就被发现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧">
+<meta property="og:url" content="https://stonejidb.github.io/2020/10/10/20201010%E7%AC%AC2998%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%85%B3%E4%BA%8E%E5%B8%8C%E6%8B%89%E9%87%8C3%E4%B8%87%E9%82%AE%E4%BB%B6%E7%9A%84%E5%8F%8C%E7%B0%A7-nK1xNv6jwBg/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的10月10号星期六，把日子弄对了，川普跟鹏飞关于希拉里这3万封的电子邮件反正有一点小争吵，有人说你看川普跟国务卿吵起来了，我觉得某种程度上不是我觉得有点是两个人唱的，就是这种双簧。新手怎么回事？新亚里克林顿在他当国务卿时期使用了他自己的私人服务器来发一些处理公务的 EMAIL，然后用的因为政府是这种安全服务器来处理国务院的信函对吧？希拉里用的是私人服务器，这个后来就被发现">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-10T10:09:08.000Z">
+<meta property="article:modified_time" content="2020-10-14T05:36:07.737Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/10/10/20201010%E7%AC%AC2998%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%85%B3%E4%BA%8E%E5%B8%8C%E6%8B%89%E9%87%8C3%E4%B8%87%E9%82%AE%E4%BB%B6%E7%9A%84%E5%8F%8C%E7%B0%A7-nK1xNv6jwBg/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/10/10/20201010%E7%AC%AC2998%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%85%B3%E4%BA%8E%E5%B8%8C%E6%8B%89%E9%87%8C3%E4%B8%87%E9%82%AE%E4%BB%B6%E7%9A%84%E5%8F%8C%E7%B0%A7-nK1xNv6jwBg/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-10 19:09:08" itemprop="dateCreated datePublished" datetime="2020-10-10T19:09:08+09:00">2020-10-10</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/10/10/20201010%E7%AC%AC2998%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%85%B3%E4%BA%8E%E5%B8%8C%E6%8B%89%E9%87%8C3%E4%B8%87%E9%82%AE%E4%BB%B6%E7%9A%84%E5%8F%8C%E7%B0%A7-nK1xNv6jwBg/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/10/10/20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧-nK1xNv6jwBg/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的10月10号星期六，把日子弄对了，川普跟鹏飞关于希拉里这3万封的电子邮件反正有一点小争吵，有人说你看川普跟国务卿吵起来了，我觉得某种程度上不是我觉得有点是两个人唱的，就是这种双簧。新手怎么回事？新亚里克林顿在他当国务卿时期使用了他自己的私人服务器来发一些处理公务的 EMAIL，然后用的因为政府是这种安全服务器来处理国务院的信函对吧？希拉里用的是私人服务器，这个后来就被发现了，觉得对国家来讲是非常的不安全的。 </p>
+<p>那么就在2016年的时候，当时曝出了希拉里的电邮门，那么希拉里在那种情况之下， FBI最后给了他传票，让他去的情况下，希拉里竟然毅然决然的把他的这些电邮全部删除了，就是说你们查你们抓我坐牢，这电影我也不能给你看电影，我一定得删除，全部都删除，全部删除了之后导致这FBI没有办法调查。 </p>
+<a id="more"></a>
+
+<p>但是后来有众多的美国黑客都在曝光说希拉里的电邮实际上在政府的某一些就是说底层服务器里边保留了，虽然它删除了，但是底层服务器里还有说如果把这个曝光出来的话，会是今天的丑闻，当时反正很多人这么说， f b I调查之后没有对希拉里克林顿提出起诉，但是在当时我不知道大家还记得不记得，当时闹出一个丑闻，就是说前总统克林顿希拉里的老公跟当时的时任的司法部长在一个地方谈了将近40分钟，然后没有记录在案，就是说在谈希拉里的电邮门的事情，后来被人曝光了之后弄的就很难看，就认为前总统向因为当时奥巴马执政他们都是民主党的，都是党内的，像当时的时任的司法部部长的施压，关于电邮门这个事件，所以导致了很多当时就说就是说选2016，说希拉里for present，后来就有人说他希拉里说那个单词怎么发音准确，Python。Prison。 </p>
+<p>就是希拉里弗这监狱。Prison是present对吧？我翻译没错对吧？就是希拉里说prison对吧？就是希拉里他们不是贴在车上，就是2016，希拉里说present就是 for东 president，就是说总统对不对？然后西亚里的佛监狱监狱什么？Prison freedom。 </p>
+<p>我跟你说前两天跟你朋友聊天，我也发现我特别没有语言天分，你知道吗？我到了那个词就这个词其实已经特别熟，然后就是说你看写都没有问题，但是一到念的时候，交了多少次我还是记不住，我老是记不住，还有你比如说买个911版，911厂房单词怎么发音？Convertible。卡布瑞拉他是不什么的，那单词你你会念吗？你也不会念，所以你懂我意思吧？就是说不上来。 </p>
+<p>中文也是你知道吗？前两天不是说惯喜事，对不对？冠喜士也是准备节目的时候看到冠喜是三个字，我犹豫我想这个字是不是念乖，我还是去查了一下字典，因为最近老读错字，你知道吧？老被人说，我就去查了一下字典，反正大家就非常抱歉，有的人觉得是文化水平低，我觉得也可以这么说，我觉得某种程度上可能是因为智力水平有问题，你知道吗？现在是记忆力有问题，知道吧？就是这些字其实你知道吗？都见过都听过都念过，但是都错过。 </p>
+<p>还我都到监狱怎么念再说一遍。我觉得我可能快老年痴呆了，我感觉我学英语就跟我妈学英语差不多，你知道吗？就是叫了你爸爸都变了，你怎么还不坏？你知道吗？对保时捷都买了，然后最后叫什么卡布瑞，到现在也不会念。他不是也来了，这帮他们照顾到现在也不会念，实在是非常的抱歉，我真的我也是我也尽力了知道吗？ </p>
+<p>我每一个都反复的跟自己说说，但是叫吗？上次说菅义伟和营以为也是你知道吗？我之前做的功课我靠刚查了单，然后等到了这我又忘了怎么样，所以非常抱歉好吧，然后咱们接着说到希拉里电邮门，他这对彭飞耀表示说希拉里克林顿的这些电子邮件就在国务院的内部服务器上就有。这个之后川普先表态，川普说需要在他好像是星期五的时候，星期五是几号6号还是才过糊涂了，想不起来了。 </p>
+<p>好像是星期五不是上周五什么时候了，反正是其他。川普他就说说我们要把一个就是通俄门的所有的材料，就是所谓通过文字材料说调查从是当年是奥巴马，希拉里他们一起就是说陷害我，还有一个就关于希拉里的电邮门，我要把所有的资料全部都解密都给你们看，让你们看看这里边到底说了什么，结果反正当时出来之后是个大新闻对不对？我也没有播，因为我想咱们等等，等他出来了之后，我们看看里面有什么内容咱们再做，因为你看我给你录一期节目，我说川普说了要把这些曝光，他没有意思对不对？ </p>
+<p>曝光什么这就不知道是说的什么，所以我就没有报。到了今天为什么要报这个？就是说首先来讲一共是35,575个电子邮件，已经曝光出来了，对不对？在国务院的网站上已经有，为什么把它曝曝光出来了，说川普和朋友两个人就吵起来了，先是川普说表达了对彭彪的不满，他说这些电子邮件就在国务院，但是国务卿彭克彪却没有能力把他们公布出来，就非常的不幸。他说在这件事情上我对朋友们好极为不满，他是国务院的负责人，他应该把他们公布出来。 </p>
+<p>那么蓬佩奥在川普的这种批评和压力之下，最终还是公布了希拉里的这3万多封电子邮件，彭彪在周五接受福布斯新闻的采访，他被问及了说川普批评他迟迟不公布，希拉里删除了邮件的时候，他说我们正在做，我们很快就将发布这些信息，以便让美国人能够看到。 </p>
+<p>那么今天35,575个电子邮件在美国的国务院的网站上都有了，那么欢迎大家都去看看，因为3万多封大家都看看在里面寻找一些我觉得人多了，大家看的多了，肯定能寻找出一些蛛丝马迹来看这里面到底有什么，其实我们也很好奇好吧，关于就是说窗口和朋友就是这种吵，有人就认为他们两个不合吵起来了，我个人认为是一种就是说什么意思就是说有的人总是认为就是说比如说川普上来了，上来一个新总统，然后说好我换个新的国务卿，换个比如说朋友，或者换个谁，来了之后他只要一进到国务院，然后他说什么假面就干什么，整个国务院都听川普了，都听朋友的，现实情况不是这样子。这是一个非常华盛顿是一个非常官僚的地方，它有事务官有政务官，彭要这种就属于算是政府关系，你挡你党派你选赢了，那么你肯定会你们党派的人对不对？ </p>
+<p>但是我下面有很多事务官，还有就是说前朝留下来一些人，你不可能一来全换掉，没有那么快。你就好像习近平现在里边中国人有很多，其实还都是江东当年提拔上来的，但是这个没有办法，江东当年提拔了那么多的干部，提拔了那么多的官员，你怎么可能就全把他们全换掉，对不对？全国将灯留了多少人？对吧？所以到现在用的有一些人，还是江增时期的人，这是没有办法的。 </p>
+<p>蓬佩奥也好，川普也好，到现在国务院里有一些还是钱，民主党的，还是前奥巴马前希拉里的人。所以就是说川普的意思是说我已经让你当了国务卿了，你就应该把国务院牢牢的掌握在手里边，让你把这3万封电子邮件弄出来的时候，你就应该有这个能力，对不对？ </p>
+<p>又愣逼着他们放出来，但是你没有你解决不了，为什么？政令传达不出去，知道吗？就是说你政令出不去自己的办公室，就指着啪一拍桌子，我下个命令ok到办公室上停了，出了办公室就没人听了，你懂了吧？就是下不去。但是在这种情况之下旁边也很为难，下面有一帮人不听话，让干就不干，给你找各种理由去搪塞，是搪塞。 </p>
+<p>压力很大，天天你看抓特别的这一大游戏，糖色去搪塞朋友对吧？那么川普这么做的目的是什么？我总统说了，你看看你们国务院弄成什么样，对不对？三个方面的邮件，从我们上来就让你们发到现在4年了，还发不出来，你们在搞什么鬼，对不对？就是说那么串口这么一喊之后，所有的舆论，所有的监督，所有的目光都集像到这里之后，蓬佩奥就好做事情了，再让下面发，如果再发不去，旁边就好说，你看前朝希拉里留下的谁？ </p>
+<p>张三李四。没有用你知道吗？我都不能算是国务卿，我觉得他妈才是国务卿了，我说了不算他说了算。你这么说那人就得辞职了，你懂我意思吗？ </p>
+<p>我死活不干了对不对？ </p>
+<p>刚木满洲事件的时候，当时川普又说要干涉满洲案件，当时司法部一个副榜直接辞职，我走了我不干了，对不对？这什么意思？其实就在这，当然后来把司法部部长都换了，对吧？ </p>
+<p>所以你就能明白就是说到现在为止，有的人对川普的4年，我觉得川普的四川普经常说他的4年干了别人40年的工作没有问题，但是对于川普来讲，川普还是很不满意，他觉得效率还是不够高，没有企业那么高，为什么？ </p>
+<p>就是说有大量的希拉里奥巴马留下人在捣乱，到现在你能看得出来，到了关键时刻，到了真正要保护希拉里的时候，要保护奥巴马的时候，到了现在4年了，还在捣乱，还在阻挠，还在搪塞。其实这个词在这不好，不过我要再显配一下。说对了。说这意思。 </p>
+<p>从里面你就能看出来，我个人认为当然有人认为是串口跟服贸打起来，我认为不是，我认为是哥俩唱了一个窗框，要向整个国务院施压，知道吧？你像那些不听话的人是一个压力巨大的舆论压力，舆论监督压力下去。那么这样子今天你就能看到了，如果川普不这么做的话，这个邮件你还看不到，知道吧？没有办法。荣荣辱臃肿冗余，这样到时候都对吧？冗余，勇于蓉蓉种，勇于气死我。不是我。游泳是吧？我喜欢说游泳。游泳有人说就是游泳和外有点不太分，泳和泳不太不太分。真的，你可能是文化水平有问题，也有可能是老年痴呆跟你说。 </p>
+<p>我怎么知道臃肿冗余的这种华盛顿的官僚机构，我觉得是就是说川普在抽干水，其实我说为什么我们应该支持船舶在干4年就在这儿，整个华盛顿就是一片沼泽，太脏了。你通过川普这4年你能看到非常的清楚，这里边这种勾心斗角，这种肮脏，我们需要一个像川普这样的人，彻彻底底的改变这种官僚体制的反缓慢这种腐朽，我觉得川普如果再干4年的话，华盛顿整个的办公效率和工作效率都会更高。 </p>
+<p>所以我觉得通过这件事情，咱先不说西亚里这3万多电子邮件到底最后能不能发现问题，咱就先说就说就能把它发出来。你想想如果换了其他的总统的话，实际上是很难的。民进党那边总统你就别想了，你这300封你一定看不见，这300封已经删除了，永远都不存在了。 </p>
+<p>对不对？你在奥巴马时期，实际上对于奥巴马作为一个总统来讲，川普当总统蓬佩奥当国务卿的时候，我们就知道这3万封电子邮件实际上在国务院的内部的底层的服务器里就有。奥巴马不知道吗？当时的时任国务卿不知道吗？国务院有他们不知道。FBA不知道。不是吧？他们只是在包庇希拉里，这都是发现对方在包庇希拉里，对不对？所以你老婆也犹豫了，我带坏了，他们只是在包庇希拉里，所以你就能看得出来，为什么我说一个国家不能够只让一个党永远执政，就像一条鱼一样，你光肩这一面永远都熟不了，一定要翻过来再见见这一面，这条鱼才能熟。就讲到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/10/20201010%E7%AC%AC2997%E6%9C%9F-%E5%89%AF%E6%80%BB%E7%BB%9F%E8%BE%A9%E8%AE%BA%E7%82%B9%E8%AF%84%EF%BC%8C%E5%BD%AD%E6%96%AF2024%E5%B9%B4%E5%B0%86%E4%BB%A3%E8%A1%A8%E5%85%B1%E5%92%8C%E5%85%9A%E7%AB%9E%E9%80%89%E7%BE%8E%E5%9B%BD%E6%80%BB%E7%BB%9F-Wc5FC61B8ug/" rel="prev" title="20201010第2997期-副总统辩论点评，彭斯2024年将代表共和党竞选美国总统">
+      <i class="fa fa-chevron-left"></i> 20201010第2997期-副总统辩论点评，彭斯2024年将代表共和党竞选美国总统
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/10/20201010%E7%AC%AC2999%E6%9C%9F-%E5%B8%AE%E9%87%91%E7%81%BF%E8%8D%A3%E8%BE%9F%E8%B0%A3-ECdN0Afm9VA/" rel="next" title="20201010第2999期-帮金灿荣辟谣">
+      20201010第2999期-帮金灿荣辟谣 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1783</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/10/10/20201010%E7%AC%AC2998%E6%9C%9F-%E5%B7%9D%E6%99%AE%E8%93%AC%E4%BD%A9%E5%A5%A5%E5%85%B3%E4%BA%8E%E5%B8%8C%E6%8B%89%E9%87%8C3%E4%B8%87%E9%82%AE%E4%BB%B6%E7%9A%84%E5%8F%8C%E7%B0%A7-nK1xNv6jwBg/";
+    this.page.identifier = "2020/10/10/20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧-nK1xNv6jwBg/";
+    this.page.title = "20201010第2998期-川普蓬佩奥关于希拉里3万邮件的双簧";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
