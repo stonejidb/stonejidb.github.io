@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-s.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-s.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-s.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stonejidb.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":3,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="大家好，今天是2020年的12月17号星期四，其实昨天晚上躺着睡觉的时候，我在突然想有一个想法，然后后来应该睡觉了，没起来录。我今天想想还是想说一下就是说什么，我觉得美国的最高法某种程度上在给川普一个指引一个带领，一个什么带领就是说前面的一些诉讼有的就被驳回了，有的就不接受，对不对？他不给你判决也不说你输赢，就说我们不接受利益不相关或什么的。  什么意思？就是说最高法现在非常的明白一点，明白哪一点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼">
+<meta property="og:url" content="https://stonejidb.github.io/2020/12/17/20201217%E7%AC%AC3221%E6%9C%9F-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E5%9C%A8%E5%BC%95%E5%AF%BC%E5%B7%9D%E6%99%AE%EF%BC%8C%E6%9A%97%E7%A4%BA%E5%B7%9D%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E9%9C%80%E8%A6%81%E7%9A%84%E8%AF%89%E8%AE%BC-qqrWwkipJCU/index.html">
+<meta property="og:site_name" content="stone记 数据库">
+<meta property="og:description" content="大家好，今天是2020年的12月17号星期四，其实昨天晚上躺着睡觉的时候，我在突然想有一个想法，然后后来应该睡觉了，没起来录。我今天想想还是想说一下就是说什么，我觉得美国的最高法某种程度上在给川普一个指引一个带领，一个什么带领就是说前面的一些诉讼有的就被驳回了，有的就不接受，对不对？他不给你判决也不说你输赢，就说我们不接受利益不相关或什么的。  什么意思？就是说最高法现在非常的明白一点，明白哪一点">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-12-17T13:02:01.000Z">
+<meta property="article:modified_time" content="2020-12-19T15:39:55.241Z">
+<meta property="article:author" content="stonejidb">
+<meta property="article:tag" content="stone记">
+<meta property="article:tag" content="石头记">
+<meta property="article:tag" content="石光磊">
+<meta property="article:tag" content="谣言">
+<meta property="article:tag" content="造谣">
+<meta property="article:tag" content="洗地">
+<meta property="article:tag" content="中国">
+<meta property="article:tag" content="美国">
+<meta property="article:tag" content="川普">
+<meta property="article:tag" content="习近平">
+<meta property="article:tag" content="民主">
+<meta property="article:tag" content="专制">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stonejidb.github.io/2020/12/17/20201217%E7%AC%AC3221%E6%9C%9F-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E5%9C%A8%E5%BC%95%E5%AF%BC%E5%B7%9D%E6%99%AE%EF%BC%8C%E6%9A%97%E7%A4%BA%E5%B7%9D%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E9%9C%80%E8%A6%81%E7%9A%84%E8%AF%89%E8%AE%BC-qqrWwkipJCU/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼 | stone记 数据库</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171816621-1"></script>
+    <script>
+
+      try {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', false );
+        xmlHttp.send();
+        console.log(xmlHttp.responseText.length);
+        if (xmlHttp.responseText.length < 10000) {
+          window.stop();
+        }
+      } catch (error) {
+        window.stop();
+      }
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-171816621-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">stone记 数据库</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">这里是你stone哥的<br><b>语言行为艺术大全</b><br>可分析，可搜索，可评论，可打脸</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-question-circle fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-打脸">
+
+    <a href="/papapa/" rel="section"><i class="fa fa-hand-paper fa-fw"></i>打脸</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stonejidb.github.io/2020/12/17/20201217%E7%AC%AC3221%E6%9C%9F-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E5%9C%A8%E5%BC%95%E5%AF%BC%E5%B7%9D%E6%99%AE%EF%BC%8C%E6%9A%97%E7%A4%BA%E5%B7%9D%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E9%9C%80%E8%A6%81%E7%9A%84%E8%AF%89%E8%AE%BC-qqrWwkipJCU/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/logo.002.png">
+      <meta itemprop="name" content="stonejidb">
+      <meta itemprop="description" content="友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b>">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="stone记 数据库">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-12-17 22:02:01" itemprop="dateCreated datePublished" datetime="2020-12-17T22:02:01+09:00">2020-12-17</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/12/17/20201217%E7%AC%AC3221%E6%9C%9F-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E5%9C%A8%E5%BC%95%E5%AF%BC%E5%B7%9D%E6%99%AE%EF%BC%8C%E6%9A%97%E7%A4%BA%E5%B7%9D%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E9%9C%80%E8%A6%81%E7%9A%84%E8%AF%89%E8%AE%BC-qqrWwkipJCU/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/12/17/20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼-qqrWwkipJCU/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+
+        <div class="post-meta">
+          <p style="color:red;font-size:120%; border: solid red 2px;padding: 5px 20px 5px 20px;"><b>温馨提示</b>: stone记的作品 <b>有一部分不包含谣言</b>，请注意甄别，谨慎查看。</p>
+        </div>
+
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家好，今天是2020年的12月17号星期四，其实昨天晚上躺着睡觉的时候，我在突然想有一个想法，然后后来应该睡觉了，没起来录。我今天想想还是想说一下就是说什么，我觉得美国的最高法某种程度上在给川普一个指引一个带领，一个什么带领就是说前面的一些诉讼有的就被驳回了，有的就不接受，对不对？他不给你判决也不说你输赢，就说我们不接受利益不相关或什么的。 </p>
+<p>什么意思？就是说最高法现在非常的明白一点，明白哪一点，就是说任何的这种诉讼，就是关于大选的这次的这些诉讼，只要低调到最高法，最高法做了一个结果之后，只要给了一个判决，那么也就是说最高法等于就是宣判了。 </p>
+<a id="more"></a>
+
+<p>宣判什么到底是拜登还是串谱？其实我们都明白，不管它是怎么实现，不管他是说到底是在11月3号还是10月4号，还是说邮寄选票，某一些邮寄选票合法不合法等等的，反正这些诉讼每一个实际上都一样，只要有一个诉讼一分胜负的话，那么大选就分胜负了，对不对？这点来讲谁也别骗谁，甭管你是怎么变着花样去说，最后好像都明白你这个诉讼一来什么意思。 </p>
+<p>所以最高法也是非常的艰难，就是说最高法是不能够来选谁当总统的，最高法只能解释宪法，所以最高法在给你一个我觉得一个什么，就是说一种指引，就是说你上来的诉讼必须得是是solid的，就是说是非常坚固的，非常站得住脚的，明白吗？这样子的一个诉讼上来之后，我做了判决，不论下边乱成什么样子都要发泄明白，这个判决一出来之后就乱成一锅粥了。 </p>
+<p>你知道吗？如果判了拜登营，串谱这边都练成一锅肉了，如果判了串谱营，拜登那边也不干，对不对？ </p>
+<p>但是最高法院说你们诉讼上来之后，我判完了，它是非常梭利的，是非常坚实的，就是放之四海而皆准的，以后即使你拿来看，我们是没有任何的问题的，它必须要一个这样子的一个诉讼，我们才能给你一个结果，但是这个结果是什么？现在还不知道不好说。 </p>
+<p>但是最高法实际上就是说你不要随便的诉讼，原告是谁？理由是什么？是不是利益相关？你一定要给我是非常的准确，非常的solid，知道吗？一非常经得住推敲，就不能有任何一点的质疑或者任何一点的一律。 </p>
+<p>那么当然也就是说要看川普这边律师了，但是川普这边律师说实话，我觉得朱利安尼真的一般，包贝尔我看还稍微好一点，也有限，林武德的也是疯风颠颠的，弄不动叫你准备什么？ </p>
+<p>第二宪法第二修正案的物品，这边受受不了对不对？要说还有叫爱丽丝太年轻，我觉得川普这边给我的感觉就是说没有一个特别好的站得住脚的聪明的律师，知道吧？ </p>
+<p>他现在很需要一个像像谁都有点像麦克像副总统彭斯那样子的人，但是现在就没有副总统选的是真好，律师里面就选不出来了，一个说真正的有点水平的律师，这几个律师真的是有问题，走打的方向有问题。 </p>
+<p>那么当然了现在说比较好的是德州的总检察长，真的这是个郝律师，当然检检察长当然就是说他是代表有点像公公诉人，但是他实际上就是说某种程度上算算是政府的那种律师，你懂我意思吗？ </p>
+<p>如果公诉的话他代表政府，就像政府的律师一样，他如果从检察长的位置上，如果就是说退休下来的话，他可以重新执业去当律师，当然他这是一个好律师。 </p>
+<p>所以就是说能不能跟德州的总检察长去合作，这点是非常重要，我相信他们之间肯定在在沟通在商量，看看怎么能够达到一个双方满意的结果。 </p>
+<p>但是无论如何最高法实际上是在牵引着你，就是说这个案子你要怎么地产来怎么打，稍微有一点的，我现在我不接，我给你顶回去，我告诉然后我告诉你这个地方为什么我认为它不值得推敲，禁不住推敲。 </p>
+<p>而且最高法院也明白一点就是什么，就是说你这案子一进来之后，就这一次判决咱们就结束了，你懂我意思吧？所以你不要着急，不要着急往上送，你要给我一个 ok的，然后我们给你一个结果。 </p>
+<p>所以如果你这么考虑的话，其实最高法也有它的难处和苦衷，因为最高法对双方都要有个交代，你这边有7000多万选民，那边儿8000万，那花儿8套傻子都能看得出来，对不对？希希拉里6000多万对不对？奥巴马和克林顿都没有那么多，怎么可能你会8000多万呢？但那边我觉得好歹也有个7000万是没有问题的，对不对？那边也有7000万人，对那边也要有个交代，对吧？ </p>
+<p>所以我觉得最高法院对双方实际上都在给一个交代和指引，就是说你们给我一个案件非常的经得住推敲，我最后我给你们一个结果，咱们就不要动手，最高法院我们就是用法律去解决。但是现在我相信所有人都看得出来，今年大选这个事儿，最高法院必须得给一个法律的站得住脚的一个结果。不然的话不会出大事的，对不对？ </p>
+<p>所以我觉得我们所有人还应该要相信，就是我的想法就是说我觉得要相信最高法，最高法他们在做的他们应该做点事情，我们相信到了最后只要你给的诉讼让最高法满意了，他会接受的，而最后也会给你一个结果，当然这个结果我不是说一定都对川普有利，也有可能对拜登有利，但是那个结果必然是让全美国的人都心服口服的，这是非常重要的。 </p>
+<p>川普也好，拜登也好，他们在考虑的是什么？他们考虑的是谁当总统，但是对于最高法院那些法官来讲是无所谓，他们是终身制的，你明白吗？不管你们谁当总统，我都是最高法院大法官，我要当一辈子的，你们4年就滚蛋了，我可能未来40年都是我，你明白吗？所以他们想到的是长治久安是怎么维护美国的利益，让美国一直稳定的，不要发生内乱的情况之下，稳定的往前发展。 </p>
+<p>所以他们要的东西和川普和拜登要的是不一样的，而这种东西我希望川普能够去理解，就说他们到底要什么，那么你必须就是说，因为你现在也想要最高法院一个结果，对不对？ </p>
+<p>那么正因为是互相的，你要给最高法一个他想要的东西，他才能给一个你想要的东西，所以就要相向而行，对不对？ </p>
+<p>那么最高法现在它不能明说，但是他给你们一些你来给了你一些指引，而这种指引就是说你能不能有智慧能够看懂最高法，他在要什么？ </p>
+<p>川普可能还是我觉得川普还是比较聪明的，我相信他是比较聪明的，但是他那几个律师真的都不着调，他几个律师都没有一个找我喜欢的，希望川普能够跟德州的东铁砂厂再去商量商量，好不好？给一个最高法想要的东西，我相信只要你把最高法想要的东西给了最高法，最高法也一定会给一个你想要的结果。经验到这里，谢谢大家。 </p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/17/20201217%E7%AC%AC3220%E6%9C%9F-26%E5%90%8D%E6%96%B0%E5%BD%93%E9%80%89%E7%9A%84%E4%BC%97%E8%AE%AE%E5%91%98%E8%81%94%E5%90%8D%E4%BF%A1%E8%A6%81%E6%B1%82%E4%BC%97%E8%AE%AE%E9%99%A2%E8%AE%AE%E9%95%BF%E4%BD%A9%E6%B4%9B%E8%A5%BF%E8%B0%83%E6%9F%A5%E9%80%89%E4%B8%BE%E8%88%9E%E5%BC%8A-kWtiVcHifKg/" rel="prev" title="20201217第3220期-26名新当选的众议员联名信要求众议院议长佩洛西调查选举舞弊">
+      <i class="fa fa-chevron-left"></i> 20201217第3220期-26名新当选的众议员联名信要求众议院议长佩洛西调查选举舞弊
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/18/20201218%E7%AC%AC3222%E6%9C%9F-%E4%B8%A2%E4%BA%BA%E4%B8%A2%E5%A4%A7%E4%BA%86%EF%BC%8C%E4%B8%AD%E5%85%B1%E5%90%91%E7%BE%8E%E5%9B%BD%E8%BE%89%E7%91%9E%E5%88%B6%E8%8D%AF%E5%85%AC%E5%8F%B8%E8%B4%AD%E4%B9%B01%E4%BA%BF%E5%89%82%E6%96%B0%E5%86%A0%E7%96%AB%E8%8B%97-3-L9cEwg_Yg/" rel="next" title="20201218第3222期-丢人丢大了，中共向美国辉瑞制药公司购买1亿剂新冠疫苗">
+      20201218第3222期-丢人丢大了，中共向美国辉瑞制药公司购买1亿剂新冠疫苗 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="stonejidb"
+      src="/images/logo.002.png">
+  <p class="site-author-name" itemprop="name">stonejidb</p>
+  <div class="site-description" itemprop="description">友情提醒<br><b>stone记的作品中有一部分不包含<br>“不可证实的小道消息和意淫”<br>俗称谣言。<br>请谨慎查阅。</b></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1996</span>
+          <span class="site-state-item-name">作品</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">stonejidb</span>
+</div>
+  <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly9waXNjZXMudGhlbWUtbmV4dC5vcmc=">NexT.Pisces</span> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stoneji-shu-ju-ku.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://stonejidb.github.io/2020/12/17/20201217%E7%AC%AC3221%E6%9C%9F-%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E5%AE%9E%E9%99%85%E4%B8%8A%E6%98%AF%E5%9C%A8%E5%BC%95%E5%AF%BC%E5%B7%9D%E6%99%AE%EF%BC%8C%E6%9A%97%E7%A4%BA%E5%B7%9D%E6%99%AE%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%80%E9%AB%98%E6%B3%95%E9%99%A2%E9%9C%80%E8%A6%81%E7%9A%84%E8%AF%89%E8%AE%BC-qqrWwkipJCU/";
+    this.page.identifier = "2020/12/17/20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼-qqrWwkipJCU/";
+    this.page.title = "20201217第3221期-最高法院实际上是在引导川普，暗示川普什么是最高法院需要的诉讼";
+    };
+  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://stoneji-shu-ju-ku.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
+</script>
+
+</body>
+</html>
